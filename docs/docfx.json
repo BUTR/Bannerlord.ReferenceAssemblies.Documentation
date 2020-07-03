@@ -12,7 +12,59 @@
       "dest": "api_core",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
-    }
+    },
+    {
+      "src": [
+        {
+          "src": "../Bannerlord.ReferenceAssemblies.Native.EarlyAccess/ref/net472",
+          "files": [
+            "**.dll"
+          ]
+        }
+      ],
+      "dest": "api_native",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../Bannerlord.ReferenceAssemblies.SandBox.EarlyAccess/ref/net472",
+          "files": [
+            "**.dll"
+          ]
+        }
+      ],
+      "dest": "api_sandbox",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../Bannerlord.ReferenceAssemblies.StoryMode.EarlyAccess/ref/net472",
+          "files": [
+            "**.dll"
+          ]
+        }
+      ],
+      "dest": "api_storymode",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../Bannerlord.ReferenceAssemblies.CustomBattle.EarlyAccess/ref/net472",
+          "files": [
+            "**.dll"
+          ]
+        }
+      ],
+      "dest": "api_custombattle",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
   ],
   "build": {
     "xref": [
@@ -47,16 +99,31 @@
       {
         "files": [
           "images/**"
+		  
         ]
+      },
+      {
+        "files": [ "resources/**" ],
+        "src": "../"
       }
     ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "custom"
     ],
-    "postProcessors": [],
+    "postProcessors": ["ExtractSearchIndex"],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
