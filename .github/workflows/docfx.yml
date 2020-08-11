@@ -43,36 +43,14 @@ jobs:
       with:
         pathSource: docfx.zip
         pathTarget: docfx
-        
-    - name: Extract Bannerlord.ReferenceAssemblies.Core.EarlyAccess
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: Bannerlord.ReferenceAssemblies.Core.EarlyAccess.1.4.1.231234-e.nupkg
-        pathTarget: Bannerlord.ReferenceAssemblies.Core.EarlyAccess
 
-    - name: Extract Bannerlord.ReferenceAssemblies.Native.EarlyAccess
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: Bannerlord.ReferenceAssemblies.Native.EarlyAccess.1.4.1.231234-e.nupkg
-        pathTarget: Bannerlord.ReferenceAssemblies.Native.EarlyAccess
-        
-    - name: Extract Bannerlord.ReferenceAssemblies.SandBox.EarlyAccess
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: Bannerlord.ReferenceAssemblies.SandBox.EarlyAccess.1.4.1.231234-e.nupkg
-        pathTarget: Bannerlord.ReferenceAssemblies.SandBox.EarlyAccess
-
-    - name: Extract Bannerlord.ReferenceAssemblies.StoryMode.EarlyAccess
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: Bannerlord.ReferenceAssemblies.StoryMode.EarlyAccess.1.4.1.231234-e.nupkg
-        pathTarget: Bannerlord.ReferenceAssemblies.StoryMode.EarlyAccess
-        
-    - name: Extract Bannerlord.ReferenceAssemblies.CustomBattle.EarlyAccess
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: Bannerlord.ReferenceAssemblies.CustomBattle.EarlyAccess.1.4.1.231234-e.nupkg
-        pathTarget: Bannerlord.ReferenceAssemblies.CustomBattle.EarlyAccess
+    - name: Download latest ref packages
+      run: >-
+        dotnet run -p build/PackageDownloader -- `
+            -s 1.4.2 -b 1.4.3 -n Bannerlord.ReferenceAssemblies `
+            -t $PWD `
+            -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
+      shell: pwsh
 
     - name: Generating Newtonsoft.Json xref maps
       run: >-
