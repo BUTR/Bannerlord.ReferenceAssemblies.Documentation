@@ -69,7 +69,7 @@ namespace PackageDownloader
 
                 if (!string.IsNullOrEmpty(o.StableVersion))
                 {
-                    Console.Write("Downloading Stable");
+                    Console.WriteLine("Downloading Stable");
 
                     var stableDict = versions
                         .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
@@ -87,7 +87,7 @@ namespace PackageDownloader
 
                 if (!string.IsNullOrEmpty(o.BetaVersion))
                 {
-                    Console.Write("Downloading Beta");
+                    Console.WriteLine("Downloading Beta");
 
                     var betaDict = versions
                         .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
