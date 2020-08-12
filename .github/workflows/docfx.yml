@@ -7,11 +7,14 @@ on:
 
 jobs:
   docfx:
-    name: DocFX documentation
+    name: Test DocFX generation
     runs-on: windows-latest
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        submodules: recursive
+        fetch-depth: 0
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@master
@@ -52,7 +55,7 @@ jobs:
             -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
       shell: pwsh
 
-    - name: Generating Newtonsoft.Json xref maps
+    - name: Generate Newtonsoft.Json xref maps
       run: >-
         dotnet run -p build/SandcastleXrefGenerator -- `
             Newtonsoft.Json 11.0.2 netstandard2.0 `
@@ -60,14 +63,11 @@ jobs:
             $PWD/docs/xrefs/Newtonsoft.Json-xrefmap.yml
       shell: pwsh
 
-    - name: DocFX
-      run: >-
-        dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --output docs/_template/last-modified/plugins
+    - name: Build DocFx.Plugin.LastModified
+      run: dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --configuration Release --output docs/_template/last-modified/plugins
       shell: pwsh
-      env:
-        DOCFX: true
 
-    - name: DocFX
+    - name: Run DocFX
       run: >-
         docfx/docfx.exe metadata docs/docfx-meta-stable.json;
         docfx/docfx.exe build docs/docfx-build.json;
