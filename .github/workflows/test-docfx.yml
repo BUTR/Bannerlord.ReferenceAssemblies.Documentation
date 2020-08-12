@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-      submodules: recursive
+      with:
+        submodules: recursive
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@master
