@@ -1,0 +1,83 @@
+{
+  "build": {
+    "xref": [
+      "xrefs/Newtonsoft.Json-xrefmap.yml"
+    ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "content": [
+      {
+        "files": [ "**/*.yml", "**/*.md" ],
+		"src": "stable",
+		"version": "stable",
+		"group": "latest",
+		"dest":"api/overview/bannerlord",	
+      },
+      {
+        "files": [ "**/*.yml", "**/*.md" ],
+		"src": "beta",
+		"version": "beta",
+		"group": "latest",
+		"dest":"api/overview/bannerlord",	
+      },
+      {
+        "files": [ "articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md" ]
+      }
+    ],
+	
+    "resource": [
+      {
+        "files": [ "images/**" ],
+		"version": "stable",
+		"group": "latest",
+		"dest": "bannerlord",
+      },
+      {
+        "files": [ "images/**" ],
+		"version": "beta",
+		"group": "latest",
+		"dest": "bannerlord",
+      },
+      {
+        "src": "../",
+        "files": [ "resources/**" ],
+		"version": "stable"
+      },
+      {
+        "src": "../",
+        "files": [ "resources/**" ],
+		"version": "beta"
+      }
+    ],
+	
+    "versions": {
+      "stable": {
+        "dest": "stable"
+      }
+    },
+	
+    "groups": {
+      "latest": {
+        "dest": "latest",
+        "moniker_range": "stable"
+      },
+    },
+
+    "overwrite": [ ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Unofficial Bannerlord API Documentation",
+      "_appFooter": "Unofficial Bannerlord API Documentation",
+      "_enableSearch": true,
+    },
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+	  "_template/dark-theme",
+	  "_template/last-modified",
+    ],
+    "postProcessors": ["ExtractSearchIndex",  "LastModifiedPostProcessor"],
+    "markdownEngineName": "markdig"
+  }
+}
