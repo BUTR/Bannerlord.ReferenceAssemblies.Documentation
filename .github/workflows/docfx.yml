@@ -55,6 +55,9 @@ jobs:
             -t $PWD `
             -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
       shell: pwsh
+      env:
+        DOTNET_NOLOGO: 1
+        DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
     - name: Generate Newtonsoft.Json xref maps
       run: >-
@@ -63,18 +66,30 @@ jobs:
             https://www.newtonsoft.com/json/help/html/ `
             $PWD/docs/xrefs/Newtonsoft.Json-xrefmap.yml
       shell: pwsh
+      env:
+        DOTNET_NOLOGO: 1
+        DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
     - name: Build DocFx.Plugin.LastModified
       run: dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --configuration Release --output docs/_template/last-modified/plugins
       shell: pwsh
+      env:
+        DOTNET_NOLOGO: 1
+        DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
-    - name: Run DocFX
+    - name: DocFX metadata
       run: >-
         docfx/docfx.exe metadata docs/docfx-meta-stable.json;
-        docfx/docfx.exe build docs/docfx-build.json;
-      shell: pwsh
       env:
         DOCFX: true
+        DOTNET_NOLOGO: 1
+        DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+    - name: DocFX build
+      run: docfx/docfx.exe build docs/docfx-build.json;
+      env:
+        DOTNET_NOLOGO: 1
+        DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
     - name: Deploy DocFX
       uses: crazy-max/ghaction-github-pages@v2
