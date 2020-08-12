@@ -62,8 +62,15 @@ jobs:
 
     - name: DocFX
       run: >-
-        docfx/docfx.exe metadata docs/docfx.json;
-        docfx/docfx.exe build docs/docfx.json;
+        dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --output docs/_template/last-modified/plugins
+      shell: pwsh
+      env:
+        DOCFX: true
+
+    - name: DocFX
+      run: >-
+        docfx/docfx.exe metadata docs/docfx-meta-stable.json;
+        docfx/docfx.exe build docs/docfx-build.json;
       shell: pwsh
       env:
         DOCFX: true

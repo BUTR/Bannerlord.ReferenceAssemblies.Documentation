@@ -1,0 +1,45 @@
+{
+  "build": {
+    "xref": [
+      "xrefs/Newtonsoft.Json-xrefmap.yml"
+    ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "content": [
+      {
+        "files": [ "**/*.yml", "**/*.md" ],
+		"src": "stable",	
+      },
+      {
+        "files": [ "articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md" ]
+      }
+    ],
+	
+    "resource": [
+      {
+        "files": [ "images/**" ],
+      },
+      {
+        "src": "../",
+        "files": [ "resources/**" ],
+      }
+    ],
+	
+    "overwrite": [ ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Unofficial Bannerlord API Documentation",
+      "_appFooter": "Unofficial Bannerlord API Documentation",
+      "_enableSearch": true,
+    },
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+	  "_template/dark-theme",
+	  "_template/last-modified",
+    ],
+    "postProcessors": ["ExtractSearchIndex",  "LastModifiedPostProcessor"],
+    "markdownEngineName": "markdig"
+  }
+}
