@@ -51,7 +51,7 @@ jobs:
     - name: Download latest ref packages
       run: >-
         dotnet run -p build/PackageDownloader -- `
-            -s 1.4.2 -b 1.4.3 -n Bannerlord.ReferenceAssemblies `
+            -s 1.4.3 -b 1.5.0 -n Bannerlord.ReferenceAssemblies `
             -t $PWD `
             -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
       shell: pwsh
