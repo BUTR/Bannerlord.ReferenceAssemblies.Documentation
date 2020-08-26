@@ -1,6 +1,8 @@
 name: DocFX
 
 on:
+  repository_dispatch:
+    types: [game_version_update]
   push:
     branches:
       - master
@@ -50,8 +52,12 @@ jobs:
 
     - name: Download latest ref packages
       run: >-
-        dotnet run -p build/PackageDownloader -- `
-            -s 1.4.3 -b 1.5.0 -n Bannerlord.ReferenceAssemblies `
+          $stable_version=$env:STABLE_VERSION;
+          $stable_version=$stable_version.substring(1);
+          $beta_version=$env:BETA_VERSION;
+          $beta_version=$beta_version.substring(1);
+          dotnet run -p build/PackageDownloader -- `
+            -s $stable_version -b $beta_version -n Bannerlord.ReferenceAssemblies `
             -t $PWD `
             -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
       shell: pwsh
