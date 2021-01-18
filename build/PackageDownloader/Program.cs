@@ -44,15 +44,12 @@ namespace PackageDownloader
                 var metadataResource = sourceRepository.GetResource<PackageMetadataResource>();
                 var downloadResource = sourceRepository.GetResource<DownloadResource>();
 
-                Console.Write($"Checking Feed...");
-                var versions = packageLister.SearchAsync("bannerlord", new SearchFilter(true) { SupportedFrameworks = new[] { "net472" } }, 0, 100, _logger, _ct)
+                Console.Write("Checking Feed...");
+                var versions = packageLister.SearchAsync("", new SearchFilter(false) { SupportedFrameworks = new[] { "net472", "netstandard2.0" } }, 0, 100, _logger, _ct)
                     .AsAsyncEnumerable()
                     .Where(p => rxPackageName.IsMatch(p.Identity.Id))
                     .Select(package =>
                     {
-                        if (!package.Identity.Id.StartsWith(o.PackageBaseName))
-                            return default;
-
                         var metadatas = finderPackageByIdResource
                             .GetAllVersionsAsync(package.Identity.Id, sourceCacheContext, _logger, _ct)
                             .AsAsyncEnumerable()
@@ -99,7 +96,7 @@ namespace PackageDownloader
                     {
                         Console.Write($"Downloading {packageId} {packageMetadata.Identity.Version}...");
                         downloadResource.GetDownloadResourceResultAsync(packageMetadata.Identity, downloadContext, Path.Combine(o.Target, "Beta"), _logger, _ct).GetAwaiter().GetResult();
-                        Console.WriteLine($"Done!");
+                        Console.WriteLine("Done!");
                     }
                 }
             })
