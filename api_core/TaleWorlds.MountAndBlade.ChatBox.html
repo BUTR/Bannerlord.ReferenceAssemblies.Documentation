@@ -1,0 +1,1372 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ChatBox
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ChatBox
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.ChatBox">
+  <h1 id="TaleWorlds_MountAndBlade_ChatBox" data-uid="TaleWorlds.MountAndBlade.ChatBox">Class ChatBox
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.Core.GameHandler.html">GameHandler</a></div>
+    <div class="level2"><span class="xref">ChatBox</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_TaleWorlds_Core_IEntityComponent_OnInitialize">GameHandler.IEntityComponent.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_TaleWorlds_Core_IEntityComponent_OnFinalize">GameHandler.IEntityComponent.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnInitialize">GameHandler.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnFinalize">GameHandler.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnEarlyPlayerConnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnEarlyPlayerConnect(VirtualPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnPlayerConnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnPlayerConnect(VirtualPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnPlayerDisconnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnPlayerDisconnect(VirtualPlayer)</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.html">TaleWorlds.MountAndBlade</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.MountAndBlade.dll</h6>
+  
+  <h5 id="TaleWorlds_MountAndBlade_ChatBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChatBox : GameHandler, IEntityComponent</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox__ctor_" data-uid="TaleWorlds.MountAndBlade.ChatBox.#ctor*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox__ctor" data-uid="TaleWorlds.MountAndBlade.ChatBox.#ctor"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox__ctor" class="expander" data-toggle="collapse">ChatBox()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox__ctor" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatBox()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_NetworkReady_" data-uid="TaleWorlds.MountAndBlade.ChatBox.NetworkReady*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_NetworkReady" data-uid="TaleWorlds.MountAndBlade.ChatBox.NetworkReady"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_NetworkReady" class="expander" data-toggle="collapse">NetworkReady</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_NetworkReady" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NetworkReady { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_ErrorWhisperMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_ErrorWhisperMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_ErrorWhisperMessageReceived(TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" class="expander" data-toggle="collapse">add_ErrorWhisperMessageReceived(ErrorWhisperMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_ErrorWhisperMessageReceived(ErrorWhisperMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate.html">ErrorWhisperMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_OnPlayerMuteChanged_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_OnPlayerMuteChanged*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_OnPlayerMuteChanged(TaleWorlds.MountAndBlade.PlayerMutedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" class="expander" data-toggle="collapse">add_OnPlayerMuteChanged(PlayerMutedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_OnPlayerMuteChanged(PlayerMutedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMutedDelegate.html">PlayerMutedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_PlayerMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_PlayerMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_PlayerMessageReceived(TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" class="expander" data-toggle="collapse">add_PlayerMessageReceived(PlayerMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_PlayerMessageReceived(PlayerMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate.html">PlayerMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_ServerMessage_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_ServerMessage*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_ServerMessage(TaleWorlds.MountAndBlade.ServerMessageDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" class="expander" data-toggle="collapse">add_ServerMessage(ServerMessageDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_ServerMessage(ServerMessageDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.ServerMessageDelegate.html">ServerMessageDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_WhisperMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_WhisperMessageReceived(TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" class="expander" data-toggle="collapse">add_WhisperMessageReceived(WhisperMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_WhisperMessageReceived(WhisperMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate.html">WhisperMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageSent_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_WhisperMessageSent*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.add_WhisperMessageSent(TaleWorlds.MountAndBlade.WhisperMessageSentDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" class="expander" data-toggle="collapse">add_WhisperMessageSent(WhisperMessageSentDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_add_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_WhisperMessageSent(WhisperMessageSentDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageSentDelegate.html">WhisperMessageSentDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMuted*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMuted(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">IsPlayerMuted(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerMuted(PlayerId player)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">player</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnAfterSave_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnAfterSave*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnAfterSave" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnAfterSave"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnAfterSave" class="expander" data-toggle="collapse">OnAfterSave()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnAfterSave" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAfterSave()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnAfterSave">GameHandler.OnAfterSave()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnBeforeSave*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnBeforeSave"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave" class="expander" data-toggle="collapse">OnBeforeSave()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnBeforeSave()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnBeforeSave">GameHandler.OnBeforeSave()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameEnd_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameEnd*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnGameEnd" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameEnd"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameEnd" class="expander" data-toggle="collapse">OnGameEnd()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameEnd" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameEnd()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnGameEnd">GameHandler.OnGameEnd()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkBegin*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkBegin"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin" class="expander" data-toggle="collapse">OnGameNetworkBegin()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameNetworkBegin()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnGameNetworkBegin">GameHandler.OnGameNetworkBegin()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkEnd*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkEnd"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd" class="expander" data-toggle="collapse">OnGameNetworkEnd()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameNetworkEnd()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnGameNetworkEnd">GameHandler.OnGameNetworkEnd()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameStart_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameStart*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnGameStart" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameStart"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameStart" class="expander" data-toggle="collapse">OnGameStart()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnGameStart" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameStart()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnGameStart">GameHandler.OnGameStart()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerMuted*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerMuted(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">OnPlayerMuted(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerMuted(PlayerId mutedPlayer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">mutedPlayer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerUnmuted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerUnmuted*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerUnmuted_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerUnmuted(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerUnmuted_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">OnPlayerUnmuted(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerUnmuted_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerUnmuted(PlayerId unmutedPlayer)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">unmutedPlayer</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnTick_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnTick*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnTick" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnTick"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnTick" class="expander" data-toggle="collapse">OnTick()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnTick" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnTick">GameHandler.OnTick()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_ErrorWhisperMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_ErrorWhisperMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_ErrorWhisperMessageReceived(TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" class="expander" data-toggle="collapse">remove_ErrorWhisperMessageReceived(ErrorWhisperMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_ErrorWhisperMessageReceived_TaleWorlds_MountAndBlade_ErrorWhisperMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_ErrorWhisperMessageReceived(ErrorWhisperMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate.html">ErrorWhisperMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_OnPlayerMuteChanged_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_OnPlayerMuteChanged*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_OnPlayerMuteChanged(TaleWorlds.MountAndBlade.PlayerMutedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" class="expander" data-toggle="collapse">remove_OnPlayerMuteChanged(PlayerMutedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_OnPlayerMuteChanged_TaleWorlds_MountAndBlade_PlayerMutedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_OnPlayerMuteChanged(PlayerMutedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMutedDelegate.html">PlayerMutedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_PlayerMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_PlayerMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_PlayerMessageReceived(TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" class="expander" data-toggle="collapse">remove_PlayerMessageReceived(PlayerMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_PlayerMessageReceived_TaleWorlds_MountAndBlade_PlayerMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_PlayerMessageReceived(PlayerMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate.html">PlayerMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_ServerMessage_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_ServerMessage*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_ServerMessage(TaleWorlds.MountAndBlade.ServerMessageDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" class="expander" data-toggle="collapse">remove_ServerMessage(ServerMessageDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_ServerMessage_TaleWorlds_MountAndBlade_ServerMessageDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_ServerMessage(ServerMessageDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.ServerMessageDelegate.html">ServerMessageDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageReceived_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_WhisperMessageReceived*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_WhisperMessageReceived(TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" class="expander" data-toggle="collapse">remove_WhisperMessageReceived(WhisperMessageReceivedDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageReceived_TaleWorlds_MountAndBlade_WhisperMessageReceivedDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_WhisperMessageReceived(WhisperMessageReceivedDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate.html">WhisperMessageReceivedDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageSent_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_WhisperMessageSent*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" data-uid="TaleWorlds.MountAndBlade.ChatBox.remove_WhisperMessageSent(TaleWorlds.MountAndBlade.WhisperMessageSentDelegate)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" class="expander" data-toggle="collapse">remove_WhisperMessageSent(WhisperMessageSentDelegate)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_remove_WhisperMessageSent_TaleWorlds_MountAndBlade_WhisperMessageSentDelegate_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_WhisperMessageSent(WhisperMessageSentDelegate value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageSentDelegate.html">WhisperMessageSentDelegate</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll(System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_System_String_" class="expander" data-toggle="collapse">SendMessageToAll(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToAll(string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam(System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_System_String_" class="expander" data-toggle="collapse">SendMessageToTeam(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToTeam(string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToWhisperTarget*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_System_String_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToWhisperTarget(System.String,System.String,System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_System_String_System_String_System_String_" class="expander" data-toggle="collapse">SendMessageToWhisperTarget(String, String, String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToWhisperTarget(string message, string platformName, string whisperTarget)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">platformName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">whisperTarget</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerSendServerMessageToEveryone*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerSendServerMessageToEveryone(System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_System_String_" class="expander" data-toggle="collapse">ServerSendServerMessageToEveryone(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ServerSendServerMessageToEveryone(string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_ErrorWhisperMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.ErrorWhisperMessageReceived"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_ErrorWhisperMessageReceived" class="expander" data-toggle="collapse">ErrorWhisperMessageReceived</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_ErrorWhisperMessageReceived" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ErrorWhisperMessageReceivedDelegate ErrorWhisperMessageReceived</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate.html">ErrorWhisperMessageReceivedDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuteChanged" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerMuteChanged"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuteChanged" class="expander" data-toggle="collapse">OnPlayerMuteChanged</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuteChanged" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerMutedDelegate OnPlayerMuteChanged</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.PlayerMutedDelegate.html">PlayerMutedDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_PlayerMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.PlayerMessageReceived"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_PlayerMessageReceived" class="expander" data-toggle="collapse">PlayerMessageReceived</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_PlayerMessageReceived" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerMessageReceivedDelegate PlayerMessageReceived</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate.html">PlayerMessageReceivedDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_ServerMessage" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerMessage"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_ServerMessage" class="expander" data-toggle="collapse">ServerMessage</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_ServerMessage" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ServerMessageDelegate ServerMessage</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.ServerMessageDelegate.html">ServerMessageDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_WhisperMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.WhisperMessageReceived"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_WhisperMessageReceived" class="expander" data-toggle="collapse">WhisperMessageReceived</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_WhisperMessageReceived" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WhisperMessageReceivedDelegate WhisperMessageReceived</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate.html">WhisperMessageReceivedDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_ChatBox_WhisperMessageSent" data-uid="TaleWorlds.MountAndBlade.ChatBox.WhisperMessageSent"><a href="#collapsible-TaleWorlds_MountAndBlade_ChatBox_WhisperMessageSent" class="expander" data-toggle="collapse">WhisperMessageSent</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_ChatBox_WhisperMessageSent" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WhisperMessageSentDelegate WhisperMessageSent</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageSentDelegate.html">WhisperMessageSentDelegate</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1486 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BattleServer
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BattleServer
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer">
+  <h1 id="TaleWorlds_MountAndBlade_Diamond_BattleServer" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer">Class BattleServer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.Diamond.ClientApplication.DiamondClientApplicationObject.html">DiamondClientApplicationObject</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Diamond.Client-1.html">Client</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleServer.html">BattleServer</a>&gt;</div>
+    <div class="level3"><span class="xref">BattleServer</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_Update">Client&lt;BattleServer&gt;.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_SendMessage_TaleWorlds_Diamond_Message_">Client&lt;BattleServer&gt;.SendMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_Login_TaleWorlds_Diamond_LoginMessage_">Client&lt;BattleServer&gt;.Login(LoginMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_CallFunction__1_TaleWorlds_Diamond_Message_">Client&lt;BattleServer&gt;.CallFunction&lt;TResult&gt;(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_AddMessageHandler__1_TaleWorlds_Diamond_ClientMessageHandler___0__">Client&lt;BattleServer&gt;.AddMessageHandler&lt;TMessage&gt;(ClientMessageHandler&lt;TMessage&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_HandleMessage_TaleWorlds_Diamond_Message_">Client&lt;BattleServer&gt;.HandleMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_BeginConnect">Client&lt;BattleServer&gt;.BeginConnect()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_BeginDisconnect">Client&lt;BattleServer&gt;.BeginDisconnect()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_SetAliveCheckTime_System_Int64_">Client&lt;BattleServer&gt;.SetAliveCheckTime(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_IsInCriticalState">Client&lt;BattleServer&gt;.IsInCriticalState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_AliveCheckTimeInMiliSeconds">Client&lt;BattleServer&gt;.AliveCheckTimeInMiliSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.Client-1.html#TaleWorlds_Diamond_Client_1_AccessProvider">Client&lt;BattleServer&gt;.AccessProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.ClientApplication.DiamondClientApplicationObject.html#TaleWorlds_Diamond_ClientApplication_DiamondClientApplicationObject_Application">DiamondClientApplicationObject.Application</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Diamond.ClientApplication.DiamondClientApplicationObject.html#TaleWorlds_Diamond_ClientApplication_DiamondClientApplicationObject_ApplicationVersion">DiamondClientApplicationObject.ApplicationVersion</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.html">TaleWorlds.MountAndBlade.Diamond</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.MountAndBlade.Diamond.dll</h6>
+  
+  <h5 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BattleServer : Client&lt;BattleServer&gt;, IClient</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer__ctor_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.#ctor*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer__ctor_TaleWorlds_Diamond_ClientApplication_DiamondClientApplication_TaleWorlds_Diamond_IClientSessionProvider_TaleWorlds_MountAndBlade_Diamond_BattleServer__" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.#ctor(TaleWorlds.Diamond.ClientApplication.DiamondClientApplication,TaleWorlds.Diamond.IClientSessionProvider{TaleWorlds.MountAndBlade.Diamond.BattleServer})"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer__ctor_TaleWorlds_Diamond_ClientApplication_DiamondClientApplication_TaleWorlds_Diamond_IClientSessionProvider_TaleWorlds_MountAndBlade_Diamond_BattleServer__" class="expander" data-toggle="collapse">BattleServer(DiamondClientApplication, IClientSessionProvider&lt;BattleServer&gt;)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer__ctor_TaleWorlds_Diamond_ClientApplication_DiamondClientApplication_TaleWorlds_Diamond_IClientSessionProvider_TaleWorlds_MountAndBlade_Diamond_BattleServer__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleServer(DiamondClientApplication diamondClientApplication, IClientSessionProvider&lt;BattleServer&gt; provider)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.ClientApplication.DiamondClientApplication.html">DiamondClientApplication</a></span>
+        <span class="parametername">diamondClientApplication</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.IClientSessionProvider-1.html">IClientSessionProvider</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleServer.html">BattleServer</a>&gt;</span>
+        <span class="parametername">provider</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_AnalyticsServiceAddress_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.AnalyticsServiceAddress*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_AnalyticsServiceAddress" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.AnalyticsServiceAddress"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_AnalyticsServiceAddress" class="expander" data-toggle="collapse">AnalyticsServiceAddress</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_AnalyticsServiceAddress" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AnalyticsServiceAddress { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleId_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BattleId*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleId" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BattleId"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleId" class="expander" data-toggle="collapse">BattleId</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleId" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid BattleId { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleSize_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BattleSize*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleSize" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BattleSize"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleSize" class="expander" data-toggle="collapse">BattleSize</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BattleSize" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BattleSize { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_CaptureMovementData_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.CaptureMovementData*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_CaptureMovementData" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.CaptureMovementData"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_CaptureMovementData" class="expander" data-toggle="collapse">CaptureMovementData</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_CaptureMovementData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CaptureMovementData { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction1_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Faction1*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction1" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Faction1"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction1" class="expander" data-toggle="collapse">Faction1</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction1" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Faction1 { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction2_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Faction2*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction2" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Faction2"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction2" class="expander" data-toggle="collapse">Faction2</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Faction2" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Faction2 { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GameType_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GameType*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GameType" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GameType"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GameType" class="expander" data-toggle="collapse">GameType</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GameType" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GameType { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsActive_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsActive*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsActive" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsActive"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsActive" class="expander" data-toggle="collapse">IsActive</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsActive" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsAntiCheatEnabled_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsAntiCheatEnabled*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsAntiCheatEnabled" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsAntiCheatEnabled"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsAntiCheatEnabled" class="expander" data-toggle="collapse">IsAntiCheatEnabled</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsAntiCheatEnabled" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAntiCheatEnabled { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsFinished_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsFinished*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsFinished" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsFinished"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsFinished" class="expander" data-toggle="collapse">IsFinished</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsFinished" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinished { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsPremade_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsPremade*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_IsPremade" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.IsPremade"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsPremade" class="expander" data-toggle="collapse">IsPremade</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_IsPremade" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPremade { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_MinRequiredPlayerCountToStartBattle_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.MinRequiredPlayerCountToStartBattle*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_MinRequiredPlayerCountToStartBattle" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.MinRequiredPlayerCountToStartBattle"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_MinRequiredPlayerCountToStartBattle" class="expander" data-toggle="collapse">MinRequiredPlayerCountToStartBattle</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_MinRequiredPlayerCountToStartBattle" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinRequiredPlayerCountToStartBattle { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_MoraleThreshold_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.MoraleThreshold*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_MoraleThreshold" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.MoraleThreshold"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_MoraleThreshold" class="expander" data-toggle="collapse">MoraleThreshold</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_MoraleThreshold" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MoraleThreshold { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_RoundThreshold_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.RoundThreshold*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_RoundThreshold" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.RoundThreshold"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_RoundThreshold" class="expander" data-toggle="collapse">RoundThreshold</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_RoundThreshold" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RoundThreshold { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SceneName_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SceneName*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SceneName" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SceneName"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SceneName" class="expander" data-toggle="collapse">SceneName</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SceneName" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SceneName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_UseAnalytics_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.UseAnalytics*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_UseAnalytics" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.UseAnalytics"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_UseAnalytics" class="expander" data-toggle="collapse">UseAnalytics</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_UseAnalytics" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseAnalytics { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BeginEndMission_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BeginEndMission*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_BeginEndMission" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.BeginEndMission"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BeginEndMission" class="expander" data-toggle="collapse">BeginEndMission()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_BeginEndMission" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginEndMission()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_DoNotAcceptNewPlayers_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.DoNotAcceptNewPlayers*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_DoNotAcceptNewPlayers" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.DoNotAcceptNewPlayers"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_DoNotAcceptNewPlayers" class="expander" data-toggle="collapse">DoNotAcceptNewPlayers()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_DoNotAcceptNewPlayers" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoNotAcceptNewPlayers()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_EndMission_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.EndMission*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_EndMission_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.EndMission(TaleWorlds.MountAndBlade.Diamond.BattleResult,TaleWorlds.MountAndBlade.Diamond.GameLog[])"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_EndMission_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" class="expander" data-toggle="collapse">EndMission(BattleResult, GameLog[])</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_EndMission_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndMission(BattleResult battleResult, GameLog[] gameLogs)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleResult.html">BattleResult</a></span>
+        <span class="parametername">battleResult</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.GameLog.html">GameLog</a>[]</span>
+        <span class="parametername">gameLogs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPeer*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPeer(System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_System_String_" class="expander" data-toggle="collapse">GetPeer(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattlePeer GetPeer(string name)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattlePeer.html">BattlePeer</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPeer*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPeer(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">GetPeer(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPeer_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattlePeer GetPeer(PlayerId playerId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattlePeer.html">BattlePeer</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPlayerParty_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPlayerParty*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPlayerParty_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.GetPlayerParty(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPlayerParty_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">GetPlayerParty(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_GetPlayerParty_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid GetPlayerParty(PlayerId playerId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_HandlePlayerDisconnect_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.HandlePlayerDisconnect*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_HandlePlayerDisconnect_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_DisconnectType_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.HandlePlayerDisconnect(TaleWorlds.PlayerServices.PlayerId,TaleWorlds.MountAndBlade.Diamond.DisconnectType)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_HandlePlayerDisconnect_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_DisconnectType_" class="expander" data-toggle="collapse">HandlePlayerDisconnect(PlayerId, DisconnectType)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_HandlePlayerDisconnect_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_DisconnectType_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandlePlayerDisconnect(PlayerId playerId, DisconnectType disconnectType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.DisconnectType.html">DisconnectType</a></span>
+        <span class="parametername">disconnectType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_InformGameServerReady_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.InformGameServerReady*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_InformGameServerReady" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.InformGameServerReady"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_InformGameServerReady" class="expander" data-toggle="collapse">InformGameServerReady()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_InformGameServerReady" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InformGameServerReady()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Initialize_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Initialize*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_Initialize_TaleWorlds_MountAndBlade_Diamond_IBattleServerSessionHandler_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.Initialize(TaleWorlds.MountAndBlade.Diamond.IBattleServerSessionHandler)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Initialize_TaleWorlds_MountAndBlade_Diamond_IBattleServerSessionHandler_" class="expander" data-toggle="collapse">Initialize(IBattleServerSessionHandler)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_Initialize_TaleWorlds_MountAndBlade_Diamond_IBattleServerSessionHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(IBattleServerSessionHandler handler)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.IBattleServerSessionHandler.html">IBattleServerSessionHandler</a></span>
+        <span class="parametername">handler</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnCantConnect_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnCantConnect*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnCantConnect" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnCantConnect"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnCantConnect" class="expander" data-toggle="collapse">OnCantConnect()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnCantConnect" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCantConnect()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">TaleWorlds.Diamond.Client&lt;TaleWorlds.MountAndBlade.Diamond.BattleServer&gt;.OnCantConnect()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnConnected_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnConnected*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnConnected" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnConnected"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnConnected" class="expander" data-toggle="collapse">OnConnected()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnConnected" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConnected()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">TaleWorlds.Diamond.Client&lt;TaleWorlds.MountAndBlade.Diamond.BattleServer&gt;.OnConnected()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnDisconnected_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnDisconnected*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnDisconnected" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnDisconnected"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnDisconnected" class="expander" data-toggle="collapse">OnDisconnected()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnDisconnected" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDisconnected()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">TaleWorlds.Diamond.Client&lt;TaleWorlds.MountAndBlade.Diamond.BattleServer&gt;.OnDisconnected()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnPlayerSpawned_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnPlayerSpawned*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnPlayerSpawned_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnPlayerSpawned(TaleWorlds.PlayerServices.PlayerId)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnPlayerSpawned_TaleWorlds_PlayerServices_PlayerId_" class="expander" data-toggle="collapse">OnPlayerSpawned(PlayerId)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnPlayerSpawned_TaleWorlds_PlayerServices_PlayerId_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerSpawned(PlayerId playerId)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnTick_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnTick*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnTick" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnTick"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnTick" class="expander" data-toggle="collapse">OnTick()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnTick" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">TaleWorlds.Diamond.Client&lt;TaleWorlds.MountAndBlade.Diamond.BattleServer&gt;.OnTick()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnWarmupEnded_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnWarmupEnded*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_OnWarmupEnded" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.OnWarmupEnded"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnWarmupEnded" class="expander" data-toggle="collapse">OnWarmupEnded()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_OnWarmupEnded" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnWarmupEnded()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SendAntiCheatKickPlayerMessage_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SendAntiCheatKickPlayerMessage*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SendAntiCheatKickPlayerMessage_TaleWorlds_PlayerServices_PlayerId_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SendAntiCheatKickPlayerMessage(TaleWorlds.PlayerServices.PlayerId,System.String)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SendAntiCheatKickPlayerMessage_TaleWorlds_PlayerServices_PlayerId_System_String_" class="expander" data-toggle="collapse">SendAntiCheatKickPlayerMessage(PlayerId, String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SendAntiCheatKickPlayerMessage_TaleWorlds_PlayerServices_PlayerId_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendAntiCheatKickPlayerMessage(PlayerId playerId, string reason)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">reason</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SetBadgeComponent_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SetBadgeComponent*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SetBadgeComponent_TaleWorlds_MountAndBlade_Diamond_IBadgeComponent_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SetBadgeComponent(TaleWorlds.MountAndBlade.Diamond.IBadgeComponent)"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SetBadgeComponent_TaleWorlds_MountAndBlade_Diamond_IBadgeComponent_" class="expander" data-toggle="collapse">SetBadgeComponent(IBadgeComponent)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SetBadgeComponent_TaleWorlds_MountAndBlade_Diamond_IBadgeComponent_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBadgeComponent(IBadgeComponent badgeComponent)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.IBadgeComponent.html">IBadgeComponent</a></span>
+        <span class="parametername">badgeComponent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SetGameEnding_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SetGameEnding*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_SetGameEnding_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.SetGameEnding(TaleWorlds.MountAndBlade.Diamond.BattleResult,TaleWorlds.MountAndBlade.Diamond.GameLog[])"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SetGameEnding_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" class="expander" data-toggle="collapse">SetGameEnding(BattleResult, GameLog[])</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_SetGameEnding_TaleWorlds_MountAndBlade_Diamond_BattleResult_TaleWorlds_MountAndBlade_Diamond_GameLog___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameEnding(BattleResult battleResult, GameLog[] gameLogs)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleResult.html">BattleResult</a></span>
+        <span class="parametername">battleResult</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.GameLog.html">GameLog</a>[]</span>
+        <span class="parametername">gameLogs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Diamond_BattleServer_StartServer_" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.StartServer*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Diamond_BattleServer_StartServer" data-uid="TaleWorlds.MountAndBlade.Diamond.BattleServer.StartServer"><a href="#collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_StartServer" class="expander" data-toggle="collapse">StartServer()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Diamond_BattleServer_StartServer" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartServer()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

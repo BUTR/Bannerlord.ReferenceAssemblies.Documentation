@@ -1,0 +1,2462 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Mesh
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Mesh
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.Engine.Mesh">
+  <h1 id="TaleWorlds_Engine_Mesh" data-uid="TaleWorlds.Engine.Mesh">Class Mesh
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.DotNet.NativeObject.html">NativeObject</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Engine.Resource.html">Resource</a></div>
+    <div class="level3"><span class="xref">Mesh</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.Resource.html#TaleWorlds_Engine_Resource_CheckResourceParameter_TaleWorlds_Engine_Resource_System_String_">Resource.CheckResourceParameter(Resource, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.Resource.html#TaleWorlds_Engine_Resource_IsValid">Resource.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Finalize">NativeObject.Finalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_ManualInvalidate">NativeObject.ManualInvalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_AddUnmanagedMemoryPressure_System_Int32_">NativeObject.AddUnmanagedMemoryPressure(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Equals_System_Object_">NativeObject.Equals(Object)</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.Engine.html">TaleWorlds.Engine</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.Engine.dll</h6>
+  
+  <h5 id="TaleWorlds_Engine_Mesh_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineClass(&quot;rglMesh&quot;)]
+public sealed class Mesh : Resource</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_Billboard_" data-uid="TaleWorlds.Engine.Mesh.Billboard*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_Billboard" data-uid="TaleWorlds.Engine.Mesh.Billboard"><a href="#collapsible-TaleWorlds_Engine_Mesh_Billboard" class="expander" data-toggle="collapse">Billboard</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_Billboard" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BillboardType Billboard { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.BillboardType.html">BillboardType</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_Color_" data-uid="TaleWorlds.Engine.Mesh.Color*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_Color" data-uid="TaleWorlds.Engine.Mesh.Color"><a href="#collapsible-TaleWorlds_Engine_Mesh_Color" class="expander" data-toggle="collapse">Color</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_Color" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Color { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_Color2_" data-uid="TaleWorlds.Engine.Mesh.Color2*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_Color2" data-uid="TaleWorlds.Engine.Mesh.Color2"><a href="#collapsible-TaleWorlds_Engine_Mesh_Color2" class="expander" data-toggle="collapse">Color2</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_Color2" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Color2 { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_CullingMode_" data-uid="TaleWorlds.Engine.Mesh.CullingMode*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_CullingMode" data-uid="TaleWorlds.Engine.Mesh.CullingMode"><a href="#collapsible-TaleWorlds_Engine_Mesh_CullingMode" class="expander" data-toggle="collapse">CullingMode</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_CullingMode" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBMeshCullingMode CullingMode { set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.MBMeshCullingMode.html">MBMeshCullingMode</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_EditDataFaceCornerCount_" data-uid="TaleWorlds.Engine.Mesh.EditDataFaceCornerCount*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_EditDataFaceCornerCount" data-uid="TaleWorlds.Engine.Mesh.EditDataFaceCornerCount"><a href="#collapsible-TaleWorlds_Engine_Mesh_EditDataFaceCornerCount" class="expander" data-toggle="collapse">EditDataFaceCornerCount</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_EditDataFaceCornerCount" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EditDataFaceCornerCount { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_MorphTime_" data-uid="TaleWorlds.Engine.Mesh.MorphTime*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_MorphTime" data-uid="TaleWorlds.Engine.Mesh.MorphTime"><a href="#collapsible-TaleWorlds_Engine_Mesh_MorphTime" class="expander" data-toggle="collapse">MorphTime</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_MorphTime" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MorphTime { set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_Name_" data-uid="TaleWorlds.Engine.Mesh.Name*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_Name" data-uid="TaleWorlds.Engine.Mesh.Name"><a href="#collapsible-TaleWorlds_Engine_Mesh_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_Name" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_VisibilityMask_" data-uid="TaleWorlds.Engine.Mesh.VisibilityMask*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_VisibilityMask" data-uid="TaleWorlds.Engine.Mesh.VisibilityMask"><a href="#collapsible-TaleWorlds_Engine_Mesh_VisibilityMask" class="expander" data-toggle="collapse">VisibilityMask</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_VisibilityMask" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisibilityMaskFlags VisibilityMask { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.VisibilityMaskFlags.html">VisibilityMaskFlags</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddEditDataUser_" data-uid="TaleWorlds.Engine.Mesh.AddEditDataUser*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddEditDataUser" data-uid="TaleWorlds.Engine.Mesh.AddEditDataUser"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddEditDataUser" class="expander" data-toggle="collapse">AddEditDataUser()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddEditDataUser" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEditDataUser()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddFace_" data-uid="TaleWorlds.Engine.Mesh.AddFace*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddFace_System_Int32_System_Int32_System_Int32_System_UIntPtr_" data-uid="TaleWorlds.Engine.Mesh.AddFace(System.Int32,System.Int32,System.Int32,System.UIntPtr)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddFace_System_Int32_System_Int32_System_Int32_System_UIntPtr_" class="expander" data-toggle="collapse">AddFace(Int32, Int32, Int32, UIntPtr)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddFace_System_Int32_System_Int32_System_Int32_System_UIntPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFace(int patchNode0, int patchNode1, int patchNode2, UIntPtr lockHandle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">patchNode0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">patchNode1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">patchNode2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></span>
+        <span class="parametername">lockHandle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddFaceCorner_" data-uid="TaleWorlds.Engine.Mesh.AddFaceCorner*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddFaceCorner_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" data-uid="TaleWorlds.Engine.Mesh.AddFaceCorner(TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec2,System.UInt32,System.UIntPtr)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddFaceCorner_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" class="expander" data-toggle="collapse">AddFaceCorner(Vec3, Vec3, Vec2, UInt32, UIntPtr)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddFaceCorner_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFaceCorner(Vec3 position, Vec3 normal, Vec2 uvCoord, uint color, UIntPtr lockHandle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">position</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">normal</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uvCoord</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">color</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></span>
+        <span class="parametername">lockHandle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddMesh_" data-uid="TaleWorlds.Engine.Mesh.AddMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddMesh_System_String_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.Engine.Mesh.AddMesh(System.String,TaleWorlds.Library.MatrixFrame)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddMesh_System_String_TaleWorlds_Library_MatrixFrame_" class="expander" data-toggle="collapse">AddMesh(String, MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddMesh_System_String_TaleWorlds_Library_MatrixFrame_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(string meshResourceName, MatrixFrame meshFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">meshResourceName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">meshFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddMesh_" data-uid="TaleWorlds.Engine.Mesh.AddMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddMesh_TaleWorlds_Engine_Mesh_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.Engine.Mesh.AddMesh(TaleWorlds.Engine.Mesh,TaleWorlds.Library.MatrixFrame)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddMesh_TaleWorlds_Engine_Mesh_TaleWorlds_Library_MatrixFrame_" class="expander" data-toggle="collapse">AddMesh(Mesh, MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddMesh_TaleWorlds_Engine_Mesh_TaleWorlds_Library_MatrixFrame_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh, MatrixFrame meshFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></span>
+        <span class="parametername">mesh</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">meshFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddTriangle_" data-uid="TaleWorlds.Engine.Mesh.AddTriangle*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddTriangle_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" data-uid="TaleWorlds.Engine.Mesh.AddTriangle(TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,System.UInt32,System.UIntPtr)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddTriangle_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" class="expander" data-toggle="collapse">AddTriangle(Vec3, Vec3, Vec3, Vec2, Vec2, Vec2, UInt32, UIntPtr)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddTriangle_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UIntPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangle(Vec3 p1, Vec3 p2, Vec3 p3, Vec2 uv1, Vec2 uv2, Vec2 uv3, uint color, UIntPtr lockHandle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p3</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv3</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">color</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></span>
+        <span class="parametername">lockHandle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_AddTriangleWithVertexColors_" data-uid="TaleWorlds.Engine.Mesh.AddTriangleWithVertexColors*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_AddTriangleWithVertexColors_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UInt32_System_UInt32_System_UIntPtr_" data-uid="TaleWorlds.Engine.Mesh.AddTriangleWithVertexColors(TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,System.UInt32,System.UInt32,System.UInt32,System.UIntPtr)"><a href="#collapsible-TaleWorlds_Engine_Mesh_AddTriangleWithVertexColors_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UInt32_System_UInt32_System_UIntPtr_" class="expander" data-toggle="collapse">AddTriangleWithVertexColors(Vec3, Vec3, Vec3, Vec2, Vec2, Vec2, UInt32, UInt32, UInt32, UIntPtr)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_AddTriangleWithVertexColors_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_System_UInt32_System_UInt32_System_UIntPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangleWithVertexColors(Vec3 p1, Vec3 p2, Vec3 p3, Vec2 uv1, Vec2 uv2, Vec2 uv3, uint c1, uint c2, uint c3, UIntPtr lockHandle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">p3</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></span>
+        <span class="parametername">uv3</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">c1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">c2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">c3</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></span>
+        <span class="parametername">lockHandle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_ClearMesh_" data-uid="TaleWorlds.Engine.Mesh.ClearMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_ClearMesh" data-uid="TaleWorlds.Engine.Mesh.ClearMesh"><a href="#collapsible-TaleWorlds_Engine_Mesh_ClearMesh" class="expander" data-toggle="collapse">ClearMesh()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_ClearMesh" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMesh()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_ComputeNormals_" data-uid="TaleWorlds.Engine.Mesh.ComputeNormals*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_ComputeNormals" data-uid="TaleWorlds.Engine.Mesh.ComputeNormals"><a href="#collapsible-TaleWorlds_Engine_Mesh_ComputeNormals" class="expander" data-toggle="collapse">ComputeNormals()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_ComputeNormals" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeNormals()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_ComputeTangents_" data-uid="TaleWorlds.Engine.Mesh.ComputeTangents*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_ComputeTangents" data-uid="TaleWorlds.Engine.Mesh.ComputeTangents"><a href="#collapsible-TaleWorlds_Engine_Mesh_ComputeTangents" class="expander" data-toggle="collapse">ComputeTangents()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_ComputeTangents" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeTangents()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_CreateCopy_" data-uid="TaleWorlds.Engine.Mesh.CreateCopy*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_CreateCopy" data-uid="TaleWorlds.Engine.Mesh.CreateCopy"><a href="#collapsible-TaleWorlds_Engine_Mesh_CreateCopy" class="expander" data-toggle="collapse">CreateCopy()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_CreateCopy" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh CreateCopy()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_CreateMesh_" data-uid="TaleWorlds.Engine.Mesh.CreateMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_CreateMesh_System_Boolean_" data-uid="TaleWorlds.Engine.Mesh.CreateMesh(System.Boolean)"><a href="#collapsible-TaleWorlds_Engine_Mesh_CreateMesh_System_Boolean_" class="expander" data-toggle="collapse">CreateMesh(Boolean)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_CreateMesh_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh CreateMesh(bool editable = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">editable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_CreateMeshWithMaterial_" data-uid="TaleWorlds.Engine.Mesh.CreateMeshWithMaterial*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_CreateMeshWithMaterial_TaleWorlds_Engine_Material_" data-uid="TaleWorlds.Engine.Mesh.CreateMeshWithMaterial(TaleWorlds.Engine.Material)"><a href="#collapsible-TaleWorlds_Engine_Mesh_CreateMeshWithMaterial_TaleWorlds_Engine_Material_" class="expander" data-toggle="collapse">CreateMeshWithMaterial(Material)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_CreateMeshWithMaterial_TaleWorlds_Engine_Material_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh CreateMeshWithMaterial(Material material)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Material.html">Material</a></span>
+        <span class="parametername">material</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_DisableContour_" data-uid="TaleWorlds.Engine.Mesh.DisableContour*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_DisableContour" data-uid="TaleWorlds.Engine.Mesh.DisableContour"><a href="#collapsible-TaleWorlds_Engine_Mesh_DisableContour" class="expander" data-toggle="collapse">DisableContour()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_DisableContour" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableContour()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetBaseMesh_" data-uid="TaleWorlds.Engine.Mesh.GetBaseMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetBaseMesh" data-uid="TaleWorlds.Engine.Mesh.GetBaseMesh"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetBaseMesh" class="expander" data-toggle="collapse">GetBaseMesh()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetBaseMesh" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh GetBaseMesh()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetBoundingBoxHeight_" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxHeight*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetBoundingBoxHeight" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxHeight"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxHeight" class="expander" data-toggle="collapse">GetBoundingBoxHeight()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxHeight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBoundingBoxHeight()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetBoundingBoxMax_" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxMax*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetBoundingBoxMax" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxMax"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxMax" class="expander" data-toggle="collapse">GetBoundingBoxMax()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxMax" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetBoundingBoxMax()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetBoundingBoxMin_" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxMin*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetBoundingBoxMin" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxMin"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxMin" class="expander" data-toggle="collapse">GetBoundingBoxMin()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxMin" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetBoundingBoxMin()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetBoundingBoxWidth_" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxWidth*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetBoundingBoxWidth" data-uid="TaleWorlds.Engine.Mesh.GetBoundingBoxWidth"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxWidth" class="expander" data-toggle="collapse">GetBoundingBoxWidth()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetBoundingBoxWidth" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBoundingBoxWidth()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetEditDataFaceCornerVertexColor_" data-uid="TaleWorlds.Engine.Mesh.GetEditDataFaceCornerVertexColor*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetEditDataFaceCornerVertexColor_System_Int32_" data-uid="TaleWorlds.Engine.Mesh.GetEditDataFaceCornerVertexColor(System.Int32)"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetEditDataFaceCornerVertexColor_System_Int32_" class="expander" data-toggle="collapse">GetEditDataFaceCornerVertexColor(Int32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetEditDataFaceCornerVertexColor_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetEditDataFaceCornerVertexColor(int index)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetFaceCornerCount_" data-uid="TaleWorlds.Engine.Mesh.GetFaceCornerCount*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetFaceCornerCount" data-uid="TaleWorlds.Engine.Mesh.GetFaceCornerCount"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetFaceCornerCount" class="expander" data-toggle="collapse">GetFaceCornerCount()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetFaceCornerCount" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetFaceCornerCount()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetFaceCount_" data-uid="TaleWorlds.Engine.Mesh.GetFaceCount*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetFaceCount" data-uid="TaleWorlds.Engine.Mesh.GetFaceCount"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetFaceCount" class="expander" data-toggle="collapse">GetFaceCount()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetFaceCount" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetFaceCount()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetFromResource_" data-uid="TaleWorlds.Engine.Mesh.GetFromResource*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetFromResource_System_String_" data-uid="TaleWorlds.Engine.Mesh.GetFromResource(System.String)"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetFromResource_System_String_" class="expander" data-toggle="collapse">GetFromResource(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetFromResource_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh GetFromResource(string meshName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">meshName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetLocalFrame_" data-uid="TaleWorlds.Engine.Mesh.GetLocalFrame*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetLocalFrame" data-uid="TaleWorlds.Engine.Mesh.GetLocalFrame"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetLocalFrame" class="expander" data-toggle="collapse">GetLocalFrame()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetLocalFrame" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetLocalFrame()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetMaterial_" data-uid="TaleWorlds.Engine.Mesh.GetMaterial*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetMaterial" data-uid="TaleWorlds.Engine.Mesh.GetMaterial"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetMaterial" class="expander" data-toggle="collapse">GetMaterial()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetMaterial" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material GetMaterial()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Material.html">Material</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_GetRandomMeshWithVdecl_" data-uid="TaleWorlds.Engine.Mesh.GetRandomMeshWithVdecl*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_GetRandomMeshWithVdecl_System_Int32_" data-uid="TaleWorlds.Engine.Mesh.GetRandomMeshWithVdecl(System.Int32)"><a href="#collapsible-TaleWorlds_Engine_Mesh_GetRandomMeshWithVdecl_System_Int32_" class="expander" data-toggle="collapse">GetRandomMeshWithVdecl(Int32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_GetRandomMeshWithVdecl_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh GetRandomMeshWithVdecl(int inputLayout)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">inputLayout</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_HasTag_" data-uid="TaleWorlds.Engine.Mesh.HasTag*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_HasTag_System_String_" data-uid="TaleWorlds.Engine.Mesh.HasTag(System.String)"><a href="#collapsible-TaleWorlds_Engine_Mesh_HasTag_System_String_" class="expander" data-toggle="collapse">HasTag(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_HasTag_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTag(string str)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">str</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_HintIndicesDynamic_" data-uid="TaleWorlds.Engine.Mesh.HintIndicesDynamic*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_HintIndicesDynamic" data-uid="TaleWorlds.Engine.Mesh.HintIndicesDynamic"><a href="#collapsible-TaleWorlds_Engine_Mesh_HintIndicesDynamic" class="expander" data-toggle="collapse">HintIndicesDynamic()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_HintIndicesDynamic" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HintIndicesDynamic()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_HintVerticesDynamic_" data-uid="TaleWorlds.Engine.Mesh.HintVerticesDynamic*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_HintVerticesDynamic" data-uid="TaleWorlds.Engine.Mesh.HintVerticesDynamic"><a href="#collapsible-TaleWorlds_Engine_Mesh_HintVerticesDynamic" class="expander" data-toggle="collapse">HintVerticesDynamic()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_HintVerticesDynamic" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HintVerticesDynamic()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_LockEditDataWrite_" data-uid="TaleWorlds.Engine.Mesh.LockEditDataWrite*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_LockEditDataWrite" data-uid="TaleWorlds.Engine.Mesh.LockEditDataWrite"><a href="#collapsible-TaleWorlds_Engine_Mesh_LockEditDataWrite" class="expander" data-toggle="collapse">LockEditDataWrite()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_LockEditDataWrite" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIntPtr LockEditDataWrite()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_PreloadForRendering_" data-uid="TaleWorlds.Engine.Mesh.PreloadForRendering*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_PreloadForRendering" data-uid="TaleWorlds.Engine.Mesh.PreloadForRendering"><a href="#collapsible-TaleWorlds_Engine_Mesh_PreloadForRendering" class="expander" data-toggle="collapse">PreloadForRendering()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_PreloadForRendering" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreloadForRendering()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_RecomputeBoundingBox_" data-uid="TaleWorlds.Engine.Mesh.RecomputeBoundingBox*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_RecomputeBoundingBox" data-uid="TaleWorlds.Engine.Mesh.RecomputeBoundingBox"><a href="#collapsible-TaleWorlds_Engine_Mesh_RecomputeBoundingBox" class="expander" data-toggle="collapse">RecomputeBoundingBox()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_RecomputeBoundingBox" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecomputeBoundingBox()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_ReleaseEditDataUser_" data-uid="TaleWorlds.Engine.Mesh.ReleaseEditDataUser*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_ReleaseEditDataUser" data-uid="TaleWorlds.Engine.Mesh.ReleaseEditDataUser"><a href="#collapsible-TaleWorlds_Engine_Mesh_ReleaseEditDataUser" class="expander" data-toggle="collapse">ReleaseEditDataUser()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_ReleaseEditDataUser" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseEditDataUser()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetAsNotEffectedBySeason_" data-uid="TaleWorlds.Engine.Mesh.SetAsNotEffectedBySeason*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetAsNotEffectedBySeason" data-uid="TaleWorlds.Engine.Mesh.SetAsNotEffectedBySeason"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetAsNotEffectedBySeason" class="expander" data-toggle="collapse">SetAsNotEffectedBySeason()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetAsNotEffectedBySeason" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsNotEffectedBySeason()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetColorAlpha_" data-uid="TaleWorlds.Engine.Mesh.SetColorAlpha*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetColorAlpha_System_UInt32_" data-uid="TaleWorlds.Engine.Mesh.SetColorAlpha(System.UInt32)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetColorAlpha_System_UInt32_" class="expander" data-toggle="collapse">SetColorAlpha(UInt32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetColorAlpha_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColorAlpha(uint newAlpha)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">newAlpha</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetColorAndStroke_" data-uid="TaleWorlds.Engine.Mesh.SetColorAndStroke*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetColorAndStroke_System_UInt32_System_UInt32_System_Boolean_" data-uid="TaleWorlds.Engine.Mesh.SetColorAndStroke(System.UInt32,System.UInt32,System.Boolean)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetColorAndStroke_System_UInt32_System_UInt32_System_Boolean_" class="expander" data-toggle="collapse">SetColorAndStroke(UInt32, UInt32, Boolean)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetColorAndStroke_System_UInt32_System_UInt32_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColorAndStroke(uint color, uint strokeColor, bool drawStroke)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">color</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">strokeColor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">drawStroke</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetContourColor_" data-uid="TaleWorlds.Engine.Mesh.SetContourColor*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetContourColor_TaleWorlds_Library_Vec3_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.Mesh.SetContourColor(TaleWorlds.Library.Vec3,System.Boolean,System.Boolean)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetContourColor_TaleWorlds_Library_Vec3_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">SetContourColor(Vec3, Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetContourColor_TaleWorlds_Library_Vec3_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContourColor(Vec3 color, bool alwaysVisible, bool maskMesh)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></span>
+        <span class="parametername">color</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">alwaysVisible</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">maskMesh</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetEditDataFaceCornerVertexColor_" data-uid="TaleWorlds.Engine.Mesh.SetEditDataFaceCornerVertexColor*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetEditDataFaceCornerVertexColor_System_Int32_System_UInt32_" data-uid="TaleWorlds.Engine.Mesh.SetEditDataFaceCornerVertexColor(System.Int32,System.UInt32)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetEditDataFaceCornerVertexColor_System_Int32_System_UInt32_" class="expander" data-toggle="collapse">SetEditDataFaceCornerVertexColor(Int32, UInt32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetEditDataFaceCornerVertexColor_System_Int32_System_UInt32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEditDataFaceCornerVertexColor(int index, uint color)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></span>
+        <span class="parametername">color</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetEditDataPolicy_" data-uid="TaleWorlds.Engine.Mesh.SetEditDataPolicy*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetEditDataPolicy_TaleWorlds_Engine_EditDataPolicy_" data-uid="TaleWorlds.Engine.Mesh.SetEditDataPolicy(TaleWorlds.Engine.EditDataPolicy)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetEditDataPolicy_TaleWorlds_Engine_EditDataPolicy_" class="expander" data-toggle="collapse">SetEditDataPolicy(EditDataPolicy)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetEditDataPolicy_TaleWorlds_Engine_EditDataPolicy_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEditDataPolicy(EditDataPolicy policy)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.EditDataPolicy.html">EditDataPolicy</a></span>
+        <span class="parametername">policy</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetExternalBoundingBox_" data-uid="TaleWorlds.Engine.Mesh.SetExternalBoundingBox*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetExternalBoundingBox_TaleWorlds_Engine_BoundingBox_" data-uid="TaleWorlds.Engine.Mesh.SetExternalBoundingBox(TaleWorlds.Engine.BoundingBox)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetExternalBoundingBox_TaleWorlds_Engine_BoundingBox_" class="expander" data-toggle="collapse">SetExternalBoundingBox(BoundingBox)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetExternalBoundingBox_TaleWorlds_Engine_BoundingBox_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExternalBoundingBox(BoundingBox bbox)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.BoundingBox.html">BoundingBox</a></span>
+        <span class="parametername">bbox</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetLocalFrame_" data-uid="TaleWorlds.Engine.Mesh.SetLocalFrame*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetLocalFrame_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.Engine.Mesh.SetLocalFrame(TaleWorlds.Library.MatrixFrame)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetLocalFrame_TaleWorlds_Library_MatrixFrame_" class="expander" data-toggle="collapse">SetLocalFrame(MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetLocalFrame_TaleWorlds_Library_MatrixFrame_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalFrame(MatrixFrame meshFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">meshFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetMaterial_" data-uid="TaleWorlds.Engine.Mesh.SetMaterial*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetMaterial_System_String_" data-uid="TaleWorlds.Engine.Mesh.SetMaterial(System.String)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetMaterial_System_String_" class="expander" data-toggle="collapse">SetMaterial(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetMaterial_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterial(string newMaterialName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">newMaterialName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetMaterial_" data-uid="TaleWorlds.Engine.Mesh.SetMaterial*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetMaterial_TaleWorlds_Engine_Material_" data-uid="TaleWorlds.Engine.Mesh.SetMaterial(TaleWorlds.Engine.Material)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetMaterial_TaleWorlds_Engine_Material_" class="expander" data-toggle="collapse">SetMaterial(Material)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetMaterial_TaleWorlds_Engine_Material_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterial(Material material)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Material.html">Material</a></span>
+        <span class="parametername">material</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetMeshRenderOrder_" data-uid="TaleWorlds.Engine.Mesh.SetMeshRenderOrder*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetMeshRenderOrder_System_Int32_" data-uid="TaleWorlds.Engine.Mesh.SetMeshRenderOrder(System.Int32)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetMeshRenderOrder_System_Int32_" class="expander" data-toggle="collapse">SetMeshRenderOrder(Int32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetMeshRenderOrder_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMeshRenderOrder(int renderOrder)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">renderOrder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetVectorArgument_" data-uid="TaleWorlds.Engine.Mesh.SetVectorArgument*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetVectorArgument_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Mesh.SetVectorArgument(System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetVectorArgument_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">SetVectorArgument(Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetVectorArgument_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArgument(float vectorArgument0, float vectorArgument1, float vectorArgument2, float vectorArgument3)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument3</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetVectorArgument2_" data-uid="TaleWorlds.Engine.Mesh.SetVectorArgument2*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetVectorArgument2_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Mesh.SetVectorArgument2(System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetVectorArgument2_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">SetVectorArgument2(Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetVectorArgument2_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArgument2(float vectorArgument0, float vectorArgument1, float vectorArgument2, float vectorArgument3)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument0</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument2</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">vectorArgument3</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_SetVisibilityMask_" data-uid="TaleWorlds.Engine.Mesh.SetVisibilityMask*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_SetVisibilityMask_TaleWorlds_Engine_VisibilityMaskFlags_" data-uid="TaleWorlds.Engine.Mesh.SetVisibilityMask(TaleWorlds.Engine.VisibilityMaskFlags)"><a href="#collapsible-TaleWorlds_Engine_Mesh_SetVisibilityMask_TaleWorlds_Engine_VisibilityMaskFlags_" class="expander" data-toggle="collapse">SetVisibilityMask(VisibilityMaskFlags)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_SetVisibilityMask_TaleWorlds_Engine_VisibilityMaskFlags_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibilityMask(VisibilityMaskFlags visibilityMask)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.VisibilityMaskFlags.html">VisibilityMaskFlags</a></span>
+        <span class="parametername">visibilityMask</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_UnlockEditDataWrite_" data-uid="TaleWorlds.Engine.Mesh.UnlockEditDataWrite*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_UnlockEditDataWrite_System_UIntPtr_" data-uid="TaleWorlds.Engine.Mesh.UnlockEditDataWrite(System.UIntPtr)"><a href="#collapsible-TaleWorlds_Engine_Mesh_UnlockEditDataWrite_System_UIntPtr_" class="expander" data-toggle="collapse">UnlockEditDataWrite(UIntPtr)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_UnlockEditDataWrite_System_UIntPtr_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlockEditDataWrite(UIntPtr handle)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></span>
+        <span class="parametername">handle</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_Mesh_UpdateBoundingBox_" data-uid="TaleWorlds.Engine.Mesh.UpdateBoundingBox*"></a>
+  
+  <h4 id="TaleWorlds_Engine_Mesh_UpdateBoundingBox" data-uid="TaleWorlds.Engine.Mesh.UpdateBoundingBox"><a href="#collapsible-TaleWorlds_Engine_Mesh_UpdateBoundingBox" class="expander" data-toggle="collapse">UpdateBoundingBox()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_Mesh_UpdateBoundingBox" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBoundingBox()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

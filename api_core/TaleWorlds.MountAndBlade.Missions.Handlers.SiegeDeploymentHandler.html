@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SiegeDeploymentHandler
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SiegeDeploymentHandler
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler">
+  <h1 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler">Class SiegeDeploymentHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html">MissionBehaviour</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html">MissionLogic</a></div>
+    <div class="level3"><a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html">DeploymentHandler</a></div>
+    <div class="level4"><span class="xref">SiegeDeploymentHandler</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_previousMissionMode">DeploymentHandler.previousMissionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_isPlayerAttacker">DeploymentHandler.isPlayerAttacker</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_DeploymentCastleBoundary">DeploymentHandler.DeploymentCastleBoundary</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_EarlyStart">DeploymentHandler.EarlyStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_ForceUpdateAllUnits">DeploymentHandler.ForceUpdateAllUnits()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_OnRemoveBehaviour">DeploymentHandler.OnRemoveBehaviour()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_SetDeploymentBoundary_TaleWorlds_Core_BattleSideEnum_">DeploymentHandler.SetDeploymentBoundary(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_RemoveAllBoundaries">DeploymentHandler.RemoveAllBoundaries()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_InitializeDeploymentPoints">DeploymentHandler.InitializeDeploymentPoints()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_team">DeploymentHandler.team</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_IsPlayerAttacker">DeploymentHandler.IsPlayerAttacker</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_MissionEnded_TaleWorlds_Core_MissionResult__">MissionLogic.MissionEnded(MissionResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnEndMissionRequest_System_Boolean__">MissionLogic.OnEndMissionRequest(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnBattleEnded">MissionLogic.OnBattleEnded()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_ShowBattleResults">MissionLogic.ShowBattleResults()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_AccelerateHorseKeyPressAnswer">MissionLogic.AccelerateHorseKeyPressAnswer()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnRetreatMission">MissionLogic.OnRetreatMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_IsAgentInteractionAllowed">MissionLogic.IsAgentInteractionAllowed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_IsOrderShoutingAllowed">MissionLogic.IsOrderShoutingAllowed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnMissionResultReady_TaleWorlds_Core_MissionResult_">MissionLogic.OnMissionResultReady(MissionResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_BehaviourType">MissionLogic.BehaviourType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAfterMissionCreated">MissionBehaviour.OnAfterMissionCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnBehaviourInitialize">MissionBehaviour.OnBehaviourInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnCreated">MissionBehaviour.OnCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissileHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Boolean_">MissionBehaviour.OnMissileHit(Agent, Agent, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissileCollisionReaction_TaleWorlds_MountAndBlade_Mission_MissileCollisionReaction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_SByte_">MissionBehaviour.OnMissileCollisionReaction(Mission.MissileCollisionReaction, Agent, Agent, SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentCreated_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentCreated(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentBuild_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_Banner_">MissionBehaviour.OnAgentBuild(Agent, Banner)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Int32_TaleWorlds_MountAndBlade_MissionWeapon__">MissionBehaviour.OnAgentHit(Agent, Agent, Int32, MissionWeapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnScoreHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_WeaponComponentData_System_Boolean_System_Single_System_Single_System_Single_TaleWorlds_Core_AgentAttackType_System_Single_TaleWorlds_MountAndBlade_BoneBodyPartType_">MissionBehaviour.OnScoreHit(Agent, Agent, WeaponComponentData, Boolean, Single, Single, Single, AgentAttackType, Single, BoneBodyPartType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnEarlyAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_">MissionBehaviour.OnEarlyAgentRemoved(Agent, Agent, AgentState, KillingBlow)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_">MissionBehaviour.OnAgentRemoved(Agent, Agent, AgentState, KillingBlow)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentDeleted_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentDeleted(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentFleeing_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentFleeing(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentPanicked_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentPanicked(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnFocusGained_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_System_Boolean_">MissionBehaviour.OnFocusGained(Agent, IFocusable, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnFocusLost_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_">MissionBehaviour.OnFocusLost(Agent, IFocusable)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAddTeam_TaleWorlds_MountAndBlade_Team_">MissionBehaviour.OnAddTeam(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_AfterAddTeam_TaleWorlds_MountAndBlade_Team_">MissionBehaviour.AfterAddTeam(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentInteraction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentInteraction(Agent, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnClearScene">MissionBehaviour.OnClearScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_HandleOnCloseMission">MissionBehaviour.HandleOnCloseMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnEndMission">MissionBehaviour.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnPreMissionTick_System_Single_">MissionBehaviour.OnPreMissionTick(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnPreDisplayMissionTick_System_Single_">MissionBehaviour.OnPreDisplayMissionTick(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissionTick_System_Single_">MissionBehaviour.OnMissionTick(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentMount_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentMount(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentDismount_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentDismount(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_IsThereAgentAction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.IsThereAgentAction(Agent, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnEntityRemoved_TaleWorlds_Engine_GameEntity_">MissionBehaviour.OnEntityRemoved(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnObjectUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_">MissionBehaviour.OnObjectUsed(Agent, UsableMissionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnObjectStoppedBeingUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_">MissionBehaviour.OnObjectStoppedBeingUsed(Agent, UsableMissionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnRenderingStarted">MissionBehaviour.OnRenderingStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissionActivate">MissionBehaviour.OnMissionActivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissionDeactivate">MissionBehaviour.OnMissionDeactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissionRestart">MissionBehaviour.OnMissionRestart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_GetCompassTargets">MissionBehaviour.GetCompassTargets()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAssignPlayerAsSergeantOfFormation_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAssignPlayerAsSergeantOfFormation(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnGetAgentState_TaleWorlds_MountAndBlade_Agent_System_Boolean_">MissionBehaviour.OnGetAgentState(Agent, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentAlarmedStateChanged_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_AIStateFlag_">MissionBehaviour.OnAgentAlarmedStateChanged(Agent, Agent.AIStateFlag)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnObjectDisabled_TaleWorlds_MountAndBlade_DestructableComponent_">MissionBehaviour.OnObjectDisabled(DestructableComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnMissionModeChange_TaleWorlds_Core_MissionMode_System_Boolean_">MissionBehaviour.OnMissionModeChange(MissionMode, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentControllerChanged_TaleWorlds_MountAndBlade_Agent_">MissionBehaviour.OnAgentControllerChanged(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnItemPickup_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_SpawnedItemEntity_">MissionBehaviour.OnItemPickup(Agent, SpawnedItemEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnRegisterBlow_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Engine_GameEntity_TaleWorlds_MountAndBlade_Blow_TaleWorlds_MountAndBlade_AttackCollisionData__TaleWorlds_MountAndBlade_MissionWeapon__">MissionBehaviour.OnRegisterBlow(Agent, Agent, GameEntity, Blow, AttackCollisionData, MissionWeapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnAgentShootMissile_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_EquipmentIndex_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Mat3_System_Boolean_System_Int32_">MissionBehaviour.OnAgentShootMissile(Agent, EquipmentIndex, Vec3, Vec3, Mat3, Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_Mission">MissionBehaviour.Mission</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_DebugInput">MissionBehaviour.DebugInput</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.Missions.Handlers.html">TaleWorlds.MountAndBlade.Missions.Handlers</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.MountAndBlade.dll</h6>
+  
+  <h5 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SiegeDeploymentHandler : DeploymentHandler, IMissionBehavior</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler__ctor_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.#ctor*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler__ctor_System_Boolean_System_Collections_Generic_Dictionary_System_Type_System_Int32__" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.#ctor(System.Boolean,System.Collections.Generic.Dictionary{System.Type,System.Int32})"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler__ctor_System_Boolean_System_Collections_Generic_Dictionary_System_Type_System_Int32__" class="expander" data-toggle="collapse">SiegeDeploymentHandler(Boolean, Dictionary&lt;Type, Int32&gt;)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler__ctor_System_Boolean_System_Collections_Generic_Dictionary_System_Type_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiegeDeploymentHandler(bool isPlayerAttacker, Dictionary&lt;Type, int&gt; weaponTypeAndCounts)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">isPlayerAttacker</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</span>
+        <span class="parametername">weaponTypeAndCounts</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeploymentPoints_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.DeploymentPoints*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeploymentPoints" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.DeploymentPoints"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeploymentPoints" class="expander" data-toggle="collapse">DeploymentPoints</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeploymentPoints" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;DeploymentPoint&gt; DeploymentPoints { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.DeploymentPoint.html">DeploymentPoint</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_AfterStart_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.AfterStart*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_AfterStart" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.AfterStart"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_AfterStart" class="expander" data-toggle="collapse">AfterStart()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_AfterStart" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AfterStart()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_AfterStart">DeploymentHandler.AfterStart()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeployAllSiegeWeaponsOfPlayer_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.DeployAllSiegeWeaponsOfPlayer*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeployAllSiegeWeaponsOfPlayer" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.DeployAllSiegeWeaponsOfPlayer"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeployAllSiegeWeaponsOfPlayer" class="expander" data-toggle="collapse">DeployAllSiegeWeaponsOfPlayer()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_DeployAllSiegeWeaponsOfPlayer" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeployAllSiegeWeaponsOfPlayer()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_FinishDeployment_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.FinishDeployment*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_FinishDeployment" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.FinishDeployment"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_FinishDeployment" class="expander" data-toggle="collapse">FinishDeployment()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_FinishDeployment" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FinishDeployment()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.DeploymentHandler.html#TaleWorlds_MountAndBlade_DeploymentHandler_FinishDeployment">DeploymentHandler.FinishDeployment()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetDeployableWeaponCount_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.GetDeployableWeaponCount*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetDeployableWeaponCount_System_Type_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.GetDeployableWeaponCount(System.Type)"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetDeployableWeaponCount_System_Type_" class="expander" data-toggle="collapse">GetDeployableWeaponCount(Type)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetDeployableWeaponCount_System_Type_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDeployableWeaponCount(Type weapon)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></span>
+        <span class="parametername">weapon</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetEstimatedAverageDefenderPosition_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.GetEstimatedAverageDefenderPosition*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetEstimatedAverageDefenderPosition" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.GetEstimatedAverageDefenderPosition"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetEstimatedAverageDefenderPosition" class="expander" data-toggle="collapse">GetEstimatedAverageDefenderPosition()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_GetEstimatedAverageDefenderPosition" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 GetEstimatedAverageDefenderPosition()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnFormationUnitsSpawned_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.OnFormationUnitsSpawned*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnFormationUnitsSpawned_TaleWorlds_MountAndBlade_Team_" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.OnFormationUnitsSpawned(TaleWorlds.MountAndBlade.Team)"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnFormationUnitsSpawned_TaleWorlds_MountAndBlade_Team_" class="expander" data-toggle="collapse">OnFormationUnitsSpawned(Team)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnFormationUnitsSpawned_TaleWorlds_MountAndBlade_Team_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFormationUnitsSpawned(Team team)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></span>
+        <span class="parametername">team</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviour.html#TaleWorlds_MountAndBlade_MissionBehaviour_OnFormationUnitsSpawned_TaleWorlds_MountAndBlade_Team_">MissionBehaviour.OnFormationUnitsSpawned(Team)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnSiegeDeploymentReady" data-uid="TaleWorlds.MountAndBlade.Missions.Handlers.SiegeDeploymentHandler.OnSiegeDeploymentReady"><a href="#collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnSiegeDeploymentReady" class="expander" data-toggle="collapse">OnSiegeDeploymentReady</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_Missions_Handlers_SiegeDeploymentHandler_OnSiegeDeploymentReady" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnSiegeDeploymentReady</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BannerEditorWidget
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BannerEditorWidget
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor.BannerEditorWidget">
+  <h1 id="TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget" data-uid="TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor.BannerEditorWidget">Class BannerEditorWidget
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.GauntletUI.PropertyOwnerObject.html">PropertyOwnerObject</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.GauntletUI.Widget.html">Widget</a></div>
+    <div class="level3"><span class="xref">BannerEditorWidget</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__cachedGlobalPosition">Widget._cachedGlobalPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AcceptDropHandler">Widget.AcceptDropHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__stateTimer">Widget._stateTimer</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__startVisualState">Widget._startVisualState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__currentVisualStateAnimationState">Widget._currentVisualStateAnimationState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__seed">Widget._seed</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ApplyActionOnAllChildren_System_Action_TaleWorlds_GauntletUI_Widget__">Widget.ApplyActionOnAllChildren(Action&lt;Widget&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetComponent__1">Widget.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AddComponent_TaleWorlds_GauntletUI_WidgetComponent_">Widget.AddComponent(WidgetComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SetMeasureAndLayoutDirty">Widget.SetMeasureAndLayoutDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SetMeasureDirty">Widget.SetMeasureDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SetLayoutDirty">Widget.SetLayoutDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AddState_System_String_">Widget.AddState(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ContainsState_System_String_">Widget.ContainsState(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SetState_System_String_">Widget.SetState(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_FindChild_TaleWorlds_Library_BindingPath_">Widget.FindChild(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_FindChild_System_String_System_Boolean_">Widget.FindChild(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_RemoveAllChildren">Widget.RemoveAllChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnUpdate_System_Single_">Widget.OnUpdate(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnParallelUpdate_System_Single_">Widget.OnParallelUpdate(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnLateUpdate_System_Single_">Widget.OnLateUpdate(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_RefreshState">Widget.RefreshState()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_UpdateAnimationPropertiesSubTask_System_Single_">Widget.UpdateAnimationPropertiesSubTask(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Measure_System_Numerics_Vector2_">Widget.Measure(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CheckIsMyChildRecursive_TaleWorlds_GauntletUI_Widget_">Widget.CheckIsMyChildRecursive(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AddChild_TaleWorlds_GauntletUI_Widget_">Widget.AddChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AddChildAtIndex_TaleWorlds_GauntletUI_Widget_System_Int32_">Widget.AddChildAtIndex(Widget, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SwapChildren_TaleWorlds_GauntletUI_Widget_TaleWorlds_GauntletUI_Widget_">Widget.SwapChildren(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnChildAdded_TaleWorlds_GauntletUI_Widget_">Widget.OnChildAdded(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_RemoveChild_TaleWorlds_GauntletUI_Widget_">Widget.RemoveChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HasChild_TaleWorlds_GauntletUI_Widget_">Widget.HasChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnChildRemoved_TaleWorlds_GauntletUI_Widget_">Widget.OnChildRemoved(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnAfterChildRemoved_TaleWorlds_GauntletUI_Widget_">Widget.OnAfterChildRemoved(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_UpdateBrushes_System_Single_">Widget.UpdateBrushes(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ParallelUpdateChildBrushes_System_Single_">Widget.ParallelUpdateChildBrushes(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetChildIndex_TaleWorlds_GauntletUI_Widget_">Widget.GetChildIndex(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetVisibleChildIndex_TaleWorlds_GauntletUI_Widget_">Widget.GetVisibleChildIndex(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetFilterChildIndex_TaleWorlds_GauntletUI_Widget_System_Func_TaleWorlds_GauntletUI_Widget_System_Boolean__">Widget.GetFilterChildIndex(Widget, Func&lt;Widget, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetChild_System_Int32_">Widget.GetChild(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Layout_System_Single_System_Single_System_Single_System_Single_">Widget.Layout(Single, Single, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HandleInput_System_Collections_Generic_IReadOnlyList_System_Int32__">Widget.HandleInput(IReadOnlyList&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsPointInsideMeasuredArea_System_Numerics_Vector2_">Widget.IsPointInsideMeasuredArea(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Hide">Widget.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Show">Widget.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetLocalPoint_System_Numerics_Vector2_">Widget.GetLocalPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SetSiblingIndex_System_Int32_">Widget.SetSiblingIndex(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetSiblingIndex">Widget.GetSiblingIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GetVisibleSiblingIndex">Widget.GetVisibleSiblingIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Render_TaleWorlds_TwoDimension_TwoDimensionContext_TaleWorlds_TwoDimension_TwoDimensionDrawContext_">Widget.Render(TwoDimensionContext, TwoDimensionDrawContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnRender_TaleWorlds_TwoDimension_TwoDimensionContext_TaleWorlds_TwoDimension_TwoDimensionDrawContext_">Widget.OnRender(TwoDimensionContext, TwoDimensionDrawContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_EventFired_System_String_System_Object___">Widget.EventFired(String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsRecursivelyVisible">Widget.IsRecursivelyVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDisconnectedFromRoot">Widget.OnDisconnectedFromRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnConnectedToRoot">Widget.OnConnectedToRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMousePressed">Widget.OnPreviewMousePressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMouseReleased">Widget.OnPreviewMouseReleased()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMouseAlternatePressed">Widget.OnPreviewMouseAlternatePressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMouseAlternateReleased">Widget.OnPreviewMouseAlternateReleased()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewDragBegin">Widget.OnPreviewDragBegin()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewDragEnd">Widget.OnPreviewDragEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewDrop">Widget.OnPreviewDrop()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMouseScroll">Widget.OnPreviewMouseScroll()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewRightStickVerticalMovement">Widget.OnPreviewRightStickVerticalMovement()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewMouseMove">Widget.OnPreviewMouseMove()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnPreviewDragHover">Widget.OnPreviewDragHover()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMousePressed">Widget.OnMousePressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMouseReleased">Widget.OnMouseReleased()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMouseAlternatePressed">Widget.OnMouseAlternatePressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMouseAlternateReleased">Widget.OnMouseAlternateReleased()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMouseMove">Widget.OnMouseMove()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnHoverBegin">Widget.OnHoverBegin()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnHoverEnd">Widget.OnHoverEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDragBegin">Widget.OnDragBegin()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDragEnd">Widget.OnDragEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDrop">Widget.OnDrop()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnMouseScroll">Widget.OnMouseScroll()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnRightStickVerticalMovement">Widget.OnRightStickVerticalMovement()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDragHoverBegin">Widget.OnDragHoverBegin()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnDragHoverEnd">Widget.OnDragHoverEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnGainFocus">Widget.OnGainFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_OnLoseFocus">Widget.OnLoseFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ColorFactor">Widget.ColorFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AlphaFactor">Widget.AlphaFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ValueFactor">Widget.ValueFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SaturationFactor">Widget.SaturationFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ExtendLeft">Widget.ExtendLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ExtendRight">Widget.ExtendRight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ExtendTop">Widget.ExtendTop</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ExtendBottom">Widget.ExtendBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_VerticalFlip">Widget.VerticalFlip</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HorizontalFlip">Widget.HorizontalFlip</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Color">Widget.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Id">Widget.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_LocalPosition">Widget.LocalPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_GlobalPosition">Widget.GlobalPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DoNotUseCustomScaleAndChildren">Widget.DoNotUseCustomScaleAndChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DoNotUseCustomScale">Widget.DoNotUseCustomScale</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__scaleToUse">Widget._scaleToUse</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget__inverseScaleToUse">Widget._inverseScaleToUse</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Size">Widget.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SuggestedWidth">Widget.SuggestedWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_SuggestedHeight">Widget.SuggestedHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledSuggestedWidth">Widget.ScaledSuggestedWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledSuggestedHeight">Widget.ScaledSuggestedHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_TweenPosition">Widget.TweenPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HoveredCursorState">Widget.HoveredCursorState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AlternateClickEventHasSpecialEvent">Widget.AlternateClickEventHasSpecialEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_PosOffset">Widget.PosOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledPositionOffset">Widget.ScaledPositionOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_PositionXOffset">Widget.PositionXOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_PositionYOffset">Widget.PositionYOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledPositionXOffset">Widget.ScaledPositionXOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledPositionYOffset">Widget.ScaledPositionYOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ParentWidget">Widget.ParentWidget</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_EventManager">Widget.EventManager</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Context">Widget.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MeasuredSize">Widget.MeasuredSize</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MarginTop">Widget.MarginTop</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MarginLeft">Widget.MarginLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MarginBottom">Widget.MarginBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MarginRight">Widget.MarginRight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMarginTop">Widget.ScaledMarginTop</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMarginLeft">Widget.ScaledMarginLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMarginBottom">Widget.ScaledMarginBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMarginRight">Widget.ScaledMarginRight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_VerticalAlignment">Widget.VerticalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HorizontalAlignment">Widget.HorizontalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Left">Widget.Left</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Top">Widget.Top</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Right">Widget.Right</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Bottom">Widget.Bottom</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ChildCount">Widget.ChildCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ForcePixelPerfectRenderPlacement">Widget.ForcePixelPerfectRenderPlacement</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_WidthSizePolicy">Widget.WidthSizePolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HeightSizePolicy">Widget.HeightSizePolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AcceptDrag">Widget.AcceptDrag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AcceptDrop">Widget.AcceptDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_HideOnDrag">Widget.HideOnDrag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DragWidget">Widget.DragWidget</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ClipContents">Widget.ClipContents</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CircularClipEnabled">Widget.CircularClipEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CircularClipRadius">Widget.CircularClipRadius</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsCircularClipRadiusHalfOfWidth">Widget.IsCircularClipRadiusHalfOfWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsCircularClipRadiusHalfOfHeight">Widget.IsCircularClipRadiusHalfOfHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CircularClipSmoothingRadius">Widget.CircularClipSmoothingRadius</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CircularClipXOffset">Widget.CircularClipXOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CircularClipYOffset">Widget.CircularClipYOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_RenderLate">Widget.RenderLate</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DoNotRenderIfNotFullyInsideScissor">Widget.DoNotRenderIfNotFullyInsideScissor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_FixedWidth">Widget.FixedWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_FixedHeight">Widget.FixedHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsHovered">Widget.IsHovered</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsDisabled">Widget.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsFocusable">Widget.IsFocusable</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsFocused">Widget.IsFocused</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsEnabled">Widget.IsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_RestartAnimationFirstFrame">Widget.RestartAnimationFirstFrame</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DoNotPassEventsToChildren">Widget.DoNotPassEventsToChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DoNotAcceptEvents">Widget.DoNotAcceptEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CanAcceptEvents">Widget.CanAcceptEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsPressed">Widget.IsPressed</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsHidden">Widget.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_IsVisible">Widget.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Sprite">Widget.Sprite</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_VisualDefinition">Widget.VisualDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_CurrentState">Widget.CurrentState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_UpdateChildrenStates">Widget.UpdateChildrenStates</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Tag">Widget.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_LayoutImp">Widget.LayoutImp</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_DropEventHandledManually">Widget.DropEventHandledManually</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AllChildrenAndThis">Widget.AllChildrenAndThis</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_AllChildren">Widget.AllChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Children">Widget.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_Parents">Widget.Parents</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MaxWidth">Widget.MaxWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MaxHeight">Widget.MaxHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MinWidth">Widget.MinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_MinHeight">Widget.MinHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMaxWidth">Widget.ScaledMaxWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMaxHeight">Widget.ScaledMaxHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMinWidth">Widget.ScaledMinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_ScaledMinHeight">Widget.ScaledMinHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_UseGlobalTimeForAnimation">Widget.UseGlobalTimeForAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.Widget.html#TaleWorlds_GauntletUI_Widget_EventFire">Widget.EventFire</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.PropertyOwnerObject.html#TaleWorlds_GauntletUI_PropertyOwnerObject_OnPropertyChanged_System_Object_System_String_">PropertyOwnerObject.OnPropertyChanged(Object, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.PropertyOwnerObject.html#TaleWorlds_GauntletUI_PropertyOwnerObject_PropertyChanged">PropertyOwnerObject.PropertyChanged</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor.html">TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.MountAndBlade.GauntletUI.Widgets.dll</h6>
+  
+  <h5 id="TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BannerEditorWidget : Widget</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget__ctor_" data-uid="TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor.BannerEditorWidget.#ctor*"></a>
+  
+  <h4 id="TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget__ctor_TaleWorlds_GauntletUI_UIContext_" data-uid="TaleWorlds.MountAndBlade.GauntletUI.Widgets.BannerEditor.BannerEditorWidget.#ctor(TaleWorlds.GauntletUI.UIContext)"><a href="#collapsible-TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget__ctor_TaleWorlds_GauntletUI_UIContext_" class="expander" data-toggle="collapse">BannerEditorWidget(UIContext)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_MountAndBlade_GauntletUI_Widgets_BannerEditor_BannerEditorWidget__ctor_TaleWorlds_GauntletUI_UIContext_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BannerEditorWidget(UIContext context)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.GauntletUI.UIContext.html">UIContext</a></span>
+        <span class="parametername">context</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.GauntletExtensions.html#TaleWorlds_GauntletUI_GauntletExtensions_SetGlobalAlphaRecursively_TaleWorlds_GauntletUI_Widget_System_Single_">GauntletExtensions.SetGlobalAlphaRecursively(Widget, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.GauntletExtensions.html#TaleWorlds_GauntletUI_GauntletExtensions_SetAlpha_TaleWorlds_GauntletUI_Widget_System_Single_">GauntletExtensions.SetAlpha(Widget, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.GauntletExtensions.html#TaleWorlds_GauntletUI_GauntletExtensions_RegisterBrushStatesOfWidget_TaleWorlds_GauntletUI_Widget_">GauntletExtensions.RegisterBrushStatesOfWidget(Widget)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.GauntletUI.GauntletExtensions.html#TaleWorlds_GauntletUI_GauntletExtensions_GetFullIDPath_TaleWorlds_GauntletUI_Widget_">GauntletExtensions.GetFullIDPath(Widget)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ClientSocketSession
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ClientSocketSession
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession">
+  <h1 id="TaleWorlds_Diamond_Socket_ClientSocketSession" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession">Class ClientSocketSession
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.Network.NetworkSession.html">NetworkSession</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Network.ClientsideSession.html">ClientsideSession</a></div>
+    <div class="level3"><span class="xref">ClientSocketSession</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_SendMessagePeerAlive">ClientsideSession.SendMessagePeerAlive()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_Connect_System_String_System_Int32_System_Boolean_">ClientsideSession.Connect(String, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_Process">ClientsideSession.Process()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_Tick">ClientsideSession.Tick()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_Port">ClientsideSession.Port</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_AliveMessageIntervalInSecs">NetworkSession.AliveMessageIntervalInSecs</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_SendDisconnectMessage">NetworkSession.SendDisconnectMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_OnSocketSet">NetworkSession.OnSocketSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_OnMessageReceived_TaleWorlds_Network_INetworkMessageReader_">NetworkSession.OnMessageReceived(INetworkMessageReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_AddMessageHandler__1_TaleWorlds_Network_MessageContractHandlerDelegate___0__">NetworkSession.AddMessageHandler&lt;T&gt;(MessageContractHandlerDelegate&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_SendMessage_TaleWorlds_Network_MessageContract_">NetworkSession.SendMessage(MessageContract)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_SendPlainMessage_TaleWorlds_Network_MessageContract_">NetworkSession.SendPlainMessage(MessageContract)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_IsActive">NetworkSession.IsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_Address">NetworkSession.Address</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_LastMessageSentTime">NetworkSession.LastMessageSentTime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_IsConnected">NetworkSession.IsConnected</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.Diamond.Socket.html">TaleWorlds.Diamond.Socket</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.Diamond.dll</h6>
+  
+  <h5 id="TaleWorlds_Diamond_Socket_ClientSocketSession_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ClientSocketSession : ClientsideSession, IClientSession</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession__ctor_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.#ctor*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession__ctor_TaleWorlds_Diamond_IClient_System_String_System_Int32_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.#ctor(TaleWorlds.Diamond.IClient,System.String,System.Int32)"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession__ctor_TaleWorlds_Diamond_IClient_System_String_System_Int32_" class="expander" data-toggle="collapse">ClientSocketSession(IClient, String, Int32)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession__ctor_TaleWorlds_Diamond_IClient_System_String_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ClientSocketSession(IClient client, string address, int port)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.IClient.html">IClient</a></span>
+        <span class="parametername">client</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">address</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">port</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnCantConnect_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnCantConnect*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnCantConnect" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnCantConnect"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnCantConnect" class="expander" data-toggle="collapse">OnCantConnect()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnCantConnect" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCantConnect()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_OnCantConnect">NetworkSession.OnCantConnect()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnConnected_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnConnected*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnConnected" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnConnected"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnConnected" class="expander" data-toggle="collapse">OnConnected()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnConnected" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnConnected()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Network.NetworkSession.html#TaleWorlds_Network_NetworkSession_OnConnected">NetworkSession.OnConnected()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnDisconnected_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnDisconnected*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_OnDisconnected" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.OnDisconnected"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnDisconnected" class="expander" data-toggle="collapse">OnDisconnected()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_OnDisconnected" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisconnected()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TaleWorlds.Network.ClientsideSession.html#TaleWorlds_Network_ClientsideSession_OnDisconnected">ClientsideSession.OnDisconnected()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_CallFunction_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#CallFunction*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_CallFunction__1_TaleWorlds_Diamond_Message_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#CallFunction``1(TaleWorlds.Diamond.Message)"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_CallFunction__1_TaleWorlds_Diamond_Message_" class="expander" data-toggle="collapse">IClientSession.CallFunction&lt;T&gt;(Message)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_CallFunction__1_TaleWorlds_Diamond_Message_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TReturn&gt; IClientSession.CallFunction&lt;TReturn&gt;(Message message)
+    where TReturn : FunctionResult</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.Message.html">Message</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TReturn&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">TReturn</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="TaleWorlds.Diamond.IClientSession.html#TaleWorlds_Diamond_IClientSession_CallFunction__1_TaleWorlds_Diamond_Message_">IClientSession.CallFunction&lt;T&gt;(Message)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Connect_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Connect*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Connect" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Connect"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Connect" class="expander" data-toggle="collapse">IClientSession.Connect()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Connect" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IClientSession.Connect()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="TaleWorlds.Diamond.IClientSession.html#TaleWorlds_Diamond_IClientSession_Connect">IClientSession.Connect()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Disconnect_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Disconnect*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Disconnect" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Disconnect"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Disconnect" class="expander" data-toggle="collapse">IClientSession.Disconnect()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Disconnect" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IClientSession.Disconnect()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="TaleWorlds.Diamond.IClientSession.html#TaleWorlds_Diamond_IClientSession_Disconnect">IClientSession.Disconnect()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Login_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Login*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Login_TaleWorlds_Diamond_LoginMessage_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#Login(TaleWorlds.Diamond.LoginMessage)"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Login_TaleWorlds_Diamond_LoginMessage_" class="expander" data-toggle="collapse">IClientSession.Login(LoginMessage)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_Login_TaleWorlds_Diamond_LoginMessage_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;LoginResult&gt; IClientSession.Login(LoginMessage message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.LoginMessage.html">LoginMessage</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="TaleWorlds.Diamond.LoginResult.html">LoginResult</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="TaleWorlds.Diamond.IClientSession.html#TaleWorlds_Diamond_IClientSession_Login_TaleWorlds_Diamond_LoginMessage_">IClientSession.Login(LoginMessage)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_SendMessage_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#SendMessage*"></a>
+  
+  <h4 id="TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_SendMessage_TaleWorlds_Diamond_Message_" data-uid="TaleWorlds.Diamond.Socket.ClientSocketSession.TaleWorlds#Diamond#IClientSession#SendMessage(TaleWorlds.Diamond.Message)"><a href="#collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_SendMessage_TaleWorlds_Diamond_Message_" class="expander" data-toggle="collapse">IClientSession.SendMessage(Message)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Diamond_Socket_ClientSocketSession_TaleWorlds_Diamond_IClientSession_SendMessage_TaleWorlds_Diamond_Message_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IClientSession.SendMessage(Message message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Diamond.Message.html">Message</a></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="TaleWorlds.Diamond.IClientSession.html#TaleWorlds_Diamond_IClientSession_SendMessage_TaleWorlds_Diamond_Message_">IClientSession.SendMessage(Message)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

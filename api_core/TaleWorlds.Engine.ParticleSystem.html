@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParticleSystem
+   | Unofficial Bannerlord API Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParticleSystem
+   | Unofficial Bannerlord API Documentation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TaleWorlds.Engine.ParticleSystem">
+  <h1 id="TaleWorlds_Engine_ParticleSystem" data-uid="TaleWorlds.Engine.ParticleSystem">Class ParticleSystem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="TaleWorlds.DotNet.NativeObject.html">NativeObject</a></div>
+    <div class="level2"><a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></div>
+    <div class="level3"><span class="xref">ParticleSystem</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html#TaleWorlds_Engine_GameEntityComponent_GetEntity">GameEntityComponent.GetEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html#TaleWorlds_Engine_GameEntityComponent_GetFirstMetaMesh">GameEntityComponent.GetFirstMetaMesh()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Finalize">NativeObject.Finalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_ManualInvalidate">NativeObject.ManualInvalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_AddUnmanagedMemoryPressure_System_Int32_">NativeObject.AddUnmanagedMemoryPressure(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Equals_System_Object_">NativeObject.Equals(Object)</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="TaleWorlds.Engine.html">TaleWorlds.Engine</a></h6>
+  <h6><strong>Assembly</strong>: TaleWorlds.Engine.dll</h6>
+  
+  <h5 id="TaleWorlds_Engine_ParticleSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineClass(&quot;rglParticle_system_instanced&quot;)]
+public sealed class ParticleSystem : GameEntityComponent</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_AddMesh_" data-uid="TaleWorlds.Engine.ParticleSystem.AddMesh*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_AddMesh_TaleWorlds_Engine_Mesh_" data-uid="TaleWorlds.Engine.ParticleSystem.AddMesh(TaleWorlds.Engine.Mesh)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_AddMesh_TaleWorlds_Engine_Mesh_" class="expander" data-toggle="collapse">AddMesh(Mesh)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_AddMesh_TaleWorlds_Engine_Mesh_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></span>
+        <span class="parametername">mesh</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToBone*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_Int32_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToBone(System.Int32,TaleWorlds.Engine.Skeleton,System.SByte,TaleWorlds.Library.MatrixFrame@)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_Int32_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" class="expander" data-toggle="collapse">CreateParticleSystemAttachedToBone(Int32, Skeleton, SByte, ref MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_Int32_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParticleSystem CreateParticleSystemAttachedToBone(int systemRuntimeId, Skeleton skeleton, sbyte boneIndex, ref MatrixFrame boneLocalFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">systemRuntimeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Skeleton.html">Skeleton</a></span>
+        <span class="parametername">skeleton</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></span>
+        <span class="parametername">boneIndex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">boneLocalFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.ParticleSystem.html">ParticleSystem</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToBone*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_String_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToBone(System.String,TaleWorlds.Engine.Skeleton,System.SByte,TaleWorlds.Library.MatrixFrame@)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_String_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" class="expander" data-toggle="collapse">CreateParticleSystemAttachedToBone(String, Skeleton, SByte, ref MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToBone_System_String_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParticleSystem CreateParticleSystemAttachedToBone(string systemName, Skeleton skeleton, sbyte boneIndex, ref MatrixFrame boneLocalFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">systemName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.Skeleton.html">Skeleton</a></span>
+        <span class="parametername">skeleton</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></span>
+        <span class="parametername">boneIndex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">boneLocalFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.ParticleSystem.html">ParticleSystem</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToEntity*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_Int32_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToEntity(System.Int32,TaleWorlds.Engine.GameEntity,TaleWorlds.Library.MatrixFrame@)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_Int32_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" class="expander" data-toggle="collapse">CreateParticleSystemAttachedToEntity(Int32, GameEntity, ref MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_Int32_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParticleSystem CreateParticleSystemAttachedToEntity(int systemRuntimeId, GameEntity parentEntity, ref MatrixFrame boneLocalFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">systemRuntimeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></span>
+        <span class="parametername">parentEntity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">boneLocalFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.ParticleSystem.html">ParticleSystem</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToEntity*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_String_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.ParticleSystem.CreateParticleSystemAttachedToEntity(System.String,TaleWorlds.Engine.GameEntity,TaleWorlds.Library.MatrixFrame@)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_String_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" class="expander" data-toggle="collapse">CreateParticleSystemAttachedToEntity(String, GameEntity, ref MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_CreateParticleSystemAttachedToEntity_System_String_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_MatrixFrame__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParticleSystem CreateParticleSystemAttachedToEntity(string systemName, GameEntity parentEntity, ref MatrixFrame boneLocalFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">systemName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></span>
+        <span class="parametername">parentEntity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">boneLocalFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Engine.ParticleSystem.html">ParticleSystem</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_GetLocalFrame_" data-uid="TaleWorlds.Engine.ParticleSystem.GetLocalFrame*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_GetLocalFrame" data-uid="TaleWorlds.Engine.ParticleSystem.GetLocalFrame"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_GetLocalFrame" class="expander" data-toggle="collapse">GetLocalFrame()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_GetLocalFrame" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetLocalFrame()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_Restart_" data-uid="TaleWorlds.Engine.ParticleSystem.Restart*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_Restart" data-uid="TaleWorlds.Engine.ParticleSystem.Restart"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_Restart" class="expander" data-toggle="collapse">Restart()</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_Restart" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Restart()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_SetEnable_" data-uid="TaleWorlds.Engine.ParticleSystem.SetEnable*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_SetEnable_System_Boolean_" data-uid="TaleWorlds.Engine.ParticleSystem.SetEnable(System.Boolean)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_SetEnable_System_Boolean_" class="expander" data-toggle="collapse">SetEnable(Boolean)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_SetEnable_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnable(bool enable)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">enable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_SetLocalFrame_" data-uid="TaleWorlds.Engine.ParticleSystem.SetLocalFrame*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_SetLocalFrame_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.ParticleSystem.SetLocalFrame(TaleWorlds.Library.MatrixFrame@)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_SetLocalFrame_TaleWorlds_Library_MatrixFrame__" class="expander" data-toggle="collapse">SetLocalFrame(ref MatrixFrame)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_SetLocalFrame_TaleWorlds_Library_MatrixFrame__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalFrame(ref MatrixFrame newLocalFrame)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></span>
+        <span class="parametername">newLocalFrame</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_SetParticleEffectByName_" data-uid="TaleWorlds.Engine.ParticleSystem.SetParticleEffectByName*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_SetParticleEffectByName_System_String_" data-uid="TaleWorlds.Engine.ParticleSystem.SetParticleEffectByName(System.String)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_SetParticleEffectByName_System_String_" class="expander" data-toggle="collapse">SetParticleEffectByName(String)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_SetParticleEffectByName_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParticleEffectByName(string effectName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">effectName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="TaleWorlds_Engine_ParticleSystem_SetRuntimeEmissionRateMultiplier_" data-uid="TaleWorlds.Engine.ParticleSystem.SetRuntimeEmissionRateMultiplier*"></a>
+  
+  <h4 id="TaleWorlds_Engine_ParticleSystem_SetRuntimeEmissionRateMultiplier_System_Single_" data-uid="TaleWorlds.Engine.ParticleSystem.SetRuntimeEmissionRateMultiplier(System.Single)"><a href="#collapsible-TaleWorlds_Engine_ParticleSystem_SetRuntimeEmissionRateMultiplier_System_Single_" class="expander" data-toggle="collapse">SetRuntimeEmissionRateMultiplier(Single)</a></h4>
+  
+  <div id="collapsible-TaleWorlds_Engine_ParticleSystem_SetRuntimeEmissionRateMultiplier_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRuntimeEmissionRateMultiplier(float multiplier)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">multiplier</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unofficial Bannerlord API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
