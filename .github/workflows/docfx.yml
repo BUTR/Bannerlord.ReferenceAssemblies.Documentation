@@ -18,7 +18,7 @@ env:
 
 jobs:
   docfx:
-    name: DocFX generation
+    name: DocFX documentation
     runs-on: windows-latest
     steps:
     - name: Checkout Repository
@@ -30,8 +30,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@master
       with:
-        dotnet-version: 3.1.x
-
+        dotnet-version: 5.0.x
     - name: Setup BUTR GPR
       uses: actions/setup-dotnet@master
       with:
@@ -39,19 +38,37 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Download docfx
-      uses: i3h/download-release-asset@v1
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
       with:
-        owner: dotnet
-        repo: docfx
-        tag: latest
-        file: docfx.zip
+        nuget-version: 'latest'
 
-    - name: Extract docfx
-      uses: DuckSoft/extract-7z-action@v1.0
-      with:
-        pathSource: docfx.zip
-        pathTarget: docfx
+    - name: Generating Newtonsoft.Json xref maps
+      run: >-
+        dotnet run -p build/SandcastleXrefGenerator -- `
+            Newtonsoft.Json 11.0.2 netstandard2.0 `
+            https://www.newtonsoft.com/json/help/html/ `
+            $PWD/docs/xrefs/Newtonsoft.Json-xrefmap.yml
+      shell: pwsh
+
+    - name: Build DocFx.Plugin.LastModified
+      run: >-
+        dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --configuration Release --output docs/_template/last-modified/plugins;
+      shell: pwsh
+
+    - name: Run DocFX
+      run: >-
+        Copy-Item "README.md" -Destination "docs/index.md";
+        nuget install docfx.console -ExcludeVersion;
+        if ($${{runner.os == 'Windows'}}) {
+          docfx.console/tools/docfx.exe metadata docs/docfx.json;
+          docfx.console/tools/docfx.exe build docs/docfx.json;
+        }
+        else {
+          mono docfx.console/tools/docfx.exe metadata docs/docfx.json;
+          mono docfx.console/tools/docfx.exe build docs/docfx.json;
+        }
+      shell: pwsh
 
     - name: Download latest ref packages
       run: >-
@@ -68,26 +85,19 @@ jobs:
         STABLE_VERSION: ${{secrets.SYNCED_GAME_STABLE_VERSION}}
         BETA_VERSION: ${{secrets.SYNCED_GAME_BETA_VERSION}}
 
-    - name: Generate Newtonsoft.Json xref maps
+    - name: Run DocFX
       run: >-
-        dotnet run -p build/SandcastleXrefGenerator -- `
-            Newtonsoft.Json 11.0.2 netstandard2.0 `
-            https://www.newtonsoft.com/json/help/html/ `
-            $PWD/docs/xrefs/Newtonsoft.Json-xrefmap.yml
+        Copy-Item "README.md" -Destination "docs/index.md";
+        nuget install docfx.console -ExcludeVersion;
+        if ($${{runner.os == 'Windows'}}) {
+          docfx.console/tools/docfx.exe metadata docs/docfx-meta-stable.json;
+          docfx.console/tools/docfx.exe build docs/docfx-build.json;
+        }
+        else {
+          mono docfx.console/tools/docfx.exe metadata docs/docfx-meta-stable.json;
+          mono docfx.console/tools/docfx.exe build docs/docfx-build.json;
+        }
       shell: pwsh
-
-    - name: Build DocFx.Plugin.LastModified
-      run: dotnet build build/DocFx.Plugin.LastModified/DocFx.Plugin.LastModified --configuration Release --output docs/_template/last-modified/plugins
-      shell: pwsh
-
-    - name: DocFX metadata
-      run: >-
-        docfx/docfx.exe metadata docs/docfx-meta-stable.json;
-      env:
-        DOCFX: true
-
-    - name: DocFX build
-      run: docfx/docfx.exe build docs/docfx-build.json;
 
     - name: Deploy DocFX
       uses: crazy-max/ghaction-github-pages@v2
