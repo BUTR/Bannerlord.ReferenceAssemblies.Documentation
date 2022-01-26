@@ -1,6 +1,10 @@
 name: DocFX
 
 on:
+  push:
+    branches: [ dev ]
+    paths:
+      - '.github/workflows/docfx.yml'
   repository_dispatch:
     types: [game_version_update, game_version_update_patch]
   workflow_dispatch:
