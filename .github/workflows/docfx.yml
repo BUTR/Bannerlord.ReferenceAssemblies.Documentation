@@ -36,7 +36,7 @@ jobs:
           dotnet run -p build/PackageDownloader -- `
             -s $stable_version -b $beta_version -n Bannerlord.ReferenceAssemblies `
             -t $PWD `
-            -f https://nuget.pkg.github.com/BUTR/index.json -u Aragas -p ${{secrets.GITHUB_TOKEN}}
+            -f https://api.nuget.org/v3/index.json
       shell: pwsh
       env:
         STABLE_VERSION: ${{secrets.SYNCED_GAME_STABLE_VERSION}}
