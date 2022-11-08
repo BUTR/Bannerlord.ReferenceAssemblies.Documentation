@@ -29,27 +29,21 @@ jobs:
 
     - name: Download latest ref packages
       run: >-
-          $stable_version=$env:STABLE_VERSION;
-          $stable_version=$stable_version.substring(1);
-          $beta_version=$env:BETA_VERSION;
-          $beta_version=$beta_version.substring(1);
-          dotnet run -p build/PackageDownloader -- `
-            -s $stable_version -b $beta_version -n Bannerlord.ReferenceAssemblies `
-            -t $PWD `
-            -f https://api.nuget.org/v3/index.json
+          $game_version=$env:GAME_VERSION;
+          $game_version=$game_version.substring(1);
+          dotnet run -p build/PackageDownloader -- -v $game_version -t $PWD -f https://api.nuget.org/v3/index.json;
       shell: pwsh
       env:
-        STABLE_VERSION: ${{secrets.SYNCED_GAME_STABLE_VERSION}}
-        BETA_VERSION: ${{secrets.SYNCED_GAME_BETA_VERSION}}
+        GAME_VERSION: ${{secrets.SYNCED_GAME_STABLE_VERSION}}
 
     - name: Run DocFX
       run: >-
         if ($${{runner.os == 'Windows'}}) {
-          docfx.console/tools/docfx.exe metadata docs/docfx-meta-stable.json;
+          docfx.console/tools/docfx.exe metadata docs/docfx-meta.json;
           docfx.console/tools/docfx.exe build docs/docfx-build.json;
         }
         else {
-          mono docfx.console/tools/docfx.exe metadata docs/docfx-meta-stable.json;
+          mono docfx.console/tools/docfx.exe metadata docs/docfx-meta.json;
           mono docfx.console/tools/docfx.exe build docs/docfx-build.json;
         }
       shell: pwsh

@@ -7,15 +7,17 @@ using NuGet.Configuration;
 using NuGet.Packaging.Core;
 using NuGet.Protocol.Core.Types;
 
-using PackageDownloader.Extensions;
 using PackageDownloader.Options;
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
+using Bannerlord.ReferenceAssemblies;
+using NuGet.Versioning;
 
 namespace PackageDownloader
 {
@@ -33,12 +35,10 @@ namespace PackageDownloader
             })
             .WithParsedAsync<DownloadLatestOptions>(async o =>
             {
-                var rxPackageName = new Regex($"{o.PackageBaseName}*", RegexOptions.Compiled);
                 var packageSource = new PackageSource(o.FeedUrl, "Feed1", true, false, false)
                 {
-                    Credentials = new PackageSourceCredential(o.FeedUrl, o.FeedUser ?? "", o.FeedPassword ?? "", true, "basic"),
-                    ProtocolVersion = 3,
-                    MaxHttpRequestsPerSource = 8
+                    Credentials = new PackageSourceCredential(o.FeedUrl, o.FeedUser ?? "", o.FeedPassword ?? "", true, string.Empty),
+                    MaxHttpRequestsPerSource = 8,
                 };
                 var sourceRepository = new SourceRepository(packageSource, Repository.Provider.GetCoreV3());
 
@@ -50,71 +50,84 @@ namespace PackageDownloader
                 var downloadResource = sourceRepository.GetResource<DownloadResource>();
 
                 Console.Write("Checking Feed...");
-                var versions = await packageLister.SearchAsync("", new SearchFilter(false) { SupportedFrameworks = new[] { "net472", "netstandard2.0" } }, 0, 100, _logger, _ct)
-                    .AsAsyncEnumerable()
-                    .Where(p => rxPackageName.IsMatch(p.Identity.Id))
+                var foundPackages = await packageLister.SearchAsync("Bannerlord.ReferenceAssemblies", new SearchFilter(true), 0, 50, _logger, _ct);
+                var packages = await foundPackages
+                    .ToAsyncEnumerable()
                     .SelectAwait(async package =>
                     {
-                        var metadatas = await finderPackageByIdResource
-                            .GetAllVersionsAsync(package.Identity.Id, sourceCacheContext, _logger, _ct)
-                            .AsAsyncEnumerable()
-                            .Select(v => metadataResource.GetMetadataAsync(new PackageIdentity(package.Identity.Id, v), sourceCacheContext, _logger, _ct))
-                            .SelectMany(x => x.ToAsyncEnumerable())
-                            .ToListAsync();
-
-                        return (PackageId: package.Identity.Id, PackageMetadatas: metadatas);
+                        var versions = MaxVersions(finderPackageByIdResource.GetAllVersionsAsync(package.Identity.Id, sourceCacheContext, _logger, _ct));
+                        var metadatas = GetMetadataAsync(versions, version => metadataResource.GetMetadataAsync(new PackageIdentity(package.Identity.Id, version), sourceCacheContext, _logger, _ct), _ct);
+                        return (PackageId: package.Identity.Id, PackageMetadatas: (IReadOnlyList<NuGetPackage>) await GetPackageVersionsAsync(metadatas, _ct).ToListAsync(_ct));
                     })
                     .ToListAsync();
                 Console.WriteLine("Done!");
 
+                Console.WriteLine("Downloading Version");
 
-                if (!string.IsNullOrEmpty(o.StableVersion))
+                var versionDict = packages.Where(x => StripEnding(x.PackageId) == x.PackageId)
+                    .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
+                        .Where(x => x.PkgVersion.Version.ToString().StartsWith(o.Version))
+                        .MaxBy(x => x.PkgVersion.Version).FirstOrDefault()))
+                    .ToDictionary(x => x.PackageId, x => x.PackageMetadata);
+
+                foreach (var (packageId, packageMetadata) in versionDict)
                 {
-                    Console.WriteLine("Downloading Stable");
-
-                    var stableDict = versions
-                        .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
-                            .Where(x => x.Identity.Version.OriginalVersion.StartsWith(o.StableVersion))
-                            .MaxBy(x => x.Identity.Version).FirstOrDefault()))
-                        .ToDictionary(x => x.PackageId, x => x.PackageMetadata);
-
-                    foreach (var (packageId, packageMetadata) in stableDict)
+                    if (packageMetadata == default)
                     {
-                        if (packageMetadata is null)
-                        {
-                            Console.WriteLine($"Couldn't find metadata for {packageId}! Skipping.");
-                            continue;
-                        }
-                        
-                        Console.Write($"Downloading {packageId} {packageMetadata.Identity.Version}...");
-                        downloadResource.GetDownloadResourceResultAsync(packageMetadata.Identity, downloadContext, Path.Combine(o.Target, "Stable"), _logger, _ct).GetAwaiter().GetResult();
-                        Console.WriteLine("Done!");
+                        Console.WriteLine($"Couldn't find metadata for {packageId}! Skipping.");
+                        continue;
                     }
-                }
 
-                if (!string.IsNullOrEmpty(o.BetaVersion))
-                {
-                    Console.WriteLine("Downloading Beta");
-
-                    var betaDict = versions
-                        .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
-                            .Where(x => x.Identity.Version.OriginalVersion.StartsWith(o.BetaVersion))
-                            .MaxBy(x => x.Identity.Version).FirstOrDefault()))
-                        .ToDictionary(x => x.PackageId, x => x.PackageMetadata);
-
-                    foreach (var (packageId, packageMetadata) in betaDict)
-                    {
-                        if (packageMetadata is null)
-                        {
-                            Console.WriteLine($"Couldn't find metadata for {packageId}! Skipping.");
-                            continue;
-                        }
-                        
-                        Console.Write($"Downloading {packageId} {packageMetadata.Identity.Version}...");
-                        downloadResource.GetDownloadResourceResultAsync(packageMetadata.Identity, downloadContext, Path.Combine(o.Target, "Beta"), _logger, _ct).GetAwaiter().GetResult();
-                        Console.WriteLine("Done!");
-                    }
+                    Console.Write($"Downloading {packageId} {packageMetadata.PkgVersion.Version}...");
+                    await downloadResource.GetDownloadResourceResultAsync(packageMetadata.PkgIdentity, downloadContext, Path.Combine(o.Target, "game"), _logger, _ct);
+                    Console.WriteLine("Done!");
                 }
             });
+
+        private static readonly IReadOnlyList<string?> Prefixes = new List<string?>
+        {
+            "Alpha",
+            "Beta",
+            "EarlyAccess",
+            "Development",
+            "Invalid",
+        };
+
+        private static string StripEnding(string packageId) => Prefixes.Aggregate(packageId, (current, value) => current.Replace($".{value}", string.Empty));
+
+        private static async IAsyncEnumerable<NuGetVersion> MaxVersions(Task<IEnumerable<NuGetVersion>> source)
+        {
+            var dict = new Dictionary<string, NuGetVersion>();
+            foreach (var version in await source)
+            {
+                var v = version.Version.ToString(3);
+                var currentMax = dict.TryGetValue(v, out var c) ? c : null;
+                if (currentMax is null) dict[v] = version;
+                // Release reset their build index. For now everything that is higher than 200000 is considered EA
+                // TODO: better fix?
+                else if (version.Version.Build < 100000 && currentMax.Version < version.Version) dict[v] = version;
+                else if (currentMax.Version < version.Version) dict[v] = version;
+            }
+            foreach (var value in dict.Values)
+                yield return value;
+        }
+
+        private static async IAsyncEnumerable<IPackageSearchMetadata> GetMetadataAsync(IAsyncEnumerable<NuGetVersion> versions, Func<NuGetVersion, Task<IPackageSearchMetadata>> getMeta, CancellationToken cancellationToken = default)
+        {
+            await foreach (var version in versions.WithCancellation(cancellationToken))
+            {
+                yield return await getMeta(version);
+            }
+        }
+
+        private static async IAsyncEnumerable<NuGetPackage> GetPackageVersionsAsync(IAsyncEnumerable<IPackageSearchMetadata> metadatas, [EnumeratorCancellation] CancellationToken cancellation = default)
+        {
+            await foreach (var metadata in metadatas.WithCancellation(cancellation))
+            {
+                var package = NuGetPackage.Get(metadata.Identity, metadata.Tags);
+                if (package != null)
+                    yield return package.Value;
+            }
+        }
     }
 }

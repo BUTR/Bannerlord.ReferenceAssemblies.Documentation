@@ -7,22 +7,16 @@ namespace PackageDownloader.Options
         [Option('t', "target", Required = true)]
         public string Target { get; set; } = default!;
 
-        [Option('s', "stableVersion", Required = true)]
-        public string StableVersion { get; set; } = default!;
-
-        [Option('b', "betaVersion", Required = false)]
-        public string? BetaVersion { get; set; }
+        [Option('v', "version", Required = true)]
+        public string Version { get; set; } = default!;
 
         [Option('f', "feedUrl", Required = false)]
         public string? FeedUrl { get; set; }
 
         [Option('u', "feedUser", Required = false)]
-        public string FeedUser { get; set; } = default!;
+        public string? FeedUser { get; set; } = default!;
 
         [Option('p', "feedPassword", Required = false)]
-        public string FeedPassword { get; set; } = default!;
-
-        [Option('n', "packageBaseName", Required = true)]
-        public string PackageBaseName { get; set; } = default!;
+        public string? FeedPassword { get; set; } = default!;
     }
 }
