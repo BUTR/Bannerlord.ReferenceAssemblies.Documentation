@@ -16,10 +16,10 @@ namespace PackageDownloader.Options
         [Option('f', "feedUrl", Required = false)]
         public string? FeedUrl { get; set; }
 
-        [Option('u', "feedUser", Required = true)]
+        [Option('u', "feedUser", Required = false)]
         public string FeedUser { get; set; } = default!;
 
-        [Option('p', "feedPassword", Required = true)]
+        [Option('p', "feedPassword", Required = false)]
         public string FeedPassword { get; set; } = default!;
 
         [Option('n', "packageBaseName", Required = true)]
