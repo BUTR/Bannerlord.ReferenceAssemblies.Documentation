@@ -17,8 +17,8 @@ namespace Bannerlord.ReferenceAssemblies
         }
 
         public readonly PackageIdentity PkgIdentity;
-        public readonly string Name => PkgIdentity.Id;
-        public readonly NuGetVersion PkgVersion  => PkgIdentity.Version;
+        public readonly string? Name => PkgIdentity?.Id;
+        public readonly NuGetVersion? PkgVersion  => PkgIdentity?.Version;
 
         public readonly uint AppId;
         public readonly uint BuildId;

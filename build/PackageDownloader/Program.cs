@@ -72,7 +72,7 @@ namespace PackageDownloader
 
                 foreach (var (packageId, packageMetadata) in versionDict)
                 {
-                    if (packageMetadata == default)
+                    if (packageMetadata.PkgIdentity == null || packageMetadata.PkgVersion is null)
                     {
                         Console.WriteLine($"Couldn't find metadata for {packageId}! Skipping.");
                         continue;
