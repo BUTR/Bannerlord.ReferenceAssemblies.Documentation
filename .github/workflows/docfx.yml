@@ -23,9 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: DocFX Setup
-      uses: butr/actions-docfx-setup@v3
+      uses: butr/actions-docfx-setup@v3.0
       with:
-        docfx-version: 2.6.0
         github-token: ${{secrets.GITHUB_TOKEN}}
 
     - name: Download latest ref packages
@@ -39,8 +38,14 @@ jobs:
 
     - name: Run DocFX
       run: >-
-        docfx metadata docs/docfx-meta.json;
-        docfx build docs/docfx-build.json;
+        if ($${{runner.os == 'Windows'}}) {
+          docfx.console/tools/docfx.exe metadata docs/docfx-meta.json;
+          docfx.console/tools/docfx.exe build docs/docfx-build.json;
+        }
+        else {
+          mono docfx.console/tools/docfx.exe metadata docs/docfx-meta.json;
+          mono docfx.console/tools/docfx.exe build docs/docfx-build.json;
+        }
       shell: pwsh
 
     - name: Deploy DocFX
