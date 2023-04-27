@@ -8,38 +8,29 @@
     ],
     "content": [
       {
-        "files": [ "**/*.yml", "**/*.md" ],
-        "src": "api",
-        "dest": "./"		
-      },
-      {
-        "files": [ "articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md" ]
+        "files": [ "**/**.{md,yml}" ],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
-	
     "resource": [
       {
-        "files": [ "langwordMapping.yml", "images/**" ],
-      },
-      {
-        "src": "../",
-        "files": [ "resources/**" ],
+        "files": [ "**/images/**", "codesnippet/**" ],
+        "exclude": [ "_site/**", "obj/**" ]
       }
     ],
-	
-    "overwrite": [ ],
     "dest": "_site",
     "globalMetadata": {
+      "_enableSearch": "true",
       "_appTitle": "Unofficial Bannerlord API Documentation",
-      "_appFooter": "Unofficial Bannerlord API Documentation",
-      "_enableSearch": true,
+      "_appName": "Bannerlord API",
+      "_appFooter": "© 2020-2023 Bannerlord's Unofficial Tools & Resources"
     },
-    "fileMetadataFiles": [],
     "template": [
       "default",
-	  "_template/dark-theme"
+	  "modern"
     ],
-    "postProcessors": ["ExtractSearchIndex"],
-    "markdownEngineName": "markdig"
+    "postProcessors": [
+	  "ExtractSearchIndex"
+	]
   }
 }
