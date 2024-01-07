@@ -65,7 +65,8 @@ namespace PackageDownloader
                 var versionDict = packages.Where(x => StripEnding(x.PackageId) == x.PackageId)
                     .Select(t => (PackageId: t.PackageId, PackageMetadata: t.PackageMetadatas
                         .Where(x => x.PkgVersion.Version.ToString().StartsWith(o.Version))
-                        .MaxBy(x => x.PkgVersion.Version)))
+                        .DefaultIfEmpty()
+                        .MaxBy(x => x.PkgVersion?.Version)))
                     .ToDictionary(x => x.PackageId, x => x.PackageMetadata);
 
                 foreach (var (packageId, packageMetadata) in versionDict)
