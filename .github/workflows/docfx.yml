@@ -34,7 +34,7 @@ jobs:
           dotnet run -p build/PackageDownloader -- -v $game_version -t $PWD -f https://api.nuget.org/v3/index.json;
       shell: pwsh
       env:
-        GAME_VERSION: ${{secrets.SYNCED_GAME_STABLE_VERSION}}
+        GAME_VERSION: ${{env.GAME_VERSION_STABLE}}
 
     - name: Run DocFX
       run: >-
