@@ -1,0 +1,2031 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TournamentVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TournamentVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM">
+
+
+
+  <h1 id="SandBox_ViewModelCollection_Tournament_TournamentVM" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM" class="text-break">
+Class TournamentVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="SandBox.ViewModelCollection.Tournament.html">Tournament</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TournamentVM : ViewModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TournamentVM</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM__ctor_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.#ctor*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM__ctor_System_Action_SandBox_Tournaments_MissionLogics_TournamentBehavior_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.#ctor(System.Action,SandBox.Tournaments.MissionLogics.TournamentBehavior)">
+  TournamentVM(Action, TournamentBehavior)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentVM(Action disableUI, TournamentBehavior tournamentBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disableUI</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>tournamentBehavior</code> <a class="xref" href="SandBox.Tournaments.MissionLogics.TournamentBehavior.html">TournamentBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_AcceptText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.AcceptText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_AcceptText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.AcceptText">
+  AcceptText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AcceptText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ActiveRoundIndex_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ActiveRoundIndex*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ActiveRoundIndex" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ActiveRoundIndex">
+  ActiveRoundIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveRoundIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BattleRewards_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BattleRewards*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BattleRewards" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BattleRewards">
+  BattleRewards
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBBindingList&lt;TournamentRewardVM&gt; BattleRewards { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="SandBox.ViewModelCollection.TournamentRewardVM.html">TournamentRewardVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetDescriptionText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetDescriptionText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetDescriptionText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetDescriptionText">
+  BetDescriptionText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BetDescriptionText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetOddsText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetOddsText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetOddsText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetOddsText">
+  BetOddsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BetOddsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetText">
+  BetText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BetText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetTitleText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetTitleText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BetTitleText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BetTitleText">
+  BetTitleText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BetTitleText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_BettedDenarsText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BettedDenarsText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_BettedDenarsText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.BettedDenarsText">
+  BettedDenarsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BettedDenarsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CanPlayerJoin_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CanPlayerJoin*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CanPlayerJoin" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CanPlayerJoin">
+  CanPlayerJoin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPlayerJoin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CancelInputKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CancelInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CancelInputKey" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CancelText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CancelText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CancelText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CancelText">
+  CancelText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CancelText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentExpectedDenarsText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentExpectedDenarsText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentExpectedDenarsText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentExpectedDenarsText">
+  CurrentExpectedDenarsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentExpectedDenarsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentMatch_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentMatch*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentMatch" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentMatch">
+  CurrentMatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentMatchVM CurrentMatch { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentMatchVM.html">TournamentMatchVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentWagerText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentWagerText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_CurrentWagerText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.CurrentWagerText">
+  CurrentWagerText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentWagerText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_DisableUI_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.DisableUI*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_DisableUI" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.DisableUI">
+  DisableUI
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action DisableUI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_DoneInputKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.DoneInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_DoneInputKey" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.DoneInputKey">
+  DoneInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM DoneInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExpectedBetDenars_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExpectedBetDenars*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExpectedBetDenars" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExpectedBetDenars">
+  ExpectedBetDenars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExpectedBetDenars { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_HasPrizeItem_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.HasPrizeItem*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_HasPrizeItem" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.HasPrizeItem">
+  HasPrizeItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPrizeItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_InitializationOver_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.InitializationOver*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_InitializationOver" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.InitializationOver">
+  InitializationOver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitializationOver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsBetButtonEnabled_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsBetButtonEnabled*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsBetButtonEnabled" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsBetButtonEnabled">
+  IsBetButtonEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBetButtonEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsBetWindowEnabled_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsBetWindowEnabled*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsBetWindowEnabled" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsBetWindowEnabled">
+  IsBetWindowEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBetWindowEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsCurrentMatchActive_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsCurrentMatchActive*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsCurrentMatchActive" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsCurrentMatchActive">
+  IsCurrentMatchActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurrentMatchActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsOver_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsOver*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsOver" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsOver">
+  IsOver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsTournamentIncomplete_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsTournamentIncomplete*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsTournamentIncomplete" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsTournamentIncomplete">
+  IsTournamentIncomplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTournamentIncomplete { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsWinnerHero_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsWinnerHero*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_IsWinnerHero" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.IsWinnerHero">
+  IsWinnerHero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWinnerHero { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_JoinTournamentText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.JoinTournamentText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_JoinTournamentText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.JoinTournamentText">
+  JoinTournamentText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string JoinTournamentText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_LeaveText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.LeaveText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_LeaveText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.LeaveText">
+  LeaveText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LeaveText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_MaximumBetValue_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.MaximumBetValue*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_MaximumBetValue" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.MaximumBetValue">
+  MaximumBetValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaximumBetValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_OverallExpectedDenarsText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OverallExpectedDenarsText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_OverallExpectedDenarsText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OverallExpectedDenarsText">
+  OverallExpectedDenarsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OverallExpectedDenarsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_PrizeItemName_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.PrizeItemName*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_PrizeItemName" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.PrizeItemName">
+  PrizeItemName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PrizeItemName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_PrizeVisual_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.PrizeVisual*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_PrizeVisual" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.PrizeVisual">
+  PrizeVisual
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageIdentifierVM PrizeVisual { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ImageIdentifierVM.html">ImageIdentifierVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round1_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round1*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round1" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round1">
+  Round1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentRoundVM Round1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentRoundVM.html">TournamentRoundVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round2_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round2*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round2" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round2">
+  Round2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentRoundVM Round2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentRoundVM.html">TournamentRoundVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round3_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round3*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round3" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round3">
+  Round3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentRoundVM Round3 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentRoundVM.html">TournamentRoundVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round4_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round4*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Round4" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Round4">
+  Round4
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentRoundVM Round4 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentRoundVM.html">TournamentRoundVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_SkipAllRoundsHint_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SkipAllRoundsHint*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_SkipAllRoundsHint" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SkipAllRoundsHint">
+  SkipAllRoundsHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HintViewModel SkipAllRoundsHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_SkipRoundText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SkipRoundText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_SkipRoundText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SkipRoundText">
+  SkipRoundText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SkipRoundText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_TotalDenarsText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TotalDenarsText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_TotalDenarsText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TotalDenarsText">
+  TotalDenarsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TotalDenarsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Tournament_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Tournament*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Tournament" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Tournament">
+  Tournament
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentBehavior Tournament { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.Tournaments.MissionLogics.TournamentBehavior.html">TournamentBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentPrizeText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentPrizeText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentPrizeText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentPrizeText">
+  TournamentPrizeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TournamentPrizeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentTitle_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentTitle*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentTitle" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentTitle">
+  TournamentTitle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TournamentTitle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentWinner_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentWinner*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentWinner" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentWinner">
+  TournamentWinner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentParticipantVM TournamentWinner { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Tournament.TournamentParticipantVM.html">TournamentParticipantVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentWinnerTitle_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentWinnerTitle*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_TournamentWinnerTitle" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.TournamentWinnerTitle">
+  TournamentWinnerTitle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TournamentWinnerTitle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_WageredDenars_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WageredDenars*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_WageredDenars" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WageredDenars">
+  WageredDenars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WageredDenars { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_WatchRoundText_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WatchRoundText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_WatchRoundText" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WatchRoundText">
+  WatchRoundText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WatchRoundText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_WinnerBanner_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WinnerBanner*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_WinnerBanner" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WinnerBanner">
+  WinnerBanner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageIdentifierVM WinnerBanner { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ImageIdentifierVM.html">ImageIdentifierVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_WinnerIntro_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WinnerIntro*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_WinnerIntro" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.WinnerIntro">
+  WinnerIntro
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WinnerIntro { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteBet_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteBet*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteBet" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteBet">
+  ExecuteBet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteBet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteHidePrizeItemTooltip_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteHidePrizeItemTooltip*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteHidePrizeItemTooltip" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteHidePrizeItemTooltip">
+  ExecuteHidePrizeItemTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteHidePrizeItemTooltip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteJoinTournament_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteJoinTournament*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteJoinTournament" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteJoinTournament">
+  ExecuteJoinTournament()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteJoinTournament()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteLeave_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteLeave*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteLeave" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteLeave">
+  ExecuteLeave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteLeave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteShowPrizeItemTooltip_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteShowPrizeItemTooltip*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteShowPrizeItemTooltip" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteShowPrizeItemTooltip">
+  ExecuteShowPrizeItemTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteShowPrizeItemTooltip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteSkipAllRounds_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteSkipAllRounds*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteSkipAllRounds" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteSkipAllRounds">
+  ExecuteSkipAllRounds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSkipAllRounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteSkipRound_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteSkipRound*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteSkipRound" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteSkipRound">
+  ExecuteSkipRound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSkipRound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteWatchRound_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteWatchRound*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_ExecuteWatchRound" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.ExecuteWatchRound">
+  ExecuteWatchRound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteWatchRound()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_OnAgentRemoved_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OnAgentRemoved*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OnAgentRemoved(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentRemoved(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAgentRemoved(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_OnFinalize_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OnFinalize*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_OnFinalize" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_Refresh_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Refresh*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_Refresh" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.Refresh">
+  Refresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Refresh()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_RefreshValues_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.RefreshValues*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_RefreshValues" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_SetCancelInputKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SetCancelInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_Tournament_TournamentVM_SetDoneInputKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SetDoneInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_Tournament_TournamentVM_SetDoneInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="SandBox.ViewModelCollection.Tournament.TournamentVM.SetDoneInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDoneInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDoneInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1885 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MBObjectManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MBObjectManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.ObjectSystem.MBObjectManager">
+
+
+
+  <h1 id="TaleWorlds_ObjectSystem_MBObjectManager" data-uid="TaleWorlds.ObjectSystem.MBObjectManager" class="text-break">
+Class MBObjectManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.ObjectSystem.html">ObjectSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.ObjectSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MBObjectManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MBObjectManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_Instance_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Instance*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_Instance" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBObjectManager Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_MaxRegisteredTypes_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.MaxRegisteredTypes*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_MaxRegisteredTypes" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.MaxRegisteredTypes">
+  MaxRegisteredTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRegisteredTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_NumRegisteredTypes_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.NumRegisteredTypes*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_NumRegisteredTypes" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.NumRegisteredTypes">
+  NumRegisteredTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumRegisteredTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_AddHandler_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.AddHandler*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_AddHandler_TaleWorlds_ObjectSystem_IObjectManagerHandler_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.AddHandler(TaleWorlds.ObjectSystem.IObjectManagerHandler)">
+  AddHandler(IObjectManagerHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHandler(IObjectManagerHandler handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="TaleWorlds.ObjectSystem.IObjectManagerHandler.html">IObjectManagerHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_AfterLoad_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.AfterLoad*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_AfterLoad" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.AfterLoad">
+  AfterLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AfterLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ApplyXslt_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ApplyXslt*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ApplyXslt_System_String_System_Xml_XmlDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ApplyXslt(System.String,System.Xml.XmlDocument)">
+  ApplyXslt(string, XmlDocument)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument ApplyXslt(string xsltPath, XmlDocument baseDocument)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xsltPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>baseDocument</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ClearAllObjects_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ClearAllObjects*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ClearAllObjects" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ClearAllObjects">
+  ClearAllObjects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllObjects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ClearAllObjectsWithType_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ClearAllObjectsWithType*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ClearAllObjectsWithType_System_Type_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ClearAllObjectsWithType(System.Type)">
+  ClearAllObjectsWithType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllObjectsWithType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ContainsObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ContainsObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ContainsObject__1_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ContainsObject``1(System.String)">
+  ContainsObject&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsObject&lt;T&gt;(string objectName) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateMergedXmlFile_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateMergedXmlFile*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateMergedXmlFile_System_Collections_Generic_List_System_Tuple_System_String_System_String___System_Collections_Generic_List_System_String__System_Boolean_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateMergedXmlFile(System.Collections.Generic.List{System.Tuple{System.String,System.String}},System.Collections.Generic.List{System.String},System.Boolean)">
+  CreateMergedXmlFile(List&lt;Tuple&lt;string, string&gt;&gt;, List&lt;string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument CreateMergedXmlFile(List&lt;Tuple&lt;string, string&gt;&gt; toBeMerged, List&lt;string&gt; xsltList, bool skipValidation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toBeMerged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>xsltList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>skipValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectFromXmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectFromXmlNode*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectFromXmlNode_System_Xml_XmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectFromXmlNode(System.Xml.XmlNode)">
+  CreateObjectFromXmlNode(XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase CreateObjectFromXmlNode(XmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectTypeList_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectTypeList*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectTypeList_System_Type_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectTypeList(System.Type)">
+  CreateObjectTypeList(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;MBObjectBase&gt; CreateObjectTypeList(Type objectClassType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectClassType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectWithoutDeserialize_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectWithoutDeserialize*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObjectWithoutDeserialize_System_Xml_XmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObjectWithoutDeserialize(System.Xml.XmlNode)">
+  CreateObjectWithoutDeserialize(XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase CreateObjectWithoutDeserialize(XmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObject__1" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObject``1">
+  CreateObject&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateObject&lt;T&gt;() where T : MBObjectBase, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_CreateObject__1_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.CreateObject``1(System.String)">
+  CreateObject&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateObject&lt;T&gt;(string stringId) where T : MBObjectBase, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_DebugDump_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.DebugDump*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_DebugDump" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.DebugDump">
+  DebugDump()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DebugDump()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_DebugPrint_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.DebugPrint*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_DebugPrint_TaleWorlds_ObjectSystem_PrintOutputDelegate_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.DebugPrint(TaleWorlds.ObjectSystem.PrintOutputDelegate)">
+  DebugPrint(PrintOutputDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugPrint(PrintOutputDelegate printOutput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>printOutput</code> <a class="xref" href="TaleWorlds.ObjectSystem.PrintOutputDelegate.html">PrintOutputDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_Destroy_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Destroy*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_Destroy" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Destroy">
+  Destroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_FindRegisteredClassPrefix_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.FindRegisteredClassPrefix*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_FindRegisteredClassPrefix_System_Type_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.FindRegisteredClassPrefix(System.Type)">
+  FindRegisteredClassPrefix(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FindRegisteredClassPrefix(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_FindRegisteredType_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.FindRegisteredType*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_FindRegisteredType_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.FindRegisteredType(System.String)">
+  FindRegisteredType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type FindRegisteredType(string classPrefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetFirstObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetFirstObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetFirstObject__1" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetFirstObject``1">
+  GetFirstObject&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetFirstObject&lt;T&gt;() where T : MBObjectBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetMergedXmlForManaged_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetMergedXmlForManaged*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetMergedXmlForManaged_System_String_System_Boolean_System_Boolean_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetMergedXmlForManaged(System.String,System.Boolean,System.Boolean,System.String)">
+  GetMergedXmlForManaged(string, bool, bool, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument GetMergedXmlForManaged(string id, bool skipValidation, bool ignoreGameTypeInclusionCheck = true, string gameType = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skipValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>ignoreGameTypeInclusionCheck</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>gameType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetMergedXmlForNative_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetMergedXmlForNative*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetMergedXmlForNative_System_String_System_Collections_Generic_List_System_String___" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetMergedXmlForNative(System.String,System.Collections.Generic.List{System.String}@)">
+  GetMergedXmlForNative(string, out List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument GetMergedXmlForNative(string id, out List&lt;string&gt; usedPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>usedPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_System_String_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject(System.String,System.String)">
+  GetObject(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase GetObject(string typeName, string objectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>objectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_TaleWorlds_ObjectSystem_MBGUID_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject(TaleWorlds.ObjectSystem.MBGUID)">
+  GetObject(MBGUID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase GetObject(MBGUID objectId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBGUID.html">MBGUID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObjectTypeIds_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObjectTypeIds*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObjectTypeIds" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObjectTypeIds">
+  GetObjectTypeIds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetObjectTypeIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObjectTypeList_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObjectTypeList*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObjectTypeList__1" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObjectTypeList``1">
+  GetObjectTypeList&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;T&gt; GetObjectTypeList&lt;T&gt;() where T : MBObjectBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject__1_System_Func___0_System_Boolean__" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject``1(System.Func{``0,System.Boolean})">
+  GetObject&lt;T&gt;(Func&lt;T, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetObject&lt;T&gt;(Func&lt;T, bool&gt; predicate) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_GetObject__1_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.GetObject``1(System.String)">
+  GetObject&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetObject&lt;T&gt;(string objectName) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_HasType_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.HasType*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_HasType_System_Type_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.HasType(System.Type)">
+  HasType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_Init_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Init*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_Init" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBObjectManager Init()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_LoadOneXmlFromFile_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadOneXmlFromFile*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_LoadOneXmlFromFile_System_String_System_String_System_Boolean_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadOneXmlFromFile(System.String,System.String,System.Boolean)">
+  LoadOneXmlFromFile(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadOneXmlFromFile(string xmlPath, string xsdPath, bool skipValidation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xmlPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>xsdPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skipValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXML_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXML*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXML_System_String_System_Boolean_System_String_System_Boolean_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXML(System.String,System.Boolean,System.String,System.Boolean)">
+  LoadXML(string, bool, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadXML(string id, bool isDevelopment, string gameType, bool skipXmlFilterForEditor = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isDevelopment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>gameType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skipXmlFilterForEditor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXMLFromFileSkipValidation_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXMLFromFileSkipValidation*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXMLFromFileSkipValidation_System_String_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXMLFromFileSkipValidation(System.String,System.String)">
+  LoadXMLFromFileSkipValidation(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlDocument LoadXMLFromFileSkipValidation(string xmlPath, string xsdPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xmlPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>xsdPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXml_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXml*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_LoadXml_System_Xml_XmlDocument_System_Boolean_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.LoadXml(System.Xml.XmlDocument,System.Boolean)">
+  LoadXml(XmlDocument, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadXml(XmlDocument doc, bool isDevelopment = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+    <dt><code>isDevelopment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_MergeTwoXmls_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.MergeTwoXmls*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_MergeTwoXmls_System_Xml_XmlDocument_System_Xml_XmlDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.MergeTwoXmls(System.Xml.XmlDocument,System.Xml.XmlDocument)">
+  MergeTwoXmls(XmlDocument, XmlDocument)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument MergeTwoXmls(XmlDocument xmlDocument1, XmlDocument xmlDocument2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xmlDocument1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+    <dt><code>xmlDocument2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_PreAfterLoad_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.PreAfterLoad*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_PreAfterLoad" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.PreAfterLoad">
+  PreAfterLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreAfterLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ReInitialize_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReInitialize*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ReInitialize" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReInitialize">
+  ReInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ReadObjectReferenceFromXml_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReadObjectReferenceFromXml*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ReadObjectReferenceFromXml_System_String_System_Type_System_Xml_XmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReadObjectReferenceFromXml(System.String,System.Type,System.Xml.XmlNode)">
+  ReadObjectReferenceFromXml(string, Type, XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase ReadObjectReferenceFromXml(string attributeName, Type objectType, XmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>objectType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ReadObjectReferenceFromXml_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReadObjectReferenceFromXml*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ReadObjectReferenceFromXml__1_System_String_System_Xml_XmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ReadObjectReferenceFromXml``1(System.String,System.Xml.XmlNode)">
+  ReadObjectReferenceFromXml&lt;T&gt;(string, XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T ReadObjectReferenceFromXml&lt;T&gt;(string attributeName, XmlNode node) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterObject__1___0_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterObject``1(``0)">
+  RegisterObject&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RegisterObject&lt;T&gt;(T obj) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterPresumedObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterPresumedObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterPresumedObject__1___0_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterPresumedObject``1(``0)">
+  RegisterPresumedObject&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RegisterPresumedObject&lt;T&gt;(T obj) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterType_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterType*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_RegisterType__1_System_String_System_String_System_UInt32_System_Boolean_System_Boolean_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RegisterType``1(System.String,System.String,System.UInt32,System.Boolean,System.Boolean)">
+  RegisterType&lt;T&gt;(string, string, uint, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterType&lt;T&gt;(string classPrefix, string classListPrefix, uint typeId, bool autoCreateInstance = true, bool isTemporary = false) where T : MBObjectBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classListPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>typeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>autoCreateInstance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isTemporary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_RemoveHandler_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RemoveHandler*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_RemoveHandler_TaleWorlds_ObjectSystem_IObjectManagerHandler_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RemoveHandler(TaleWorlds.ObjectSystem.IObjectManagerHandler)">
+  RemoveHandler(IObjectManagerHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveHandler(IObjectManagerHandler handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="TaleWorlds.ObjectSystem.IObjectManagerHandler.html">IObjectManagerHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_RemoveTemporaryTypes_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RemoveTemporaryTypes*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_RemoveTemporaryTypes" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.RemoveTemporaryTypes">
+  RemoveTemporaryTypes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTemporaryTypes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ToXDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ToXDocument*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ToXDocument_System_Xml_XmlDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ToXDocument(System.Xml.XmlDocument)">
+  ToXDocument(XmlDocument)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XDocument ToXDocument(XmlDocument xmlDocument)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xmlDocument</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.linq.xdocument">XDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_ToXmlDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ToXmlDocument*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_ToXmlDocument_System_Xml_Linq_XDocument_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.ToXmlDocument(System.Xml.Linq.XDocument)">
+  ToXmlDocument(XDocument)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlDocument ToXmlDocument(XDocument xDocument)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xDocument</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.linq.xdocument">XDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmldocument">XmlDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_UnregisterNonReadyObjects_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.UnregisterNonReadyObjects*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_UnregisterNonReadyObjects" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.UnregisterNonReadyObjects">
+  UnregisterNonReadyObjects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterNonReadyObjects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectManager_UnregisterObject_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.UnregisterObject*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectManager_UnregisterObject_TaleWorlds_ObjectSystem_MBObjectBase_" data-uid="TaleWorlds.ObjectSystem.MBObjectManager.UnregisterObject(TaleWorlds.ObjectSystem.MBObjectBase)">
+  UnregisterObject(MBObjectBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterObject(MBObjectBase obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AgentBehavior | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AgentBehavior | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior">
+
+
+
+  <h1 id="SandBox_Missions_AgentBehaviors_AgentBehavior" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior" class="text-break">
+Class AgentBehavior  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.Missions.html">Missions</a>.<a class="xref" href="SandBox.Missions.AgentBehaviors.html">AgentBehaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AgentBehavior</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AgentBehavior</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.ChangeLocationBehavior.html">ChangeLocationBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.EscortAgentBehavior.html">EscortAgentBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.FightBehavior.html">FightBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.FleeBehavior.html">FleeBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.FollowAgentBehavior.html">FollowAgentBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.PatrollingGuardBehavior.html">PatrollingGuardBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.ScriptBehavior.html">ScriptBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.StandGuardBehavior.html">StandGuardBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.TalkBehavior.html">TalkBehavior</a></div>
+      <div><a class="xref" href="SandBox.Missions.AgentBehaviors.WalkingBehavior.html">WalkingBehavior</a></div>
+      <div><a class="xref" href="SandBox.Source.Missions.AgentBehaviors.BoardGameAgentBehavior.html">BoardGameAgentBehavior</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior__ctor_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.#ctor*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior__ctor_SandBox_Missions_AgentBehaviors_AgentBehaviorGroup_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.#ctor(SandBox.Missions.AgentBehaviors.AgentBehaviorGroup)">
+  AgentBehavior(AgentBehaviorGroup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AgentBehavior(AgentBehaviorGroup behaviorGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>behaviorGroup</code> <a class="xref" href="SandBox.Missions.AgentBehaviors.AgentBehaviorGroup.html">AgentBehaviorGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_BehaviorGroup" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.BehaviorGroup">
+  BehaviorGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly AgentBehaviorGroup BehaviorGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.Missions.AgentBehaviors.AgentBehaviorGroup.html">AgentBehaviorGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_CheckTime" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.CheckTime">
+  CheckTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CheckTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_IsActive_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.IsActive*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_IsActive" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.IsActive">
+  IsActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_Mission_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Mission*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_Mission" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Mission">
+  Mission
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mission Mission { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.Mission.html">Mission</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_Navigator_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Navigator*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_Navigator" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Navigator">
+  Navigator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentNavigator Navigator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.AgentNavigator.html">AgentNavigator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_OwnerAgent_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OwnerAgent*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_OwnerAgent" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OwnerAgent">
+  OwnerAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent OwnerAgent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_CheckStartWithBehavior_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.CheckStartWithBehavior*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_CheckStartWithBehavior" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.CheckStartWithBehavior">
+  CheckStartWithBehavior()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckStartWithBehavior()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_ConversationTick_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.ConversationTick*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_ConversationTick" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.ConversationTick">
+  ConversationTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ConversationTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_GetAvailability_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.GetAvailability*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_GetAvailability_System_Boolean_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.GetAvailability(System.Boolean)">
+  GetAvailability(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetAvailability(bool isSimulation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isSimulation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_GetDebugInfo_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.GetDebugInfo*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_GetDebugInfo" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.GetDebugInfo">
+  GetDebugInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetDebugInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnActivate_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnActivate*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnActivate" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnActivate">
+  OnActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnAgentRemoved_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnAgentRemoved*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnAgentRemoved(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentRemoved(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentRemoved(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnDeactivate_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnDeactivate*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnDeactivate" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnDeactivate">
+  OnDeactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDeactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnSpecialTargetChanged_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnSpecialTargetChanged*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_OnSpecialTargetChanged" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.OnSpecialTargetChanged">
+  OnSpecialTargetChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSpecialTargetChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_SetCustomWanderTarget_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.SetCustomWanderTarget*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_SetCustomWanderTarget_TaleWorlds_MountAndBlade_UsableMachine_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.SetCustomWanderTarget(TaleWorlds.MountAndBlade.UsableMachine)">
+  SetCustomWanderTarget(UsableMachine)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCustomWanderTarget(UsableMachine customUsableMachine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>customUsableMachine</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.UsableMachine.html">UsableMachine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Missions_AgentBehaviors_AgentBehavior_Tick_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Tick*"></a>
+
+  <h3 id="SandBox_Missions_AgentBehaviors_AgentBehavior_Tick_System_Single_System_Boolean_" data-uid="SandBox.Missions.AgentBehaviors.AgentBehavior.Tick(System.Single,System.Boolean)">
+  Tick(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Tick(float dt, bool isSimulation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>isSimulation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

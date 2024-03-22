@@ -1,0 +1,1803 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Game | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Game | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Core.Game">
+
+
+
+  <h1 id="TaleWorlds_Core_Game" data-uid="TaleWorlds.Core.Game" class="text-break">
+Class Game  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableRootClass(5000)]
+public sealed class Game : IGameStateManagerOwner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Game</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Core.IGameStateManagerOwner.html">IGameStateManagerOwner</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_Core_Game_AfterTick" data-uid="TaleWorlds.Core.Game.AfterTick">
+  AfterTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;float&gt; AfterTick</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Core_Game_ApplicationTime_" data-uid="TaleWorlds.Core.Game.ApplicationTime*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_ApplicationTime" data-uid="TaleWorlds.Core.Game.ApplicationTime">
+  ApplicationTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ApplicationTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_BannerVisualCreator_" data-uid="TaleWorlds.Core.Game.BannerVisualCreator*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_BannerVisualCreator" data-uid="TaleWorlds.Core.Game.BannerVisualCreator">
+  BannerVisualCreator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBannerVisualCreator BannerVisualCreator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IBannerVisualCreator.html">IBannerVisualCreator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_BasicModels_" data-uid="TaleWorlds.Core.Game.BasicModels*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_BasicModels" data-uid="TaleWorlds.Core.Game.BasicModels">
+  BasicModels
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicGameModels BasicModels { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BasicGameModels.html">BasicGameModels</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CheatMode_" data-uid="TaleWorlds.Core.Game.CheatMode*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CheatMode" data-uid="TaleWorlds.Core.Game.CheatMode">
+  CheatMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheatMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_Current_" data-uid="TaleWorlds.Core.Game.Current*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_Current" data-uid="TaleWorlds.Core.Game.Current">
+  Current
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Game Current { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Game.html">Game</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CurrentState_" data-uid="TaleWorlds.Core.Game.CurrentState*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CurrentState" data-uid="TaleWorlds.Core.Game.CurrentState">
+  CurrentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Game.State CurrentState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Game.html">Game</a>.<a class="xref" href="TaleWorlds.Core.Game.State.html">State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultBannerEffects_" data-uid="TaleWorlds.Core.Game.DefaultBannerEffects*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultBannerEffects" data-uid="TaleWorlds.Core.Game.DefaultBannerEffects">
+  DefaultBannerEffects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultBannerEffects DefaultBannerEffects { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.DefaultBannerEffects.html">DefaultBannerEffects</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultCharacterAttributes_" data-uid="TaleWorlds.Core.Game.DefaultCharacterAttributes*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultCharacterAttributes" data-uid="TaleWorlds.Core.Game.DefaultCharacterAttributes">
+  DefaultCharacterAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultCharacterAttributes DefaultCharacterAttributes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.DefaultCharacterAttributes.html">DefaultCharacterAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultItemCategories_" data-uid="TaleWorlds.Core.Game.DefaultItemCategories*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultItemCategories" data-uid="TaleWorlds.Core.Game.DefaultItemCategories">
+  DefaultItemCategories
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultItemCategories DefaultItemCategories { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.DefaultItemCategories.html">DefaultItemCategories</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultMonster_" data-uid="TaleWorlds.Core.Game.DefaultMonster*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultMonster" data-uid="TaleWorlds.Core.Game.DefaultMonster">
+  DefaultMonster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Monster DefaultMonster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Monster.html">Monster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultSiegeEngineTypes_" data-uid="TaleWorlds.Core.Game.DefaultSiegeEngineTypes*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultSiegeEngineTypes" data-uid="TaleWorlds.Core.Game.DefaultSiegeEngineTypes">
+  DefaultSiegeEngineTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultSiegeEngineTypes DefaultSiegeEngineTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.DefaultSiegeEngineTypes.html">DefaultSiegeEngineTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DefaultSkills_" data-uid="TaleWorlds.Core.Game.DefaultSkills*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DefaultSkills" data-uid="TaleWorlds.Core.Game.DefaultSkills">
+  DefaultSkills
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultSkills DefaultSkills { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.DefaultSkills.html">DefaultSkills</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_EventManager_" data-uid="TaleWorlds.Core.Game.EventManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_EventManager" data-uid="TaleWorlds.Core.Game.EventManager">
+  EventManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventManager EventManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.EventSystem.EventManager.html">EventManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GameManager_" data-uid="TaleWorlds.Core.Game.GameManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GameManager" data-uid="TaleWorlds.Core.Game.GameManager">
+  GameManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameManagerBase GameManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.GameManagerBase.html">GameManagerBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GameStateManager_" data-uid="TaleWorlds.Core.Game.GameStateManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GameStateManager" data-uid="TaleWorlds.Core.Game.GameStateManager">
+  GameStateManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameStateManager GameStateManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.GameStateManager.html">GameStateManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GameTextManager_" data-uid="TaleWorlds.Core.Game.GameTextManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GameTextManager" data-uid="TaleWorlds.Core.Game.GameTextManager">
+  GameTextManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameTextManager GameTextManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.GameTextManager.html">GameTextManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GameType_" data-uid="TaleWorlds.Core.Game.GameType*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GameType" data-uid="TaleWorlds.Core.Game.GameType">
+  GameType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(3)]
+public GameType GameType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.GameType.html">GameType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_IsDevelopmentMode_" data-uid="TaleWorlds.Core.Game.IsDevelopmentMode*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_IsDevelopmentMode" data-uid="TaleWorlds.Core.Game.IsDevelopmentMode">
+  IsDevelopmentMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDevelopmentMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_IsEditModeOn_" data-uid="TaleWorlds.Core.Game.IsEditModeOn*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_IsEditModeOn" data-uid="TaleWorlds.Core.Game.IsEditModeOn">
+  IsEditModeOn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEditModeOn { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_MonsterMissionDataCreator_" data-uid="TaleWorlds.Core.Game.MonsterMissionDataCreator*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_MonsterMissionDataCreator" data-uid="TaleWorlds.Core.Game.MonsterMissionDataCreator">
+  MonsterMissionDataCreator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMonsterMissionDataCreator MonsterMissionDataCreator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IMonsterMissionDataCreator.html">IMonsterMissionDataCreator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_NextUniqueTroopSeed_" data-uid="TaleWorlds.Core.Game.NextUniqueTroopSeed*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_NextUniqueTroopSeed" data-uid="TaleWorlds.Core.Game.NextUniqueTroopSeed">
+  NextUniqueTroopSeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NextUniqueTroopSeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_ObjectManager_" data-uid="TaleWorlds.Core.Game.ObjectManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_ObjectManager" data-uid="TaleWorlds.Core.Game.ObjectManager">
+  ObjectManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectManager ObjectManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_PlayerTroop_" data-uid="TaleWorlds.Core.Game.PlayerTroop*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_PlayerTroop" data-uid="TaleWorlds.Core.Game.PlayerTroop">
+  PlayerTroop
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(8)]
+public BasicCharacterObject PlayerTroop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_UnitSpawnPrioritization_" data-uid="TaleWorlds.Core.Game.UnitSpawnPrioritization*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_UnitSpawnPrioritization" data-uid="TaleWorlds.Core.Game.UnitSpawnPrioritization">
+  UnitSpawnPrioritization
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitSpawnPrioritizations UnitSpawnPrioritization { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.UnitSpawnPrioritizations.html">UnitSpawnPrioritizations</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Core_Game_AddGameHandler_" data-uid="TaleWorlds.Core.Game.AddGameHandler*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_AddGameHandler__1" data-uid="TaleWorlds.Core.Game.AddGameHandler``1">
+  AddGameHandler&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T AddGameHandler&lt;T&gt;() where T : GameHandler, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_AddGameModelsManager_" data-uid="TaleWorlds.Core.Game.AddGameModelsManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_AddGameModelsManager__1_System_Collections_Generic_IEnumerable_TaleWorlds_Core_GameModel__" data-uid="TaleWorlds.Core.Game.AddGameModelsManager``1(System.Collections.Generic.IEnumerable{TaleWorlds.Core.GameModel})">
+  AddGameModelsManager&lt;T&gt;(IEnumerable&lt;GameModel&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T AddGameModelsManager&lt;T&gt;(IEnumerable&lt;GameModel&gt; inputComponents) where T : GameModelsManager</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.GameModel.html">GameModel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CreateBannerVisual_" data-uid="TaleWorlds.Core.Game.CreateBannerVisual*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CreateBannerVisual_TaleWorlds_Core_Banner_" data-uid="TaleWorlds.Core.Game.CreateBannerVisual(TaleWorlds.Core.Banner)">
+  CreateBannerVisual(Banner)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBannerVisual CreateBannerVisual(Banner banner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>banner</code> <a class="xref" href="TaleWorlds.Core.Banner.html">Banner</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IBannerVisual.html">IBannerVisual</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CreateGame_" data-uid="TaleWorlds.Core.Game.CreateGame*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CreateGame_TaleWorlds_Core_GameType_TaleWorlds_Core_GameManagerBase_" data-uid="TaleWorlds.Core.Game.CreateGame(TaleWorlds.Core.GameType,TaleWorlds.Core.GameManagerBase)">
+  CreateGame(GameType, GameManagerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Game CreateGame(GameType gameType, GameManagerBase gameManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameType</code> <a class="xref" href="TaleWorlds.Core.GameType.html">GameType</a></dt>
+    <dd></dd>
+    <dt><code>gameManager</code> <a class="xref" href="TaleWorlds.Core.GameManagerBase.html">GameManagerBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Game.html">Game</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CreateGame_" data-uid="TaleWorlds.Core.Game.CreateGame*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CreateGame_TaleWorlds_Core_GameType_TaleWorlds_Core_GameManagerBase_System_Int32_" data-uid="TaleWorlds.Core.Game.CreateGame(TaleWorlds.Core.GameType,TaleWorlds.Core.GameManagerBase,System.Int32)">
+  CreateGame(GameType, GameManagerBase, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Game CreateGame(GameType gameType, GameManagerBase gameManager, int seed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameType</code> <a class="xref" href="TaleWorlds.Core.GameType.html">GameType</a></dt>
+    <dd></dd>
+    <dt><code>gameManager</code> <a class="xref" href="TaleWorlds.Core.GameManagerBase.html">GameManagerBase</a></dt>
+    <dd></dd>
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Game.html">Game</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_CreateGameManager_" data-uid="TaleWorlds.Core.Game.CreateGameManager*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_CreateGameManager" data-uid="TaleWorlds.Core.Game.CreateGameManager">
+  CreateGameManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateGameManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_Destroy_" data-uid="TaleWorlds.Core.Game.Destroy*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_Destroy" data-uid="TaleWorlds.Core.Game.Destroy">
+  Destroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_DoLoading_" data-uid="TaleWorlds.Core.Game.DoLoading*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_DoLoading" data-uid="TaleWorlds.Core.Game.DoLoading">
+  DoLoading()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoLoading()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GetDefaultEquipmentWithName_" data-uid="TaleWorlds.Core.Game.GetDefaultEquipmentWithName*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GetDefaultEquipmentWithName_System_String_" data-uid="TaleWorlds.Core.Game.GetDefaultEquipmentWithName(System.String)">
+  GetDefaultEquipmentWithName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Equipment GetDefaultEquipmentWithName(string equipmentName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Equipment.html">Equipment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_GetGameHandler_" data-uid="TaleWorlds.Core.Game.GetGameHandler*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_GetGameHandler__1" data-uid="TaleWorlds.Core.Game.GetGameHandler``1">
+  GetGameHandler&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetGameHandler&lt;T&gt;() where T : GameHandler</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_Initialize_" data-uid="TaleWorlds.Core.Game.Initialize*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_Initialize" data-uid="TaleWorlds.Core.Game.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_InitializeDefaultGameObjects_" data-uid="TaleWorlds.Core.Game.InitializeDefaultGameObjects*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_InitializeDefaultGameObjects" data-uid="TaleWorlds.Core.Game.InitializeDefaultGameObjects">
+  InitializeDefaultGameObjects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeDefaultGameObjects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_ItemObjectDeserialized_" data-uid="TaleWorlds.Core.Game.ItemObjectDeserialized*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_ItemObjectDeserialized_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.Core.Game.ItemObjectDeserialized(TaleWorlds.Core.ItemObject)">
+  ItemObjectDeserialized(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ItemObjectDeserialized(ItemObject itemObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemObject</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_LoadBasicFiles_" data-uid="TaleWorlds.Core.Game.LoadBasicFiles*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_LoadBasicFiles" data-uid="TaleWorlds.Core.Game.LoadBasicFiles">
+  LoadBasicFiles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadBasicFiles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_LoadSaveGame_" data-uid="TaleWorlds.Core.Game.LoadSaveGame*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_LoadSaveGame_TaleWorlds_SaveSystem_Load_LoadResult_TaleWorlds_Core_GameManagerBase_" data-uid="TaleWorlds.Core.Game.LoadSaveGame(TaleWorlds.SaveSystem.Load.LoadResult,TaleWorlds.Core.GameManagerBase)">
+  LoadSaveGame(LoadResult, GameManagerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Game LoadSaveGame(LoadResult loadResult, GameManagerBase gameManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loadResult</code> <a class="xref" href="TaleWorlds.SaveSystem.Load.LoadResult.html">LoadResult</a></dt>
+    <dd></dd>
+    <dt><code>gameManager</code> <a class="xref" href="TaleWorlds.Core.GameManagerBase.html">GameManagerBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Game.html">Game</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_OnFinalize_" data-uid="TaleWorlds.Core.Game.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_OnFinalize" data-uid="TaleWorlds.Core.Game.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_OnGameStart_" data-uid="TaleWorlds.Core.Game.OnGameStart*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_OnGameStart" data-uid="TaleWorlds.Core.Game.OnGameStart">
+  OnGameStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGameStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_OnMissionIsStarting_" data-uid="TaleWorlds.Core.Game.OnMissionIsStarting*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_OnMissionIsStarting_System_String_TaleWorlds_Core_MissionInitializerRecord_" data-uid="TaleWorlds.Core.Game.OnMissionIsStarting(System.String,TaleWorlds.Core.MissionInitializerRecord)">
+  OnMissionIsStarting(string, MissionInitializerRecord)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMissionIsStarting(string missionName, MissionInitializerRecord rec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>rec</code> <a class="xref" href="TaleWorlds.Core.MissionInitializerRecord.html">MissionInitializerRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_OnStateChanged_" data-uid="TaleWorlds.Core.Game.OnStateChanged*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_OnStateChanged_TaleWorlds_Core_GameState_" data-uid="TaleWorlds.Core.Game.OnStateChanged(TaleWorlds.Core.GameState)">
+  OnStateChanged(GameState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStateChanged(GameState oldState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldState</code> <a class="xref" href="TaleWorlds.Core.GameState.html">GameState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_RegisterTypes_" data-uid="TaleWorlds.Core.Game.RegisterTypes*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_RegisterTypes_TaleWorlds_Core_GameType_TaleWorlds_ObjectSystem_MBObjectManager_" data-uid="TaleWorlds.Core.Game.RegisterTypes(TaleWorlds.Core.GameType,TaleWorlds.ObjectSystem.MBObjectManager)">
+  RegisterTypes(GameType, MBObjectManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterTypes(GameType gameType, MBObjectManager objectManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameType</code> <a class="xref" href="TaleWorlds.Core.GameType.html">GameType</a></dt>
+    <dd></dd>
+    <dt><code>objectManager</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_RemoveGameHandler_" data-uid="TaleWorlds.Core.Game.RemoveGameHandler*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_RemoveGameHandler__1" data-uid="TaleWorlds.Core.Game.RemoveGameHandler``1">
+  RemoveGameHandler&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveGameHandler&lt;T&gt;() where T : GameHandler</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_Save_" data-uid="TaleWorlds.Core.Game.Save*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_Save_TaleWorlds_SaveSystem_MetaData_System_String_TaleWorlds_SaveSystem_ISaveDriver_System_Action_TaleWorlds_Library_SaveResult__" data-uid="TaleWorlds.Core.Game.Save(TaleWorlds.SaveSystem.MetaData,System.String,TaleWorlds.SaveSystem.ISaveDriver,System.Action{TaleWorlds.Library.SaveResult})">
+  Save(MetaData, string, ISaveDriver, Action&lt;SaveResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(MetaData metaData, string saveName, ISaveDriver driver, Action&lt;SaveResult&gt; onSaveCompleted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaData</code> <a class="xref" href="TaleWorlds.SaveSystem.MetaData.html">MetaData</a></dt>
+    <dd></dd>
+    <dt><code>saveName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>driver</code> <a class="xref" href="TaleWorlds.SaveSystem.ISaveDriver.html">ISaveDriver</a></dt>
+    <dd></dd>
+    <dt><code>onSaveCompleted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.Library.SaveResult.html">SaveResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_SetBasicModels_" data-uid="TaleWorlds.Core.Game.SetBasicModels*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_SetBasicModels_System_Collections_Generic_IEnumerable_TaleWorlds_Core_GameModel__" data-uid="TaleWorlds.Core.Game.SetBasicModels(System.Collections.Generic.IEnumerable{TaleWorlds.Core.GameModel})">
+  SetBasicModels(IEnumerable&lt;GameModel&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBasicModels(IEnumerable&lt;GameModel&gt; models)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>models</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.GameModel.html">GameModel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_Game_SetDefaultEquipments_" data-uid="TaleWorlds.Core.Game.SetDefaultEquipments*"></a>
+
+  <h3 id="TaleWorlds_Core_Game_SetDefaultEquipments_System_Collections_Generic_IReadOnlyDictionary_System_String_TaleWorlds_Core_Equipment__" data-uid="TaleWorlds.Core.Game.SetDefaultEquipments(System.Collections.Generic.IReadOnlyDictionary{System.String,TaleWorlds.Core.Equipment})">
+  SetDefaultEquipments(IReadOnlyDictionary&lt;string, Equipment&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultEquipments(IReadOnlyDictionary&lt;string, Equipment&gt; defaultEquipments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>defaultEquipments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Core.Equipment.html">Equipment</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_Core_Game_OnGameCreated" data-uid="TaleWorlds.Core.Game.OnGameCreated">
+  OnGameCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action OnGameCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_Core_Game_OnItemDeserializedEvent" data-uid="TaleWorlds.Core.Game.OnItemDeserializedEvent">
+  OnItemDeserializedEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ItemObject&gt; OnItemDeserializedEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

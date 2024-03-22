@@ -1,0 +1,2535 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ConversationManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ConversationManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager" class="text-break">
+Class ConversationManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.html">Conversation</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConversationManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ConversationManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager__ctor_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager__ctor" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.#ctor">
+  ConversationManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConversationManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ActiveToken" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ActiveToken">
+  ActiveToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveToken</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationAnimationManager" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationAnimationManager">
+  ConversationAnimationManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConversationAnimationManager ConversationAnimationManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationAnimationManager.html">ConversationAnimationManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurrentConversationIsFirst" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurrentConversationIsFirst">
+  CurrentConversationIsFirst
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentConversationIsFirst</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurrentFaceAnimationRecord" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurrentFaceAnimationRecord">
+  CurrentFaceAnimationRecord
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentFaceAnimationRecord</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DetailedDebugLog" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DetailedDebugLog">
+  DetailedDebugLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tuple&lt;string, CharacterObject&gt;&gt; DetailedDebugLog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_LastSelectedButtonIndex" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.LastSelectedButtonIndex">
+  LastSelectedButtonIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastSelectedButtonIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_LastSelectedDialog" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.LastSelectedDialog">
+  LastSelectedDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LastSelectedDialog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationAgents_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationAgents*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationAgents" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationAgents">
+  ConversationAgents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IAgent&gt; ConversationAgents { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationCharacters_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationCharacters*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationCharacters" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationCharacters">
+  ConversationCharacters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CharacterObject&gt; ConversationCharacters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationParty_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationParty" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationParty">
+  ConversationParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty ConversationParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurOptions_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurOptions" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurOptions">
+  CurOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ConversationSentenceOption&gt; CurOptions { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentenceOption.html">ConversationSentenceOption</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurrentSentenceText_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurrentSentenceText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CurrentSentenceText" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CurrentSentenceText">
+  CurrentSentenceText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentSentenceText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_Handler_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.Handler*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_Handler" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.Handler">
+  Handler
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConversationStateHandler Handler { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Conversation.IConversationStateHandler.html">IConversationStateHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationFlowActive_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationFlowActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationFlowActive" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationFlowActive">
+  IsConversationFlowActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConversationFlowActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationInProgress_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationInProgress*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationInProgress" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationInProgress">
+  IsConversationInProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConversationInProgress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ListenerAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ListenerAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ListenerAgent" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ListenerAgent">
+  ListenerAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgent ListenerAgent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_NeedsToActivateForMapConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.NeedsToActivateForMapConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_NeedsToActivateForMapConversation" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.NeedsToActivateForMapConversation">
+  NeedsToActivateForMapConversation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NeedsToActivateForMapConversation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationAgent" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationAgent">
+  OneToOneConversationAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgent OneToOneConversationAgent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationCharacter_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationCharacter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationCharacter" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationCharacter">
+  OneToOneConversationCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterObject OneToOneConversationCharacter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationHero_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OneToOneConversationHero" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OneToOneConversationHero">
+  OneToOneConversationHero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero OneToOneConversationHero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SpeakerAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SpeakerAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SpeakerAgent" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SpeakerAgent">
+  SpeakerAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgent SpeakerAgent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddConversationAgents_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddConversationAgents*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddConversationAgents_System_Collections_Generic_IEnumerable_TaleWorlds_Core_IAgent__System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddConversationAgents(System.Collections.Generic.IEnumerable{TaleWorlds.Core.IAgent},System.Boolean)">
+  AddConversationAgents(IEnumerable&lt;IAgent&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddConversationAgents(IEnumerable&lt;IAgent&gt; agents, bool setActionsInstantly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>setActionsInstantly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddDialogFlow_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddDialogFlow*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddDialogFlow_TaleWorlds_CampaignSystem_DialogFlow_System_Object_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddDialogFlow(TaleWorlds.CampaignSystem.DialogFlow,System.Object)">
+  AddDialogFlow(DialogFlow, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDialogFlow(DialogFlow dialogFlow, object relatedObject = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dialogFlow</code> <a class="xref" href="TaleWorlds.CampaignSystem.DialogFlow.html">DialogFlow</a></dt>
+    <dd></dd>
+    <dt><code>relatedObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddDialogLineMultiAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddDialogLineMultiAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddDialogLineMultiAgent_System_String_System_String_System_String_TaleWorlds_Localization_TextObject_TaleWorlds_CampaignSystem_Conversation_ConversationSentence_OnConditionDelegate_TaleWorlds_CampaignSystem_Conversation_ConversationSentence_OnConsequenceDelegate_System_Int32_System_Int32_System_Int32_TaleWorlds_CampaignSystem_Conversation_ConversationSentence_OnClickableConditionDelegate_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddDialogLineMultiAgent(System.String,System.String,System.String,TaleWorlds.Localization.TextObject,TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnConditionDelegate,TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnConsequenceDelegate,System.Int32,System.Int32,System.Int32,TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnClickableConditionDelegate)">
+  AddDialogLineMultiAgent(string, string, string, TextObject, OnConditionDelegate, OnConsequenceDelegate, int, int, int, OnClickableConditionDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConversationSentence AddDialogLineMultiAgent(string id, string inputToken, string outputToken, TextObject text, ConversationSentence.OnConditionDelegate conditionDelegate, ConversationSentence.OnConsequenceDelegate consequenceDelegate, int agentIndex, int nextAgentIndex, int priority = 100, ConversationSentence.OnClickableConditionDelegate clickableConditionDelegate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>inputToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>outputToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>conditionDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnConditionDelegate.html">OnConditionDelegate</a></dt>
+    <dd></dd>
+    <dt><code>consequenceDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnConsequenceDelegate.html">OnConsequenceDelegate</a></dt>
+    <dd></dd>
+    <dt><code>agentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nextAgentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>clickableConditionDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.OnClickableConditionDelegate.html">OnClickableConditionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddToCurrentOptions_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddToCurrentOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_AddToCurrentOptions_TaleWorlds_Localization_TextObject_System_String_System_Boolean_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.AddToCurrentOptions(TaleWorlds.Localization.TextObject,System.String,System.Boolean,TaleWorlds.Localization.TextObject)">
+  AddToCurrentOptions(TextObject, string, bool, TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToCurrentOptions(TextObject text, string id, bool isClickable, TextObject hintText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isClickable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hintText</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_BeginConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.BeginConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_BeginConversation" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.BeginConversation">
+  BeginConversation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginConversation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_Clear_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.Clear*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_Clear" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ClearCurrentOptions_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ClearCurrentOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ClearCurrentOptions" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ClearCurrentOptions">
+  ClearCurrentOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCurrentOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ContinueConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ContinueConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ContinueConversation" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ContinueConversation">
+  ContinueConversation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ContinueConversation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CreateConversationSentenceIndex_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CreateConversationSentenceIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_CreateConversationSentenceIndex" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.CreateConversationSentenceIndex">
+  CreateConversationSentenceIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CreateConversationSentenceIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DisableSentenceSort_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DisableSentenceSort*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DisableSentenceSort" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DisableSentenceSort">
+  DisableSentenceSort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableSentenceSort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoConversationContinuedCallback_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoConversationContinuedCallback*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoConversationContinuedCallback" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoConversationContinuedCallback">
+  DoConversationContinuedCallback()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoConversationContinuedCallback()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOption_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOption_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOption(System.Int32)">
+  DoOption(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoOption(int optionIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>optionIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOption_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOption_System_String_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOption(System.String)">
+  DoOption(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoOption(string optionID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>optionID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOptionContinue_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOptionContinue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_DoOptionContinue" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.DoOptionContinue">
+  DoOptionContinue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoOptionContinue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EnableSentenceSort_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EnableSentenceSort*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EnableSentenceSort" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EnableSentenceSort">
+  EnableSentenceSort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableSentenceSort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EndConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EndConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EndConversation" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EndConversation">
+  EndConversation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndConversation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EndPersuasion_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EndPersuasion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_EndPersuasion" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.EndPersuasion">
+  EndPersuasion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndPersuasion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_FindMatchingTextOrNull_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.FindMatchingTextOrNull*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_FindMatchingTextOrNull_System_String_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.FindMatchingTextOrNull(System.String,TaleWorlds.CampaignSystem.CharacterObject)">
+  FindMatchingTextOrNull(string, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject FindMatchingTextOrNull(string id, CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetApplicableTagNames_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetApplicableTagNames*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetApplicableTagNames_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetApplicableTagNames(TaleWorlds.CampaignSystem.CharacterObject)">
+  GetApplicableTagNames(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetApplicableTagNames(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChanceValues_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChanceValues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChanceValues_System_Single__System_Single__System_Single__" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChanceValues(System.Single@,System.Single@,System.Single@)">
+  GetPersuasionChanceValues(out float, out float, out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPersuasionChanceValues(out float successValue, out float critSuccessValue, out float critFailValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>successValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>critSuccessValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>critFailValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChances_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChances*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChances_TaleWorlds_CampaignSystem_Conversation_ConversationSentenceOption_System_Single__System_Single__System_Single__System_Single__" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChances(TaleWorlds.CampaignSystem.Conversation.ConversationSentenceOption,System.Single@,System.Single@,System.Single@,System.Single@)">
+  GetPersuasionChances(ConversationSentenceOption, out float, out float, out float, out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPersuasionChances(ConversationSentenceOption conversationSentenceOption, out float successChance, out float critSuccessChance, out float critFailChance, out float failChance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conversationSentenceOption</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentenceOption.html">ConversationSentenceOption</a></dt>
+    <dd></dd>
+    <dt><code>successChance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>critSuccessChance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>critFailChance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>failChance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChosenOptions_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChosenOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionChosenOptions" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionChosenOptions">
+  GetPersuasionChosenOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Tuple&lt;PersuasionOptionArgs, PersuasionOptionResult&gt;&gt; GetPersuasionChosenOptions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionOptionArgs.html">PersuasionOptionArgs</a>, <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionOptionResult.html">PersuasionOptionResult</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionGoalValue_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionGoalValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionGoalValue" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionGoalValue">
+  GetPersuasionGoalValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetPersuasionGoalValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionIsActive_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionIsActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionIsActive" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionIsActive">
+  GetPersuasionIsActive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPersuasionIsActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionIsFailure_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionIsFailure*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionIsFailure" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionIsFailure">
+  GetPersuasionIsFailure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPersuasionIsFailure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionProgress_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionProgress*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionProgress" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionProgress">
+  GetPersuasionProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetPersuasionProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionProgressSatisfied_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionProgressSatisfied*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPersuasionProgressSatisfied" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPersuasionProgressSatisfied">
+  GetPersuasionProgressSatisfied()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPersuasionProgressSatisfied()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPlayerSentenceOptions_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPlayerSentenceOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetPlayerSentenceOptions" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetPlayerSentenceOptions">
+  GetPlayerSentenceOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlayerSentenceOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetStateIndex_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetStateIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_GetStateIndex_System_String_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.GetStateIndex(System.String)">
+  GetStateIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetStateIndex(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsAgentInConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsAgentInConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsAgentInConversation_TaleWorlds_Core_IAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsAgentInConversation(TaleWorlds.Core.IAgent)">
+  IsAgentInConversation(IAgent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAgentInConversation(IAgent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationAgent_TaleWorlds_Core_IAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationAgent(TaleWorlds.Core.IAgent)">
+  IsConversationAgent(IAgent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConversationAgent(IAgent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationEnded_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationEnded*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsConversationEnded" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsConversationEnded">
+  IsConversationEnded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConversationEnded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsTagApplicable_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsTagApplicable*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_IsTagApplicable_System_String_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.IsTagApplicable(System.String,TaleWorlds.CampaignSystem.CharacterObject)">
+  IsTagApplicable(string, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTagApplicable(string tagId, CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OnConversationActivate_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OnConversationActivate*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OnConversationActivate" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OnConversationActivate">
+  OnConversationActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConversationActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OnConversationDeactivate_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OnConversationDeactivate*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OnConversationDeactivate" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OnConversationDeactivate">
+  OnConversationDeactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConversationDeactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OpenMapConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OpenMapConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_OpenMapConversation_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.OpenMapConversation(TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData,TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData)">
+  OpenMapConversation(ConversationCharacterData, ConversationCharacterData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenMapConversation(ConversationCharacterData playerCharacterData, ConversationCharacterData conversationPartnerData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerCharacterData</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData.html">ConversationCharacterData</a></dt>
+    <dd></dd>
+    <dt><code>conversationPartnerData</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData.html">ConversationCharacterData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_PersuasionCommitProgress_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.PersuasionCommitProgress*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_PersuasionCommitProgress_TaleWorlds_CampaignSystem_Conversation_Persuasion_PersuasionOptionArgs_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.PersuasionCommitProgress(TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionOptionArgs)">
+  PersuasionCommitProgress(PersuasionOptionArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PersuasionCommitProgress(PersuasionOptionArgs persuasionOptionArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>persuasionOptionArgs</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionOptionArgs.html">PersuasionOptionArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ProcessSentence_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ProcessSentence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ProcessSentence_TaleWorlds_CampaignSystem_Conversation_ConversationSentenceOption_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ProcessSentence(TaleWorlds.CampaignSystem.Conversation.ConversationSentenceOption)">
+  ProcessSentence(ConversationSentenceOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessSentence(ConversationSentenceOption conversationSentenceOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conversationSentenceOption</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentenceOption.html">ConversationSentenceOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_RemoveRelatedLines_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.RemoveRelatedLines*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_RemoveRelatedLines_System_Object_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.RemoveRelatedLines(System.Object)">
+  RemoveRelatedLines(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRelatedLines(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMapConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMapConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMapConversation_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Core_IAgent_TaleWorlds_Core_IAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMapConversation(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Core.IAgent,TaleWorlds.Core.IAgent)">
+  SetupAndStartMapConversation(MobileParty, IAgent, IAgent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupAndStartMapConversation(MobileParty party, IAgent agent, IAgent mainAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+    <dt><code>mainAgent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMissionConversation_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMissionConversation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMissionConversation_TaleWorlds_Core_IAgent_TaleWorlds_Core_IAgent_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMissionConversation(TaleWorlds.Core.IAgent,TaleWorlds.Core.IAgent,System.Boolean)">
+  SetupAndStartMissionConversation(IAgent, IAgent, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupAndStartMissionConversation(IAgent agent, IAgent mainAgent, bool setActionsInstantly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+    <dt><code>mainAgent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+    <dt><code>setActionsInstantly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMissionConversationWithMultipleAgents_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMissionConversationWithMultipleAgents*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_SetupAndStartMissionConversationWithMultipleAgents_System_Collections_Generic_IEnumerable_TaleWorlds_Core_IAgent__TaleWorlds_Core_IAgent_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.SetupAndStartMissionConversationWithMultipleAgents(System.Collections.Generic.IEnumerable{TaleWorlds.Core.IAgent},TaleWorlds.Core.IAgent)">
+  SetupAndStartMissionConversationWithMultipleAgents(IEnumerable&lt;IAgent&gt;, IAgent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupAndStartMissionConversationWithMultipleAgents(IEnumerable&lt;IAgent&gt; agents, IAgent mainAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>mainAgent</code> <a class="xref" href="TaleWorlds.Core.IAgent.html">IAgent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_StartNew_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.StartNew*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_StartNew_System_Int32_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.StartNew(System.Int32,System.Boolean)">
+  StartNew(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartNew(int startingToken, bool setActionsInstantly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>setActionsInstantly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_StartPersuasion_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.StartPersuasion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_StartPersuasion_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_TaleWorlds_CampaignSystem_Conversation_Persuasion_PersuasionDifficulty_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.StartPersuasion(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionDifficulty)">
+  StartPersuasion(float, float, float, float, float, float, PersuasionDifficulty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartPersuasion(float goalValue, float successValue, float failValue, float criticalSuccessValue, float criticalFailValue, float initialProgress = -1, PersuasionDifficulty difficulty = PersuasionDifficulty.Medium)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>goalValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>successValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>failValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>criticalSuccessValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>criticalFailValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>initialProgress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>difficulty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionDifficulty.html">PersuasionDifficulty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_UpdateCurrentSentenceText_" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.UpdateCurrentSentenceText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_UpdateCurrentSentenceText" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.UpdateCurrentSentenceText">
+  UpdateCurrentSentenceText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCurrentSentenceText()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ClickableConditionRunned" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ClickableConditionRunned">
+  ClickableConditionRunned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ConversationSentence&gt; ClickableConditionRunned</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConditionRunned" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConditionRunned">
+  ConditionRunned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ConversationSentence&gt; ConditionRunned</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConsequenceRunned" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConsequenceRunned">
+  ConsequenceRunned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ConversationSentence&gt; ConsequenceRunned</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationSentence.html">ConversationSentence</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationBegin" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationBegin">
+  ConversationBegin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ConversationBegin</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationContinued" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationContinued">
+  ConversationContinued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ConversationContinued</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationEnd" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationEnd">
+  ConversationEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ConversationEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationEndOneShot" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationEndOneShot">
+  ConversationEndOneShot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ConversationEndOneShot</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Conversation_ConversationManager_ConversationSetup" data-uid="TaleWorlds.CampaignSystem.Conversation.ConversationManager.ConversationSetup">
+  ConversationSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action ConversationSetup</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

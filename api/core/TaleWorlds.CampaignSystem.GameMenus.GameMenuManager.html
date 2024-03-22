@@ -1,0 +1,1375 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameMenuManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameMenuManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager" class="text-break">
+Class GameMenuManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.html">GameMenus</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameMenuManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GameMenuManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager__ctor_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager__ctor" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.#ctor">
+  GameMenuManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenuManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_MenuLocations" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.MenuLocations">
+  MenuLocations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Location&gt; MenuLocations</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.Location.html">Location</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_NextLocation" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.NextLocation">
+  NextLocation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Location NextLocation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.Location.html">Location</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_PreviousLocation" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.PreviousLocation">
+  PreviousLocation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Location PreviousLocation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.Location.html">Location</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_PreviouslySelectedGameMenuItem" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.PreviouslySelectedGameMenuItem">
+  PreviouslySelectedGameMenuItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PreviouslySelectedGameMenuItem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_PreviouslySelectedGameMenuObject" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.PreviouslySelectedGameMenuObject">
+  PreviouslySelectedGameMenuObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PreviouslySelectedGameMenuObject</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_NextGameMenuId_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.NextGameMenuId*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_NextGameMenuId" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.NextGameMenuId">
+  NextGameMenuId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NextGameMenuId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_NextMenu_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.NextMenu*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_NextMenu" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.NextMenu">
+  NextMenu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenu NextMenu { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenu.html">GameMenu</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_AddGameMenu_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.AddGameMenu*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_AddGameMenu_TaleWorlds_CampaignSystem_GameMenus_GameMenu_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.AddGameMenu(TaleWorlds.CampaignSystem.GameMenus.GameMenu)">
+  AddGameMenu(GameMenu)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGameMenu(GameMenu gameMenu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameMenu</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenu.html">GameMenu</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_ExitToLast_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.ExitToLast*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_ExitToLast" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.ExitToLast">
+  ExitToLast()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitToLast()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetGameMenu_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetGameMenu*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetGameMenu_System_String_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetGameMenu(System.String)">
+  GetGameMenu(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenu GetGameMenu(string menuId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenu.html">GameMenu</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetLeaveMenuOption_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetLeaveMenuOption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetLeaveMenuOption_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetLeaveMenuOption(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetLeaveMenuOption(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenuOption GetLeaveMenuOption(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenuOption.html">GameMenuOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOptionConditionsHold_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOptionConditionsHold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOptionConditionsHold_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOptionConditionsHold(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetMenuOptionConditionsHold(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMenuOptionConditionsHold(MenuContext menuContext, int menuItemNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>menuItemNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOptionIdString_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOptionIdString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOptionIdString_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOptionIdString(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetMenuOptionIdString(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMenuOptionIdString(MenuContext menuContext, int menuItemNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>menuItemNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOverlayType_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOverlayType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuOverlayType_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuOverlayType(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetMenuOverlayType(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameOverlays.MenuOverlayType GetMenuOverlayType(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.html">GameOverlays</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType.html">MenuOverlayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuText_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetMenuText_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetMenuText(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetMenuText(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetMenuText(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualGameMenuOption_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualGameMenuOption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualGameMenuOption_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualGameMenuOption(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualGameMenuOption(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenuOption GetVirtualGameMenuOption(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenuOption.html">GameMenuOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuAndOptionType_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuAndOptionType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuAndOptionType_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuAndOptionType(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetVirtualMenuAndOptionType(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenu.MenuAndOptionType GetVirtualMenuAndOptionType(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenu.html">GameMenu</a>.<a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenu.MenuAndOptionType.html">MenuAndOptionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuIsWaitActive_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuIsWaitActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuIsWaitActive_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuIsWaitActive(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetVirtualMenuIsWaitActive(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVirtualMenuIsWaitActive(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionAmount_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionAmount_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionAmount(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetVirtualMenuOptionAmount(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetVirtualMenuOptionAmount(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionConditionsHold_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionConditionsHold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionConditionsHold_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionConditionsHold(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionConditionsHold(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVirtualMenuOptionConditionsHold(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionIsEnabled_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionIsEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionIsEnabled_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionIsEnabled(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionIsEnabled(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVirtualMenuOptionIsEnabled(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionIsLeave_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionIsLeave*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionIsLeave_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionIsLeave(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionIsLeave(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVirtualMenuOptionIsLeave(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionText_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionText_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionText(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionText(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetVirtualMenuOptionText(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionText2_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionText2*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionText2_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionText2(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionText2(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetVirtualMenuOptionText2(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionTooltip_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuOptionTooltip_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuOptionTooltip(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  GetVirtualMenuOptionTooltip(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetVirtualMenuOptionTooltip(MenuContext menuContext, int virtualMenuItemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>virtualMenuItemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuProgress_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuProgress*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuProgress_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuProgress(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetVirtualMenuProgress(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetVirtualMenuProgress(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuTargetWaitHours_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuTargetWaitHours*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_GetVirtualMenuTargetWaitHours_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.GetVirtualMenuTargetWaitHours(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  GetVirtualMenuTargetWaitHours(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetVirtualMenuTargetWaitHours(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_OnFrameTick_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.OnFrameTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_OnFrameTick_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Single_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.OnFrameTick(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Single)">
+  OnFrameTick(MenuContext, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFrameTick(MenuContext menuContext, float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RefreshMenuOptions_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RefreshMenuOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RefreshMenuOptions_TaleWorlds_CampaignSystem_GameState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RefreshMenuOptions(TaleWorlds.CampaignSystem.GameState.MenuContext)">
+  RefreshMenuOptions(MenuContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshMenuOptions(MenuContext menuContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RemoveRelatedGameMenuOptions_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RemoveRelatedGameMenuOptions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RemoveRelatedGameMenuOptions_System_Object_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RemoveRelatedGameMenuOptions(System.Object)">
+  RemoveRelatedGameMenuOptions(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRelatedGameMenuOptions(object relatedObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relatedObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RemoveRelatedGameMenus_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RemoveRelatedGameMenus*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RemoveRelatedGameMenus_System_Object_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RemoveRelatedGameMenus(System.Object)">
+  RemoveRelatedGameMenus(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRelatedGameMenus(object relatedObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relatedObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RunConsequencesOfMenuOption_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RunConsequencesOfMenuOption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_RunConsequencesOfMenuOption_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.RunConsequencesOfMenuOption(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  RunConsequencesOfMenuOption(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunConsequencesOfMenuOption(MenuContext menuContext, int menuItemNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>menuItemNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_SetCurrentRepeatableIndex_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.SetCurrentRepeatableIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_SetCurrentRepeatableIndex_TaleWorlds_CampaignSystem_GameState_MenuContext_System_Int32_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.SetCurrentRepeatableIndex(TaleWorlds.CampaignSystem.GameState.MenuContext,System.Int32)">
+  SetCurrentRepeatableIndex(MenuContext, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentRepeatableIndex(MenuContext menuContext, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menuContext</code> <a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_SetNextMenu_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.SetNextMenu*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameMenus_GameMenuManager_SetNextMenu_System_String_" data-uid="TaleWorlds.CampaignSystem.GameMenus.GameMenuManager.SetNextMenu(System.String)">
+  SetNextMenu(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextMenu(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1002 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LogEntry | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LogEntry | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry" class="text-break">
+Class LogEntry  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.html">LogEntries</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class LogEntry</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LogEntry</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ArmyCreationLogEntry.html">ArmyCreationLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ArmyDispersionLogEntry.html">ArmyDispersionLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.BattleStartedLogEntry.html">BattleStartedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.BesiegeSettlementLogEntry.html">BesiegeSettlementLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChangeAlleyOwnerLogEntry.html">ChangeAlleyOwnerLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChangeRomanticStateLogEntry.html">ChangeRomanticStateLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChangeSettlementOwnerLogEntry.html">ChangeSettlementOwnerLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CharacterBecameFugitiveLogEntry.html">CharacterBecameFugitiveLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CharacterBornLogEntry.html">CharacterBornLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CharacterInsultedLogEntry.html">CharacterInsultedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CharacterKilledLogEntry.html">CharacterKilledLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CharacterMarriedLogEntry.html">CharacterMarriedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChildbirthLogEntry.html">ChildbirthLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ClanChangeKingdomLogEntry.html">ClanChangeKingdomLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ClanDestroyedLogEntry.html">ClanDestroyedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ClanLeaderChangedLogEntry.html">ClanLeaderChangedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.CommonAreaFightLogEntry.html">CommonAreaFightLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.DeclareWarLogEntry.html">DeclareWarLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.DefeatCharacterLogEntry.html">DefeatCharacterLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.DestroyMobilePartyLogEntry.html">DestroyMobilePartyLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.EndCaptivityLogEntry.html">EndCaptivityLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.GatherArmyLogEntry.html">GatherArmyLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.IssueQuestLogEntry.html">IssueQuestLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.IssueQuestStartLogEntry.html">IssueQuestStartLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.JournalLogEntry.html">JournalLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.KingdomDecisionAddedLogEntry.html">KingdomDecisionAddedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.KingdomDecisionConcludedLogEntry.html">KingdomDecisionConcludedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.KingdomDestroyedLogEntry.html">KingdomDestroyedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.MakePeaceLogEntry.html">MakePeaceLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.MercenaryClanChangedKingdomLogEntry.html">MercenaryClanChangedKingdomLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.OverruleInfluenceLogEntry.html">OverruleInfluenceLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerAttackAlleyLogEntry.html">PlayerAttackAlleyLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerBattleEndedLogEntry.html">PlayerBattleEndedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerCharacterChangedLogEntry.html">PlayerCharacterChangedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerMeetLordLogEntry.html">PlayerMeetLordLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerReputationChangesLogEntry.html">PlayerReputationChangesLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PlayerRetiredLogEntry.html">PlayerRetiredLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.PregnancyLogEntry.html">PregnancyLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.RebellionStartedLogEntry.html">RebellionStartedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.SettlementClaimedLogEntry.html">SettlementClaimedLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.SiegeAftermathLogEntry.html">SiegeAftermathLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.TakePrisonerLogEntry.html">TakePrisonerLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.TournamentWonLogEntry.html">TournamentWonLogEntry</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.VillageStateChangedLogEntry.html">VillageStateChangedLogEntry</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry__ctor_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry__ctor" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.#ctor">
+  LogEntry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LogEntry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_NotificationDefaultTextColor" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.NotificationDefaultTextColor">
+  NotificationDefaultTextColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const uint NotificationDefaultTextColor = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GameTime_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GameTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GameTime" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GameTime">
+  GameTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1)]
+public CampaignTime GameTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_Id_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.Id*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_Id" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(0)]
+public long Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_KeepInHistoryTime_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.KeepInHistoryTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_KeepInHistoryTime" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.KeepInHistoryTime">
+  KeepInHistoryTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CampaignTime KeepInHistoryTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_NotificationType_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.NotificationType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_NotificationType" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.NotificationType">
+  NotificationType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ChatNotificationType NotificationType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AddLogEntry_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AddLogEntry*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AddLogEntry_TaleWorlds_CampaignSystem_LogEntries_LogEntry_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AddLogEntry(TaleWorlds.CampaignSystem.LogEntries.LogEntry)">
+  AddLogEntry(LogEntry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddLogEntry(LogEntry logEntry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logEntry</code> <a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.LogEntry.html">LogEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AddLogEntry_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AddLogEntry*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AddLogEntry_TaleWorlds_CampaignSystem_LogEntries_LogEntry_TaleWorlds_CampaignSystem_CampaignTime_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AddLogEntry(TaleWorlds.CampaignSystem.LogEntries.LogEntry,TaleWorlds.CampaignSystem.CampaignTime)">
+  AddLogEntry(LogEntry, CampaignTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddLogEntry(LogEntry logEntry, CampaignTime gameTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logEntry</code> <a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.LogEntry.html">LogEntry</a></dt>
+    <dd></dd>
+    <dt><code>gameTime</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AdversityNotification_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AdversityNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AdversityNotification_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AdversityNotification(TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction)">
+  AdversityNotification(IFaction, IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatNotificationType AdversityNotification(IFaction faction1, IFaction faction2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction1</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>faction2</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AsReasonForEnmity_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AsReasonForEnmity*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AsReasonForEnmity_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AsReasonForEnmity(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  AsReasonForEnmity(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AsReasonForEnmity(Hero referenceHero1, Hero referenceHero2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>referenceHero1</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>referenceHero2</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_CivilianNotification_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.CivilianNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_CivilianNotification_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.CivilianNotification(TaleWorlds.CampaignSystem.IFaction)">
+  CivilianNotification(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatNotificationType CivilianNotification(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_DiplomaticNotification_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.DiplomaticNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_DiplomaticNotification_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.DiplomaticNotification(TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction)">
+  DiplomaticNotification(IFaction, IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatNotificationType DiplomaticNotification(IFaction faction1, IFaction faction2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction1</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>faction2</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetAsRumor_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetAsRumor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetAsRumor_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetAsRumor(TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.Localization.TextObject@)">
+  GetAsRumor(Settlement, ref TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetAsRumor(Settlement settlement, ref TextObject comment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>comment</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetConversationScoreAndComment_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetConversationScoreAndComment*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetConversationScoreAndComment_TaleWorlds_CampaignSystem_Hero_System_Boolean_System_String__TaleWorlds_CampaignSystem_LogEntries_ImportanceEnum__" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetConversationScoreAndComment(TaleWorlds.CampaignSystem.Hero,System.Boolean,System.String@,TaleWorlds.CampaignSystem.LogEntries.ImportanceEnum@)">
+  GetConversationScoreAndComment(Hero, bool, out string, out ImportanceEnum)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetConversationScoreAndComment(Hero talkTroop, bool findString, out string comment, out ImportanceEnum score)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>talkTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>findString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>comment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ImportanceEnum.html">ImportanceEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetHistoricComment_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetHistoricComment*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetHistoricComment_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetHistoricComment(TaleWorlds.CampaignSystem.Hero)">
+  GetHistoricComment(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject GetHistoricComment(Hero talkTroop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>talkTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetImportanceForClan_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetImportanceForClan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetImportanceForClan_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetImportanceForClan(TaleWorlds.CampaignSystem.Clan)">
+  GetImportanceForClan(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ImportanceEnum GetImportanceForClan(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ImportanceEnum.html">ImportanceEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsAbuseOfPower_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsAbuseOfPower*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsAbuseOfPower_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsAbuseOfPower(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  GetValueAsPoliticsAbuseOfPower(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetValueAsPoliticsAbuseOfPower(Hero referenceTroop, Hero liege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>referenceTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>liege</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsShowedWeakness_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsShowedWeakness*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsShowedWeakness_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsShowedWeakness(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  GetValueAsPoliticsShowedWeakness(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetValueAsPoliticsShowedWeakness(Hero referenceTroop, Hero liege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>referenceTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>liege</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsSlightedClan_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsSlightedClan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_GetValueAsPoliticsSlightedClan_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.GetValueAsPoliticsSlightedClan(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  GetValueAsPoliticsSlightedClan(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetValueAsPoliticsSlightedClan(Hero referenceTroop, Hero liege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>referenceTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>liege</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_MilitaryNotification_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.MilitaryNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_MilitaryNotification_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.MilitaryNotification(TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction)">
+  MilitaryNotification(IFaction, IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatNotificationType MilitaryNotification(IFaction benefiter, IFaction affected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>benefiter</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>affected</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_PoliticalNotification_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.PoliticalNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_LogEntries_LogEntry_PoliticalNotification_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.LogEntries.LogEntry.PoliticalNotification(TaleWorlds.CampaignSystem.IFaction)">
+  PoliticalNotification(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ChatNotificationType PoliticalNotification(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.LogEntries.ChatNotificationType.html">ChatNotificationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScriptComponentBehavior | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScriptComponentBehavior | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.ScriptComponentBehavior">
+
+
+
+  <h1 id="TaleWorlds_Engine_ScriptComponentBehavior" data-uid="TaleWorlds.Engine.ScriptComponentBehavior" class="text-break">
+Class ScriptComponentBehavior  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScriptComponentBehavior : DotNetObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.DotNetObject.html">DotNetObject</a></div>
+      <div><span class="xref">ScriptComponentBehavior</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.AnimatedFlag.html">AnimatedFlag</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.BoundaryWallView.html">BoundaryWallView</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.CameraDisplay.html">CameraDisplay</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.DefencePoint.html">DefencePoint</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.DuelZoneLandmark.html">DuelZoneLandmark</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.FleePosition.html">FleePosition</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.LightCycle.html">LightCycle</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MapAtmosphereProbe.html">MapAtmosphereProbe</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Markable.html">Markable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Mover.html">Mover</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MultiplayerSceneValidator.html">MultiplayerSceneValidator</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Objects.AnimalSpawnSettings.html">AnimalSpawnSettings</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Objects.Siege.SpawnerBase.html">SpawnerBase</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.RandomParticleSpawner.html">RandomParticleSpawner</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.RoadPoint.html">RoadPoint</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.RoadStart.html">RoadStart</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.ScenePropDecal.html">ScenePropDecal</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.ScenePropNegativeLight.html">ScenePropNegativeLight</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.ScenePropPositiveLight.html">ScenePropPositiveLight</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.SoundPlayer.html">SoundPlayer</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Source.Objects.NavigationMeshDeactivator.html">NavigationMeshDeactivator</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Source.Objects.SceneLeveler.html">SceneLeveler</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.TestScript.html">TestScript</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.TrajectoryVisualizer.html">TrajectoryVisualizer</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.UsableGameObjectGroup.html">UsableGameObjectGroup</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.WaterPathPoint.html">WaterPathPoint</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.WaveFloater.html">WaveFloater</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.WeaponSpawner.html">WeaponSpawner</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.WindMill.html">WindMill</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior__ctor_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.#ctor*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior__ctor" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.#ctor">
+  ScriptComponentBehavior()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScriptComponentBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_GameEntity_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.GameEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_GameEntity" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.GameEntity">
+  GameEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity GameEntity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_ManagedScriptHolder_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.ManagedScriptHolder*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_ManagedScriptHolder" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.ManagedScriptHolder">
+  ManagedScriptHolder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ManagedScriptHolder ManagedScriptHolder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ManagedScriptHolder.html">ManagedScriptHolder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_Scene_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.Scene*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_Scene" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.Scene">
+  Scene
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene Scene { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_ScriptComponent_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.ScriptComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_ScriptComponent" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.ScriptComponent">
+  ScriptComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagedScriptComponent ScriptComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ManagedScriptComponent.html">ManagedScriptComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_DisablesOroCreation_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.DisablesOroCreation*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_DisablesOroCreation" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.DisablesOroCreation">
+  DisablesOroCreation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual bool DisablesOroCreation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_GetTickRequirement_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.GetTickRequirement*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_GetTickRequirement" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.GetTickRequirement">
+  GetTickRequirement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ScriptComponentBehavior.TickRequirement GetTickRequirement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>.<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement.html">TickRequirement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_HandleOnRemoved_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.HandleOnRemoved*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_HandleOnRemoved_System_Int32_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.HandleOnRemoved(System.Int32)">
+  HandleOnRemoved(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void HandleOnRemoved(int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_InvalidateWeakPointersIfValid_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.InvalidateWeakPointersIfValid*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_InvalidateWeakPointersIfValid" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.InvalidateWeakPointersIfValid">
+  InvalidateWeakPointersIfValid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvalidateWeakPointersIfValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_IsOnlyVisual_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.IsOnlyVisual*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_IsOnlyVisual" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.IsOnlyVisual">
+  IsOnlyVisual()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual bool IsOnlyVisual()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_MovesEntity_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.MovesEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_MovesEntity" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.MovesEntity">
+  MovesEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual bool MovesEntity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnCheckForProblems_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnCheckForProblems*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnCheckForProblems" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnCheckForProblems">
+  OnCheckForProblems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual bool OnCheckForProblems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditModeVisibilityChanged_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditModeVisibilityChanged*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditModeVisibilityChanged_System_Boolean_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditModeVisibilityChanged(System.Boolean)">
+  OnEditModeVisibilityChanged(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnEditModeVisibilityChanged(bool currentVisibility)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentVisibility</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorInit_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorInit*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorInit" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorInit">
+  OnEditorInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnEditorInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorTick_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorTick*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorTick_System_Single_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorTick(System.Single)">
+  OnEditorTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnEditorTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorValidate_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorValidate*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorValidate" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorValidate">
+  OnEditorValidate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnEditorValidate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorVariableChanged_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorVariableChanged*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnEditorVariableChanged_System_String_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnEditorVariableChanged(System.String)">
+  OnEditorVariableChanged(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnEditorVariableChanged(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnInit_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnInit*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnInit" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnInit">
+  OnInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnPhysicsCollision_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnPhysicsCollision*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnPhysicsCollision_TaleWorlds_Engine_PhysicsContact__" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnPhysicsCollision(TaleWorlds.Engine.PhysicsContact@)">
+  OnPhysicsCollision(ref PhysicsContact)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnPhysicsCollision(ref PhysicsContact contact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contact</code> <a class="xref" href="TaleWorlds.Engine.PhysicsContact.html">PhysicsContact</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnPreInit_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnPreInit*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnPreInit" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnPreInit">
+  OnPreInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnPreInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnRemoved_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnRemoved*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnRemoved_System_Int32_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnRemoved(System.Int32)">
+  OnRemoved(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnRemoved(int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnSceneSave_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnSceneSave*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnSceneSave_System_String_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnSceneSave(System.String)">
+  OnSceneSave(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void OnSceneSave(string saveFolder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnTick_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTick*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnTick_System_Single_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickOccasionally_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickOccasionally*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickOccasionally_System_Single_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickOccasionally(System.Single)">
+  OnTickOccasionally(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTickOccasionally(float currentFrameDeltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentFrameDeltaTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickParallel*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel_System_Single_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickParallel(System.Single)">
+  OnTickParallel(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTickParallel(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel2_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickParallel2*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel2_System_Single_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.OnTickParallel2(System.Single)">
+  OnTickParallel2(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTickParallel2(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_SetScene_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_SetScene_TaleWorlds_Engine_Scene_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScene(TaleWorlds.Engine.Scene)">
+  SetScene(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineCallback]
+protected virtual void SetScene(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTick_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScriptComponentToTick*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTick_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScriptComponentToTick(TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement)">
+  SetScriptComponentToTick(TickRequirement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScriptComponentToTick(ScriptComponentBehavior.TickRequirement value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>.<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement.html">TickRequirement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTickMT_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScriptComponentToTickMT*"></a>
+
+  <h3 id="TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTickMT_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_" data-uid="TaleWorlds.Engine.ScriptComponentBehavior.SetScriptComponentToTickMT(TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement)">
+  SetScriptComponentToTickMT(TickRequirement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScriptComponentToTickMT(ScriptComponentBehavior.TickRequirement value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>.<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement.html">TickRequirement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

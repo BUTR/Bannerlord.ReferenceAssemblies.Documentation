@@ -1,0 +1,5824 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameEntity | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameEntity | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.GameEntity">
+
+
+
+  <h1 id="TaleWorlds_Engine_GameEntity" data-uid="TaleWorlds.Engine.GameEntity" class="text-break">
+Class GameEntity  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineClass(&quot;rglEntity&quot;)]
+public sealed class GameEntity : NativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.NativeObject.html">NativeObject</a></div>
+      <div><span class="xref">GameEntity</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_ManualInvalidate">NativeObject.ManualInvalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Pointer">NativeObject.Pointer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_AddDistanceJoint_TaleWorlds_Engine_GameEntity_TaleWorlds_Engine_GameEntity_System_Single_System_Single_">GameEntityPhysicsExtensions.AddDistanceJoint(GameEntity, GameEntity, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_AddPhysics_TaleWorlds_Engine_GameEntity_System_Single_TaleWorlds_Library_Vec3_TaleWorlds_Engine_PhysicsShape_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Engine_PhysicsMaterial_System_Boolean_System_Int32_">GameEntityPhysicsExtensions.AddPhysics(GameEntity, float, Vec3, PhysicsShape, Vec3, Vec3, PhysicsMaterial, bool, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_AddSphereAsBody_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_System_Single_TaleWorlds_Engine_BodyFlags_">GameEntityPhysicsExtensions.AddSphereAsBody(GameEntity, Vec3, float, BodyFlags)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_ApplyAccelerationToDynamicBody_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_">GameEntityPhysicsExtensions.ApplyAccelerationToDynamicBody(GameEntity, Vec3)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_ApplyForceToDynamicBody_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_">GameEntityPhysicsExtensions.ApplyForceToDynamicBody(GameEntity, Vec3)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_ApplyLocalForceToDynamicBody_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">GameEntityPhysicsExtensions.ApplyLocalForceToDynamicBody(GameEntity, Vec3, Vec3)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_ApplyLocalImpulseToDynamicBody_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">GameEntityPhysicsExtensions.ApplyLocalImpulseToDynamicBody(GameEntity, Vec3, Vec3)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_DisableDynamicBodySimulation_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.DisableDynamicBodySimulation(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_DisableDynamicBodySimulationMT_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.DisableDynamicBodySimulationMT(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_DisableGravity_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.DisableGravity(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_EnableDynamicBody_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.EnableDynamicBody(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_GetBodyShape_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.GetBodyShape(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_GetLinearVelocity_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.GetLinearVelocity(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_GetLinearVelocityMT_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.GetLinearVelocityMT(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_GetMass_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.GetMass(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_GetPhysicsState_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.GetPhysicsState(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_HasBody_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.HasBody(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_HasPhysicsDefinitionWithoutFlags_TaleWorlds_Engine_GameEntity_System_Int32_">GameEntityPhysicsExtensions.HasPhysicsDefinitionWithoutFlags(GameEntity, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_IsDynamicBodyStationary_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.IsDynamicBodyStationary(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_IsDynamicBodyStationaryMT_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.IsDynamicBodyStationaryMT(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_IsEngineBodySleeping_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.IsEngineBodySleeping(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_RemoveEnginePhysics_TaleWorlds_Engine_GameEntity_">GameEntityPhysicsExtensions.RemoveEnginePhysics(GameEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_RemovePhysics_TaleWorlds_Engine_GameEntity_System_Boolean_">GameEntityPhysicsExtensions.RemovePhysics(GameEntity, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_RemovePhysicsMT_TaleWorlds_Engine_GameEntity_System_Boolean_">GameEntityPhysicsExtensions.RemovePhysicsMT(GameEntity, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_SetBodyShape_TaleWorlds_Engine_GameEntity_TaleWorlds_Engine_PhysicsShape_">GameEntityPhysicsExtensions.SetBodyShape(GameEntity, PhysicsShape)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_SetDamping_TaleWorlds_Engine_GameEntity_System_Single_System_Single_">GameEntityPhysicsExtensions.SetDamping(GameEntity, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_SetMass_TaleWorlds_Engine_GameEntity_System_Single_">GameEntityPhysicsExtensions.SetMass(GameEntity, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_SetMassSpaceInertia_TaleWorlds_Engine_GameEntity_TaleWorlds_Library_Vec3_">GameEntityPhysicsExtensions.SetMassSpaceInertia(GameEntity, Vec3)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityPhysicsExtensions.html#TaleWorlds_Engine_GameEntityPhysicsExtensions_SetPhysicsState_TaleWorlds_Engine_GameEntity_System_Boolean_System_Boolean_">GameEntityPhysicsExtensions.SetPhysicsState(GameEntity, bool, bool)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Engine_GameEntity_BodyFlag_" data-uid="TaleWorlds.Engine.GameEntity.BodyFlag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_BodyFlag" data-uid="TaleWorlds.Engine.GameEntity.BodyFlag">
+  BodyFlag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyFlags BodyFlag { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CenterOfMass_" data-uid="TaleWorlds.Engine.GameEntity.CenterOfMass*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CenterOfMass" data-uid="TaleWorlds.Engine.GameEntity.CenterOfMass">
+  CenterOfMass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 CenterOfMass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ChildCount_" data-uid="TaleWorlds.Engine.GameEntity.ChildCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ChildCount" data-uid="TaleWorlds.Engine.GameEntity.ChildCount">
+  ChildCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ChildCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ClothSimulatorComponentCount_" data-uid="TaleWorlds.Engine.GameEntity.ClothSimulatorComponentCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ClothSimulatorComponentCount" data-uid="TaleWorlds.Engine.GameEntity.ClothSimulatorComponentCount">
+  ClothSimulatorComponentCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClothSimulatorComponentCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_EntityFlags_" data-uid="TaleWorlds.Engine.GameEntity.EntityFlags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_EntityFlags" data-uid="TaleWorlds.Engine.GameEntity.EntityFlags">
+  EntityFlags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityFlags EntityFlags { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.EntityFlags.html">EntityFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_EntityVisibilityFlags_" data-uid="TaleWorlds.Engine.GameEntity.EntityVisibilityFlags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_EntityVisibilityFlags" data-uid="TaleWorlds.Engine.GameEntity.EntityVisibilityFlags">
+  EntityVisibilityFlags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityVisibilityFlags EntityVisibilityFlags { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.EntityVisibilityFlags.html">EntityVisibilityFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GlobalBoxMax_" data-uid="TaleWorlds.Engine.GameEntity.GlobalBoxMax*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GlobalBoxMax" data-uid="TaleWorlds.Engine.GameEntity.GlobalBoxMax">
+  GlobalBoxMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GlobalBoxMax { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GlobalBoxMin_" data-uid="TaleWorlds.Engine.GameEntity.GlobalBoxMin*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GlobalBoxMin" data-uid="TaleWorlds.Engine.GameEntity.GlobalBoxMin">
+  GlobalBoxMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GlobalBoxMin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GlobalPosition_" data-uid="TaleWorlds.Engine.GameEntity.GlobalPosition*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GlobalPosition" data-uid="TaleWorlds.Engine.GameEntity.GlobalPosition">
+  GlobalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GlobalPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Mass_" data-uid="TaleWorlds.Engine.GameEntity.Mass*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Mass" data-uid="TaleWorlds.Engine.GameEntity.Mass">
+  Mass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Mass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_MultiMeshComponentCount_" data-uid="TaleWorlds.Engine.GameEntity.MultiMeshComponentCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_MultiMeshComponentCount" data-uid="TaleWorlds.Engine.GameEntity.MultiMeshComponentCount">
+  MultiMeshComponentCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MultiMeshComponentCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Name_" data-uid="TaleWorlds.Engine.GameEntity.Name*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Name" data-uid="TaleWorlds.Engine.GameEntity.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Parent_" data-uid="TaleWorlds.Engine.GameEntity.Parent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Parent" data-uid="TaleWorlds.Engine.GameEntity.Parent">
+  Parent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity Parent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PhysicsDescBodyFlag_" data-uid="TaleWorlds.Engine.GameEntity.PhysicsDescBodyFlag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PhysicsDescBodyFlag" data-uid="TaleWorlds.Engine.GameEntity.PhysicsDescBodyFlag">
+  PhysicsDescBodyFlag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyFlags PhysicsDescBodyFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PhysicsGlobalBoxMax_" data-uid="TaleWorlds.Engine.GameEntity.PhysicsGlobalBoxMax*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PhysicsGlobalBoxMax" data-uid="TaleWorlds.Engine.GameEntity.PhysicsGlobalBoxMax">
+  PhysicsGlobalBoxMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 PhysicsGlobalBoxMax { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PhysicsGlobalBoxMin_" data-uid="TaleWorlds.Engine.GameEntity.PhysicsGlobalBoxMin*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PhysicsGlobalBoxMin" data-uid="TaleWorlds.Engine.GameEntity.PhysicsGlobalBoxMin">
+  PhysicsGlobalBoxMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 PhysicsGlobalBoxMin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Root_" data-uid="TaleWorlds.Engine.GameEntity.Root*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Root" data-uid="TaleWorlds.Engine.GameEntity.Root">
+  Root
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity Root { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Scene_" data-uid="TaleWorlds.Engine.GameEntity.Scene*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Scene" data-uid="TaleWorlds.Engine.GameEntity.Scene">
+  Scene
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene Scene { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Skeleton_" data-uid="TaleWorlds.Engine.GameEntity.Skeleton*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Skeleton" data-uid="TaleWorlds.Engine.GameEntity.Skeleton">
+  Skeleton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skeleton Skeleton { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Tags_" data-uid="TaleWorlds.Engine.GameEntity.Tags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Tags" data-uid="TaleWorlds.Engine.GameEntity.Tags">
+  Tags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] Tags { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ActivateRagdoll_" data-uid="TaleWorlds.Engine.GameEntity.ActivateRagdoll*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ActivateRagdoll" data-uid="TaleWorlds.Engine.GameEntity.ActivateRagdoll">
+  ActivateRagdoll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateRagdoll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddAllMeshesOfGameEntity_" data-uid="TaleWorlds.Engine.GameEntity.AddAllMeshesOfGameEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddAllMeshesOfGameEntity_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.Engine.GameEntity.AddAllMeshesOfGameEntity(TaleWorlds.Engine.GameEntity)">
+  AddAllMeshesOfGameEntity(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAllMeshesOfGameEntity(GameEntity gameEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddBodyFlags_" data-uid="TaleWorlds.Engine.GameEntity.AddBodyFlags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddBodyFlags_TaleWorlds_Engine_BodyFlags_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AddBodyFlags(TaleWorlds.Engine.BodyFlags,System.Boolean)">
+  AddBodyFlags(BodyFlags, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBodyFlags(BodyFlags bodyFlags, bool applyToChildren = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyFlags</code> <a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+    <dt><code>applyToChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddChild_" data-uid="TaleWorlds.Engine.GameEntity.AddChild*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddChild_TaleWorlds_Engine_GameEntity_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AddChild(TaleWorlds.Engine.GameEntity,System.Boolean)">
+  AddChild(GameEntity, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChild(GameEntity gameEntity, bool autoLocalizeFrame = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+    <dt><code>autoLocalizeFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddComponent_" data-uid="TaleWorlds.Engine.GameEntity.AddComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddComponent_TaleWorlds_Engine_GameEntityComponent_" data-uid="TaleWorlds.Engine.GameEntity.AddComponent(TaleWorlds.Engine.GameEntityComponent)">
+  AddComponent(GameEntityComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddComponent(GameEntityComponent component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddEditDataUserToAllMeshes_" data-uid="TaleWorlds.Engine.GameEntity.AddEditDataUserToAllMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddEditDataUserToAllMeshes_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AddEditDataUserToAllMeshes(System.Boolean,System.Boolean)">
+  AddEditDataUserToAllMeshes(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEditDataUserToAllMeshes(bool entityComponents, bool skeletonComponents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>skeletonComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddLight_" data-uid="TaleWorlds.Engine.GameEntity.AddLight*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddLight_TaleWorlds_Engine_Light_" data-uid="TaleWorlds.Engine.GameEntity.AddLight(TaleWorlds.Engine.Light)">
+  AddLight(Light)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddLight(Light light)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>light</code> <a class="xref" href="TaleWorlds.Engine.Light.html">Light</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddMesh_" data-uid="TaleWorlds.Engine.GameEntity.AddMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddMesh_TaleWorlds_Engine_Mesh_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AddMesh(TaleWorlds.Engine.Mesh,System.Boolean)">
+  AddMesh(Mesh, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh, bool recomputeBoundingBox = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+    <dt><code>recomputeBoundingBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddMeshToBone_" data-uid="TaleWorlds.Engine.GameEntity.AddMeshToBone*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddMeshToBone_System_SByte_TaleWorlds_Engine_Mesh_" data-uid="TaleWorlds.Engine.GameEntity.AddMeshToBone(System.SByte,TaleWorlds.Engine.Mesh)">
+  AddMeshToBone(sbyte, Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMeshToBone(sbyte boneIndex, Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+    <dt><code>mesh</code> <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddMultiMesh_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddMultiMesh_TaleWorlds_Engine_MetaMesh_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMesh(TaleWorlds.Engine.MetaMesh,System.Boolean)">
+  AddMultiMesh(MetaMesh, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMultiMesh(MetaMesh metaMesh, bool updateVisMask = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>updateVisMask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddMultiMeshToSkeleton_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMeshToSkeleton*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddMultiMeshToSkeleton_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMeshToSkeleton(TaleWorlds.Engine.MetaMesh)">
+  AddMultiMeshToSkeleton(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMultiMeshToSkeleton(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddMultiMeshToSkeletonBone_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMeshToSkeletonBone*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddMultiMeshToSkeletonBone_TaleWorlds_Engine_MetaMesh_System_SByte_" data-uid="TaleWorlds.Engine.GameEntity.AddMultiMeshToSkeletonBone(TaleWorlds.Engine.MetaMesh,System.SByte)">
+  AddMultiMeshToSkeletonBone(MetaMesh, sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMultiMeshToSkeletonBone(MetaMesh metaMesh, sbyte boneIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>boneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddParticleSystemComponent_" data-uid="TaleWorlds.Engine.GameEntity.AddParticleSystemComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddParticleSystemComponent_System_String_" data-uid="TaleWorlds.Engine.GameEntity.AddParticleSystemComponent(System.String)">
+  AddParticleSystemComponent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddParticleSystemComponent(string particleid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>particleid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AddTag_" data-uid="TaleWorlds.Engine.GameEntity.AddTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AddTag_System_String_" data-uid="TaleWorlds.Engine.GameEntity.AddTag(System.String)">
+  AddTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_AttachNavigationMeshFaces_" data-uid="TaleWorlds.Engine.GameEntity.AttachNavigationMeshFaces*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_AttachNavigationMeshFaces_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.AttachNavigationMeshFaces(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+  AttachNavigationMeshFaces(int, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachNavigationMeshFaces(int faceGroupId, bool isConnected, bool isBlocker = false, bool autoLocalize = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faceGroupId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isConnected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isBlocker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>autoLocalize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_BreakPrefab_" data-uid="TaleWorlds.Engine.GameEntity.BreakPrefab*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_BreakPrefab" data-uid="TaleWorlds.Engine.GameEntity.BreakPrefab">
+  BreakPrefab()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BreakPrefab()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_BurstEntityParticle_" data-uid="TaleWorlds.Engine.GameEntity.BurstEntityParticle*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_BurstEntityParticle_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.BurstEntityParticle(System.Boolean)">
+  BurstEntityParticle(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BurstEntityParticle(bool doChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CallScriptCallbacks_" data-uid="TaleWorlds.Engine.GameEntity.CallScriptCallbacks*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CallScriptCallbacks" data-uid="TaleWorlds.Engine.GameEntity.CallScriptCallbacks">
+  CallScriptCallbacks()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallScriptCallbacks()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ChangeMetaMeshOrRemoveItIfNotExists_" data-uid="TaleWorlds.Engine.GameEntity.ChangeMetaMeshOrRemoveItIfNotExists*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ChangeMetaMeshOrRemoveItIfNotExists_TaleWorlds_Engine_MetaMesh_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.GameEntity.ChangeMetaMeshOrRemoveItIfNotExists(TaleWorlds.Engine.MetaMesh,TaleWorlds.Engine.MetaMesh)">
+  ChangeMetaMeshOrRemoveItIfNotExists(MetaMesh, MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeMetaMeshOrRemoveItIfNotExists(MetaMesh entityMetaMesh, MetaMesh newMetaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityMetaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>newMetaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CheckPointWithOrientedBoundingBox_" data-uid="TaleWorlds.Engine.GameEntity.CheckPointWithOrientedBoundingBox*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CheckPointWithOrientedBoundingBox_TaleWorlds_Library_Vec3_" data-uid="TaleWorlds.Engine.GameEntity.CheckPointWithOrientedBoundingBox(TaleWorlds.Library.Vec3)">
+  CheckPointWithOrientedBoundingBox(Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckPointWithOrientedBoundingBox(Vec3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CheckResources_" data-uid="TaleWorlds.Engine.GameEntity.CheckResources*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CheckResources_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.CheckResources(System.Boolean,System.Boolean)">
+  CheckResources(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckResources(bool addToQueue, bool checkFaceResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addToQueue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>checkFaceResources</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ClearComponents_" data-uid="TaleWorlds.Engine.GameEntity.ClearComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ClearComponents" data-uid="TaleWorlds.Engine.GameEntity.ClearComponents">
+  ClearComponents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearComponents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ClearEntityComponents_" data-uid="TaleWorlds.Engine.GameEntity.ClearEntityComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ClearEntityComponents_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.ClearEntityComponents(System.Boolean,System.Boolean,System.Boolean)">
+  ClearEntityComponents(bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearEntityComponents(bool resetAll, bool removeScripts, bool deleteChildEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resetAll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>removeScripts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>deleteChildEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ClearOnlyOwnComponents_" data-uid="TaleWorlds.Engine.GameEntity.ClearOnlyOwnComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ClearOnlyOwnComponents" data-uid="TaleWorlds.Engine.GameEntity.ClearOnlyOwnComponents">
+  ClearOnlyOwnComponents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOnlyOwnComponents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ComputeTrajectoryVolume_" data-uid="TaleWorlds.Engine.GameEntity.ComputeTrajectoryVolume*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ComputeTrajectoryVolume_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.ComputeTrajectoryVolume(System.Single,System.Single,System.Single,System.Single,System.Single)">
+  ComputeTrajectoryVolume(float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeTrajectoryVolume(float missileSpeed, float verticalAngleMaxInDegrees, float verticalAngleMinInDegrees, float horizontalAngleRangeInDegrees, float airFrictionConstant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missileSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>verticalAngleMaxInDegrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>verticalAngleMinInDegrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>horizontalAngleRangeInDegrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>airFrictionConstant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CopyComponentsToSkeleton_" data-uid="TaleWorlds.Engine.GameEntity.CopyComponentsToSkeleton*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CopyComponentsToSkeleton" data-uid="TaleWorlds.Engine.GameEntity.CopyComponentsToSkeleton">
+  CopyComponentsToSkeleton()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyComponentsToSkeleton()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CopyFrom_" data-uid="TaleWorlds.Engine.GameEntity.CopyFrom*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CopyFrom_TaleWorlds_Engine_Scene_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.Engine.GameEntity.CopyFrom(TaleWorlds.Engine.Scene,TaleWorlds.Engine.GameEntity)">
+  CopyFrom(Scene, GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity CopyFrom(Scene scene, GameEntity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+    <dt><code>entity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CopyFromPrefab_" data-uid="TaleWorlds.Engine.GameEntity.CopyFromPrefab*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CopyFromPrefab_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.Engine.GameEntity.CopyFromPrefab(TaleWorlds.Engine.GameEntity)">
+  CopyFromPrefab(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity CopyFromPrefab(GameEntity prefab)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CopyScriptComponentFromAnotherEntity_" data-uid="TaleWorlds.Engine.GameEntity.CopyScriptComponentFromAnotherEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CopyScriptComponentFromAnotherEntity_TaleWorlds_Engine_GameEntity_System_String_" data-uid="TaleWorlds.Engine.GameEntity.CopyScriptComponentFromAnotherEntity(TaleWorlds.Engine.GameEntity,System.String)">
+  CopyScriptComponentFromAnotherEntity(GameEntity, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyScriptComponentFromAnotherEntity(GameEntity otherEntity, string scriptName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+    <dt><code>scriptName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CreateAndAddScriptComponent_" data-uid="TaleWorlds.Engine.GameEntity.CreateAndAddScriptComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CreateAndAddScriptComponent_System_String_" data-uid="TaleWorlds.Engine.GameEntity.CreateAndAddScriptComponent(System.String)">
+  CreateAndAddScriptComponent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateAndAddScriptComponent(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CreateEmpty_" data-uid="TaleWorlds.Engine.GameEntity.CreateEmpty*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CreateEmpty_TaleWorlds_Engine_Scene_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.CreateEmpty(TaleWorlds.Engine.Scene,System.Boolean)">
+  CreateEmpty(Scene, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity CreateEmpty(Scene scene, bool isModifiableFromEditor = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+    <dt><code>isModifiableFromEditor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CreateEmptyDynamic_" data-uid="TaleWorlds.Engine.GameEntity.CreateEmptyDynamic*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CreateEmptyDynamic_TaleWorlds_Engine_Scene_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.CreateEmptyDynamic(TaleWorlds.Engine.Scene,System.Boolean)">
+  CreateEmptyDynamic(Scene, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity CreateEmptyDynamic(Scene scene, bool isModifiableFromEditor = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+    <dt><code>isModifiableFromEditor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_CreateEmptyWithoutScene_" data-uid="TaleWorlds.Engine.GameEntity.CreateEmptyWithoutScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_CreateEmptyWithoutScene" data-uid="TaleWorlds.Engine.GameEntity.CreateEmptyWithoutScene">
+  CreateEmptyWithoutScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity CreateEmptyWithoutScene()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_DeselectEntityOnEditor_" data-uid="TaleWorlds.Engine.GameEntity.DeselectEntityOnEditor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_DeselectEntityOnEditor" data-uid="TaleWorlds.Engine.GameEntity.DeselectEntityOnEditor">
+  DeselectEntityOnEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeselectEntityOnEditor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetAllMeshesWithTag_" data-uid="TaleWorlds.Engine.GameEntity.GetAllMeshesWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetAllMeshesWithTag_System_String_" data-uid="TaleWorlds.Engine.GameEntity.GetAllMeshesWithTag(System.String)">
+  GetAllMeshesWithTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Mesh&gt; GetAllMeshesWithTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoneCount_" data-uid="TaleWorlds.Engine.GameEntity.GetBoneCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoneCount" data-uid="TaleWorlds.Engine.GameEntity.GetBoneCount">
+  GetBoneCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte GetBoneCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoneEntitialFrameWithIndex_" data-uid="TaleWorlds.Engine.GameEntity.GetBoneEntitialFrameWithIndex*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoneEntitialFrameWithIndex_System_SByte_" data-uid="TaleWorlds.Engine.GameEntity.GetBoneEntitialFrameWithIndex(System.SByte)">
+  GetBoneEntitialFrameWithIndex(sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetBoneEntitialFrameWithIndex(sbyte boneIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoneEntitialFrameWithName_" data-uid="TaleWorlds.Engine.GameEntity.GetBoneEntitialFrameWithName*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoneEntitialFrameWithName_System_String_" data-uid="TaleWorlds.Engine.GameEntity.GetBoneEntitialFrameWithName(System.String)">
+  GetBoneEntitialFrameWithName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetBoneEntitialFrameWithName(string boneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoundingBoxMax_" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxMax*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoundingBoxMax" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxMax">
+  GetBoundingBoxMax()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetBoundingBoxMax()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoundingBoxMin_" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxMin*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoundingBoxMin" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxMin">
+  GetBoundingBoxMin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetBoundingBoxMin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetBoundingBoxRadius_" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxRadius*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetBoundingBoxRadius" data-uid="TaleWorlds.Engine.GameEntity.GetBoundingBoxRadius">
+  GetBoundingBoxRadius()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBoundingBoxRadius()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetCameraParamsFromCameraScript_" data-uid="TaleWorlds.Engine.GameEntity.GetCameraParamsFromCameraScript*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetCameraParamsFromCameraScript_TaleWorlds_Engine_Camera_TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.Engine.GameEntity.GetCameraParamsFromCameraScript(TaleWorlds.Engine.Camera,TaleWorlds.Library.Vec3@)">
+  GetCameraParamsFromCameraScript(Camera, ref Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCameraParamsFromCameraScript(Camera cam, ref Vec3 dofParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cam</code> <a class="xref" href="TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+    <dt><code>dofParams</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetChild_" data-uid="TaleWorlds.Engine.GameEntity.GetChild*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetChild_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.GetChild(System.Int32)">
+  GetChild(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity GetChild(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetChildren_" data-uid="TaleWorlds.Engine.GameEntity.GetChildren*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetChildren" data-uid="TaleWorlds.Engine.GameEntity.GetChildren">
+  GetChildren()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;GameEntity&gt; GetChildren()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetChildrenRecursive_" data-uid="TaleWorlds.Engine.GameEntity.GetChildrenRecursive*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetChildrenRecursive_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity___" data-uid="TaleWorlds.Engine.GameEntity.GetChildrenRecursive(System.Collections.Generic.List{TaleWorlds.Engine.GameEntity}@)">
+  GetChildrenRecursive(ref List&lt;GameEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetChildrenRecursive(ref List&lt;GameEntity&gt; children)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>children</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetClothSimulator_" data-uid="TaleWorlds.Engine.GameEntity.GetClothSimulator*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetClothSimulator_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.GetClothSimulator(System.Int32)">
+  GetClothSimulator(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClothSimulatorComponent GetClothSimulator(int clothSimulatorIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clothSimulatorIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ClothSimulatorComponent.html">ClothSimulatorComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetComponentAtIndex_" data-uid="TaleWorlds.Engine.GameEntity.GetComponentAtIndex*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetComponentAtIndex_System_Int32_TaleWorlds_Engine_GameEntity_ComponentType_" data-uid="TaleWorlds.Engine.GameEntity.GetComponentAtIndex(System.Int32,TaleWorlds.Engine.GameEntity.ComponentType)">
+  GetComponentAtIndex(int, ComponentType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntityComponent GetComponentAtIndex(int index, GameEntity.ComponentType componentType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>componentType</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetComponentCount_" data-uid="TaleWorlds.Engine.GameEntity.GetComponentCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetComponentCount_TaleWorlds_Engine_GameEntity_ComponentType_" data-uid="TaleWorlds.Engine.GameEntity.GetComponentCount(TaleWorlds.Engine.GameEntity.ComponentType)">
+  GetComponentCount(ComponentType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetComponentCount(GameEntity.ComponentType componentType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>componentType</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetEditModeLevelVisibility_" data-uid="TaleWorlds.Engine.GameEntity.GetEditModeLevelVisibility*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetEditModeLevelVisibility" data-uid="TaleWorlds.Engine.GameEntity.GetEditModeLevelVisibility">
+  GetEditModeLevelVisibility()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEditModeLevelVisibility()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetEntityAndChildren_" data-uid="TaleWorlds.Engine.GameEntity.GetEntityAndChildren*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetEntityAndChildren" data-uid="TaleWorlds.Engine.GameEntity.GetEntityAndChildren">
+  GetEntityAndChildren()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;GameEntity&gt; GetEntityAndChildren()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFactorColor_" data-uid="TaleWorlds.Engine.GameEntity.GetFactorColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFactorColor" data-uid="TaleWorlds.Engine.GameEntity.GetFactorColor">
+  GetFactorColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetFactorColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFirstMesh_" data-uid="TaleWorlds.Engine.GameEntity.GetFirstMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFirstMesh" data-uid="TaleWorlds.Engine.GameEntity.GetFirstMesh">
+  GetFirstMesh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh GetFirstMesh()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFirstScriptOfTypeInFamily_" data-uid="TaleWorlds.Engine.GameEntity.GetFirstScriptOfTypeInFamily*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFirstScriptOfTypeInFamily__1" data-uid="TaleWorlds.Engine.GameEntity.GetFirstScriptOfTypeInFamily``1">
+  GetFirstScriptOfTypeInFamily&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetFirstScriptOfTypeInFamily&lt;T&gt;() where T : ScriptComponentBehavior</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFirstScriptOfType_" data-uid="TaleWorlds.Engine.GameEntity.GetFirstScriptOfType*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFirstScriptOfType__1" data-uid="TaleWorlds.Engine.GameEntity.GetFirstScriptOfType``1">
+  GetFirstScriptOfType&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetFirstScriptOfType&lt;T&gt;() where T : ScriptComponentBehavior</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFrame" data-uid="TaleWorlds.Engine.GameEntity.GetFrame">
+  GetFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetFrame_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.GetFrame(TaleWorlds.Library.MatrixFrame@)">
+  GetFrame(out MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFrame(out MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetGlobalFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetGlobalFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetGlobalFrame" data-uid="TaleWorlds.Engine.GameEntity.GetGlobalFrame">
+  GetGlobalFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetGlobalFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetGlobalScale_" data-uid="TaleWorlds.Engine.GameEntity.GetGlobalScale*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetGlobalScale" data-uid="TaleWorlds.Engine.GameEntity.GetGlobalScale">
+  GetGlobalScale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetGlobalScale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetGuid_" data-uid="TaleWorlds.Engine.GameEntity.GetGuid*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetGuid" data-uid="TaleWorlds.Engine.GameEntity.GetGuid">
+  GetGuid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGuid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetHasFrameChanged_" data-uid="TaleWorlds.Engine.GameEntity.GetHasFrameChanged*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetHasFrameChanged" data-uid="TaleWorlds.Engine.GameEntity.GetHasFrameChanged">
+  GetHasFrameChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHasFrameChanged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetLight_" data-uid="TaleWorlds.Engine.GameEntity.GetLight*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetLight" data-uid="TaleWorlds.Engine.GameEntity.GetLight">
+  GetLight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Light GetLight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Light.html">Light</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetLocalScale_" data-uid="TaleWorlds.Engine.GameEntity.GetLocalScale*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetLocalScale" data-uid="TaleWorlds.Engine.GameEntity.GetLocalScale">
+  GetLocalScale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetLocalScale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetLodLevelForDistanceSq_" data-uid="TaleWorlds.Engine.GameEntity.GetLodLevelForDistanceSq*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetLodLevelForDistanceSq_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.GetLodLevelForDistanceSq(System.Single)">
+  GetLodLevelForDistanceSq(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLodLevelForDistanceSq(float distSq)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distSq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetMeshBendedFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetMeshBendedFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetMeshBendedFrame_TaleWorlds_Library_MatrixFrame_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.GetMeshBendedFrame(TaleWorlds.Library.MatrixFrame,TaleWorlds.Library.MatrixFrame@)">
+  GetMeshBendedFrame(MatrixFrame, ref MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMeshBendedFrame(MatrixFrame worldSpacePosition, ref MatrixFrame output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldSpacePosition</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetMetaMesh_" data-uid="TaleWorlds.Engine.GameEntity.GetMetaMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetMetaMesh_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.GetMetaMesh(System.Int32)">
+  GetMetaMesh(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaMesh GetMetaMesh(int metaMeshIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetOldPrefabName_" data-uid="TaleWorlds.Engine.GameEntity.GetOldPrefabName*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetOldPrefabName" data-uid="TaleWorlds.Engine.GameEntity.GetOldPrefabName">
+  GetOldPrefabName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOldPrefabName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetPhysicsBoundingBoxMax_" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsBoundingBoxMax*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetPhysicsBoundingBoxMax" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsBoundingBoxMax">
+  GetPhysicsBoundingBoxMax()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetPhysicsBoundingBoxMax()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetPhysicsBoundingBoxMin_" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsBoundingBoxMin*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetPhysicsBoundingBoxMin" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsBoundingBoxMin">
+  GetPhysicsBoundingBoxMin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetPhysicsBoundingBoxMin()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetPhysicsMinMax_" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsMinMax*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetPhysicsMinMax_System_Boolean_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.GetPhysicsMinMax(System.Boolean,TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@,System.Boolean)">
+  GetPhysicsMinMax(bool, out Vec3, out Vec3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPhysicsMinMax(bool includeChildren, out Vec3 bbmin, out Vec3 bbmax, bool returnLocal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>includeChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>bbmin</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>bbmax</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>returnLocal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetPrefabName_" data-uid="TaleWorlds.Engine.GameEntity.GetPrefabName*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetPrefabName" data-uid="TaleWorlds.Engine.GameEntity.GetPrefabName">
+  GetPrefabName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPrefabName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetPreviousGlobalFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetPreviousGlobalFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetPreviousGlobalFrame" data-uid="TaleWorlds.Engine.GameEntity.GetPreviousGlobalFrame">
+  GetPreviousGlobalFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetPreviousGlobalFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetQuickBoneEntitialFrame_" data-uid="TaleWorlds.Engine.GameEntity.GetQuickBoneEntitialFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetQuickBoneEntitialFrame_System_SByte_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.GetQuickBoneEntitialFrame(System.SByte,TaleWorlds.Library.MatrixFrame@)">
+  GetQuickBoneEntitialFrame(sbyte, ref MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetQuickBoneEntitialFrame(sbyte index, ref MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetScenePointer_" data-uid="TaleWorlds.Engine.GameEntity.GetScenePointer*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetScenePointer" data-uid="TaleWorlds.Engine.GameEntity.GetScenePointer">
+  GetScenePointer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIntPtr GetScenePointer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetScriptComponents_" data-uid="TaleWorlds.Engine.GameEntity.GetScriptComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetScriptComponents" data-uid="TaleWorlds.Engine.GameEntity.GetScriptComponents">
+  GetScriptComponents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ScriptComponentBehavior&gt; GetScriptComponents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetScriptComponents_" data-uid="TaleWorlds.Engine.GameEntity.GetScriptComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetScriptComponents__1" data-uid="TaleWorlds.Engine.GameEntity.GetScriptComponents``1">
+  GetScriptComponents&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetScriptComponents&lt;T&gt;() where T : ScriptComponentBehavior</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelMask_" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelMask*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelMask" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelMask">
+  GetUpgradeLevelMask()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity.UpgradeLevelMask GetUpgradeLevelMask()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.UpgradeLevelMask.html">UpgradeLevelMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelMaskCumulative_" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelMaskCumulative*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelMaskCumulative" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelMaskCumulative">
+  GetUpgradeLevelMaskCumulative()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity.UpgradeLevelMask GetUpgradeLevelMaskCumulative()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.UpgradeLevelMask.html">UpgradeLevelMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelOfEntity_" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelOfEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetUpgradeLevelOfEntity" data-uid="TaleWorlds.Engine.GameEntity.GetUpgradeLevelOfEntity">
+  GetUpgradeLevelOfEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUpgradeLevelOfEntity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetVisibilityExcludeParents_" data-uid="TaleWorlds.Engine.GameEntity.GetVisibilityExcludeParents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetVisibilityExcludeParents" data-uid="TaleWorlds.Engine.GameEntity.GetVisibilityExcludeParents">
+  GetVisibilityExcludeParents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetVisibilityExcludeParents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_GetVisibilityLevelMaskIncludingParents_" data-uid="TaleWorlds.Engine.GameEntity.GetVisibilityLevelMaskIncludingParents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_GetVisibilityLevelMaskIncludingParents" data-uid="TaleWorlds.Engine.GameEntity.GetVisibilityLevelMaskIncludingParents">
+  GetVisibilityLevelMaskIncludingParents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetVisibilityLevelMaskIncludingParents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasComplexAnimTree_" data-uid="TaleWorlds.Engine.GameEntity.HasComplexAnimTree*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasComplexAnimTree" data-uid="TaleWorlds.Engine.GameEntity.HasComplexAnimTree">
+  HasComplexAnimTree()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasComplexAnimTree()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasComponent_" data-uid="TaleWorlds.Engine.GameEntity.HasComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasComponent_TaleWorlds_Engine_GameEntityComponent_" data-uid="TaleWorlds.Engine.GameEntity.HasComponent(TaleWorlds.Engine.GameEntityComponent)">
+  HasComponent(GameEntityComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasComponent(GameEntityComponent component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasPhysicsBody_" data-uid="TaleWorlds.Engine.GameEntity.HasPhysicsBody*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasPhysicsBody" data-uid="TaleWorlds.Engine.GameEntity.HasPhysicsBody">
+  HasPhysicsBody()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPhysicsBody()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasScene_" data-uid="TaleWorlds.Engine.GameEntity.HasScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasScene" data-uid="TaleWorlds.Engine.GameEntity.HasScene">
+  HasScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasScene()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasScriptComponent_" data-uid="TaleWorlds.Engine.GameEntity.HasScriptComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasScriptComponent_System_String_" data-uid="TaleWorlds.Engine.GameEntity.HasScriptComponent(System.String)">
+  HasScriptComponent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasScriptComponent(string scName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasScriptOfType_" data-uid="TaleWorlds.Engine.GameEntity.HasScriptOfType*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasScriptOfType_System_Type_" data-uid="TaleWorlds.Engine.GameEntity.HasScriptOfType(System.Type)">
+  HasScriptOfType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasScriptOfType(Type t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasScriptOfType_" data-uid="TaleWorlds.Engine.GameEntity.HasScriptOfType*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasScriptOfType__1" data-uid="TaleWorlds.Engine.GameEntity.HasScriptOfType``1">
+  HasScriptOfType&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasScriptOfType&lt;T&gt;() where T : ScriptComponentBehavior</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_HasTag_" data-uid="TaleWorlds.Engine.GameEntity.HasTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_HasTag_System_String_" data-uid="TaleWorlds.Engine.GameEntity.HasTag(System.String)">
+  HasTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Instantiate_" data-uid="TaleWorlds.Engine.GameEntity.Instantiate*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Instantiate_TaleWorlds_Engine_Scene_System_String_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.Instantiate(TaleWorlds.Engine.Scene,System.String,System.Boolean)">
+  Instantiate(Scene, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity Instantiate(Scene scene, string prefabName, bool callScriptCallbacks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+    <dt><code>prefabName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callScriptCallbacks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Instantiate_" data-uid="TaleWorlds.Engine.GameEntity.Instantiate*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Instantiate_TaleWorlds_Engine_Scene_System_String_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.Engine.GameEntity.Instantiate(TaleWorlds.Engine.Scene,System.String,TaleWorlds.Library.MatrixFrame)">
+  Instantiate(Scene, string, MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameEntity Instantiate(Scene scene, string prefabName, MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+    <dt><code>prefabName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_IsGhostObject_" data-uid="TaleWorlds.Engine.GameEntity.IsGhostObject*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_IsGhostObject" data-uid="TaleWorlds.Engine.GameEntity.IsGhostObject">
+  IsGhostObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGhostObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_IsGuidValid_" data-uid="TaleWorlds.Engine.GameEntity.IsGuidValid*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_IsGuidValid" data-uid="TaleWorlds.Engine.GameEntity.IsGuidValid">
+  IsGuidValid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGuidValid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_IsSelectedOnEditor_" data-uid="TaleWorlds.Engine.GameEntity.IsSelectedOnEditor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_IsSelectedOnEditor" data-uid="TaleWorlds.Engine.GameEntity.IsSelectedOnEditor">
+  IsSelectedOnEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelectedOnEditor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_IsSkeletonAnimationPaused_" data-uid="TaleWorlds.Engine.GameEntity.IsSkeletonAnimationPaused*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_IsSkeletonAnimationPaused" data-uid="TaleWorlds.Engine.GameEntity.IsSkeletonAnimationPaused">
+  IsSkeletonAnimationPaused()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSkeletonAnimationPaused()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_IsVisibleIncludeParents_" data-uid="TaleWorlds.Engine.GameEntity.IsVisibleIncludeParents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_IsVisibleIncludeParents" data-uid="TaleWorlds.Engine.GameEntity.IsVisibleIncludeParents">
+  IsVisibleIncludeParents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisibleIncludeParents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PauseParticleSystem_" data-uid="TaleWorlds.Engine.GameEntity.PauseParticleSystem*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PauseParticleSystem_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.PauseParticleSystem(System.Boolean)">
+  PauseParticleSystem(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseParticleSystem(bool doChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PauseSkeletonAnimation_" data-uid="TaleWorlds.Engine.GameEntity.PauseSkeletonAnimation*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PauseSkeletonAnimation" data-uid="TaleWorlds.Engine.GameEntity.PauseSkeletonAnimation">
+  PauseSkeletonAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseSkeletonAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_PrefabExists_" data-uid="TaleWorlds.Engine.GameEntity.PrefabExists*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_PrefabExists_System_String_" data-uid="TaleWorlds.Engine.GameEntity.PrefabExists(System.String)">
+  PrefabExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PrefabExists(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RecomputeBoundingBox_" data-uid="TaleWorlds.Engine.GameEntity.RecomputeBoundingBox*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RecomputeBoundingBox" data-uid="TaleWorlds.Engine.GameEntity.RecomputeBoundingBox">
+  RecomputeBoundingBox()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecomputeBoundingBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ReleaseEditDataUserToAllMeshes_" data-uid="TaleWorlds.Engine.GameEntity.ReleaseEditDataUserToAllMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ReleaseEditDataUserToAllMeshes_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.ReleaseEditDataUserToAllMeshes(System.Boolean,System.Boolean)">
+  ReleaseEditDataUserToAllMeshes(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseEditDataUserToAllMeshes(bool entityComponents, bool skeletonComponents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>skeletonComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_Remove_" data-uid="TaleWorlds.Engine.GameEntity.Remove*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_Remove_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.Remove(System.Int32)">
+  Remove(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveAllChildren_" data-uid="TaleWorlds.Engine.GameEntity.RemoveAllChildren*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveAllChildren" data-uid="TaleWorlds.Engine.GameEntity.RemoveAllChildren">
+  RemoveAllChildren()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllChildren()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveAllParticleSystems_" data-uid="TaleWorlds.Engine.GameEntity.RemoveAllParticleSystems*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveAllParticleSystems" data-uid="TaleWorlds.Engine.GameEntity.RemoveAllParticleSystems">
+  RemoveAllParticleSystems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllParticleSystems()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveBodyFlags_" data-uid="TaleWorlds.Engine.GameEntity.RemoveBodyFlags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveBodyFlags_TaleWorlds_Engine_BodyFlags_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.RemoveBodyFlags(TaleWorlds.Engine.BodyFlags,System.Boolean)">
+  RemoveBodyFlags(BodyFlags, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBodyFlags(BodyFlags bodyFlags, bool applyToChildren = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyFlags</code> <a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+    <dt><code>applyToChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveChild_" data-uid="TaleWorlds.Engine.GameEntity.RemoveChild*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveChild_TaleWorlds_Engine_GameEntity_System_Boolean_System_Boolean_System_Boolean_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.RemoveChild(TaleWorlds.Engine.GameEntity,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+  RemoveChild(GameEntity, bool, bool, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveChild(GameEntity childEntity, bool keepPhysics, bool keepScenePointer, bool callScriptCallbacks, int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>childEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+    <dt><code>keepPhysics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keepScenePointer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>callScriptCallbacks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveComponent_" data-uid="TaleWorlds.Engine.GameEntity.RemoveComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveComponent_TaleWorlds_Engine_GameEntityComponent_" data-uid="TaleWorlds.Engine.GameEntity.RemoveComponent(TaleWorlds.Engine.GameEntityComponent)">
+  RemoveComponent(GameEntityComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveComponent(GameEntityComponent component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveComponentWithMesh_" data-uid="TaleWorlds.Engine.GameEntity.RemoveComponentWithMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveComponentWithMesh_TaleWorlds_Engine_Mesh_" data-uid="TaleWorlds.Engine.GameEntity.RemoveComponentWithMesh(TaleWorlds.Engine.Mesh)">
+  RemoveComponentWithMesh(Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveComponentWithMesh(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveFromPredisplayEntity_" data-uid="TaleWorlds.Engine.GameEntity.RemoveFromPredisplayEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveFromPredisplayEntity" data-uid="TaleWorlds.Engine.GameEntity.RemoveFromPredisplayEntity">
+  RemoveFromPredisplayEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFromPredisplayEntity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveMultiMesh_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveMultiMesh_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMesh(TaleWorlds.Engine.MetaMesh)">
+  RemoveMultiMesh(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveMultiMesh(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveMultiMeshFromSkeleton_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMeshFromSkeleton*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveMultiMeshFromSkeleton_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMeshFromSkeleton(TaleWorlds.Engine.MetaMesh)">
+  RemoveMultiMeshFromSkeleton(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMultiMeshFromSkeleton(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveMultiMeshFromSkeletonBone_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMeshFromSkeletonBone*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveMultiMeshFromSkeletonBone_TaleWorlds_Engine_MetaMesh_System_SByte_" data-uid="TaleWorlds.Engine.GameEntity.RemoveMultiMeshFromSkeletonBone(TaleWorlds.Engine.MetaMesh,System.SByte)">
+  RemoveMultiMeshFromSkeletonBone(MetaMesh, sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMultiMeshFromSkeletonBone(MetaMesh metaMesh, sbyte boneIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>boneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveScriptComponent_" data-uid="TaleWorlds.Engine.GameEntity.RemoveScriptComponent*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveScriptComponent_System_UIntPtr_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.RemoveScriptComponent(System.UIntPtr,System.Int32)">
+  RemoveScriptComponent(UIntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveScriptComponent(UIntPtr scriptComponent, int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scriptComponent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></dt>
+    <dd></dd>
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveSkeleton_" data-uid="TaleWorlds.Engine.GameEntity.RemoveSkeleton*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveSkeleton" data-uid="TaleWorlds.Engine.GameEntity.RemoveSkeleton">
+  RemoveSkeleton()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSkeleton()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_RemoveTag_" data-uid="TaleWorlds.Engine.GameEntity.RemoveTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_RemoveTag_System_String_" data-uid="TaleWorlds.Engine.GameEntity.RemoveTag(System.String)">
+  RemoveTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ResumeParticleSystem_" data-uid="TaleWorlds.Engine.GameEntity.ResumeParticleSystem*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ResumeParticleSystem_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.ResumeParticleSystem(System.Boolean)">
+  ResumeParticleSystem(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeParticleSystem(bool doChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ResumeSkeletonAnimation_" data-uid="TaleWorlds.Engine.GameEntity.ResumeSkeletonAnimation*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ResumeSkeletonAnimation" data-uid="TaleWorlds.Engine.GameEntity.ResumeSkeletonAnimation">
+  ResumeSkeletonAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeSkeletonAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SelectEntityOnEditor_" data-uid="TaleWorlds.Engine.GameEntity.SelectEntityOnEditor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SelectEntityOnEditor" data-uid="TaleWorlds.Engine.GameEntity.SelectEntityOnEditor">
+  SelectEntityOnEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectEntityOnEditor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetAlpha_" data-uid="TaleWorlds.Engine.GameEntity.SetAlpha*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetAlpha_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.SetAlpha(System.Single)">
+  SetAlpha(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlpha(float alpha)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetAnimTreeChannelParameterForceUpdate_" data-uid="TaleWorlds.Engine.GameEntity.SetAnimTreeChannelParameterForceUpdate*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetAnimTreeChannelParameterForceUpdate_System_Single_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.SetAnimTreeChannelParameterForceUpdate(System.Single,System.Int32)">
+  SetAnimTreeChannelParameterForceUpdate(float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnimTreeChannelParameterForceUpdate(float phase, int channelNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>channelNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetAnimationSoundActivation_" data-uid="TaleWorlds.Engine.GameEntity.SetAnimationSoundActivation*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetAnimationSoundActivation_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetAnimationSoundActivation(System.Boolean)">
+  SetAnimationSoundActivation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnimationSoundActivation(bool activate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetAsPredisplayEntity_" data-uid="TaleWorlds.Engine.GameEntity.SetAsPredisplayEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetAsPredisplayEntity" data-uid="TaleWorlds.Engine.GameEntity.SetAsPredisplayEntity">
+  SetAsPredisplayEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsPredisplayEntity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetAsReplayEntity_" data-uid="TaleWorlds.Engine.GameEntity.SetAsReplayEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetAsReplayEntity" data-uid="TaleWorlds.Engine.GameEntity.SetAsReplayEntity">
+  SetAsReplayEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsReplayEntity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetBodyFlags_" data-uid="TaleWorlds.Engine.GameEntity.SetBodyFlags*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetBodyFlags_TaleWorlds_Engine_BodyFlags_" data-uid="TaleWorlds.Engine.GameEntity.SetBodyFlags(TaleWorlds.Engine.BodyFlags)">
+  SetBodyFlags(BodyFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBodyFlags(BodyFlags bodyFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyFlags</code> <a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetBodyFlagsRecursive_" data-uid="TaleWorlds.Engine.GameEntity.SetBodyFlagsRecursive*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetBodyFlagsRecursive_TaleWorlds_Engine_BodyFlags_" data-uid="TaleWorlds.Engine.GameEntity.SetBodyFlagsRecursive(TaleWorlds.Engine.BodyFlags)">
+  SetBodyFlagsRecursive(BodyFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBodyFlagsRecursive(BodyFlags bodyFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyFlags</code> <a class="xref" href="TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetBoundingboxDirty_" data-uid="TaleWorlds.Engine.GameEntity.SetBoundingboxDirty*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetBoundingboxDirty" data-uid="TaleWorlds.Engine.GameEntity.SetBoundingboxDirty">
+  SetBoundingboxDirty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoundingboxDirty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetClothComponentKeepState_" data-uid="TaleWorlds.Engine.GameEntity.SetClothComponentKeepState*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetClothComponentKeepState_TaleWorlds_Engine_MetaMesh_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetClothComponentKeepState(TaleWorlds.Engine.MetaMesh,System.Boolean)">
+  SetClothComponentKeepState(MetaMesh, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClothComponentKeepState(MetaMesh metaMesh, bool state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetClothComponentKeepStateOfAllMeshes_" data-uid="TaleWorlds.Engine.GameEntity.SetClothComponentKeepStateOfAllMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetClothComponentKeepStateOfAllMeshes_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetClothComponentKeepStateOfAllMeshes(System.Boolean)">
+  SetClothComponentKeepStateOfAllMeshes(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClothComponentKeepStateOfAllMeshes(bool state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetClothMaxDistanceMultiplier_" data-uid="TaleWorlds.Engine.GameEntity.SetClothMaxDistanceMultiplier*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetClothMaxDistanceMultiplier_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.SetClothMaxDistanceMultiplier(System.Single)">
+  SetClothMaxDistanceMultiplier(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClothMaxDistanceMultiplier(float multiplier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>multiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetColor_" data-uid="TaleWorlds.Engine.GameEntity.SetColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetColor_System_UInt32_System_UInt32_System_String_" data-uid="TaleWorlds.Engine.GameEntity.SetColor(System.UInt32,System.UInt32,System.String)">
+  SetColor(uint, uint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(uint color1, uint color2, string meshTag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>color2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>meshTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetContourColor_" data-uid="TaleWorlds.Engine.GameEntity.SetContourColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetContourColor_System_Nullable_System_UInt32__System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetContourColor(System.Nullable{System.UInt32},System.Boolean)">
+  SetContourColor(uint?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContourColor(uint? color, bool alwaysVisible = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>?</dt>
+    <dd></dd>
+    <dt><code>alwaysVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetCullMode_" data-uid="TaleWorlds.Engine.GameEntity.SetCullMode*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetCullMode_TaleWorlds_Engine_MBMeshCullingMode_" data-uid="TaleWorlds.Engine.GameEntity.SetCullMode(TaleWorlds.Engine.MBMeshCullingMode)">
+  SetCullMode(MBMeshCullingMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCullMode(MBMeshCullingMode cullMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cullMode</code> <a class="xref" href="TaleWorlds.Engine.MBMeshCullingMode.html">MBMeshCullingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetEnforcedMaximumLodLevel_" data-uid="TaleWorlds.Engine.GameEntity.SetEnforcedMaximumLodLevel*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetEnforcedMaximumLodLevel_System_Int32_" data-uid="TaleWorlds.Engine.GameEntity.SetEnforcedMaximumLodLevel(System.Int32)">
+  SetEnforcedMaximumLodLevel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnforcedMaximumLodLevel(int lodLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetEntityEnvMapVisibility_" data-uid="TaleWorlds.Engine.GameEntity.SetEntityEnvMapVisibility*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetEntityEnvMapVisibility_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetEntityEnvMapVisibility(System.Boolean)">
+  SetEntityEnvMapVisibility(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEntityEnvMapVisibility(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetExternalReferencesUsage_" data-uid="TaleWorlds.Engine.GameEntity.SetExternalReferencesUsage*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetExternalReferencesUsage_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetExternalReferencesUsage(System.Boolean)">
+  SetExternalReferencesUsage(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExternalReferencesUsage(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetFactorColor_" data-uid="TaleWorlds.Engine.GameEntity.SetFactorColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetFactorColor_System_UInt32_" data-uid="TaleWorlds.Engine.GameEntity.SetFactorColor(System.UInt32)">
+  SetFactorColor(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactorColor(uint color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetFrame_" data-uid="TaleWorlds.Engine.GameEntity.SetFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetFrame_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.SetFrame(TaleWorlds.Library.MatrixFrame@)">
+  SetFrame(ref MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrame(ref MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetFrameChanged_" data-uid="TaleWorlds.Engine.GameEntity.SetFrameChanged*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetFrameChanged" data-uid="TaleWorlds.Engine.GameEntity.SetFrameChanged">
+  SetFrameChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetGlobalFrame_" data-uid="TaleWorlds.Engine.GameEntity.SetGlobalFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetGlobalFrame_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.SetGlobalFrame(TaleWorlds.Library.MatrixFrame@)">
+  SetGlobalFrame(in MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlobalFrame(in MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetGlobalFrameMT_" data-uid="TaleWorlds.Engine.GameEntity.SetGlobalFrameMT*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetGlobalFrameMT_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.GameEntity.SetGlobalFrameMT(TaleWorlds.Library.MatrixFrame@)">
+  SetGlobalFrameMT(in MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlobalFrameMT(in MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetLocalPosition_" data-uid="TaleWorlds.Engine.GameEntity.SetLocalPosition*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetLocalPosition_TaleWorlds_Library_Vec3_" data-uid="TaleWorlds.Engine.GameEntity.SetLocalPosition(TaleWorlds.Library.Vec3)">
+  SetLocalPosition(Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalPosition(Vec3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetMaterialForAllMeshes_" data-uid="TaleWorlds.Engine.GameEntity.SetMaterialForAllMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetMaterialForAllMeshes_TaleWorlds_Engine_Material_" data-uid="TaleWorlds.Engine.GameEntity.SetMaterialForAllMeshes(TaleWorlds.Engine.Material)">
+  SetMaterialForAllMeshes(Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterialForAllMeshes(Material material)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>material</code> <a class="xref" href="TaleWorlds.Engine.Material.html">Material</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetMobility_" data-uid="TaleWorlds.Engine.GameEntity.SetMobility*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetMobility_TaleWorlds_Engine_GameEntity_Mobility_" data-uid="TaleWorlds.Engine.GameEntity.SetMobility(TaleWorlds.Engine.GameEntity.Mobility)">
+  SetMobility(Mobility)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMobility(GameEntity.Mobility mobility)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobility</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.Mobility.html">Mobility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetMorphFrameOfComponents_" data-uid="TaleWorlds.Engine.GameEntity.SetMorphFrameOfComponents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetMorphFrameOfComponents_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.SetMorphFrameOfComponents(System.Single)">
+  SetMorphFrameOfComponents(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMorphFrameOfComponents(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetPreviousFrameInvalid_" data-uid="TaleWorlds.Engine.GameEntity.SetPreviousFrameInvalid*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetPreviousFrameInvalid" data-uid="TaleWorlds.Engine.GameEntity.SetPreviousFrameInvalid">
+  SetPreviousFrameInvalid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreviousFrameInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetReadyToRender_" data-uid="TaleWorlds.Engine.GameEntity.SetReadyToRender*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetReadyToRender_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetReadyToRender(System.Boolean)">
+  SetReadyToRender(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReadyToRender(bool ready)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ready</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetRuntimeEmissionRateMultiplier_" data-uid="TaleWorlds.Engine.GameEntity.SetRuntimeEmissionRateMultiplier*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetRuntimeEmissionRateMultiplier_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.SetRuntimeEmissionRateMultiplier(System.Single)">
+  SetRuntimeEmissionRateMultiplier(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRuntimeEmissionRateMultiplier(float emissionRateMultiplier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>emissionRateMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetUpgradeLevelMask_" data-uid="TaleWorlds.Engine.GameEntity.SetUpgradeLevelMask*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetUpgradeLevelMask_TaleWorlds_Engine_GameEntity_UpgradeLevelMask_" data-uid="TaleWorlds.Engine.GameEntity.SetUpgradeLevelMask(TaleWorlds.Engine.GameEntity.UpgradeLevelMask)">
+  SetUpgradeLevelMask(UpgradeLevelMask)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUpgradeLevelMask(GameEntity.UpgradeLevelMask mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mask</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>.<a class="xref" href="TaleWorlds.Engine.GameEntity.UpgradeLevelMask.html">UpgradeLevelMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetVectorArgument_" data-uid="TaleWorlds.Engine.GameEntity.SetVectorArgument*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetVectorArgument_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.GameEntity.SetVectorArgument(System.Single,System.Single,System.Single,System.Single)">
+  SetVectorArgument(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArgument(float vectorArgument0, float vectorArgument1, float vectorArgument2, float vectorArgument3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vectorArgument0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_SetVisibilityExcludeParents_" data-uid="TaleWorlds.Engine.GameEntity.SetVisibilityExcludeParents*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_SetVisibilityExcludeParents_System_Boolean_" data-uid="TaleWorlds.Engine.GameEntity.SetVisibilityExcludeParents(System.Boolean)">
+  SetVisibilityExcludeParents(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibilityExcludeParents(bool visible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>visible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ToString_" data-uid="TaleWorlds.Engine.GameEntity.ToString*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ToString" data-uid="TaleWorlds.Engine.GameEntity.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_UpdateGlobalBounds_" data-uid="TaleWorlds.Engine.GameEntity.UpdateGlobalBounds*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_UpdateGlobalBounds" data-uid="TaleWorlds.Engine.GameEntity.UpdateGlobalBounds">
+  UpdateGlobalBounds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGlobalBounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_UpdateTriadFrameForEditor_" data-uid="TaleWorlds.Engine.GameEntity.UpdateTriadFrameForEditor*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_UpdateTriadFrameForEditor" data-uid="TaleWorlds.Engine.GameEntity.UpdateTriadFrameForEditor">
+  UpdateTriadFrameForEditor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTriadFrameForEditor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_UpdateTriadFrameForEditorForAllChildren_" data-uid="TaleWorlds.Engine.GameEntity.UpdateTriadFrameForEditorForAllChildren*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_UpdateTriadFrameForEditorForAllChildren" data-uid="TaleWorlds.Engine.GameEntity.UpdateTriadFrameForEditorForAllChildren">
+  UpdateTriadFrameForEditorForAllChildren()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTriadFrameForEditorForAllChildren()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_UpdateVisibilityMask_" data-uid="TaleWorlds.Engine.GameEntity.UpdateVisibilityMask*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_UpdateVisibilityMask" data-uid="TaleWorlds.Engine.GameEntity.UpdateVisibilityMask">
+  UpdateVisibilityMask()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVisibilityMask()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_GameEntity_ValidateBoundingBox_" data-uid="TaleWorlds.Engine.GameEntity.ValidateBoundingBox*"></a>
+
+  <h3 id="TaleWorlds_Engine_GameEntity_ValidateBoundingBox" data-uid="TaleWorlds.Engine.GameEntity.ValidateBoundingBox">
+  ValidateBoundingBox()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateBoundingBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

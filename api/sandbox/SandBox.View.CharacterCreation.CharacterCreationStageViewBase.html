@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CharacterCreationStageViewBase | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CharacterCreationStageViewBase | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase">
+
+
+
+  <h1 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase" class="text-break">
+Class CharacterCreationStageViewBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.View.html">View</a>.<a class="xref" href="SandBox.View.CharacterCreation.html">CharacterCreation</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.View.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CharacterCreationStageViewBase : ICharacterCreationStageListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CharacterCreationStageViewBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="../core/TaleWorlds.CampaignSystem.CharacterCreationContent.ICharacterCreationStageListener.html">ICharacterCreationStageListener</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationBannerEditorView.html">CharacterCreationBannerEditorView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationClanNamingStageView.html">CharacterCreationClanNamingStageView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationCultureStageView.html">CharacterCreationCultureStageView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationFaceGeneratorView.html">CharacterCreationFaceGeneratorView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationGenericStageView.html">CharacterCreationGenericStageView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationOptionsStageView.html">CharacterCreationOptionsStageView</a></div>
+      <div><a class="xref" href="SandBox.GauntletUI.CharacterCreation.CharacterCreationReviewStageView.html">CharacterCreationReviewStageView</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__ctor_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.#ctor*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__ctor_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStage_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStage_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStage_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStageReturnInt_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStageReturnInt_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStageReturnInt_TaleWorlds_Core_ViewModelCollection_ControlCharacterCreationStageWithInt_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.#ctor(TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt,TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageWithInt)">
+  CharacterCreationStageViewBase(ControlCharacterCreationStage, ControlCharacterCreationStage, ControlCharacterCreationStage, ControlCharacterCreationStageReturnInt, ControlCharacterCreationStageReturnInt, ControlCharacterCreationStageReturnInt, ControlCharacterCreationStageWithInt)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CharacterCreationStageViewBase(ControlCharacterCreationStage affirmativeAction, ControlCharacterCreationStage negativeAction, ControlCharacterCreationStage refreshAction, ControlCharacterCreationStageReturnInt getCurrentStageIndexAction, ControlCharacterCreationStageReturnInt getTotalStageCountAction, ControlCharacterCreationStageReturnInt getFurthestIndexAction, ControlCharacterCreationStageWithInt goToIndexAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affirmativeAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+    <dt><code>negativeAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+    <dt><code>refreshAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+    <dt><code>getCurrentStageIndexAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+    <dt><code>getTotalStageCountAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+    <dt><code>getFurthestIndexAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+    <dt><code>goToIndexAction</code> <a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageWithInt.html">ControlCharacterCreationStageWithInt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__affirmativeAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._affirmativeAction">
+  _affirmativeAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStage _affirmativeAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__cameraPosition" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._cameraPosition">
+  _cameraPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Vec3 _cameraPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__getCurrentStageIndexAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._getCurrentStageIndexAction">
+  _getCurrentStageIndexAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStageReturnInt _getCurrentStageIndexAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__getFurthestIndexAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._getFurthestIndexAction">
+  _getFurthestIndexAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStageReturnInt _getFurthestIndexAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__getTotalStageCountAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._getTotalStageCountAction">
+  _getTotalStageCountAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStageReturnInt _getTotalStageCountAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageReturnInt.html">ControlCharacterCreationStageReturnInt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__goToIndexAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._goToIndexAction">
+  _goToIndexAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStageWithInt _goToIndexAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStageWithInt.html">ControlCharacterCreationStageWithInt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__negativeAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._negativeAction">
+  _negativeAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStage _negativeAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase__refreshAction" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase._refreshAction">
+  _refreshAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ControlCharacterCreationStage _refreshAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.ControlCharacterCreationStage.html">ControlCharacterCreationStage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetEscapeMenuItems_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetEscapeMenuItems*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetEscapeMenuItems_SandBox_View_CharacterCreation_CharacterCreationStageViewBase_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetEscapeMenuItems(SandBox.View.CharacterCreation.CharacterCreationStageViewBase)">
+  GetEscapeMenuItems(CharacterCreationStageViewBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EscapeMenuItemVM&gt; GetEscapeMenuItems(CharacterCreationStageViewBase view)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.html">CharacterCreationStageViewBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="../core/TaleWorlds.MountAndBlade.ViewModelCollection.EscapeMenu.EscapeMenuItemVM.html">EscapeMenuItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetLayers_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetLayers*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetLayers" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetLayers">
+  GetLayers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerable&lt;ScreenLayer&gt; GetLayers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../core/TaleWorlds.ScreenSystem.ScreenLayer.html">ScreenLayer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetVirtualStageCount_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetVirtualStageCount*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GetVirtualStageCount" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GetVirtualStageCount">
+  GetVirtualStageCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetVirtualStageCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GoToIndex_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GoToIndex*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_GoToIndex_System_Int32_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.GoToIndex(System.Int32)">
+  GoToIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GoToIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_HandleEscapeMenu_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.HandleEscapeMenu*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_HandleEscapeMenu_SandBox_View_CharacterCreation_CharacterCreationStageViewBase_TaleWorlds_ScreenSystem_ScreenLayer_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.HandleEscapeMenu(SandBox.View.CharacterCreation.CharacterCreationStageViewBase,TaleWorlds.ScreenSystem.ScreenLayer)">
+  HandleEscapeMenu(CharacterCreationStageViewBase, ScreenLayer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandleEscapeMenu(CharacterCreationStageViewBase view, ScreenLayer screenLayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>view</code> <a class="xref" href="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.html">CharacterCreationStageViewBase</a></dt>
+    <dd></dd>
+    <dt><code>screenLayer</code> <a class="xref" href="../core/TaleWorlds.ScreenSystem.ScreenLayer.html">ScreenLayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_LoadEscapeMenuMovie_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.LoadEscapeMenuMovie*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_LoadEscapeMenuMovie" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.LoadEscapeMenuMovie">
+  LoadEscapeMenuMovie()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void LoadEscapeMenuMovie()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_NextStage_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.NextStage*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_NextStage" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.NextStage">
+  NextStage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void NextStage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_OnFinalize_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.OnFinalize*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_OnFinalize" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_OnRefresh_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.OnRefresh*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_OnRefresh" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.OnRefresh">
+  OnRefresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnRefresh()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_PreviousStage_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.PreviousStage*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_PreviousStage" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.PreviousStage">
+  PreviousStage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void PreviousStage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_ReleaseEscapeMenuMovie_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.ReleaseEscapeMenuMovie*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_ReleaseEscapeMenuMovie" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.ReleaseEscapeMenuMovie">
+  ReleaseEscapeMenuMovie()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ReleaseEscapeMenuMovie()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_SetGenericScene_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.SetGenericScene*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_SetGenericScene_TaleWorlds_Engine_Scene_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.SetGenericScene(TaleWorlds.Engine.Scene)">
+  SetGenericScene(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGenericScene(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="../core/TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_Tick_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.Tick*"></a>
+
+  <h3 id="SandBox_View_CharacterCreation_CharacterCreationStageViewBase_Tick_System_Single_" data-uid="SandBox.View.CharacterCreation.CharacterCreationStageViewBase.Tick(System.Single)">
+  Tick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Tick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

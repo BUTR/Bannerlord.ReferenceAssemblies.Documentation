@@ -1,0 +1,3923 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class IssueBase | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class IssueBase | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Issues_IssueBase" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase" class="text-break">
+Class IssueBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Issues.html">Issues</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IssueBase : MBObjectBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></div>
+      <div><span class="xref">IssueBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.ArmyNeedsSuppliesIssueBehavior.ArmyNeedsSuppliesIssue.html">ArmyNeedsSuppliesIssueBehavior.ArmyNeedsSuppliesIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.ArtisanCantSellProductsAtAFairPriceIssueBehavior.ArtisanCantSellProductsAtAFairPriceIssue.html">ArtisanCantSellProductsAtAFairPriceIssueBehavior.ArtisanCantSellProductsAtAFairPriceIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.ArtisanOverpricedGoodsIssueBehavior.ArtisanOverpricedGoodsIssue.html">ArtisanOverpricedGoodsIssueBehavior.ArtisanOverpricedGoodsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.BettingFraudIssueBehavior.BettingFraudIssue.html">BettingFraudIssueBehavior.BettingFraudIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.CapturedByBountyHuntersIssueBehavior.CapturedByBountyHuntersIssue.html">CapturedByBountyHuntersIssueBehavior.CapturedByBountyHuntersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.CaravanAmbushIssueBehavior.CaravanAmbushIssue.html">CaravanAmbushIssueBehavior.CaravanAmbushIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.EscortMerchantCaravanIssueBehavior.EscortMerchantCaravanIssue.html">EscortMerchantCaravanIssueBehavior.EscortMerchantCaravanIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.ExtortionByDesertersIssueBehavior.ExtortionByDesertersIssue.html">ExtortionByDesertersIssueBehavior.ExtortionByDesertersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.GangLeaderNeedsRecruitsIssueBehavior.GangLeaderNeedsRecruitsIssue.html">GangLeaderNeedsRecruitsIssueBehavior.GangLeaderNeedsRecruitsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.GangLeaderNeedsSpecialWeaponsIssueBehavior.GangLeaderNeedsSpecialWeaponsIssue.html">GangLeaderNeedsSpecialWeaponsIssueBehavior.GangLeaderNeedsSpecialWeaponsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.GangLeaderNeedsToOffloadStolenGoodsIssueBehavior.GangLeaderNeedsToOffloadStolenGoodsIssue.html">GangLeaderNeedsToOffloadStolenGoodsIssueBehavior.GangLeaderNeedsToOffloadStolenGoodsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.GangLeaderNeedsWeaponsIssueQuestBehavior.GangLeaderNeedsWeaponsIssue.html">GangLeaderNeedsWeaponsIssueQuestBehavior.GangLeaderNeedsWeaponsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.HeadmanNeedsGrainIssueBehavior.HeadmanNeedsGrainIssue.html">HeadmanNeedsGrainIssueBehavior.HeadmanNeedsGrainIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.HeadmanNeedsToDeliverAHerdIssueBehavior.HeadmanNeedsToDeliverAHerdIssue.html">HeadmanNeedsToDeliverAHerdIssueBehavior.HeadmanNeedsToDeliverAHerdIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.HeadmanVillageNeedsDraughtAnimalsIssueBehavior.HeadmanVillageNeedsDraughtAnimalsIssue.html">HeadmanVillageNeedsDraughtAnimalsIssueBehavior.HeadmanVillageNeedsDraughtAnimalsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LadysKnightOutIssueBehavior.LadysKnightOutIssue.html">LadysKnightOutIssueBehavior.LadysKnightOutIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LandLordCompanyOfTroubleIssueBehavior.LandLordCompanyOfTroubleIssue.html">LandLordCompanyOfTroubleIssueBehavior.LandLordCompanyOfTroubleIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LandLordNeedsManualLaborersIssueBehavior.LandLordNeedsManualLaborersIssue.html">LandLordNeedsManualLaborersIssueBehavior.LandLordNeedsManualLaborersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LandLordTheArtOfTheTradeIssueBehavior.LandLordTheArtOfTheTradeIssue.html">LandLordTheArtOfTheTradeIssueBehavior.LandLordTheArtOfTheTradeIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LandlordNeedsAccessToVillageCommonsIssueBehavior.LandlordNeedsAccessToVillageCommonsIssue.html">LandlordNeedsAccessToVillageCommonsIssueBehavior.LandlordNeedsAccessToVillageCommonsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LandlordTrainingForRetainersIssueBehavior.LandlordTrainingForRetainersIssue.html">LandlordTrainingForRetainersIssueBehavior.LandlordTrainingForRetainersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LesserNobleRevoltIssueBehavior.LesserNobleRevoltIssue.html">LesserNobleRevoltIssueBehavior.LesserNobleRevoltIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LordNeedsGarrisonTroopsIssueQuestBehavior.LordNeedsGarrisonTroopsIssue.html">LordNeedsGarrisonTroopsIssueQuestBehavior.LordNeedsGarrisonTroopsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LordNeedsHorsesIssueBehavior.LordNeedsHorsesIssue.html">LordNeedsHorsesIssueBehavior.LordNeedsHorsesIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LordWantsRivalCapturedIssueBehavior.LordWantsRivalCapturedIssue.html">LordWantsRivalCapturedIssueBehavior.LordWantsRivalCapturedIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.LordsNeedsTutorIssueBehavior.LordsNeedsTutorIssue.html">LordsNeedsTutorIssueBehavior.LordsNeedsTutorIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.MerchantArmyOfPoachersIssueBehavior.MerchantArmyOfPoachersIssue.html">MerchantArmyOfPoachersIssueBehavior.MerchantArmyOfPoachersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.MerchantNeedsHelpWithOutlawsIssueQuestBehavior.MerchantNeedsHelpWithOutlawsIssue.html">MerchantNeedsHelpWithOutlawsIssueQuestBehavior.MerchantNeedsHelpWithOutlawsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.NearbyBanditBaseIssueBehavior.NearbyBanditBaseIssue.html">NearbyBanditBaseIssueBehavior.NearbyBanditBaseIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.RaidAnEnemyTerritoryIssueBehavior.RaidAnEnemyTerritoryIssue.html">RaidAnEnemyTerritoryIssueBehavior.RaidAnEnemyTerritoryIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.RevenueFarmingIssueBehavior.RevenueFarmingIssue.html">RevenueFarmingIssueBehavior.RevenueFarmingIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.ScoutEnemyGarrisonsIssueBehavior.ScoutEnemyGarrisonsIssue.html">ScoutEnemyGarrisonsIssueBehavior.ScoutEnemyGarrisonsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.SmugglersIssueBehavior.SmugglersIssue.html">SmugglersIssueBehavior.SmugglersIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.TheConquestOfSettlementIssueBehavior.TheConquestOfSettlementIssue.html">TheConquestOfSettlementIssueBehavior.TheConquestOfSettlementIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.VillageNeedsCraftingMaterialsIssueBehavior.VillageNeedsCraftingMaterialsIssue.html">VillageNeedsCraftingMaterialsIssueBehavior.VillageNeedsCraftingMaterialsIssue</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.VillageNeedsToolsIssueBehavior.VillageNeedsToolsIssue.html">VillageNeedsToolsIssueBehavior.VillageNeedsToolsIssue</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized">MBObjectBase.AfterInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister">MBObjectBase.AfterRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Initialize">MBObjectBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Deserialize_TaleWorlds_ObjectSystem_MBObjectManager_System_Xml_XmlNode_">MBObjectBase.Deserialize(MBObjectManager, XmlNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnBeforeLoad">MBObjectBase.OnBeforeLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode">MBObjectBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetName">MBObjectBase.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoad">MBObjectBase.PreAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal">MBObjectBase.PreAfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoad">MBObjectBase.AfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal">MBObjectBase.AfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered">MBObjectBase.OnRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered">MBObjectBase.OnUnregistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_StringId">MBObjectBase.StringId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Id">MBObjectBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized">MBObjectBase.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsReady">MBObjectBase.IsReady</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase__ctor_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase__ctor_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CampaignTime_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.#ctor(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.CampaignTime)">
+  IssueBase(Hero, CampaignTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IssueBase(Hero issueOwner, CampaignTime issueDueTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>issueDueTime</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionSentTroops" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionSentTroops">
+  AlternativeSolutionSentTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(30)]
+public readonly TroopRoster AlternativeSolutionSentTroops</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueCreationTime" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueCreationTime">
+  IssueCreationTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(16)]
+public CampaignTime IssueCreationTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueDueTime" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueDueTime">
+  IssueDueTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(12)]
+public CampaignTime IssueDueTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueRelatedConversationPriority" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueRelatedConversationPriority">
+  IssueRelatedConversationPriority
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IssueRelatedConversationPriority = 125</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionBaseDurationInDaysInternal_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionBaseDurationInDaysInternal*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionBaseDurationInDaysInternal" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionBaseDurationInDaysInternal">
+  AlternativeSolutionBaseDurationInDaysInternal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int AlternativeSolutionBaseDurationInDaysInternal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionBaseNeededMenCount_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionBaseNeededMenCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionBaseNeededMenCount" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionBaseNeededMenCount">
+  AlternativeSolutionBaseNeededMenCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AlternativeSolutionBaseNeededMenCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndLogDefault_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndLogDefault*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndLogDefault" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndLogDefault">
+  AlternativeSolutionEndLogDefault
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TextObject AlternativeSolutionEndLogDefault { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasCasualties_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasCasualties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasCasualties" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasCasualties">
+  AlternativeSolutionHasCasualties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlternativeSolutionHasCasualties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasFailureRisk_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasFailureRisk*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasFailureRisk" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasFailureRisk">
+  AlternativeSolutionHasFailureRisk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlternativeSolutionHasFailureRisk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasScaledDuration_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasScaledDuration*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasScaledDuration" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasScaledDuration">
+  AlternativeSolutionHasScaledDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlternativeSolutionHasScaledDuration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasScaledRequiredTroops_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasScaledRequiredTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHasScaledRequiredTroops" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHasScaledRequiredTroops">
+  AlternativeSolutionHasScaledRequiredTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlternativeSolutionHasScaledRequiredTroops { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionHero" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionHero">
+  AlternativeSolutionHero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero AlternativeSolutionHero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionIssueEffectClearTime_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionIssueEffectClearTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionIssueEffectClearTime" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionIssueEffectClearTime">
+  AlternativeSolutionIssueEffectClearTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(31)]
+public CampaignTime AlternativeSolutionIssueEffectClearTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionReturnTimeForTroops_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionReturnTimeForTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionReturnTimeForTroops" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionReturnTimeForTroops">
+  AlternativeSolutionReturnTimeForTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(25)]
+public CampaignTime AlternativeSolutionReturnTimeForTroops { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionScaleFlags_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionScaleFlags*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionScaleFlags" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionScaleFlags">
+  AlternativeSolutionScaleFlags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IssueBase.AlternativeSolutionScaleFlag AlternativeSolutionScaleFlags { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionScaleFlag.html">AlternativeSolutionScaleFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionStartLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionStartLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionStartLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionStartLog">
+  AlternativeSolutionStartLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TextObject AlternativeSolutionStartLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompanionSkillRewardXP_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompanionSkillRewardXP*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompanionSkillRewardXP" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompanionSkillRewardXP">
+  CompanionSkillRewardXP
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CompanionSkillRewardXP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CounterOfferHero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CounterOfferHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CounterOfferHero" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CounterOfferHero">
+  CounterOfferHero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Hero CounterOfferHero { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_Description_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.Description*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_Description" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject Description { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsOngoingWithoutQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsOngoingWithoutQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsOngoingWithoutQuest" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsOngoingWithoutQuest">
+  IsOngoingWithoutQuest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOngoingWithoutQuest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithAlternative_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithAlternative*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithAlternative" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithAlternative">
+  IsSolvingWithAlternative
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSolvingWithAlternative { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithLordSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithLordSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithLordSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithLordSolution">
+  IsSolvingWithLordSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSolvingWithLordSolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsSolvingWithQuest" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsSolvingWithQuest">
+  IsSolvingWithQuest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSolvingWithQuest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereAlternativeSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereAlternativeSolution">
+  IsThereAlternativeSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsThereAlternativeSolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereDiscussDialogFlow_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereDiscussDialogFlow*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereDiscussDialogFlow" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereDiscussDialogFlow">
+  IsThereDiscussDialogFlow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThereDiscussDialogFlow { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereLordSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereLordSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsThereLordSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsThereLordSolution">
+  IsThereLordSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsThereLordSolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsTriedToSolveBefore_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsTriedToSolveBefore*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsTriedToSolveBefore" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsTriedToSolveBefore">
+  IsTriedToSolveBefore
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(22)]
+public bool IsTriedToSolveBefore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAcceptByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAcceptByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAcceptByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAcceptByPlayer">
+  IssueAcceptByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject IssueAcceptByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionAcceptByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionAcceptByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionAcceptByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionAcceptByPlayer">
+  IssueAlternativeSolutionAcceptByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAlternativeSolutionAcceptByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionExplanationByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionExplanationByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionExplanationByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionExplanationByIssueGiver">
+  IssueAlternativeSolutionExplanationByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAlternativeSolutionExplanationByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionFailLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionFailLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionFailLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionFailLog">
+  IssueAlternativeSolutionFailLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAlternativeSolutionFailLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionResponseByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionResponseByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionResponseByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionResponseByIssueGiver">
+  IssueAlternativeSolutionResponseByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAlternativeSolutionResponseByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionSuccessLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionSuccessLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAlternativeSolutionSuccessLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAlternativeSolutionSuccessLog">
+  IssueAlternativeSolutionSuccessLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAlternativeSolutionSuccessLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAsRumorInSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAsRumorInSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueAsRumorInSettlement" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueAsRumorInSettlement">
+  IssueAsRumorInSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueAsRumorInSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueBriefByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueBriefByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueBriefByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueBriefByIssueGiver">
+  IssueBriefByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject IssueBriefByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueDifficultyMultiplier_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueDifficultyMultiplier*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueDifficultyMultiplier" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueDifficultyMultiplier">
+  IssueDifficultyMultiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float IssueDifficultyMultiplier { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueDiscussAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueDiscussAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueDiscussAlternativeSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueDiscussAlternativeSolution">
+  IssueDiscussAlternativeSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueDiscussAlternativeSolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionAcceptByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionAcceptByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionAcceptByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionAcceptByPlayer">
+  IssueLordSolutionAcceptByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionAcceptByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferAcceptByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferAcceptByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferAcceptByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferAcceptByPlayer">
+  IssueLordSolutionCounterOfferAcceptByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferAcceptByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferAcceptResponseByOtherNpc_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferAcceptResponseByOtherNpc*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferAcceptResponseByOtherNpc" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferAcceptResponseByOtherNpc">
+  IssueLordSolutionCounterOfferAcceptResponseByOtherNpc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferAcceptResponseByOtherNpc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferBriefByOtherNpc_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferBriefByOtherNpc*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferBriefByOtherNpc" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferBriefByOtherNpc">
+  IssueLordSolutionCounterOfferBriefByOtherNpc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferBriefByOtherNpc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferDeclineByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferDeclineByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferDeclineByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferDeclineByPlayer">
+  IssueLordSolutionCounterOfferDeclineByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferDeclineByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferDeclineResponseByOtherNpc_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferDeclineResponseByOtherNpc*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferDeclineResponseByOtherNpc" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferDeclineResponseByOtherNpc">
+  IssueLordSolutionCounterOfferDeclineResponseByOtherNpc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferDeclineResponseByOtherNpc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferExplanationByOtherNpc_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferExplanationByOtherNpc*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionCounterOfferExplanationByOtherNpc" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionCounterOfferExplanationByOtherNpc">
+  IssueLordSolutionCounterOfferExplanationByOtherNpc
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionCounterOfferExplanationByOtherNpc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionExplanationByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionExplanationByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionExplanationByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionExplanationByIssueGiver">
+  IssueLordSolutionExplanationByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionExplanationByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionResponseByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionResponseByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueLordSolutionResponseByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueLordSolutionResponseByIssueGiver">
+  IssueLordSolutionResponseByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssueLordSolutionResponseByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueOwner_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueOwner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueOwner" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueOwner">
+  IssueOwner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero IssueOwner { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssuePlayerResponseAfterAlternativeExplanation_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssuePlayerResponseAfterAlternativeExplanation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssuePlayerResponseAfterAlternativeExplanation" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssuePlayerResponseAfterAlternativeExplanation">
+  IssuePlayerResponseAfterAlternativeExplanation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssuePlayerResponseAfterAlternativeExplanation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssuePlayerResponseAfterLordExplanation_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssuePlayerResponseAfterLordExplanation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssuePlayerResponseAfterLordExplanation" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssuePlayerResponseAfterLordExplanation">
+  IssuePlayerResponseAfterLordExplanation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject IssuePlayerResponseAfterLordExplanation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuest" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuest">
+  IssueQuest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(15)]
+public QuestBase IssueQuest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestCanBeDuplicated_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestCanBeDuplicated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestCanBeDuplicated" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestCanBeDuplicated">
+  IssueQuestCanBeDuplicated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IssueQuestCanBeDuplicated { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestSolutionAcceptByPlayer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestSolutionAcceptByPlayer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestSolutionAcceptByPlayer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestSolutionAcceptByPlayer">
+  IssueQuestSolutionAcceptByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject IssueQuestSolutionAcceptByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestSolutionExplanationByIssueGiver_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestSolutionExplanationByIssueGiver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueQuestSolutionExplanationByIssueGiver" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueQuestSolutionExplanationByIssueGiver">
+  IssueQuestSolutionExplanationByIssueGiver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject IssueQuestSolutionExplanationByIssueGiver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueSettlement" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueSettlement">
+  IssueSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement IssueSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_JournalEntries_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.JournalEntries*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_JournalEntries" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.JournalEntries">
+  JournalEntries
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;JournalLog&gt; JournalEntries { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.JournalLog.html">JournalLog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCounterOfferAcceptLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCounterOfferAcceptLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCounterOfferAcceptLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCounterOfferAcceptLog">
+  LordSolutionCounterOfferAcceptLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TextObject LordSolutionCounterOfferAcceptLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCounterOfferRefuseLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCounterOfferRefuseLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCounterOfferRefuseLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCounterOfferRefuseLog">
+  LordSolutionCounterOfferRefuseLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TextObject LordSolutionCounterOfferRefuseLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionStartLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionStartLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionStartLog" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionStartLog">
+  LordSolutionStartLog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TextObject LordSolutionStartLog { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_NeededInfluenceForLordSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.NeededInfluenceForLordSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_NeededInfluenceForLordSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.NeededInfluenceForLordSolution">
+  NeededInfluenceForLordSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NeededInfluenceForLordSolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_RelationshipChangeWithIssueOwner_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.RelationshipChangeWithIssueOwner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_RelationshipChangeWithIssueOwner" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.RelationshipChangeWithIssueOwner">
+  RelationshipChangeWithIssueOwner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RelationshipChangeWithIssueOwner { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_RewardGold_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.RewardGold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_RewardGold" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.RewardGold">
+  RewardGold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int RewardGold { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_Title_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.Title*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_Title" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.Title">
+  Title
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TextObject Title { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AddLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AddLog*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AddLog_TaleWorlds_CampaignSystem_JournalLog_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AddLog(TaleWorlds.CampaignSystem.JournalLog)">
+  AddLog(JournalLog)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddLog(JournalLog log)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="TaleWorlds.CampaignSystem.JournalLog.html">JournalLog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AddTrackedObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AddTrackedObject*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AddTrackedObject_TaleWorlds_CampaignSystem_ITrackableCampaignObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AddTrackedObject(TaleWorlds.CampaignSystem.ITrackableCampaignObject)">
+  AddTrackedObject(ITrackableCampaignObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTrackedObject(ITrackableCampaignObject o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="TaleWorlds.CampaignSystem.ITrackableCampaignObject.html">ITrackableCampaignObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AfterIssueCreation_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AfterIssueCreation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AfterIssueCreation" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AfterIssueCreation">
+  AfterIssueCreation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AfterIssueCreation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionCondition_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionCondition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionCondition_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionCondition(TaleWorlds.Localization.TextObject@)">
+  AlternativeSolutionCondition(out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AlternativeSolutionCondition(out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndWithFailureConsequence_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndWithFailureConsequence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndWithFailureConsequence" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndWithFailureConsequence">
+  AlternativeSolutionEndWithFailureConsequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AlternativeSolutionEndWithFailureConsequence()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndWithSuccessConsequence_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndWithSuccessConsequence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionEndWithSuccessConsequence" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionEndWithSuccessConsequence">
+  AlternativeSolutionEndWithSuccessConsequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AlternativeSolutionEndWithSuccessConsequence()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionStartConsequence_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionStartConsequence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AlternativeSolutionStartConsequence" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AlternativeSolutionStartConsequence">
+  AlternativeSolutionStartConsequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AlternativeSolutionStartConsequence()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CanBeCompletedByAI_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CanBeCompletedByAI*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CanBeCompletedByAI" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CanBeCompletedByAI">
+  CanBeCompletedByAI()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanBeCompletedByAI()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CanPlayerTakeQuestConditions_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CanPlayerTakeQuestConditions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CanPlayerTakeQuestConditions_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Issues_IssueBase_PreconditionFlags__TaleWorlds_CampaignSystem_Hero__TaleWorlds_Core_SkillObject__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CanPlayerTakeQuestConditions(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Issues.IssueBase.PreconditionFlags@,TaleWorlds.CampaignSystem.Hero@,TaleWorlds.Core.SkillObject@)">
+  CanPlayerTakeQuestConditions(Hero, out PreconditionFlags, out Hero, out SkillObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool CanPlayerTakeQuestConditions(Hero issueGiver, out IssueBase.PreconditionFlags flag, out Hero relationHero, out SkillObject skill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueGiver</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.PreconditionFlags.html">PreconditionFlags</a></dt>
+    <dd></dd>
+    <dt><code>relationHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>skill</code> <a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithAiLord_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithAiLord*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithAiLord_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithAiLord(TaleWorlds.CampaignSystem.Hero)">
+  CompleteIssueWithAiLord(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithAiLord(Hero issueSolver)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueSolver</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithAlternativeSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithAlternativeSolution">
+  CompleteIssueWithAlternativeSolution()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithAlternativeSolution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithBetrayal_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithBetrayal*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithBetrayal" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithBetrayal">
+  CompleteIssueWithBetrayal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithBetrayal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithCancel_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithCancel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithCancel_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithCancel(TaleWorlds.Localization.TextObject)">
+  CompleteIssueWithCancel(TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithCancel(TextObject log = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithFail_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithFail*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithFail_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithFail(TaleWorlds.Localization.TextObject)">
+  CompleteIssueWithFail(TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithFail(TextObject log = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>log</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithLordSolutionWithAcceptCounterOffer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithLordSolutionWithAcceptCounterOffer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithLordSolutionWithAcceptCounterOffer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithLordSolutionWithAcceptCounterOffer">
+  CompleteIssueWithLordSolutionWithAcceptCounterOffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithLordSolutionWithAcceptCounterOffer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithLordSolutionWithRefuseCounterOffer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithLordSolutionWithRefuseCounterOffer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithLordSolutionWithRefuseCounterOffer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithLordSolutionWithRefuseCounterOffer">
+  CompleteIssueWithLordSolutionWithRefuseCounterOffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithLordSolutionWithRefuseCounterOffer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithQuest" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithQuest">
+  CompleteIssueWithQuest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithQuest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithStayAliveConditionsFailed_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithStayAliveConditionsFailed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithStayAliveConditionsFailed" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithStayAliveConditionsFailed">
+  CompleteIssueWithStayAliveConditionsFailed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithStayAliveConditionsFailed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithTimedOut_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithTimedOut*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithTimedOut" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithTimedOut">
+  CompleteIssueWithTimedOut()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteIssueWithTimedOut()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithTimedOutConsequences_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithTimedOutConsequences*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_CompleteIssueWithTimedOutConsequences" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.CompleteIssueWithTimedOutConsequences">
+  CompleteIssueWithTimedOutConsequences()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void CompleteIssueWithTimedOutConsequences()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_DoTroopsSatisfyAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.DoTroopsSatisfyAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_DoTroopsSatisfyAlternativeSolution_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.DoTroopsSatisfyAlternativeSolution(TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.Localization.TextObject@)">
+  DoTroopsSatisfyAlternativeSolution(TroopRoster, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DoTroopsSatisfyAlternativeSolution(TroopRoster troopRoster, out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GenerateIssueQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GenerateIssueQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GenerateIssueQuest_System_String_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GenerateIssueQuest(System.String)">
+  GenerateIssueQuest(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract QuestBase GenerateIssueQuest(string questId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetActiveIssueEffectAmount_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetActiveIssueEffectAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetActiveIssueEffectAmount_TaleWorlds_CampaignSystem_Issues_IssueEffect_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetActiveIssueEffectAmount(TaleWorlds.CampaignSystem.Issues.IssueEffect)">
+  GetActiveIssueEffectAmount(IssueEffect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetActiveIssueEffectAmount(IssueEffect issueEffect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueEffect</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueEffect.html">IssueEffect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetAlternativeSolutionSkill_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetAlternativeSolutionSkill*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetAlternativeSolutionSkill_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetAlternativeSolutionSkill(TaleWorlds.CampaignSystem.Hero)">
+  GetAlternativeSolutionSkill(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual (SkillObject, int) GetAlternativeSolutionSkill(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.core.skillobject,system.int32-.skill">skill</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.core.skillobject,system.int32-.xp">xp</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetBaseAlternativeSolutionDurationInDays_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetBaseAlternativeSolutionDurationInDays*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetBaseAlternativeSolutionDurationInDays" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetBaseAlternativeSolutionDurationInDays">
+  GetBaseAlternativeSolutionDurationInDays()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBaseAlternativeSolutionDurationInDays()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetFrequency_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetFrequency*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetFrequency" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetFrequency">
+  GetFrequency()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IssueBase.IssueFrequency GetFrequency()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueFrequency.html">IssueFrequency</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetIssueEffectAmountInternal_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetIssueEffectAmountInternal*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetIssueEffectAmountInternal_TaleWorlds_CampaignSystem_Issues_IssueEffect_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetIssueEffectAmountInternal(TaleWorlds.CampaignSystem.Issues.IssueEffect)">
+  GetIssueEffectAmountInternal(IssueEffect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetIssueEffectAmountInternal(IssueEffect issueEffect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueEffect</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueEffect.html">IssueEffect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetTotalAlternativeSolutionDurationInDays_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetTotalAlternativeSolutionDurationInDays*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetTotalAlternativeSolutionDurationInDays" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetTotalAlternativeSolutionDurationInDays">
+  GetTotalAlternativeSolutionDurationInDays()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalAlternativeSolutionDurationInDays()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetTotalAlternativeSolutionNeededMenCount_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetTotalAlternativeSolutionNeededMenCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_GetTotalAlternativeSolutionNeededMenCount" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.GetTotalAlternativeSolutionNeededMenCount">
+  GetTotalAlternativeSolutionNeededMenCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalAlternativeSolutionNeededMenCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_HourlyTick_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.HourlyTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_HourlyTick" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.HourlyTick">
+  HourlyTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void HourlyTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_InitializeIssueBaseOnLoad_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.InitializeIssueBaseOnLoad*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_InitializeIssueBaseOnLoad" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.InitializeIssueBaseOnLoad">
+  InitializeIssueBaseOnLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeIssueBaseOnLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_InitializeIssueOnSettlementOwnerChange_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.InitializeIssueOnSettlementOwnerChange*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_InitializeIssueOnSettlementOwnerChange" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.InitializeIssueOnSettlementOwnerChange">
+  InitializeIssueOnSettlementOwnerChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeIssueOnSettlementOwnerChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsTroopTypeNeededByAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsTroopTypeNeededByAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IsTroopTypeNeededByAlternativeSolution_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IsTroopTypeNeededByAlternativeSolution(TaleWorlds.CampaignSystem.CharacterObject)">
+  IsTroopTypeNeededByAlternativeSolution(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTroopTypeNeededByAlternativeSolution(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueFinalized_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueFinalized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueFinalized" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueFinalized">
+  IssueFinalized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IssueFinalized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueStayAliveConditions_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueStayAliveConditions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_IssueStayAliveConditions" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.IssueStayAliveConditions">
+  IssueStayAliveConditions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IssueStayAliveConditions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCondition_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCondition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionCondition_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionCondition(TaleWorlds.Localization.TextObject@)">
+  LordSolutionCondition(out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool LordSolutionCondition(out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequence_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequence" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequence">
+  LordSolutionConsequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LordSolutionConsequence()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequenceWithAcceptCounterOffer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequenceWithAcceptCounterOffer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequenceWithAcceptCounterOffer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequenceWithAcceptCounterOffer">
+  LordSolutionConsequenceWithAcceptCounterOffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LordSolutionConsequenceWithAcceptCounterOffer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequenceWithRefuseCounterOffer_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequenceWithRefuseCounterOffer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_LordSolutionConsequenceWithRefuseCounterOffer" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.LordSolutionConsequenceWithRefuseCounterOffer">
+  LordSolutionConsequenceWithRefuseCounterOffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LordSolutionConsequenceWithRefuseCounterOffer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnAlternativeSolutionSolvedAndTroopsAreReturning_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnAlternativeSolutionSolvedAndTroopsAreReturning*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnAlternativeSolutionSolvedAndTroopsAreReturning" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnAlternativeSolutionSolvedAndTroopsAreReturning">
+  OnAlternativeSolutionSolvedAndTroopsAreReturning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAlternativeSolutionSolvedAndTroopsAreReturning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnGameLoad_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnGameLoad*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnGameLoad" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnGameLoad">
+  OnGameLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnGameLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanBeSelectedInInventoryInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanBeSelectedInInventoryInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanBeSelectedInInventoryInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanBeSelectedInInventoryInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanBeSelectedInInventoryInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanBeSelectedInInventoryInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanBecomePrisonerInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanBecomePrisonerInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanBecomePrisonerInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanBecomePrisonerInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanBecomePrisonerInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanBecomePrisonerInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanDieInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanDieInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanDieInfoIsRequested_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_KillCharacterAction_KillCharacterActionDetail_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanDieInfoIsRequested(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail,System.Boolean@)">
+  OnHeroCanDieInfoIsRequested(Hero, KillCharacterActionDetail, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanDieInfoIsRequested(Hero hero, KillCharacterAction.KillCharacterActionDetail causeOfDeath, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>causeOfDeath</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.html">KillCharacterAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail.html">KillCharacterActionDetail</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanHavePartyRoleOrBeGovernorInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanHaveQuestOrIssueInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanHaveQuestOrIssueInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanHaveQuestOrIssueInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanHaveQuestOrIssueInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanHaveQuestOrIssueInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanHaveQuestOrIssueInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanLeadPartyInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanLeadPartyInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanLeadPartyInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanLeadPartyInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanLeadPartyInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanLeadPartyInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanMarryInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanMarryInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanMarryInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanMarryInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanMarryInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanMarryInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanMoveToSettlementInfoIsRequested_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanMoveToSettlementInfoIsRequested*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnHeroCanMoveToSettlementInfoIsRequested_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnHeroCanMoveToSettlementInfoIsRequested(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  OnHeroCanMoveToSettlementInfoIsRequested(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnHeroCanMoveToSettlementInfoIsRequested(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnIssueFinalized_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnIssueFinalized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_OnIssueFinalized" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.OnIssueFinalized">
+  OnIssueFinalized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnIssueFinalized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithAlternativeSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithAlternativeSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithAlternativeSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithAlternativeSolution">
+  StartIssueWithAlternativeSolution()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartIssueWithAlternativeSolution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithLordSolution_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithLordSolution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithLordSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithLordSolution">
+  StartIssueWithLordSolution()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartIssueWithLordSolution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_StartIssueWithQuest" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.StartIssueWithQuest">
+  StartIssueWithQuest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartIssueWithQuest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_ToString_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.ToString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_ToString" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueBase_ToggleTrackedObjects_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.ToggleTrackedObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueBase_ToggleTrackedObjects_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueBase.ToggleTrackedObjects(System.Boolean)">
+  ToggleTrackedObjects(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleTrackedObjects(bool enableTrack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enableTrack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

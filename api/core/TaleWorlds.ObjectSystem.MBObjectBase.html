@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MBObjectBase | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MBObjectBase | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.ObjectSystem.MBObjectBase">
+
+
+
+  <h1 id="TaleWorlds_ObjectSystem_MBObjectBase" data-uid="TaleWorlds.ObjectSystem.MBObjectBase" class="text-break">
+Class MBObjectBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.ObjectSystem.html">ObjectSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.ObjectSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MBObjectBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MBObjectBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.CampaignObjectBase.html">CampaignObjectBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Concept.html">Concept</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueEffect.html">IssueEffect</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyTemplateObject.html">PartyTemplateObject</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Buildings.BuildingType.html">BuildingType</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.LocationComplexTemplate.html">LocationComplexTemplate</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.SettlementComponent.html">SettlementComponent</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.VillageType.html">VillageType</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Workshops.WorkshopType.html">WorkshopType</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeStrategy.html">SiegeStrategy</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.BasicCultureObject.html">BasicCultureObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.BladeData.html">BladeData</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.CraftingPiece.html">CraftingPiece</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.CraftingTemplate.html">CraftingTemplate</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.GameState.html">GameState</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ItemCategory.html">ItemCategory</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ItemComponent.html">ItemComponent</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ItemModifier.html">ItemModifier</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ItemModifierGroup.html">ItemModifierGroup</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.MBBodyProperty.html">MBBodyProperty</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.MBCharacterSkills.html">MBCharacterSkills</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.MBEquipmentRoster.html">MBEquipmentRoster</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.Monster.html">Monster</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.PropertyObject.html">PropertyObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.PropertyOwnerF-1.html">PropertyOwnerF&lt;T&gt;</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.PropertyOwner-1.html">PropertyOwner&lt;T&gt;</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.SkeletonScale.html">SkeletonScale</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.WeaponDescription.html">WeaponDescription</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MultiplayerClassDivisions.MPHeroClass.html">MultiplayerClassDivisions.MPHeroClass</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase__ctor_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase__ctor" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor">
+  MBObjectBase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase__ctor_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase__ctor_System_String_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor(System.String)">
+  MBObjectBase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase(string stringId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase__ctor_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase__ctor_TaleWorlds_ObjectSystem_MBObjectBase_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.#ctor(TaleWorlds.ObjectSystem.MBObjectBase)">
+  MBObjectBase(MBObjectBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBObjectBase(MBObjectBase other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_Id_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Id*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_Id" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(2)]
+public MBGUID Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBGUID.html">MBGUID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.IsInitialized*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.IsInitialized">
+  IsInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsInitialized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_IsReady_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.IsReady*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_IsReady" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.IsReady">
+  IsReady
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsReady { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_StringId_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.StringId*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_StringId" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.StringId">
+  StringId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1)]
+public string StringId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterInitialized*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterInitialized">
+  AfterInitialized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AfterInitialized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_AfterLoad_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterLoad*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_AfterLoad" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterLoad">
+  AfterLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AfterLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterLoadInternal*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterLoadInternal">
+  AfterLoadInternal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AfterLoadInternal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterRegister*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AfterRegister">
+  AfterRegister()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterRegister()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_Deserialize_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Deserialize*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_Deserialize_TaleWorlds_ObjectSystem_MBObjectManager_System_Xml_XmlNode_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Deserialize(TaleWorlds.ObjectSystem.MBObjectManager,System.Xml.XmlNode)">
+  Deserialize(MBObjectManager, XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Deserialize(MBObjectManager objectManager, XmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectManager</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.GetHashCode*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_GetName_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.GetName*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_GetName" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextObject GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_Initialize_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Initialize*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_Initialize" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_OnBeforeLoad_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnBeforeLoad*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_OnBeforeLoad" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnBeforeLoad">
+  OnBeforeLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnBeforeLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnRegistered*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnRegistered">
+  OnRegistered()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRegistered()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnUnregistered*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.OnUnregistered">
+  OnUnregistered()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUnregistered()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoad_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.PreAfterLoad*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoad" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.PreAfterLoad">
+  PreAfterLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PreAfterLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal_" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.PreAfterLoadInternal*"></a>
+
+  <h3 id="TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal" data-uid="TaleWorlds.ObjectSystem.MBObjectBase.PreAfterLoadInternal">
+  PreAfterLoadInternal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreAfterLoadInternal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

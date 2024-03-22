@@ -1,0 +1,2167 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TroopRoster | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TroopRoster | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Roster_TroopRoster" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster" class="text-break">
+Class TroopRoster  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Roster.html">Roster</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TroopRoster : ISerializableObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TroopRoster</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.ISerializableObject.html">ISerializableObject</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster__ctor_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster__ctor_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.#ctor(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  TroopRoster(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TroopRoster(PartyBase ownerParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Count_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Count*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Count" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_IsPrisonRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.IsPrisonRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_IsPrisonRoster" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.IsPrisonRoster">
+  IsPrisonRoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrisonRoster { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalHealthyCount_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalHealthyCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalHealthyCount" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalHealthyCount">
+  TotalHealthyCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalHealthyCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalHeroes_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalHeroes*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalHeroes" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalHeroes">
+  TotalHeroes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalHeroes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalManCount_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalManCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalManCount" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalManCount">
+  TotalManCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalManCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalRegulars_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalRegulars*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalRegulars" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalRegulars">
+  TotalRegulars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalRegulars { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWounded_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWounded*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWounded" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWounded">
+  TotalWounded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalWounded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWoundedHeroes_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWoundedHeroes*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWoundedHeroes" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWoundedHeroes">
+  TotalWoundedHeroes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalWoundedHeroes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWoundedRegulars_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWoundedRegulars*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_TotalWoundedRegulars" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.TotalWoundedRegulars">
+  TotalWoundedRegulars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalWoundedRegulars { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_VersionNo_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.VersionNo*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_VersionNo" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.VersionNo">
+  VersionNo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int VersionNo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_System_Collections_Generic_IEnumerable_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRosterElement__" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add(System.Collections.Generic.IEnumerable{TaleWorlds.CampaignSystem.Roster.FlattenedTroopRosterElement})">
+  Add(IEnumerable&lt;FlattenedTroopRosterElement&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IEnumerable&lt;FlattenedTroopRosterElement&gt; elementList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Roster.FlattenedTroopRosterElement.html">FlattenedTroopRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_TaleWorlds_CampaignSystem_Roster_TroopRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add(TaleWorlds.CampaignSystem.Roster.TroopRoster)">
+  Add(TroopRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TroopRoster troopRoster)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Add_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Add(TaleWorlds.CampaignSystem.Roster.TroopRosterElement)">
+  Add(TroopRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TroopRosterElement troopRosterElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopRosterElement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddToCounts_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddToCounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddToCounts_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Boolean_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddToCounts(TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Int32)">
+  AddToCounts(CharacterObject, int, bool, int, int, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddToCounts(CharacterObject character, int count, bool insertAtFront = false, int woundedCount = 0, int xpChange = 0, bool removeDepleted = true, int index = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>insertAtFront</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>woundedCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>xpChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>removeDepleted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddToCountsAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddToCountsAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddToCountsAtIndex_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddToCountsAtIndex(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  AddToCountsAtIndex(int, int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddToCountsAtIndex(int index, int countChange, int woundedCountChange = 0, int xpChange = 0, bool removeDepleted = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>countChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>woundedCountChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>xpChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>removeDepleted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddXpToTroop_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddXpToTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddXpToTroop_System_Int32_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddXpToTroop(System.Int32,TaleWorlds.CampaignSystem.CharacterObject)">
+  AddXpToTroop(int, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddXpToTroop(int xpAmount, CharacterObject attackerTroop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xpAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attackerTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddXpToTroopAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddXpToTroopAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AddXpToTroopAtIndex_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AddXpToTroopAtIndex(System.Int32,System.Int32)">
+  AddXpToTroopAtIndex(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddXpToTroopAtIndex(int xpAmount, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xpAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CalculateCachedStatsOnLoad_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CalculateCachedStatsOnLoad*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CalculateCachedStatsOnLoad" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CalculateCachedStatsOnLoad">
+  CalculateCachedStatsOnLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CalculateCachedStatsOnLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CheckValidity_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CheckValidity*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CheckValidity" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CheckValidity">
+  CheckValidity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG_MORE&quot;)]
+public void CheckValidity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Clear_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Clear*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Clear" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ClearTempXp_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ClearTempXp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ClearTempXp" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ClearTempXp">
+  ClearTempXp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTempXp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CloneRosterData_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CloneRosterData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CloneRosterData" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CloneRosterData">
+  CloneRosterData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TroopRoster CloneRosterData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Contains_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Contains*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Contains_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Contains(TaleWorlds.CampaignSystem.CharacterObject)">
+  Contains(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CreateDummyTroopRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CreateDummyTroopRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_CreateDummyTroopRoster" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.CreateDummyTroopRoster">
+  CreateDummyTroopRoster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TroopRoster CreateDummyTroopRoster()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Equals_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Equals*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Equals_System_Object_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_FillMembersOfRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.FillMembersOfRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_FillMembersOfRoster_System_Int32_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.FillMembersOfRoster(System.Int32,TaleWorlds.CampaignSystem.CharacterObject)">
+  FillMembersOfRoster(int, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillMembersOfRoster(int neededNumber, CharacterObject basicTroop = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>neededNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>basicTroop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_FindIndexOfTroop_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.FindIndexOfTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_FindIndexOfTroop_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.FindIndexOfTroop(TaleWorlds.CampaignSystem.CharacterObject)">
+  FindIndexOfTroop(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndexOfTroop(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetCharacterAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetCharacterAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetCharacterAtIndex_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetCharacterAtIndex(System.Int32)">
+  GetCharacterAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterObject GetCharacterAtIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementCopyAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementCopyAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementCopyAtIndex_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementCopyAtIndex(System.Int32)">
+  GetElementCopyAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TroopRosterElement GetElementCopyAtIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementNumber_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementNumber(System.Int32)">
+  GetElementNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementNumber(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementNumber_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementNumber(TaleWorlds.CampaignSystem.CharacterObject)">
+  GetElementNumber(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementNumber(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementWoundedNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementWoundedNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementWoundedNumber_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementWoundedNumber(System.Int32)">
+  GetElementWoundedNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementWoundedNumber(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementXp_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementXp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementXp_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementXp(System.Int32)">
+  GetElementXp(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementXp(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementXp_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementXp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetElementXp_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetElementXp(TaleWorlds.CampaignSystem.CharacterObject)">
+  GetElementXp(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementXp(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetHashCode_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetHashCode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetHashCode" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetManAtIndexFromFlattenedRosterWithFilter_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetManAtIndexFromFlattenedRosterWithFilter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetManAtIndexFromFlattenedRosterWithFilter_System_Int32_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetManAtIndexFromFlattenedRosterWithFilter(System.Int32,System.Boolean,System.Boolean)">
+  GetManAtIndexFromFlattenedRosterWithFilter(int, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterObject GetManAtIndexFromFlattenedRosterWithFilter(int indexOfTroop, bool includeHeroes = false, bool countOnlyHealthyOnes = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indexOfTroop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>includeHeroes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>countOnlyHealthyOnes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetTroopCount_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetTroopCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetTroopCount_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetTroopCount(TaleWorlds.CampaignSystem.CharacterObject)">
+  GetTroopCount(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTroopCount(CharacterObject troop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetTroopRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetTroopRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_GetTroopRoster" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.GetTroopRoster">
+  GetTroopRoster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBList&lt;TroopRosterElement&gt; GetTroopRoster()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBList-1.html">MBList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_KillNumberOfNonHeroTroopsRandomly_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.KillNumberOfNonHeroTroopsRandomly*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_KillNumberOfNonHeroTroopsRandomly_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.KillNumberOfNonHeroTroopsRandomly(System.Int32)">
+  KillNumberOfNonHeroTroopsRandomly(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillNumberOfNonHeroTroopsRandomly(int numberOfMen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numberOfMen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_OnHeroHealthStatusChanged_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.OnHeroHealthStatusChanged*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_OnHeroHealthStatusChanged_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.OnHeroHealthStatusChanged(TaleWorlds.CampaignSystem.Hero)">
+  OnHeroHealthStatusChanged(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHeroHealthStatusChanged(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveIf_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveIf*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveIf_System_Predicate_TaleWorlds_CampaignSystem_Roster_TroopRosterElement__" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveIf(System.Predicate{TaleWorlds.CampaignSystem.Roster.TroopRosterElement})">
+  RemoveIf(Predicate&lt;TroopRosterElement&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;TroopRosterElement&gt; RemoveIf(Predicate&lt;TroopRosterElement&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveTroop_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveTroop_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_TaleWorlds_Core_UniqueTroopDescriptor_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveTroop(TaleWorlds.CampaignSystem.CharacterObject,System.Int32,TaleWorlds.Core.UniqueTroopDescriptor,System.Int32)">
+  RemoveTroop(CharacterObject, int, UniqueTroopDescriptor, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTroop(CharacterObject troop, int numberToRemove = 1, UniqueTroopDescriptor troopSeed = default, int xp = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>numberToRemove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>troopSeed</code> <a class="xref" href="TaleWorlds.Core.UniqueTroopDescriptor.html">UniqueTroopDescriptor</a></dt>
+    <dd></dd>
+    <dt><code>xp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveZeroCounts_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveZeroCounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_RemoveZeroCounts" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.RemoveZeroCounts">
+  RemoveZeroCounts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveZeroCounts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Reset_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Reset*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Reset" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementNumber_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementNumber(System.Int32,System.Int32)">
+  SetElementNumber(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElementNumber(int index, int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementWoundedNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementWoundedNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementWoundedNumber_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementWoundedNumber(System.Int32,System.Int32)">
+  SetElementWoundedNumber(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElementWoundedNumber(int index, int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementXp_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementXp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SetElementXp_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SetElementXp(System.Int32,System.Int32)">
+  SetElementXp(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetElementXp(int index, int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ShiftTroopToIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ShiftTroopToIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ShiftTroopToIndex_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ShiftTroopToIndex(System.Int32,System.Int32)">
+  ShiftTroopToIndex(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShiftTroopToIndex(int troopIndex, int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Sum_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Sum*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_Sum_System_Func_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_System_Int32__" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.Sum(System.Func{TaleWorlds.CampaignSystem.Roster.TroopRosterElement,System.Int32})">
+  Sum(Func&lt;TroopRosterElement, int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Sum(Func&lt;TroopRosterElement, int&gt; selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SwapTroopsAtIndices_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SwapTroopsAtIndices*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_SwapTroopsAtIndices_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.SwapTroopsAtIndices(System.Int32,System.Int32)">
+  SwapTroopsAtIndices(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapTroopsAtIndices(int firstIndex, int secondIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>secondIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ToFlattenedRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ToFlattenedRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ToFlattenedRoster" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ToFlattenedRoster">
+  ToFlattenedRoster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlattenedTroopRoster ToFlattenedRoster()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.FlattenedTroopRoster.html">FlattenedTroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_UpdateVersion_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.UpdateVersion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_UpdateVersion" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.UpdateVersion">
+  UpdateVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ValidateTroopListCache_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ValidateTroopListCache*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_ValidateTroopListCache" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.ValidateTroopListCache">
+  ValidateTroopListCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateTroopListCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundMembersOfRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundMembersOfRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundMembersOfRoster_System_Single_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundMembersOfRoster(System.Single)">
+  WoundMembersOfRoster(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WoundMembersOfRoster(float woundedRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>woundedRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundNumberOfTroopsRandomly_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundNumberOfTroopsRandomly*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundNumberOfTroopsRandomly_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundNumberOfTroopsRandomly(System.Int32)">
+  WoundNumberOfTroopsRandomly(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WoundNumberOfTroopsRandomly(int numberOfMen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numberOfMen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundTroop_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_WoundTroop_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_TaleWorlds_Core_UniqueTroopDescriptor_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.WoundTroop(TaleWorlds.CampaignSystem.CharacterObject,System.Int32,TaleWorlds.Core.UniqueTroopDescriptor)">
+  WoundTroop(CharacterObject, int, UniqueTroopDescriptor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WoundTroop(CharacterObject troop, int numberToWound = 1, UniqueTroopDescriptor troopSeed = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>numberToWound</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>troopSeed</code> <a class="xref" href="TaleWorlds.Core.UniqueTroopDescriptor.html">UniqueTroopDescriptor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_op_Equality_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.op_Equality*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_op_Equality_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_CampaignSystem_Roster_TroopRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.op_Equality(TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.CampaignSystem.Roster.TroopRoster)">
+  operator ==(TroopRoster, TroopRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TroopRoster a, TroopRoster b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_TroopRoster_op_Inequality_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.op_Inequality*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_TroopRoster_op_Inequality_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_CampaignSystem_Roster_TroopRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.TroopRoster.op_Inequality(TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.CampaignSystem.Roster.TroopRoster)">
+  operator !=(TroopRoster, TroopRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TroopRoster a, TroopRoster b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

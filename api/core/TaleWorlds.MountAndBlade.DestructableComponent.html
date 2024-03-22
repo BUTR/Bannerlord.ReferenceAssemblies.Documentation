@@ -1,0 +1,1768 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DestructableComponent | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DestructableComponent | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.DestructableComponent">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_DestructableComponent" data-uid="TaleWorlds.MountAndBlade.DestructableComponent" class="text-break">
+Class DestructableComponent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DestructableComponent : SynchedMissionObject, IFocusable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.DotNetObject.html">DotNetObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></div>
+      <div><span class="xref">DestructableComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IFocusable.html">IFocusable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_GetTickRequirement">SynchedMissionObject.GetTickRequirement()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_OnTick_System_Single_">SynchedMissionObject.OnTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_TaleWorlds_Library_Vec3__">SynchedMissionObject.SetLocalPositionSmoothStep(ref Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetVisibleSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetVisibleSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetPhysicsStateSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetPhysicsStateSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched">SynchedMissionObject.SetDisabledSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetGlobalFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetGlobalFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_String_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(string, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_Int32_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(int, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_System_Int32_System_Single_">SynchedMissionObject.SetAnimationChannelParameterSynched(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched">SynchedMissionObject.PauseSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched">SynchedMissionObject.ResumeSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_System_Boolean_">SynchedMissionObject.BurstParticlesSynched(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">SynchedMissionObject.ApplyImpulseSynched(Vec3, Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.AddBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.RemoveBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColors(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColorsSynched(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color">SynchedMissionObject.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color2">SynchedMissionObject.Color2</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted">SynchedMissionObject.SynchronizeCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MaxNavMeshPerDynamicObject">MissionObject.MaxNavMeshPerDynamicObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName">MissionObject.NavMeshPrefabName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart">MissionObject.DynamicNavmeshIdStart</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_">MissionObject.SetAbilityOfFaces(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity">MissionObject.AttachDynamicNavmeshToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces">MissionObject.GetEntityToAttachNavMeshFaces()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnPreInit">MissionObject.OnPreInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetHashCode">MissionObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart">MissionObject.AfterMissionStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnMissionEnded">MissionObject.OnMissionEnded()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_">MissionObject.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_">MissionObject.SetDisabledAndMakeInvisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnRemoved_System_Int32_">MissionObject.OnRemoved(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnEndMission">MissionObject.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_Id">MissionObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_IsDisabled">MissionObject.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime">MissionObject.CreatedAtRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_InvalidateWeakPointersIfValid">ScriptComponentBehavior.InvalidateWeakPointersIfValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTick_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTick(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTickMT_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTickMT(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScene_TaleWorlds_Engine_Scene_">ScriptComponentBehavior.SetScene(Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_HandleOnRemoved_System_Int32_">ScriptComponentBehavior.HandleOnRemoved(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel_System_Single_">ScriptComponentBehavior.OnTickParallel(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel2_System_Single_">ScriptComponentBehavior.OnTickParallel2(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickOccasionally_System_Single_">ScriptComponentBehavior.OnTickOccasionally(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditorValidate">ScriptComponentBehavior.OnEditorValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_IsOnlyVisual">ScriptComponentBehavior.IsOnlyVisual()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_DisablesOroCreation">ScriptComponentBehavior.DisablesOroCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnSceneSave_System_String_">ScriptComponentBehavior.OnSceneSave(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnPhysicsCollision_TaleWorlds_Engine_PhysicsContact__">ScriptComponentBehavior.OnPhysicsCollision(ref PhysicsContact)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditModeVisibilityChanged_System_Boolean_">ScriptComponentBehavior.OnEditModeVisibilityChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_GameEntity">ScriptComponentBehavior.GameEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ScriptComponent">ScriptComponentBehavior.ScriptComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ManagedScriptHolder">ScriptComponentBehavior.ManagedScriptHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_Scene">ScriptComponentBehavior.Scene</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_BattleSide" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.BattleSide">
+  BattleSide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleSideEnum BattleSide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BattleSideEnum.html">BattleSideEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_CanBeDestroyedInitially" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.CanBeDestroyedInitially">
+  CanBeDestroyedInitially
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBeDestroyedInitially</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_CleanStateTag" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.CleanStateTag">
+  CleanStateTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CleanStateTag = &quot;operational&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_DestroyOnAnyHit" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.DestroyOnAnyHit">
+  DestroyOnAnyHit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroyOnAnyHit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_DestroyedByStoneOnly" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.DestroyedByStoneOnly">
+  DestroyedByStoneOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroyedByStoneOnly</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_DestructionStates" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.DestructionStates">
+  DestructionStates
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DestructionStates</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_HeavyHitParticlesTag" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.HeavyHitParticlesTag">
+  HeavyHitParticlesTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeavyHitParticlesTag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_HeavyHitParticlesThreshold" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.HeavyHitParticlesThreshold">
+  HeavyHitParticlesThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeavyHitParticlesThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_MaxBlowMagnitude" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.MaxBlowMagnitude">
+  MaxBlowMagnitude
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MaxBlowMagnitude</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_MaxHitPoint" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.MaxHitPoint">
+  MaxHitPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxHitPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnCalculateDestructionStateIndex" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnCalculateDestructionStateIndex">
+  OnCalculateDestructionStateIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EditableScriptComponentVariable(false)]
+public Func&lt;int, int, int, int&gt; OnCalculateDestructionStateIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_ParticleEffectOnDestroy" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.ParticleEffectOnDestroy">
+  ParticleEffectOnDestroy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ParticleEffectOnDestroy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_PassHitOnToParent" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.PassHitOnToParent">
+  PassHitOnToParent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PassHitOnToParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_ReferenceEntityTag" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.ReferenceEntityTag">
+  ReferenceEntityTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReferenceEntityTag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_SoundAndParticleEffectForwardOffset" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.SoundAndParticleEffectForwardOffset">
+  SoundAndParticleEffectForwardOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoundAndParticleEffectForwardOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_SoundAndParticleEffectHeightOffset" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.SoundAndParticleEffectHeightOffset">
+  SoundAndParticleEffectHeightOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoundAndParticleEffectHeightOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_SoundEffectOnDestroy" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.SoundEffectOnDestroy">
+  SoundEffectOnDestroy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SoundEffectOnDestroy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_CurrentState_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.CurrentState*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_CurrentState" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.CurrentState">
+  CurrentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity CurrentState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_FocusableObjectType_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.FocusableObjectType*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_FocusableObjectType" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.FocusableObjectType">
+  FocusableObjectType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusableObjectType FocusableObjectType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.FocusableObjectType.html">FocusableObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_HitPoint_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.HitPoint*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_HitPoint" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.HitPoint">
+  HitPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HitPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_IsDestroyed_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.IsDestroyed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_IsDestroyed" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.IsDestroyed">
+  IsDestroyed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDestroyed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_AddStuckMissile_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.AddStuckMissile*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_AddStuckMissile_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.AddStuckMissile(TaleWorlds.Engine.GameEntity)">
+  AddStuckMissile(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddStuckMissile(GameEntity missileEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missileEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_BurstHeavyHitParticles_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.BurstHeavyHitParticles*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_BurstHeavyHitParticles" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.BurstHeavyHitParticles">
+  BurstHeavyHitParticles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BurstHeavyHitParticles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_GetDescriptionText_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetDescriptionText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_GetDescriptionText_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetDescriptionText(TaleWorlds.Engine.GameEntity)">
+  GetDescriptionText(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDescriptionText(GameEntity gameEntity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_GetInfoTextForBeingNotInteractable_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetInfoTextForBeingNotInteractable*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_GetInfoTextForBeingNotInteractable_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetInfoTextForBeingNotInteractable(TaleWorlds.MountAndBlade.Agent)">
+  GetInfoTextForBeingNotInteractable(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetInfoTextForBeingNotInteractable(Agent userAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_GetOriginalState_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetOriginalState*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_GetOriginalState_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.GetOriginalState(TaleWorlds.Engine.GameEntity)">
+  GetOriginalState(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity GetOriginalState(GameEntity parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_MovesEntity_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.MovesEntity*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_MovesEntity" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.MovesEntity">
+  MovesEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool MovesEntity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnAfterReadFromNetwork_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnAfterReadFromNetwork*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnAfterReadFromNetwork_System_ValueTuple_TaleWorlds_MountAndBlade_BaseSynchedMissionObjectReadableRecord_TaleWorlds_MountAndBlade_ISynchedMissionObjectReadableRecord__" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnAfterReadFromNetwork(System.ValueTuple{TaleWorlds.MountAndBlade.BaseSynchedMissionObjectReadableRecord,TaleWorlds.MountAndBlade.ISynchedMissionObjectReadableRecord})">
+  OnAfterReadFromNetwork((BaseSynchedMissionObjectReadableRecord, ISynchedMissionObjectReadableRecord))
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAfterReadFromNetwork((BaseSynchedMissionObjectReadableRecord, ISynchedMissionObjectReadableRecord) synchedMissionObjectReadableRecord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>synchedMissionObjectReadableRecord</code> (<a class="xref" href="TaleWorlds.MountAndBlade.BaseSynchedMissionObjectReadableRecord.html">BaseSynchedMissionObjectReadableRecord</a>, <a class="xref" href="TaleWorlds.MountAndBlade.ISynchedMissionObjectReadableRecord.html">ISynchedMissionObjectReadableRecord</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnCheckForProblems_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnCheckForProblems*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnCheckForProblems" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnCheckForProblems">
+  OnCheckForProblems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OnCheckForProblems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorInit_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorInit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorInit" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorInit">
+  OnEditorInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEditorInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorTick_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorTick(System.Single)">
+  OnEditorTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEditorTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorVariableChanged_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorVariableChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnEditorVariableChanged_System_String_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnEditorVariableChanged(System.String)">
+  OnEditorVariableChanged(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEditorVariableChanged(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnFocusGain_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnFocusGain*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnFocusGain_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnFocusGain(TaleWorlds.MountAndBlade.Agent)">
+  OnFocusGain(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFocusGain(Agent userAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnFocusLose_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnFocusLose*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnFocusLose_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnFocusLose(TaleWorlds.MountAndBlade.Agent)">
+  OnFocusLose(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFocusLose(Agent userAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnHit_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnHit_TaleWorlds_MountAndBlade_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_Engine_ScriptComponentBehavior_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnHit(TaleWorlds.MountAndBlade.Agent,System.Int32,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.MountAndBlade.MissionWeapon@,TaleWorlds.Engine.ScriptComponentBehavior,System.Boolean@)">
+  OnHit(Agent, int, Vec3, Vec3, in MissionWeapon, ScriptComponentBehavior, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OnHit(Agent attackerAgent, int inflictedDamage, Vec3 impactPosition, Vec3 impactDirection, in MissionWeapon weapon, ScriptComponentBehavior attackerScriptComponentBehavior, out bool reportDamage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>inflictedDamage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>impactPosition</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>impactDirection</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+    <dt><code>attackerScriptComponentBehavior</code> <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a></dt>
+    <dd></dd>
+    <dt><code>reportDamage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnInit_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnInit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnInit" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnInit">
+  OnInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_OnMissionReset_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnMissionReset*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnMissionReset" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnMissionReset">
+  OnMissionReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMissionReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_PreDestroy_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.PreDestroy*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_PreDestroy" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.PreDestroy">
+  PreDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_Reset_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.Reset*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_Reset" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_SetDestructionLevel_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.SetDestructionLevel*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_SetDestructionLevel_System_Int32_System_Int32_System_Single_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.SetDestructionLevel(System.Int32,System.Int32,System.Single,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,System.Boolean)">
+  SetDestructionLevel(int, int, float, Vec3, Vec3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDestructionLevel(int state, int forcedId, float blowMagnitude, Vec3 blowPosition, Vec3 blowDirection, bool noEffects = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>forcedId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>blowMagnitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blowPosition</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>blowDirection</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>noEffects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_TriggerOnHit_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.TriggerOnHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_TriggerOnHit_TaleWorlds_MountAndBlade_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_Engine_ScriptComponentBehavior_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.TriggerOnHit(TaleWorlds.MountAndBlade.Agent,System.Int32,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.MountAndBlade.MissionWeapon@,TaleWorlds.Engine.ScriptComponentBehavior)">
+  TriggerOnHit(Agent, int, Vec3, Vec3, in MissionWeapon, ScriptComponentBehavior)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerOnHit(Agent attackerAgent, int inflictedDamage, Vec3 impactPosition, Vec3 impactDirection, in MissionWeapon weapon, ScriptComponentBehavior attackerScriptComponentBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>inflictedDamage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>impactPosition</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>impactDirection</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+    <dt><code>attackerScriptComponentBehavior</code> <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_DestructableComponent_WriteToNetwork_" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.WriteToNetwork*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_WriteToNetwork" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.WriteToNetwork">
+  WriteToNetwork()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteToNetwork()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnDestroyed" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnDestroyed">
+  OnDestroyed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DestructableComponent.OnHitTakenAndDestroyedDelegate OnDestroyed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.DestructableComponent.html">DestructableComponent</a>.<a class="xref" href="TaleWorlds.MountAndBlade.DestructableComponent.OnHitTakenAndDestroyedDelegate.html">OnHitTakenAndDestroyedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnHitTaken" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnHitTaken">
+  OnHitTaken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DestructableComponent.OnHitTakenAndDestroyedDelegate OnHitTaken</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.DestructableComponent.html">DestructableComponent</a>.<a class="xref" href="TaleWorlds.MountAndBlade.DestructableComponent.OnHitTakenAndDestroyedDelegate.html">OnHitTakenAndDestroyedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_DestructableComponent_OnNextDestructionState" data-uid="TaleWorlds.MountAndBlade.DestructableComponent.OnNextDestructionState">
+  OnNextDestructionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnNextDestructionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

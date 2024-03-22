@@ -1,0 +1,2121 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Input | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Input | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.InputSystem.Input">
+
+
+
+  <h1 id="TaleWorlds_InputSystem_Input" data-uid="TaleWorlds.InputSystem.Input" class="text-break">
+Class Input  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.InputSystem.html">InputSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.InputSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Input</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Input</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_InputSystem_Input_NumberOfKeys" data-uid="TaleWorlds.InputSystem.Input.NumberOfKeys">
+  NumberOfKeys
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NumberOfKeys = 256</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_InputSystem_Input_OnControllerTypeChanged" data-uid="TaleWorlds.InputSystem.Input.OnControllerTypeChanged">
+  OnControllerTypeChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;Input.ControllerTypes&gt; OnControllerTypeChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.InputSystem.Input.html">Input</a>.<a class="xref" href="TaleWorlds.InputSystem.Input.ControllerTypes.html">ControllerTypes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_InputSystem_Input_OnGamepadActiveStateChanged" data-uid="TaleWorlds.InputSystem.Input.OnGamepadActiveStateChanged">
+  OnGamepadActiveStateChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action OnGamepadActiveStateChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_InputSystem_Input_ControllerType_" data-uid="TaleWorlds.InputSystem.Input.ControllerType*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_ControllerType" data-uid="TaleWorlds.InputSystem.Input.ControllerType">
+  ControllerType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Input.ControllerTypes ControllerType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.Input.html">Input</a>.<a class="xref" href="TaleWorlds.InputSystem.Input.ControllerTypes.html">ControllerTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_DebugInput_" data-uid="TaleWorlds.InputSystem.Input.DebugInput*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_DebugInput" data-uid="TaleWorlds.InputSystem.Input.DebugInput">
+  DebugInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IInputContext DebugInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.IInputContext.html">IInputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_DeltaMouseScroll_" data-uid="TaleWorlds.InputSystem.Input.DeltaMouseScroll*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_DeltaMouseScroll" data-uid="TaleWorlds.InputSystem.Input.DeltaMouseScroll">
+  DeltaMouseScroll
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DeltaMouseScroll { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_DesktopResolution_" data-uid="TaleWorlds.InputSystem.Input.DesktopResolution*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_DesktopResolution" data-uid="TaleWorlds.InputSystem.Input.DesktopResolution">
+  DesktopResolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 DesktopResolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GyroX_" data-uid="TaleWorlds.InputSystem.Input.GyroX*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GyroX" data-uid="TaleWorlds.InputSystem.Input.GyroX">
+  GyroX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GyroX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GyroY_" data-uid="TaleWorlds.InputSystem.Input.GyroY*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GyroY" data-uid="TaleWorlds.InputSystem.Input.GyroY">
+  GyroY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GyroY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GyroZ_" data-uid="TaleWorlds.InputSystem.Input.GyroZ*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GyroZ" data-uid="TaleWorlds.InputSystem.Input.GyroZ">
+  GyroZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GyroZ { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_InputManager_" data-uid="TaleWorlds.InputSystem.Input.InputManager*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_InputManager" data-uid="TaleWorlds.InputSystem.Input.InputManager">
+  InputManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IInputManager InputManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.IInputManager.html">IInputManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_InputState_" data-uid="TaleWorlds.InputSystem.Input.InputState*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_InputState" data-uid="TaleWorlds.InputSystem.Input.InputState">
+  InputState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputState InputState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.InputState.html">InputState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsAnyTouchActive_" data-uid="TaleWorlds.InputSystem.Input.IsAnyTouchActive*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsAnyTouchActive" data-uid="TaleWorlds.InputSystem.Input.IsAnyTouchActive">
+  IsAnyTouchActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAnyTouchActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsControllerConnected_" data-uid="TaleWorlds.InputSystem.Input.IsControllerConnected*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsControllerConnected" data-uid="TaleWorlds.InputSystem.Input.IsControllerConnected">
+  IsControllerConnected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsControllerConnected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsGamepadActive_" data-uid="TaleWorlds.InputSystem.Input.IsGamepadActive*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsGamepadActive" data-uid="TaleWorlds.InputSystem.Input.IsGamepadActive">
+  IsGamepadActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGamepadActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsMouseActive_" data-uid="TaleWorlds.InputSystem.Input.IsMouseActive*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsMouseActive" data-uid="TaleWorlds.InputSystem.Input.IsMouseActive">
+  IsMouseActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMouseActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsMousePositionUpdated_" data-uid="TaleWorlds.InputSystem.Input.IsMousePositionUpdated*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsMousePositionUpdated" data-uid="TaleWorlds.InputSystem.Input.IsMousePositionUpdated">
+  IsMousePositionUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMousePositionUpdated { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsMouseScrollChanged_" data-uid="TaleWorlds.InputSystem.Input.IsMouseScrollChanged*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsMouseScrollChanged" data-uid="TaleWorlds.InputSystem.Input.IsMouseScrollChanged">
+  IsMouseScrollChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMouseScrollChanged { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_MouseMoveX_" data-uid="TaleWorlds.InputSystem.Input.MouseMoveX*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_MouseMoveX" data-uid="TaleWorlds.InputSystem.Input.MouseMoveX">
+  MouseMoveX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MouseMoveX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_MouseMoveY_" data-uid="TaleWorlds.InputSystem.Input.MouseMoveY*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_MouseMoveY" data-uid="TaleWorlds.InputSystem.Input.MouseMoveY">
+  MouseMoveY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MouseMoveY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_MousePositionPixel_" data-uid="TaleWorlds.InputSystem.Input.MousePositionPixel*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_MousePositionPixel" data-uid="TaleWorlds.InputSystem.Input.MousePositionPixel">
+  MousePositionPixel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 MousePositionPixel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_MousePositionRanged_" data-uid="TaleWorlds.InputSystem.Input.MousePositionRanged*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_MousePositionRanged" data-uid="TaleWorlds.InputSystem.Input.MousePositionRanged">
+  MousePositionRanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 MousePositionRanged { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_MouseSensitivity_" data-uid="TaleWorlds.InputSystem.Input.MouseSensitivity*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_MouseSensitivity" data-uid="TaleWorlds.InputSystem.Input.MouseSensitivity">
+  MouseSensitivity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MouseSensitivity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_Resolution_" data-uid="TaleWorlds.InputSystem.Input.Resolution*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_Resolution" data-uid="TaleWorlds.InputSystem.Input.Resolution">
+  Resolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 Resolution { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_InputSystem_Input_ClearKeys_" data-uid="TaleWorlds.InputSystem.Input.ClearKeys*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_ClearKeys" data-uid="TaleWorlds.InputSystem.Input.ClearKeys">
+  ClearKeys()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearKeys()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetClickKeys_" data-uid="TaleWorlds.InputSystem.Input.GetClickKeys*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetClickKeys" data-uid="TaleWorlds.InputSystem.Input.GetClickKeys">
+  GetClickKeys()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputKey[] GetClickKeys()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetClipboardText_" data-uid="TaleWorlds.InputSystem.Input.GetClipboardText*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetClipboardText" data-uid="TaleWorlds.InputSystem.Input.GetClipboardText">
+  GetClipboardText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClipboardText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetFirstKeyDownInRange_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyDownInRange*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetFirstKeyDownInRange_System_Int32_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyDownInRange(System.Int32)">
+  GetFirstKeyDownInRange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetFirstKeyDownInRange(int startKeyNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startKeyNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetFirstKeyPressedInRange_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyPressedInRange*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetFirstKeyPressedInRange_System_Int32_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyPressedInRange(System.Int32)">
+  GetFirstKeyPressedInRange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetFirstKeyPressedInRange(int startKeyNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startKeyNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetFirstKeyReleasedInRange_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyReleasedInRange*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetFirstKeyReleasedInRange_System_Int32_" data-uid="TaleWorlds.InputSystem.Input.GetFirstKeyReleasedInRange(System.Int32)">
+  GetFirstKeyReleasedInRange(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetFirstKeyReleasedInRange(int startKeyNo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startKeyNo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetGyroX_" data-uid="TaleWorlds.InputSystem.Input.GetGyroX*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetGyroX" data-uid="TaleWorlds.InputSystem.Input.GetGyroX">
+  GetGyroX()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetGyroX()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetGyroY_" data-uid="TaleWorlds.InputSystem.Input.GetGyroY*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetGyroY" data-uid="TaleWorlds.InputSystem.Input.GetGyroY">
+  GetGyroY()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetGyroY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetGyroZ_" data-uid="TaleWorlds.InputSystem.Input.GetGyroZ*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetGyroZ" data-uid="TaleWorlds.InputSystem.Input.GetGyroZ">
+  GetGyroZ()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetGyroZ()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetKeyState_" data-uid="TaleWorlds.InputSystem.Input.GetKeyState*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetKeyState_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.GetKeyState(TaleWorlds.InputSystem.InputKey)">
+  GetKeyState(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 GetKeyState(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetMouseMoveX_" data-uid="TaleWorlds.InputSystem.Input.GetMouseMoveX*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetMouseMoveX" data-uid="TaleWorlds.InputSystem.Input.GetMouseMoveX">
+  GetMouseMoveX()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetMouseMoveX()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetMouseMoveY_" data-uid="TaleWorlds.InputSystem.Input.GetMouseMoveY*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetMouseMoveY" data-uid="TaleWorlds.InputSystem.Input.GetMouseMoveY">
+  GetMouseMoveY()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetMouseMoveY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_GetVirtualKeyCode_" data-uid="TaleWorlds.InputSystem.Input.GetVirtualKeyCode*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_GetVirtualKeyCode_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.GetVirtualKeyCode(TaleWorlds.InputSystem.InputKey)">
+  GetVirtualKeyCode(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetVirtualKeyCode(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_Initialize_" data-uid="TaleWorlds.InputSystem.Input.Initialize*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_Initialize_TaleWorlds_InputSystem_IInputManager_TaleWorlds_InputSystem_IInputContext_" data-uid="TaleWorlds.InputSystem.Input.Initialize(TaleWorlds.InputSystem.IInputManager,TaleWorlds.InputSystem.IInputContext)">
+  Initialize(IInputManager, IInputContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(IInputManager inputManager, IInputContext debugInput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputManager</code> <a class="xref" href="TaleWorlds.InputSystem.IInputManager.html">IInputManager</a></dt>
+    <dd></dd>
+    <dt><code>debugInput</code> <a class="xref" href="TaleWorlds.InputSystem.IInputContext.html">IInputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsControlOrShiftNotDown_" data-uid="TaleWorlds.InputSystem.Input.IsControlOrShiftNotDown*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsControlOrShiftNotDown" data-uid="TaleWorlds.InputSystem.Input.IsControlOrShiftNotDown">
+  IsControlOrShiftNotDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsControlOrShiftNotDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsControllerKey_" data-uid="TaleWorlds.InputSystem.Input.IsControllerKey*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsControllerKey_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsControllerKey(TaleWorlds.InputSystem.InputKey)">
+  IsControllerKey(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsControllerKey(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsDown_" data-uid="TaleWorlds.InputSystem.Input.IsDown*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsDown_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsDown(TaleWorlds.InputSystem.InputKey)">
+  IsDown(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDown(this InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsKeyDown_" data-uid="TaleWorlds.InputSystem.Input.IsKeyDown*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsKeyDown_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsKeyDown(TaleWorlds.InputSystem.InputKey)">
+  IsKeyDown(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeyDown(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsKeyDownImmediate_" data-uid="TaleWorlds.InputSystem.Input.IsKeyDownImmediate*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsKeyDownImmediate_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsKeyDownImmediate(TaleWorlds.InputSystem.InputKey)">
+  IsKeyDownImmediate(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeyDownImmediate(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsKeyPressed_" data-uid="TaleWorlds.InputSystem.Input.IsKeyPressed*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsKeyPressed_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsKeyPressed(TaleWorlds.InputSystem.InputKey)">
+  IsKeyPressed(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeyPressed(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsKeyReleased_" data-uid="TaleWorlds.InputSystem.Input.IsKeyReleased*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsKeyReleased_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsKeyReleased(TaleWorlds.InputSystem.InputKey)">
+  IsKeyReleased(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeyReleased(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsPlaystation_" data-uid="TaleWorlds.InputSystem.Input.IsPlaystation*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsPlaystation_TaleWorlds_InputSystem_Input_ControllerTypes_" data-uid="TaleWorlds.InputSystem.Input.IsPlaystation(TaleWorlds.InputSystem.Input.ControllerTypes)">
+  IsPlaystation(ControllerTypes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPlaystation(this Input.ControllerTypes controllerType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <a class="xref" href="TaleWorlds.InputSystem.Input.html">Input</a>.<a class="xref" href="TaleWorlds.InputSystem.Input.ControllerTypes.html">ControllerTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsPressed_" data-uid="TaleWorlds.InputSystem.Input.IsPressed*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsPressed_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsPressed(TaleWorlds.InputSystem.InputKey)">
+  IsPressed(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPressed(this InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_IsReleased_" data-uid="TaleWorlds.InputSystem.Input.IsReleased*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_IsReleased_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.IsReleased(TaleWorlds.InputSystem.InputKey)">
+  IsReleased(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsReleased(this InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_PressKey_" data-uid="TaleWorlds.InputSystem.Input.PressKey*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_PressKey_TaleWorlds_InputSystem_InputKey_" data-uid="TaleWorlds.InputSystem.Input.PressKey(TaleWorlds.InputSystem.InputKey)">
+  PressKey(InputKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PressKey(InputKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="TaleWorlds.InputSystem.InputKey.html">InputKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetClipboardText_" data-uid="TaleWorlds.InputSystem.Input.SetClipboardText*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetClipboardText_System_String_" data-uid="TaleWorlds.InputSystem.Input.SetClipboardText(System.String)">
+  SetClipboardText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetClipboardText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetCursorFriction_" data-uid="TaleWorlds.InputSystem.Input.SetCursorFriction*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetCursorFriction_System_Single_" data-uid="TaleWorlds.InputSystem.Input.SetCursorFriction(System.Single)">
+  SetCursorFriction(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCursorFriction(float frictionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frictionValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetLightbarColor_" data-uid="TaleWorlds.InputSystem.Input.SetLightbarColor*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetLightbarColor_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.InputSystem.Input.SetLightbarColor(System.Single,System.Single,System.Single)">
+  SetLightbarColor(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLightbarColor(float red, float green, float blue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetMousePosition_" data-uid="TaleWorlds.InputSystem.Input.SetMousePosition*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetMousePosition_System_Int32_System_Int32_" data-uid="TaleWorlds.InputSystem.Input.SetMousePosition(System.Int32,System.Int32)">
+  SetMousePosition(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetMousePosition(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetRumbleEffect_" data-uid="TaleWorlds.InputSystem.Input.SetRumbleEffect*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetRumbleEffect_System_Single___System_Single___System_Int32_System_Single___System_Single___System_Int32_" data-uid="TaleWorlds.InputSystem.Input.SetRumbleEffect(System.Single[],System.Single[],System.Int32,System.Single[],System.Single[],System.Int32)">
+  SetRumbleEffect(float[], float[], int, float[], float[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRumbleEffect(float[] lowFrequencyLevels, float[] lowFrequencyDurations, int numLowFrequencyElements, float[] highFrequencyLevels, float[] highFrequencyDurations, int numHighFrequencyElements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lowFrequencyLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>lowFrequencyDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numLowFrequencyElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>highFrequencyLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>highFrequencyDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numHighFrequencyElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetTriggerFeedback_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerFeedback*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetTriggerFeedback_System_Byte_System_Byte_System_Byte_System_Byte_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerFeedback(System.Byte,System.Byte,System.Byte,System.Byte)">
+  SetTriggerFeedback(byte, byte, byte, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTriggerFeedback(byte leftTriggerPosition, byte leftTriggerStrength, byte rightTriggerPosition, byte rightTriggerStrength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftTriggerPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftTriggerStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetTriggerVibration_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerVibration*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetTriggerVibration_System_Single___System_Single___System_Single___System_Int32_System_Single___System_Single___System_Single___System_Int32_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerVibration(System.Single[],System.Single[],System.Single[],System.Int32,System.Single[],System.Single[],System.Single[],System.Int32)">
+  SetTriggerVibration(float[], float[], float[], int, float[], float[], float[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTriggerVibration(float[] leftTriggerAmplitudes, float[] leftTriggerFrequencies, float[] leftTriggerDurations, int numLeftTriggerElements, float[] rightTriggerAmplitudes, float[] rightTriggerFrequencies, float[] rightTriggerDurations, int numRightTriggerElements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftTriggerAmplitudes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>leftTriggerFrequencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>leftTriggerDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numLeftTriggerElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerAmplitudes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>rightTriggerFrequencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>rightTriggerDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numRightTriggerElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_SetTriggerWeaponEffect_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerWeaponEffect*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_SetTriggerWeaponEffect_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_" data-uid="TaleWorlds.InputSystem.Input.SetTriggerWeaponEffect(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+  SetTriggerWeaponEffect(byte, byte, byte, byte, byte, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTriggerWeaponEffect(byte leftStartPosition, byte leftEnd_position, byte leftStrength, byte rightStartPosition, byte rightEndPosition, byte rightStrength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftStartPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftEnd_position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightStartPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightEndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_Update_" data-uid="TaleWorlds.InputSystem.Input.Update*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_Update" data-uid="TaleWorlds.InputSystem.Input.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_InputSystem_Input_UpdateKeyData_" data-uid="TaleWorlds.InputSystem.Input.UpdateKeyData*"></a>
+
+  <h3 id="TaleWorlds_InputSystem_Input_UpdateKeyData_System_Byte___" data-uid="TaleWorlds.InputSystem.Input.UpdateKeyData(System.Byte[])">
+  UpdateKeyData(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateKeyData(byte[] keyData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

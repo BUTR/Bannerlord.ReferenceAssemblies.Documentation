@@ -1,0 +1,1997 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MissionBehavior | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MissionBehavior | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.MissionBehavior">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_MissionBehavior" data-uid="TaleWorlds.MountAndBlade.MissionBehavior" class="text-break">
+Class MissionBehavior  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MissionBehavior : IMissionBehavior</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MissionBehavior</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IMissionBehavior.html">IMissionBehavior</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html">MissionLogic</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior__ctor_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior__ctor" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.#ctor">
+  MissionBehavior()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MissionBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_BehaviorType_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.BehaviorType*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_BehaviorType" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.BehaviorType">
+  BehaviorType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract MissionBehaviorType BehaviorType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MissionBehaviorType.html">MissionBehaviorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_DebugInput_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.DebugInput*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_DebugInput" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.DebugInput">
+  DebugInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInputContext DebugInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.IInputContext.html">IInputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_Mission_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.Mission*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_Mission" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.Mission">
+  Mission
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mission Mission { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Mission.html">Mission</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_AfterAddTeam_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.AfterAddTeam*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_AfterAddTeam_TaleWorlds_MountAndBlade_Team_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.AfterAddTeam(TaleWorlds.MountAndBlade.Team)">
+  AfterAddTeam(Team)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterAddTeam(Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_AfterStart_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.AfterStart*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_AfterStart" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.AfterStart">
+  AfterStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_EarlyStart_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.EarlyStart*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_EarlyStart" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.EarlyStart">
+  EarlyStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EarlyStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_GetCompassTargets_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.GetCompassTargets*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_GetCompassTargets" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.GetCompassTargets">
+  GetCompassTargets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;CompassItemUpdateParams&gt; GetCompassTargets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.CompassItemUpdateParams.html">CompassItemUpdateParams</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_IsThereAgentAction_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.IsThereAgentAction*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_IsThereAgentAction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.IsThereAgentAction(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent)">
+  IsThereAgentAction(Agent, Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsThereAgentAction(Agent userAgent, Agent otherAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>otherAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAddTeam_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAddTeam*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAddTeam_TaleWorlds_MountAndBlade_Team_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAddTeam(TaleWorlds.MountAndBlade.Team)">
+  OnAddTeam(Team)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAddTeam(Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAfterMissionCreated_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAfterMissionCreated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAfterMissionCreated" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAfterMissionCreated">
+  OnAfterMissionCreated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAfterMissionCreated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentAlarmedStateChanged_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentAlarmedStateChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentAlarmedStateChanged_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_AIStateFlag_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentAlarmedStateChanged(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent.AIStateFlag)">
+  OnAgentAlarmedStateChanged(Agent, AIStateFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentAlarmedStateChanged(Agent agent, Agent.AIStateFlag flag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>flag</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Agent.AIStateFlag.html">AIStateFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentBuild_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentBuild*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentBuild_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_Banner_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentBuild(TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.Banner)">
+  OnAgentBuild(Agent, Banner)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentBuild(Agent agent, Banner banner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>banner</code> <a class="xref" href="TaleWorlds.Core.Banner.html">Banner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerChanged_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentControllerChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerChanged_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_ControllerType_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentControllerChanged(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent.ControllerType)">
+  OnAgentControllerChanged(Agent, ControllerType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAgentControllerChanged(Agent agent, Agent.ControllerType oldController)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>oldController</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Agent.ControllerType.html">ControllerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerSetToPlayer_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentControllerSetToPlayer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerSetToPlayer_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentControllerSetToPlayer(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentControllerSetToPlayer(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentControllerSetToPlayer(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentCreated_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentCreated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentCreated_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentCreated(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentCreated(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentCreated(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDeleted_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentDeleted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDeleted_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentDeleted(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentDeleted(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentDeleted(Agent affectedAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDismount_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentDismount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDismount_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentDismount(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentDismount(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentDismount(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentFleeing_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentFleeing*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentFleeing_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentFleeing(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentFleeing(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentFleeing(Agent affectedAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentHit_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_MountAndBlade_Blow__TaleWorlds_MountAndBlade_AttackCollisionData__" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentHit(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.MissionWeapon@,TaleWorlds.MountAndBlade.Blow@,TaleWorlds.MountAndBlade.AttackCollisionData@)">
+  OnAgentHit(Agent, Agent, in MissionWeapon, in Blow, in AttackCollisionData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentHit(Agent affectedAgent, Agent affectorAgent, in MissionWeapon affectorWeapon, in Blow blow, in AttackCollisionData attackCollisionData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorWeapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="TaleWorlds.MountAndBlade.Blow.html">Blow</a></dt>
+    <dd></dd>
+    <dt><code>attackCollisionData</code> <a class="xref" href="TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentInteraction_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentInteraction*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentInteraction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentInteraction(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent)">
+  OnAgentInteraction(Agent, Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentInteraction(Agent userAgent, Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentMount_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentMount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentMount_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentMount(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentMount(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentMount(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentPanicked_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentPanicked*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentPanicked_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentPanicked(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentPanicked(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentPanicked(Agent affectedAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentRemoved_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentRemoved(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.AgentState,TaleWorlds.MountAndBlade.KillingBlow)">
+  OnAgentRemoved(Agent, Agent, AgentState, KillingBlow)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow blow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>agentState</code> <a class="xref" href="TaleWorlds.Core.AgentState.html">AgentState</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="TaleWorlds.MountAndBlade.KillingBlow.html">KillingBlow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentShootMissile_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentShootMissile*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentShootMissile_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_EquipmentIndex_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Mat3_System_Boolean_System_Int32_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentShootMissile(TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.EquipmentIndex,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Mat3,System.Boolean,System.Int32)">
+  OnAgentShootMissile(Agent, EquipmentIndex, Vec3, Vec3, Mat3, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentShootMissile(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity, Mat3 orientation, bool hasRigidBody, int forcedMissileIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shooterAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>weaponIndex</code> <a class="xref" href="TaleWorlds.Core.EquipmentIndex.html">EquipmentIndex</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>velocity</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>orientation</code> <a class="xref" href="TaleWorlds.Library.Mat3.html">Mat3</a></dt>
+    <dd></dd>
+    <dt><code>hasRigidBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>forcedMissileIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentTeamChanged_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentTeamChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAgentTeamChanged_TaleWorlds_MountAndBlade_Team_TaleWorlds_MountAndBlade_Team_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAgentTeamChanged(TaleWorlds.MountAndBlade.Team,TaleWorlds.MountAndBlade.Team,TaleWorlds.MountAndBlade.Agent)">
+  OnAgentTeamChanged(Team, Team, Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAgentTeamChanged(Team prevTeam, Team newTeam, Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prevTeam</code> <a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></dt>
+    <dd></dd>
+    <dt><code>newTeam</code> <a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></dt>
+    <dd></dd>
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnAssignPlayerAsSergeantOfFormation_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAssignPlayerAsSergeantOfFormation*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnAssignPlayerAsSergeantOfFormation_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnAssignPlayerAsSergeantOfFormation(TaleWorlds.MountAndBlade.Agent)">
+  OnAssignPlayerAsSergeantOfFormation(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAssignPlayerAsSergeantOfFormation(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnBehaviorInitialize_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnBehaviorInitialize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnBehaviorInitialize" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnBehaviorInitialize">
+  OnBehaviorInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBehaviorInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnClearScene_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnClearScene*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnClearScene" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnClearScene">
+  OnClearScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnClearScene()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnCreated_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnCreated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnCreated" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnCreated">
+  OnCreated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCreated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnDeploymentFinished_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnDeploymentFinished*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnDeploymentFinished" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnDeploymentFinished">
+  OnDeploymentFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDeploymentFinished()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnEarlyAgentRemoved_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEarlyAgentRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnEarlyAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEarlyAgentRemoved(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.AgentState,TaleWorlds.MountAndBlade.KillingBlow)">
+  OnEarlyAgentRemoved(Agent, Agent, AgentState, KillingBlow)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEarlyAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow blow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>agentState</code> <a class="xref" href="TaleWorlds.Core.AgentState.html">AgentState</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="TaleWorlds.MountAndBlade.KillingBlow.html">KillingBlow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnEndMission_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEndMission*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnEndMission" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEndMission">
+  OnEndMission()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEndMission()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnEndMissionInternal_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEndMissionInternal*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnEndMissionInternal" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEndMissionInternal">
+  OnEndMissionInternal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEndMissionInternal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnEntityRemoved_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEntityRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnEntityRemoved_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnEntityRemoved(TaleWorlds.Engine.GameEntity)">
+  OnEntityRemoved(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEntityRemoved(GameEntity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnFocusGained_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnFocusGained*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnFocusGained_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnFocusGained(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.IFocusable,System.Boolean)">
+  OnFocusGained(Agent, IFocusable, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFocusGained(Agent agent, IFocusable focusableObject, bool isInteractable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>focusableObject</code> <a class="xref" href="TaleWorlds.MountAndBlade.IFocusable.html">IFocusable</a></dt>
+    <dd></dd>
+    <dt><code>isInteractable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnFocusLost_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnFocusLost*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnFocusLost_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnFocusLost(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.IFocusable)">
+  OnFocusLost(Agent, IFocusable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFocusLost(Agent agent, IFocusable focusableObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>focusableObject</code> <a class="xref" href="TaleWorlds.MountAndBlade.IFocusable.html">IFocusable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnGetAgentState_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnGetAgentState*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnGetAgentState_TaleWorlds_MountAndBlade_Agent_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnGetAgentState(TaleWorlds.MountAndBlade.Agent,System.Boolean)">
+  OnGetAgentState(Agent, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGetAgentState(Agent agent, bool usedSurgery)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>usedSurgery</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMeleeHit_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMeleeHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMeleeHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Boolean_TaleWorlds_MountAndBlade_AttackCollisionData_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMeleeHit(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,System.Boolean,TaleWorlds.MountAndBlade.AttackCollisionData)">
+  OnMeleeHit(Agent, Agent, bool, AttackCollisionData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMeleeHit(Agent attacker, Agent victim, bool isCanceled, AttackCollisionData collisionData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attacker</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>victim</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>isCanceled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>collisionData</code> <a class="xref" href="TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissileCollisionReaction_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissileCollisionReaction*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissileCollisionReaction_TaleWorlds_MountAndBlade_Mission_MissileCollisionReaction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_SByte_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissileCollisionReaction(TaleWorlds.MountAndBlade.Mission.MissileCollisionReaction,TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,System.SByte)">
+  OnMissileCollisionReaction(MissileCollisionReaction, Agent, Agent, sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissileCollisionReaction(Mission.MissileCollisionReaction collisionReaction, Agent attackerAgent, Agent attachedAgent, sbyte attachedBoneIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collisionReaction</code> <a class="xref" href="TaleWorlds.MountAndBlade.Mission.html">Mission</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Mission.MissileCollisionReaction.html">MissileCollisionReaction</a></dt>
+    <dd></dd>
+    <dt><code>attackerAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>attachedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>attachedBoneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissileHit_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissileHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissileHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Boolean_TaleWorlds_MountAndBlade_AttackCollisionData_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissileHit(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,System.Boolean,TaleWorlds.MountAndBlade.AttackCollisionData)">
+  OnMissileHit(Agent, Agent, bool, AttackCollisionData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissileHit(Agent attacker, Agent victim, bool isCanceled, AttackCollisionData collisionData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attacker</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>victim</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>isCanceled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>collisionData</code> <a class="xref" href="TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionModeChange_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionModeChange*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionModeChange_TaleWorlds_Core_MissionMode_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionModeChange(TaleWorlds.Core.MissionMode,System.Boolean)">
+  OnMissionModeChange(MissionMode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionModeChange(MissionMode oldMissionMode, bool atStart)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldMissionMode</code> <a class="xref" href="TaleWorlds.Core.MissionMode.html">MissionMode</a></dt>
+    <dd></dd>
+    <dt><code>atStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionScreenPreLoad_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionScreenPreLoad*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionScreenPreLoad" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionScreenPreLoad">
+  OnMissionScreenPreLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionScreenPreLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateActivated_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateActivated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateActivated" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateActivated">
+  OnMissionStateActivated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionStateActivated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateDeactivated_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateDeactivated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateDeactivated" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateDeactivated">
+  OnMissionStateDeactivated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionStateDeactivated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateFinalized_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateFinalized*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateFinalized" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionStateFinalized">
+  OnMissionStateFinalized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionStateFinalized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionTick_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnMissionTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnMissionTick(System.Single)">
+  OnMissionTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMissionTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectDisabled_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectDisabled*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectDisabled_TaleWorlds_MountAndBlade_DestructableComponent_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectDisabled(TaleWorlds.MountAndBlade.DestructableComponent)">
+  OnObjectDisabled(DestructableComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnObjectDisabled(DestructableComponent destructionComponent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destructionComponent</code> <a class="xref" href="TaleWorlds.MountAndBlade.DestructableComponent.html">DestructableComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectStoppedBeingUsed_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectStoppedBeingUsed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectStoppedBeingUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectStoppedBeingUsed(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.UsableMissionObject)">
+  OnObjectStoppedBeingUsed(Agent, UsableMissionObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnObjectStoppedBeingUsed(Agent userAgent, UsableMissionObject usedObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>usedObject</code> <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html">UsableMissionObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectUsed_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectUsed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnObjectUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnObjectUsed(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.UsableMissionObject)">
+  OnObjectUsed(Agent, UsableMissionObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnObjectUsed(Agent userAgent, UsableMissionObject usedObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>usedObject</code> <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html">UsableMissionObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnPreDisplayMissionTick_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnPreDisplayMissionTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnPreDisplayMissionTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnPreDisplayMissionTick(System.Single)">
+  OnPreDisplayMissionTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPreDisplayMissionTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnPreMissionTick_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnPreMissionTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnPreMissionTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnPreMissionTick(System.Single)">
+  OnPreMissionTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPreMissionTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnRegisterBlow_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRegisterBlow*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnRegisterBlow_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Engine_GameEntity_TaleWorlds_MountAndBlade_Blow_TaleWorlds_MountAndBlade_AttackCollisionData__TaleWorlds_MountAndBlade_MissionWeapon__" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRegisterBlow(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Engine.GameEntity,TaleWorlds.MountAndBlade.Blow,TaleWorlds.MountAndBlade.AttackCollisionData@,TaleWorlds.MountAndBlade.MissionWeapon@)">
+  OnRegisterBlow(Agent, Agent, GameEntity, Blow, ref AttackCollisionData, in MissionWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRegisterBlow(Agent attacker, Agent victim, GameEntity realHitEntity, Blow b, ref AttackCollisionData collisionData, in MissionWeapon attackerWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attacker</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>victim</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>realHitEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="TaleWorlds.MountAndBlade.Blow.html">Blow</a></dt>
+    <dd></dd>
+    <dt><code>collisionData</code> <a class="xref" href="TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+    <dt><code>attackerWeapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnRemoveBehavior_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRemoveBehavior*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnRemoveBehavior" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRemoveBehavior">
+  OnRemoveBehavior()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRemoveBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnRenderingStarted_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRenderingStarted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnRenderingStarted" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnRenderingStarted">
+  OnRenderingStarted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRenderingStarted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnScoreHit_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnScoreHit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnScoreHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_WeaponComponentData_System_Boolean_System_Boolean_TaleWorlds_MountAndBlade_Blow__TaleWorlds_MountAndBlade_AttackCollisionData__System_Single_System_Single_System_Single_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnScoreHit(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.WeaponComponentData,System.Boolean,System.Boolean,TaleWorlds.MountAndBlade.Blow@,TaleWorlds.MountAndBlade.AttackCollisionData@,System.Single,System.Single,System.Single)">
+  OnScoreHit(Agent, Agent, WeaponComponentData, bool, bool, in Blow, in AttackCollisionData, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnScoreHit(Agent affectedAgent, Agent affectorAgent, WeaponComponentData attackerWeapon, bool isBlocked, bool isSiegeEngineHit, in Blow blow, in AttackCollisionData collisionData, float damagedHp, float hitDistance, float shotDifficulty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>attackerWeapon</code> <a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+    <dt><code>isBlocked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isSiegeEngineHit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="TaleWorlds.MountAndBlade.Blow.html">Blow</a></dt>
+    <dd></dd>
+    <dt><code>collisionData</code> <a class="xref" href="TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+    <dt><code>damagedHp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>hitDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>shotDifficulty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_MissionBehavior_OnTeamDeployed_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnTeamDeployed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_MissionBehavior_OnTeamDeployed_TaleWorlds_MountAndBlade_Team_" data-uid="TaleWorlds.MountAndBlade.MissionBehavior.OnTeamDeployed(TaleWorlds.MountAndBlade.Team)">
+  OnTeamDeployed(Team)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnTeamDeployed(Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="TaleWorlds.MountAndBlade.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

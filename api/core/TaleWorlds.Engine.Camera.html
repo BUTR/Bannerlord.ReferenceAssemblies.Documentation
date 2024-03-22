@@ -1,0 +1,1137 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Camera | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Camera | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.Camera">
+
+
+
+  <h1 id="TaleWorlds_Engine_Camera" data-uid="TaleWorlds.Engine.Camera" class="text-break">
+Class Camera  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineClass(&quot;rglCamera_object&quot;)]
+public sealed class Camera : NativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.NativeObject.html">NativeObject</a></div>
+      <div><span class="xref">Camera</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_ManualInvalidate">NativeObject.ManualInvalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Pointer">NativeObject.Pointer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Engine_Camera_Direction_" data-uid="TaleWorlds.Engine.Camera.Direction*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Direction" data-uid="TaleWorlds.Engine.Camera.Direction">
+  Direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 Direction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Entity_" data-uid="TaleWorlds.Engine.Camera.Entity*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Entity" data-uid="TaleWorlds.Engine.Camera.Entity">
+  Entity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity Entity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Far_" data-uid="TaleWorlds.Engine.Camera.Far*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Far" data-uid="TaleWorlds.Engine.Camera.Far">
+  Far
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Far { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Frame_" data-uid="TaleWorlds.Engine.Camera.Frame*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Frame" data-uid="TaleWorlds.Engine.Camera.Frame">
+  Frame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame Frame { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_HorizontalFov_" data-uid="TaleWorlds.Engine.Camera.HorizontalFov*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_HorizontalFov" data-uid="TaleWorlds.Engine.Camera.HorizontalFov">
+  HorizontalFov
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HorizontalFov { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Near_" data-uid="TaleWorlds.Engine.Camera.Near*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Near" data-uid="TaleWorlds.Engine.Camera.Near">
+  Near
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Near { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Position_" data-uid="TaleWorlds.Engine.Camera.Position*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Position" data-uid="TaleWorlds.Engine.Camera.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 Position { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_Camera_CheckEntityVisibility_" data-uid="TaleWorlds.Engine.Camera.CheckEntityVisibility*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_CheckEntityVisibility_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.Engine.Camera.CheckEntityVisibility(TaleWorlds.Engine.GameEntity)">
+  CheckEntityVisibility(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckEntityVisibility(GameEntity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_ConstructCameraFromPositionElevationBearing_" data-uid="TaleWorlds.Engine.Camera.ConstructCameraFromPositionElevationBearing*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_ConstructCameraFromPositionElevationBearing_TaleWorlds_Library_Vec3_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Camera.ConstructCameraFromPositionElevationBearing(TaleWorlds.Library.Vec3,System.Single,System.Single)">
+  ConstructCameraFromPositionElevationBearing(Vec3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixFrame ConstructCameraFromPositionElevationBearing(Vec3 position, float elevation, float bearing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>elevation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>bearing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_CreateCamera_" data-uid="TaleWorlds.Engine.Camera.CreateCamera*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_CreateCamera" data-uid="TaleWorlds.Engine.Camera.CreateCamera">
+  CreateCamera()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Camera CreateCamera()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_EnclosesPoint_" data-uid="TaleWorlds.Engine.Camera.EnclosesPoint*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_EnclosesPoint_TaleWorlds_Library_Vec3_" data-uid="TaleWorlds.Engine.Camera.EnclosesPoint(TaleWorlds.Library.Vec3)">
+  EnclosesPoint(Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnclosesPoint(Vec3 pointInWorldSpace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointInWorldSpace</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_FillParametersFrom_" data-uid="TaleWorlds.Engine.Camera.FillParametersFrom*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_FillParametersFrom_TaleWorlds_Engine_Camera_" data-uid="TaleWorlds.Engine.Camera.FillParametersFrom(TaleWorlds.Engine.Camera)">
+  FillParametersFrom(Camera)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillParametersFrom(Camera otherCamera)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCamera</code> <a class="xref" href="TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_Finalize_" data-uid="TaleWorlds.Engine.Camera.Finalize*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_Finalize" data-uid="TaleWorlds.Engine.Camera.Finalize">
+  ~Camera()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~Camera()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetAspectRatio_" data-uid="TaleWorlds.Engine.Camera.GetAspectRatio*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetAspectRatio" data-uid="TaleWorlds.Engine.Camera.GetAspectRatio">
+  GetAspectRatio()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAspectRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetFovHorizontal_" data-uid="TaleWorlds.Engine.Camera.GetFovHorizontal*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetFovHorizontal" data-uid="TaleWorlds.Engine.Camera.GetFovHorizontal">
+  GetFovHorizontal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFovHorizontal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetFovVertical_" data-uid="TaleWorlds.Engine.Camera.GetFovVertical*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetFovVertical" data-uid="TaleWorlds.Engine.Camera.GetFovVertical">
+  GetFovVertical()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFovVertical()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetNearPlanePoints_" data-uid="TaleWorlds.Engine.Camera.GetNearPlanePoints*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetNearPlanePoints_TaleWorlds_Library_Vec3___" data-uid="TaleWorlds.Engine.Camera.GetNearPlanePoints(TaleWorlds.Library.Vec3[])">
+  GetNearPlanePoints(Vec3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetNearPlanePoints(Vec3[] nearPlanePoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nearPlanePoints</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetNearPlanePointsStatic_" data-uid="TaleWorlds.Engine.Camera.GetNearPlanePointsStatic*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetNearPlanePointsStatic_TaleWorlds_Library_MatrixFrame__System_Single_System_Single_System_Single_System_Single_TaleWorlds_Library_Vec3___" data-uid="TaleWorlds.Engine.Camera.GetNearPlanePointsStatic(TaleWorlds.Library.MatrixFrame@,System.Single,System.Single,System.Single,System.Single,TaleWorlds.Library.Vec3[])">
+  GetNearPlanePointsStatic(ref MatrixFrame, float, float, float, float, Vec3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetNearPlanePointsStatic(ref MatrixFrame cameraFrame, float verticalFov, float aspectRatioXY, float newDNear, float newDFar, Vec3[] nearPlanePoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cameraFrame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>verticalFov</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspectRatioXY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDNear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDFar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>nearPlanePoints</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_GetViewProjMatrix_" data-uid="TaleWorlds.Engine.Camera.GetViewProjMatrix*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_GetViewProjMatrix_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.Engine.Camera.GetViewProjMatrix(TaleWorlds.Library.MatrixFrame@)">
+  GetViewProjMatrix(ref MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetViewProjMatrix(ref MatrixFrame viewProj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>viewProj</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_LookAt_" data-uid="TaleWorlds.Engine.Camera.LookAt*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_LookAt_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_" data-uid="TaleWorlds.Engine.Camera.LookAt(TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3,TaleWorlds.Library.Vec3)">
+  LookAt(Vec3, Vec3, Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LookAt(Vec3 position, Vec3 target, Vec3 upVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>upVector</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_ReleaseCamera_" data-uid="TaleWorlds.Engine.Camera.ReleaseCamera*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_ReleaseCamera" data-uid="TaleWorlds.Engine.Camera.ReleaseCamera">
+  ReleaseCamera()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseCamera()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_ReleaseCameraEntity_" data-uid="TaleWorlds.Engine.Camera.ReleaseCameraEntity*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_ReleaseCameraEntity" data-uid="TaleWorlds.Engine.Camera.ReleaseCameraEntity">
+  ReleaseCameraEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseCameraEntity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_RenderFrustrum_" data-uid="TaleWorlds.Engine.Camera.RenderFrustrum*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_RenderFrustrum" data-uid="TaleWorlds.Engine.Camera.RenderFrustrum">
+  RenderFrustrum()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderFrustrum()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_ScreenSpaceRayProjection_" data-uid="TaleWorlds.Engine.Camera.ScreenSpaceRayProjection*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_ScreenSpaceRayProjection_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.Engine.Camera.ScreenSpaceRayProjection(TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@)">
+  ScreenSpaceRayProjection(Vec2, ref Vec3, ref Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScreenSpaceRayProjection(Vec2 screenPosition, ref Vec3 rayBegin, ref Vec3 rayEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPosition</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rayBegin</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>rayEnd</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_SetFovHorizontal_" data-uid="TaleWorlds.Engine.Camera.SetFovHorizontal*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_SetFovHorizontal_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Camera.SetFovHorizontal(System.Single,System.Single,System.Single,System.Single)">
+  SetFovHorizontal(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFovHorizontal(float horizontalFov, float aspectRatioXY, float newDNear, float newDFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>horizontalFov</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspectRatioXY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDNear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDFar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_SetFovVertical_" data-uid="TaleWorlds.Engine.Camera.SetFovVertical*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_SetFovVertical_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Camera.SetFovVertical(System.Single,System.Single,System.Single,System.Single)">
+  SetFovVertical(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFovVertical(float verticalFov, float aspectRatioXY, float newDNear, float newDFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verticalFov</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspectRatioXY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDNear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newDFar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_SetViewVolume_" data-uid="TaleWorlds.Engine.Camera.SetViewVolume*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_SetViewVolume_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.Camera.SetViewVolume(System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  SetViewVolume(bool, float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewVolume(bool perspective, float dLeft, float dRight, float dBottom, float dTop, float dNear, float dFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perspective</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>dLeft</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dRight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dBottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dTop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dNear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dFar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_ViewportPointToWorldRay_" data-uid="TaleWorlds.Engine.Camera.ViewportPointToWorldRay*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_ViewportPointToWorldRay_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec2_" data-uid="TaleWorlds.Engine.Camera.ViewportPointToWorldRay(TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec2)">
+  ViewportPointToWorldRay(ref Vec3, ref Vec3, Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ViewportPointToWorldRay(ref Vec3 rayBegin, ref Vec3 rayEnd, Vec2 viewportPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rayBegin</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>rayEnd</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>viewportPoint</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Camera_WorldPointToViewPortPoint_" data-uid="TaleWorlds.Engine.Camera.WorldPointToViewPortPoint*"></a>
+
+  <h3 id="TaleWorlds_Engine_Camera_WorldPointToViewPortPoint_TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.Engine.Camera.WorldPointToViewPortPoint(TaleWorlds.Library.Vec3@)">
+  WorldPointToViewPortPoint(ref Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 WorldPointToViewPortPoint(ref Vec3 worldPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPoint</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

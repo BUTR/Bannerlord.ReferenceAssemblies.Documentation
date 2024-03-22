@@ -1,0 +1,2223 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Trebuchet | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Trebuchet | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Trebuchet">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Trebuchet" data-uid="TaleWorlds.MountAndBlade.Trebuchet" class="text-break">
+Class Trebuchet  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Trebuchet : RangedSiegeWeapon, IFocusable, IOrderable, IDetachment, ITargetable, ISpawnable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.DotNetObject.html">DotNetObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html">UsableMachine</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html">SiegeWeapon</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html">RangedSiegeWeapon</a></div>
+      <div><span class="xref">Trebuchet</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IFocusable.html">IFocusable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IOrderable.html">IOrderable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IDetachment.html">IDetachment</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.ITargetable.html">ITargetable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Objects.Siege.ISpawnable.html">ISpawnable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Objects.Siege.FireTrebuchet.html">FireTrebuchet</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_DefaultDirectionRestriction">RangedSiegeWeapon.DefaultDirectionRestriction</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MultipleProjectileId">RangedSiegeWeapon.MultipleProjectileId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MultipleProjectileFlyingId">RangedSiegeWeapon.MultipleProjectileFlyingId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MultipleProjectileCount">RangedSiegeWeapon.MultipleProjectileCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanGoAmmoPickupTag">RangedSiegeWeapon.CanGoAmmoPickupTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_DontApplySidePenaltyTag">RangedSiegeWeapon.DontApplySidePenaltyTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloadTag">RangedSiegeWeapon.ReloadTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AmmoLoadTag">RangedSiegeWeapon.AmmoLoadTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CameraHolderTag">RangedSiegeWeapon.CameraHolderTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ProjectileTag">RangedSiegeWeapon.ProjectileTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MissileItemID">RangedSiegeWeapon.MissileItemID</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_UsesMouseForAiming">RangedSiegeWeapon.UsesMouseForAiming</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_Focus">RangedSiegeWeapon.Focus</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MissileStartingPositionEntityForSimulation">RangedSiegeWeapon.MissileStartingPositionEntityForSimulation</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_Skeletons">RangedSiegeWeapon.Skeletons</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SkeletonOwnerObjects">RangedSiegeWeapon.SkeletonOwnerObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SkeletonNames">RangedSiegeWeapon.SkeletonNames</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_FireAnimations">RangedSiegeWeapon.FireAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SetUpAnimations">RangedSiegeWeapon.SetUpAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_FireAnimationIndices">RangedSiegeWeapon.FireAnimationIndices</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SetUpAnimationIndices">RangedSiegeWeapon.SetUpAnimationIndices</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_RotationObject">RangedSiegeWeapon.RotationObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MoveSound">RangedSiegeWeapon.MoveSound</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloadSound">RangedSiegeWeapon.ReloadSound</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MoveSoundIndex">RangedSiegeWeapon.MoveSoundIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloadSoundIndex">RangedSiegeWeapon.ReloadSoundIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloadEndSoundIndex">RangedSiegeWeapon.ReloadEndSoundIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OriginalMissileItem">RangedSiegeWeapon.OriginalMissileItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_LoadedMissileItem">RangedSiegeWeapon.LoadedMissileItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanPickUpAmmoStandingPoints">RangedSiegeWeapon.CanPickUpAmmoStandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloadStandingPoints">RangedSiegeWeapon.ReloadStandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AmmoPickUpStandingPoints">RangedSiegeWeapon.AmmoPickUpStandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_LoadAmmoStandingPoint">RangedSiegeWeapon.LoadAmmoStandingPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_PilotReservePriorityValues">RangedSiegeWeapon.PilotReservePriorityValues</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloaderAgent">RangedSiegeWeapon.ReloaderAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReloaderAgentOriginalPoint">RangedSiegeWeapon.ReloaderAgentOriginalPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AttackClickWillReload">RangedSiegeWeapon.AttackClickWillReload</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_WeaponNeedsClickToReload">RangedSiegeWeapon.WeaponNeedsClickToReload</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_startingAmmoCount">RangedSiegeWeapon.startingAmmoCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CurrentAmmo">RangedSiegeWeapon.CurrentAmmo</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_targetDirection">RangedSiegeWeapon.targetDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_targetReleaseAngle">RangedSiegeWeapon.targetReleaseAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_cameraDirection">RangedSiegeWeapon.cameraDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_cameraReleaseAngle">RangedSiegeWeapon.cameraReleaseAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_reloadTargetReleaseAngle">RangedSiegeWeapon.reloadTargetReleaseAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_maxRotateSpeed">RangedSiegeWeapon.maxRotateSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_dontMoveTimer">RangedSiegeWeapon.dontMoveTimer</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_currentDirection">RangedSiegeWeapon.currentDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_currentReleaseAngle">RangedSiegeWeapon.currentReleaseAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_TopReleaseAngleRestriction">RangedSiegeWeapon.TopReleaseAngleRestriction</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_BottomReleaseAngleRestriction">RangedSiegeWeapon.BottomReleaseAngleRestriction</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReleaseAngleRestrictionCenter">RangedSiegeWeapon.ReleaseAngleRestrictionCenter</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ReleaseAngleRestrictionAngle">RangedSiegeWeapon.ReleaseAngleRestrictionAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_timeGapBetweenShootingEndAndReloadingStart">RangedSiegeWeapon.timeGapBetweenShootingEndAndReloadingStart</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_timeGapBetweenShootActionAndProjectileLeaving">RangedSiegeWeapon.timeGapBetweenShootActionAndProjectileLeaving</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon__defaultSide">RangedSiegeWeapon._defaultSide</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon__stonePile">RangedSiegeWeapon._stonePile</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ConsumeAmmo">RangedSiegeWeapon.ConsumeAmmo()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SetAmmo_System_Int32_">RangedSiegeWeapon.SetAmmo(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CheckAmmo">RangedSiegeWeapon.CheckAmmo()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ChangeProjectileEntityServer_TaleWorlds_MountAndBlade_Agent_System_String_">RangedSiegeWeapon.ChangeProjectileEntityServer(Agent, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ChangeProjectileEntityClient_System_Int32_">RangedSiegeWeapon.ChangeProjectileEntityClient(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnEditorInit">RangedSiegeWeapon.OnEditorInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnMissionReset">RangedSiegeWeapon.OnMissionReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_WriteToNetwork">RangedSiegeWeapon.WriteToNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_IsInRangeToCheckAlternativePoints_TaleWorlds_MountAndBlade_Agent_">RangedSiegeWeapon.IsInRangeToCheckAlternativePoints(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetBestPointAlternativeTo_TaleWorlds_MountAndBlade_StandingPoint_TaleWorlds_MountAndBlade_Agent_">RangedSiegeWeapon.GetBestPointAlternativeTo(StandingPoint, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetDetachmentWeightAuxForExternalAmmoWeapons_TaleWorlds_Core_BattleSideEnum_">RangedSiegeWeapon.GetDetachmentWeightAuxForExternalAmmoWeapons(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CalculateShootingRange_System_Single_">RangedSiegeWeapon.CalculateShootingRange(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ApproachToAngle_System_Single__System_Single_System_Boolean_System_Single_System_Single_System_Single_">RangedSiegeWeapon.ApproachToAngle(ref float, float, bool, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_HandleUserAiming_System_Single_">RangedSiegeWeapon.HandleUserAiming(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GiveInput_System_Single_System_Single_">RangedSiegeWeapon.GiveInput(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GiveExactInput_System_Single_System_Single_">RangedSiegeWeapon.GiveExactInput(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ApplyAimChange">RangedSiegeWeapon.ApplyAimChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ApplyCurrentDirectionToEntity">RangedSiegeWeapon.ApplyCurrentDirectionToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetTargetDirection_TaleWorlds_Library_Vec3_">RangedSiegeWeapon.GetTargetDirection(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetTargetReleaseAngle_TaleWorlds_Library_Vec3_">RangedSiegeWeapon.GetTargetReleaseAngle(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AimAtThreat_TaleWorlds_MountAndBlade_Threat_">RangedSiegeWeapon.AimAtThreat(Threat)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AimAtRotation_System_Single_System_Single_">RangedSiegeWeapon.AimAtRotation(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnLoadingAmmoPointUsingCancelled_TaleWorlds_MountAndBlade_Agent_System_Boolean_">RangedSiegeWeapon.OnLoadingAmmoPointUsingCancelled(Agent, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnAmmoPickupUsingCancelled_TaleWorlds_MountAndBlade_Agent_System_Boolean_">RangedSiegeWeapon.OnAmmoPickupUsingCancelled(Agent, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SendAgentToAmmoPickup_TaleWorlds_MountAndBlade_Agent_">RangedSiegeWeapon.SendAgentToAmmoPickup(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SendReloaderAgentToOriginalPoint">RangedSiegeWeapon.SendReloaderAgentToOriginalPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_Shoot">RangedSiegeWeapon.Shoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ManualReload">RangedSiegeWeapon.ManualReload()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AiRequestsShoot">RangedSiegeWeapon.AiRequestsShoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AiRequestsManualReload">RangedSiegeWeapon.AiRequestsManualReload()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnRotationStarted">RangedSiegeWeapon.OnRotationStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnRotationStopped">RangedSiegeWeapon.OnRotationStopped()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtBox_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_System_UInt32_">RangedSiegeWeapon.CanShootAtBox(Vec3, Vec3, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtBoxSimplified_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">RangedSiegeWeapon.CanShootAtBoxSimplified(Vec3, Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtThreat_TaleWorlds_MountAndBlade_Threat_">RangedSiegeWeapon.CanShootAtThreat(Threat)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetEstimatedTargetMovementVector_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">RangedSiegeWeapon.GetEstimatedTargetMovementVector(Vec3, Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtAgent_TaleWorlds_MountAndBlade_Agent_">RangedSiegeWeapon.CanShootAtAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtPoint_TaleWorlds_Library_Vec3_">RangedSiegeWeapon.CanShootAtPoint(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_IsTargetValid_TaleWorlds_MountAndBlade_ITargetable_">RangedSiegeWeapon.IsTargetValid(ITargetable)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetOrder_TaleWorlds_Core_BattleSideEnum_">RangedSiegeWeapon.GetOrder(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_GetEntityToAttachNavMeshFaces">RangedSiegeWeapon.GetEntityToAttachNavMeshFaces()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnAfterReadFromNetwork_System_ValueTuple_TaleWorlds_MountAndBlade_BaseSynchedMissionObjectReadableRecord_TaleWorlds_MountAndBlade_ISynchedMissionObjectReadableRecord__">RangedSiegeWeapon.OnAfterReadFromNetwork((BaseSynchedMissionObjectReadableRecord, ISynchedMissionObjectReadableRecord))</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_UpdateAmmoMesh">RangedSiegeWeapon.UpdateAmmoMesh()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_IsAnyUserBelongsToFormation_TaleWorlds_MountAndBlade_Formation_">RangedSiegeWeapon.IsAnyUserBelongsToFormation(Formation)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_State">RangedSiegeWeapon.State</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MaximumBallisticError">RangedSiegeWeapon.MaximumBallisticError</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_CanShootAtPointCheckingOffset">RangedSiegeWeapon.CanShootAtPointCheckingOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_cameraHolder">RangedSiegeWeapon.cameraHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_Projectile">RangedSiegeWeapon.Projectile</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_MissleStartingPositionForSimulation">RangedSiegeWeapon.MissleStartingPositionForSimulation</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SkeletonName">RangedSiegeWeapon.SkeletonName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_FireAnimation">RangedSiegeWeapon.FireAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SetUpAnimation">RangedSiegeWeapon.SetUpAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_FireAnimationIndex">RangedSiegeWeapon.FireAnimationIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_SetUpAnimationIndex">RangedSiegeWeapon.SetUpAnimationIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_AmmoCount">RangedSiegeWeapon.AmmoCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OriginalDirection">RangedSiegeWeapon.OriginalDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_ProjectileEntityCurrentGlobalPosition">RangedSiegeWeapon.ProjectileEntityCurrentGlobalPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_Side">RangedSiegeWeapon.Side</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnReloadDone">RangedSiegeWeapon.OnReloadDone</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.RangedSiegeWeapon.html#TaleWorlds_MountAndBlade_RangedSiegeWeapon_OnAgentLoadsMachine">RangedSiegeWeapon.OnAgentLoadsMachine</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon__spawnedFromSpawner">SiegeWeapon._spawnedFromSpawner</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_SetForcedUse_System_Boolean_">SiegeWeapon.SetForcedUse(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_CalculateIsSufficientlyManned_TaleWorlds_Core_BattleSideEnum_">SiegeWeapon.CalculateIsSufficientlyManned(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_TickAuxForInit">SiegeWeapon.TickAuxForInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_OnDeploymentStateChanged_System_Boolean_">SiegeWeapon.OnDeploymentStateChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_ShouldAutoLeaveDetachmentWhenDisabled_TaleWorlds_Core_BattleSideEnum_">SiegeWeapon.ShouldAutoLeaveDetachmentWhenDisabled(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_AutoAttachUserToFormation_TaleWorlds_Core_BattleSideEnum_">SiegeWeapon.AutoAttachUserToFormation(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_HasToBeDefendedByUser_TaleWorlds_Core_BattleSideEnum_">SiegeWeapon.HasToBeDefendedByUser(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetUserMultiplierOfWeapon">SiegeWeapon.GetUserMultiplierOfWeapon()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetDistanceMultiplierOfWeapon_TaleWorlds_Library_Vec3_">SiegeWeapon.GetDistanceMultiplierOfWeapon(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetMinimumDistanceBetweenPositions_TaleWorlds_Library_Vec3_">SiegeWeapon.GetMinimumDistanceBetweenPositions(Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetHitPointMultiplierOfWeapon">SiegeWeapon.GetHitPointMultiplierOfWeapon()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetTargetEntity">SiegeWeapon.GetTargetEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetTargetingOffset">SiegeWeapon.GetTargetingOffset()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_GetSide">SiegeWeapon.GetSide()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_Entity">SiegeWeapon.Entity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_ForcedUse">SiegeWeapon.ForcedUse</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_IsUsed">SiegeWeapon.IsUsed</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_HasWaitFrame">SiegeWeapon.HasWaitFrame</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SiegeWeapon.html#TaleWorlds_MountAndBlade_SiegeWeapon_IsDeactivated">SiegeWeapon.IsDeactivated</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_UsableMachineParentTag">UsableMachine.UsableMachineParentTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_PilotStandingPointTag">UsableMachine.PilotStandingPointTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_AmmoPickUpTag">UsableMachine.AmmoPickUpTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_WaitStandingPointTag">UsableMachine.WaitStandingPointTag</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_ActiveWaitStandingPoint">UsableMachine.ActiveWaitStandingPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine__areUsableStandingPointsVacant">UsableMachine._areUsableStandingPointsVacant</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine__usableStandingPoints">UsableMachine._usableStandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine__isDetachmentRecentlyEvaluated">UsableMachine._isDetachmentRecentlyEvaluated</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_EnemyRangeToStopUsing">UsableMachine.EnemyRangeToStopUsing</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_MachinePositionOffsetToStopUsingLocal">UsableMachine.MachinePositionOffsetToStopUsingLocal</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_MakeVisibilityCheck">UsableMachine.MakeVisibilityCheck</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine__isDisabledForAI">UsableMachine._isDisabledForAI</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine__userFormations">UsableMachine._userFormations</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_AddComponent_TaleWorlds_MountAndBlade_UsableMissionObjectComponent_">UsableMachine.AddComponent(UsableMissionObjectComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_RemoveComponent_TaleWorlds_MountAndBlade_UsableMissionObjectComponent_">UsableMachine.RemoveComponent(UsableMissionObjectComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetComponent__1">UsableMachine.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgent_TaleWorlds_MountAndBlade_Agent_">UsableMachine.GetValidStandingPointForAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetValidStandingPointForAgentWithoutDistanceCheck_TaleWorlds_MountAndBlade_Agent_">UsableMachine.GetValidStandingPointForAgentWithoutDistanceCheck(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetVacantStandingPointForAI_TaleWorlds_MountAndBlade_Agent_">UsableMachine.GetVacantStandingPointForAI(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetTargetStandingPointOfAIAgent_TaleWorlds_MountAndBlade_Agent_">UsableMachine.GetTargetStandingPointOfAIAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnMissionEnded">UsableMachine.OnMissionEnded()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_SetVisibleSynched_System_Boolean_System_Boolean_">UsableMachine.SetVisibleSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_SetPhysicsStateSynched_System_Boolean_System_Boolean_">UsableMachine.SetPhysicsStateSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_DebugTick_System_Single_">UsableMachine.DebugTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnEditorTick_System_Single_">UsableMachine.OnEditorTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnEditorValidate">UsableMachine.OnEditorValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnFocusGain_TaleWorlds_MountAndBlade_Agent_">UsableMachine.OnFocusGain(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnFocusLose_TaleWorlds_MountAndBlade_Agent_">UsableMachine.OnFocusLose(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetInfoTextForBeingNotInteractable_TaleWorlds_MountAndBlade_Agent_">UsableMachine.GetInfoTextForBeingNotInteractable(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_Deactivate">UsableMachine.Deactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_Activate">UsableMachine.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSide_TaleWorlds_Core_BattleSideEnum_">UsableMachine.IsDisabledForBattleSide(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsDisabledForBattleSideAI_TaleWorlds_Core_BattleSideEnum_">UsableMachine.IsDisabledForBattleSideAI(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsDisabledDueToEnemyInRange_TaleWorlds_Core_BattleSideEnum_">UsableMachine.IsDisabledDueToEnemyInRange(BattleSideEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_Disable">UsableMachine.Disable()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_OnRemoved_System_Int32_">UsableMachine.OnRemoved(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_ToString">UsableMachine.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetWeightOfStandingPoint_TaleWorlds_MountAndBlade_StandingPoint_">UsableMachine.GetWeightOfStandingPoint(StandingPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsAgentOnInconvenientNavmesh_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_StandingPoint_">UsableMachine.IsAgentOnInconvenientNavmesh(Agent, StandingPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_AddAgentAtSlotIndex_TaleWorlds_MountAndBlade_Agent_System_Int32_">UsableMachine.AddAgentAtSlotIndex(Agent, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetNumberOfUsableSlots">UsableMachine.GetNumberOfUsableSlots()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsStandingPointAvailableForAgent_TaleWorlds_MountAndBlade_Agent_">UsableMachine.IsStandingPointAvailableForAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsUsedByFormation_TaleWorlds_MountAndBlade_Formation_">UsableMachine.IsUsedByFormation(Formation)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_GetSuitableStandingPointFor_TaleWorlds_Core_BattleSideEnum_TaleWorlds_MountAndBlade_Agent_System_Collections_Generic_List_TaleWorlds_MountAndBlade_Agent__System_Collections_Generic_List_System_ValueTuple_TaleWorlds_MountAndBlade_Agent_System_Single___">UsableMachine.GetSuitableStandingPointFor(BattleSideEnum, Agent, List&lt;Agent&gt;, List&lt;(Agent, float)&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_StandingPoints">UsableMachine.StandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_PilotStandingPoint">UsableMachine.PilotStandingPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_AmmoPickUpPoints">UsableMachine.AmmoPickUpPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_WaitStandingPoints">UsableMachine.WaitStandingPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_DestructionComponent">UsableMachine.DestructionComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsDestructible">UsableMachine.IsDestructible</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsDestroyed">UsableMachine.IsDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_PilotAgent">UsableMachine.PilotAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_IsLoose">UsableMachine.IsLoose</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_Ai">UsableMachine.Ai</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_FocusableObjectType">UsableMachine.FocusableObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_CurrentlyUsedAmmoPickUpPoint">UsableMachine.CurrentlyUsedAmmoPickUpPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_HasAIPickingUpAmmo">UsableMachine.HasAIPickingUpAmmo</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_UserFormations">UsableMachine.UserFormations</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_UserCountNotInStruckAction">UsableMachine.UserCountNotInStruckAction</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_UserCountIncludingInStruckAction">UsableMachine.UserCountIncludingInStruckAction</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_MaxUserCount">UsableMachine.MaxUserCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_WaitFrame">UsableMachine.WaitFrame</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMachine.html#TaleWorlds_MountAndBlade_UsableMachine_WaitEntity">UsableMachine.WaitEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_TaleWorlds_Library_Vec3__">SynchedMissionObject.SetLocalPositionSmoothStep(ref Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched">SynchedMissionObject.SetDisabledSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetGlobalFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetGlobalFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_String_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(string, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_Int32_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(int, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_System_Int32_System_Single_">SynchedMissionObject.SetAnimationChannelParameterSynched(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched">SynchedMissionObject.PauseSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched">SynchedMissionObject.ResumeSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_System_Boolean_">SynchedMissionObject.BurstParticlesSynched(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">SynchedMissionObject.ApplyImpulseSynched(Vec3, Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.AddBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.RemoveBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColors(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColorsSynched(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color">SynchedMissionObject.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color2">SynchedMissionObject.Color2</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted">SynchedMissionObject.SynchronizeCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MaxNavMeshPerDynamicObject">MissionObject.MaxNavMeshPerDynamicObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName">MissionObject.NavMeshPrefabName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart">MissionObject.DynamicNavmeshIdStart</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_">MissionObject.SetAbilityOfFaces(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity">MissionObject.AttachDynamicNavmeshToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnCheckForProblems">MissionObject.OnCheckForProblems()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnPreInit">MissionObject.OnPreInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetHashCode">MissionObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnHit_TaleWorlds_MountAndBlade_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_Engine_ScriptComponentBehavior_System_Boolean__">MissionObject.OnHit(Agent, int, Vec3, Vec3, in MissionWeapon, ScriptComponentBehavior, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_">MissionObject.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_">MissionObject.SetDisabledAndMakeInvisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnEndMission">MissionObject.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MovesEntity">MissionObject.MovesEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_TaleWorlds_Engine_GameEntity_">MissionObject.AddStuckMissile(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_Id">MissionObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_IsDisabled">MissionObject.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime">MissionObject.CreatedAtRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_InvalidateWeakPointersIfValid">ScriptComponentBehavior.InvalidateWeakPointersIfValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTick_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTick(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTickMT_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTickMT(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScene_TaleWorlds_Engine_Scene_">ScriptComponentBehavior.SetScene(Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_HandleOnRemoved_System_Int32_">ScriptComponentBehavior.HandleOnRemoved(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel2_System_Single_">ScriptComponentBehavior.OnTickParallel2(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickOccasionally_System_Single_">ScriptComponentBehavior.OnTickOccasionally(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_IsOnlyVisual">ScriptComponentBehavior.IsOnlyVisual()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_DisablesOroCreation">ScriptComponentBehavior.DisablesOroCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditorVariableChanged_System_String_">ScriptComponentBehavior.OnEditorVariableChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnSceneSave_System_String_">ScriptComponentBehavior.OnSceneSave(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnPhysicsCollision_TaleWorlds_Engine_PhysicsContact__">ScriptComponentBehavior.OnPhysicsCollision(ref PhysicsContact)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditModeVisibilityChanged_System_Boolean_">ScriptComponentBehavior.OnEditModeVisibilityChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_GameEntity">ScriptComponentBehavior.GameEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ScriptComponent">ScriptComponentBehavior.ScriptComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ManagedScriptHolder">ScriptComponentBehavior.ManagedScriptHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_Scene">ScriptComponentBehavior.Scene</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet__ctor_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet__ctor" data-uid="TaleWorlds.MountAndBlade.Trebuchet.#ctor">
+  Trebuchet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Trebuchet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_AIAmmoLoadTag" data-uid="TaleWorlds.MountAndBlade.Trebuchet.AIAmmoLoadTag">
+  AIAmmoLoadTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AIAmmoLoadTag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_BodyFireAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.BodyFireAnimation">
+  BodyFireAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BodyFireAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_BodySetUpAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.BodySetUpAnimation">
+  BodySetUpAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BodySetUpAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_IdleEmptyAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.IdleEmptyAnimation">
+  IdleEmptyAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdleEmptyAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_IdleWithAmmoAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.IdleWithAmmoAnimation">
+  IdleWithAmmoAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdleWithAmmoAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_ProjectileSpeed" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ProjectileSpeed">
+  ProjectileSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ProjectileSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_RopeFireAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.RopeFireAnimation">
+  RopeFireAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RopeFireAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_RopeSetUpAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.RopeSetUpAnimation">
+  RopeSetUpAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RopeSetUpAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_SlingFireAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SlingFireAnimation">
+  SlingFireAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SlingFireAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_SlingSetUpAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SlingSetUpAnimation">
+  SlingSetUpAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SlingSetUpAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_TimeGapBetweenShootActionAndProjectileLeaving" data-uid="TaleWorlds.MountAndBlade.Trebuchet.TimeGapBetweenShootActionAndProjectileLeaving">
+  TimeGapBetweenShootActionAndProjectileLeaving
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeGapBetweenShootActionAndProjectileLeaving</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_TrebuchetDirectionRestriction" data-uid="TaleWorlds.MountAndBlade.Trebuchet.TrebuchetDirectionRestriction">
+  TrebuchetDirectionRestriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float TrebuchetDirectionRestriction = 1.3962635</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_VerticalAdjusterAnimation" data-uid="TaleWorlds.MountAndBlade.Trebuchet.VerticalAdjusterAnimation">
+  VerticalAdjusterAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VerticalAdjusterAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_DirectionRestriction_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.DirectionRestriction*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_DirectionRestriction" data-uid="TaleWorlds.MountAndBlade.Trebuchet.DirectionRestriction">
+  DirectionRestriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float DirectionRestriction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_HasAmmo_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.HasAmmo*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_HasAmmo" data-uid="TaleWorlds.MountAndBlade.Trebuchet.HasAmmo">
+  HasAmmo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasAmmo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_HorizontalAimSensitivity_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.HorizontalAimSensitivity*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_HorizontalAimSensitivity" data-uid="TaleWorlds.MountAndBlade.Trebuchet.HorizontalAimSensitivity">
+  HorizontalAimSensitivity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override float HorizontalAimSensitivity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_ShootingDirection_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ShootingDirection*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_ShootingDirection" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ShootingDirection">
+  ShootingDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Vec3 ShootingDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_ShootingSpeed_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ShootingSpeed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_ShootingSpeed" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ShootingSpeed">
+  ShootingSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override float ShootingSpeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_VerticalAimSensitivity_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.VerticalAimSensitivity*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_VerticalAimSensitivity" data-uid="TaleWorlds.MountAndBlade.Trebuchet.VerticalAimSensitivity">
+  VerticalAimSensitivity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override float VerticalAimSensitivity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_AfterMissionStart_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.AfterMissionStart*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_AfterMissionStart" data-uid="TaleWorlds.MountAndBlade.Trebuchet.AfterMissionStart">
+  AfterMissionStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AfterMissionStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_CanRotate_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.CanRotate*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_CanRotate" data-uid="TaleWorlds.MountAndBlade.Trebuchet.CanRotate">
+  CanRotate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CanRotate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_CreateAIBehaviorObject_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.CreateAIBehaviorObject*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_CreateAIBehaviorObject" data-uid="TaleWorlds.MountAndBlade.Trebuchet.CreateAIBehaviorObject">
+  CreateAIBehaviorObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UsableMachineAIBase CreateAIBehaviorObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.UsableMachineAIBase.html">UsableMachineAIBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetActionTextForStandingPoint_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetActionTextForStandingPoint*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetActionTextForStandingPoint_TaleWorlds_MountAndBlade_UsableMissionObject_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetActionTextForStandingPoint(TaleWorlds.MountAndBlade.UsableMissionObject)">
+  GetActionTextForStandingPoint(UsableMissionObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TextObject GetActionTextForStandingPoint(UsableMissionObject usableGameObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>usableGameObject</code> <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html">UsableMissionObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetDescriptionText_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetDescriptionText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetDescriptionText_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetDescriptionText(TaleWorlds.Engine.GameEntity)">
+  GetDescriptionText(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetDescriptionText(GameEntity gameEntity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetDetachmentWeightAux_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetDetachmentWeightAux*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetDetachmentWeightAux_TaleWorlds_Core_BattleSideEnum_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetDetachmentWeightAux(TaleWorlds.Core.BattleSideEnum)">
+  GetDetachmentWeightAux(BattleSideEnum)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override float GetDetachmentWeightAux(BattleSideEnum side)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.Core.BattleSideEnum.html">BattleSideEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetSiegeEngineType_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetSiegeEngineType*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetSiegeEngineType" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetSiegeEngineType">
+  GetSiegeEngineType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SiegeEngineType GetSiegeEngineType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetSoundEventIndices_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetSoundEventIndices*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetSoundEventIndices" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetSoundEventIndices">
+  GetSoundEventIndices()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void GetSoundEventIndices()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetTargetFlags_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTargetFlags*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetTargetFlags" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTargetFlags">
+  GetTargetFlags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TargetFlags GetTargetFlags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.TargetFlags.html">TargetFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetTargetValue_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTargetValue*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetTargetValue_System_Collections_Generic_List_TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTargetValue(System.Collections.Generic.List{TaleWorlds.Library.Vec3})">
+  GetTargetValue(List&lt;Vec3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float GetTargetValue(List&lt;Vec3&gt; weaponPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weaponPos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_GetTickRequirement_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTickRequirement*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_GetTickRequirement" data-uid="TaleWorlds.MountAndBlade.Trebuchet.GetTickRequirement">
+  GetTickRequirement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ScriptComponentBehavior.TickRequirement GetTickRequirement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>.<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement.html">TickRequirement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_IsStandingPointNotUsedOnAccountOfBeingAmmoLoad_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.IsStandingPointNotUsedOnAccountOfBeingAmmoLoad*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_IsStandingPointNotUsedOnAccountOfBeingAmmoLoad_TaleWorlds_MountAndBlade_StandingPoint_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.IsStandingPointNotUsedOnAccountOfBeingAmmoLoad(TaleWorlds.MountAndBlade.StandingPoint)">
+  IsStandingPointNotUsedOnAccountOfBeingAmmoLoad(StandingPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsStandingPointNotUsedOnAccountOfBeingAmmoLoad(StandingPoint standingPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>standingPoint</code> <a class="xref" href="TaleWorlds.MountAndBlade.StandingPoint.html">StandingPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_OnInit_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnInit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_OnInit" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnInit">
+  OnInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_OnRangedSiegeWeaponStateChange_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnRangedSiegeWeaponStateChange*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_OnRangedSiegeWeaponStateChange" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnRangedSiegeWeaponStateChange">
+  OnRangedSiegeWeaponStateChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRangedSiegeWeaponStateChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_OnTick_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_OnTickParallel_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnTickParallel*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_OnTickParallel_System_Single_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.OnTickParallel(System.Single)">
+  OnTickParallel(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTickParallel(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_ProcessTargetValue_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ProcessTargetValue*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_ProcessTargetValue_System_Single_TaleWorlds_MountAndBlade_TargetFlags_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.ProcessTargetValue(System.Single,TaleWorlds.MountAndBlade.TargetFlags)">
+  ProcessTargetValue(float, TargetFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float ProcessTargetValue(float baseValue, TargetFlags flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="TaleWorlds.MountAndBlade.TargetFlags.html">TargetFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_RegisterAnimationParameters_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.RegisterAnimationParameters*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_RegisterAnimationParameters" data-uid="TaleWorlds.MountAndBlade.Trebuchet.RegisterAnimationParameters">
+  RegisterAnimationParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void RegisterAnimationParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_SetActivationLoadAmmoPoint_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SetActivationLoadAmmoPoint*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_SetActivationLoadAmmoPoint_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SetActivationLoadAmmoPoint(System.Boolean)">
+  SetActivationLoadAmmoPoint(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetActivationLoadAmmoPoint(bool activate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_SetSpawnedFromSpawner_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SetSpawnedFromSpawner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_SetSpawnedFromSpawner" data-uid="TaleWorlds.MountAndBlade.Trebuchet.SetSpawnedFromSpawner">
+  SetSpawnedFromSpawner()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpawnedFromSpawner()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Trebuchet_UpdateProjectilePosition_" data-uid="TaleWorlds.MountAndBlade.Trebuchet.UpdateProjectilePosition*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Trebuchet_UpdateProjectilePosition" data-uid="TaleWorlds.MountAndBlade.Trebuchet.UpdateProjectilePosition">
+  UpdateProjectilePosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateProjectilePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

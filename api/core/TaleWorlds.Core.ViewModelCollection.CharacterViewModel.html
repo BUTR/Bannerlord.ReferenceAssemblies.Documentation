@@ -1,0 +1,1339 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CharacterViewModel | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CharacterViewModel | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel">
+
+
+
+  <h1 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel" class="text-break">
+Class CharacterViewModel  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Core.html">Core</a>.<a class="xref" href="TaleWorlds.Core.ViewModelCollection.html">ViewModelCollection</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Core.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CharacterViewModel : ViewModel, IViewModel, INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><span class="xref">CharacterViewModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.HeroViewModel.html">HeroViewModel</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ViewModelCollection.CharacterWithActionViewModel.html">CharacterWithActionViewModel</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnFinalize">ViewModel.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_RefreshValues">ViewModel.RefreshValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__ctor_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.#ctor*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__ctor" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.#ctor">
+  CharacterViewModel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterViewModel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__ctor_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.#ctor*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__ctor_TaleWorlds_Core_ViewModelCollection_CharacterViewModel_StanceTypes_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.#ctor(TaleWorlds.Core.ViewModelCollection.CharacterViewModel.StanceTypes)">
+  CharacterViewModel(StanceTypes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterViewModel(CharacterViewModel.StanceTypes stance = StanceTypes.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stance</code> <a class="xref" href="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.html">CharacterViewModel</a>.<a class="xref" href="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.StanceTypes.html">StanceTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_OnCustomAnimationFinished" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.OnCustomAnimationFinished">
+  OnCustomAnimationFinished
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;CharacterViewModel&gt; OnCustomAnimationFinished</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.html">CharacterViewModel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__bannerCode" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel._bannerCode">
+  _bannerCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _bannerCode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel__equipment" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel._equipment">
+  _equipment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Equipment _equipment</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.Equipment.html">Equipment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ArmorColor1_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ArmorColor1*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ArmorColor1" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ArmorColor1">
+  ArmorColor1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public uint ArmorColor1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ArmorColor2_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ArmorColor2*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ArmorColor2" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ArmorColor2">
+  ArmorColor2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public uint ArmorColor2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_BannerCodeText_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.BannerCodeText*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_BannerCodeText" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.BannerCodeText">
+  BannerCodeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string BannerCodeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_BodyProperties_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.BodyProperties*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_BodyProperties" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.BodyProperties">
+  BodyProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string BodyProperties { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CharStringId_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CharStringId*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CharStringId" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CharStringId">
+  CharStringId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CharStringId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimation_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimation*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimation" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimation">
+  CustomAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CustomAnimation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimationProgressRatio_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimationProgressRatio*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimationProgressRatio" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimationProgressRatio">
+  CustomAnimationProgressRatio
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public float CustomAnimationProgressRatio { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimationWaitDuration_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimationWaitDuration*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_CustomAnimationWaitDuration" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.CustomAnimationWaitDuration">
+  CustomAnimationWaitDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public float CustomAnimationWaitDuration { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_EquipmentCode_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.EquipmentCode*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_EquipmentCode" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.EquipmentCode">
+  EquipmentCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string EquipmentCode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_HasMount_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.HasMount*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_HasMount" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.HasMount">
+  HasMount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool HasMount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IdleAction_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IdleAction*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IdleAction" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IdleAction">
+  IdleAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string IdleAction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IdleFaceAnim_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IdleFaceAnim*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IdleFaceAnim" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IdleFaceAnim">
+  IdleFaceAnim
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string IdleFaceAnim { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsFemale_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsFemale*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsFemale" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsFemale">
+  IsFemale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsFemale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsHidden_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsHidden*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsHidden" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsHidden">
+  IsHidden
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsHidden { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsPlayingCustomAnimations_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsPlayingCustomAnimations*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_IsPlayingCustomAnimations" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.IsPlayingCustomAnimations">
+  IsPlayingCustomAnimations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsPlayingCustomAnimations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_LeftHandWieldedEquipmentIndex_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.LeftHandWieldedEquipmentIndex*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_LeftHandWieldedEquipmentIndex" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.LeftHandWieldedEquipmentIndex">
+  LeftHandWieldedEquipmentIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int LeftHandWieldedEquipmentIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_MountCreationKey_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.MountCreationKey*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_MountCreationKey" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.MountCreationKey">
+  MountCreationKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MountCreationKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_Race_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.Race*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_Race" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.Race">
+  Race
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int Race { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_RightHandWieldedEquipmentIndex_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.RightHandWieldedEquipmentIndex*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_RightHandWieldedEquipmentIndex" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.RightHandWieldedEquipmentIndex">
+  RightHandWieldedEquipmentIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int RightHandWieldedEquipmentIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ShouldLoopCustomAnimation_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ShouldLoopCustomAnimation*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ShouldLoopCustomAnimation" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ShouldLoopCustomAnimation">
+  ShouldLoopCustomAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool ShouldLoopCustomAnimation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_StanceIndex_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.StanceIndex*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_StanceIndex" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.StanceIndex">
+  StanceIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int StanceIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteEquipWeaponAtIndex_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteEquipWeaponAtIndex*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteEquipWeaponAtIndex_TaleWorlds_Core_EquipmentIndex_System_Boolean_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteEquipWeaponAtIndex(TaleWorlds.Core.EquipmentIndex,System.Boolean)">
+  ExecuteEquipWeaponAtIndex(EquipmentIndex, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteEquipWeaponAtIndex(EquipmentIndex index, bool isLeftHand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="TaleWorlds.Core.EquipmentIndex.html">EquipmentIndex</a></dt>
+    <dd></dd>
+    <dt><code>isLeftHand</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteStartCustomAnimation_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteStartCustomAnimation*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteStartCustomAnimation_System_String_System_Boolean_System_Single_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteStartCustomAnimation(System.String,System.Boolean,System.Single)">
+  ExecuteStartCustomAnimation(string, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStartCustomAnimation(string animation, bool loop = false, float loopInterval = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>loop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>loopInterval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteStopCustomAnimation_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteStopCustomAnimation*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_ExecuteStopCustomAnimation" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.ExecuteStopCustomAnimation">
+  ExecuteStopCustomAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStopCustomAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_FillFrom_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.FillFrom*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_FillFrom_TaleWorlds_Core_BasicCharacterObject_System_Int32_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.FillFrom(TaleWorlds.Core.BasicCharacterObject,System.Int32)">
+  FillFrom(BasicCharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillFrom(BasicCharacterObject character, int seed = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_FillFrom_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.FillFrom*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_FillFrom_TaleWorlds_Core_ViewModelCollection_CharacterViewModel_System_Int32_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.FillFrom(TaleWorlds.Core.ViewModelCollection.CharacterViewModel,System.Int32)">
+  FillFrom(CharacterViewModel, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillFrom(CharacterViewModel characterViewModel, int seed = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>characterViewModel</code> <a class="xref" href="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.html">CharacterViewModel</a></dt>
+    <dd></dd>
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_SetEquipment_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.SetEquipment*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_SetEquipment_TaleWorlds_Core_Equipment_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.SetEquipment(TaleWorlds.Core.Equipment)">
+  SetEquipment(Equipment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetEquipment(Equipment equipment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipment</code> <a class="xref" href="TaleWorlds.Core.Equipment.html">Equipment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_SetEquipment_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.SetEquipment*"></a>
+
+  <h3 id="TaleWorlds_Core_ViewModelCollection_CharacterViewModel_SetEquipment_TaleWorlds_Core_EquipmentIndex_TaleWorlds_Core_EquipmentElement_" data-uid="TaleWorlds.Core.ViewModelCollection.CharacterViewModel.SetEquipment(TaleWorlds.Core.EquipmentIndex,TaleWorlds.Core.EquipmentElement)">
+  SetEquipment(EquipmentIndex, EquipmentElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEquipment(EquipmentIndex index, EquipmentElement item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="TaleWorlds.Core.EquipmentIndex.html">EquipmentIndex</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

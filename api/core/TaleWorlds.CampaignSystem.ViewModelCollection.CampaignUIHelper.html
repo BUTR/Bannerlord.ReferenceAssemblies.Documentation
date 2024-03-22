@@ -1,0 +1,4963 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CampaignUIHelper | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CampaignUIHelper | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper" class="text-break">
+Class CampaignUIHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.html">ViewModelCollection</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CampaignUIHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CampaignUIHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_MobilePartyPrecedenceComparerInstance" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.MobilePartyPrecedenceComparerInstance">
+  MobilePartyPrecedenceComparerInstance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly CampaignUIHelper.MobilePartyPrecedenceComparer MobilePartyPrecedenceComparerInstance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.html">CampaignUIHelper</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.MobilePartyPrecedenceComparer.html">MobilePartyPrecedenceComparer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_ConvertToHexColor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.ConvertToHexColor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_ConvertToHexColor_System_UInt32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.ConvertToHexColor(System.UInt32)">
+  ConvertToHexColor(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertToHexColor(uint color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_FloatToString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.FloatToString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_FloatToString_System_Single_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.FloatToString(System.Single)">
+  FloatToString(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FloatToString(float x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetAbbreviatedValueTextFromValue_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetAbbreviatedValueTextFromValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetAbbreviatedValueTextFromValue_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetAbbreviatedValueTextFromValue(System.Int32)">
+  GetAbbreviatedValueTextFromValue(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAbbreviatedValueTextFromValue(int valueAmount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetAddFocusHintString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetAddFocusHintString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetAddFocusHintString_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Int32_TaleWorlds_CampaignSystem_CharacterDevelopment_IHeroDeveloper_TaleWorlds_Core_SkillObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetAddFocusHintString(System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,TaleWorlds.CampaignSystem.CharacterDevelopment.IHeroDeveloper,TaleWorlds.Core.SkillObject)">
+  GetAddFocusHintString(bool, bool, int, int, int, IHeroDeveloper, SkillObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAddFocusHintString(bool playerHasEnoughPoints, bool isMaxedSkill, int currentFocusAmount, int currentAttributeAmount, int currentSkillValue, IHeroDeveloper developer, SkillObject skill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerHasEnoughPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isMaxedSkill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>currentFocusAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currentAttributeAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>currentSkillValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>developer</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.IHeroDeveloper.html">IHeroDeveloper</a></dt>
+    <dd></dd>
+    <dt><code>skill</code> <a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyCohesionTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyCohesionTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyCohesionTooltip_TaleWorlds_CampaignSystem_Army_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyCohesionTooltip(TaleWorlds.CampaignSystem.Army)">
+  GetArmyCohesionTooltip(Army)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetArmyCohesionTooltip(Army army)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>army</code> <a class="xref" href="TaleWorlds.CampaignSystem.Army.html">Army</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyDisbandDisableReasonString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyDisbandDisableReasonString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyDisbandDisableReasonString_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyDisbandDisableReasonString(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  GetArmyDisbandDisableReasonString(bool, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetArmyDisbandDisableReasonString(bool hasEnoughInfluence, bool isArmyInAnyEvent, bool isPlayerClanMercenary, bool isPlayerInThisArmy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hasEnoughInfluence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isArmyInAnyEvent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isPlayerClanMercenary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isPlayerInThisArmy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyFoodTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyFoodTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyFoodTooltip_TaleWorlds_CampaignSystem_Army_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyFoodTooltip(TaleWorlds.CampaignSystem.Army)">
+  GetArmyFoodTooltip(Army)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetArmyFoodTooltip(Army army)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>army</code> <a class="xref" href="TaleWorlds.CampaignSystem.Army.html">Army</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyManCountTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyManCountTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetArmyManCountTooltip_TaleWorlds_CampaignSystem_Army_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetArmyManCountTooltip(TaleWorlds.CampaignSystem.Army)">
+  GetArmyManCountTooltip(Army)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetArmyManCountTooltip(Army army)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>army</code> <a class="xref" href="TaleWorlds.CampaignSystem.Army.html">Army</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterCode_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterCode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterCode_TaleWorlds_CampaignSystem_CharacterObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterCode(TaleWorlds.CampaignSystem.CharacterObject,System.Boolean)">
+  GetCharacterCode(CharacterObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CharacterCode GetCharacterCode(CharacterObject character, bool useCivilian = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>useCivilian</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.CharacterCode.html">CharacterCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterTierData_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterTierData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterTierData_TaleWorlds_CampaignSystem_CharacterObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterTierData(TaleWorlds.CampaignSystem.CharacterObject,System.Boolean)">
+  GetCharacterTierData(CharacterObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringItemWithHintVM GetCharacterTierData(CharacterObject character, bool isBig = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>isBig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Generic.StringItemWithHintVM.html">StringItemWithHintVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterTypeData_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterTypeData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCharacterTypeData_TaleWorlds_CampaignSystem_CharacterObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCharacterTypeData(TaleWorlds.CampaignSystem.CharacterObject,System.Boolean)">
+  GetCharacterTypeData(CharacterObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringItemWithHintVM GetCharacterTypeData(CharacterObject character, bool isBig = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>isBig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Generic.StringItemWithHintVM.html">StringItemWithHintVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanExpelDisableReasonString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanExpelDisableReasonString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanExpelDisableReasonString_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanExpelDisableReasonString(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  GetClanExpelDisableReasonString(bool, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClanExpelDisableReasonString(bool hasEnoughInfluence, bool isTargetMainClan, bool isTargetRulingClan, bool isMainClanMercenary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hasEnoughInfluence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isTargetMainClan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isTargetRulingClan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isMainClanMercenary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanProsperityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanProsperityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanProsperityTooltip_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanProsperityTooltip(TaleWorlds.CampaignSystem.Clan)">
+  GetClanProsperityTooltip(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetClanProsperityTooltip(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanRenownTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanRenownTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanRenownTooltip_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanRenownTooltip(TaleWorlds.CampaignSystem.Clan)">
+  GetClanRenownTooltip(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetClanRenownTooltip(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanStrengthTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanStrengthTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanStrengthTooltip_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanStrengthTooltip(TaleWorlds.CampaignSystem.Clan)">
+  GetClanStrengthTooltip(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetClanStrengthTooltip(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanSupportDisableReasonString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanSupportDisableReasonString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanSupportDisableReasonString_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanSupportDisableReasonString(System.Boolean,System.Boolean,System.Boolean)">
+  GetClanSupportDisableReasonString(bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClanSupportDisableReasonString(bool hasEnoughInfluence, bool isTargetMainClan, bool isMainClanMercenary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hasEnoughInfluence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isTargetMainClan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isMainClanMercenary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanWealthStatusText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanWealthStatusText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetClanWealthStatusText_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetClanWealthStatusText(TaleWorlds.CampaignSystem.Clan)">
+  GetClanWealthStatusText(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetClanWealthStatusText(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCombinedPerkRoleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCombinedPerkRoleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCombinedPerkRoleText_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCombinedPerkRoleText(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject)">
+  GetCombinedPerkRoleText(PerkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetCombinedPerkRoleText(PerkObject perk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCommaSeparatedText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCommaSeparatedText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCommaSeparatedText_TaleWorlds_Localization_TextObject_System_Collections_Generic_IEnumerable_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCommaSeparatedText(TaleWorlds.Localization.TextObject,System.Collections.Generic.IEnumerable{TaleWorlds.Localization.TextObject})">
+  GetCommaSeparatedText(TextObject, IEnumerable&lt;TextObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetCommaSeparatedText(TextObject label, IEnumerable&lt;TextObject&gt; texts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingDisableReasonString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingDisableReasonString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingDisableReasonString_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingDisableReasonString(System.Boolean)">
+  GetCraftingDisableReasonString(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCraftingDisableReasonString(bool playerHasEnoughMaterials)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerHasEnoughMaterials</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingHeroTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingHeroTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingHeroTooltip_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingHeroTooltip(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder)">
+  GetCraftingHeroTooltip(Hero, CraftingOrder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetCraftingHeroTooltip(Hero hero, CraftingOrder order)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>order</code> <a class="xref" href="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.html">CraftingOrder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingOrderDisabledReasonTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingOrderDisabledReasonTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingOrderDisabledReasonTooltip_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingOrderDisabledReasonTooltip(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder)">
+  GetCraftingOrderDisabledReasonTooltip(Hero, CraftingOrder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetCraftingOrderDisabledReasonTooltip(Hero heroToCheck, CraftingOrder order)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>heroToCheck</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>order</code> <a class="xref" href="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.html">CraftingOrder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingOrderMissingPropertyWarningText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingOrderMissingPropertyWarningText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingOrderMissingPropertyWarningText_TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingOrderMissingPropertyWarningText(TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder,TaleWorlds.Core.ItemObject)">
+  GetCraftingOrderMissingPropertyWarningText(CraftingOrder, ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCraftingOrderMissingPropertyWarningText(CraftingOrder order, ItemObject craftedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>order</code> <a class="xref" href="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.html">CraftingOrder</a></dt>
+    <dd></dd>
+    <dt><code>craftedItem</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingTemplatePieceUnlockProgressHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingTemplatePieceUnlockProgressHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCraftingTemplatePieceUnlockProgressHint_System_Single_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCraftingTemplatePieceUnlockProgressHint(System.Single)">
+  GetCraftingTemplatePieceUnlockProgressHint(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetCraftingTemplatePieceUnlockProgressHint(float progress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCreateNewPartyReasonString_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCreateNewPartyReasonString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCreateNewPartyReasonString_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCreateNewPartyReasonString(System.Boolean,System.Boolean)">
+  GetCreateNewPartyReasonString(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetCreateNewPartyReasonString(bool haveEmptyPartySlots, bool haveAvailableHero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>haveEmptyPartySlots</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>haveAvailableHero</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCrimeTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCrimeTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetCrimeTooltip_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetCrimeTooltip(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetCrimeTooltip(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetCrimeTooltip(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetDaysUntilNoFood_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetDaysUntilNoFood*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetDaysUntilNoFood_System_Single_System_Single_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetDaysUntilNoFood(System.Single,System.Single)">
+  GetDaysUntilNoFood(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDaysUntilNoFood(float totalFood, float foodChange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>totalFood</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>foodChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetDenarTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetDenarTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetDenarTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetDenarTooltip">
+  GetDenarTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TooltipTriggerVM GetDenarTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Information.TooltipTriggerVM.html">TooltipTriggerVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetEncounterPartyMoraleTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetEncounterPartyMoraleTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetEncounterPartyMoraleTooltip_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Party_MobileParty__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetEncounterPartyMoraleTooltip(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Party.MobileParty})">
+  GetEncounterPartyMoraleTooltip(List&lt;MobileParty&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetEncounterPartyMoraleTooltip(List&lt;MobileParty&gt; parties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetFlagDetailsForWeapon_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetFlagDetailsForWeapon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetFlagDetailsForWeapon_TaleWorlds_Core_WeaponComponentData_TaleWorlds_Core_ItemObject_ItemUsageSetFlags_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetFlagDetailsForWeapon(TaleWorlds.Core.WeaponComponentData,TaleWorlds.Core.ItemObject.ItemUsageSetFlags,TaleWorlds.CampaignSystem.CharacterObject)">
+  GetFlagDetailsForWeapon(WeaponComponentData, ItemUsageSetFlags, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;(string, TextObject)&gt; GetFlagDetailsForWeapon(WeaponComponentData weapon, ItemObject.ItemUsageSetFlags itemUsageFlags, CharacterObject character = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+    <dt><code>itemUsageFlags</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a>.<a class="xref" href="TaleWorlds.Core.ItemObject.ItemUsageSetFlags.html">ItemUsageSetFlags</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetFormattedItemPropertyText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetFormattedItemPropertyText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetFormattedItemPropertyText_System_Single_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetFormattedItemPropertyText(System.Single,System.Boolean)">
+  GetFormattedItemPropertyText(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFormattedItemPropertyText(float propertyValue, bool typeRequiresInteger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>typeRequiresInteger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetGovernorPerksTooltipForHero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetGovernorPerksTooltipForHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetGovernorPerksTooltipForHero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetGovernorPerksTooltipForHero(TaleWorlds.CampaignSystem.Hero)">
+  GetGovernorPerksTooltipForHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetGovernorPerksTooltipForHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetGovernorSelectionConfirmationPopupTexts_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetGovernorSelectionConfirmationPopupTexts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetGovernorSelectionConfirmationPopupTexts_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetGovernorSelectionConfirmationPopupTexts(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetGovernorSelectionConfirmationPopupTexts(Hero, Hero, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (TextObject titleText, TextObject bodyText) GetGovernorSelectionConfirmationPopupTexts(Hero currentGovernor, Hero newGovernor, Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentGovernor</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>newGovernor</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.localization.textobject,taleworlds.localization.textobject-.titletext">titleText</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.localization.textobject,taleworlds.localization.textobject-.bodytext">bodyText</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroBehaviorText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroBehaviorText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroBehaviorText_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CampaignBehaviors_ITeleportationCampaignBehavior_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroBehaviorText(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior)">
+  GetHeroBehaviorText(Hero, ITeleportationCampaignBehavior)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHeroBehaviorText(Hero hero, ITeleportationCampaignBehavior teleportationBehavior = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>teleportationBehavior</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior.html">ITeleportationCampaignBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroClanRoleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroClanRoleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroClanRoleText_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroClanRoleText(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Clan)">
+  GetHeroClanRoleText(Hero, Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHeroClanRoleText(Hero hero, Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroCompareSortIndex_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroCompareSortIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroCompareSortIndex_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroCompareSortIndex(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  GetHeroCompareSortIndex(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetHeroCompareSortIndex(Hero x, Hero y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroGovernorEffectsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroGovernorEffectsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroGovernorEffectsTooltip_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroGovernorEffectsTooltip(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetHeroGovernorEffectsTooltip(Hero, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetHeroGovernorEffectsTooltip(Hero hero, Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroHealthTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroHealthTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroHealthTooltip_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroHealthTooltip(TaleWorlds.CampaignSystem.Hero)">
+  GetHeroHealthTooltip(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetHeroHealthTooltip(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroKingdomRank_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroKingdomRank*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroKingdomRank_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroKingdomRank(TaleWorlds.CampaignSystem.Hero)">
+  GetHeroKingdomRank(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHeroKingdomRank(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroOccupationName_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroOccupationName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroOccupationName_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroOccupationName(TaleWorlds.CampaignSystem.Hero)">
+  GetHeroOccupationName(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHeroOccupationName(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroRank_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroRank*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroRank_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroRank(TaleWorlds.CampaignSystem.Hero)">
+  GetHeroRank(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHeroRank(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroRelationToHeroText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroRelationToHeroText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroRelationToHeroText_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroRelationToHeroText(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,System.Boolean)">
+  GetHeroRelationToHeroText(Hero, Hero, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetHeroRelationToHeroText(Hero queriedHero, Hero baseHero, bool uppercaseFirst)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>queriedHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>baseHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>uppercaseFirst</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroTraits_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroTraits*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHeroTraits" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHeroTraits">
+  GetHeroTraits()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TraitObject&gt; GetHeroTraits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject.html">TraitObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHintTextFromReasons_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHintTextFromReasons*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHintTextFromReasons_System_Collections_Generic_List_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHintTextFromReasons(System.Collections.Generic.List{TaleWorlds.Localization.TextObject})">
+  GetHintTextFromReasons(List&lt;TextObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHintTextFromReasons(List&lt;TextObject&gt; reasons)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reasons</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHoursAndDaysTextFromHourValue_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHoursAndDaysTextFromHourValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetHoursAndDaysTextFromHourValue_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetHoursAndDaysTextFromHourValue(System.Int32)">
+  GetHoursAndDaysTextFromHourValue(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetHoursAndDaysTextFromHourValue(int hours)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hours</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetInfluenceTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetInfluenceTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetInfluenceTooltip_TaleWorlds_CampaignSystem_Clan_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetInfluenceTooltip(TaleWorlds.CampaignSystem.Clan)">
+  GetInfluenceTooltip(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetInfluenceTooltip(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetInventoryCharacterTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetInventoryCharacterTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetInventoryCharacterTooltip_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetInventoryCharacterTooltip(TaleWorlds.CampaignSystem.Hero)">
+  GetInventoryCharacterTooltip(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetInventoryCharacterTooltip(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetIssueType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetIssueType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetIssueType_TaleWorlds_CampaignSystem_Issues_IssueBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetIssueType(TaleWorlds.CampaignSystem.Issues.IssueBase)">
+  GetIssueType(IssueBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CampaignUIHelper.IssueQuestFlags GetIssueType(IssueBase issue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issue</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.html">CampaignUIHelper</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IssueQuestFlags.html">IssueQuestFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemFlagDetails_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemFlagDetails*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemFlagDetails_TaleWorlds_Core_ItemFlags_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemFlagDetails(TaleWorlds.Core.ItemFlags)">
+  GetItemFlagDetails(ItemFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Tuple&lt;string, TextObject&gt;&gt; GetItemFlagDetails(ItemFlags itemFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemFlags</code> <a class="xref" href="TaleWorlds.Core.ItemFlags.html">ItemFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemLockStringID_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemLockStringID*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemLockStringID_TaleWorlds_Core_EquipmentElement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemLockStringID(TaleWorlds.Core.EquipmentElement)">
+  GetItemLockStringID(EquipmentElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetItemLockStringID(EquipmentElement equipmentElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>equipmentElement</code> <a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemObjectTypeSortIndex_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemObjectTypeSortIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemObjectTypeSortIndex_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemObjectTypeSortIndex(TaleWorlds.Core.ItemObject)">
+  GetItemObjectTypeSortIndex(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetItemObjectTypeSortIndex(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemUsageSetFlagDetails_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemUsageSetFlagDetails*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetItemUsageSetFlagDetails_TaleWorlds_Core_ItemObject_ItemUsageSetFlags_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetItemUsageSetFlagDetails(TaleWorlds.Core.ItemObject.ItemUsageSetFlags,TaleWorlds.CampaignSystem.CharacterObject)">
+  GetItemUsageSetFlagDetails(ItemUsageSetFlags, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;(string, TextObject)&gt; GetItemUsageSetFlagDetails(ItemObject.ItemUsageSetFlags flags, CharacterObject character = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a>.<a class="xref" href="TaleWorlds.Core.ItemObject.ItemUsageSetFlags.html">ItemUsageSetFlags</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetLearningLimitTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetLearningLimitTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetLearningLimitTooltip_System_Int32_System_Int32_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetLearningLimitTooltip(System.Int32,System.Int32,TaleWorlds.Localization.TextObject)">
+  GetLearningLimitTooltip(int, int, TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetLearningLimitTooltip(int attributeValue, int focusValue, TextObject attributeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>focusValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attributeName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetLearningRateTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetLearningRateTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetLearningRateTooltip_System_Int32_System_Int32_System_Int32_System_Int32_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetLearningRateTooltip(System.Int32,System.Int32,System.Int32,System.Int32,TaleWorlds.Localization.TextObject)">
+  GetLearningRateTooltip(int, int, int, int, TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetLearningRateTooltip(int attributeValue, int focusValue, int skillValue, int characterLevel, TextObject attributeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>focusValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skillValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>characterLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attributeName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMainPartyHealthTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMainPartyHealthTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMainPartyHealthTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMainPartyHealthTooltip">
+  GetMainPartyHealthTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetMainPartyHealthTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMapScreenActionIsEnabledWithReason_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMapScreenActionIsEnabledWithReason*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMapScreenActionIsEnabledWithReason_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMapScreenActionIsEnabledWithReason(TaleWorlds.Localization.TextObject@)">
+  GetMapScreenActionIsEnabledWithReason(out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetMapScreenActionIsEnabledWithReason(out TextObject disabledReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disabledReason</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMobilePartyBehaviorText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMobilePartyBehaviorText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetMobilePartyBehaviorText_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetMobilePartyBehaviorText(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetMobilePartyBehaviorText(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMobilePartyBehaviorText(MobileParty party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetOrderCannotBeCompletedReasonTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetOrderCannotBeCompletedReasonTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetOrderCannotBeCompletedReasonTooltip_TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetOrderCannotBeCompletedReasonTooltip(TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder,TaleWorlds.Core.ItemObject)">
+  GetOrderCannotBeCompletedReasonTooltip(CraftingOrder, ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetOrderCannotBeCompletedReasonTooltip(CraftingOrder order, ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>order</code> <a class="xref" href="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.html">CraftingOrder</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetOrdersDisabledReasonTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetOrdersDisabledReasonTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetOrdersDisabledReasonTooltip_TaleWorlds_Library_MBBindingList_TaleWorlds_CampaignSystem_ViewModelCollection_WeaponCrafting_WeaponDesign_Order_CraftingOrderItemVM__TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetOrdersDisabledReasonTooltip(TaleWorlds.Library.MBBindingList{TaleWorlds.CampaignSystem.ViewModelCollection.WeaponCrafting.WeaponDesign.Order.CraftingOrderItemVM},TaleWorlds.CampaignSystem.Hero)">
+  GetOrdersDisabledReasonTooltip(MBBindingList&lt;CraftingOrderItemVM&gt;, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetOrdersDisabledReasonTooltip(MBBindingList&lt;CraftingOrderItemVM&gt; craftingOrders, Hero heroToCheck)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>craftingOrders</code> <a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.WeaponCrafting.WeaponDesign.Order.CraftingOrderItemVM.html">CraftingOrderItemVM</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>heroToCheck</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyDistanceByTimeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyDistanceByTimeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyDistanceByTimeText_System_Single_System_Single_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyDistanceByTimeText(System.Single,System.Single)">
+  GetPartyDistanceByTimeText(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPartyDistanceByTimeText(float distance, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyFoodTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyFoodTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyFoodTooltip_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyFoodTooltip(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetPartyFoodTooltip(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyFoodTooltip(MobileParty mainParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mainParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyHealthTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyHealthTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyHealthTooltip_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyHealthTooltip(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetPartyHealthTooltip(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyHealthTooltip(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyInventoryCapacityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyInventoryCapacityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyInventoryCapacityTooltip_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyInventoryCapacityTooltip(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetPartyInventoryCapacityTooltip(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyInventoryCapacityTooltip(MobileParty party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyMoraleTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyMoraleTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyMoraleTooltip_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyMoraleTooltip(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetPartyMoraleTooltip(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyMoraleTooltip(MobileParty mainParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mainParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyNameplateText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyNameplateText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyNameplateText_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyNameplateText(TaleWorlds.CampaignSystem.Party.MobileParty,System.Boolean)">
+  GetPartyNameplateText(MobileParty, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPartyNameplateText(MobileParty party, bool includeAttachedParties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>includeAttachedParties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyNameplateText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyNameplateText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyNameplateText_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyNameplateText(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetPartyNameplateText(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPartyNameplateText(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyPrisonerSizeLimitTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyPrisonerSizeLimitTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyPrisonerSizeLimitTooltip_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyPrisonerSizeLimitTooltip(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetPartyPrisonerSizeLimitTooltip(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyPrisonerSizeLimitTooltip(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartySpeedTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartySpeedTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartySpeedTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartySpeedTooltip">
+  GetPartySpeedTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartySpeedTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyTroopSizeLimitTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyTroopSizeLimitTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyTroopSizeLimitTooltip_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyTroopSizeLimitTooltip(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetPartyTroopSizeLimitTooltip(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyTroopSizeLimitTooltip(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyWageTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyWageTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyWageTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyWageTooltip">
+  GetPartyWageTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyWageTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyWageTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyWageTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPartyWageTooltip_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPartyWageTooltip(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetPartyWageTooltip(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPartyWageTooltip(MobileParty mobileParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPerkEffectText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPerkEffectText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPerkEffectText_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPerkEffectText(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,System.Boolean)">
+  GetPerkEffectText(PerkObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPerkEffectText(PerkObject perk, bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>isActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPerkRoleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPerkRoleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPerkRoleText_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPerkRoleText(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,System.Boolean)">
+  GetPerkRoleText(PerkObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetPerkRoleText(PerkObject perk, bool getSecondary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>getSecondary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPlayerHitpointsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPlayerHitpointsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetPlayerHitpointsTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetPlayerHitpointsTooltip">
+  GetPlayerHitpointsTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetPlayerHitpointsTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestExplanationOfHero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestExplanationOfHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestExplanationOfHero_TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IssueQuestFlags_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestExplanationOfHero(TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IssueQuestFlags)">
+  GetQuestExplanationOfHero(IssueQuestFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetQuestExplanationOfHero(CampaignUIHelper.IssueQuestFlags questType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questType</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.html">CampaignUIHelper</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IssueQuestFlags.html">IssueQuestFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestStateOfHero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestStateOfHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestStateOfHero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestStateOfHero(TaleWorlds.CampaignSystem.Hero)">
+  GetQuestStateOfHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;(CampaignUIHelper.IssueQuestFlags, TextObject, TextObject)&gt; GetQuestStateOfHero(Hero queriedHero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>queriedHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.html">CampaignUIHelper</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IssueQuestFlags.html">IssueQuestFlags</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestType_TaleWorlds_CampaignSystem_QuestBase_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestType(TaleWorlds.CampaignSystem.QuestBase,TaleWorlds.CampaignSystem.Hero)">
+  GetQuestType(QuestBase, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CampaignUIHelper.IssueQuestFlags GetQuestType(QuestBase quest, Hero queriedQuestGiver)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>quest</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+    <dt><code>queriedQuestGiver</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.html">CampaignUIHelper</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IssueQuestFlags.html">IssueQuestFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToHero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToHero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToHero(TaleWorlds.CampaignSystem.Hero)">
+  GetQuestsRelatedToHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;QuestBase&gt; GetQuestsRelatedToHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToParty_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToParty(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  GetQuestsRelatedToParty(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;QuestBase&gt; GetQuestsRelatedToParty(MobileParty party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToSettlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetQuestsRelatedToSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetQuestsRelatedToSettlement(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetQuestsRelatedToSettlement(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;QuestBase&gt; GetQuestsRelatedToSettlement(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementConsumptionTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementConsumptionTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementConsumptionTooltip_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementConsumptionTooltip(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetSettlementConsumptionTooltip(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSettlementConsumptionTooltip(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementProductionTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementProductionTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementProductionTooltip_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementProductionTooltip(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetSettlementProductionTooltip(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSettlementProductionTooltip(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementPropertyTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementPropertyTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementPropertyTooltip_TaleWorlds_CampaignSystem_Settlements_Settlement_System_String_System_Single_TaleWorlds_CampaignSystem_ExplainedNumber_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementPropertyTooltip(TaleWorlds.CampaignSystem.Settlements.Settlement,System.String,System.Single,TaleWorlds.CampaignSystem.ExplainedNumber)">
+  GetSettlementPropertyTooltip(Settlement, string, float, ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSettlementPropertyTooltip(Settlement settlement, string valueName, float value, ExplainedNumber explainedNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>valueName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>explainedNumber</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementPropertyTooltipWithResult_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementPropertyTooltipWithResult*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSettlementPropertyTooltipWithResult_TaleWorlds_CampaignSystem_Settlements_Settlement_System_String_System_Single_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSettlementPropertyTooltipWithResult(TaleWorlds.CampaignSystem.Settlements.Settlement,System.String,System.Single,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  GetSettlementPropertyTooltipWithResult(Settlement, string, float, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSettlementPropertyTooltipWithResult(Settlement settlement, string valueName, float value, ref ExplainedNumber explainedNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>valueName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>explainedNumber</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineName_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineName_TaleWorlds_Core_SiegeEngineType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineName(TaleWorlds.Core.SiegeEngineType)">
+  GetSiegeMachineName(SiegeEngineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSiegeMachineName(SiegeEngineType engineType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>engineType</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineNameWithDesctiption_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineNameWithDesctiption*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineNameWithDesctiption_TaleWorlds_Core_SiegeEngineType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineNameWithDesctiption(TaleWorlds.Core.SiegeEngineType)">
+  GetSiegeMachineNameWithDesctiption(SiegeEngineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSiegeMachineNameWithDesctiption(SiegeEngineType engineType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>engineType</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeMachineTooltip_TaleWorlds_Core_SiegeEngineType_System_Boolean_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeMachineTooltip(TaleWorlds.Core.SiegeEngineType,System.Boolean,System.Int32)">
+  GetSiegeMachineTooltip(SiegeEngineType, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSiegeMachineTooltip(SiegeEngineType engineType, bool showDescription = true, int hoursUntilCompletion = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>engineType</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+    <dt><code>showDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>hoursUntilCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeWallTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeWallTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSiegeWallTooltip_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSiegeWallTooltip(System.Int32,System.Int32)">
+  GetSiegeWallTooltip(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetSiegeWallTooltip(int wallLevel, int wallHitpoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wallLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>wallHitpoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSkillEffectText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSkillEffectText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetSkillEffectText_TaleWorlds_CampaignSystem_SkillEffect_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetSkillEffectText(TaleWorlds.CampaignSystem.SkillEffect,System.Int32)">
+  GetSkillEffectText(SkillEffect, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSkillEffectText(SkillEffect effect, int skillLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>effect</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a></dt>
+    <dd></dd>
+    <dt><code>skillLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportationDelayText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportationDelayText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportationDelayText_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportationDelayText(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetTeleportationDelayText(Hero, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetTeleportationDelayText(Hero hero, PartyBase target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportingGovernor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportingGovernor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportingGovernor_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_CampaignBehaviors_ITeleportationCampaignBehavior_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportingGovernor(TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior)">
+  GetTeleportingGovernor(Settlement, ITeleportationCampaignBehavior)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hero GetTeleportingGovernor(Settlement settlement, ITeleportationCampaignBehavior teleportationBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>teleportationBehavior</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior.html">ITeleportationCampaignBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportingLeaderHero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportingLeaderHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTeleportingLeaderHero_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_CampaignBehaviors_ITeleportationCampaignBehavior_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTeleportingLeaderHero(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior)">
+  GetTeleportingLeaderHero(MobileParty, ITeleportationCampaignBehavior)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hero GetTeleportingLeaderHero(MobileParty party, ITeleportationCampaignBehavior teleportationBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>teleportationBehavior</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignBehaviors.ITeleportationCampaignBehavior.html">ITeleportationCampaignBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTextForRole_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTextForRole*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTextForRole_TaleWorlds_CampaignSystem_SkillEffect_PerkRole_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTextForRole(TaleWorlds.CampaignSystem.SkillEffect.PerkRole)">
+  GetTextForRole(PerkRole)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTextForRole(SkillEffect.PerkRole role)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>role</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.PerkRole.html">PerkRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTimeOfDayAndResetCameraTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTimeOfDayAndResetCameraTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTimeOfDayAndResetCameraTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTimeOfDayAndResetCameraTooltip">
+  GetTimeOfDayAndResetCameraTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTimeOfDayAndResetCameraTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForAccumulatingProperty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForAccumulatingProperty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForAccumulatingProperty_System_String_System_Single_TaleWorlds_CampaignSystem_ExplainedNumber_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForAccumulatingProperty(System.String,System.Single,TaleWorlds.CampaignSystem.ExplainedNumber)">
+  GetTooltipForAccumulatingProperty(string, float, ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTooltipForAccumulatingProperty(string propertyName, float currentValue, ExplainedNumber explainedNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>explainedNumber</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForAccumulatingPropertyWithResult_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForAccumulatingPropertyWithResult*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForAccumulatingPropertyWithResult_System_String_System_Single_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForAccumulatingPropertyWithResult(System.String,System.Single,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  GetTooltipForAccumulatingPropertyWithResult(string, float, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTooltipForAccumulatingPropertyWithResult(string propertyName, float currentValue, ref ExplainedNumber explainedNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>explainedNumber</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForgProperty_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForgProperty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTooltipForgProperty_System_String_System_Single_TaleWorlds_CampaignSystem_ExplainedNumber_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTooltipForgProperty(System.String,System.Single,TaleWorlds.CampaignSystem.ExplainedNumber)">
+  GetTooltipForgProperty(string, float, ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTooltipForgProperty(string propertyName, float currentValue, ExplainedNumber explainedNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>explainedNumber</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTournamentChampionRewardsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTournamentChampionRewardsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTournamentChampionRewardsTooltip_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTournamentChampionRewardsTooltip(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTournamentChampionRewardsTooltip(Hero, Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTournamentChampionRewardsTooltip(Hero hero, Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownDailyProductionTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownDailyProductionTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownDailyProductionTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownDailyProductionTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownDailyProductionTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownDailyProductionTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownFoodTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownFoodTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownFoodTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownFoodTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownFoodTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownFoodTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownGarrisonTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownGarrisonTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownGarrisonTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownGarrisonTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownGarrisonTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownGarrisonTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownLoyaltyTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownLoyaltyTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownLoyaltyTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownLoyaltyTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownLoyaltyTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownLoyaltyTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownMilitiaTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownMilitiaTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownMilitiaTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownMilitiaTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownMilitiaTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownMilitiaTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownProsperityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownProsperityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownProsperityTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownProsperityTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownProsperityTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownProsperityTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownSecurityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownSecurityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownSecurityTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownSecurityTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownSecurityTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTownSecurityTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownWallsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownWallsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTownWallsTooltip_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTownWallsTooltip(TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetTownWallsTooltip(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTownWallsTooltip(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTraitNameText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTraitNameText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTraitNameText_TaleWorlds_CampaignSystem_CharacterDevelopment_TraitObject_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTraitNameText(TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject,TaleWorlds.CampaignSystem.Hero)">
+  GetTraitNameText(TraitObject, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTraitNameText(TraitObject traitObject, Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>traitObject</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject.html">TraitObject</a></dt>
+    <dd></dd>
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTraitTooltipText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTraitTooltipText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTraitTooltipText_TaleWorlds_CampaignSystem_CharacterDevelopment_TraitObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTraitTooltipText(TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject,System.Int32)">
+  GetTraitTooltipText(TraitObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTraitTooltipText(TraitObject traitObject, int traitValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>traitObject</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject.html">TraitObject</a></dt>
+    <dd></dd>
+    <dt><code>traitValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopConformityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopConformityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopConformityTooltip_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopConformityTooltip(TaleWorlds.CampaignSystem.Roster.TroopRosterElement)">
+  GetTroopConformityTooltip(TroopRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTroopConformityTooltip(TroopRosterElement troop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopLockStringID_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopLockStringID*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopLockStringID_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopLockStringID(TaleWorlds.CampaignSystem.Roster.TroopRosterElement)">
+  GetTroopLockStringID(TroopRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTroopLockStringID(TroopRosterElement rosterElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rosterElement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopXPTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopXPTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTroopXPTooltip_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTroopXPTooltip(TaleWorlds.CampaignSystem.Roster.TroopRosterElement)">
+  GetTroopXPTooltip(TroopRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTroopXPTooltip(TroopRosterElement troop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTruceOwnedSettlementsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTruceOwnedSettlementsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetTruceOwnedSettlementsTooltip_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Settlements_Settlement__TaleWorlds_Localization_TextObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetTruceOwnedSettlementsTooltip(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Settlements.Settlement},TaleWorlds.Localization.TextObject,System.Boolean)">
+  GetTruceOwnedSettlementsTooltip(List&lt;Settlement&gt;, TextObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetTruceOwnedSettlementsTooltip(List&lt;Settlement&gt; settlements, TextObject factionName, bool isTown)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>factionName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>isTown</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetUpgradeHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetUpgradeHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetUpgradeHint_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_Roster_TroopRosterElement_System_Int32_System_String_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetUpgradeHint(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.Roster.TroopRosterElement,System.Int32,System.String,System.String)">
+  GetUpgradeHint(int, int, int, int, bool, PerkObject, CharacterObject, TroopRosterElement, int, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUpgradeHint(int index, int numOfItems, int availableUpgrades, int upgradeCoinCost, bool hasRequiredPerk, PerkObject requiredPerk, CharacterObject character, TroopRosterElement troop, int partyGoldChangeAmount, string entireStackShortcutKeyText, string fiveStackShortcutKeyText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>numOfItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>availableUpgrades</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>upgradeCoinCost</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hasRequiredPerk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>requiredPerk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRosterElement.html">TroopRosterElement</a></dt>
+    <dd></dd>
+    <dt><code>partyGoldChangeAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>entireStackShortcutKeyText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fiveStackShortcutKeyText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetUsedHorsesTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetUsedHorsesTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetUsedHorsesTooltip_System_Collections_Generic_List_System_Tuple_TaleWorlds_Core_EquipmentElement_System_Int32___" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetUsedHorsesTooltip(System.Collections.Generic.List{System.Tuple{TaleWorlds.Core.EquipmentElement,System.Int32}})">
+  GetUsedHorsesTooltip(List&lt;Tuple&lt;EquipmentElement, int&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetUsedHorsesTooltip(List&lt;Tuple&lt;EquipmentElement, int&gt;&gt; usedUpgradeHorsesHistory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>usedUpgradeHorsesHistory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetValueChangeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetValueChangeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetValueChangeText_System_Single_System_Single_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetValueChangeText(System.Single,System.Single,System.String)">
+  GetValueChangeText(float, float, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetValueChangeText(float originalValue, float valueChange, string valueFormat = &quot;F0&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>originalValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>valueChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>valueFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetViewDistanceTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetViewDistanceTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetViewDistanceTooltip" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetViewDistanceTooltip">
+  GetViewDistanceTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetViewDistanceTooltip()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVillageMilitiaTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVillageMilitiaTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVillageMilitiaTooltip_TaleWorlds_CampaignSystem_Settlements_Village_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVillageMilitiaTooltip(TaleWorlds.CampaignSystem.Settlements.Village)">
+  GetVillageMilitiaTooltip(Village)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetVillageMilitiaTooltip(Village village)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>village</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Village.html">Village</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVillageProsperityTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVillageProsperityTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVillageProsperityTooltip_TaleWorlds_CampaignSystem_Settlements_Village_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVillageProsperityTooltip(TaleWorlds.CampaignSystem.Settlements.Village)">
+  GetVillageProsperityTooltip(Village)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetVillageProsperityTooltip(Village village)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>village</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Village.html">Village</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVisualPartyLeader_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVisualPartyLeader*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetVisualPartyLeader_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetVisualPartyLeader(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetVisualPartyLeader(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CharacterObject GetVisualPartyLeader(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarPrisonersTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarPrisonersTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarPrisonersTooltip_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Hero__TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarPrisonersTooltip(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Hero},TaleWorlds.Localization.TextObject)">
+  GetWarPrisonersTooltip(List&lt;Hero&gt;, TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetWarPrisonersTooltip(List&lt;Hero&gt; capturedPrisoners, TextObject factionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capturedPrisoners</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>factionName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarSuccessfulRaidsTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarSuccessfulRaidsTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarSuccessfulRaidsTooltip_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Settlements_Settlement__TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarSuccessfulRaidsTooltip(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Settlements.Settlement},TaleWorlds.Localization.TextObject)">
+  GetWarSuccessfulRaidsTooltip(List&lt;Settlement&gt;, TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetWarSuccessfulRaidsTooltip(List&lt;Settlement&gt; settlements, TextObject factionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>factionName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarSuccessfulSiegesTooltip_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarSuccessfulSiegesTooltip*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWarSuccessfulSiegesTooltip_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Settlements_Settlement__TaleWorlds_Localization_TextObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWarSuccessfulSiegesTooltip(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Settlements.Settlement},TaleWorlds.Localization.TextObject,System.Boolean)">
+  GetWarSuccessfulSiegesTooltip(List&lt;Settlement&gt;, TextObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TooltipProperty&gt; GetWarSuccessfulSiegesTooltip(List&lt;Settlement&gt; settlements, TextObject factionName, bool isTown)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>factionName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>isTown</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.TooltipProperty.html">TooltipProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWeaponFlagDetails_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWeaponFlagDetails*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_GetWeaponFlagDetails_TaleWorlds_Core_WeaponFlags_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.GetWeaponFlagDetails(TaleWorlds.Core.WeaponFlags,TaleWorlds.CampaignSystem.CharacterObject)">
+  GetWeaponFlagDetails(WeaponFlags, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;(string, TextObject)&gt; GetWeaponFlagDetails(WeaponFlags weaponFlags, CharacterObject character = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weaponFlags</code> <a class="xref" href="TaleWorlds.Core.WeaponFlags.html">WeaponFlags</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsHeroInformationHidden_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsHeroInformationHidden*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsHeroInformationHidden_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsHeroInformationHidden(TaleWorlds.CampaignSystem.Hero,TaleWorlds.Localization.TextObject@)">
+  IsHeroInformationHidden(Hero, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsHeroInformationHidden(Hero hero, out TextObject disableReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>disableReason</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsItemUsageApplicable_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsItemUsageApplicable*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsItemUsageApplicable_TaleWorlds_Core_WeaponComponentData_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsItemUsageApplicable(TaleWorlds.Core.WeaponComponentData)">
+  IsItemUsageApplicable(WeaponComponentData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsItemUsageApplicable(WeaponComponentData weapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsSettlementInformationHidden_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsSettlementInformationHidden*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsSettlementInformationHidden_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsSettlementInformationHidden(TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.Localization.TextObject@)">
+  IsSettlementInformationHidden(Settlement, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSettlementInformationHidden(Settlement settlement, out TextObject disableReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>disableReason</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsStringApplicableForHeroName_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsStringApplicableForHeroName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsStringApplicableForHeroName_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsStringApplicableForHeroName(System.String)">
+  IsStringApplicableForHeroName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tuple&lt;bool, string&gt; IsStringApplicableForHeroName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsStringApplicableForItemName_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsStringApplicableForItemName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_CampaignUIHelper_IsStringApplicableForItemName_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.CampaignUIHelper.IsStringApplicableForItemName(System.String)">
+  IsStringApplicableForItemName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tuple&lt;bool, TextObject&gt; IsStringApplicableForItemName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

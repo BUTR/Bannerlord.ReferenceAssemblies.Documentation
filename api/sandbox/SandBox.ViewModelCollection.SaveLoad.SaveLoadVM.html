@@ -1,0 +1,1095 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SaveLoadVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SaveLoadVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM">
+
+
+
+  <h1 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM" class="text-break">
+Class SaveLoadVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="SandBox.ViewModelCollection.SaveLoad.html">SaveLoad</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SaveLoadVM : ViewModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SaveLoadVM</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM__ctor_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.#ctor*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM__ctor_System_Boolean_System_Boolean_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.#ctor(System.Boolean,System.Boolean)">
+  SaveLoadVM(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveLoadVM(bool isSaving, bool isCampaignMapOnStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isSaving</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isCampaignMapOnStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CanCreateNewSave_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CanCreateNewSave*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CanCreateNewSave" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CanCreateNewSave">
+  CanCreateNewSave
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanCreateNewSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CancelInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CancelInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CancelInputKey" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CancelText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CancelText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CancelText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CancelText">
+  CancelText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CancelText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CreateNewSaveHint_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CreateNewSaveHint*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CreateNewSaveHint" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CreateNewSaveHint">
+  CreateNewSaveHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HintViewModel CreateNewSaveHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CreateNewSaveSlotText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CreateNewSaveSlotText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CreateNewSaveSlotText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CreateNewSaveSlotText">
+  CreateNewSaveSlotText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateNewSaveSlotText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CurrentSelectedSave_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CurrentSelectedSave*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_CurrentSelectedSave" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.CurrentSelectedSave">
+  CurrentSelectedSave
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SavedGameVM CurrentSelectedSave { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.SaveLoad.SavedGameVM.html">SavedGameVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DeleteInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DeleteInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DeleteInputKey" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DeleteInputKey">
+  DeleteInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM DeleteInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DoneInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DoneInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DoneInputKey" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DoneInputKey">
+  DoneInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM DoneInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DoneText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DoneText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DoneText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DoneText">
+  DoneText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DoneText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsActionEnabled_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsActionEnabled*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsActionEnabled" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsActionEnabled">
+  IsActionEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActionEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsAnyItemSelected_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsAnyItemSelected*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsAnyItemSelected" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsAnyItemSelected">
+  IsAnyItemSelected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnyItemSelected { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsBusyWithAnAction_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsBusyWithAnAction*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsBusyWithAnAction" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsBusyWithAnAction">
+  IsBusyWithAnAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBusyWithAnAction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsSaving_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsSaving*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsSaving" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsSaving">
+  IsSaving
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSaving { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsSearchAvailable_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsSearchAvailable*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsSearchAvailable" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsSearchAvailable">
+  IsSearchAvailable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSearchAvailable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsVisualDisabled_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsVisualDisabled*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_IsVisualDisabled" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.IsVisualDisabled">
+  IsVisualDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisualDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SaveGroups_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SaveGroups*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SaveGroups" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SaveGroups">
+  SaveGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBBindingList&lt;SavedGameGroupVM&gt; SaveGroups { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="SandBox.ViewModelCollection.SaveLoad.SavedGameGroupVM.html">SavedGameGroupVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SaveLoadText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SaveLoadText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SaveLoadText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SaveLoadText">
+  SaveLoadText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveLoadText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SearchPlaceholderText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SearchPlaceholderText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SearchPlaceholderText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SearchPlaceholderText">
+  SearchPlaceholderText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SearchPlaceholderText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SearchText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SearchText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SearchText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SearchText">
+  SearchText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SearchText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_TitleText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.TitleText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_TitleText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.TitleText">
+  TitleText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TitleText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_VisualDisabledText_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.VisualDisabledText*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_VisualDisabledText" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.VisualDisabledText">
+  VisualDisabledText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VisualDisabledText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DeleteSelectedSave_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DeleteSelectedSave*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_DeleteSelectedSave" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.DeleteSelectedSave">
+  DeleteSelectedSave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteSelectedSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteCreateNewSaveGame_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteCreateNewSaveGame*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteCreateNewSaveGame" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteCreateNewSaveGame">
+  ExecuteCreateNewSaveGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCreateNewSaveGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteDone_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteDone*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteDone" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteDone">
+  ExecuteDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteLoadSave_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteLoadSave*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_ExecuteLoadSave" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.ExecuteLoadSave">
+  ExecuteLoadSave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteLoadSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_OnFinalize_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.OnFinalize*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_OnFinalize" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_RefreshValues_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.RefreshValues*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_RefreshValues" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetCancelInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetCancelInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetDeleteInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetDeleteInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetDeleteInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetDeleteInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDeleteInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDeleteInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetDoneInputKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetDoneInputKey*"></a>
+
+  <h3 id="SandBox_ViewModelCollection_SaveLoad_SaveLoadVM_SetDoneInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="SandBox.ViewModelCollection.SaveLoad.SaveLoadVM.SetDoneInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDoneInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDoneInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

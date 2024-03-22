@@ -1,0 +1,4749 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Utilities | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Utilities | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.Utilities">
+
+
+
+  <h1 id="TaleWorlds_Engine_Utilities" data-uid="TaleWorlds.Engine.Utilities" class="text-break">
+Class Utilities  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Utilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Utilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_Engine_Utilities_renderingActive" data-uid="TaleWorlds.Engine.Utilities.renderingActive">
+  renderingActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool renderingActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Engine_Utilities_EditModeEnabled_" data-uid="TaleWorlds.Engine.Utilities.EditModeEnabled*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_EditModeEnabled" data-uid="TaleWorlds.Engine.Utilities.EditModeEnabled">
+  EditModeEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EditModeEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_EngineFrameNo_" data-uid="TaleWorlds.Engine.Utilities.EngineFrameNo*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_EngineFrameNo" data-uid="TaleWorlds.Engine.Utilities.EngineFrameNo">
+  EngineFrameNo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EngineFrameNo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_Utilities_AddCommandLineFunction_" data-uid="TaleWorlds.Engine.Utilities.AddCommandLineFunction*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_AddCommandLineFunction_System_String_" data-uid="TaleWorlds.Engine.Utilities.AddCommandLineFunction(System.String)">
+  AddCommandLineFunction(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddCommandLineFunction(string concatName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>concatName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_AddPerformanceReportToken_" data-uid="TaleWorlds.Engine.Utilities.AddPerformanceReportToken*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_AddPerformanceReportToken_System_String_System_String_System_Single_" data-uid="TaleWorlds.Engine.Utilities.AddPerformanceReportToken(System.String,System.String,System.Single)">
+  AddPerformanceReportToken(string, string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPerformanceReportToken(string performance_type, string name, float loading_time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>performance_type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>loading_time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_AddSceneObjectReport_" data-uid="TaleWorlds.Engine.Utilities.AddSceneObjectReport*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_AddSceneObjectReport_System_String_System_String_System_Single_" data-uid="TaleWorlds.Engine.Utilities.AddSceneObjectReport(System.String,System.String,System.Single)">
+  AddSceneObjectReport(string, string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddSceneObjectReport(string scene_name, string report_name, float report_value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene_name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>report_name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>report_value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CheckIfAssetsAndSourcesAreSame_" data-uid="TaleWorlds.Engine.Utilities.CheckIfAssetsAndSourcesAreSame*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CheckIfAssetsAndSourcesAreSame" data-uid="TaleWorlds.Engine.Utilities.CheckIfAssetsAndSourcesAreSame">
+  CheckIfAssetsAndSourcesAreSame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckIfAssetsAndSourcesAreSame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CheckIfTerrainShaderHeaderGenerationFinished_" data-uid="TaleWorlds.Engine.Utilities.CheckIfTerrainShaderHeaderGenerationFinished*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CheckIfTerrainShaderHeaderGenerationFinished" data-uid="TaleWorlds.Engine.Utilities.CheckIfTerrainShaderHeaderGenerationFinished">
+  CheckIfTerrainShaderHeaderGenerationFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckIfTerrainShaderHeaderGenerationFinished()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CheckResourceModifications_" data-uid="TaleWorlds.Engine.Utilities.CheckResourceModifications*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CheckResourceModifications" data-uid="TaleWorlds.Engine.Utilities.CheckResourceModifications">
+  CheckResourceModifications()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckResourceModifications()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CheckSceneForProblems_" data-uid="TaleWorlds.Engine.Utilities.CheckSceneForProblems*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CheckSceneForProblems_System_String_" data-uid="TaleWorlds.Engine.Utilities.CheckSceneForProblems(System.String)">
+  CheckSceneForProblems(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckSceneForProblems(string sceneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CheckShaderCompilation_" data-uid="TaleWorlds.Engine.Utilities.CheckShaderCompilation*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CheckShaderCompilation" data-uid="TaleWorlds.Engine.Utilities.CheckShaderCompilation">
+  CheckShaderCompilation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckShaderCompilation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ClearDecalAtlas_" data-uid="TaleWorlds.Engine.Utilities.ClearDecalAtlas*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ClearDecalAtlas_TaleWorlds_Engine_DecalAtlasGroup_" data-uid="TaleWorlds.Engine.Utilities.ClearDecalAtlas(TaleWorlds.Engine.DecalAtlasGroup)">
+  ClearDecalAtlas(DecalAtlasGroup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearDecalAtlas(DecalAtlasGroup atlasGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>atlasGroup</code> <a class="xref" href="TaleWorlds.Engine.DecalAtlasGroup.html">DecalAtlasGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ClearOldResourcesAndObjects_" data-uid="TaleWorlds.Engine.Utilities.ClearOldResourcesAndObjects*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ClearOldResourcesAndObjects" data-uid="TaleWorlds.Engine.Utilities.ClearOldResourcesAndObjects">
+  ClearOldResourcesAndObjects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearOldResourcesAndObjects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ClearShaderMemory_" data-uid="TaleWorlds.Engine.Utilities.ClearShaderMemory*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ClearShaderMemory" data-uid="TaleWorlds.Engine.Utilities.ClearShaderMemory">
+  ClearShaderMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearShaderMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CommandLineArgumentExists_" data-uid="TaleWorlds.Engine.Utilities.CommandLineArgumentExists*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CommandLineArgumentExists_System_String_" data-uid="TaleWorlds.Engine.Utilities.CommandLineArgumentExists(System.String)">
+  CommandLineArgumentExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CommandLineArgumentExists(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CompileAllShaders_" data-uid="TaleWorlds.Engine.Utilities.CompileAllShaders*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CompileAllShaders_System_String_" data-uid="TaleWorlds.Engine.Utilities.CompileAllShaders(System.String)">
+  CompileAllShaders(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CompileAllShaders(string targetPlatform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPlatform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CompileTerrainShadersDist_" data-uid="TaleWorlds.Engine.Utilities.CompileTerrainShadersDist*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CompileTerrainShadersDist_System_String_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.CompileTerrainShadersDist(System.String,System.String,System.String)">
+  CompileTerrainShadersDist(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CompileTerrainShadersDist(string targetPlatform, string targetConfig, string output_path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPlatform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>targetConfig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>output_path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ConstructMainThreadJob_" data-uid="TaleWorlds.Engine.Utilities.ConstructMainThreadJob*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ConstructMainThreadJob_System_Delegate_System_Object___" data-uid="TaleWorlds.Engine.Utilities.ConstructMainThreadJob(System.Delegate,System.Object[])">
+  ConstructMainThreadJob(Delegate, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConstructMainThreadJob(Delegate function, params object[] parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>function</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ConstructMainThreadJob_" data-uid="TaleWorlds.Engine.Utilities.ConstructMainThreadJob*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ConstructMainThreadJob_System_Threading_Semaphore_System_Delegate_System_Object___" data-uid="TaleWorlds.Engine.Utilities.ConstructMainThreadJob(System.Threading.Semaphore,System.Delegate,System.Object[])">
+  ConstructMainThreadJob(Semaphore, Delegate, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConstructMainThreadJob(Semaphore semaphore, Delegate function, params object[] parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semaphore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.semaphore">Semaphore</a></dt>
+    <dd></dd>
+    <dt><code>function</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_CreateSelectionInEditor_" data-uid="TaleWorlds.Engine.Utilities.CreateSelectionInEditor*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_CreateSelectionInEditor_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity__System_String_" data-uid="TaleWorlds.Engine.Utilities.CreateSelectionInEditor(System.Collections.Generic.List{TaleWorlds.Engine.GameEntity},System.String)">
+  CreateSelectionInEditor(List&lt;GameEntity&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateSelectionInEditor(List&lt;GameEntity&gt; gameEntities, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DebugSetGlobalLoadingWindowState_" data-uid="TaleWorlds.Engine.Utilities.DebugSetGlobalLoadingWindowState*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DebugSetGlobalLoadingWindowState_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.DebugSetGlobalLoadingWindowState(System.Boolean)">
+  DebugSetGlobalLoadingWindowState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DebugSetGlobalLoadingWindowState(bool newState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DeleteEntitiesInEditorScene_" data-uid="TaleWorlds.Engine.Utilities.DeleteEntitiesInEditorScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DeleteEntitiesInEditorScene_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity__" data-uid="TaleWorlds.Engine.Utilities.DeleteEntitiesInEditorScene(System.Collections.Generic.List{TaleWorlds.Engine.GameEntity})">
+  DeleteEntitiesInEditorScene(List&lt;GameEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteEntitiesInEditorScene(List&lt;GameEntity&gt; gameEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DetachWatchdog_" data-uid="TaleWorlds.Engine.Utilities.DetachWatchdog*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DetachWatchdog" data-uid="TaleWorlds.Engine.Utilities.DetachWatchdog">
+  DetachWatchdog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DetachWatchdog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DidAutomatedGIBakeFinished_" data-uid="TaleWorlds.Engine.Utilities.DidAutomatedGIBakeFinished*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DidAutomatedGIBakeFinished" data-uid="TaleWorlds.Engine.Utilities.DidAutomatedGIBakeFinished">
+  DidAutomatedGIBakeFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DidAutomatedGIBakeFinished()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DisableCoreGame_" data-uid="TaleWorlds.Engine.Utilities.DisableCoreGame*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DisableCoreGame" data-uid="TaleWorlds.Engine.Utilities.DisableCoreGame">
+  DisableCoreGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableCoreGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DisableGlobalEditDataCacher_" data-uid="TaleWorlds.Engine.Utilities.DisableGlobalEditDataCacher*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DisableGlobalEditDataCacher" data-uid="TaleWorlds.Engine.Utilities.DisableGlobalEditDataCacher">
+  DisableGlobalEditDataCacher()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableGlobalEditDataCacher()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DisableGlobalLoadingWindow_" data-uid="TaleWorlds.Engine.Utilities.DisableGlobalLoadingWindow*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DisableGlobalLoadingWindow" data-uid="TaleWorlds.Engine.Utilities.DisableGlobalLoadingWindow">
+  DisableGlobalLoadingWindow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableGlobalLoadingWindow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DoDelayedexit_" data-uid="TaleWorlds.Engine.Utilities.DoDelayedexit*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DoDelayedexit_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.DoDelayedexit(System.Int32)">
+  DoDelayedexit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDelayedexit(int returnCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>returnCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DoFullBakeAllLevelsAutomated_" data-uid="TaleWorlds.Engine.Utilities.DoFullBakeAllLevelsAutomated*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DoFullBakeAllLevelsAutomated_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.DoFullBakeAllLevelsAutomated(System.String,System.String)">
+  DoFullBakeAllLevelsAutomated(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoFullBakeAllLevelsAutomated(string module, string scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>module</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>scene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DoFullBakeSingleLevelAutomated_" data-uid="TaleWorlds.Engine.Utilities.DoFullBakeSingleLevelAutomated*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DoFullBakeSingleLevelAutomated_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.DoFullBakeSingleLevelAutomated(System.String,System.String)">
+  DoFullBakeSingleLevelAutomated(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoFullBakeSingleLevelAutomated(string module, string scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>module</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>scene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DoLightOnlyBakeAllLevelsAutomated_" data-uid="TaleWorlds.Engine.Utilities.DoLightOnlyBakeAllLevelsAutomated*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DoLightOnlyBakeAllLevelsAutomated_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.DoLightOnlyBakeAllLevelsAutomated(System.String,System.String)">
+  DoLightOnlyBakeAllLevelsAutomated(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoLightOnlyBakeAllLevelsAutomated(string module, string scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>module</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>scene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DoLightOnlyBakeSingleLevelAutomated_" data-uid="TaleWorlds.Engine.Utilities.DoLightOnlyBakeSingleLevelAutomated*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DoLightOnlyBakeSingleLevelAutomated_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.DoLightOnlyBakeSingleLevelAutomated(System.String,System.String)">
+  DoLightOnlyBakeSingleLevelAutomated(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoLightOnlyBakeSingleLevelAutomated(string module, string scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>module</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>scene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_DumpGPUMemoryStatistics_" data-uid="TaleWorlds.Engine.Utilities.DumpGPUMemoryStatistics*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_DumpGPUMemoryStatistics_System_String_" data-uid="TaleWorlds.Engine.Utilities.DumpGPUMemoryStatistics(System.String)">
+  DumpGPUMemoryStatistics(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DumpGPUMemoryStatistics(string filePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_EnableGlobalEditDataCacher_" data-uid="TaleWorlds.Engine.Utilities.EnableGlobalEditDataCacher*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_EnableGlobalEditDataCacher" data-uid="TaleWorlds.Engine.Utilities.EnableGlobalEditDataCacher">
+  EnableGlobalEditDataCacher()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnableGlobalEditDataCacher()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_EnableGlobalLoadingWindow_" data-uid="TaleWorlds.Engine.Utilities.EnableGlobalLoadingWindow*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_EnableGlobalLoadingWindow" data-uid="TaleWorlds.Engine.Utilities.EnableGlobalLoadingWindow">
+  EnableGlobalLoadingWindow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnableGlobalLoadingWindow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_EnableSingleGPUQueryPerFrame_" data-uid="TaleWorlds.Engine.Utilities.EnableSingleGPUQueryPerFrame*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_EnableSingleGPUQueryPerFrame" data-uid="TaleWorlds.Engine.Utilities.EnableSingleGPUQueryPerFrame">
+  EnableSingleGPUQueryPerFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnableSingleGPUQueryPerFrame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ExecuteCommandLineCommand_" data-uid="TaleWorlds.Engine.Utilities.ExecuteCommandLineCommand*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ExecuteCommandLineCommand_System_String_" data-uid="TaleWorlds.Engine.Utilities.ExecuteCommandLineCommand(System.String)">
+  ExecuteCommandLineCommand(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ExecuteCommandLineCommand(string command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ExitProcess_" data-uid="TaleWorlds.Engine.Utilities.ExitProcess*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ExitProcess_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.ExitProcess(System.Int32)">
+  ExitProcess(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExitProcess(int exitCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>exitCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ExportNavMeshFaceMarks_" data-uid="TaleWorlds.Engine.Utilities.ExportNavMeshFaceMarks*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ExportNavMeshFaceMarks_System_String_" data-uid="TaleWorlds.Engine.Utilities.ExportNavMeshFaceMarks(System.String)">
+  ExportNavMeshFaceMarks(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ExportNavMeshFaceMarks(string file_name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file_name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_FindMeshesWithoutLods_" data-uid="TaleWorlds.Engine.Utilities.FindMeshesWithoutLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_FindMeshesWithoutLods_System_String_" data-uid="TaleWorlds.Engine.Utilities.FindMeshesWithoutLods(System.String)">
+  FindMeshesWithoutLods(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FindMeshesWithoutLods(string module_name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>module_name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_FlushManagedObjectsMemory_" data-uid="TaleWorlds.Engine.Utilities.FlushManagedObjectsMemory*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_FlushManagedObjectsMemory" data-uid="TaleWorlds.Engine.Utilities.FlushManagedObjectsMemory">
+  FlushManagedObjectsMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FlushManagedObjectsMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GatherCoreGameReferences_" data-uid="TaleWorlds.Engine.Utilities.GatherCoreGameReferences*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GatherCoreGameReferences_System_String_" data-uid="TaleWorlds.Engine.Utilities.GatherCoreGameReferences(System.String)">
+  GatherCoreGameReferences(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GatherCoreGameReferences(string scene_names)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene_names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GenerateTerrainShaderHeaders_" data-uid="TaleWorlds.Engine.Utilities.GenerateTerrainShaderHeaders*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GenerateTerrainShaderHeaders_System_String_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.GenerateTerrainShaderHeaders(System.String,System.String,System.String)">
+  GenerateTerrainShaderHeaders(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateTerrainShaderHeaders(string targetPlatform, string targetConfig, string output_path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPlatform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>targetConfig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>output_path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetApplicationMemory_" data-uid="TaleWorlds.Engine.Utilities.GetApplicationMemory*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetApplicationMemory" data-uid="TaleWorlds.Engine.Utilities.GetApplicationMemory">
+  GetApplicationMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetApplicationMemory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetApplicationMemoryStatistics_" data-uid="TaleWorlds.Engine.Utilities.GetApplicationMemoryStatistics*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetApplicationMemoryStatistics" data-uid="TaleWorlds.Engine.Utilities.GetApplicationMemoryStatistics">
+  GetApplicationMemoryStatistics()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetApplicationMemoryStatistics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetApplicationName_" data-uid="TaleWorlds.Engine.Utilities.GetApplicationName*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetApplicationName" data-uid="TaleWorlds.Engine.Utilities.GetApplicationName">
+  GetApplicationName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetApplicationName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetApplicationVersionWithBuildNumber_" data-uid="TaleWorlds.Engine.Utilities.GetApplicationVersionWithBuildNumber*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetApplicationVersionWithBuildNumber" data-uid="TaleWorlds.Engine.Utilities.GetApplicationVersionWithBuildNumber">
+  GetApplicationVersionWithBuildNumber()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ApplicationVersion GetApplicationVersionWithBuildNumber()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.ApplicationVersion.html">ApplicationVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetAttachmentsPath_" data-uid="TaleWorlds.Engine.Utilities.GetAttachmentsPath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetAttachmentsPath" data-uid="TaleWorlds.Engine.Utilities.GetAttachmentsPath">
+  GetAttachmentsPath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAttachmentsPath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetBasePath_" data-uid="TaleWorlds.Engine.Utilities.GetBasePath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetBasePath" data-uid="TaleWorlds.Engine.Utilities.GetBasePath">
+  GetBasePath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBasePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetBenchmarkStatus_" data-uid="TaleWorlds.Engine.Utilities.GetBenchmarkStatus*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetBenchmarkStatus" data-uid="TaleWorlds.Engine.Utilities.GetBenchmarkStatus">
+  GetBenchmarkStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBenchmarkStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetBuildNumber_" data-uid="TaleWorlds.Engine.Utilities.GetBuildNumber*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetBuildNumber" data-uid="TaleWorlds.Engine.Utilities.GetBuildNumber">
+  GetBuildNumber()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBuildNumber()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetConsoleHostMachine_" data-uid="TaleWorlds.Engine.Utilities.GetConsoleHostMachine*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetConsoleHostMachine" data-uid="TaleWorlds.Engine.Utilities.GetConsoleHostMachine">
+  GetConsoleHostMachine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetConsoleHostMachine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetCoreGameState_" data-uid="TaleWorlds.Engine.Utilities.GetCoreGameState*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetCoreGameState" data-uid="TaleWorlds.Engine.Utilities.GetCoreGameState">
+  GetCoreGameState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCoreGameState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetCurrentCpuMemoryUsageMB_" data-uid="TaleWorlds.Engine.Utilities.GetCurrentCpuMemoryUsageMB*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetCurrentCpuMemoryUsageMB" data-uid="TaleWorlds.Engine.Utilities.GetCurrentCpuMemoryUsageMB">
+  GetCurrentCpuMemoryUsageMB()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetCurrentCpuMemoryUsageMB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetCurrentEstimatedGPUMemoryCostMB_" data-uid="TaleWorlds.Engine.Utilities.GetCurrentEstimatedGPUMemoryCostMB*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetCurrentEstimatedGPUMemoryCostMB" data-uid="TaleWorlds.Engine.Utilities.GetCurrentEstimatedGPUMemoryCostMB">
+  GetCurrentEstimatedGPUMemoryCostMB()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCurrentEstimatedGPUMemoryCostMB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetCurrentProcessID_" data-uid="TaleWorlds.Engine.Utilities.GetCurrentProcessID*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetCurrentProcessID" data-uid="TaleWorlds.Engine.Utilities.GetCurrentProcessID">
+  GetCurrentProcessID()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetCurrentProcessID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetCurrentThreadId_" data-uid="TaleWorlds.Engine.Utilities.GetCurrentThreadId*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetCurrentThreadId" data-uid="TaleWorlds.Engine.Utilities.GetCurrentThreadId">
+  GetCurrentThreadId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetCurrentThreadId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetDeltaTime_" data-uid="TaleWorlds.Engine.Utilities.GetDeltaTime*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetDeltaTime_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.GetDeltaTime(System.Int32)">
+  GetDeltaTime(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDeltaTime(int timerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetDetailedGPUMemoryData_" data-uid="TaleWorlds.Engine.Utilities.GetDetailedGPUMemoryData*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetDetailedGPUMemoryData_System_Int32__System_Int32__System_Int32__" data-uid="TaleWorlds.Engine.Utilities.GetDetailedGPUMemoryData(System.Int32@,System.Int32@,System.Int32@)">
+  GetDetailedGPUMemoryData(ref int, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetDetailedGPUMemoryData(ref int totalMemoryAllocated, ref int totalMemoryUsed, ref int emptyChunkTotalSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>totalMemoryAllocated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>totalMemoryUsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>emptyChunkTotalSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetDetailedXBOXMemoryInfo_" data-uid="TaleWorlds.Engine.Utilities.GetDetailedXBOXMemoryInfo*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetDetailedXBOXMemoryInfo" data-uid="TaleWorlds.Engine.Utilities.GetDetailedXBOXMemoryInfo">
+  GetDetailedXBOXMemoryInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDetailedXBOXMemoryInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetEntitiesOfSelectionSet_" data-uid="TaleWorlds.Engine.Utilities.GetEntitiesOfSelectionSet*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetEntitiesOfSelectionSet_System_String_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity___" data-uid="TaleWorlds.Engine.Utilities.GetEntitiesOfSelectionSet(System.String,System.Collections.Generic.List{TaleWorlds.Engine.GameEntity}@)">
+  GetEntitiesOfSelectionSet(string, ref List&lt;GameEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetEntitiesOfSelectionSet(string selectionSetName, ref List&lt;GameEntity&gt; gameEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectionSetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>gameEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetExecutableWorkingDirectory_" data-uid="TaleWorlds.Engine.Utilities.GetExecutableWorkingDirectory*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetExecutableWorkingDirectory" data-uid="TaleWorlds.Engine.Utilities.GetExecutableWorkingDirectory">
+  GetExecutableWorkingDirectory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExecutableWorkingDirectory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFps_" data-uid="TaleWorlds.Engine.Utilities.GetFps*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFps" data-uid="TaleWorlds.Engine.Utilities.GetFps">
+  GetFps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetFps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFrameLimiterWithSleep_" data-uid="TaleWorlds.Engine.Utilities.GetFrameLimiterWithSleep*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFrameLimiterWithSleep" data-uid="TaleWorlds.Engine.Utilities.GetFrameLimiterWithSleep">
+  GetFrameLimiterWithSleep()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetFrameLimiterWithSleep()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFullCommandLineString_" data-uid="TaleWorlds.Engine.Utilities.GetFullCommandLineString*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFullCommandLineString" data-uid="TaleWorlds.Engine.Utilities.GetFullCommandLineString">
+  GetFullCommandLineString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFullCommandLineString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFullFilePathOfScene_" data-uid="TaleWorlds.Engine.Utilities.GetFullFilePathOfScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFullFilePathOfScene_System_String_" data-uid="TaleWorlds.Engine.Utilities.GetFullFilePathOfScene(System.String)">
+  GetFullFilePathOfScene(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFullFilePathOfScene(string sceneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFullModulePath_" data-uid="TaleWorlds.Engine.Utilities.GetFullModulePath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFullModulePath_System_String_" data-uid="TaleWorlds.Engine.Utilities.GetFullModulePath(System.String)">
+  GetFullModulePath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFullModulePath(string moduleName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moduleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetFullModulePaths_" data-uid="TaleWorlds.Engine.Utilities.GetFullModulePaths*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetFullModulePaths" data-uid="TaleWorlds.Engine.Utilities.GetFullModulePaths">
+  GetFullModulePaths()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetFullModulePaths()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetGPUMemoryMB_" data-uid="TaleWorlds.Engine.Utilities.GetGPUMemoryMB*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetGPUMemoryMB" data-uid="TaleWorlds.Engine.Utilities.GetGPUMemoryMB">
+  GetGPUMemoryMB()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetGPUMemoryMB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetGPUMemoryStats_" data-uid="TaleWorlds.Engine.Utilities.GetGPUMemoryStats*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetGPUMemoryStats_System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="TaleWorlds.Engine.Utilities.GetGPUMemoryStats(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+  GetGPUMemoryStats(ref float, ref float, ref float, ref float, ref float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetGPUMemoryStats(ref float totalMemory, ref float renderTargetMemory, ref float depthTargetMemory, ref float srvMemory, ref float bufferMemory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>totalMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>renderTargetMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>depthTargetMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>srvMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>bufferMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetGpuMemoryOfAllocationGroup_" data-uid="TaleWorlds.Engine.Utilities.GetGpuMemoryOfAllocationGroup*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetGpuMemoryOfAllocationGroup_System_String_" data-uid="TaleWorlds.Engine.Utilities.GetGpuMemoryOfAllocationGroup(System.String)">
+  GetGpuMemoryOfAllocationGroup(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetGpuMemoryOfAllocationGroup(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetLocalOutputPath_" data-uid="TaleWorlds.Engine.Utilities.GetLocalOutputPath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetLocalOutputPath" data-uid="TaleWorlds.Engine.Utilities.GetLocalOutputPath">
+  GetLocalOutputPath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocalOutputPath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetMainFps_" data-uid="TaleWorlds.Engine.Utilities.GetMainFps*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetMainFps" data-uid="TaleWorlds.Engine.Utilities.GetMainFps">
+  GetMainFps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetMainFps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetMainThreadId_" data-uid="TaleWorlds.Engine.Utilities.GetMainThreadId*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetMainThreadId" data-uid="TaleWorlds.Engine.Utilities.GetMainThreadId">
+  GetMainThreadId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetMainThreadId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetMemoryUsageOfCategory_" data-uid="TaleWorlds.Engine.Utilities.GetMemoryUsageOfCategory*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetMemoryUsageOfCategory_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.GetMemoryUsageOfCategory(System.Int32)">
+  GetMemoryUsageOfCategory(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMemoryUsageOfCategory(int category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetModulesNames_" data-uid="TaleWorlds.Engine.Utilities.GetModulesNames*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetModulesNames" data-uid="TaleWorlds.Engine.Utilities.GetModulesNames">
+  GetModulesNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetModulesNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetNativeMemoryStatistics_" data-uid="TaleWorlds.Engine.Utilities.GetNativeMemoryStatistics*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetNativeMemoryStatistics" data-uid="TaleWorlds.Engine.Utilities.GetNativeMemoryStatistics">
+  GetNativeMemoryStatistics()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetNativeMemoryStatistics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetNumberOfShaderCompilationsInProgress_" data-uid="TaleWorlds.Engine.Utilities.GetNumberOfShaderCompilationsInProgress*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetNumberOfShaderCompilationsInProgress" data-uid="TaleWorlds.Engine.Utilities.GetNumberOfShaderCompilationsInProgress">
+  GetNumberOfShaderCompilationsInProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetNumberOfShaderCompilationsInProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetPCInfo_" data-uid="TaleWorlds.Engine.Utilities.GetPCInfo*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetPCInfo" data-uid="TaleWorlds.Engine.Utilities.GetPCInfo">
+  GetPCInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPCInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetRendererFps_" data-uid="TaleWorlds.Engine.Utilities.GetRendererFps*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetRendererFps" data-uid="TaleWorlds.Engine.Utilities.GetRendererFps">
+  GetRendererFps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetRendererFps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetReturnCode_" data-uid="TaleWorlds.Engine.Utilities.GetReturnCode*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetReturnCode" data-uid="TaleWorlds.Engine.Utilities.GetReturnCode">
+  GetReturnCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetReturnCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetSelectedEntities_" data-uid="TaleWorlds.Engine.Utilities.GetSelectedEntities*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetSelectedEntities_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity___" data-uid="TaleWorlds.Engine.Utilities.GetSelectedEntities(System.Collections.Generic.List{TaleWorlds.Engine.GameEntity}@)">
+  GetSelectedEntities(ref List&lt;GameEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetSelectedEntities(ref List&lt;GameEntity&gt; gameEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetSingleModuleScenesOfModule_" data-uid="TaleWorlds.Engine.Utilities.GetSingleModuleScenesOfModule*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetSingleModuleScenesOfModule_System_String_" data-uid="TaleWorlds.Engine.Utilities.GetSingleModuleScenesOfModule(System.String)">
+  GetSingleModuleScenesOfModule(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSingleModuleScenesOfModule(string moduleName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moduleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetSteamAppId_" data-uid="TaleWorlds.Engine.Utilities.GetSteamAppId*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetSteamAppId" data-uid="TaleWorlds.Engine.Utilities.GetSteamAppId">
+  GetSteamAppId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetSteamAppId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetSystemLanguage_" data-uid="TaleWorlds.Engine.Utilities.GetSystemLanguage*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetSystemLanguage" data-uid="TaleWorlds.Engine.Utilities.GetSystemLanguage">
+  GetSystemLanguage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemLanguage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetVertexBufferChunkSystemMemoryUsage_" data-uid="TaleWorlds.Engine.Utilities.GetVertexBufferChunkSystemMemoryUsage*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetVertexBufferChunkSystemMemoryUsage" data-uid="TaleWorlds.Engine.Utilities.GetVertexBufferChunkSystemMemoryUsage">
+  GetVertexBufferChunkSystemMemoryUsage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetVertexBufferChunkSystemMemoryUsage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetVisualTestsTestFilesPath_" data-uid="TaleWorlds.Engine.Utilities.GetVisualTestsTestFilesPath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetVisualTestsTestFilesPath" data-uid="TaleWorlds.Engine.Utilities.GetVisualTestsTestFilesPath">
+  GetVisualTestsTestFilesPath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetVisualTestsTestFilesPath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_GetVisualTestsValidatePath_" data-uid="TaleWorlds.Engine.Utilities.GetVisualTestsValidatePath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_GetVisualTestsValidatePath" data-uid="TaleWorlds.Engine.Utilities.GetVisualTestsValidatePath">
+  GetVisualTestsValidatePath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetVisualTestsValidatePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_IsBenchmarkQuited_" data-uid="TaleWorlds.Engine.Utilities.IsBenchmarkQuited*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_IsBenchmarkQuited" data-uid="TaleWorlds.Engine.Utilities.IsBenchmarkQuited">
+  IsBenchmarkQuited()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBenchmarkQuited()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_IsDetailedSoundLogOn_" data-uid="TaleWorlds.Engine.Utilities.IsDetailedSoundLogOn*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_IsDetailedSoundLogOn" data-uid="TaleWorlds.Engine.Utilities.IsDetailedSoundLogOn">
+  IsDetailedSoundLogOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IsDetailedSoundLogOn()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_IsOnlyCoreContentEnabled_" data-uid="TaleWorlds.Engine.Utilities.IsOnlyCoreContentEnabled*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_IsOnlyCoreContentEnabled" data-uid="TaleWorlds.Engine.Utilities.IsOnlyCoreContentEnabled">
+  IsOnlyCoreContentEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOnlyCoreContentEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_IsSceneReportFinished_" data-uid="TaleWorlds.Engine.Utilities.IsSceneReportFinished*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_IsSceneReportFinished" data-uid="TaleWorlds.Engine.Utilities.IsSceneReportFinished">
+  IsSceneReportFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSceneReportFinished()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_LoadBannerlordConfigFile_" data-uid="TaleWorlds.Engine.Utilities.LoadBannerlordConfigFile*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_LoadBannerlordConfigFile" data-uid="TaleWorlds.Engine.Utilities.LoadBannerlordConfigFile">
+  LoadBannerlordConfigFile()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LoadBannerlordConfigFile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_LoadSkyBoxes_" data-uid="TaleWorlds.Engine.Utilities.LoadSkyBoxes*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_LoadSkyBoxes" data-uid="TaleWorlds.Engine.Utilities.LoadSkyBoxes">
+  LoadSkyBoxes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadSkyBoxes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_LoadVirtualTextureTileset_" data-uid="TaleWorlds.Engine.Utilities.LoadVirtualTextureTileset*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_LoadVirtualTextureTileset_System_String_" data-uid="TaleWorlds.Engine.Utilities.LoadVirtualTextureTileset(System.String)">
+  LoadVirtualTextureTileset(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadVirtualTextureTileset(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_OnLoadingWindowDisabled_" data-uid="TaleWorlds.Engine.Utilities.OnLoadingWindowDisabled*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_OnLoadingWindowDisabled" data-uid="TaleWorlds.Engine.Utilities.OnLoadingWindowDisabled">
+  OnLoadingWindowDisabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLoadingWindowDisabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_OnLoadingWindowEnabled_" data-uid="TaleWorlds.Engine.Utilities.OnLoadingWindowEnabled*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_OnLoadingWindowEnabled" data-uid="TaleWorlds.Engine.Utilities.OnLoadingWindowEnabled">
+  OnLoadingWindowEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLoadingWindowEnabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_OpenOnscreenKeyboard_" data-uid="TaleWorlds.Engine.Utilities.OpenOnscreenKeyboard*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_OpenOnscreenKeyboard_System_String_System_String_System_Int32_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.OpenOnscreenKeyboard(System.String,System.String,System.Int32,System.Int32)">
+  OpenOnscreenKeyboard(string, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenOnscreenKeyboard(string initialText, string descriptionText, int maxLength, int keyboardTypeEnum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>descriptionText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>maxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>keyboardTypeEnum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_OutputBenchmarkValuesToPerformanceReporter_" data-uid="TaleWorlds.Engine.Utilities.OutputBenchmarkValuesToPerformanceReporter*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_OutputBenchmarkValuesToPerformanceReporter" data-uid="TaleWorlds.Engine.Utilities.OutputBenchmarkValuesToPerformanceReporter">
+  OutputBenchmarkValuesToPerformanceReporter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OutputBenchmarkValuesToPerformanceReporter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_OutputPerformanceReports_" data-uid="TaleWorlds.Engine.Utilities.OutputPerformanceReports*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_OutputPerformanceReports" data-uid="TaleWorlds.Engine.Utilities.OutputPerformanceReports">
+  OutputPerformanceReports()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OutputPerformanceReports()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_PairSceneNameToModuleName_" data-uid="TaleWorlds.Engine.Utilities.PairSceneNameToModuleName*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_PairSceneNameToModuleName_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.PairSceneNameToModuleName(System.String,System.String)">
+  PairSceneNameToModuleName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PairSceneNameToModuleName(string sceneName, string moduleName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>moduleName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ParallelFor_" data-uid="TaleWorlds.Engine.Utilities.ParallelFor*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ParallelFor_System_Int32_System_Int32_System_Int64_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.ParallelFor(System.Int32,System.Int32,System.Int64,System.Int32)">
+  ParallelFor(int, int, long, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ParallelFor(int startIndex, int endIndex, long curKey, int grainSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>curKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>grainSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ParallelForWithDt_" data-uid="TaleWorlds.Engine.Utilities.ParallelForWithDt*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ParallelForWithDt_System_Int32_System_Int32_System_Int64_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.ParallelForWithDt(System.Int32,System.Int32,System.Int64,System.Int32)">
+  ParallelForWithDt(int, int, long, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ParallelForWithDt(int startIndex, int endIndex, long curKey, int grainSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>curKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>grainSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ProcessWindowTitle_" data-uid="TaleWorlds.Engine.Utilities.ProcessWindowTitle*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ProcessWindowTitle_System_String_" data-uid="TaleWorlds.Engine.Utilities.ProcessWindowTitle(System.String)">
+  ProcessWindowTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ProcessWindowTitle(string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_QuitGame_" data-uid="TaleWorlds.Engine.Utilities.QuitGame*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_QuitGame" data-uid="TaleWorlds.Engine.Utilities.QuitGame">
+  QuitGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuitGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_RegisterGPUAllocationGroup_" data-uid="TaleWorlds.Engine.Utilities.RegisterGPUAllocationGroup*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_RegisterGPUAllocationGroup_System_String_" data-uid="TaleWorlds.Engine.Utilities.RegisterGPUAllocationGroup(System.String)">
+  RegisterGPUAllocationGroup(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RegisterGPUAllocationGroup(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_RegisterMeshForGPUMorph_" data-uid="TaleWorlds.Engine.Utilities.RegisterMeshForGPUMorph*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_RegisterMeshForGPUMorph_System_String_" data-uid="TaleWorlds.Engine.Utilities.RegisterMeshForGPUMorph(System.String)">
+  RegisterMeshForGPUMorph(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterMeshForGPUMorph(string metaMeshName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_RunJobs_" data-uid="TaleWorlds.Engine.Utilities.RunJobs*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_RunJobs" data-uid="TaleWorlds.Engine.Utilities.RunJobs">
+  RunJobs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RunJobs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SaveConfigFile_" data-uid="TaleWorlds.Engine.Utilities.SaveConfigFile*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SaveConfigFile_System_String_" data-uid="TaleWorlds.Engine.Utilities.SaveConfigFile(System.String)">
+  SaveConfigFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SaveResult SaveConfigFile(string configProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.SaveResult.html">SaveResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SaveDataAsTexture_" data-uid="TaleWorlds.Engine.Utilities.SaveDataAsTexture*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SaveDataAsTexture_System_String_System_Int32_System_Int32_System_Single___" data-uid="TaleWorlds.Engine.Utilities.SaveDataAsTexture(System.String,System.Int32,System.Int32,System.Single[])">
+  SaveDataAsTexture(string, int, int, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SaveDataAsTexture(string path, int width, int height, float[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SelectEntities_" data-uid="TaleWorlds.Engine.Utilities.SelectEntities*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SelectEntities_System_Collections_Generic_List_TaleWorlds_Engine_GameEntity__" data-uid="TaleWorlds.Engine.Utilities.SelectEntities(System.Collections.Generic.List{TaleWorlds.Engine.GameEntity})">
+  SelectEntities(List&lt;GameEntity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SelectEntities(List&lt;GameEntity&gt; gameEntities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetAllocationAlwaysValidScene_" data-uid="TaleWorlds.Engine.Utilities.SetAllocationAlwaysValidScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetAllocationAlwaysValidScene_TaleWorlds_Engine_Scene_" data-uid="TaleWorlds.Engine.Utilities.SetAllocationAlwaysValidScene(TaleWorlds.Engine.Scene)">
+  SetAllocationAlwaysValidScene(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAllocationAlwaysValidScene(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="TaleWorlds.Engine.Scene.html">Scene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetAssertionAtShaderCompile_" data-uid="TaleWorlds.Engine.Utilities.SetAssertionAtShaderCompile*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetAssertionAtShaderCompile_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetAssertionAtShaderCompile(System.Boolean)">
+  SetAssertionAtShaderCompile(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAssertionAtShaderCompile(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetAssertionsAndWarningsSetExitCode_" data-uid="TaleWorlds.Engine.Utilities.SetAssertionsAndWarningsSetExitCode*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetAssertionsAndWarningsSetExitCode_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetAssertionsAndWarningsSetExitCode(System.Boolean)">
+  SetAssertionsAndWarningsSetExitCode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAssertionsAndWarningsSetExitCode(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetBenchmarkStatus_" data-uid="TaleWorlds.Engine.Utilities.SetBenchmarkStatus*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetBenchmarkStatus_System_Int32_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetBenchmarkStatus(System.Int32,System.String)">
+  SetBenchmarkStatus(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBenchmarkStatus(int status, string def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>status</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetCoreGameState_" data-uid="TaleWorlds.Engine.Utilities.SetCoreGameState*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetCoreGameState_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.SetCoreGameState(System.Int32)">
+  SetCoreGameState(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCoreGameState(int state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetCrashOnAsserts_" data-uid="TaleWorlds.Engine.Utilities.SetCrashOnAsserts*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetCrashOnAsserts_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetCrashOnAsserts(System.Boolean)">
+  SetCrashOnAsserts(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCrashOnAsserts(bool val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetCrashOnWarnings_" data-uid="TaleWorlds.Engine.Utilities.SetCrashOnWarnings*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetCrashOnWarnings_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetCrashOnWarnings(System.Boolean)">
+  SetCrashOnWarnings(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCrashOnWarnings(bool val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetCrashReportCustomStack_" data-uid="TaleWorlds.Engine.Utilities.SetCrashReportCustomStack*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetCrashReportCustomStack_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetCrashReportCustomStack(System.String)">
+  SetCrashReportCustomStack(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCrashReportCustomStack(string customStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>customStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetCrashReportCustomString_" data-uid="TaleWorlds.Engine.Utilities.SetCrashReportCustomString*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetCrashReportCustomString_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetCrashReportCustomString(System.String)">
+  SetCrashReportCustomString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCrashReportCustomString(string customString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>customString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetDisableDumpGeneration_" data-uid="TaleWorlds.Engine.Utilities.SetDisableDumpGeneration*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetDisableDumpGeneration_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetDisableDumpGeneration(System.Boolean)">
+  SetDisableDumpGeneration(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDisableDumpGeneration(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetDumpFolderPath_" data-uid="TaleWorlds.Engine.Utilities.SetDumpFolderPath*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetDumpFolderPath_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetDumpFolderPath(System.String)">
+  SetDumpFolderPath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDumpFolderPath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetFixedDt_" data-uid="TaleWorlds.Engine.Utilities.SetFixedDt*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetFixedDt_System_Boolean_System_Single_" data-uid="TaleWorlds.Engine.Utilities.SetFixedDt(System.Boolean,System.Single)">
+  SetFixedDt(bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFixedDt(bool enabled, float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetForceDrawEntityID_" data-uid="TaleWorlds.Engine.Utilities.SetForceDrawEntityID*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetForceDrawEntityID_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetForceDrawEntityID(System.Boolean)">
+  SetForceDrawEntityID(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetForceDrawEntityID(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetForceVsync_" data-uid="TaleWorlds.Engine.Utilities.SetForceVsync*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetForceVsync_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetForceVsync(System.Boolean)">
+  SetForceVsync(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetForceVsync(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetFrameLimiterWithSleep_" data-uid="TaleWorlds.Engine.Utilities.SetFrameLimiterWithSleep*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetFrameLimiterWithSleep_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetFrameLimiterWithSleep(System.Boolean)">
+  SetFrameLimiterWithSleep(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFrameLimiterWithSleep(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetGraphicsPreset_" data-uid="TaleWorlds.Engine.Utilities.SetGraphicsPreset*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetGraphicsPreset_System_Int32_" data-uid="TaleWorlds.Engine.Utilities.SetGraphicsPreset(System.Int32)">
+  SetGraphicsPreset(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetGraphicsPreset(int preset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>preset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetLoadingScreenPercentage_" data-uid="TaleWorlds.Engine.Utilities.SetLoadingScreenPercentage*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetLoadingScreenPercentage_System_Single_" data-uid="TaleWorlds.Engine.Utilities.SetLoadingScreenPercentage(System.Single)">
+  SetLoadingScreenPercentage(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLoadingScreenPercentage(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetMessageLineRenderingState_" data-uid="TaleWorlds.Engine.Utilities.SetMessageLineRenderingState*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetMessageLineRenderingState_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetMessageLineRenderingState(System.Boolean)">
+  SetMessageLineRenderingState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetMessageLineRenderingState(bool state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetPrintCallstackAtCrahses_" data-uid="TaleWorlds.Engine.Utilities.SetPrintCallstackAtCrahses*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetPrintCallstackAtCrahses_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetPrintCallstackAtCrahses(System.Boolean)">
+  SetPrintCallstackAtCrahses(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPrintCallstackAtCrahses(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetRenderAgents_" data-uid="TaleWorlds.Engine.Utilities.SetRenderAgents*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetRenderAgents_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetRenderAgents(System.Boolean)">
+  SetRenderAgents(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRenderAgents(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetRenderMode_" data-uid="TaleWorlds.Engine.Utilities.SetRenderMode*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetRenderMode_TaleWorlds_Engine_Utilities_EngineRenderDisplayMode_" data-uid="TaleWorlds.Engine.Utilities.SetRenderMode(TaleWorlds.Engine.Utilities.EngineRenderDisplayMode)">
+  SetRenderMode(EngineRenderDisplayMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRenderMode(Utilities.EngineRenderDisplayMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="TaleWorlds.Engine.Utilities.html">Utilities</a>.<a class="xref" href="TaleWorlds.Engine.Utilities.EngineRenderDisplayMode.html">EngineRenderDisplayMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetReportMode_" data-uid="TaleWorlds.Engine.Utilities.SetReportMode*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetReportMode_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetReportMode(System.Boolean)">
+  SetReportMode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetReportMode(bool reportMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reportMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetScreenTextRenderingState_" data-uid="TaleWorlds.Engine.Utilities.SetScreenTextRenderingState*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetScreenTextRenderingState_System_Boolean_" data-uid="TaleWorlds.Engine.Utilities.SetScreenTextRenderingState(System.Boolean)">
+  SetScreenTextRenderingState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScreenTextRenderingState(bool state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetWatchdogValue_" data-uid="TaleWorlds.Engine.Utilities.SetWatchdogValue*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetWatchdogValue_System_String_System_String_System_String_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetWatchdogValue(System.String,System.String,System.String,System.String)">
+  SetWatchdogValue(string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWatchdogValue(string fileName, string groupName, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_SetWindowTitle_" data-uid="TaleWorlds.Engine.Utilities.SetWindowTitle*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_SetWindowTitle_System_String_" data-uid="TaleWorlds.Engine.Utilities.SetWindowTitle(System.String)">
+  SetWindowTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWindowTitle(string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_StartScenePerformanceReport_" data-uid="TaleWorlds.Engine.Utilities.StartScenePerformanceReport*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_StartScenePerformanceReport_System_String_" data-uid="TaleWorlds.Engine.Utilities.StartScenePerformanceReport(System.String)">
+  StartScenePerformanceReport(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartScenePerformanceReport(string folderPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>folderPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TakeSSFromTop_" data-uid="TaleWorlds.Engine.Utilities.TakeSSFromTop*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TakeSSFromTop_System_String_" data-uid="TaleWorlds.Engine.Utilities.TakeSSFromTop(System.String)">
+  TakeSSFromTop(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TakeSSFromTop(string file_name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file_name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TakeScreenshot_" data-uid="TaleWorlds.Engine.Utilities.TakeScreenshot*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TakeScreenshot_System_String_" data-uid="TaleWorlds.Engine.Utilities.TakeScreenshot(System.String)">
+  TakeScreenshot(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TakeScreenshot(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TakeScreenshot_" data-uid="TaleWorlds.Engine.Utilities.TakeScreenshot*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TakeScreenshot_TaleWorlds_Library_PlatformFilePath_" data-uid="TaleWorlds.Engine.Utilities.TakeScreenshot(TaleWorlds.Library.PlatformFilePath)">
+  TakeScreenshot(PlatformFilePath)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TakeScreenshot(PlatformFilePath path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="TaleWorlds.Library.PlatformFilePath.html">PlatformFilePath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_ToggleRender_" data-uid="TaleWorlds.Engine.Utilities.ToggleRender*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_ToggleRender" data-uid="TaleWorlds.Engine.Utilities.ToggleRender">
+  ToggleRender()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToggleRender()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TryGetFullFilePathOfScene_" data-uid="TaleWorlds.Engine.Utilities.TryGetFullFilePathOfScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TryGetFullFilePathOfScene_System_String_System_String__" data-uid="TaleWorlds.Engine.Utilities.TryGetFullFilePathOfScene(System.String,System.String@)">
+  TryGetFullFilePathOfScene(string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetFullFilePathOfScene(string sceneName, out string fullPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TryGetUniqueIdentifiersForScene_" data-uid="TaleWorlds.Engine.Utilities.TryGetUniqueIdentifiersForScene*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TryGetUniqueIdentifiersForScene_System_String_TaleWorlds_Library_UniqueSceneId__" data-uid="TaleWorlds.Engine.Utilities.TryGetUniqueIdentifiersForScene(System.String,TaleWorlds.Library.UniqueSceneId@)">
+  TryGetUniqueIdentifiersForScene(string, out UniqueSceneId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetUniqueIdentifiersForScene(string sceneName, out UniqueSceneId identifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>identifiers</code> <a class="xref" href="TaleWorlds.Library.UniqueSceneId.html">UniqueSceneId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_TryGetUniqueIdentifiersForSceneFile_" data-uid="TaleWorlds.Engine.Utilities.TryGetUniqueIdentifiersForSceneFile*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_TryGetUniqueIdentifiersForSceneFile_System_String_TaleWorlds_Library_UniqueSceneId__" data-uid="TaleWorlds.Engine.Utilities.TryGetUniqueIdentifiersForSceneFile(System.String,TaleWorlds.Library.UniqueSceneId@)">
+  TryGetUniqueIdentifiersForSceneFile(string, out UniqueSceneId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetUniqueIdentifiersForSceneFile(string xsceneFilePath, out UniqueSceneId identifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xsceneFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>identifiers</code> <a class="xref" href="TaleWorlds.Library.UniqueSceneId.html">UniqueSceneId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_Utilities_WaitJobs_" data-uid="TaleWorlds.Engine.Utilities.WaitJobs*"></a>
+
+  <h3 id="TaleWorlds_Engine_Utilities_WaitJobs" data-uid="TaleWorlds.Engine.Utilities.WaitJobs">
+  WaitJobs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WaitJobs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

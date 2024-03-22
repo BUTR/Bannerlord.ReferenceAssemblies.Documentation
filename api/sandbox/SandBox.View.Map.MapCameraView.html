@@ -1,0 +1,1506 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MapCameraView | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MapCameraView | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.View.Map.MapCameraView">
+
+
+
+  <h1 id="SandBox_View_Map_MapCameraView" data-uid="SandBox.View.Map.MapCameraView" class="text-break">
+Class MapCameraView  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.View.html">View</a>.<a class="xref" href="SandBox.View.Map.html">Map</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.View.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MapCameraView : MapView</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="SandBox.View.SandboxView.html">SandboxView</a></div>
+      <div><a class="xref" href="SandBox.View.Map.MapView.html">MapView</a></div>
+      <div><span class="xref">MapCameraView</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_ContextAlphaModifier">MapView.ContextAlphaModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_CreateLayout">MapView.CreateLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnResume">MapView.OnResume()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnHourlyTick">MapView.OnHourlyTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnStartWait_System_String_">MapView.OnStartWait(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMainPartyEncounter">MapView.OnMainPartyEncounter()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnDispersePlayerLeadedArmy">MapView.OnDispersePlayerLeadedArmy()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnArmyLeft">MapView.OnArmyLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_IsEscaped">MapView.IsEscaped()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_IsOpeningEscapeMenuOnFocusChangeAllowed">MapView.IsOpeningEscapeMenuOnFocusChangeAllowed()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnOverlayCreated">MapView.OnOverlayCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnOverlayClosed">MapView.OnOverlayClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMenuModeTick_System_Single_">MapView.OnMenuModeTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMapScreenUpdate_System_Single_">MapView.OnMapScreenUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnIdleTick_System_Single_">MapView.OnIdleTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMapTerrainClick">MapView.OnMapTerrainClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnSiegeEngineClick_TaleWorlds_Library_MatrixFrame_">MapView.OnSiegeEngineClick(MatrixFrame)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMapConversationStart">MapView.OnMapConversationStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMapConversationUpdate_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_">MapView.OnMapConversationUpdate(ConversationCharacterData, ConversationCharacterData)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_OnMapConversationOver">MapView.OnMapConversationOver()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_MapScreen">MapView.MapScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.Map.MapView.html#SandBox_View_Map_MapView_MapState">MapView.MapState</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_OnActivate">SandboxView.OnActivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_OnDeactivate">SandboxView.OnDeactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_OnInitialize">SandboxView.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_OnFrameTick_System_Single_">SandboxView.OnFrameTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_IsFinalized">SandboxView.IsFinalized</a>
+    </div>
+    <div>
+      <a class="xref" href="SandBox.View.SandboxView.html#SandBox_View_SandboxView_Layer">SandboxView.Layer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_View_Map_MapCameraView__ctor_" data-uid="SandBox.View.Map.MapCameraView.#ctor*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView__ctor" data-uid="SandBox.View.Map.MapCameraView.#ctor">
+  MapCameraView()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapCameraView()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SandBox_View_Map_MapCameraView__customMaximumCameraHeight" data-uid="SandBox.View.Map.MapCameraView._customMaximumCameraHeight">
+  _customMaximumCameraHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float _customMaximumCameraHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_View_Map_MapCameraView_AdditionalElevation_" data-uid="SandBox.View.Map.MapCameraView.AdditionalElevation*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_AdditionalElevation" data-uid="SandBox.View.Map.MapCameraView.AdditionalElevation">
+  AdditionalElevation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float AdditionalElevation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_Camera_" data-uid="SandBox.View.Map.MapCameraView.Camera*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_Camera" data-uid="SandBox.View.Map.MapCameraView.Camera">
+  Camera
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Camera Camera { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraAnimationInProgress_" data-uid="SandBox.View.Map.MapCameraView.CameraAnimationInProgress*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraAnimationInProgress" data-uid="SandBox.View.Map.MapCameraView.CameraAnimationInProgress">
+  CameraAnimationInProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CameraAnimationInProgress { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraBearing_" data-uid="SandBox.View.Map.MapCameraView.CameraBearing*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraBearing" data-uid="SandBox.View.Map.MapCameraView.CameraBearing">
+  CameraBearing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float CameraBearing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraBearingVelocity_" data-uid="SandBox.View.Map.MapCameraView.CameraBearingVelocity*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraBearingVelocity" data-uid="SandBox.View.Map.MapCameraView.CameraBearingVelocity">
+  CameraBearingVelocity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float CameraBearingVelocity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraDistance_" data-uid="SandBox.View.Map.MapCameraView.CameraDistance*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraDistance" data-uid="SandBox.View.Map.MapCameraView.CameraDistance">
+  CameraDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float CameraDistance { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraFastMoveMultiplier_" data-uid="SandBox.View.Map.MapCameraView.CameraFastMoveMultiplier*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraFastMoveMultiplier" data-uid="SandBox.View.Map.MapCameraView.CameraFastMoveMultiplier">
+  CameraFastMoveMultiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float CameraFastMoveMultiplier { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CameraFrame_" data-uid="SandBox.View.Map.MapCameraView.CameraFrame*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CameraFrame" data-uid="SandBox.View.Map.MapCameraView.CameraFrame">
+  CameraFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MatrixFrame CameraFrame { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_CurrentCameraFollowMode_" data-uid="SandBox.View.Map.MapCameraView.CurrentCameraFollowMode*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CurrentCameraFollowMode" data-uid="SandBox.View.Map.MapCameraView.CurrentCameraFollowMode">
+  CurrentCameraFollowMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MapCameraView.CameraFollowMode CurrentCameraFollowMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapCameraView.html">MapCameraView</a>.<a class="xref" href="SandBox.View.Map.MapCameraView.CameraFollowMode.html">CameraFollowMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_IdealCameraTarget_" data-uid="SandBox.View.Map.MapCameraView.IdealCameraTarget*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_IdealCameraTarget" data-uid="SandBox.View.Map.MapCameraView.IdealCameraTarget">
+  IdealCameraTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Vec3 IdealCameraTarget { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_MaximumCameraHeight_" data-uid="SandBox.View.Map.MapCameraView.MaximumCameraHeight*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_MaximumCameraHeight" data-uid="SandBox.View.Map.MapCameraView.MaximumCameraHeight">
+  MaximumCameraHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float MaximumCameraHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_ProcessCameraInput_" data-uid="SandBox.View.Map.MapCameraView.ProcessCameraInput*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_ProcessCameraInput" data-uid="SandBox.View.Map.MapCameraView.ProcessCameraInput">
+  ProcessCameraInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ProcessCameraInput { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_TargetCameraDistance_" data-uid="SandBox.View.Map.MapCameraView.TargetCameraDistance*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_TargetCameraDistance" data-uid="SandBox.View.Map.MapCameraView.TargetCameraDistance">
+  TargetCameraDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float TargetCameraDistance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_View_Map_MapCameraView_CalculateCameraElevation_" data-uid="SandBox.View.Map.MapCameraView.CalculateCameraElevation*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_CalculateCameraElevation_System_Single_" data-uid="SandBox.View.Map.MapCameraView.CalculateCameraElevation(System.Single)">
+  CalculateCameraElevation(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float CalculateCameraElevation(float cameraDistance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cameraDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_ComputeMapCamera_" data-uid="SandBox.View.Map.MapCameraView.ComputeMapCamera*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_ComputeMapCamera_TaleWorlds_Library_Vec3__System_Single_System_Single_System_Single_TaleWorlds_Library_Vec2__" data-uid="SandBox.View.Map.MapCameraView.ComputeMapCamera(TaleWorlds.Library.Vec3@,System.Single,System.Single,System.Single,TaleWorlds.Library.Vec2@)">
+  ComputeMapCamera(ref Vec3, float, float, float, ref Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual MatrixFrame ComputeMapCamera(ref Vec3 cameraTarget, float cameraBearing, float cameraElevation, float cameraDistance, ref Vec2 lastUsedIdealCameraTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cameraTarget</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>cameraBearing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>cameraElevation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>cameraDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>lastUsedIdealCameraTarget</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_FastMoveCameraToMainParty_" data-uid="SandBox.View.Map.MapCameraView.FastMoveCameraToMainParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_FastMoveCameraToMainParty" data-uid="SandBox.View.Map.MapCameraView.FastMoveCameraToMainParty">
+  FastMoveCameraToMainParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FastMoveCameraToMainParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_FastMoveCameraToPosition_" data-uid="SandBox.View.Map.MapCameraView.FastMoveCameraToPosition*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_FastMoveCameraToPosition_TaleWorlds_Library_Vec2_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.FastMoveCameraToPosition(TaleWorlds.Library.Vec2,System.Boolean)">
+  FastMoveCameraToPosition(Vec2, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FastMoveCameraToPosition(Vec2 target, bool isInMenu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>isInMenu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_GetCameraTargetForParty_" data-uid="SandBox.View.Map.MapCameraView.GetCameraTargetForParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_GetCameraTargetForParty_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="SandBox.View.Map.MapCameraView.GetCameraTargetForParty(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  GetCameraTargetForParty(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Vec3 GetCameraTargetForParty(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_GetCameraTargetForPosition_" data-uid="SandBox.View.Map.MapCameraView.GetCameraTargetForPosition*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_GetCameraTargetForPosition_TaleWorlds_Library_Vec2_" data-uid="SandBox.View.Map.MapCameraView.GetCameraTargetForPosition(TaleWorlds.Library.Vec2)">
+  GetCameraTargetForPosition(Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Vec3 GetCameraTargetForPosition(Vec2 targetPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_GetMapCameraInput_" data-uid="SandBox.View.Map.MapCameraView.GetMapCameraInput*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_GetMapCameraInput_SandBox_View_Map_MapCameraView_InputInformation_" data-uid="SandBox.View.Map.MapCameraView.GetMapCameraInput(SandBox.View.Map.MapCameraView.InputInformation)">
+  GetMapCameraInput(InputInformation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool GetMapCameraInput(MapCameraView.InputInformation inputInformation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputInformation</code> <a class="xref" href="SandBox.View.Map.MapCameraView.html">MapCameraView</a>.<a class="xref" href="SandBox.View.Map.MapCameraView.InputInformation.html">InputInformation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_HandleLeftMouseButtonClick_" data-uid="SandBox.View.Map.MapCameraView.HandleLeftMouseButtonClick*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_HandleLeftMouseButtonClick_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.HandleLeftMouseButtonClick(System.Boolean)">
+  HandleLeftMouseButtonClick(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HandleLeftMouseButtonClick(bool isMouseActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isMouseActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_HandleMouse_" data-uid="SandBox.View.Map.MapCameraView.HandleMouse*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_HandleMouse_System_Boolean_System_Single_System_Single_System_Single_" data-uid="SandBox.View.Map.MapCameraView.HandleMouse(System.Boolean,System.Single,System.Single,System.Single)">
+  HandleMouse(bool, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HandleMouse(bool rightMouseButtonPressed, float verticalCameraInput, float mouseMoveY, float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rightMouseButtonPressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>verticalCameraInput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>mouseMoveY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_Initialize_" data-uid="SandBox.View.Map.MapCameraView.Initialize*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_Initialize" data-uid="SandBox.View.Map.MapCameraView.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_IsCameraLockedToPlayerParty_" data-uid="SandBox.View.Map.MapCameraView.IsCameraLockedToPlayerParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_IsCameraLockedToPlayerParty" data-uid="SandBox.View.Map.MapCameraView.IsCameraLockedToPlayerParty">
+  IsCameraLockedToPlayerParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsCameraLockedToPlayerParty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnActivate_" data-uid="SandBox.View.Map.MapCameraView.OnActivate*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnActivate_System_Boolean_TaleWorlds_Library_Vec3_" data-uid="SandBox.View.Map.MapCameraView.OnActivate(System.Boolean,TaleWorlds.Library.Vec3)">
+  OnActivate(bool, Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnActivate(bool leftButtonDraggingMode, Vec3 clickedPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftButtonDraggingMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>clickedPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnBeforeTick_" data-uid="SandBox.View.Map.MapCameraView.OnBeforeTick*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnBeforeTick_SandBox_View_Map_MapCameraView_InputInformation__" data-uid="SandBox.View.Map.MapCameraView.OnBeforeTick(SandBox.View.Map.MapCameraView.InputInformation@)">
+  OnBeforeTick(in InputInformation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeforeTick(in MapCameraView.InputInformation inputInformation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputInformation</code> <a class="xref" href="SandBox.View.Map.MapCameraView.html">MapCameraView</a>.<a class="xref" href="SandBox.View.Map.MapCameraView.InputInformation.html">InputInformation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnEscapeMenuToggled_" data-uid="SandBox.View.Map.MapCameraView.OnEscapeMenuToggled*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnEscapeMenuToggled_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.OnEscapeMenuToggled(System.Boolean)">
+  OnEscapeMenuToggled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEscapeMenuToggled(bool isOpened)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isOpened</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnExit_" data-uid="SandBox.View.Map.MapCameraView.OnExit*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnExit" data-uid="SandBox.View.Map.MapCameraView.OnExit">
+  OnExit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnExit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnFinalize_" data-uid="SandBox.View.Map.MapCameraView.OnFinalize*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnFinalize" data-uid="SandBox.View.Map.MapCameraView.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnRefreshMapSiegeOverlayRequired_" data-uid="SandBox.View.Map.MapCameraView.OnRefreshMapSiegeOverlayRequired*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnRefreshMapSiegeOverlayRequired_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.OnRefreshMapSiegeOverlayRequired(System.Boolean)">
+  OnRefreshMapSiegeOverlayRequired(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnRefreshMapSiegeOverlayRequired(bool isMapSiegeOverlayViewNull)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isMapSiegeOverlayViewNull</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_OnSetMapSiegeOverlayState_" data-uid="SandBox.View.Map.MapCameraView.OnSetMapSiegeOverlayState*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_OnSetMapSiegeOverlayState_System_Boolean_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.OnSetMapSiegeOverlayState(System.Boolean,System.Boolean)">
+  OnSetMapSiegeOverlayState(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSetMapSiegeOverlayState(bool isActive, bool isMapSiegeOverlayViewNull)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isMapSiegeOverlayViewNull</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_ResetCamera_" data-uid="SandBox.View.Map.MapCameraView.ResetCamera*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_ResetCamera_System_Boolean_System_Boolean_" data-uid="SandBox.View.Map.MapCameraView.ResetCamera(System.Boolean,System.Boolean)">
+  ResetCamera(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ResetCamera(bool resetDistance, bool teleportToMainParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resetDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>teleportToMainParty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_SetCameraMode_" data-uid="SandBox.View.Map.MapCameraView.SetCameraMode*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_SetCameraMode_SandBox_View_Map_MapCameraView_CameraFollowMode_" data-uid="SandBox.View.Map.MapCameraView.SetCameraMode(SandBox.View.Map.MapCameraView.CameraFollowMode)">
+  SetCameraMode(CameraFollowMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCameraMode(MapCameraView.CameraFollowMode cameraMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cameraMode</code> <a class="xref" href="SandBox.View.Map.MapCameraView.html">MapCameraView</a>.<a class="xref" href="SandBox.View.Map.MapCameraView.CameraFollowMode.html">CameraFollowMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_SiegeEngineClick_" data-uid="SandBox.View.Map.MapCameraView.SiegeEngineClick*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_SiegeEngineClick_TaleWorlds_Library_MatrixFrame_" data-uid="SandBox.View.Map.MapCameraView.SiegeEngineClick(TaleWorlds.Library.MatrixFrame)">
+  SiegeEngineClick(MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SiegeEngineClick(MatrixFrame siegeEngineFrame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>siegeEngineFrame</code> <a class="xref" href="../core/TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_StartCameraAnimation_" data-uid="SandBox.View.Map.MapCameraView.StartCameraAnimation*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_StartCameraAnimation_TaleWorlds_Library_Vec2_System_Single_" data-uid="SandBox.View.Map.MapCameraView.StartCameraAnimation(TaleWorlds.Library.Vec2,System.Single)">
+  StartCameraAnimation(Vec2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartCameraAnimation(Vec2 targetPosition, float animationStopDuration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>animationStopDuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_TeleportCameraToMainParty_" data-uid="SandBox.View.Map.MapCameraView.TeleportCameraToMainParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_TeleportCameraToMainParty" data-uid="SandBox.View.Map.MapCameraView.TeleportCameraToMainParty">
+  TeleportCameraToMainParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TeleportCameraToMainParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapCameraView_UpdateMapCamera_" data-uid="SandBox.View.Map.MapCameraView.UpdateMapCamera*"></a>
+
+  <h3 id="SandBox_View_Map_MapCameraView_UpdateMapCamera_System_Boolean_TaleWorlds_Library_Vec3_" data-uid="SandBox.View.Map.MapCameraView.UpdateMapCamera(System.Boolean,TaleWorlds.Library.Vec3)">
+  UpdateMapCamera(bool, Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateMapCamera(bool _leftButtonDraggingMode, Vec3 _clickedPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_leftButtonDraggingMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>_clickedPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

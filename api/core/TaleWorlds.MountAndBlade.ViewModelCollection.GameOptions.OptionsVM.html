@@ -1,0 +1,1948 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OptionsVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OptionsVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM" class="text-break">
+Class OptionsVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.html">GameOptions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OptionsVM : ViewModel, IViewModel, INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><span class="xref">OptionsVM</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.MPOptionsVM.html">MPOptionsVM</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__ctor_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__ctor_System_Boolean_TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OptionsMode_System_Action_TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_KeyOptionVM__System_Action_System_Action_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.#ctor(System.Boolean,TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsMode,System.Action{TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.KeyOptionVM},System.Action,System.Action)">
+  OptionsVM(bool, OptionsMode, Action&lt;KeyOptionVM&gt;, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsVM(bool autoHandleClose, OptionsVM.OptionsMode optionsMode, Action&lt;KeyOptionVM&gt; onKeybindRequest, Action onBrightnessExecute = null, Action onExposureExecute = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>autoHandleClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>optionsMode</code> <a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.html">OptionsVM</a>.<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsMode.html">OptionsMode</a></dt>
+    <dd></dd>
+    <dt><code>onKeybindRequest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.KeyOptionVM.html">KeyOptionVM</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onBrightnessExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onExposureExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__ctor_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__ctor_TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OptionsMode_System_Action_System_Action_TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_KeyOptionVM__System_Action_System_Action_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.#ctor(TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsMode,System.Action,System.Action{TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.KeyOptionVM},System.Action,System.Action)">
+  OptionsVM(OptionsMode, Action, Action&lt;KeyOptionVM&gt;, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsVM(OptionsVM.OptionsMode optionsMode, Action onClose, Action&lt;KeyOptionVM&gt; onKeybindRequest, Action onBrightnessExecute = null, Action onExposureExecute = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>optionsMode</code> <a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.html">OptionsVM</a>.<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsMode.html">OptionsMode</a></dt>
+    <dd></dd>
+    <dt><code>onClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onKeybindRequest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.KeyOptionVM.html">KeyOptionVM</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onBrightnessExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onExposureExecute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__gameKeyCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM._gameKeyCategory">
+  _gameKeyCategory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly GameKeyOptionCategoryVM _gameKeyCategory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GameKeys.GameKeyOptionCategoryVM.html">GameKeyOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__gameplayOptionCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM._gameplayOptionCategory">
+  _gameplayOptionCategory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly GroupedOptionCategoryVM _gameplayOptionCategory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__groupedCategories" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM._groupedCategories">
+  _groupedCategories
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;GroupedOptionCategoryVM&gt; _groupedCategories</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM__performanceOptionCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM._performanceOptionCategory">
+  _performanceOptionCategory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly GroupedOptionCategoryVM _performanceOptionCategory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_AudioOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.AudioOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_AudioOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.AudioOptions">
+  AudioOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GroupedOptionCategoryVM AudioOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_BrightnessPopUp_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.BrightnessPopUp*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_BrightnessPopUp" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.BrightnessPopUp">
+  BrightnessPopUp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BrightnessOptionVM BrightnessPopUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.BrightnessOptionVM.html">BrightnessOptionVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CancelInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CancelInputKey" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CancelLbl_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CancelLbl*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CancelLbl" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CancelLbl">
+  CancelLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CancelLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CategoryIndex_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CategoryIndex*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CategoryIndex" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CategoryIndex">
+  CategoryIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int CategoryIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CurrentOptionsMode_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CurrentOptionsMode*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_CurrentOptionsMode" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.CurrentOptionsMode">
+  CurrentOptionsMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsVM.OptionsMode CurrentOptionsMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.html">OptionsVM</a>.<a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsMode.html">OptionsMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_DoneInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.DoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_DoneInputKey" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.DoneInputKey">
+  DoneInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM DoneInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_DoneLbl_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.DoneLbl*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_DoneLbl" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.DoneLbl">
+  DoneLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string DoneLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExposurePopUp_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExposurePopUp*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExposurePopUp" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExposurePopUp">
+  ExposurePopUp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public ExposureOptionVM ExposurePopUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.ExposureOptionVM.html">ExposureOptionVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameKeyOptionGroups_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameKeyOptionGroups*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameKeyOptionGroups" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameKeyOptionGroups">
+  GameKeyOptionGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GameKeyOptionCategoryVM GameKeyOptionGroups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GameKeys.GameKeyOptionCategoryVM.html">GameKeyOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameVersionText_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameVersionText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameVersionText" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameVersionText">
+  GameVersionText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string GameVersionText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GamepadOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GamepadOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GamepadOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GamepadOptions">
+  GamepadOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GamepadOptionCategoryVM GamepadOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GamepadOptions.GamepadOptionCategoryVM.html">GamepadOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameplayOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameplayOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GameplayOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GameplayOptions">
+  GameplayOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GroupedOptionCategoryVM GameplayOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsConsole_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsConsole*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsConsole" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsConsole">
+  IsConsole
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsConsole { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsDevelopmentMode_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsDevelopmentMode*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsDevelopmentMode" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsDevelopmentMode">
+  IsDevelopmentMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDevelopmentMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_NextTabInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.NextTabInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_NextTabInputKey" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.NextTabInputKey">
+  NextTabInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM NextTabInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OptionsLbl_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsLbl*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OptionsLbl" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OptionsLbl">
+  OptionsLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OptionsLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_PerformanceOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.PerformanceOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_PerformanceOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.PerformanceOptions">
+  PerformanceOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GroupedOptionCategoryVM PerformanceOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_PreviousTabInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.PreviousTabInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_PreviousTabInputKey" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.PreviousTabInputKey">
+  PreviousTabInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM PreviousTabInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ResetInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ResetInputKey" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ResetInputKey">
+  ResetInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM ResetInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ResetLbl_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ResetLbl*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ResetLbl" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ResetLbl">
+  ResetLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string ResetLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageName_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageName*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageName" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageName">
+  VideoMemoryUsageName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string VideoMemoryUsageName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageNormalized_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageNormalized*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageNormalized" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageNormalized">
+  VideoMemoryUsageNormalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public float VideoMemoryUsageNormalized { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageText_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoMemoryUsageText" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoMemoryUsageText">
+  VideoMemoryUsageText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string VideoMemoryUsageText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_VideoOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.VideoOptions">
+  VideoOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public GroupedOptionCategoryVM VideoOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.GroupedOptionCategoryVM.html">GroupedOptionCategoryVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteBenchmark_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteBenchmark*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteBenchmark" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteBenchmark">
+  ExecuteBenchmark()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ExecuteBenchmark()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteCancel_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteCancel*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteCancel" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteCancel">
+  ExecuteCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteCloseOptions_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteCloseOptions*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteCloseOptions" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteCloseOptions">
+  ExecuteCloseOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCloseOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteDone_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteDone*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteDone" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteDone">
+  ExecuteDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteReset_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteReset*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_ExecuteReset" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.ExecuteReset">
+  ExecuteReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ExecuteReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetActiveCategory_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetActiveCategory*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetActiveCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetActiveCategory">
+  GetActiveCategory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewModel GetActiveCategory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetConfig_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetConfig*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetConfig_TaleWorlds_Engine_Options_IOptionData_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetConfig(TaleWorlds.Engine.Options.IOptionData)">
+  GetConfig(IOptionData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetConfig(IOptionData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="TaleWorlds.Engine.Options.IOptionData.html">IOptionData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetIndexOfCategory_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetIndexOfCategory*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_GetIndexOfCategory_TaleWorlds_Library_ViewModel_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.GetIndexOfCategory(TaleWorlds.Library.ViewModel)">
+  GetIndexOfCategory(ViewModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIndexOfCategory(ViewModel categoryVM)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>categoryVM</code> <a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_HandleCancel_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.HandleCancel*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_HandleCancel_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.HandleCancel(System.Boolean)">
+  HandleCancel(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void HandleCancel(bool autoHandleClose)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>autoHandleClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsOptionsChanged_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsOptionsChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_IsOptionsChanged" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.IsOptionsChanged">
+  IsOptionsChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOptionsChanged()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnBrightnessClick_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnBrightnessClick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnBrightnessClick" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnBrightnessClick">
+  OnBrightnessClick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnBrightnessClick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnDone_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnDone*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnDone" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnDone">
+  OnDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnExposureClick_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnExposureClick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnExposureClick" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnExposureClick">
+  OnExposureClick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnExposureClick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnFinalize_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_OnFinalize" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_RefreshValues_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_RefreshValues" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SelectNextCategory_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SelectNextCategory*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SelectNextCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SelectNextCategory">
+  SelectNextCategory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectNextCategory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SelectPreviousCategory_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SelectPreviousCategory*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SelectPreviousCategory" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SelectPreviousCategory">
+  SelectPreviousCategory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectPreviousCategory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetCancelInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetCancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetConfig_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetConfig*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetConfig_TaleWorlds_Engine_Options_IOptionData_System_Single_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetConfig(TaleWorlds.Engine.Options.IOptionData,System.Single)">
+  SetConfig(IOptionData, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConfig(IOptionData data, float val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="TaleWorlds.Engine.Options.IOptionData.html">IOptionData</a></dt>
+    <dd></dd>
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetDoneInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetDoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetDoneInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetDoneInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDoneInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDoneInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetNextTabInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetNextTabInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetNextTabInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetNextTabInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetNextTabInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextTabInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetPreviousTabInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetPreviousTabInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetPreviousTabInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetPreviousTabInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetPreviousTabInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreviousTabInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetResetInputKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ViewModelCollection_GameOptions_OptionsVM_SetResetInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.ViewModelCollection.GameOptions.OptionsVM.SetResetInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetResetInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResetInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

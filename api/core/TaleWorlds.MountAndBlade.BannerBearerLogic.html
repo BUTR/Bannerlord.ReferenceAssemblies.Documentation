@@ -1,0 +1,1254 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BannerBearerLogic | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BannerBearerLogic | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_BannerBearerLogic" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic" class="text-break">
+Class BannerBearerLogic  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BannerBearerLogic : MissionLogic, IMissionBehavior</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html">MissionBehavior</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html">MissionLogic</a></div>
+      <div><span class="xref">BannerBearerLogic</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IMissionBehavior.html">IMissionBehavior</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnEndMissionRequest_System_Boolean__">MissionLogic.OnEndMissionRequest(out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_MissionEnded_TaleWorlds_Core_MissionResult__">MissionLogic.MissionEnded(ref MissionResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnBattleEnded">MissionLogic.OnBattleEnded()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_ShowBattleResults">MissionLogic.ShowBattleResults()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnRetreatMission">MissionLogic.OnRetreatMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnSurrenderMission">MissionLogic.OnSurrenderMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnAutoDeployTeam_TaleWorlds_MountAndBlade_Team_">MissionLogic.OnAutoDeployTeam(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_GetExtraEquipmentElementsForCharacter_TaleWorlds_Core_BasicCharacterObject_System_Boolean_">MissionLogic.GetExtraEquipmentElementsForCharacter(BasicCharacterObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_OnMissionResultReady_TaleWorlds_Core_MissionResult_">MissionLogic.OnMissionResultReady(MissionResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionLogic.html#TaleWorlds_MountAndBlade_MissionLogic_BehaviorType">MissionLogic.BehaviorType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAfterMissionCreated">MissionBehavior.OnAfterMissionCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnCreated">MissionBehavior.OnCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_EarlyStart">MissionBehavior.EarlyStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_AfterStart">MissionBehavior.AfterStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissileHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Boolean_TaleWorlds_MountAndBlade_AttackCollisionData_">MissionBehavior.OnMissileHit(Agent, Agent, bool, AttackCollisionData)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMeleeHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_Boolean_TaleWorlds_MountAndBlade_AttackCollisionData_">MissionBehavior.OnMeleeHit(Agent, Agent, bool, AttackCollisionData)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissileCollisionReaction_TaleWorlds_MountAndBlade_Mission_MissileCollisionReaction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_System_SByte_">MissionBehavior.OnMissileCollisionReaction(Mission.MissileCollisionReaction, Agent, Agent, sbyte)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissionScreenPreLoad">MissionBehavior.OnMissionScreenPreLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentCreated_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentCreated(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentBuild_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_Banner_">MissionBehavior.OnAgentBuild(Agent, Banner)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentTeamChanged_TaleWorlds_MountAndBlade_Team_TaleWorlds_MountAndBlade_Team_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentTeamChanged(Team, Team, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerSetToPlayer_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentControllerSetToPlayer(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_MountAndBlade_Blow__TaleWorlds_MountAndBlade_AttackCollisionData__">MissionBehavior.OnAgentHit(Agent, Agent, in MissionWeapon, in Blow, in AttackCollisionData)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnScoreHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_WeaponComponentData_System_Boolean_System_Boolean_TaleWorlds_MountAndBlade_Blow__TaleWorlds_MountAndBlade_AttackCollisionData__System_Single_System_Single_System_Single_">MissionBehavior.OnScoreHit(Agent, Agent, WeaponComponentData, bool, bool, in Blow, in AttackCollisionData, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnEarlyAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_">MissionBehavior.OnEarlyAgentRemoved(Agent, Agent, AgentState, KillingBlow)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDeleted_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentDeleted(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentFleeing_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentFleeing(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnFocusGained_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_System_Boolean_">MissionBehavior.OnFocusGained(Agent, IFocusable, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnFocusLost_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IFocusable_">MissionBehavior.OnFocusLost(Agent, IFocusable)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAddTeam_TaleWorlds_MountAndBlade_Team_">MissionBehavior.OnAddTeam(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_AfterAddTeam_TaleWorlds_MountAndBlade_Team_">MissionBehavior.AfterAddTeam(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentInteraction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentInteraction(Agent, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnClearScene">MissionBehavior.OnClearScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnEndMissionInternal">MissionBehavior.OnEndMissionInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnRemoveBehavior">MissionBehavior.OnRemoveBehavior()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnPreMissionTick_System_Single_">MissionBehavior.OnPreMissionTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnPreDisplayMissionTick_System_Single_">MissionBehavior.OnPreDisplayMissionTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentMount_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentMount(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentDismount_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAgentDismount(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_IsThereAgentAction_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.IsThereAgentAction(Agent, Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnEntityRemoved_TaleWorlds_Engine_GameEntity_">MissionBehavior.OnEntityRemoved(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnObjectUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_">MissionBehavior.OnObjectUsed(Agent, UsableMissionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnObjectStoppedBeingUsed_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_UsableMissionObject_">MissionBehavior.OnObjectStoppedBeingUsed(Agent, UsableMissionObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnRenderingStarted">MissionBehavior.OnRenderingStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateActivated">MissionBehavior.OnMissionStateActivated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateFinalized">MissionBehavior.OnMissionStateFinalized()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissionStateDeactivated">MissionBehavior.OnMissionStateDeactivated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_GetCompassTargets">MissionBehavior.GetCompassTargets()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAssignPlayerAsSergeantOfFormation_TaleWorlds_MountAndBlade_Agent_">MissionBehavior.OnAssignPlayerAsSergeantOfFormation(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnTeamDeployed_TaleWorlds_MountAndBlade_Team_">MissionBehavior.OnTeamDeployed(Team)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnGetAgentState_TaleWorlds_MountAndBlade_Agent_System_Boolean_">MissionBehavior.OnGetAgentState(Agent, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentAlarmedStateChanged_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_AIStateFlag_">MissionBehavior.OnAgentAlarmedStateChanged(Agent, Agent.AIStateFlag)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnObjectDisabled_TaleWorlds_MountAndBlade_DestructableComponent_">MissionBehavior.OnObjectDisabled(DestructableComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnMissionModeChange_TaleWorlds_Core_MissionMode_System_Boolean_">MissionBehavior.OnMissionModeChange(MissionMode, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentControllerChanged_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_ControllerType_">MissionBehavior.OnAgentControllerChanged(Agent, Agent.ControllerType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnRegisterBlow_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Engine_GameEntity_TaleWorlds_MountAndBlade_Blow_TaleWorlds_MountAndBlade_AttackCollisionData__TaleWorlds_MountAndBlade_MissionWeapon__">MissionBehavior.OnRegisterBlow(Agent, Agent, GameEntity, Blow, ref AttackCollisionData, in MissionWeapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_OnAgentShootMissile_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_EquipmentIndex_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_Library_Mat3_System_Boolean_System_Int32_">MissionBehavior.OnAgentShootMissile(Agent, EquipmentIndex, Vec3, Vec3, Mat3, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_Mission">MissionBehavior.Mission</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionBehavior.html#TaleWorlds_MountAndBlade_MissionBehavior_DebugInput">MissionBehavior.DebugInput</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic__ctor_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic__ctor" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.#ctor">
+  BannerBearerLogic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BannerBearerLogic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_BannerSearcherUpdatePeriod" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.BannerSearcherUpdatePeriod">
+  BannerSearcherUpdatePeriod
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float BannerSearcherUpdatePeriod = 3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_DefaultBannerBearerAgentDefensiveness" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.DefaultBannerBearerAgentDefensiveness">
+  DefaultBannerBearerAgentDefensiveness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float DefaultBannerBearerAgentDefensiveness = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_AgentSpawnLogic_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.AgentSpawnLogic*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_AgentSpawnLogic" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.AgentSpawnLogic">
+  AgentSpawnLogic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionAgentSpawnLogic AgentSpawnLogic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MissionAgentSpawnLogic.html">MissionAgentSpawnLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetActiveBanner_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetActiveBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetActiveBanner_TaleWorlds_MountAndBlade_Formation_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetActiveBanner(TaleWorlds.MountAndBlade.Formation)">
+  GetActiveBanner(Formation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BannerComponent GetActiveBanner(Formation formation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BannerComponent.html">BannerComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationBanner_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationBanner_TaleWorlds_MountAndBlade_Formation_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationBanner(TaleWorlds.MountAndBlade.Formation)">
+  GetFormationBanner(Formation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemObject GetFormationBanner(Formation formation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationBannerBearers_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationBannerBearers*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationBannerBearers_TaleWorlds_MountAndBlade_Formation_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationBannerBearers(TaleWorlds.MountAndBlade.Formation)">
+  GetFormationBannerBearers(Formation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Agent&gt; GetFormationBannerBearers(Formation formation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationFromBanner_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationFromBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetFormationFromBanner_TaleWorlds_MountAndBlade_SpawnedItemEntity_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetFormationFromBanner(TaleWorlds.MountAndBlade.SpawnedItemEntity)">
+  GetFormationFromBanner(SpawnedItemEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Formation GetFormationFromBanner(SpawnedItemEntity spawnedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spawnedItem</code> <a class="xref" href="TaleWorlds.MountAndBlade.SpawnedItemEntity.html">SpawnedItemEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetMissingBannerCount_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetMissingBannerCount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_GetMissingBannerCount_TaleWorlds_MountAndBlade_Formation_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.GetMissingBannerCount(TaleWorlds.MountAndBlade.Formation)">
+  GetMissingBannerCount(Formation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMissingBannerCount(Formation formation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_HasBannerOnGround_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.HasBannerOnGround*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_HasBannerOnGround_TaleWorlds_MountAndBlade_Formation_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.HasBannerOnGround(TaleWorlds.MountAndBlade.Formation)">
+  HasBannerOnGround(Formation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBannerOnGround(Formation formation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsBannerItem_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsBannerItem*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsBannerItem_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsBannerItem(TaleWorlds.Core.ItemObject)">
+  IsBannerItem(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBannerItem(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsBannerSearchingAgent_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsBannerSearchingAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsBannerSearchingAgent_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsBannerSearchingAgent(TaleWorlds.MountAndBlade.Agent)">
+  IsBannerSearchingAgent(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBannerSearchingAgent(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsFormationBanner_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsFormationBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_IsFormationBanner_TaleWorlds_MountAndBlade_Formation_TaleWorlds_MountAndBlade_SpawnedItemEntity_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.IsFormationBanner(TaleWorlds.MountAndBlade.Formation,TaleWorlds.MountAndBlade.SpawnedItemEntity)">
+  IsFormationBanner(Formation, SpawnedItemEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFormationBanner(Formation formation, SpawnedItemEntity spawnedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+    <dt><code>spawnedItem</code> <a class="xref" href="TaleWorlds.MountAndBlade.SpawnedItemEntity.html">SpawnedItemEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnAgentPanicked_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnAgentPanicked*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnAgentPanicked_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnAgentPanicked(TaleWorlds.MountAndBlade.Agent)">
+  OnAgentPanicked(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAgentPanicked(Agent affectedAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnAgentRemoved_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnAgentRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnAgentRemoved(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.AgentState,TaleWorlds.MountAndBlade.KillingBlow)">
+  OnAgentRemoved(Agent, Agent, AgentState, KillingBlow)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow blow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>agentState</code> <a class="xref" href="TaleWorlds.Core.AgentState.html">AgentState</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="TaleWorlds.MountAndBlade.KillingBlow.html">KillingBlow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnBehaviorInitialize_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnBehaviorInitialize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnBehaviorInitialize" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnBehaviorInitialize">
+  OnBehaviorInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnBehaviorInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnDeploymentFinished_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnDeploymentFinished*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnDeploymentFinished" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnDeploymentFinished">
+  OnDeploymentFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDeploymentFinished()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnEndMission_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnEndMission*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnEndMission" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnEndMission">
+  OnEndMission()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEndMission()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnItemDrop_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnItemDrop*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnItemDrop_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_SpawnedItemEntity_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnItemDrop(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.SpawnedItemEntity)">
+  OnItemDrop(Agent, SpawnedItemEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnItemDrop(Agent agent, SpawnedItemEntity spawnedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>spawnedItem</code> <a class="xref" href="TaleWorlds.MountAndBlade.SpawnedItemEntity.html">SpawnedItemEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnItemPickup_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnItemPickup*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnItemPickup_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_SpawnedItemEntity_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnItemPickup(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.SpawnedItemEntity)">
+  OnItemPickup(Agent, SpawnedItemEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnItemPickup(Agent agent, SpawnedItemEntity spawnedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>spawnedItem</code> <a class="xref" href="TaleWorlds.MountAndBlade.SpawnedItemEntity.html">SpawnedItemEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnMissionTick_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnMissionTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnMissionTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnMissionTick(System.Single)">
+  OnMissionTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnMissionTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_SetFormationBanner_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.SetFormationBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_SetFormationBanner_TaleWorlds_MountAndBlade_Formation_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.SetFormationBanner(TaleWorlds.MountAndBlade.Formation,TaleWorlds.Core.ItemObject)">
+  SetFormationBanner(Formation, ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFormationBanner(Formation formation, ItemObject newBanner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+    <dt><code>newBanner</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_SpawnBannerBearer_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.SpawnBannerBearer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_SpawnBannerBearer_TaleWorlds_Core_IAgentOriginBase_System_Boolean_TaleWorlds_MountAndBlade_Formation_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Nullable_TaleWorlds_Library_Vec3__System_Nullable_TaleWorlds_Library_Vec2__System_String_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.SpawnBannerBearer(TaleWorlds.Core.IAgentOriginBase,System.Boolean,TaleWorlds.MountAndBlade.Formation,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Nullable{TaleWorlds.Library.Vec3},System.Nullable{TaleWorlds.Library.Vec2},System.String,System.Boolean)">
+  SpawnBannerBearer(IAgentOriginBase, bool, Formation, bool, bool, int, int, bool, bool, bool, Vec3?, Vec2?, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent SpawnBannerBearer(IAgentOriginBase troopOrigin, bool isPlayerSide, Formation formation, bool spawnWithHorse, bool isReinforcement, int formationTroopCount, int formationTroopIndex, bool isAlarmed, bool wieldInitialWeapons, bool forceDismounted, Vec3? initialPosition, Vec2? initialDirection, string specialActionSetSuffix = null, bool useTroopClassForSpawn = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopOrigin</code> <a class="xref" href="TaleWorlds.Core.IAgentOriginBase.html">IAgentOriginBase</a></dt>
+    <dd></dd>
+    <dt><code>isPlayerSide</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>formation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a></dt>
+    <dd></dd>
+    <dt><code>spawnWithHorse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isReinforcement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>formationTroopCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>formationTroopIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isAlarmed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>wieldInitialWeapons</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>forceDismounted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>initialPosition</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a>?</dt>
+    <dd></dd>
+    <dt><code>initialDirection</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a>?</dt>
+    <dd></dd>
+    <dt><code>specialActionSetSuffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>useTroopClassForSpawn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_BannerBearerLogic_UpdateAgent_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.UpdateAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_UpdateAgent_TaleWorlds_MountAndBlade_Agent_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.UpdateAgent(TaleWorlds.MountAndBlade.Agent,System.Boolean)">
+  UpdateAgent(Agent, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAgent(Agent agent, bool willBecomeBannerBearer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>willBecomeBannerBearer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnBannerBearerAgentUpdated" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnBannerBearerAgentUpdated">
+  OnBannerBearerAgentUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;Agent, bool&gt; OnBannerBearerAgentUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_BannerBearerLogic_OnBannerBearersUpdated" data-uid="TaleWorlds.MountAndBlade.BannerBearerLogic.OnBannerBearersUpdated">
+  OnBannerBearersUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;Formation&gt; OnBannerBearersUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Formation.html">Formation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

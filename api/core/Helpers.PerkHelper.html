@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PerkHelper | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PerkHelper | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Helpers.PerkHelper">
+
+
+
+  <h1 id="Helpers_PerkHelper" data-uid="Helpers.PerkHelper" class="text-break">
+Class PerkHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PerkHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PerkHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Helpers_PerkHelper_AddEpicPerkBonusForCharacter_" data-uid="Helpers.PerkHelper.AddEpicPerkBonusForCharacter*"></a>
+
+  <h3 id="Helpers_PerkHelper_AddEpicPerkBonusForCharacter_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_Core_SkillObject_System_Boolean_TaleWorlds_CampaignSystem_ExplainedNumber__System_Int32_" data-uid="Helpers.PerkHelper.AddEpicPerkBonusForCharacter(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.Core.SkillObject,System.Boolean,TaleWorlds.CampaignSystem.ExplainedNumber@,System.Int32)">
+  AddEpicPerkBonusForCharacter(PerkObject, CharacterObject, SkillObject, bool, ref ExplainedNumber, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddEpicPerkBonusForCharacter(PerkObject perk, CharacterObject character, SkillObject skillType, bool applyPrimaryBonus, ref ExplainedNumber bonuses, int skillRequired)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>skillType</code> <a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a></dt>
+    <dd></dd>
+    <dt><code>applyPrimaryBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>bonuses</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+    <dt><code>skillRequired</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_AddPerkBonusForCharacter_" data-uid="Helpers.PerkHelper.AddPerkBonusForCharacter*"></a>
+
+  <h3 id="Helpers_PerkHelper_AddPerkBonusForCharacter_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_CharacterObject_System_Boolean_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="Helpers.PerkHelper.AddPerkBonusForCharacter(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.CharacterObject,System.Boolean,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  AddPerkBonusForCharacter(PerkObject, CharacterObject, bool, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPerkBonusForCharacter(PerkObject perk, CharacterObject character, bool isPrimaryBonus, ref ExplainedNumber bonuses)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>isPrimaryBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>bonuses</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_AddPerkBonusForParty_" data-uid="Helpers.PerkHelper.AddPerkBonusForParty*"></a>
+
+  <h3 id="Helpers_PerkHelper_AddPerkBonusForParty_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="Helpers.PerkHelper.AddPerkBonusForParty(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.Party.MobileParty,System.Boolean,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  AddPerkBonusForParty(PerkObject, MobileParty, bool, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPerkBonusForParty(PerkObject perk, MobileParty party, bool isPrimaryBonus, ref ExplainedNumber stat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>isPrimaryBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>stat</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_AddPerkBonusForTown_" data-uid="Helpers.PerkHelper.AddPerkBonusForTown*"></a>
+
+  <h3 id="Helpers_PerkHelper_AddPerkBonusForTown_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="Helpers.PerkHelper.AddPerkBonusForTown(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.Settlements.Town,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  AddPerkBonusForTown(PerkObject, Town, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPerkBonusForTown(PerkObject perk, Town town, ref ExplainedNumber bonuses)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+    <dt><code>bonuses</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_AddPerkBonusFromCaptain_" data-uid="Helpers.PerkHelper.AddPerkBonusFromCaptain*"></a>
+
+  <h3 id="Helpers_PerkHelper_AddPerkBonusFromCaptain_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_ExplainedNumber__" data-uid="Helpers.PerkHelper.AddPerkBonusFromCaptain(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.ExplainedNumber@)">
+  AddPerkBonusFromCaptain(PerkObject, CharacterObject, ref ExplainedNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPerkBonusFromCaptain(PerkObject perk, CharacterObject captainCharacter, ref ExplainedNumber bonuses)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>captainCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>bonuses</code> <a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_AvailablePerkCountOfHero_" data-uid="Helpers.PerkHelper.AvailablePerkCountOfHero*"></a>
+
+  <h3 id="Helpers_PerkHelper_AvailablePerkCountOfHero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.PerkHelper.AvailablePerkCountOfHero(TaleWorlds.CampaignSystem.Hero)">
+  AvailablePerkCountOfHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AvailablePerkCountOfHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_GetCaptainPerksForTroopUsages_" data-uid="Helpers.PerkHelper.GetCaptainPerksForTroopUsages*"></a>
+
+  <h3 id="Helpers_PerkHelper_GetCaptainPerksForTroopUsages_TaleWorlds_Core_TroopUsageFlags_" data-uid="Helpers.PerkHelper.GetCaptainPerksForTroopUsages(TaleWorlds.Core.TroopUsageFlags)">
+  GetCaptainPerksForTroopUsages(TroopUsageFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;PerkObject&gt; GetCaptainPerksForTroopUsages(TroopUsageFlags troopUsageFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopUsageFlags</code> <a class="xref" href="TaleWorlds.Core.TroopUsageFlags.html">TroopUsageFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_GetGovernorEngineeringSkillEffectForHero_" data-uid="Helpers.PerkHelper.GetGovernorEngineeringSkillEffectForHero*"></a>
+
+  <h3 id="Helpers_PerkHelper_GetGovernorEngineeringSkillEffectForHero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.PerkHelper.GetGovernorEngineeringSkillEffectForHero(TaleWorlds.CampaignSystem.Hero)">
+  GetGovernorEngineeringSkillEffectForHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (TextObject, TextObject) GetGovernorEngineeringSkillEffectForHero(Hero governor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>governor</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.localization.textobject,taleworlds.localization.textobject-.titletext">titleText</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.localization.textobject,taleworlds.localization.textobject-.bodytext">bodyText</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_GetGovernorPerksForHero_" data-uid="Helpers.PerkHelper.GetGovernorPerksForHero*"></a>
+
+  <h3 id="Helpers_PerkHelper_GetGovernorPerksForHero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.PerkHelper.GetGovernorPerksForHero(TaleWorlds.CampaignSystem.Hero)">
+  GetGovernorPerksForHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;PerkObject&gt; GetGovernorPerksForHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_GetPerkValueForTown_" data-uid="Helpers.PerkHelper.GetPerkValueForTown*"></a>
+
+  <h3 id="Helpers_PerkHelper_GetPerkValueForTown_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="Helpers.PerkHelper.GetPerkValueForTown(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,TaleWorlds.CampaignSystem.Settlements.Town)">
+  GetPerkValueForTown(PerkObject, Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPerkValueForTown(PerkObject perk, Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_PlayerHasAnyItemDonationPerk_" data-uid="Helpers.PerkHelper.PlayerHasAnyItemDonationPerk*"></a>
+
+  <h3 id="Helpers_PerkHelper_PlayerHasAnyItemDonationPerk" data-uid="Helpers.PerkHelper.PlayerHasAnyItemDonationPerk">
+  PlayerHasAnyItemDonationPerk()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PlayerHasAnyItemDonationPerk()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_PerkHelper_SetDescriptionTextVariable_" data-uid="Helpers.PerkHelper.SetDescriptionTextVariable*"></a>
+
+  <h3 id="Helpers_PerkHelper_SetDescriptionTextVariable_TaleWorlds_Localization_TextObject_System_Single_TaleWorlds_CampaignSystem_SkillEffect_EffectIncrementType_" data-uid="Helpers.PerkHelper.SetDescriptionTextVariable(TaleWorlds.Localization.TextObject,System.Single,TaleWorlds.CampaignSystem.SkillEffect.EffectIncrementType)">
+  SetDescriptionTextVariable(TextObject, float, EffectIncrementType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDescriptionTextVariable(TextObject description, float bonus, SkillEffect.EffectIncrementType effectIncrementType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>description</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>bonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>effectIncrementType</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.EffectIncrementType.html">EffectIncrementType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

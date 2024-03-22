@@ -1,0 +1,1664 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SPItemVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SPItemVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM" class="text-break">
+Class SPItemVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.html">Inventory</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SPItemVM : ItemVM, IViewModel, INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html">ItemVM</a></div>
+      <div><span class="xref">SPItemVM</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessEquipItem">ItemVM.ProcessEquipItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessPreviewItem">ItemVM.ProcessPreviewItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessUnequipItem">ItemVM.ProcessUnequipItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessBuyItem">ItemVM.ProcessBuyItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessItemSelect">ItemVM.ProcessItemSelect</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ProcessItemTooltip">ItemVM.ProcessItemTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ItemRosterElement">ItemVM.ItemRosterElement</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM__itemType">ItemVM._itemType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecutePreviewItem">ItemVM.ExecutePreviewItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteUnequipItem">ItemVM.ExecuteUnequipItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteEquipItem">ItemVM.ExecuteEquipItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ReleaseStaticContent">ItemVM.ReleaseStaticContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteRefreshTooltip">ItemVM.ExecuteRefreshTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteCancelTooltip">ItemVM.ExecuteCancelTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteBuyItem">ItemVM.ExecuteBuyItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ExecuteSelectItem">ItemVM.ExecuteSelectItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_GetItemTypeWithItemObject">ItemVM.GetItemTypeWithItemObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_SetItemTypeId">ItemVM.SetItemTypeId()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ItemType">ItemVM.ItemType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ImageIdentifier">ItemVM.ImageIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_StringId">ItemVM.StringId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ItemDescription">ItemVM.ItemDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_IsFiltered">ItemVM.IsFiltered</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_ItemCost">ItemVM.ItemCost</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_TypeId">ItemVM.TypeId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_PreviewHint">ItemVM.PreviewHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_EquipHint">ItemVM.EquipHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_SlaughterHint">ItemVM.SlaughterHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_DonateHint">ItemVM.DonateHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_BuyAndEquipHint">ItemVM.BuyAndEquipHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_SellHint">ItemVM.SellHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_BuyHint">ItemVM.BuyHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.ViewModelCollection.ItemVM.html#TaleWorlds_Core_ViewModelCollection_ItemVM_LockHint">ItemVM.LockHint</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnFinalize">ViewModel.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM__ctor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM__ctor" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.#ctor">
+  SPItemVM()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SPItemVM()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM__ctor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM__ctor_TaleWorlds_CampaignSystem_Inventory_InventoryLogic_System_Boolean_System_Boolean_TaleWorlds_CampaignSystem_Inventory_InventoryMode_TaleWorlds_Core_ItemRosterElement_TaleWorlds_CampaignSystem_Inventory_InventoryLogic_InventorySide_System_String_System_String_System_Int32_System_Nullable_TaleWorlds_Core_EquipmentIndex__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.#ctor(TaleWorlds.CampaignSystem.Inventory.InventoryLogic,System.Boolean,System.Boolean,TaleWorlds.CampaignSystem.Inventory.InventoryMode,TaleWorlds.Core.ItemRosterElement,TaleWorlds.CampaignSystem.Inventory.InventoryLogic.InventorySide,System.String,System.String,System.Int32,System.Nullable{TaleWorlds.Core.EquipmentIndex})">
+  SPItemVM(InventoryLogic, bool, bool, InventoryMode, ItemRosterElement, InventorySide, string, string, int, EquipmentIndex?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SPItemVM(InventoryLogic inventoryLogic, bool isHeroFemale, bool canCharacterUseItem, InventoryMode usageType, ItemRosterElement newItem, InventoryLogic.InventorySide inventorySide, string fiveStackShortcutKeyText, string entireStackShortcutKeyText, int itemCost = 0, EquipmentIndex? itemType = EquipmentIndex.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inventoryLogic</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a></dt>
+    <dd></dd>
+    <dt><code>isHeroFemale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canCharacterUseItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usageType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryMode.html">InventoryMode</a></dt>
+    <dd></dd>
+    <dt><code>newItem</code> <a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a></dt>
+    <dd></dd>
+    <dt><code>inventorySide</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.InventorySide.html">InventorySide</a></dt>
+    <dd></dd>
+    <dt><code>fiveStackShortcutKeyText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>entireStackShortcutKeyText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>itemCost</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>itemType</code> <a class="xref" href="TaleWorlds.Core.EquipmentIndex.html">EquipmentIndex</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_OnFocus" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.OnFocus">
+  OnFocus
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;SPItemVM&gt; OnFocus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProcessItemDonate" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProcessItemDonate">
+  ProcessItemDonate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;SPItemVM&gt; ProcessItemDonate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProcessItemSlaughter" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProcessItemSlaughter">
+  ProcessItemSlaughter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;SPItemVM&gt; ProcessItemSlaughter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProcessLockItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProcessLockItem">
+  ProcessLockItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;SPItemVM, bool&gt; ProcessLockItem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProcessSellItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProcessSellItem">
+  ProcessSellItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;SPItemVM, bool&gt; ProcessSellItem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanBeDonated_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanBeDonated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanBeDonated" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanBeDonated">
+  CanBeDonated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanBeDonated { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanBeSlaughtered_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanBeSlaughtered*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanBeSlaughtered" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanBeSlaughtered">
+  CanBeSlaughtered
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanBeSlaughtered { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanCharacterUseItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanCharacterUseItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_CanCharacterUseItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.CanCharacterUseItem">
+  CanCharacterUseItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanCharacterUseItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_InventorySide_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.InventorySide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_InventorySide" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.InventorySide">
+  InventorySide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryLogic.InventorySide InventorySide { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.InventorySide.html">InventorySide</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsArtifact_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsArtifact*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsArtifact" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsArtifact">
+  IsArtifact
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsArtifact { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsCivilianItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsCivilianItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsCivilianItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsCivilianItem">
+  IsCivilianItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCivilianItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsEquipableItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsEquipableItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsEquipableItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsEquipableItem">
+  IsEquipableItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsEquipableItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsFocused_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsFocused*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsFocused" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsFocused">
+  IsFocused
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsFocused { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsGenderDifferent_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsGenderDifferent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsGenderDifferent" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsGenderDifferent">
+  IsGenderDifferent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsGenderDifferent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsItemHighlightEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsItemHighlightEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsItemHighlightEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsItemHighlightEnabled">
+  IsItemHighlightEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsItemHighlightEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsLocked_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsLocked*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsLocked" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsLocked">
+  IsLocked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsLocked { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsNew_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsNew*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsNew" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsNew">
+  IsNew
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsNew { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsTransferButtonHighlighted_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsTransferButtonHighlighted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsTransferButtonHighlighted" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsTransferButtonHighlighted">
+  IsTransferButtonHighlighted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsTransferButtonHighlighted { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsTransferable_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsTransferable*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_IsTransferable" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.IsTransferable">
+  IsTransferable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsTransferable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ItemCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ItemCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ItemCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ItemCount">
+  ItemCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int ItemCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ItemLevel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ItemLevel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ItemLevel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ItemLevel">
+  ItemLevel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int ItemLevel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProfitType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProfitType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ProfitType" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProfitType">
+  ProfitType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int ProfitType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TotalCost_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TotalCost*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TotalCost" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TotalCost">
+  TotalCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int TotalCost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TradeData_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TradeData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TradeData" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TradeData">
+  TradeData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InventoryTradeVM TradeData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.InventoryTradeVM.html">InventoryTradeVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TransactionCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TransactionCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TransactionCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.TransactionCount">
+  TransactionCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int TransactionCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteBuySingle_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteBuySingle*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteBuySingle" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteBuySingle">
+  ExecuteBuySingle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteBuySingle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteConcept_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteConcept*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteConcept" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteConcept">
+  ExecuteConcept()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteConcept()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteDonateItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteDonateItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteDonateItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteDonateItem">
+  ExecuteDonateItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDonateItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteResetTrade_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteResetTrade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteResetTrade" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteResetTrade">
+  ExecuteResetTrade()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteResetTrade()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSellItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSellItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSellItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSellItem">
+  ExecuteSellItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSellItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSellSingle_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSellSingle*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSellSingle" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSellSingle">
+  ExecuteSellSingle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSellSingle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSetFocused_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSetFocused*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSetFocused" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSetFocused">
+  ExecuteSetFocused()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSetFocused()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSetUnfocused_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSetUnfocused*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSetUnfocused" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSetUnfocused">
+  ExecuteSetUnfocused()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSetUnfocused()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSlaughterItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSlaughterItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_ExecuteSlaughterItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ExecuteSlaughterItem">
+  ExecuteSlaughterItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteSlaughterItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_GetProfitTypeFromDiff_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.GetProfitTypeFromDiff*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_GetProfitTypeFromDiff_System_Single_System_Single_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.GetProfitTypeFromDiff(System.Single,System.Single)">
+  GetProfitTypeFromDiff(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SPItemVM.ProfitTypes GetProfitTypeFromDiff(float averageValue, float currentValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>averageValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>currentValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.ProfitTypes.html">ProfitTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_RefreshValues_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_RefreshValues" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_RefreshWith_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.RefreshWith*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_RefreshWith_TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_TaleWorlds_CampaignSystem_Inventory_InventoryLogic_InventorySide_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.RefreshWith(TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM,TaleWorlds.CampaignSystem.Inventory.InventoryLogic.InventorySide)">
+  RefreshWith(SPItemVM, InventorySide)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshWith(SPItemVM itemVM, InventoryLogic.InventorySide inventorySide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemVM</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.html">SPItemVM</a></dt>
+    <dd></dd>
+    <dt><code>inventorySide</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.InventorySide.html">InventorySide</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateCanBeSlaughtered_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateCanBeSlaughtered*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateCanBeSlaughtered" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateCanBeSlaughtered">
+  UpdateCanBeSlaughtered()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCanBeSlaughtered()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateHintTexts_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateHintTexts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateHintTexts" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateHintTexts">
+  UpdateHintTexts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateHintTexts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateTradeData_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateTradeData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Inventory_SPItemVM_UpdateTradeData_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Inventory.SPItemVM.UpdateTradeData(System.Boolean)">
+  UpdateTradeData(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTradeData(bool forceUpdateAmounts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forceUpdateAmounts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

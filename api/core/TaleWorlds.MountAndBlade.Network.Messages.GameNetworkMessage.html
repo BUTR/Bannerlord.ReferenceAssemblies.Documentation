@@ -1,0 +1,2366 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameNetworkMessage | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameNetworkMessage | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage" class="text-break">
+Class GameNetworkMessage  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Network.html">Network</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Network.Messages.html">Messages</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GameNetworkMessage</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GameNetworkMessage</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminMuteUnmutePlayer.html">AdminMuteUnmutePlayer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminRequestAnnouncement.html">AdminRequestAnnouncement</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminRequestClassRestrictionChange.html">AdminRequestClassRestrictionChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminRequestEndMission.html">AdminRequestEndMission</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminRequestEndWarmup.html">AdminRequestEndWarmup</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AdminUpdateMultiplayerOptions.html">AdminUpdateMultiplayerOptions</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.AgentVisualsBreakInvulnerability.html">AgentVisualsBreakInvulnerability</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrder.html">ApplyOrder</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithAgent.html">ApplyOrderWithAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithFormation.html">ApplyOrderWithFormation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithFormationAndNumber.html">ApplyOrderWithFormationAndNumber</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithFormationAndPercentage.html">ApplyOrderWithFormationAndPercentage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithMissionObject.html">ApplyOrderWithMissionObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithPosition.html">ApplyOrderWithPosition</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplyOrderWithTwoPositions.html">ApplyOrderWithTwoPositions</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ApplySiegeWeaponOrder.html">ApplySiegeWeaponOrder</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.BarkSelected.html">BarkSelected</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.CancelCheering.html">CancelCheering</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ChangeGamePoll.html">ChangeGamePoll</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ChangeWelcomeMessage.html">ChangeWelcomeMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.ClearSelectedFormations.html">ClearSelectedFormations</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.CreateBanner.html">CreateBanner</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.CultureVoteClient.html">CultureVoteClient</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.DropWeapon.html">DropWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.DuelRequest.html">DuelRequest</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.DuelResponse.html">DuelResponse</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.FinishedLoading.html">FinishedLoading</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.IntermissionVote.html">IntermissionVote</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.KickPlayer.html">KickPlayer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.KickPlayerPollRequested.html">KickPlayerPollRequested</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.PlayerMessageAll.html">PlayerMessageAll</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.PlayerMessageTeam.html">PlayerMessageTeam</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.PollResponse.html">PollResponse</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestChangeCharacterMessage.html">RequestChangeCharacterMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestChangePreferredTroopType.html">RequestChangePreferredTroopType</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestCultureChange.html">RequestCultureChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestForfeitSpawn.html">RequestForfeitSpawn</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestPerkChange.html">RequestPerkChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestStopUsingObject.html">RequestStopUsingObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestToSpawnAsBot.html">RequestToSpawnAsBot</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestTroopIndexChange.html">RequestTroopIndexChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.RequestUseObject.html">RequestUseObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SelectAllFormations.html">SelectAllFormations</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SelectAllSiegeWeapons.html">SelectAllSiegeWeapons</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SelectFormation.html">SelectFormation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SelectSiegeWeapon.html">SelectSiegeWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SendVoiceRecord.html">SendVoiceRecord</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SetFollowedAgent.html">SetFollowedAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SetMachineRotation.html">SetMachineRotation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.SyncRelevantGameOptionsToServer.html">SyncRelevantGameOptionsToServer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.TauntSelected.html">TauntSelected</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.TeamChange.html">TeamChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.TeamInitialPerkInfoMessage.html">TeamInitialPerkInfoMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.UnselectFormation.html">UnselectFormation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromClient.UnselectSiegeWeapon.html">UnselectSiegeWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AddMissionObjectBodyFlags.html">AddMissionObjectBodyFlags</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AddPeerComponent.html">AddPeerComponent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AddPrefabComponentToAgentBone.html">AddPrefabComponentToAgentBone</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AddTeam.html">AddTeam</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AgentSetFormation.html">AgentSetFormation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AgentSetTeam.html">AgentSetTeam</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AgentTeleportToFrame.html">AgentTeleportToFrame</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AssignFormationToPlayer.html">AssignFormationToPlayer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AttachWeaponToAgent.html">AttachWeaponToAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AttachWeaponToSpawnedWeapon.html">AttachWeaponToSpawnedWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.AttachWeaponToWeaponInAgentEquipmentSlot.html">AttachWeaponToWeaponInAgentEquipmentSlot</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.BarkAgent.html">BarkAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.BotData.html">BotData</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.BotsControlledChange.html">BotsControlledChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.BurstAllHeavyHitParticles.html">BurstAllHeavyHitParticles</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.BurstMissionObjectParticles.html">BurstMissionObjectParticles</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ChangeClassRestrictions.html">ChangeClassRestrictions</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ChangeCulture.html">ChangeCulture</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ChangeGamePoll.html">ChangeGamePoll</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ClearAgentTargetFrame.html">ClearAgentTargetFrame</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ClearMission.html">ClearMission</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CombatLogNetworkMessage.html">CombatLogNetworkMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ConsumeWeaponAmount.html">ConsumeWeaponAmount</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateAgent.html">CreateAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateAgentVisuals.html">CreateAgentVisuals</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateBanner.html">CreateBanner</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateFreeMountAgent.html">CreateFreeMountAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateMissile.html">CreateMissile</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CreateMissionObject.html">CreateMissionObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.CultureVoteServer.html">CultureVoteServer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelEnded.html">DuelEnded</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelPointsUpdateMessage.html">DuelPointsUpdateMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelPreparationStartedForTheFirstTime.html">DuelPreparationStartedForTheFirstTime</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelRequest.html">DuelRequest</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelRoundEnded.html">DuelRoundEnded</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.DuelSessionStarted.html">DuelSessionStarted</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.EquipEquipmentToPeer.html">EquipEquipmentToPeer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.EquipWeaponFromSpawnedItemEntity.html">EquipWeaponFromSpawnedItemEntity</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.EquipWeaponWithNewEntity.html">EquipWeaponWithNewEntity</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ExistingObjectsBegin.html">ExistingObjectsBegin</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ExistingObjectsEnd.html">ExistingObjectsEnd</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.FlagDominationCapturePointMessage.html">FlagDominationCapturePointMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.FlagDominationFlagsRemovedMessage.html">FlagDominationFlagsRemovedMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.FlagDominationMoraleChangeMessage.html">FlagDominationMoraleChangeMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.FlagRaisingStatus.html">FlagRaisingStatus</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.FormationWipedMessage.html">FormationWipedMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.GoldGain.html">GoldGain</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.HandleMissileCollisionReaction.html">HandleMissileCollisionReaction</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.InitializeCustomGameMessage.html">InitializeCustomGameMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.InitializeFormation.html">InitializeFormation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.InitializeLobbyPeer.html">InitializeLobbyPeer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.KickPlayerPollClosed.html">KickPlayerPollClosed</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.KickPlayerPollOpened.html">KickPlayerPollOpened</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.KillDeathCountChange.html">KillDeathCountChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.LoadMission.html">LoadMission</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.LossReplicationMessage.html">LossReplicationMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MakeAgentDead.html">MakeAgentDead</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MissionStateChange.html">MissionStateChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionCultureItemAdded.html">MultiplayerIntermissionCultureItemAdded</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionCultureItemVoteCountChanged.html">MultiplayerIntermissionCultureItemVoteCountChanged</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionMapItemAdded.html">MultiplayerIntermissionMapItemAdded</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionMapItemVoteCountChanged.html">MultiplayerIntermissionMapItemVoteCountChanged</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionUpdate.html">MultiplayerIntermissionUpdate</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerIntermissionUsableMapAdded.html">MultiplayerIntermissionUsableMapAdded</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerOptionsDefault.html">MultiplayerOptionsDefault</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerOptionsImmediate.html">MultiplayerOptionsImmediate</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.MultiplayerOptionsInitial.html">MultiplayerOptionsInitial</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.NotificationMessage.html">NotificationMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PingReplication.html">PingReplication</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PlayerMessageAll.html">PlayerMessageAll</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PlayerMessageTeam.html">PlayerMessageTeam</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PollCancelled.html">PollCancelled</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PollProgress.html">PollProgress</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.PollRequestRejected.html">PollRequestRejected</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RangedSiegeWeaponChangeProjectile.html">RangedSiegeWeaponChangeProjectile</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemoveAgentVisualsForPeer.html">RemoveAgentVisualsForPeer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemoveAgentVisualsFromIndexForPeer.html">RemoveAgentVisualsFromIndexForPeer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemoveEquippedWeapon.html">RemoveEquippedWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemoveMissionObject.html">RemoveMissionObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemoveMissionObjectBodyFlags.html">RemoveMissionObjectBodyFlags</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RemovePeerComponent.html">RemovePeerComponent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ReplaceBotWithPlayer.html">ReplaceBotWithPlayer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RoundCountChange.html">RoundCountChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RoundEndReasonChange.html">RoundEndReasonChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RoundStateChange.html">RoundStateChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.RoundWinnerChange.html">RoundWinnerChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SendVoiceToPlay.html">SendVoiceToPlay</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ServerAdminMessage.html">ServerAdminMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ServerMessage.html">ServerMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.ServerPerformanceStateReplicationMessage.html">ServerPerformanceStateReplicationMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentActionSet.html">SetAgentActionSet</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentHealth.html">SetAgentHealth</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentIsPlayer.html">SetAgentIsPlayer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentPeer.html">SetAgentPeer</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentPrefabComponentVisibility.html">SetAgentPrefabComponentVisibility</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentTargetPosition.html">SetAgentTargetPosition</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetAgentTargetPositionAndDirection.html">SetAgentTargetPositionAndDirection</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetBatteringRamHasArrivedAtTarget.html">SetBatteringRamHasArrivedAtTarget</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetBoundariesState.html">SetBoundariesState</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMachineTargetRotation.html">SetMachineTargetRotation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectAnimationAtChannel.html">SetMissionObjectAnimationAtChannel</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectAnimationChannelParameter.html">SetMissionObjectAnimationChannelParameter</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectAnimationPaused.html">SetMissionObjectAnimationPaused</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectColors.html">SetMissionObjectColors</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectDisabled.html">SetMissionObjectDisabled</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectFrame.html">SetMissionObjectFrame</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectFrameOverTime.html">SetMissionObjectFrameOverTime</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectGlobalFrame.html">SetMissionObjectGlobalFrame</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectGlobalFrameOverTime.html">SetMissionObjectGlobalFrameOverTime</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectImpulse.html">SetMissionObjectImpulse</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectVertexAnimation.html">SetMissionObjectVertexAnimation</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectVertexAnimationProgress.html">SetMissionObjectVertexAnimationProgress</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetMissionObjectVisibility.html">SetMissionObjectVisibility</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetPeerTeam.html">SetPeerTeam</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetRangedSiegeWeaponAmmo.html">SetRangedSiegeWeaponAmmo</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetRangedSiegeWeaponState.html">SetRangedSiegeWeaponState</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetRoundMVP.html">SetRoundMVP</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetSiegeLadderState.html">SetSiegeLadderState</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetSiegeMachineMovementDistance.html">SetSiegeMachineMovementDistance</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetSiegeTowerGateState.html">SetSiegeTowerGateState</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetSiegeTowerHasArrivedAtTarget.html">SetSiegeTowerHasArrivedAtTarget</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetSpawnedFormationCount.html">SetSpawnedFormationCount</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetStonePileAmmo.html">SetStonePileAmmo</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetUsableMissionObjectIsDeactivated.html">SetUsableMissionObjectIsDeactivated</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetUsableMissionObjectIsDisabledForPlayers.html">SetUsableMissionObjectIsDisabledForPlayers</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetWeaponAmmoData.html">SetWeaponAmmoData</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetWeaponNetworkData.html">SetWeaponNetworkData</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetWeaponReloadPhase.html">SetWeaponReloadPhase</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SetWieldedItemIndex.html">SetWieldedItemIndex</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SiegeMoraleChangeMessage.html">SiegeMoraleChangeMessage</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SpawnAttachedWeaponOnCorpse.html">SpawnAttachedWeaponOnCorpse</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SpawnAttachedWeaponOnSpawnedWeapon.html">SpawnAttachedWeaponOnSpawnedWeapon</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SpawnWeaponAsDropFromAgent.html">SpawnWeaponAsDropFromAgent</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SpawnWeaponWithNewEntity.html">SpawnWeaponWithNewEntity</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.StartSwitchingWeaponUsageIndex.html">StartSwitchingWeaponUsageIndex</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.StopPhysicsAndSetFrameOfMissionObject.html">StopPhysicsAndSetFrameOfMissionObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.StopUsingObject.html">StopUsingObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncGoldsForSkirmish.html">SyncGoldsForSkirmish</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncMutedPlayers.html">SyncMutedPlayers</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncObjectDestructionLevel.html">SyncObjectDestructionLevel</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncObjectHitpoints.html">SyncObjectHitpoints</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncPerksForCurrentlySelectedTroop.html">SyncPerksForCurrentlySelectedTroop</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SyncPlayerMuteState.html">SyncPlayerMuteState</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SynchronizeAgentSpawnEquipment.html">SynchronizeAgentSpawnEquipment</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SynchronizeMissionObject.html">SynchronizeMissionObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SynchronizeMissionTimeTracker.html">SynchronizeMissionTimeTracker</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.SynchronizingDone.html">SynchronizingDone</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.TeamSetIsEnemyOf.html">TeamSetIsEnemyOf</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.UnloadMission.html">UnloadMission</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.UpdateIntermissionVotingManagerValues.html">UpdateIntermissionVotingManagerValues</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.UpdateRoundScores.html">UpdateRoundScores</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.UpdateSelectedTroopIndex.html">UpdateSelectedTroopIndex</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.UseObject.html">UseObject</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.WarmupStateChange.html">WarmupStateChange</a></div>
+      <div><a class="xref" href="NetworkMessages.FromServer.WeaponUsageIndexChangeMessage.html">WeaponUsageIndexChangeMessage</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Network.Messages.CreatePlayer.html">CreatePlayer</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.Network.Messages.DeletePlayer.html">DeletePlayer</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage__ctor_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage__ctor" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.#ctor">
+  GameNetworkMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameNetworkMessage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_IsClientMissionOver_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.IsClientMissionOver*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_IsClientMissionOver" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.IsClientMissionOver">
+  IsClientMissionOver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsClientMissionOver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_MessageId_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.MessageId*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_MessageId" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.MessageId">
+  MessageId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MessageId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnGetLogFilter_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnGetLogFilter*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnGetLogFilter" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnGetLogFilter">
+  OnGetLogFilter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract MultiplayerMessageFilter OnGetLogFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MultiplayerMessageFilter.html">MultiplayerMessageFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnGetLogFormat_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnGetLogFormat*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnGetLogFormat" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnGetLogFormat">
+  OnGetLogFormat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string OnGetLogFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnRead_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnRead*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnRead" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnRead">
+  OnRead()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool OnRead()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnWrite_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnWrite*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_OnWrite" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.OnWrite">
+  OnWrite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnWrite()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadActionSetReferenceFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadActionSetReferenceFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadActionSetReferenceFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Integer_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadActionSetReferenceFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Integer,System.Boolean@)">
+  ReadActionSetReferenceFromPacket(Integer, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBActionSet ReadActionSetReferenceFromPacket(CompressionInfo.Integer compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Integer.html">Integer</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MBActionSet.html">MBActionSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadAgentIndexFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadAgentIndexFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadAgentIndexFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadAgentIndexFromPacket(System.Boolean@)">
+  ReadAgentIndexFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadAgentIndexFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBannerCodeFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBannerCodeFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBannerCodeFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBannerCodeFromPacket(System.Boolean@)">
+  ReadBannerCodeFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadBannerCodeFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBodyPropertiesFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBodyPropertiesFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBodyPropertiesFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBodyPropertiesFromPacket(System.Boolean@)">
+  ReadBodyPropertiesFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BodyProperties ReadBodyPropertiesFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BodyProperties.html">BodyProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBoolFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBoolFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadBoolFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadBoolFromPacket(System.Boolean@)">
+  ReadBoolFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadBoolFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadByteArrayFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadByteArrayFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadByteArrayFromPacket_System_Byte___System_Int32_System_Int32_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadByteArrayFromPacket(System.Byte[],System.Int32,System.Int32,System.Boolean@)">
+  ReadByteArrayFromPacket(byte[], int, int, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadByteArrayFromPacket(byte[] buffer, int offset, int bufferCapacity, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>bufferCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadFloatFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadFloatFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadFloatFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadFloatFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadFloatFromPacket(Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ReadFloatFromPacket(CompressionInfo.Float compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadIntFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadIntFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadIntFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Integer_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadIntFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Integer,System.Boolean@)">
+  ReadIntFromPacket(Integer, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadIntFromPacket(CompressionInfo.Integer compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Integer.html">Integer</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadLongFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadLongFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadLongFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_LongInteger_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadLongFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.LongInteger,System.Boolean@)">
+  ReadLongFromPacket(LongInteger, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ReadLongFromPacket(CompressionInfo.LongInteger compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.LongInteger.html">LongInteger</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadMatrixFrameFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadMatrixFrameFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadMatrixFrameFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadMatrixFrameFromPacket(System.Boolean@)">
+  ReadMatrixFrameFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixFrame ReadMatrixFrameFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadMissionObjectIdFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadMissionObjectIdFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadMissionObjectIdFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadMissionObjectIdFromPacket(System.Boolean@)">
+  ReadMissionObjectIdFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MissionObjectId ReadMissionObjectIdFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MissionObjectId.html">MissionObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadNetworkPeerReferenceFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadNetworkPeerReferenceFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadNetworkPeerReferenceFromPacket_System_Boolean__System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadNetworkPeerReferenceFromPacket(System.Boolean@,System.Boolean)">
+  ReadNetworkPeerReferenceFromPacket(ref bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkCommunicator ReadNetworkPeerReferenceFromPacket(ref bool bufferReadValid, bool canReturnNull = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canReturnNull</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.NetworkCommunicator.html">NetworkCommunicator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadNonUniformTransformFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadNonUniformTransformFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadNonUniformTransformFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadNonUniformTransformFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadNonUniformTransformFromPacket(Float, Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixFrame ReadNonUniformTransformFromPacket(CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadObjectReferenceFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadObjectReferenceFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadObjectReferenceFromPacket_TaleWorlds_ObjectSystem_MBObjectManager_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedInteger_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadObjectReferenceFromPacket(TaleWorlds.ObjectSystem.MBObjectManager,TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger,System.Boolean@)">
+  ReadObjectReferenceFromPacket(MBObjectManager, UnsignedInteger, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBObjectBase ReadObjectReferenceFromPacket(MBObjectManager objectManager, CompressionInfo.UnsignedInteger compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectManager</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger.html">UnsignedInteger</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadQuaternionFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadQuaternionFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadQuaternionFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadQuaternionFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadQuaternionFromPacket(Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion ReadQuaternionFromPacket(CompressionInfo.Float compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadRotationMatrixFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadRotationMatrixFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadRotationMatrixFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadRotationMatrixFromPacket(System.Boolean@)">
+  ReadRotationMatrixFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mat3 ReadRotationMatrixFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Mat3.html">Mat3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadStringFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadStringFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadStringFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadStringFromPacket(System.Boolean@)">
+  ReadStringFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadStringFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadTeamIndexFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadTeamIndexFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadTeamIndexFromPacket_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadTeamIndexFromPacket(System.Boolean@)">
+  ReadTeamIndexFromPacket(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadTeamIndexFromPacket(ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadTransformFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadTransformFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadTransformFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadTransformFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadTransformFromPacket(Float, Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixFrame ReadTransformFromPacket(CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUintFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUintFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUintFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedInteger_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUintFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger,System.Boolean@)">
+  ReadUintFromPacket(UnsignedInteger, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint ReadUintFromPacket(CompressionInfo.UnsignedInteger compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger.html">UnsignedInteger</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUlongFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUlongFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUlongFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedLongInteger_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUlongFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.UnsignedLongInteger,System.Boolean@)">
+  ReadUlongFromPacket(UnsignedLongInteger, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong ReadUlongFromPacket(CompressionInfo.UnsignedLongInteger compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedLongInteger.html">UnsignedLongInteger</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUnitTransformFromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUnitTransformFromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadUnitTransformFromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadUnitTransformFromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadUnitTransformFromPacket(Float, Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixFrame ReadUnitTransformFromPacket(CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVec2FromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVec2FromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVec2FromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVec2FromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadVec2FromPacket(Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec2 ReadVec2FromPacket(CompressionInfo.Float compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVec3FromPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVec3FromPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVec3FromPacket_TaleWorlds_MountAndBlade_CompressionInfo_Float_System_Boolean__" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVec3FromPacket(TaleWorlds.MountAndBlade.CompressionInfo.Float,System.Boolean@)">
+  ReadVec3FromPacket(Float, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vec3 ReadVec3FromPacket(CompressionInfo.Float compressionInfo, ref bool bufferReadValid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVirtualPlayerReferenceToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVirtualPlayerReferenceToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_ReadVirtualPlayerReferenceToPacket_System_Boolean__System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.ReadVirtualPlayerReferenceToPacket(System.Boolean@,System.Boolean)">
+  ReadVirtualPlayerReferenceToPacket(ref bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VirtualPlayer ReadVirtualPlayerReferenceToPacket(ref bool bufferReadValid, bool canReturnNull = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferReadValid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canReturnNull</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.VirtualPlayer.html">VirtualPlayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteActionSetReferenceToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteActionSetReferenceToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteActionSetReferenceToPacket_TaleWorlds_MountAndBlade_MBActionSet_TaleWorlds_MountAndBlade_CompressionInfo_Integer_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteActionSetReferenceToPacket(TaleWorlds.MountAndBlade.MBActionSet,TaleWorlds.MountAndBlade.CompressionInfo.Integer)">
+  WriteActionSetReferenceToPacket(MBActionSet, Integer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteActionSetReferenceToPacket(MBActionSet actionSet, CompressionInfo.Integer compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actionSet</code> <a class="xref" href="TaleWorlds.MountAndBlade.MBActionSet.html">MBActionSet</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Integer.html">Integer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteAgentIndexToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteAgentIndexToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteAgentIndexToPacket_System_Int32_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteAgentIndexToPacket(System.Int32)">
+  WriteAgentIndexToPacket(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAgentIndexToPacket(int agentIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBannerCodeToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBannerCodeToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBannerCodeToPacket_System_String_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBannerCodeToPacket(System.String)">
+  WriteBannerCodeToPacket(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteBannerCodeToPacket(string bannerCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bannerCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBodyPropertiesToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBodyPropertiesToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBodyPropertiesToPacket_TaleWorlds_Core_BodyProperties_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBodyPropertiesToPacket(TaleWorlds.Core.BodyProperties)">
+  WriteBodyPropertiesToPacket(BodyProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteBodyPropertiesToPacket(BodyProperties bodyProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyProperties</code> <a class="xref" href="TaleWorlds.Core.BodyProperties.html">BodyProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBoolToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBoolToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteBoolToPacket_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteBoolToPacket(System.Boolean)">
+  WriteBoolToPacket(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteBoolToPacket(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteByteArrayToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteByteArrayToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteByteArrayToPacket_System_Byte___System_Int32_System_Int32_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteByteArrayToPacket(System.Byte[],System.Int32,System.Int32)">
+  WriteByteArrayToPacket(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteByteArrayToPacket(byte[] value, int offset, int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteFloatToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteFloatToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteFloatToPacket_System_Single_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteFloatToPacket(System.Single,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteFloatToPacket(float, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteFloatToPacket(float value, CompressionInfo.Float compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteIntToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteIntToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteIntToPacket_System_Int32_TaleWorlds_MountAndBlade_CompressionInfo_Integer_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteIntToPacket(System.Int32,TaleWorlds.MountAndBlade.CompressionInfo.Integer)">
+  WriteIntToPacket(int, Integer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteIntToPacket(int value, CompressionInfo.Integer compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Integer.html">Integer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteLongToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteLongToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteLongToPacket_System_Int64_TaleWorlds_MountAndBlade_CompressionInfo_LongInteger_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteLongToPacket(System.Int64,TaleWorlds.MountAndBlade.CompressionInfo.LongInteger)">
+  WriteLongToPacket(long, LongInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteLongToPacket(long value, CompressionInfo.LongInteger compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.LongInteger.html">LongInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteMatrixFrameToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteMatrixFrameToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteMatrixFrameToPacket_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteMatrixFrameToPacket(TaleWorlds.Library.MatrixFrame)">
+  WriteMatrixFrameToPacket(MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteMatrixFrameToPacket(MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteMissionObjectIdToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteMissionObjectIdToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteMissionObjectIdToPacket_TaleWorlds_MountAndBlade_MissionObjectId_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteMissionObjectIdToPacket(TaleWorlds.MountAndBlade.MissionObjectId)">
+  WriteMissionObjectIdToPacket(MissionObjectId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteMissionObjectIdToPacket(MissionObjectId value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionObjectId.html">MissionObjectId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteNetworkPeerReferenceToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteNetworkPeerReferenceToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteNetworkPeerReferenceToPacket_TaleWorlds_MountAndBlade_NetworkCommunicator_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteNetworkPeerReferenceToPacket(TaleWorlds.MountAndBlade.NetworkCommunicator)">
+  WriteNetworkPeerReferenceToPacket(NetworkCommunicator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteNetworkPeerReferenceToPacket(NetworkCommunicator networkCommunicator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkCommunicator</code> <a class="xref" href="TaleWorlds.MountAndBlade.NetworkCommunicator.html">NetworkCommunicator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteNonUniformTransformToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteNonUniformTransformToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteNonUniformTransformToPacket_TaleWorlds_Library_MatrixFrame_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteNonUniformTransformToPacket(TaleWorlds.Library.MatrixFrame,TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteNonUniformTransformToPacket(MatrixFrame, Float, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteNonUniformTransformToPacket(MatrixFrame frame, CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteObjectReferenceToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteObjectReferenceToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteObjectReferenceToPacket_TaleWorlds_ObjectSystem_MBObjectBase_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedInteger_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteObjectReferenceToPacket(TaleWorlds.ObjectSystem.MBObjectBase,TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger)">
+  WriteObjectReferenceToPacket(MBObjectBase, UnsignedInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteObjectReferenceToPacket(MBObjectBase value, CompressionInfo.UnsignedInteger compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger.html">UnsignedInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteQuaternionToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteQuaternionToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteQuaternionToPacket_TaleWorlds_Library_Quaternion_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteQuaternionToPacket(TaleWorlds.Library.Quaternion,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteQuaternionToPacket(Quaternion, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteQuaternionToPacket(Quaternion q, CompressionInfo.Float compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>q</code> <a class="xref" href="TaleWorlds.Library.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteRotationMatrixToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteRotationMatrixToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteRotationMatrixToPacket_TaleWorlds_Library_Mat3_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteRotationMatrixToPacket(TaleWorlds.Library.Mat3)">
+  WriteRotationMatrixToPacket(Mat3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRotationMatrixToPacket(Mat3 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.Library.Mat3.html">Mat3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteStringToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteStringToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteStringToPacket_System_String_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteStringToPacket(System.String)">
+  WriteStringToPacket(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteStringToPacket(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteTeamIndexToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteTeamIndexToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteTeamIndexToPacket_System_Int32_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteTeamIndexToPacket(System.Int32)">
+  WriteTeamIndexToPacket(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteTeamIndexToPacket(int teamIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteTransformToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteTransformToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteTransformToPacket_TaleWorlds_Library_MatrixFrame_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteTransformToPacket(TaleWorlds.Library.MatrixFrame,TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteTransformToPacket(MatrixFrame, Float, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteTransformToPacket(MatrixFrame frame, CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUintToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUintToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUintToPacket_System_UInt32_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedInteger_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUintToPacket(System.UInt32,TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger)">
+  WriteUintToPacket(uint, UnsignedInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteUintToPacket(uint value, CompressionInfo.UnsignedInteger compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedInteger.html">UnsignedInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUlongToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUlongToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUlongToPacket_System_UInt64_TaleWorlds_MountAndBlade_CompressionInfo_UnsignedLongInteger_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUlongToPacket(System.UInt64,TaleWorlds.MountAndBlade.CompressionInfo.UnsignedLongInteger)">
+  WriteUlongToPacket(ulong, UnsignedLongInteger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteUlongToPacket(ulong value, CompressionInfo.UnsignedLongInteger compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.UnsignedLongInteger.html">UnsignedLongInteger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUnitTransformToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUnitTransformToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteUnitTransformToPacket_TaleWorlds_Library_MatrixFrame_TaleWorlds_MountAndBlade_CompressionInfo_Float_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteUnitTransformToPacket(TaleWorlds.Library.MatrixFrame,TaleWorlds.MountAndBlade.CompressionInfo.Float,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteUnitTransformToPacket(MatrixFrame, Float, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteUnitTransformToPacket(MatrixFrame frame, CompressionInfo.Float positionCompressionInfo, CompressionInfo.Float quaternionCompressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>positionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+    <dt><code>quaternionCompressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVec2ToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVec2ToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVec2ToPacket_TaleWorlds_Library_Vec2_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVec2ToPacket(TaleWorlds.Library.Vec2,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteVec2ToPacket(Vec2, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteVec2ToPacket(Vec2 value, CompressionInfo.Float compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVec3ToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVec3ToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVec3ToPacket_TaleWorlds_Library_Vec3_TaleWorlds_MountAndBlade_CompressionInfo_Float_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVec3ToPacket(TaleWorlds.Library.Vec3,TaleWorlds.MountAndBlade.CompressionInfo.Float)">
+  WriteVec3ToPacket(Vec3, Float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteVec3ToPacket(Vec3 value, CompressionInfo.Float compressionInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>compressionInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.html">CompressionInfo</a>.<a class="xref" href="TaleWorlds.MountAndBlade.CompressionInfo.Float.html">Float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVirtualPlayerReferenceToPacket_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVirtualPlayerReferenceToPacket*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Network_Messages_GameNetworkMessage_WriteVirtualPlayerReferenceToPacket_TaleWorlds_Core_VirtualPlayer_" data-uid="TaleWorlds.MountAndBlade.Network.Messages.GameNetworkMessage.WriteVirtualPlayerReferenceToPacket(TaleWorlds.Core.VirtualPlayer)">
+  WriteVirtualPlayerReferenceToPacket(VirtualPlayer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteVirtualPlayerReferenceToPacket(VirtualPlayer virtualPlayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>virtualPlayer</code> <a class="xref" href="TaleWorlds.Core.VirtualPlayer.html">VirtualPlayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

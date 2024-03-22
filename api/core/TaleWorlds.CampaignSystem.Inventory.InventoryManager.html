@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InventoryManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InventoryManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager" class="text-break">
+Class InventoryManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.html">Inventory</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InventoryManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">InventoryManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager__ctor_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager__ctor" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.#ctor">
+  InventoryManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_CurrentMode_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.CurrentMode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_CurrentMode" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.CurrentMode">
+  CurrentMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryMode CurrentMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryMode.html">InventoryMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_Instance_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.Instance*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_Instance" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InventoryManager Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_InventoryLogic_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryLogic*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_InventoryLogic" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryLogic">
+  InventoryLogic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InventoryLogic InventoryLogic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_ActivateTradeWithCurrentSettlement_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.ActivateTradeWithCurrentSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_ActivateTradeWithCurrentSettlement" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.ActivateTradeWithCurrentSettlement">
+  ActivateTradeWithCurrentSettlement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ActivateTradeWithCurrentSettlement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_CloseInventoryPresentation_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.CloseInventoryPresentation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_CloseInventoryPresentation_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.CloseInventoryPresentation(System.Boolean)">
+  CloseInventoryPresentation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseInventoryPresentation(bool fromCancel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromCancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_GetInventoryItemTypeOfItem_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.GetInventoryItemTypeOfItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_GetInventoryItemTypeOfItem_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.GetInventoryItemTypeOfItem(TaleWorlds.Core.ItemObject)">
+  GetInventoryItemTypeOfItem(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InventoryItemType GetInventoryItemTypeOfItem(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryItemType.html">InventoryItemType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenCampaignBattleLootScreen_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenCampaignBattleLootScreen*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenCampaignBattleLootScreen" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenCampaignBattleLootScreen">
+  OpenCampaignBattleLootScreen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenCampaignBattleLootScreen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventory_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventory*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventory_TaleWorlds_CampaignSystem_Inventory_InventoryManager_DoneLogicExtrasDelegate_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventory(TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate)">
+  OpenScreenAsInventory(DoneLogicExtrasDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsInventory(InventoryManager.DoneLogicExtrasDelegate doneLogicExtrasDelegate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doneLogicExtrasDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate.html">DoneLogicExtrasDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryForCraftedItemDecomposition_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryForCraftedItemDecomposition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryForCraftedItemDecomposition_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_Inventory_InventoryManager_DoneLogicExtrasDelegate_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryForCraftedItemDecomposition(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate)">
+  OpenScreenAsInventoryForCraftedItemDecomposition(MobileParty, CharacterObject, DoneLogicExtrasDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsInventoryForCraftedItemDecomposition(MobileParty party, CharacterObject character, InventoryManager.DoneLogicExtrasDelegate doneLogicExtrasDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>doneLogicExtrasDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate.html">DoneLogicExtrasDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOf_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOf*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOf_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOf(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.CharacterObject)">
+  OpenScreenAsInventoryOf(MobileParty, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsInventoryOf(MobileParty party, CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOf_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOf*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOf_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOf(TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  OpenScreenAsInventoryOf(PartyBase, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsInventoryOf(PartyBase rightParty, PartyBase leftParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rightParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>leftParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOfSubParty_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOfSubParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsInventoryOfSubParty_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Inventory_InventoryManager_DoneLogicExtrasDelegate_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsInventoryOfSubParty(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate)">
+  OpenScreenAsInventoryOfSubParty(MobileParty, MobileParty, DoneLogicExtrasDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsInventoryOfSubParty(MobileParty rightParty, MobileParty leftParty, InventoryManager.DoneLogicExtrasDelegate doneLogicExtrasDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rightParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>leftParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>doneLogicExtrasDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate.html">DoneLogicExtrasDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsLoot_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsLoot*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsLoot_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Roster_ItemRoster__" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsLoot(System.Collections.Generic.Dictionary{TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.Roster.ItemRoster})">
+  OpenScreenAsLoot(Dictionary&lt;PartyBase, ItemRoster&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsLoot(Dictionary&lt;PartyBase, ItemRoster&gt; itemRostersToLoot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemRostersToLoot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a>, <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsReceiveItems_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsReceiveItems*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsReceiveItems_TaleWorlds_CampaignSystem_Roster_ItemRoster_TaleWorlds_Localization_TextObject_TaleWorlds_CampaignSystem_Inventory_InventoryManager_DoneLogicExtrasDelegate_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsReceiveItems(TaleWorlds.CampaignSystem.Roster.ItemRoster,TaleWorlds.Localization.TextObject,TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate)">
+  OpenScreenAsReceiveItems(ItemRoster, TextObject, DoneLogicExtrasDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsReceiveItems(ItemRoster items, TextObject leftRosterName, InventoryManager.DoneLogicExtrasDelegate doneLogicDelegate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>leftRosterName</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>doneLogicDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate.html">DoneLogicExtrasDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsStash_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsStash*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsStash_TaleWorlds_CampaignSystem_Roster_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsStash(TaleWorlds.CampaignSystem.Roster.ItemRoster)">
+  OpenScreenAsStash(ItemRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsStash(ItemRoster stash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stash</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsTrade_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsTrade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsTrade_TaleWorlds_CampaignSystem_Roster_ItemRoster_TaleWorlds_CampaignSystem_Settlements_SettlementComponent_TaleWorlds_CampaignSystem_Inventory_InventoryManager_InventoryCategoryType_TaleWorlds_CampaignSystem_Inventory_InventoryManager_DoneLogicExtrasDelegate_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsTrade(TaleWorlds.CampaignSystem.Roster.ItemRoster,TaleWorlds.CampaignSystem.Settlements.SettlementComponent,TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryCategoryType,TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate)">
+  OpenScreenAsTrade(ItemRoster, SettlementComponent, InventoryCategoryType, DoneLogicExtrasDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsTrade(ItemRoster leftRoster, SettlementComponent settlementComponent, InventoryManager.InventoryCategoryType merchantItemType = InventoryCategoryType.None, InventoryManager.DoneLogicExtrasDelegate doneLogicExtrasDelegate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>settlementComponent</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.SettlementComponent.html">SettlementComponent</a></dt>
+    <dd></dd>
+    <dt><code>merchantItemType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryCategoryType.html">InventoryCategoryType</a></dt>
+    <dd></dd>
+    <dt><code>doneLogicExtrasDelegate</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.DoneLogicExtrasDelegate.html">DoneLogicExtrasDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsWarehouse_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsWarehouse*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenScreenAsWarehouse_TaleWorlds_CampaignSystem_Roster_ItemRoster_TaleWorlds_CampaignSystem_Inventory_InventoryLogic_CapacityData_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenScreenAsWarehouse(TaleWorlds.CampaignSystem.Roster.ItemRoster,TaleWorlds.CampaignSystem.Inventory.InventoryLogic.CapacityData)">
+  OpenScreenAsWarehouse(ItemRoster, CapacityData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenScreenAsWarehouse(ItemRoster stash, InventoryLogic.CapacityData otherSideCapacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stash</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>otherSideCapacity</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.html">InventoryLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryLogic.CapacityData.html">CapacityData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenTradeWithCaravanOrAlleyParty_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenTradeWithCaravanOrAlleyParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_OpenTradeWithCaravanOrAlleyParty_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Inventory_InventoryManager_InventoryCategoryType_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.OpenTradeWithCaravanOrAlleyParty(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryCategoryType)">
+  OpenTradeWithCaravanOrAlleyParty(MobileParty, InventoryCategoryType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenTradeWithCaravanOrAlleyParty(MobileParty caravan, InventoryManager.InventoryCategoryType merchantItemType = InventoryCategoryType.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caravan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>merchantItemType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.html">InventoryManager</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Inventory.InventoryManager.InventoryCategoryType.html">InventoryCategoryType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_PlayerAcceptTradeOffer_" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.PlayerAcceptTradeOffer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Inventory_InventoryManager_PlayerAcceptTradeOffer" data-uid="TaleWorlds.CampaignSystem.Inventory.InventoryManager.PlayerAcceptTradeOffer">
+  PlayerAcceptTradeOffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayerAcceptTradeOffer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

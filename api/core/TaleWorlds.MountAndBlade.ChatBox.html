@@ -1,0 +1,1331 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ChatBox | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ChatBox | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.ChatBox">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_ChatBox" data-uid="TaleWorlds.MountAndBlade.ChatBox" class="text-break">
+Class ChatBox  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChatBox : GameHandler, IEntityComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.GameHandler.html">GameHandler</a></div>
+      <div><span class="xref">ChatBox</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Core.IEntityComponent.html">IEntityComponent</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnInitialize">GameHandler.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnFinalize">GameHandler.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnEarlyPlayerConnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnEarlyPlayerConnect(VirtualPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnPlayerConnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnPlayerConnect(VirtualPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameHandler.html#TaleWorlds_Core_GameHandler_OnPlayerDisconnect_TaleWorlds_Core_VirtualPlayer_">GameHandler.OnPlayerDisconnect(VirtualPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox__ctor_" data-uid="TaleWorlds.MountAndBlade.ChatBox.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox__ctor" data-uid="TaleWorlds.MountAndBlade.ChatBox.#ctor">
+  ChatBox()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_AdminMessageSoundEvent" data-uid="TaleWorlds.MountAndBlade.ChatBox.AdminMessageSoundEvent">
+  AdminMessageSoundEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AdminMessageSoundEvent = &quot;event:/ui/notification/alert&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnMessageReceivedAtDedicatedServer" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnMessageReceivedAtDedicatedServer">
+  OnMessageReceivedAtDedicatedServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;NetworkCommunicator, string&gt; OnMessageReceivedAtDedicatedServer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.NetworkCommunicator.html">NetworkCommunicator</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_IsContentRestricted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsContentRestricted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_IsContentRestricted" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsContentRestricted">
+  IsContentRestricted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsContentRestricted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_NetworkReady_" data-uid="TaleWorlds.MountAndBlade.ChatBox.NetworkReady*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_NetworkReady" data-uid="TaleWorlds.MountAndBlade.ChatBox.NetworkReady">
+  NetworkReady
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NetworkReady { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_AddErrorWhisperMessage_" data-uid="TaleWorlds.MountAndBlade.ChatBox.AddErrorWhisperMessage*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_AddErrorWhisperMessage_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.AddErrorWhisperMessage(System.String)">
+  AddErrorWhisperMessage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddErrorWhisperMessage(string toUserName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toUserName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_AddWhisperMessage_" data-uid="TaleWorlds.MountAndBlade.ChatBox.AddWhisperMessage*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_AddWhisperMessage_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.AddWhisperMessage(System.String,System.String)">
+  AddWhisperMessage(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddWhisperMessage(string fromUserName, string messageBody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromUserName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>messageBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_InitializeForMultiplayer_" data-uid="TaleWorlds.MountAndBlade.ChatBox.InitializeForMultiplayer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_InitializeForMultiplayer" data-uid="TaleWorlds.MountAndBlade.ChatBox.InitializeForMultiplayer">
+  InitializeForMultiplayer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeForMultiplayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_InitializeForSinglePlayer_" data-uid="TaleWorlds.MountAndBlade.ChatBox.InitializeForSinglePlayer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_InitializeForSinglePlayer" data-uid="TaleWorlds.MountAndBlade.ChatBox.InitializeForSinglePlayer">
+  InitializeForSinglePlayer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeForSinglePlayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMuted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMuted_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMuted(TaleWorlds.PlayerServices.PlayerId)">
+  IsPlayerMuted(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerMuted(PlayerId player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMutedFromGame_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMutedFromGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMutedFromGame_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMutedFromGame(TaleWorlds.PlayerServices.PlayerId)">
+  IsPlayerMutedFromGame(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerMutedFromGame(PlayerId player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMutedFromPlatform_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMutedFromPlatform*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_IsPlayerMutedFromPlatform_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.ChatBox.IsPlayerMutedFromPlatform(TaleWorlds.PlayerServices.PlayerId)">
+  IsPlayerMutedFromPlatform(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerMutedFromPlatform(PlayerId player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnAfterSave_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnAfterSave*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnAfterSave" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnAfterSave">
+  OnAfterSave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAfterSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnBeforeSave*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnBeforeSave" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnBeforeSave">
+  OnBeforeSave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnBeforeSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameEnd_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameEnd*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnGameEnd" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameEnd">
+  OnGameEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkBegin*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkBegin" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkBegin">
+  OnGameNetworkBegin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameNetworkBegin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkEnd*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnGameNetworkEnd" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameNetworkEnd">
+  OnGameNetworkEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameNetworkEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnGameStart_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameStart*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnGameStart" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnGameStart">
+  OnGameStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGameStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnLogin_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnLogin*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnLogin" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnLogin">
+  OnLogin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLogin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_OnTick_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_ResetMuteList_" data-uid="TaleWorlds.MountAndBlade.ChatBox.ResetMuteList*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_ResetMuteList" data-uid="TaleWorlds.MountAndBlade.ChatBox.ResetMuteList">
+  ResetMuteList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetMuteList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll(System.String)">
+  SendMessageToAll(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToAll(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToAll_System_String_System_Collections_Generic_List_TaleWorlds_Core_VirtualPlayer__" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToAll(System.String,System.Collections.Generic.List{TaleWorlds.Core.VirtualPlayer})">
+  SendMessageToAll(string, List&lt;VirtualPlayer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToAll(string message, List&lt;VirtualPlayer&gt; receiverList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>receiverList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.VirtualPlayer.html">VirtualPlayer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam(System.String)">
+  SendMessageToTeam(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToTeam(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToTeam_System_String_System_Collections_Generic_List_TaleWorlds_Core_VirtualPlayer__" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToTeam(System.String,System.Collections.Generic.List{TaleWorlds.Core.VirtualPlayer})">
+  SendMessageToTeam(string, List&lt;VirtualPlayer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToTeam(string message, List&lt;VirtualPlayer&gt; receiverList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>receiverList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.VirtualPlayer.html">VirtualPlayer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToWhisperTarget*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SendMessageToWhisperTarget_System_String_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SendMessageToWhisperTarget(System.String,System.String,System.String)">
+  SendMessageToWhisperTarget(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessageToWhisperTarget(string message, string platformName, string whisperTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>platformName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>whisperTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerSendServerMessageToEveryone*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_ServerSendServerMessageToEveryone_System_String_" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerSendServerMessageToEveryone(System.String)">
+  ServerSendServerMessageToEveryone(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ServerSendServerMessageToEveryone(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SetChatFilterLists_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetChatFilterLists*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SetChatFilterLists_System_String___System_String___" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetChatFilterLists(System.String[],System.String[])">
+  SetChatFilterLists(string[], string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChatFilterLists(string[] profanityList, string[] allowList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>profanityList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>allowList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SetPlayerMuted_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetPlayerMuted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SetPlayerMuted_TaleWorlds_PlayerServices_PlayerId_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetPlayerMuted(TaleWorlds.PlayerServices.PlayerId,System.Boolean)">
+  SetPlayerMuted(PlayerId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerMuted(PlayerId playerID, bool isMuted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerID</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>isMuted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_ChatBox_SetPlayerMutedFromPlatform_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetPlayerMutedFromPlatform*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_SetPlayerMutedFromPlatform_TaleWorlds_PlayerServices_PlayerId_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.ChatBox.SetPlayerMutedFromPlatform(TaleWorlds.PlayerServices.PlayerId,System.Boolean)">
+  SetPlayerMutedFromPlatform(PlayerId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerMutedFromPlatform(PlayerId playerID, bool isMuted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerID</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>isMuted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_ErrorWhisperMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.ErrorWhisperMessageReceived">
+  ErrorWhisperMessageReceived
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ErrorWhisperMessageReceivedDelegate ErrorWhisperMessageReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ErrorWhisperMessageReceivedDelegate.html">ErrorWhisperMessageReceivedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_OnPlayerMuteChanged" data-uid="TaleWorlds.MountAndBlade.ChatBox.OnPlayerMuteChanged">
+  OnPlayerMuteChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerMutedDelegate OnPlayerMuteChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMutedDelegate.html">PlayerMutedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_PlayerMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.PlayerMessageReceived">
+  PlayerMessageReceived
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerMessageReceivedDelegate PlayerMessageReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.PlayerMessageReceivedDelegate.html">PlayerMessageReceivedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_ServerAdminMessage" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerAdminMessage">
+  ServerAdminMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ServerAdminMessageDelegate ServerAdminMessage</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ServerAdminMessageDelegate.html">ServerAdminMessageDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_ServerMessage" data-uid="TaleWorlds.MountAndBlade.ChatBox.ServerMessage">
+  ServerMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ServerMessageDelegate ServerMessage</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.ServerMessageDelegate.html">ServerMessageDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_WhisperMessageReceived" data-uid="TaleWorlds.MountAndBlade.ChatBox.WhisperMessageReceived">
+  WhisperMessageReceived
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WhisperMessageReceivedDelegate WhisperMessageReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageReceivedDelegate.html">WhisperMessageReceivedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_ChatBox_WhisperMessageSent" data-uid="TaleWorlds.MountAndBlade.ChatBox.WhisperMessageSent">
+  WhisperMessageSent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event WhisperMessageSentDelegate WhisperMessageSent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.WhisperMessageSentDelegate.html">WhisperMessageSentDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

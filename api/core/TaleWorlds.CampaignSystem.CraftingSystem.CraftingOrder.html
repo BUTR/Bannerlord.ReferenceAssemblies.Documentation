@@ -1,0 +1,862 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CraftingOrder | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CraftingOrder | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder" class="text-break">
+Class CraftingOrder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.CraftingSystem.html">CraftingSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CraftingOrder : ITrackableCampaignObject, ITrackableBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CraftingOrder</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.ITrackableCampaignObject.html">ITrackableCampaignObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ITrackableBase.html">ITrackableBase</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder__ctor_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder__ctor_TaleWorlds_CampaignSystem_Hero_System_Single_TaleWorlds_Core_WeaponDesign_TaleWorlds_Core_CraftingTemplate_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.#ctor(TaleWorlds.CampaignSystem.Hero,System.Single,TaleWorlds.Core.WeaponDesign,TaleWorlds.Core.CraftingTemplate,System.Int32)">
+  CraftingOrder(Hero, float, WeaponDesign, CraftingTemplate, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CraftingOrder(Hero orderOwner, float orderDifficulty, WeaponDesign weaponDesignTemplate, CraftingTemplate template, int difficultyLevel = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>orderOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>orderDifficulty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>weaponDesignTemplate</code> <a class="xref" href="TaleWorlds.Core.WeaponDesign.html">WeaponDesign</a></dt>
+    <dd></dd>
+    <dt><code>template</code> <a class="xref" href="TaleWorlds.Core.CraftingTemplate.html">CraftingTemplate</a></dt>
+    <dd></dd>
+    <dt><code>difficultyLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_BaseGoldReward" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.BaseGoldReward">
+  BaseGoldReward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(10)]
+public readonly int BaseGoldReward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_DifficultyLevel" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.DifficultyLevel">
+  DifficultyLevel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(70)]
+public readonly int DifficultyLevel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_OrderDifficulty" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.OrderDifficulty">
+  OrderDifficulty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(20)]
+public readonly float OrderDifficulty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_OrderOwner" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.OrderOwner">
+  OrderOwner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(60)]
+public Hero OrderOwner</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_PreCraftedWeaponDesignItem" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.PreCraftedWeaponDesignItem">
+  PreCraftedWeaponDesignItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(40)]
+public ItemObject PreCraftedWeaponDesignItem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsLordOrder_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsLordOrder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsLordOrder" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsLordOrder">
+  IsLordOrder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLordOrder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CanHeroCompleteOrder_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CanHeroCompleteOrder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CanHeroCompleteOrder_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CanHeroCompleteOrder(TaleWorlds.CampaignSystem.Hero,TaleWorlds.Core.ItemObject)">
+  CanHeroCompleteOrder(Hero, ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanHeroCompleteOrder(Hero hero, ItemObject craftDesignItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>craftDesignItem</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CheckForBonusesAndPenalties_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CheckForBonusesAndPenalties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CheckForBonusesAndPenalties_TaleWorlds_Core_ItemObject_TaleWorlds_Core_ItemModifier_System_Single__System_Single__System_Boolean__System_Boolean__" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CheckForBonusesAndPenalties(TaleWorlds.Core.ItemObject,TaleWorlds.Core.ItemModifier,System.Single@,System.Single@,System.Boolean@,System.Boolean@)">
+  CheckForBonusesAndPenalties(ItemObject, ItemModifier, out float, out float, out bool, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckForBonusesAndPenalties(ItemObject craftedItem, ItemModifier itemModifier, out float craftedStatsSum, out float requiredStatsSum, out bool thrustDamageCheck, out bool swingDamageCheck)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>craftedItem</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+    <dt><code>itemModifier</code> <a class="xref" href="TaleWorlds.Core.ItemModifier.html">ItemModifier</a></dt>
+    <dd></dd>
+    <dt><code>craftedStatsSum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>requiredStatsSum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thrustDamageCheck</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>swingDamageCheck</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CheckTracked_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CheckTracked*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_CheckTracked_TaleWorlds_Core_BasicCharacterObject_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.CheckTracked(TaleWorlds.Core.BasicCharacterObject)">
+  CheckTracked(BasicCharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckTracked(BasicCharacterObject basicCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>basicCharacter</code> <a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetName_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetName" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetOrderExperience_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetOrderExperience*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetOrderExperience_TaleWorlds_Core_ItemObject_TaleWorlds_Core_ItemModifier_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetOrderExperience(TaleWorlds.Core.ItemObject,TaleWorlds.Core.ItemModifier)">
+  GetOrderExperience(ItemObject, ItemModifier)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetOrderExperience(ItemObject craftedItem, ItemModifier itemModifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>craftedItem</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+    <dt><code>itemModifier</code> <a class="xref" href="TaleWorlds.Core.ItemModifier.html">ItemModifier</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetPosition_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetPosition" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetPosition">
+  GetPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetStatDataForItem_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetStatDataForItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetStatDataForItem_TaleWorlds_Core_ItemObject_TaleWorlds_Core_WeaponComponentData__" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetStatDataForItem(TaleWorlds.Core.ItemObject,TaleWorlds.Core.WeaponComponentData@)">
+  GetStatDataForItem(ItemObject, out WeaponComponentData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CraftingStatData&gt; GetStatDataForItem(ItemObject itemObject, out WeaponComponentData weapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemObject</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.CraftingStatData.html">CraftingStatData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetStatWeapon_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetStatWeapon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetStatWeapon" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetStatWeapon">
+  GetStatWeapon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WeaponComponentData GetStatWeapon()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetTrackDistanceToMainAgent_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetTrackDistanceToMainAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_GetTrackDistanceToMainAgent" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.GetTrackDistanceToMainAgent">
+  GetTrackDistanceToMainAgent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTrackDistanceToMainAgent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_InitializeCraftingOrderOnLoad_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.InitializeCraftingOrderOnLoad*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_InitializeCraftingOrderOnLoad" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.InitializeCraftingOrderOnLoad">
+  InitializeCraftingOrderOnLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeCraftingOrderOnLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsOrderAvailableForHero_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsOrderAvailableForHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsOrderAvailableForHero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsOrderAvailableForHero(TaleWorlds.CampaignSystem.Hero)">
+  IsOrderAvailableForHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOrderAvailableForHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsPreCraftedWeaponDesignValid_" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsPreCraftedWeaponDesignValid*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_IsPreCraftedWeaponDesignValid" data-uid="TaleWorlds.CampaignSystem.CraftingSystem.CraftingOrder.IsPreCraftedWeaponDesignValid">
+  IsPreCraftedWeaponDesignValid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreCraftedWeaponDesignValid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

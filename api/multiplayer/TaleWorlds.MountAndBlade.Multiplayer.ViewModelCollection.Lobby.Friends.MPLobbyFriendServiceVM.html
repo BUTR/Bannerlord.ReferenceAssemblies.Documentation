@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MPLobbyFriendServiceVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MPLobbyFriendServiceVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM" class="text-break">
+Class MPLobbyFriendServiceVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.html">Multiplayer</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.html">Lobby</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.html">Friends</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MPLobbyFriendServiceVM : ViewModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MPLobbyFriendServiceVM</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM__ctor_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM__ctor_TaleWorlds_PlatformService_IFriendListService_System_Action_TaleWorlds_PlayerServices_PlayerId__System_Action_TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyPlayerBaseVM__" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.#ctor(TaleWorlds.PlatformService.IFriendListService,System.Action{TaleWorlds.PlayerServices.PlayerId},System.Action{TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyPlayerBaseVM})">
+  MPLobbyFriendServiceVM(IFriendListService, Action&lt;PlayerId&gt;, Action&lt;MPLobbyPlayerBaseVM&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendServiceVM(IFriendListService friendListService, Action&lt;PlayerId&gt; onFriendRequestAnswered, Action&lt;MPLobbyPlayerBaseVM&gt; activatePlayerActions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>friendListService</code> <a class="xref" href="../core/TaleWorlds.PlatformService.IFriendListService.html">IFriendListService</a></dt>
+    <dd></dd>
+    <dt><code>onFriendRequestAnswered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="../core/TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>activatePlayerActions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyPlayerBaseVM.html">MPLobbyPlayerBaseVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_FriendListService" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.FriendListService">
+  FriendListService
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly IFriendListService FriendListService</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.PlatformService.IFriendListService.html">IFriendListService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_AllFriends_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.AllFriends*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_AllFriends" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.AllFriends">
+  AllFriends
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;MPLobbyPlayerBaseVM&gt; AllFriends { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyPlayerBaseVM.html">MPLobbyPlayerBaseVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_FriendRequests_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.FriendRequests*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_FriendRequests" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.FriendRequests">
+  FriendRequests
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendGroupVM FriendRequests { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendGroupVM.html">MPLobbyFriendGroupVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_GotAnyFriendRequests_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.GotAnyFriendRequests*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_GotAnyFriendRequests" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.GotAnyFriendRequests">
+  GotAnyFriendRequests
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GotAnyFriendRequests { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_GotAnyPendingRequests_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.GotAnyPendingRequests*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_GotAnyPendingRequests" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.GotAnyPendingRequests">
+  GotAnyPendingRequests
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GotAnyPendingRequests { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_InGameFriends_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.InGameFriends*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_InGameFriends" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.InGameFriends">
+  InGameFriends
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendGroupVM InGameFriends { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendGroupVM.html">MPLobbyFriendGroupVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_InGameText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.InGameText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_InGameText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.InGameText">
+  InGameText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string InGameText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_IsInGameStatusActive_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.IsInGameStatusActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_IsInGameStatusActive" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.IsInGameStatusActive">
+  IsInGameStatusActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInGameStatusActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OfflineFriends_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OfflineFriends*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OfflineFriends" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OfflineFriends">
+  OfflineFriends
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendGroupVM OfflineFriends { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendGroupVM.html">MPLobbyFriendGroupVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OfflineText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OfflineText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OfflineText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OfflineText">
+  OfflineText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OfflineText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnlineFriends_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnlineFriends*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnlineFriends" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnlineFriends">
+  OnlineFriends
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendGroupVM OnlineFriends { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendGroupVM.html">MPLobbyFriendGroupVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnlineText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnlineText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnlineText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnlineText">
+  OnlineText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OnlineText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_PendingRequests_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.PendingRequests*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_PendingRequests" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.PendingRequests">
+  PendingRequests
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyFriendGroupVM PendingRequests { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendGroupVM.html">MPLobbyFriendGroupVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ServiceName_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ServiceName*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ServiceName" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ServiceName">
+  ServiceName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ServiceName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ServiceNameHint_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ServiceNameHint*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ServiceNameHint" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ServiceNameHint">
+  ServiceNameHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HintViewModel ServiceNameHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ForceRefresh_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ForceRefresh*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_ForceRefresh" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.ForceRefresh">
+  ForceRefresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceRefresh()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnFinalize_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnFinalize" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnFriendListUpdated_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnFriendListUpdated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnFriendListUpdated_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnFriendListUpdated(System.Boolean)">
+  OnFriendListUpdated(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFriendListUpdated(bool updateForced = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateForced</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnStateActivate_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnStateActivate*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnStateActivate" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnStateActivate">
+  OnStateActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStateActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnTick_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_RefreshValues_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_RefreshValues" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_UpdateCanInviteOtherPlayersToParty_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.UpdateCanInviteOtherPlayersToParty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Friends_MPLobbyFriendServiceVM_UpdateCanInviteOtherPlayersToParty" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Friends.MPLobbyFriendServiceVM.UpdateCanInviteOtherPlayersToParty">
+  UpdateCanInviteOtherPlayersToParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCanInviteOtherPlayersToParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

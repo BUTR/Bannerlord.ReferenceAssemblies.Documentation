@@ -1,0 +1,2122 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ArmyManagementVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ArmyManagementVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM" class="text-break">
+Class ArmyManagementVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.html">ArmyManagement</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ArmyManagementVM : ViewModel, IViewModel, INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><span class="xref">ArmyManagementVM</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM__ctor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM__ctor_System_Action_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.#ctor(System.Action)">
+  ArmyManagementVM(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArmyManagementVM(Action onClose)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM__tutorialNotification" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM._tutorialNotification">
+  _tutorialNotification
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementNotificationVM _tutorialNotification</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Tutorial.ElementNotificationVM.html">ElementNotificationVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_BoostCohesionHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.BoostCohesionHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_BoostCohesionHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.BoostCohesionHint">
+  BoostCohesionHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel BoostCohesionHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_BoostTitleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.BoostTitleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_BoostTitleText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.BoostTitleText">
+  BoostTitleText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string BoostTitleText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanAffordInfluenceCost_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanAffordInfluenceCost*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanAffordInfluenceCost" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanAffordInfluenceCost">
+  CanAffordInfluenceCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanAffordInfluenceCost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanBoostCohesion_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanBoostCohesion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanBoostCohesion" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanBoostCohesion">
+  CanBoostCohesion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanBoostCohesion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanCreateArmy_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanCreateArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanCreateArmy" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanCreateArmy">
+  CanCreateArmy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanCreateArmy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanDisbandArmy_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanDisbandArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CanDisbandArmy" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CanDisbandArmy">
+  CanDisbandArmy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanDisbandArmy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CancelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CancelInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CancelText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CancelText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CancelText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CancelText">
+  CancelText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CancelText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ClanText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ClanText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ClanText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ClanText">
+  ClanText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string ClanText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_Cohesion_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.Cohesion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_Cohesion" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.Cohesion">
+  Cohesion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int Cohesion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionBoostAmountText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionBoostAmountText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionBoostAmountText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionBoostAmountText">
+  CohesionBoostAmountText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CohesionBoostAmountText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionBoostCost_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionBoostCost*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionBoostCost" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionBoostCost">
+  CohesionBoostCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int CohesionBoostCost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionHint">
+  CohesionHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel CohesionHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CohesionText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CohesionText">
+  CohesionText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CohesionText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CostText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CostText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_CostText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.CostText">
+  CostText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CostText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DisbandArmyHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DisbandArmyHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DisbandArmyHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DisbandArmyHint">
+  DisbandArmyHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel DisbandArmyHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DisbandArmyText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DisbandArmyText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DisbandArmyText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DisbandArmyText">
+  DisbandArmyText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string DisbandArmyText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DistanceText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DistanceText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DistanceText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DistanceText">
+  DistanceText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string DistanceText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneHint">
+  DoneHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel DoneHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneInputKey">
+  DoneInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM DoneInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_DoneText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.DoneText">
+  DoneText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string DoneText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FocusedItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FocusedItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FocusedItem" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FocusedItem">
+  FocusedItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public ArmyManagementItemVM FocusedItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementItemVM.html">ArmyManagementItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FoodHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FoodHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FoodHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FoodHint">
+  FoodHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel FoodHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FoodText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FoodText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_FoodText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.FoodText">
+  FoodText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string FoodText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_LordsText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.LordsText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_LordsText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.LordsText">
+  LordsText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string LordsText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_MoraleHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.MoraleHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_MoraleHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.MoraleHint">
+  MoraleHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel MoraleHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_MoraleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.MoraleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_MoraleText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.MoraleText">
+  MoraleText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MoraleText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_NameText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.NameText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_NameText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.NameText">
+  NameText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string NameText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_NewCohesion_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.NewCohesion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_NewCohesion" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.NewCohesion">
+  NewCohesion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int NewCohesion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_OwnerText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.OwnerText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_OwnerText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.OwnerText">
+  OwnerText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OwnerText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PartiesInCart_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PartiesInCart*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PartiesInCart" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PartiesInCart">
+  PartiesInCart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;ArmyManagementItemVM&gt; PartiesInCart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementItemVM.html">ArmyManagementItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PartyList_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PartyList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PartyList" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PartyList">
+  PartyList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;ArmyManagementItemVM&gt; PartyList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementItemVM.html">ArmyManagementItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PlayerHasArmy_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PlayerHasArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_PlayerHasArmy" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.PlayerHasArmy">
+  PlayerHasArmy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool PlayerHasArmy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_RemoveInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.RemoveInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_RemoveInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.RemoveInputKey">
+  RemoveInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM RemoveInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ResetInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ResetInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ResetInputKey">
+  ResetInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM ResetInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SortControllerVM_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SortControllerVM*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SortControllerVM" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SortControllerVM">
+  SortControllerVM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public ArmyManagementSortControllerVM SortControllerVM { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementSortControllerVM.html">ArmyManagementSortControllerVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_StrengthText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.StrengthText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_StrengthText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.StrengthText">
+  StrengthText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string StrengthText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TitleText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TitleText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TitleText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TitleText">
+  TitleText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TitleText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCost_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCost*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCost" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCost">
+  TotalCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int TotalCost { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCostNumbersText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCostNumbersText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCostNumbersText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCostNumbersText">
+  TotalCostNumbersText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TotalCostNumbersText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCostText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCostText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalCostText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalCostText">
+  TotalCostText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TotalCostText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalInfluence_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalInfluence*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalInfluence" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalInfluence">
+  TotalInfluence
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TotalInfluence { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalLords_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalLords*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalLords" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalLords">
+  TotalLords
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TotalLords { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalStrength_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalStrength*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalStrength" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalStrength">
+  TotalStrength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int TotalStrength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalStrengthText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalStrengthText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TotalStrengthText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TotalStrengthText">
+  TotalStrengthText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TotalStrengthText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TutorialNotification_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TutorialNotification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_TutorialNotification" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.TutorialNotification">
+  TutorialNotification
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public ElementNotificationVM TutorialNotification { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Tutorial.ElementNotificationVM.html">ElementNotificationVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteBoostCohesionManual_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteBoostCohesionManual*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteBoostCohesionManual" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteBoostCohesionManual">
+  ExecuteBoostCohesionManual()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteBoostCohesionManual()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteCancel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteCancel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteCancel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteCancel">
+  ExecuteCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteDisbandArmy_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteDisbandArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteDisbandArmy" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteDisbandArmy">
+  ExecuteDisbandArmy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDisbandArmy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteDone_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteDone*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteDone" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteDone">
+  ExecuteDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteReset_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteReset*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_ExecuteReset" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.ExecuteReset">
+  ExecuteReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_OnFinalize_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_OnFinalize" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_RefreshValues_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_RefreshValues" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetCancelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetCancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetDoneInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetDoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetDoneInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetDoneInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDoneInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDoneInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetRemoveInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetRemoveInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetRemoveInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetRemoveInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetRemoveInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRemoveInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetResetInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_ArmyManagement_ArmyManagementVM_SetResetInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.ArmyManagement.ArmyManagementVM.SetResetInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetResetInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResetInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

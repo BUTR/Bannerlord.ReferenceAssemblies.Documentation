@@ -1,0 +1,2405 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MetaMesh | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MetaMesh | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.MetaMesh">
+
+
+
+  <h1 id="TaleWorlds_Engine_MetaMesh" data-uid="TaleWorlds.Engine.MetaMesh" class="text-break">
+Class MetaMesh  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EngineClass(&quot;rglMeta_mesh&quot;)]
+public sealed class MetaMesh : GameEntityComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.NativeObject.html">NativeObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html">GameEntityComponent</a></div>
+      <div><span class="xref">MetaMesh</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html#TaleWorlds_Engine_GameEntityComponent_GetEntity">GameEntityComponent.GetEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.GameEntityComponent.html#TaleWorlds_Engine_GameEntityComponent_GetFirstMetaMesh">GameEntityComponent.GetFirstMetaMesh()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_ManualInvalidate">NativeObject.ManualInvalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.DotNet.NativeObject.html#TaleWorlds_DotNet_NativeObject_Pointer">NativeObject.Pointer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_Frame_" data-uid="TaleWorlds.Engine.MetaMesh.Frame*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_Frame" data-uid="TaleWorlds.Engine.MetaMesh.Frame">
+  Frame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame Frame { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_IsValid_" data-uid="TaleWorlds.Engine.MetaMesh.IsValid*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_IsValid" data-uid="TaleWorlds.Engine.MetaMesh.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_MeshCount_" data-uid="TaleWorlds.Engine.MetaMesh.MeshCount*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_MeshCount" data-uid="TaleWorlds.Engine.MetaMesh.MeshCount">
+  MeshCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MeshCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_VectorUserData_" data-uid="TaleWorlds.Engine.MetaMesh.VectorUserData*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_VectorUserData" data-uid="TaleWorlds.Engine.MetaMesh.VectorUserData">
+  VectorUserData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 VectorUserData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AddEditDataUser_" data-uid="TaleWorlds.Engine.MetaMesh.AddEditDataUser*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AddEditDataUser" data-uid="TaleWorlds.Engine.MetaMesh.AddEditDataUser">
+  AddEditDataUser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEditDataUser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AddMaterialShaderFlag_" data-uid="TaleWorlds.Engine.MetaMesh.AddMaterialShaderFlag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AddMaterialShaderFlag_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.AddMaterialShaderFlag(System.String)">
+  AddMaterialShaderFlag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMaterialShaderFlag(string materialShaderFlag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>materialShaderFlag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AddMesh_" data-uid="TaleWorlds.Engine.MetaMesh.AddMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AddMesh_TaleWorlds_Engine_Mesh_" data-uid="TaleWorlds.Engine.MetaMesh.AddMesh(TaleWorlds.Engine.Mesh)">
+  AddMesh(Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AddMesh_" data-uid="TaleWorlds.Engine.MetaMesh.AddMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AddMesh_TaleWorlds_Engine_Mesh_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.AddMesh(TaleWorlds.Engine.Mesh,System.UInt32)">
+  AddMesh(Mesh, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMesh(Mesh mesh, uint lodLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+    <dt><code>lodLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AddMetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.AddMetaMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AddMetaMesh_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.AddMetaMesh(TaleWorlds.Engine.MetaMesh)">
+  AddMetaMesh(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMetaMesh(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_AssignClothBodyFrom_" data-uid="TaleWorlds.Engine.MetaMesh.AssignClothBodyFrom*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_AssignClothBodyFrom_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.AssignClothBodyFrom(TaleWorlds.Engine.MetaMesh)">
+  AssignClothBodyFrom(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AssignClothBodyFrom(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_BatchMultiMeshes_" data-uid="TaleWorlds.Engine.MetaMesh.BatchMultiMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_BatchMultiMeshes_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.BatchMultiMeshes(TaleWorlds.Engine.MetaMesh)">
+  BatchMultiMeshes(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchMultiMeshes(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_BatchMultiMeshesMultiple_" data-uid="TaleWorlds.Engine.MetaMesh.BatchMultiMeshesMultiple*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_BatchMultiMeshesMultiple_System_Collections_Generic_List_TaleWorlds_Engine_MetaMesh__" data-uid="TaleWorlds.Engine.MetaMesh.BatchMultiMeshesMultiple(System.Collections.Generic.List{TaleWorlds.Engine.MetaMesh})">
+  BatchMultiMeshesMultiple(List&lt;MetaMesh&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BatchMultiMeshesMultiple(List&lt;MetaMesh&gt; metaMeshes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_CheckMetaMeshExistence_" data-uid="TaleWorlds.Engine.MetaMesh.CheckMetaMeshExistence*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_CheckMetaMeshExistence_System_String_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.CheckMetaMeshExistence(System.String,System.Int32)">
+  CheckMetaMeshExistence(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckMetaMeshExistence(string metaMeshName, int lod_count_check)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>lod_count_check</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_CheckResources_" data-uid="TaleWorlds.Engine.MetaMesh.CheckResources*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_CheckResources" data-uid="TaleWorlds.Engine.MetaMesh.CheckResources">
+  CheckResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CheckResources()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ClearEditData_" data-uid="TaleWorlds.Engine.MetaMesh.ClearEditData*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ClearEditData" data-uid="TaleWorlds.Engine.MetaMesh.ClearEditData">
+  ClearEditData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearEditData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ClearMeshes_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ClearMeshes" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshes">
+  ClearMeshes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMeshes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ClearMeshesForLod_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForLod*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ClearMeshesForLod_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForLod(System.Int32)">
+  ClearMeshesForLod(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMeshesForLod(int lodToClear)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodToClear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ClearMeshesForLowerLods_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForLowerLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ClearMeshesForLowerLods_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForLowerLods(System.Int32)">
+  ClearMeshesForLowerLods(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMeshesForLowerLods(int lodToClear)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodToClear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ClearMeshesForOtherLods_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForOtherLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ClearMeshesForOtherLods_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.ClearMeshesForOtherLods(System.Int32)">
+  ClearMeshesForOtherLods(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMeshesForOtherLods(int lodToKeep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodToKeep</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_CopyTo_" data-uid="TaleWorlds.Engine.MetaMesh.CopyTo*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_CopyTo_TaleWorlds_Engine_MetaMesh_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.CopyTo(TaleWorlds.Engine.MetaMesh,System.Boolean)">
+  CopyTo(MetaMesh, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(MetaMesh res, bool copyMeshes = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>res</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+    <dt><code>copyMeshes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_CreateCopy_" data-uid="TaleWorlds.Engine.MetaMesh.CreateCopy*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_CreateCopy" data-uid="TaleWorlds.Engine.MetaMesh.CreateCopy">
+  CreateCopy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaMesh CreateCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_CreateMetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.CreateMetaMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_CreateMetaMesh_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.CreateMetaMesh(System.String)">
+  CreateMetaMesh(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetaMesh CreateMetaMesh(string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_DrawTextWithDefaultFont_" data-uid="TaleWorlds.Engine.MetaMesh.DrawTextWithDefaultFont*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_DrawTextWithDefaultFont_System_String_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_UInt32_TaleWorlds_Engine_TextFlags_" data-uid="TaleWorlds.Engine.MetaMesh.DrawTextWithDefaultFont(System.String,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,System.UInt32,TaleWorlds.Engine.TextFlags)">
+  DrawTextWithDefaultFont(string, Vec2, Vec2, Vec2, uint, TextFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTextWithDefaultFont(string text, Vec2 textPositionMin, Vec2 textPositionMax, Vec2 size, uint color, TextFlags flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>textPositionMin</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>textPositionMax</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="TaleWorlds.Engine.TextFlags.html">TextFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_Fit_" data-uid="TaleWorlds.Engine.MetaMesh.Fit*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_Fit" data-uid="TaleWorlds.Engine.MetaMesh.Fit">
+  Fit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame Fit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetAllMultiMeshes_" data-uid="TaleWorlds.Engine.MetaMesh.GetAllMultiMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetAllMultiMeshes_System_Collections_Generic_List_TaleWorlds_Engine_MetaMesh___" data-uid="TaleWorlds.Engine.MetaMesh.GetAllMultiMeshes(System.Collections.Generic.List{TaleWorlds.Engine.MetaMesh}@)">
+  GetAllMultiMeshes(ref List&lt;MetaMesh&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetAllMultiMeshes(ref List&lt;MetaMesh&gt; multiMeshList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>multiMeshList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetBoundingBox_" data-uid="TaleWorlds.Engine.MetaMesh.GetBoundingBox*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetBoundingBox" data-uid="TaleWorlds.Engine.MetaMesh.GetBoundingBox">
+  GetBoundingBox()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingBox GetBoundingBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.BoundingBox.html">BoundingBox</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetCopy_" data-uid="TaleWorlds.Engine.MetaMesh.GetCopy*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetCopy_System_String_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.GetCopy(System.String,System.Boolean,System.Boolean)">
+  GetCopy(string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetaMesh GetCopy(string metaMeshName, bool showErrors = true, bool mayReturnNull = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>showErrors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>mayReturnNull</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetFactor1_" data-uid="TaleWorlds.Engine.MetaMesh.GetFactor1*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetFactor1" data-uid="TaleWorlds.Engine.MetaMesh.GetFactor1">
+  GetFactor1()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetFactor1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetFactor2_" data-uid="TaleWorlds.Engine.MetaMesh.GetFactor2*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetFactor2" data-uid="TaleWorlds.Engine.MetaMesh.GetFactor2">
+  GetFactor2()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetFactor2()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetFirstMeshWithTag_" data-uid="TaleWorlds.Engine.MetaMesh.GetFirstMeshWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetFirstMeshWithTag_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.GetFirstMeshWithTag(System.String)">
+  GetFirstMeshWithTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh GetFirstMeshWithTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetLodMaskForMeshAtIndex_" data-uid="TaleWorlds.Engine.MetaMesh.GetLodMaskForMeshAtIndex*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetLodMaskForMeshAtIndex_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.GetLodMaskForMeshAtIndex(System.Int32)">
+  GetLodMaskForMeshAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLodMaskForMeshAtIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetMeshAtIndex_" data-uid="TaleWorlds.Engine.MetaMesh.GetMeshAtIndex*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetMeshAtIndex_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.GetMeshAtIndex(System.Int32)">
+  GetMeshAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh GetMeshAtIndex(int meshIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>meshIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.Mesh.html">Mesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetMeshCountWithTag_" data-uid="TaleWorlds.Engine.MetaMesh.GetMeshCountWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetMeshCountWithTag_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.GetMeshCountWithTag(System.String)">
+  GetMeshCountWithTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMeshCountWithTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetMorphedCopy_" data-uid="TaleWorlds.Engine.MetaMesh.GetMorphedCopy*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetMorphedCopy_System_String_System_Single_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.GetMorphedCopy(System.String,System.Single,System.Boolean)">
+  GetMorphedCopy(string, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetaMesh GetMorphedCopy(string metaMeshName, float morphTarget, bool showErrors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMeshName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>morphTarget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>showErrors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetMultiMesh_" data-uid="TaleWorlds.Engine.MetaMesh.GetMultiMesh*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetMultiMesh_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.GetMultiMesh(System.String)">
+  GetMultiMesh(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MetaMesh GetMultiMesh(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetName_" data-uid="TaleWorlds.Engine.MetaMesh.GetName*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetName" data-uid="TaleWorlds.Engine.MetaMesh.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetTotalGpuSize_" data-uid="TaleWorlds.Engine.MetaMesh.GetTotalGpuSize*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetTotalGpuSize" data-uid="TaleWorlds.Engine.MetaMesh.GetTotalGpuSize">
+  GetTotalGpuSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalGpuSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetVectorArgument2_" data-uid="TaleWorlds.Engine.MetaMesh.GetVectorArgument2*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetVectorArgument2" data-uid="TaleWorlds.Engine.MetaMesh.GetVectorArgument2">
+  GetVectorArgument2()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetVectorArgument2()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_GetVisibilityMask_" data-uid="TaleWorlds.Engine.MetaMesh.GetVisibilityMask*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_GetVisibilityMask" data-uid="TaleWorlds.Engine.MetaMesh.GetVisibilityMask">
+  GetVisibilityMask()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisibilityMaskFlags GetVisibilityMask()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.VisibilityMaskFlags.html">VisibilityMaskFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_HasAnyGeneratedLods_" data-uid="TaleWorlds.Engine.MetaMesh.HasAnyGeneratedLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_HasAnyGeneratedLods" data-uid="TaleWorlds.Engine.MetaMesh.HasAnyGeneratedLods">
+  HasAnyGeneratedLods()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAnyGeneratedLods()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_HasAnyLods_" data-uid="TaleWorlds.Engine.MetaMesh.HasAnyLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_HasAnyLods" data-uid="TaleWorlds.Engine.MetaMesh.HasAnyLods">
+  HasAnyLods()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAnyLods()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_HasClothData_" data-uid="TaleWorlds.Engine.MetaMesh.HasClothData*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_HasClothData" data-uid="TaleWorlds.Engine.MetaMesh.HasClothData">
+  HasClothData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasClothData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_HasVertexBufferOrEditDataOrPackageItem_" data-uid="TaleWorlds.Engine.MetaMesh.HasVertexBufferOrEditDataOrPackageItem*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_HasVertexBufferOrEditDataOrPackageItem" data-uid="TaleWorlds.Engine.MetaMesh.HasVertexBufferOrEditDataOrPackageItem">
+  HasVertexBufferOrEditDataOrPackageItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasVertexBufferOrEditDataOrPackageItem()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_MergeMultiMeshes_" data-uid="TaleWorlds.Engine.MetaMesh.MergeMultiMeshes*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_MergeMultiMeshes_TaleWorlds_Engine_MetaMesh_" data-uid="TaleWorlds.Engine.MetaMesh.MergeMultiMeshes(TaleWorlds.Engine.MetaMesh)">
+  MergeMultiMeshes(MetaMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeMultiMeshes(MetaMesh metaMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaMesh</code> <a class="xref" href="TaleWorlds.Engine.MetaMesh.html">MetaMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_PreloadForRendering_" data-uid="TaleWorlds.Engine.MetaMesh.PreloadForRendering*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_PreloadForRendering" data-uid="TaleWorlds.Engine.MetaMesh.PreloadForRendering">
+  PreloadForRendering()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreloadForRendering()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_PreloadShaders_" data-uid="TaleWorlds.Engine.MetaMesh.PreloadShaders*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_PreloadShaders_System_Boolean_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.PreloadShaders(System.Boolean,System.Boolean)">
+  PreloadShaders(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreloadShaders(bool useTableau, bool useTeamColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useTableau</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>useTeamColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_RecomputeBoundingBox_" data-uid="TaleWorlds.Engine.MetaMesh.RecomputeBoundingBox*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_RecomputeBoundingBox_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.RecomputeBoundingBox(System.Boolean)">
+  RecomputeBoundingBox(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecomputeBoundingBox(bool recomputeMeshes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recomputeMeshes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_ReleaseEditDataUser_" data-uid="TaleWorlds.Engine.MetaMesh.ReleaseEditDataUser*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_ReleaseEditDataUser" data-uid="TaleWorlds.Engine.MetaMesh.ReleaseEditDataUser">
+  ReleaseEditDataUser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseEditDataUser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_RemoveMeshesWithTag_" data-uid="TaleWorlds.Engine.MetaMesh.RemoveMeshesWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_RemoveMeshesWithTag_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.RemoveMeshesWithTag(System.String)">
+  RemoveMeshesWithTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveMeshesWithTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_RemoveMeshesWithoutTag_" data-uid="TaleWorlds.Engine.MetaMesh.RemoveMeshesWithoutTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_RemoveMeshesWithoutTag_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.RemoveMeshesWithoutTag(System.String)">
+  RemoveMeshesWithoutTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveMeshesWithoutTag(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetBillboarding_" data-uid="TaleWorlds.Engine.MetaMesh.SetBillboarding*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetBillboarding_TaleWorlds_Engine_BillboardType_" data-uid="TaleWorlds.Engine.MetaMesh.SetBillboarding(TaleWorlds.Engine.BillboardType)">
+  SetBillboarding(BillboardType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBillboarding(BillboardType billboard)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>billboard</code> <a class="xref" href="TaleWorlds.Engine.BillboardType.html">BillboardType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetContourColor_" data-uid="TaleWorlds.Engine.MetaMesh.SetContourColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetContourColor_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.SetContourColor(System.UInt32)">
+  SetContourColor(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContourColor(uint color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetContourState_" data-uid="TaleWorlds.Engine.MetaMesh.SetContourState*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetContourState_System_Boolean_" data-uid="TaleWorlds.Engine.MetaMesh.SetContourState(System.Boolean)">
+  SetContourState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContourState(bool alwaysVisible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alwaysVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetCullMode_" data-uid="TaleWorlds.Engine.MetaMesh.SetCullMode*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetCullMode_TaleWorlds_Engine_MBMeshCullingMode_" data-uid="TaleWorlds.Engine.MetaMesh.SetCullMode(TaleWorlds.Engine.MBMeshCullingMode)">
+  SetCullMode(MBMeshCullingMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCullMode(MBMeshCullingMode cullMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cullMode</code> <a class="xref" href="TaleWorlds.Engine.MBMeshCullingMode.html">MBMeshCullingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetEditDataPolicy_" data-uid="TaleWorlds.Engine.MetaMesh.SetEditDataPolicy*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetEditDataPolicy_TaleWorlds_Engine_EditDataPolicy_" data-uid="TaleWorlds.Engine.MetaMesh.SetEditDataPolicy(TaleWorlds.Engine.EditDataPolicy)">
+  SetEditDataPolicy(EditDataPolicy)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEditDataPolicy(EditDataPolicy policy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>policy</code> <a class="xref" href="TaleWorlds.Engine.EditDataPolicy.html">EditDataPolicy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetFactor1_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor1*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetFactor1_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor1(System.UInt32)">
+  SetFactor1(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor1(uint factorColor1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factorColor1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetFactor1Linear_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor1Linear*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetFactor1Linear_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor1Linear(System.UInt32)">
+  SetFactor1Linear(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor1Linear(uint linearFactorColor1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>linearFactorColor1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetFactor2_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor2*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetFactor2_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor2(System.UInt32)">
+  SetFactor2(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor2(uint factorColor2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factorColor2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetFactor2Linear_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor2Linear*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetFactor2Linear_System_UInt32_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactor2Linear(System.UInt32)">
+  SetFactor2Linear(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor2Linear(uint linearFactorColor2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>linearFactorColor2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetFactorColorToSubMeshesWithTag_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactorColorToSubMeshesWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetFactorColorToSubMeshesWithTag_System_UInt32_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.SetFactorColorToSubMeshesWithTag(System.UInt32,System.String)">
+  SetFactorColorToSubMeshesWithTag(uint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactorColorToSubMeshesWithTag(uint color, string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetGlossMultiplier_" data-uid="TaleWorlds.Engine.MetaMesh.SetGlossMultiplier*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetGlossMultiplier_System_Single_" data-uid="TaleWorlds.Engine.MetaMesh.SetGlossMultiplier(System.Single)">
+  SetGlossMultiplier(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlossMultiplier(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetLodBias_" data-uid="TaleWorlds.Engine.MetaMesh.SetLodBias*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetLodBias_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.SetLodBias(System.Int32)">
+  SetLodBias(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLodBias(int lodBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetMaterial_" data-uid="TaleWorlds.Engine.MetaMesh.SetMaterial*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetMaterial_TaleWorlds_Engine_Material_" data-uid="TaleWorlds.Engine.MetaMesh.SetMaterial(TaleWorlds.Engine.Material)">
+  SetMaterial(Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterial(Material material)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>material</code> <a class="xref" href="TaleWorlds.Engine.Material.html">Material</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetMaterialToSubMeshesWithTag_" data-uid="TaleWorlds.Engine.MetaMesh.SetMaterialToSubMeshesWithTag*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetMaterialToSubMeshesWithTag_TaleWorlds_Engine_Material_System_String_" data-uid="TaleWorlds.Engine.MetaMesh.SetMaterialToSubMeshesWithTag(TaleWorlds.Engine.Material,System.String)">
+  SetMaterialToSubMeshesWithTag(Material, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterialToSubMeshesWithTag(Material bodyMaterial, string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyMaterial</code> <a class="xref" href="TaleWorlds.Engine.Material.html">Material</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetNumLods_" data-uid="TaleWorlds.Engine.MetaMesh.SetNumLods*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetNumLods_System_Int32_" data-uid="TaleWorlds.Engine.MetaMesh.SetNumLods(System.Int32)">
+  SetNumLods(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumLods(int lodToClear)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lodToClear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetVectorArgument_" data-uid="TaleWorlds.Engine.MetaMesh.SetVectorArgument*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetVectorArgument_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.MetaMesh.SetVectorArgument(System.Single,System.Single,System.Single,System.Single)">
+  SetVectorArgument(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArgument(float vectorArgument0, float vectorArgument1, float vectorArgument2, float vectorArgument3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vectorArgument0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetVectorArgument2_" data-uid="TaleWorlds.Engine.MetaMesh.SetVectorArgument2*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetVectorArgument2_System_Single_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.MetaMesh.SetVectorArgument2(System.Single,System.Single,System.Single,System.Single)">
+  SetVectorArgument2(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArgument2(float vectorArgument0, float vectorArgument1, float vectorArgument2, float vectorArgument3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vectorArgument0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vectorArgument3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_SetVisibilityMask_" data-uid="TaleWorlds.Engine.MetaMesh.SetVisibilityMask*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_SetVisibilityMask_TaleWorlds_Engine_VisibilityMaskFlags_" data-uid="TaleWorlds.Engine.MetaMesh.SetVisibilityMask(TaleWorlds.Engine.VisibilityMaskFlags)">
+  SetVisibilityMask(VisibilityMaskFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibilityMask(VisibilityMaskFlags visibilityMask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>visibilityMask</code> <a class="xref" href="TaleWorlds.Engine.VisibilityMaskFlags.html">VisibilityMaskFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_MetaMesh_UseHeadBoneFaceGenScaling_" data-uid="TaleWorlds.Engine.MetaMesh.UseHeadBoneFaceGenScaling*"></a>
+
+  <h3 id="TaleWorlds_Engine_MetaMesh_UseHeadBoneFaceGenScaling_TaleWorlds_Engine_Skeleton_System_SByte_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.Engine.MetaMesh.UseHeadBoneFaceGenScaling(TaleWorlds.Engine.Skeleton,System.SByte,TaleWorlds.Library.MatrixFrame)">
+  UseHeadBoneFaceGenScaling(Skeleton, sbyte, MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseHeadBoneFaceGenScaling(Skeleton skeleton, sbyte headLookDirectionBoneIndex, MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="TaleWorlds.Engine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>headLookDirectionBoneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

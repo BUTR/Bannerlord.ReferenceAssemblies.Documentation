@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LocalizedTextManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LocalizedTextManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Localization.LocalizedTextManager">
+
+
+
+  <h1 id="TaleWorlds_Localization_LocalizedTextManager" data-uid="TaleWorlds.Localization.LocalizedTextManager" class="text-break">
+Class LocalizedTextManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Localization.html">Localization</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Localization.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LocalizedTextManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LocalizedTextManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_DefaultEnglishLanguageId" data-uid="TaleWorlds.Localization.LocalizedTextManager.DefaultEnglishLanguageId">
+  DefaultEnglishLanguageId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultEnglishLanguageId = &quot;English&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_LanguageDataFileName" data-uid="TaleWorlds.Localization.LocalizedTextManager.LanguageDataFileName">
+  LanguageDataFileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LanguageDataFileName = &quot;language_data&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_AddLanguageTest_" data-uid="TaleWorlds.Localization.LocalizedTextManager.AddLanguageTest*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_AddLanguageTest_System_String_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.AddLanguageTest(System.String,System.String)">
+  AddLanguageTest(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddLanguageTest(string id, string processor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>processor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_ChangeLanguage_" data-uid="TaleWorlds.Localization.LocalizedTextManager.ChangeLanguage*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_ChangeLanguage_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.Localization.LocalizedTextManager.ChangeLanguage(System.Collections.Generic.List{System.String})">
+  ChangeLanguage(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CommandLineFunctionality.CommandLineArgumentFunction(&quot;change_language&quot;, &quot;localization&quot;)]
+public static string ChangeLanguage(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_CheckValidity_" data-uid="TaleWorlds.Localization.LocalizedTextManager.CheckValidity*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_CheckValidity_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.Localization.LocalizedTextManager.CheckValidity(System.Collections.Generic.List{System.String})">
+  CheckValidity(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CommandLineFunctionality.CommandLineArgumentFunction(&quot;check_for_errors&quot;, &quot;localization&quot;)]
+public static string CheckValidity(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_CreateTextProcessorForLanguage_" data-uid="TaleWorlds.Localization.LocalizedTextManager.CreateTextProcessorForLanguage*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_CreateTextProcessorForLanguage_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.CreateTextProcessorForLanguage(System.String)">
+  CreateTextProcessorForLanguage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LanguageSpecificTextProcessor CreateTextProcessorForLanguage(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextProcessor.LanguageSpecificTextProcessor.html">LanguageSpecificTextProcessor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetDateFormattedByLanguage_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetDateFormattedByLanguage*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetDateFormattedByLanguage_System_String_System_DateTime_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetDateFormattedByLanguage(System.String,System.DateTime)">
+  GetDateFormattedByLanguage(string, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDateFormattedByLanguage(string languageCode, DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>languageCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageIds_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageIds*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageIds_System_Boolean_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageIds(System.Boolean)">
+  GetLanguageIds(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetLanguageIds(bool developmentMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>developmentMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageIndex_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageIndex*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageIndex_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageIndex(System.String)">
+  GetLanguageIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetLanguageIndex(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageTitle_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageTitle*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetLanguageTitle_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLanguageTitle(System.String)">
+  GetLanguageTitle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLanguageTitle(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetLocalizationCodeOfISOLanguageCode_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLocalizationCodeOfISOLanguageCode*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetLocalizationCodeOfISOLanguageCode_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetLocalizationCodeOfISOLanguageCode(System.String)">
+  GetLocalizationCodeOfISOLanguageCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocalizationCodeOfISOLanguageCode(string isoLanguageCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isoLanguageCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetSubtitleExtensionOfLanguage_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetSubtitleExtensionOfLanguage*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetSubtitleExtensionOfLanguage_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetSubtitleExtensionOfLanguage(System.String)">
+  GetSubtitleExtensionOfLanguage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSubtitleExtensionOfLanguage(string languageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>languageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetTimeFormattedByLanguage_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetTimeFormattedByLanguage*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetTimeFormattedByLanguage_System_String_System_DateTime_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetTimeFormattedByLanguage(System.String,System.DateTime)">
+  GetTimeFormattedByLanguage(string, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTimeFormattedByLanguage(string languageCode, DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>languageCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_GetTranslatedText_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetTranslatedText*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_GetTranslatedText_System_String_System_String_" data-uid="TaleWorlds.Localization.LocalizedTextManager.GetTranslatedText(System.String,System.String)">
+  GetTranslatedText(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTranslatedText(string languageId, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>languageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_LoadLocalizationXmls_" data-uid="TaleWorlds.Localization.LocalizedTextManager.LoadLocalizationXmls*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_LoadLocalizationXmls_System_String___" data-uid="TaleWorlds.Localization.LocalizedTextManager.LoadLocalizationXmls(System.String[])">
+  LoadLocalizationXmls(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadLocalizationXmls(string[] loadedModules)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loadedModules</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Localization_LocalizedTextManager_ReloadTexts_" data-uid="TaleWorlds.Localization.LocalizedTextManager.ReloadTexts*"></a>
+
+  <h3 id="TaleWorlds_Localization_LocalizedTextManager_ReloadTexts_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.Localization.LocalizedTextManager.ReloadTexts(System.Collections.Generic.List{System.String})">
+  ReloadTexts(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CommandLineFunctionality.CommandLineArgumentFunction(&quot;reload_texts&quot;, &quot;localization&quot;)]
+public static string ReloadTexts(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

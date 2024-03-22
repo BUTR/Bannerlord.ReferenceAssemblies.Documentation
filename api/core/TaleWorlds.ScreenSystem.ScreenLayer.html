@@ -1,0 +1,1443 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScreenLayer | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScreenLayer | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.ScreenSystem.ScreenLayer">
+
+
+
+  <h1 id="TaleWorlds_ScreenSystem_ScreenLayer" data-uid="TaleWorlds.ScreenSystem.ScreenLayer" class="text-break">
+Class ScreenLayer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.ScreenSystem.html">ScreenSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.ScreenSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScreenLayer : IComparable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ScreenLayer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Engine.GauntletUI.GauntletLayer.html">GauntletLayer</a></div>
+      <div><a class="xref" href="TaleWorlds.Engine.Screens.SceneLayer.html">SceneLayer</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer__ctor_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.#ctor*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer__ctor_System_Int32_System_String_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.#ctor(System.Int32,System.String)">
+  ScreenLayer(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScreenLayer(int localOrder, string categoryId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localOrder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer__categoryId" data-uid="TaleWorlds.ScreenSystem.ScreenLayer._categoryId">
+  _categoryId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string _categoryId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_ActiveCursor_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ActiveCursor*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_ActiveCursor" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ActiveCursor">
+  ActiveCursor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CursorType ActiveCursor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ScreenSystem.CursorType.html">CursorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Finalized_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Finalized*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Finalized" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Finalized">
+  Finalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Finalized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_GamepadEnabled_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.GamepadEnabled*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_GamepadEnabled" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.GamepadEnabled">
+  GamepadEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GamepadEnabled { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Input_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Input*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Input" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Input">
+  Input
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputContext Input { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.InputSystem.InputContext.html">InputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_InputRestrictions_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.InputRestrictions*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_InputRestrictions" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.InputRestrictions">
+  InputRestrictions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputRestrictions InputRestrictions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.ScreenSystem.InputRestrictions.html">InputRestrictions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_InputUsageMask_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.InputUsageMask*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_InputUsageMask" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.InputUsageMask">
+  InputUsageMask
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputUsageMask InputUsageMask { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.InputUsageMask.html">InputUsageMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_IsActive_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsActive*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_IsActive" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsActive">
+  IsActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_IsFocusLayer_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsFocusLayer*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_IsFocusLayer" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsFocusLayer">
+  IsFocusLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFocusLayer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_IsHitThisFrame_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsHitThisFrame*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_IsHitThisFrame" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsHitThisFrame">
+  IsHitThisFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHitThisFrame { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_KeyboardEnabled_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.KeyboardEnabled*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_KeyboardEnabled" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.KeyboardEnabled">
+  KeyboardEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyboardEnabled { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_LastActiveState_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LastActiveState*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_LastActiveState" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LastActiveState">
+  LastActiveState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LastActiveState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_MouseEnabled_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.MouseEnabled*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_MouseEnabled" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.MouseEnabled">
+  MouseEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseEnabled { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Name_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Name*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Name" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Scale_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Scale*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Scale" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Scale">
+  Scale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_ScreenOrderInLastFrame_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ScreenOrderInLastFrame*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_ScreenOrderInLastFrame" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ScreenOrderInLastFrame">
+  ScreenOrderInLastFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScreenOrderInLastFrame { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_UsableArea_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.UsableArea*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_UsableArea" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.UsableArea">
+  UsableArea
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 UsableArea { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer__isMousePressedByThisLayer_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer._isMousePressedByThisLayer*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer__isMousePressedByThisLayer" data-uid="TaleWorlds.ScreenSystem.ScreenLayer._isMousePressedByThisLayer">
+  _isMousePressedByThisLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool? _isMousePressedByThisLayer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer__usedInputs_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer._usedInputs*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer__usedInputs" data-uid="TaleWorlds.ScreenSystem.ScreenLayer._usedInputs">
+  _usedInputs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InputType _usedInputs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.InputType.html">InputType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_CompareTo_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.CompareTo*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_CompareTo_System_Object_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.CompareTo(System.Object)">
+  CompareTo(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_DrawDebugInfo_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.DrawDebugInfo*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_DrawDebugInfo" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.DrawDebugInfo">
+  DrawDebugInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawDebugInfo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_EarlyProcessEvents_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.EarlyProcessEvents*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_EarlyProcessEvents_TaleWorlds_Library_InputType_System_Nullable_System_Boolean__" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.EarlyProcessEvents(TaleWorlds.Library.InputType,System.Nullable{System.Boolean})">
+  EarlyProcessEvents(InputType, bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EarlyProcessEvents(InputType handledInputs, bool? isMousePressed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handledInputs</code> <a class="xref" href="TaleWorlds.Library.InputType.html">InputType</a></dt>
+    <dd></dd>
+    <dt><code>isMousePressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_FocusTest_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.FocusTest*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_FocusTest" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.FocusTest">
+  FocusTest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FocusTest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_HitTest_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.HitTest*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_HitTest" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.HitTest">
+  HitTest()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HitTest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_HitTest_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.HitTest*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_HitTest_System_Numerics_Vector2_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.HitTest(System.Numerics.Vector2)">
+  HitTest(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HitTest(Vector2 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_IsFocusedOnInput_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsFocusedOnInput*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_IsFocusedOnInput" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.IsFocusedOnInput">
+  IsFocusedOnInput()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsFocusedOnInput()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_LateProcessEvents_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LateProcessEvents*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_LateProcessEvents" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LateProcessEvents">
+  LateProcessEvents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LateProcessEvents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_LateTick_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LateTick*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_LateTick_System_Single_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.LateTick(System.Single)">
+  LateTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LateTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnActivate_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnActivate*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnActivate" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnActivate">
+  OnActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnDeactivate_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnDeactivate*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnDeactivate" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnDeactivate">
+  OnDeactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDeactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnFinalize_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnFinalize" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnLateUpdate_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnLateUpdate*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnLateUpdate_System_Single_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnLateUpdate(System.Single)">
+  OnLateUpdate(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnLateUpdate(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnLoseFocus_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnLoseFocus*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnLoseFocus" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnLoseFocus">
+  OnLoseFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnLoseFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnOnScreenKeyboardCanceled_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnOnScreenKeyboardCanceled*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnOnScreenKeyboardCanceled" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnOnScreenKeyboardCanceled">
+  OnOnScreenKeyboardCanceled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnOnScreenKeyboardCanceled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_OnOnScreenKeyboardDone_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnOnScreenKeyboardDone*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_OnOnScreenKeyboardDone_System_String_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.OnOnScreenKeyboardDone(System.String)">
+  OnOnScreenKeyboardDone(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnOnScreenKeyboardDone(string inputText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_ProcessEvents_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ProcessEvents*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_ProcessEvents" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.ProcessEvents">
+  ProcessEvents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ProcessEvents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_RefreshGlobalOrder_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.RefreshGlobalOrder*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_RefreshGlobalOrder_System_Int32__" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.RefreshGlobalOrder(System.Int32@)">
+  RefreshGlobalOrder(ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshGlobalOrder(ref int currentOrder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentOrder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Tick_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Tick*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Tick_System_Single_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Tick(System.Single)">
+  Tick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Tick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_Update_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Update*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_Update_System_Collections_Generic_IReadOnlyList_System_Int32__" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.Update(System.Collections.Generic.IReadOnlyList{System.Int32})">
+  Update(IReadOnlyList&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update(IReadOnlyList&lt;int&gt; lastKeysPressed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lastKeysPressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_ScreenSystem_ScreenLayer_UpdateLayout_" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.UpdateLayout*"></a>
+
+  <h3 id="TaleWorlds_ScreenSystem_ScreenLayer_UpdateLayout" data-uid="TaleWorlds.ScreenSystem.ScreenLayer.UpdateLayout">
+  UpdateLayout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

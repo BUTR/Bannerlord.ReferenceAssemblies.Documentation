@@ -1,0 +1,2014 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ILobbyClientSessionHandler | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ILobbyClientSessionHandler | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler" class="text-break">
+Interface ILobbyClientSessionHandler  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Diamond.html">Diamond</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.Diamond.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILobbyClientSessionHandler</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnAdminMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnAdminMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnAdminMessageReceived_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnAdminMessageReceived(System.String)">
+  OnAdminMessageReceived(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnAdminMessageReceived(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnAnnouncementReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnAnnouncementReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnAnnouncementReceived_TaleWorlds_MountAndBlade_Diamond_Announcement_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnAnnouncementReceived(TaleWorlds.MountAndBlade.Diamond.Announcement)">
+  OnAnnouncementReceived(Announcement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnAnnouncementReceived(Announcement announcement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>announcement</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.Announcement.html">Announcement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleResultReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleResultReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleResultReceived" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleResultReceived">
+  OnBattleResultReceived()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnBattleResultReceived()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleServerInformationReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleServerInformationReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleServerInformationReceived_TaleWorlds_MountAndBlade_Diamond_BattleServerInformationForClient_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleServerInformationReceived(TaleWorlds.MountAndBlade.Diamond.BattleServerInformationForClient)">
+  OnBattleServerInformationReceived(BattleServerInformationForClient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnBattleServerInformationReceived(BattleServerInformationForClient battleServerInformation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>battleServerInformation</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleServerInformationForClient.html">BattleServerInformationForClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleServerLost_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleServerLost*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnBattleServerLost" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnBattleServerLost">
+  OnBattleServerLost()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnBattleServerLost()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCancelJoiningBattle_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCancelJoiningBattle*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCancelJoiningBattle" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCancelJoiningBattle">
+  OnCancelJoiningBattle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnCancelJoiningBattle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCantConnect_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCantConnect*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCantConnect" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCantConnect">
+  OnCantConnect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnCantConnect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnChannelMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnChannelMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnChannelMessageReceived_TaleWorlds_MountAndBlade_Diamond_ChatChannelType_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnChannelMessageReceived(TaleWorlds.MountAndBlade.Diamond.ChatChannelType,System.String,System.String)">
+  OnChannelMessageReceived(ChatChannelType, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnChannelMessageReceived(ChatChannelType channel, string playerName, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.ChatChannelType.html">ChatChannelType</a></dt>
+    <dd></dd>
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnChatMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnChatMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnChatMessageReceived_System_Guid_System_String_System_String_System_String_System_String_TaleWorlds_Diamond_ChatSystem_Library_MessageType_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnChatMessageReceived(System.Guid,System.String,System.String,System.String,System.String,TaleWorlds.Diamond.ChatSystem.Library.MessageType)">
+  OnChatMessageReceived(Guid, string, string, string, string, MessageType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnChatMessageReceived(Guid roomId, string roomName, string playerName, string messageText, string textColor, MessageType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>roomId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>roomName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>messageText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>textColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.Diamond.ChatSystem.Library.MessageType.html">MessageType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationFailed_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationFailed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationFailed" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationFailed">
+  OnClanCreationFailed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanCreationFailed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationStarted_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationStarted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationStarted" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationStarted">
+  OnClanCreationStarted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanCreationStarted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationSuccessful_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationSuccessful*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanCreationSuccessful" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanCreationSuccessful">
+  OnClanCreationSuccessful()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanCreationSuccessful()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInfoChanged_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInfoChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInfoChanged" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInfoChanged">
+  OnClanInfoChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanInfoChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInvitationAnswered_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInvitationAnswered*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInvitationAnswered_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_ClanCreationAnswer_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInvitationAnswered(TaleWorlds.PlayerServices.PlayerId,TaleWorlds.MountAndBlade.Diamond.ClanCreationAnswer)">
+  OnClanInvitationAnswered(PlayerId, ClanCreationAnswer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanInvitationAnswered(PlayerId playerId, ClanCreationAnswer answer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>answer</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.ClanCreationAnswer.html">ClanCreationAnswer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInvitationReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInvitationReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanInvitationReceived_System_String_System_String_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanInvitationReceived(System.String,System.String,System.Boolean)">
+  OnClanInvitationReceived(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanInvitationReceived(string clanName, string clanTag, bool isCreation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clanName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>clanTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>isCreation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClanMessageReceived_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClanMessageReceived(System.String,System.String)">
+  OnClanMessageReceived(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClanMessageReceived(string playerName, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClientQuitFromCustomGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClientQuitFromCustomGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClientQuitFromCustomGame_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClientQuitFromCustomGame(TaleWorlds.PlayerServices.PlayerId)">
+  OnClientQuitFromCustomGame(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnClientQuitFromCustomGame(PlayerId playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClientWantsToConnectCustomGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClientWantsToConnectCustomGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnClientWantsToConnectCustomGame_TaleWorlds_MountAndBlade_Diamond_PlayerJoinGameData___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnClientWantsToConnectCustomGame(TaleWorlds.MountAndBlade.Diamond.PlayerJoinGameData[])">
+  OnClientWantsToConnectCustomGame(PlayerJoinGameData[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PlayerJoinGameResponseDataFromHost[] OnClientWantsToConnectCustomGame(PlayerJoinGameData[] playerJoinData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerJoinData</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.PlayerJoinGameData.html">PlayerJoinGameData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Diamond.PlayerJoinGameResponseDataFromHost.html">PlayerJoinGameResponseDataFromHost</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnConnected_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnConnected*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnConnected" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnConnected">
+  OnConnected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnConnected()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCustomGameEnd_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCustomGameEnd*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCustomGameEnd" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCustomGameEnd">
+  OnCustomGameEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnCustomGameEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCustomGameServerListReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCustomGameServerListReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnCustomGameServerListReceived_TaleWorlds_MountAndBlade_Diamond_AvailableCustomGames_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnCustomGameServerListReceived(TaleWorlds.MountAndBlade.Diamond.AvailableCustomGames)">
+  OnCustomGameServerListReceived(AvailableCustomGames)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnCustomGameServerListReceived(AvailableCustomGames customGameServerList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>customGameServerList</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.AvailableCustomGames.html">AvailableCustomGames</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnDisconnected_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnDisconnected*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnDisconnected_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnDisconnected(TaleWorlds.Localization.TextObject)">
+  OnDisconnected(TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnDisconnected(TextObject feedback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>feedback</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnEnterBattleWithPartyAnswer_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnEnterBattleWithPartyAnswer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnEnterBattleWithPartyAnswer_System_String___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnEnterBattleWithPartyAnswer(System.String[])">
+  OnEnterBattleWithPartyAnswer(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnEnterBattleWithPartyAnswer(string[] selectedGameTypes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selectedGameTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnEnterCustomBattleWithPartyAnswer_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnEnterCustomBattleWithPartyAnswer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnEnterCustomBattleWithPartyAnswer" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnEnterCustomBattleWithPartyAnswer">
+  OnEnterCustomBattleWithPartyAnswer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnEnterCustomBattleWithPartyAnswer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnFindGameAnswer_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnFindGameAnswer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnFindGameAnswer_System_Boolean_System_String___System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnFindGameAnswer(System.Boolean,System.String[],System.Boolean)">
+  OnFindGameAnswer(bool, string[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnFindGameAnswer(bool successful, string[] selectedAndDisabledGameTypes, bool isRejoin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>successful</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>selectedAndDisabledGameTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>isRejoin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnFriendListReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnFriendListReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnFriendListReceived_TaleWorlds_MountAndBlade_Diamond_FriendInfo___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnFriendListReceived(TaleWorlds.MountAndBlade.Diamond.FriendInfo[])">
+  OnFriendListReceived(FriendInfo[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnFriendListReceived(FriendInfo[] friends)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>friends</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.FriendInfo.html">FriendInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnGameClientStateChange_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnGameClientStateChange*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnGameClientStateChange_TaleWorlds_MountAndBlade_Diamond_LobbyClient_State_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnGameClientStateChange(TaleWorlds.MountAndBlade.Diamond.LobbyClient.State)">
+  OnGameClientStateChange(State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnGameClientStateChange(LobbyClient.State oldState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldState</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.LobbyClient.html">LobbyClient</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Diamond.LobbyClient.State.html">State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnInviteToPlatformSession_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnInviteToPlatformSession*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnInviteToPlatformSession_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnInviteToPlatformSession(TaleWorlds.PlayerServices.PlayerId)">
+  OnInviteToPlatformSession(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; OnInviteToPlatformSession(PlayerId playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinCustomGameFailureResponse_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinCustomGameFailureResponse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinCustomGameFailureResponse_TaleWorlds_MountAndBlade_Diamond_CustomGameJoinResponse_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinCustomGameFailureResponse(TaleWorlds.MountAndBlade.Diamond.CustomGameJoinResponse)">
+  OnJoinCustomGameFailureResponse(CustomGameJoinResponse)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnJoinCustomGameFailureResponse(CustomGameJoinResponse response)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>response</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.CustomGameJoinResponse.html">CustomGameJoinResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinCustomGameResponse_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinCustomGameResponse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinCustomGameResponse_System_Boolean_TaleWorlds_MountAndBlade_Diamond_JoinGameData_TaleWorlds_MountAndBlade_Diamond_CustomGameJoinResponse_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinCustomGameResponse(System.Boolean,TaleWorlds.MountAndBlade.Diamond.JoinGameData,TaleWorlds.MountAndBlade.Diamond.CustomGameJoinResponse,System.Boolean)">
+  OnJoinCustomGameResponse(bool, JoinGameData, CustomGameJoinResponse, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnJoinCustomGameResponse(bool success, JoinGameData joinGameData, CustomGameJoinResponse failureReason, bool isAdmin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>success</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>joinGameData</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.JoinGameData.html">JoinGameData</a></dt>
+    <dd></dd>
+    <dt><code>failureReason</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.CustomGameJoinResponse.html">CustomGameJoinResponse</a></dt>
+    <dd></dd>
+    <dt><code>isAdmin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinPremadeGameRequestSuccessful_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinPremadeGameRequestSuccessful*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinPremadeGameRequestSuccessful" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinPremadeGameRequestSuccessful">
+  OnJoinPremadeGameRequestSuccessful()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnJoinPremadeGameRequestSuccessful()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinPremadeGameRequested_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinPremadeGameRequested*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnJoinPremadeGameRequested_System_String_System_String_System_Guid_TaleWorlds_PlayerServices_PlayerId___TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_PremadeGameType_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnJoinPremadeGameRequested(System.String,System.String,System.Guid,TaleWorlds.PlayerServices.PlayerId[],TaleWorlds.PlayerServices.PlayerId,TaleWorlds.MountAndBlade.Diamond.PremadeGameType)">
+  OnJoinPremadeGameRequested(string, string, Guid, PlayerId[], PlayerId, PremadeGameType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnJoinPremadeGameRequested(string clanName, string clanSigilCode, Guid partyId, PlayerId[] challengerPlayerIDs, PlayerId challengerPartyLeaderID, PremadeGameType premadeGameType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clanName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>clanSigilCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>partyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>challengerPlayerIDs</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a>[]</dt>
+    <dd></dd>
+    <dt><code>challengerPartyLeaderID</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>premadeGameType</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.PremadeGameType.html">PremadeGameType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnMatchmakerGameOver_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnMatchmakerGameOver*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnMatchmakerGameOver_System_Int32_System_Int32_System_Collections_Generic_List_System_String__System_Int32_TaleWorlds_MountAndBlade_Diamond_Ranked_RankBarInfo_TaleWorlds_MountAndBlade_Diamond_Ranked_RankBarInfo_TaleWorlds_MountAndBlade_Diamond_BattleCancelReason_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnMatchmakerGameOver(System.Int32,System.Int32,System.Collections.Generic.List{System.String},System.Int32,TaleWorlds.MountAndBlade.Diamond.Ranked.RankBarInfo,TaleWorlds.MountAndBlade.Diamond.Ranked.RankBarInfo,TaleWorlds.MountAndBlade.Diamond.BattleCancelReason)">
+  OnMatchmakerGameOver(int, int, List&lt;string&gt;, int, RankBarInfo, RankBarInfo, BattleCancelReason)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnMatchmakerGameOver(int oldExperience, int newExperience, List&lt;string&gt; badgesEarned, int lootGained, RankBarInfo oldRankBarInfo, RankBarInfo newRankBarInfo, BattleCancelReason battleCancelReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldExperience</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>newExperience</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>badgesEarned</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>lootGained</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>oldRankBarInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.Ranked.RankBarInfo.html">RankBarInfo</a></dt>
+    <dd></dd>
+    <dt><code>newRankBarInfo</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.Ranked.RankBarInfo.html">RankBarInfo</a></dt>
+    <dd></dd>
+    <dt><code>battleCancelReason</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.BattleCancelReason.html">BattleCancelReason</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnNotificationsReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnNotificationsReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnNotificationsReceived_TaleWorlds_MountAndBlade_Diamond_LobbyNotification___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnNotificationsReceived(TaleWorlds.MountAndBlade.Diamond.LobbyNotification[])">
+  OnNotificationsReceived(LobbyNotification[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnNotificationsReceived(LobbyNotification[] notifications)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notifications</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.LobbyNotification.html">LobbyNotification</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyInvitationInvalidated_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyInvitationInvalidated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyInvitationInvalidated" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyInvitationInvalidated">
+  OnPartyInvitationInvalidated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPartyInvitationInvalidated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyInvitationReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyInvitationReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyInvitationReceived_System_String_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyInvitationReceived(System.String,TaleWorlds.PlayerServices.PlayerId)">
+  OnPartyInvitationReceived(string, PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPartyInvitationReceived(string inviterPlayerName, PlayerId inviterPlayerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inviterPlayerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>inviterPlayerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyJoinRequestReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyJoinRequestReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyJoinRequestReceived_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_PlayerServices_PlayerId_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyJoinRequestReceived(TaleWorlds.PlayerServices.PlayerId,TaleWorlds.PlayerServices.PlayerId,System.String)">
+  OnPartyJoinRequestReceived(PlayerId, PlayerId, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPartyJoinRequestReceived(PlayerId playerId, PlayerId viaPlayerId, string viaFriendName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>viaPlayerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>viaFriendName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPartyMessageReceived_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPartyMessageReceived(System.String,System.String)">
+  OnPartyMessageReceived(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPartyMessageReceived(string playerName, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPendingRejoin_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPendingRejoin*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPendingRejoin" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPendingRejoin">
+  OnPendingRejoin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPendingRejoin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerAssignedPartyLeader_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerAssignedPartyLeader*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerAssignedPartyLeader_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerAssignedPartyLeader(TaleWorlds.PlayerServices.PlayerId)">
+  OnPlayerAssignedPartyLeader(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerAssignedPartyLeader(PlayerId partyLeaderId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>partyLeaderId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerDataReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerDataReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerDataReceived_TaleWorlds_MountAndBlade_Diamond_PlayerData_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerDataReceived(TaleWorlds.MountAndBlade.Diamond.PlayerData)">
+  OnPlayerDataReceived(PlayerData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerDataReceived(PlayerData playerData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerData</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.PlayerData.html">PlayerData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerInvitedToParty_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerInvitedToParty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerInvitedToParty_TaleWorlds_PlayerServices_PlayerId_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerInvitedToParty(TaleWorlds.PlayerServices.PlayerId)">
+  OnPlayerInvitedToParty(PlayerId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerInvitedToParty(PlayerId playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerRemovedFromParty_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerRemovedFromParty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerRemovedFromParty_TaleWorlds_PlayerServices_PlayerId_TaleWorlds_MountAndBlade_Diamond_PartyRemoveReason_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerRemovedFromParty(TaleWorlds.PlayerServices.PlayerId,TaleWorlds.MountAndBlade.Diamond.PartyRemoveReason)">
+  OnPlayerRemovedFromParty(PlayerId, PartyRemoveReason)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerRemovedFromParty(PlayerId playerId, PartyRemoveReason reason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>reason</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.PartyRemoveReason.html">PartyRemoveReason</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerSuggestedToParty_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerSuggestedToParty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayerSuggestedToParty_TaleWorlds_PlayerServices_PlayerId_System_String_TaleWorlds_PlayerServices_PlayerId_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayerSuggestedToParty(TaleWorlds.PlayerServices.PlayerId,System.String,TaleWorlds.PlayerServices.PlayerId,System.String)">
+  OnPlayerSuggestedToParty(PlayerId, string, PlayerId, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayerSuggestedToParty(PlayerId playerId, string playerName, PlayerId suggestingPlayerId, string suggestingPlayerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>suggestingPlayerId</code> <a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a></dt>
+    <dd></dd>
+    <dt><code>suggestingPlayerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayersAddedToParty_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayersAddedToParty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPlayersAddedToParty_System_Collections_Generic_List_System_ValueTuple_TaleWorlds_PlayerServices_PlayerId_System_String_System_Boolean___System_Collections_Generic_List_System_ValueTuple_TaleWorlds_PlayerServices_PlayerId_System_String___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPlayersAddedToParty(System.Collections.Generic.List{System.ValueTuple{TaleWorlds.PlayerServices.PlayerId,System.String,System.Boolean}},System.Collections.Generic.List{System.ValueTuple{TaleWorlds.PlayerServices.PlayerId,System.String}})">
+  OnPlayersAddedToParty(List&lt;(PlayerId PlayerId, string PlayerName, bool IsPartyLeader)&gt;, List&lt;(PlayerId PlayerId, string PlayerName)&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPlayersAddedToParty(List&lt;(PlayerId PlayerId, string PlayerName, bool IsPartyLeader)&gt; addedPlayers, List&lt;(PlayerId PlayerId, string PlayerName)&gt; invitedPlayers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addedPlayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.playerservices.playerid,system.string,system.boolean-.playerid">PlayerId</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.playerservices.playerid,system.string,system.boolean-.playername">PlayerName</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.playerservices.playerid,system.string,system.boolean-.ispartyleader">IsPartyLeader</a>)&gt;</dt>
+    <dd></dd>
+    <dt><code>invitedPlayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;(<a class="xref" href="TaleWorlds.PlayerServices.PlayerId.html">PlayerId</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.playerservices.playerid,system.string-.playerid">PlayerId</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-taleworlds.playerservices.playerid,system.string-.playername">PlayerName</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameCreated_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameCreated*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameCreated" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameCreated">
+  OnPremadeGameCreated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPremadeGameCreated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameCreationCancelled_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameCreationCancelled*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameCreationCancelled" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameCreationCancelled">
+  OnPremadeGameCreationCancelled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPremadeGameCreationCancelled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameEligibilityStatusReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameEligibilityStatusReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameEligibilityStatusReceived_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameEligibilityStatusReceived(System.Boolean)">
+  OnPremadeGameEligibilityStatusReceived(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPremadeGameEligibilityStatusReceived(bool isEligible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isEligible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameListReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameListReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnPremadeGameListReceived" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnPremadeGameListReceived">
+  OnPremadeGameListReceived()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnPremadeGameListReceived()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnQuitFromCustomGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnQuitFromCustomGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnQuitFromCustomGame" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnQuitFromCustomGame">
+  OnQuitFromCustomGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnQuitFromCustomGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnQuitFromMatchmakerGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnQuitFromMatchmakerGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnQuitFromMatchmakerGame" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnQuitFromMatchmakerGame">
+  OnQuitFromMatchmakerGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnQuitFromMatchmakerGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRecentPlayerStatusesReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRecentPlayerStatusesReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRecentPlayerStatusesReceived_TaleWorlds_MountAndBlade_Diamond_FriendInfo___" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRecentPlayerStatusesReceived(TaleWorlds.MountAndBlade.Diamond.FriendInfo[])">
+  OnRecentPlayerStatusesReceived(FriendInfo[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRecentPlayerStatusesReceived(FriendInfo[] friends)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>friends</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.FriendInfo.html">FriendInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRegisterCustomGameServerResponse_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRegisterCustomGameServerResponse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRegisterCustomGameServerResponse" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRegisterCustomGameServerResponse">
+  OnRegisterCustomGameServerResponse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRegisterCustomGameServerResponse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRejoinBattleRequestAnswered_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRejoinBattleRequestAnswered*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRejoinBattleRequestAnswered_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRejoinBattleRequestAnswered(System.Boolean)">
+  OnRejoinBattleRequestAnswered(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRejoinBattleRequestAnswered(bool isSuccessful)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isSuccessful</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRejoinRequestRejected_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRejoinRequestRejected*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRejoinRequestRejected" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRejoinRequestRejected">
+  OnRejoinRequestRejected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRejoinRequestRejected()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRemovedFromCustomGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRemovedFromCustomGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRemovedFromCustomGame_TaleWorlds_MountAndBlade_Diamond_DisconnectType_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRemovedFromCustomGame(TaleWorlds.MountAndBlade.Diamond.DisconnectType)">
+  OnRemovedFromCustomGame(DisconnectType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRemovedFromCustomGame(DisconnectType disconnectType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disconnectType</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.DisconnectType.html">DisconnectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRemovedFromMatchmakerGame_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRemovedFromMatchmakerGame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnRemovedFromMatchmakerGame_TaleWorlds_MountAndBlade_Diamond_DisconnectType_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnRemovedFromMatchmakerGame(TaleWorlds.MountAndBlade.Diamond.DisconnectType)">
+  OnRemovedFromMatchmakerGame(DisconnectType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRemovedFromMatchmakerGame(DisconnectType disconnectType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disconnectType</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.DisconnectType.html">DisconnectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnServerStatusReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnServerStatusReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnServerStatusReceived_TaleWorlds_MountAndBlade_Diamond_ServerStatus_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnServerStatusReceived(TaleWorlds.MountAndBlade.Diamond.ServerStatus)">
+  OnServerStatusReceived(ServerStatus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnServerStatusReceived(ServerStatus serverStatus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serverStatus</code> <a class="xref" href="TaleWorlds.MountAndBlade.Diamond.ServerStatus.html">ServerStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnSigilChanged_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnSigilChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnSigilChanged" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnSigilChanged">
+  OnSigilChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnSigilChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnSystemMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnSystemMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnSystemMessageReceived_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnSystemMessageReceived(System.String)">
+  OnSystemMessageReceived(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnSystemMessageReceived(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnWhisperMessageReceived_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnWhisperMessageReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Diamond_ILobbyClientSessionHandler_OnWhisperMessageReceived_System_String_System_String_System_String_" data-uid="TaleWorlds.MountAndBlade.Diamond.ILobbyClientSessionHandler.OnWhisperMessageReceived(System.String,System.String,System.String)">
+  OnWhisperMessageReceived(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnWhisperMessageReceived(string fromPlayer, string toPlayer, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromPlayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>toPlayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

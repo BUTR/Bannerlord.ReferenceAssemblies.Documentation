@@ -1,0 +1,1187 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HeroHelper | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HeroHelper | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Helpers.HeroHelper">
+
+
+
+  <h1 id="Helpers_HeroHelper" data-uid="Helpers.HeroHelper" class="text-break">
+Class HeroHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HeroHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">HeroHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Helpers_HeroHelper_CalculateReliabilityConstant_" data-uid="Helpers.HeroHelper.CalculateReliabilityConstant*"></a>
+
+  <h3 id="Helpers_HeroHelper_CalculateReliabilityConstant_TaleWorlds_CampaignSystem_Hero_System_Single_" data-uid="Helpers.HeroHelper.CalculateReliabilityConstant(TaleWorlds.CampaignSystem.Hero,System.Single)">
+  CalculateReliabilityConstant(Hero, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CalculateReliabilityConstant(Hero hero, float maxValueConstant = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>maxValueConstant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_CalculateTotalStrength_" data-uid="Helpers.HeroHelper.CalculateTotalStrength*"></a>
+
+  <h3 id="Helpers_HeroHelper_CalculateTotalStrength_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.CalculateTotalStrength(TaleWorlds.CampaignSystem.Hero)">
+  CalculateTotalStrength(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateTotalStrength(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_DefaultRelation_" data-uid="Helpers.HeroHelper.DefaultRelation*"></a>
+
+  <h3 id="Helpers_HeroHelper_DefaultRelation_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.DefaultRelation(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  DefaultRelation(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DefaultRelation(Hero hero, Hero otherHero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>otherHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetCharacterTypeName_" data-uid="Helpers.HeroHelper.GetCharacterTypeName*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetCharacterTypeName_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetCharacterTypeName(TaleWorlds.CampaignSystem.Hero)">
+  GetCharacterTypeName(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetCharacterTypeName(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetClosestSettlement_" data-uid="Helpers.HeroHelper.GetClosestSettlement*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetClosestSettlement_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetClosestSettlement(TaleWorlds.CampaignSystem.Hero)">
+  GetClosestSettlement(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement GetClosestSettlement(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetLastSeenText_" data-uid="Helpers.HeroHelper.GetLastSeenText*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetLastSeenText_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetLastSeenText(TaleWorlds.CampaignSystem.Hero)">
+  GetLastSeenText(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetLastSeenText(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetOccupiedEventReasonText_" data-uid="Helpers.HeroHelper.GetOccupiedEventReasonText*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetOccupiedEventReasonText_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetOccupiedEventReasonText(TaleWorlds.CampaignSystem.Hero)">
+  GetOccupiedEventReasonText(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetOccupiedEventReasonText(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetProbabilityForClan_" data-uid="Helpers.HeroHelper.GetProbabilityForClan*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetProbabilityForClan_TaleWorlds_CampaignSystem_Clan_System_Collections_Generic_IEnumerable_TaleWorlds_CampaignSystem_Settlements_Settlement__TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetProbabilityForClan(TaleWorlds.CampaignSystem.Clan,System.Collections.Generic.IEnumerable{TaleWorlds.CampaignSystem.Settlements.Settlement},TaleWorlds.CampaignSystem.Hero)">
+  GetProbabilityForClan(Clan, IEnumerable&lt;Settlement&gt;, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetProbabilityForClan(Clan clan, IEnumerable&lt;Settlement&gt; applicableSettlements, Hero notable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+    <dt><code>applicableSettlements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>notable</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetRandomBirthDayForAge_" data-uid="Helpers.HeroHelper.GetRandomBirthDayForAge*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetRandomBirthDayForAge_System_Single_" data-uid="Helpers.HeroHelper.GetRandomBirthDayForAge(System.Single)">
+  GetRandomBirthDayForAge(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CampaignTime GetRandomBirthDayForAge(float age)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>age</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetRandomClanForNotable_" data-uid="Helpers.HeroHelper.GetRandomClanForNotable*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetRandomClanForNotable_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetRandomClanForNotable(TaleWorlds.CampaignSystem.Hero)">
+  GetRandomClanForNotable(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Clan GetRandomClanForNotable(Hero notable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notable</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetRandomDeathDayAndBirthDay_" data-uid="Helpers.HeroHelper.GetRandomDeathDayAndBirthDay*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetRandomDeathDayAndBirthDay_System_Int32_TaleWorlds_CampaignSystem_CampaignTime__TaleWorlds_CampaignSystem_CampaignTime__" data-uid="Helpers.HeroHelper.GetRandomDeathDayAndBirthDay(System.Int32,TaleWorlds.CampaignSystem.CampaignTime@,TaleWorlds.CampaignSystem.CampaignTime@)">
+  GetRandomDeathDayAndBirthDay(int, out CampaignTime, out CampaignTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetRandomDeathDayAndBirthDay(int deathAge, out CampaignTime birthday, out CampaignTime deathday)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deathAge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>birthday</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+    <dt><code>deathday</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetTitleInIndefiniteCase_" data-uid="Helpers.HeroHelper.GetTitleInIndefiniteCase*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetTitleInIndefiniteCase_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetTitleInIndefiniteCase(TaleWorlds.CampaignSystem.Hero)">
+  GetTitleInIndefiniteCase(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetTitleInIndefiniteCase(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_GetVolunteerTroopsOfHeroForRecruitment_" data-uid="Helpers.HeroHelper.GetVolunteerTroopsOfHeroForRecruitment*"></a>
+
+  <h3 id="Helpers_HeroHelper_GetVolunteerTroopsOfHeroForRecruitment_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.GetVolunteerTroopsOfHeroForRecruitment(TaleWorlds.CampaignSystem.Hero)">
+  GetVolunteerTroopsOfHeroForRecruitment(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CharacterObject&gt; GetVolunteerTroopsOfHeroForRecruitment(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_HeroCanRecruitFromHero_" data-uid="Helpers.HeroHelper.HeroCanRecruitFromHero*"></a>
+
+  <h3 id="Helpers_HeroHelper_HeroCanRecruitFromHero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Int32_" data-uid="Helpers.HeroHelper.HeroCanRecruitFromHero(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,System.Int32)">
+  HeroCanRecruitFromHero(Hero, Hero, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HeroCanRecruitFromHero(Hero buyerHero, Hero sellerHero, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buyerHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>sellerHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_IsCompanionInPlayerParty_" data-uid="Helpers.HeroHelper.IsCompanionInPlayerParty*"></a>
+
+  <h3 id="Helpers_HeroHelper_IsCompanionInPlayerParty_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.IsCompanionInPlayerParty(TaleWorlds.CampaignSystem.Hero)">
+  IsCompanionInPlayerParty(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCompanionInPlayerParty(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_LordWillConspireWithLord_" data-uid="Helpers.HeroHelper.LordWillConspireWithLord*"></a>
+
+  <h3 id="Helpers_HeroHelper_LordWillConspireWithLord_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Boolean_" data-uid="Helpers.HeroHelper.LordWillConspireWithLord(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,System.Boolean)">
+  LordWillConspireWithLord(Hero, Hero, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LordWillConspireWithLord(Hero lord, Hero otherLord, bool suggestingBetrayal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lord</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>otherLord</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>suggestingBetrayal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_NPCPersonalityClashWithNPC_" data-uid="Helpers.HeroHelper.NPCPersonalityClashWithNPC*"></a>
+
+  <h3 id="Helpers_HeroHelper_NPCPersonalityClashWithNPC_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.NPCPersonalityClashWithNPC(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  NPCPersonalityClashWithNPC(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NPCPersonalityClashWithNPC(Hero firstNPC, Hero secondNPC)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstNPC</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>secondNPC</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_NPCPoliticalDifferencesWithNPC_" data-uid="Helpers.HeroHelper.NPCPoliticalDifferencesWithNPC*"></a>
+
+  <h3 id="Helpers_HeroHelper_NPCPoliticalDifferencesWithNPC_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.NPCPoliticalDifferencesWithNPC(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero)">
+  NPCPoliticalDifferencesWithNPC(Hero, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NPCPoliticalDifferencesWithNPC(Hero firstNPC, Hero secondNPC)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstNPC</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>secondNPC</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_OrderHeroesOnPlayerSideByPriority_" data-uid="Helpers.HeroHelper.OrderHeroesOnPlayerSideByPriority*"></a>
+
+  <h3 id="Helpers_HeroHelper_OrderHeroesOnPlayerSideByPriority" data-uid="Helpers.HeroHelper.OrderHeroesOnPlayerSideByPriority">
+  OrderHeroesOnPlayerSideByPriority()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; OrderHeroesOnPlayerSideByPriority()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_SetPlayerSalutation_" data-uid="Helpers.HeroHelper.SetPlayerSalutation*"></a>
+
+  <h3 id="Helpers_HeroHelper_SetPlayerSalutation" data-uid="Helpers.HeroHelper.SetPlayerSalutation">
+  SetPlayerSalutation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlayerSalutation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_SetPropertiesToTextObject_" data-uid="Helpers.HeroHelper.SetPropertiesToTextObject*"></a>
+
+  <h3 id="Helpers_HeroHelper_SetPropertiesToTextObject_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Localization_TextObject_System_String_" data-uid="Helpers.HeroHelper.SetPropertiesToTextObject(TaleWorlds.CampaignSystem.Hero,TaleWorlds.Localization.TextObject,System.String)">
+  SetPropertiesToTextObject(Hero, TextObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPropertiesToTextObject(this Hero hero, TextObject textObject, string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>textObject</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_SetPropertiesToTextObject_" data-uid="Helpers.HeroHelper.SetPropertiesToTextObject*"></a>
+
+  <h3 id="Helpers_HeroHelper_SetPropertiesToTextObject_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject_System_String_" data-uid="Helpers.HeroHelper.SetPropertiesToTextObject(TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.Localization.TextObject,System.String)">
+  SetPropertiesToTextObject(Settlement, TextObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPropertiesToTextObject(this Settlement settlement, TextObject textObject, string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>textObject</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_SpawnHeroForTheFirstTime_" data-uid="Helpers.HeroHelper.SpawnHeroForTheFirstTime*"></a>
+
+  <h3 id="Helpers_HeroHelper_SpawnHeroForTheFirstTime_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="Helpers.HeroHelper.SpawnHeroForTheFirstTime(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  SpawnHeroForTheFirstTime(Hero, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnHeroForTheFirstTime(Hero hero, Settlement spawnSettlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>spawnSettlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_StartRecruitingMoneyLimit_" data-uid="Helpers.HeroHelper.StartRecruitingMoneyLimit*"></a>
+
+  <h3 id="Helpers_HeroHelper_StartRecruitingMoneyLimit_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.StartRecruitingMoneyLimit(TaleWorlds.CampaignSystem.Hero)">
+  StartRecruitingMoneyLimit(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float StartRecruitingMoneyLimit(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_StartRecruitingMoneyLimitForClanLeader_" data-uid="Helpers.HeroHelper.StartRecruitingMoneyLimitForClanLeader*"></a>
+
+  <h3 id="Helpers_HeroHelper_StartRecruitingMoneyLimitForClanLeader_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.StartRecruitingMoneyLimitForClanLeader(TaleWorlds.CampaignSystem.Hero)">
+  StartRecruitingMoneyLimitForClanLeader(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float StartRecruitingMoneyLimitForClanLeader(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_TraitHarmony_" data-uid="Helpers.HeroHelper.TraitHarmony*"></a>
+
+  <h3 id="Helpers_HeroHelper_TraitHarmony_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CharacterDevelopment_TraitObject_TaleWorlds_CampaignSystem_Hero_System_Boolean_" data-uid="Helpers.HeroHelper.TraitHarmony(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject,TaleWorlds.CampaignSystem.Hero,System.Boolean)">
+  TraitHarmony(Hero, TraitObject, Hero, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TraitHarmony(Hero considerer, TraitObject trait, Hero consideree, bool sensitive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>considerer</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>trait</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.TraitObject.html">TraitObject</a></dt>
+    <dd></dd>
+    <dt><code>consideree</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>sensitive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_UnderPlayerCommand_" data-uid="Helpers.HeroHelper.UnderPlayerCommand*"></a>
+
+  <h3 id="Helpers_HeroHelper_UnderPlayerCommand_TaleWorlds_CampaignSystem_Hero_" data-uid="Helpers.HeroHelper.UnderPlayerCommand(TaleWorlds.CampaignSystem.Hero)">
+  UnderPlayerCommand(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnderPlayerCommand(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_HeroHelper_WillLordAttack_" data-uid="Helpers.HeroHelper.WillLordAttack*"></a>
+
+  <h3 id="Helpers_HeroHelper_WillLordAttack" data-uid="Helpers.HeroHelper.WillLordAttack">
+  WillLordAttack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WillLordAttack()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1057 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MapState | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MapState | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.GameState.MapState">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_GameState_MapState" data-uid="TaleWorlds.CampaignSystem.GameState.MapState" class="text-break">
+Class MapState  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.GameState.html">GameState</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MapState : GameState</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.GameState.html">GameState</a></div>
+      <div><span class="xref">MapState</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_Level">GameState.Level</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_NumberOfListenerActivations">GameState.NumberOfListenerActivations</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_RegisterListener_TaleWorlds_Core_IGameStateListener_">GameState.RegisterListener(IGameStateListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_UnregisterListener_TaleWorlds_Core_IGameStateListener_">GameState.UnregisterListener(IGameStateListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_GetListenerOfType__1">GameState.GetListenerOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_OnInitialize">GameState.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_OnFinalize">GameState.OnFinalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_OnDeactivate">GameState.OnDeactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_Predecessor">GameState.Predecessor</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_IsActive">GameState.IsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_Listeners">GameState.Listeners</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_GameStateManager">GameState.GameStateManager</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_IsMusicMenuState">GameState.IsMusicMenuState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_IsMenuState">GameState.IsMenuState</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_IsMission">GameState.IsMission</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Core.GameState.html#TaleWorlds_Core_GameState_Activated">GameState.Activated</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized">MBObjectBase.AfterInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister">MBObjectBase.AfterRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Initialize">MBObjectBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Deserialize_TaleWorlds_ObjectSystem_MBObjectManager_System_Xml_XmlNode_">MBObjectBase.Deserialize(MBObjectManager, XmlNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnBeforeLoad">MBObjectBase.OnBeforeLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode">MBObjectBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetName">MBObjectBase.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoad">MBObjectBase.PreAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal">MBObjectBase.PreAfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoad">MBObjectBase.AfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal">MBObjectBase.AfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered">MBObjectBase.OnRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered">MBObjectBase.OnUnregistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__">MBObjectBase.AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_StringId">MBObjectBase.StringId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Id">MBObjectBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized">MBObjectBase.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsReady">MBObjectBase.IsReady</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState__ctor_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState__ctor" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.#ctor">
+  MapState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_AtMenu_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.AtMenu*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_AtMenu" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.AtMenu">
+  AtMenu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtMenu { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_GameMenuId_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.GameMenuId*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_GameMenuId" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.GameMenuId">
+  GameMenuId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GameMenuId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_Handler_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.Handler*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_Handler" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.Handler">
+  Handler
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMapStateHandler Handler { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameState.IMapStateHandler.html">IMapStateHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_IsSimulationActive_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.IsSimulationActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_IsSimulationActive" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.IsSimulationActive">
+  IsSimulationActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSimulationActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_MapConversationActive_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.MapConversationActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_MapConversationActive" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.MapConversationActive">
+  MapConversationActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapConversationActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_MenuContext_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.MenuContext*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_MenuContext" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.MenuContext">
+  MenuContext
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuContext MenuContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameState.MenuContext.html">MenuContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_EndBattleSimulation_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.EndBattleSimulation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_EndBattleSimulation" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.EndBattleSimulation">
+  EndBattleSimulation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndBattleSimulation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_EnterMenuMode_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.EnterMenuMode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_EnterMenuMode" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.EnterMenuMode">
+  EnterMenuMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnterMenuMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_ExitMenuMode_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ExitMenuMode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_ExitMenuMode" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ExitMenuMode">
+  ExitMenuMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitMenuMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnActivate_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnActivate*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnActivate" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnActivate">
+  OnActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnArmyCreated_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnArmyCreated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnArmyCreated_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnArmyCreated(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  OnArmyCreated(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnArmyCreated(MobileParty mobileParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnDispersePlayerLeadedArmy_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnDispersePlayerLeadedArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnDispersePlayerLeadedArmy" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnDispersePlayerLeadedArmy">
+  OnDispersePlayerLeadedArmy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDispersePlayerLeadedArmy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnIdleTick_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnIdleTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnIdleTick_System_Single_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnIdleTick(System.Single)">
+  OnIdleTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnIdleTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnJoinArmy_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnJoinArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnJoinArmy" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnJoinArmy">
+  OnJoinArmy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinArmy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnLeaveArmy_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnLeaveArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnLeaveArmy" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnLeaveArmy">
+  OnLeaveArmy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLeaveArmy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnLoadingFinished_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnLoadingFinished*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnLoadingFinished" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnLoadingFinished">
+  OnLoadingFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLoadingFinished()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnMainPartyEncounter_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMainPartyEncounter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnMainPartyEncounter" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMainPartyEncounter">
+  OnMainPartyEncounter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMainPartyEncounter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnMapConversationOver_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMapConversationOver*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnMapConversationOver" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMapConversationOver">
+  OnMapConversationOver()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMapConversationOver()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnMapConversationStarts_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMapConversationStarts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnMapConversationStarts_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_TaleWorlds_CampaignSystem_Conversation_ConversationCharacterData_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnMapConversationStarts(TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData,TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData)">
+  OnMapConversationStarts(ConversationCharacterData, ConversationCharacterData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMapConversationStarts(ConversationCharacterData playerCharacterData, ConversationCharacterData conversationPartnerData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerCharacterData</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData.html">ConversationCharacterData</a></dt>
+    <dd></dd>
+    <dt><code>conversationPartnerData</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.ConversationCharacterData.html">ConversationCharacterData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnPlayerSiegeActivated_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnPlayerSiegeActivated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnPlayerSiegeActivated" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnPlayerSiegeActivated">
+  OnPlayerSiegeActivated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerSiegeActivated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnPlayerSiegeDeactivated_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnPlayerSiegeDeactivated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnPlayerSiegeDeactivated" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnPlayerSiegeDeactivated">
+  OnPlayerSiegeDeactivated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerSiegeDeactivated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnSiegeEngineClick_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnSiegeEngineClick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnSiegeEngineClick_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnSiegeEngineClick(TaleWorlds.Library.MatrixFrame)">
+  OnSiegeEngineClick(MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSiegeEngineClick(MatrixFrame siegeEngineFrame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>siegeEngineFrame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_OnTick_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_OnTick_System_Single_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_ProcessTravel_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ProcessTravel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_ProcessTravel_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ProcessTravel(TaleWorlds.CampaignSystem.Party.PartyBase)">
+  ProcessTravel(PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessTravel(PartyBase party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_ProcessTravel_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ProcessTravel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_ProcessTravel_TaleWorlds_Library_Vec2_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.ProcessTravel(TaleWorlds.Library.Vec2)">
+  ProcessTravel(Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessTravel(Vec2 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_GameState_MapState_StartBattleSimulation_" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.StartBattleSimulation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_GameState_MapState_StartBattleSimulation" data-uid="TaleWorlds.CampaignSystem.GameState.MapState.StartBattleSimulation">
+  StartBattleSimulation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartBattleSimulation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

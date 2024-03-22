@@ -1,0 +1,5644 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MobileParty | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MobileParty | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Party.MobileParty">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Party_MobileParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty" class="text-break">
+Class MobileParty  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.html">Party</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MobileParty : CampaignObjectBase, IMapPoint, ITrackableCampaignObject, ITrackableBase, IMapEntity, IRandomOwner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.CampaignObjectBase.html">CampaignObjectBase</a></div>
+      <div><span class="xref">MobileParty</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Map.IMapPoint.html">IMapPoint</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.ITrackableCampaignObject.html">ITrackableCampaignObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ITrackableBase.html">ITrackableBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Map.IMapEntity.html">IMapEntity</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.IRandomOwner.html">IRandomOwner</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized">MBObjectBase.AfterInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister">MBObjectBase.AfterRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Deserialize_TaleWorlds_ObjectSystem_MBObjectManager_System_Xml_XmlNode_">MBObjectBase.Deserialize(MBObjectManager, XmlNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode">MBObjectBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetName">MBObjectBase.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal">MBObjectBase.PreAfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal">MBObjectBase.AfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered">MBObjectBase.OnRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered">MBObjectBase.OnUnregistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_StringId">MBObjectBase.StringId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Id">MBObjectBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized">MBObjectBase.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsReady">MBObjectBase.IsReady</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_">RandomOwnerExtensions.RandomFloat(IRandomOwner)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_System_Single_">RandomOwnerExtensions.RandomFloat(IRandomOwner, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_System_Single_System_Single_">RandomOwnerExtensions.RandomFloat(IRandomOwner, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Single_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Single_System_Single_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_">RandomOwnerExtensions.RandomInt(IRandomOwner)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_System_Int32_">RandomOwnerExtensions.RandomInt(IRandomOwner, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_System_Int32_System_Int32_">RandomOwnerExtensions.RandomInt(IRandomOwner, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Int32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Int32_System_Int32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint, int, int)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty__ctor_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty__ctor" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.#ctor">
+  MobileParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AverageFleeTargetDirection" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AverageFleeTargetDirection">
+  AverageFleeTargetDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(1071)]
+public Vec2 AverageFleeTargetDirection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ClanRoleAssignmentMinimumSkillValue" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ClanRoleAssignmentMinimumSkillValue">
+  ClanRoleAssignmentMinimumSkillValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ClanRoleAssignmentMinimumSkillValue = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_DefaultPartyTradeInitialGold" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.DefaultPartyTradeInitialGold">
+  DefaultPartyTradeInitialGold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultPartyTradeInitialGold = 5000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HasUnpaidWages" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HasUnpaidWages">
+  HasUnpaidWages
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(1006)]
+public float HasUnpaidWages</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ActualClan_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ActualClan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ActualClan" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ActualClan">
+  ActualClan
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Clan ActualClan { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Aggressiveness_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Aggressiveness*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Aggressiveness" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Aggressiveness">
+  Aggressiveness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1009)]
+public float Aggressiveness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Ai_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Ai*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Ai" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Ai">
+  Ai
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1019)]
+public MobilePartyAi Ai { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobilePartyAi.html">MobilePartyAi</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AiBehaviorTarget_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AiBehaviorTarget*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AiBehaviorTarget" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AiBehaviorTarget">
+  AiBehaviorTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 AiBehaviorTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_All_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.All*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_All" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.All">
+  All
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; All { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllBanditParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllBanditParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllBanditParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllBanditParties">
+  AllBanditParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllBanditParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllCaravanParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllCaravanParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllCaravanParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllCaravanParties">
+  AllCaravanParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllCaravanParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllCustomParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllCustomParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllCustomParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllCustomParties">
+  AllCustomParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllCustomParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllGarrisonParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllGarrisonParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllGarrisonParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllGarrisonParties">
+  AllGarrisonParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllGarrisonParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllLordParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllLordParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllLordParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllLordParties">
+  AllLordParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllLordParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllMilitiaParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllMilitiaParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllMilitiaParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllMilitiaParties">
+  AllMilitiaParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllMilitiaParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllPartiesWithoutPartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllPartiesWithoutPartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllPartiesWithoutPartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllPartiesWithoutPartyComponent">
+  AllPartiesWithoutPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllPartiesWithoutPartyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AllVillagerParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllVillagerParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AllVillagerParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AllVillagerParties">
+  AllVillagerParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;MobileParty&gt; AllVillagerParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Army_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Army*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Army" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Army">
+  Army
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Army Army { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Army.html">Army</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ArmyName_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ArmyName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ArmyName" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ArmyName">
+  ArmyName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject ArmyName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ArmyPositionAdder_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ArmyPositionAdder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ArmyPositionAdder" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ArmyPositionAdder">
+  ArmyPositionAdder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1005)]
+public Vec2 ArmyPositionAdder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AttachedParties_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AttachedParties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AttachedParties" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AttachedParties">
+  AttachedParties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;MobileParty&gt; AttachedParties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AttachedTo_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AttachedTo*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AttachedTo" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AttachedTo">
+  AttachedTo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty AttachedTo { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AvoidHostileActions_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AvoidHostileActions*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AvoidHostileActions" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AvoidHostileActions">
+  AvoidHostileActions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AvoidHostileActions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_BanditPartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BanditPartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_BanditPartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BanditPartyComponent">
+  BanditPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BanditPartyComponent BanditPartyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.BanditPartyComponent.html">BanditPartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_BaseFoodChange_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BaseFoodChange*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_BaseFoodChange" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BaseFoodChange">
+  BaseFoodChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BaseFoodChange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Bearing_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Bearing*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Bearing" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Bearing">
+  Bearing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1004)]
+public Vec2 Bearing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_BesiegedSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BesiegedSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_BesiegedSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BesiegedSettlement">
+  BesiegedSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement BesiegedSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_BesiegerCamp_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BesiegerCamp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_BesiegerCamp" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.BesiegerCamp">
+  BesiegerCamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BesiegerCamp BesiegerCamp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Siege.BesiegerCamp.html">BesiegerCamp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CaravanPartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CaravanPartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CaravanPartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CaravanPartyComponent">
+  CaravanPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CaravanPartyComponent CaravanPartyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.CaravanPartyComponent.html">CaravanPartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ConversationParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ConversationParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ConversationParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ConversationParty">
+  ConversationParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MobileParty ConversationParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Count_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Count*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Count" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CurrentNavigationFace_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CurrentNavigationFace*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CurrentNavigationFace" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CurrentNavigationFace">
+  CurrentNavigationFace
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public PathFaceRecord CurrentNavigationFace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.PathFaceRecord.html">PathFaceRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CurrentSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CurrentSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CurrentSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CurrentSettlement">
+  CurrentSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement CurrentSettlement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_DefaultBehavior_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.DefaultBehavior*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_DefaultBehavior" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.DefaultBehavior">
+  DefaultBehavior
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AiBehavior DefaultBehavior { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.AiBehavior.html">AiBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_DisorganizedUntilTime_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.DisorganizedUntilTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_DisorganizedUntilTime" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.DisorganizedUntilTime">
+  DisorganizedUntilTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CampaignTime DisorganizedUntilTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveEngineer_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveEngineer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveEngineer" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveEngineer">
+  EffectiveEngineer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero EffectiveEngineer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveQuartermaster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveQuartermaster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveQuartermaster" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveQuartermaster">
+  EffectiveQuartermaster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero EffectiveQuartermaster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveScout_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveScout*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveScout" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveScout">
+  EffectiveScout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero EffectiveScout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveSurgeon_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveSurgeon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_EffectiveSurgeon" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EffectiveSurgeon">
+  EffectiveSurgeon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero EffectiveSurgeon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ErrorPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ErrorPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ErrorPosition" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ErrorPosition">
+  ErrorPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public Vec2 ErrorPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_EventPositionAdder_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EventPositionAdder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_EventPositionAdder" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.EventPositionAdder">
+  EventPositionAdder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 EventPositionAdder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Food_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Food*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Food" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Food">
+  Food
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Food { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_FoodChange_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FoodChange*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_FoodChange" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FoodChange">
+  FoodChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FoodChange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_FoodChangeExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FoodChangeExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_FoodChangeExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FoodChangeExplained">
+  FoodChangeExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber FoodChangeExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetPosition2D_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetPosition2D*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetPosition2D" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetPosition2D">
+  GetPosition2D
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 GetPosition2D { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForHeroes_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForHeroes*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForHeroes" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForHeroes">
+  HealingRateForHeroes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HealingRateForHeroes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForHeroesExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForHeroesExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForHeroesExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForHeroesExplained">
+  HealingRateForHeroesExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber HealingRateForHeroesExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForRegulars_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForRegulars*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForRegulars" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForRegulars">
+  HealingRateForRegulars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HealingRateForRegulars { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForRegularsExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForRegularsExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HealingRateForRegularsExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HealingRateForRegularsExplained">
+  HealingRateForRegularsExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber HealingRateForRegularsExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HomeSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HomeSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HomeSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HomeSettlement">
+  HomeSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement HomeSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InventoryCapacity_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InventoryCapacity*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InventoryCapacity" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InventoryCapacity">
+  InventoryCapacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InventoryCapacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InventoryCapacityExplainedNumber_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InventoryCapacityExplainedNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InventoryCapacityExplainedNumber" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InventoryCapacityExplainedNumber">
+  InventoryCapacityExplainedNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber InventoryCapacityExplainedNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsActive_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsActive" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsActive">
+  IsActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1023)]
+public bool IsActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsBandit_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsBandit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsBandit" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsBandit">
+  IsBandit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsBandit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsBanditBossParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsBanditBossParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsBanditBossParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsBanditBossParty">
+  IsBanditBossParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBanditBossParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCaravan_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCaravan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCaravan" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCaravan">
+  IsCaravan
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsCaravan { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCurrentlyGoingToSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCurrentlyGoingToSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCurrentlyGoingToSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCurrentlyGoingToSettlement">
+  IsCurrentlyGoingToSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurrentlyGoingToSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCurrentlyUsedByAQuest_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCurrentlyUsedByAQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCurrentlyUsedByAQuest" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCurrentlyUsedByAQuest">
+  IsCurrentlyUsedByAQuest
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurrentlyUsedByAQuest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCustomParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCustomParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsCustomParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsCustomParty">
+  IsCustomParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsCustomParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsDisbanding_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsDisbanding*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsDisbanding" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsDisbanding">
+  IsDisbanding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1081)]
+public bool IsDisbanding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsDisorganized_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsDisorganized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsDisorganized" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsDisorganized">
+  IsDisorganized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisorganized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsEngaging_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsEngaging*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsEngaging" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsEngaging">
+  IsEngaging
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEngaging { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsGarrison_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsGarrison*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsGarrison" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsGarrison">
+  IsGarrison
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsGarrison { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsInspected_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsInspected*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsInspected" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsInspected">
+  IsInspected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInspected { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsLordParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsLordParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsLordParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsLordParty">
+  IsLordParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsLordParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMainParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMainParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMainParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMainParty">
+  IsMainParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMainParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMilitia_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMilitia*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMilitia" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMilitia">
+  IsMilitia
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsMilitia { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMoving_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMoving*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsMoving" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsMoving">
+  IsMoving
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMoving { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsPartyTradeActive_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsPartyTradeActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsPartyTradeActive" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsPartyTradeActive">
+  IsPartyTradeActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1958)]
+public bool IsPartyTradeActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsVillager_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsVillager*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsVillager" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsVillager">
+  IsVillager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsVillager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsVisible_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsVisible*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsVisible" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsVisible">
+  IsVisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ItemRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ItemRoster" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ItemRoster">
+  ItemRoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRoster ItemRoster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_LastVisitedSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LastVisitedSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_LastVisitedSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LastVisitedSettlement">
+  LastVisitedSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1002)]
+public Settlement LastVisitedSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_LeaderHero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LeaderHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_LeaderHero" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LeaderHero">
+  LeaderHero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero LeaderHero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_LimitedPartySize_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LimitedPartySize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_LimitedPartySize" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LimitedPartySize">
+  LimitedPartySize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LimitedPartySize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_LordPartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LordPartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_LordPartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.LordPartyComponent">
+  LordPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LordPartyComponent LordPartyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.LordPartyComponent.html">LordPartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MainParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MainParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MainParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MainParty">
+  MainParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MobileParty MainParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MapEvent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapEvent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MapEvent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapEvent">
+  MapEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapEvent MapEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MapEventSide_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapEventSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MapEventSide" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapEventSide">
+  MapEventSide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapEventSide MapEventSide { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEventSide.html">MapEventSide</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MapFaction_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapFaction*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MapFaction" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MapFaction">
+  MapFaction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFaction MapFaction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MemberRoster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MemberRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MemberRoster" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MemberRoster">
+  MemberRoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TroopRoster MemberRoster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Morale_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Morale*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Morale" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Morale">
+  Morale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Morale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_MoraleExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MoraleExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_MoraleExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.MoraleExplained">
+  MoraleExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber MoraleExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Name_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Name*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Name" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Objective_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Objective*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Objective" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Objective">
+  Objective
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1090)]
+public MobileParty.PartyObjective Objective { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.PartyObjective.html">PartyObjective</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Owner_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Owner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Owner" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Owner">
+  Owner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero Owner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Party_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Party*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Party" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Party">
+  Party
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1020)]
+public PartyBase Party { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyComponent">
+  PartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyComponent PartyComponent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent.html">PartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PartySizeRatio_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartySizeRatio*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PartySizeRatio" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartySizeRatio">
+  PartySizeRatio
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PartySizeRatio { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyTradeGold_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyTradeGold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyTradeGold" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyTradeGold">
+  PartyTradeGold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PartyTradeGold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyTradeTaxGold_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyTradeTaxGold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PartyTradeTaxGold" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PartyTradeTaxGold">
+  PartyTradeTaxGold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1957)]
+public int PartyTradeTaxGold { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PaymentLimit_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PaymentLimit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PaymentLimit" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PaymentLimit">
+  PaymentLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PaymentLimit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Position2D_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Position2D*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Position2D" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Position2D">
+  Position2D
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 Position2D { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_PrisonRoster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PrisonRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_PrisonRoster" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.PrisonRoster">
+  PrisonRoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TroopRoster PrisonRoster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_RandomValue_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RandomValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_RandomValue" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RandomValue">
+  RandomValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RandomValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_RecentEventsMorale_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RecentEventsMorale*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_RecentEventsMorale" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RecentEventsMorale">
+  RecentEventsMorale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RecentEventsMorale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SeeingRange_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SeeingRange*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SeeingRange" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SeeingRange">
+  SeeingRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SeeingRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SeeingRangeExplanation_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SeeingRangeExplanation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SeeingRangeExplanation" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SeeingRangeExplanation">
+  SeeingRangeExplanation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber SeeingRangeExplanation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermBehavior_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermBehavior*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermBehavior" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermBehavior">
+  ShortTermBehavior
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1050)]
+public AiBehavior ShortTermBehavior { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.AiBehavior.html">AiBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermTargetParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermTargetParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermTargetParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermTargetParty">
+  ShortTermTargetParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty ShortTermTargetParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermTargetSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermTargetSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ShortTermTargetSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShortTermTargetSettlement">
+  ShortTermTargetSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement ShortTermTargetSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ShouldBeIgnored_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShouldBeIgnored*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ShouldBeIgnored" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShouldBeIgnored">
+  ShouldBeIgnored
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldBeIgnored { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ShouldJoinPlayerBattles_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShouldJoinPlayerBattles*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ShouldJoinPlayerBattles" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ShouldJoinPlayerBattles">
+  ShouldJoinPlayerBattles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1080)]
+public bool ShouldJoinPlayerBattles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SiegeEvent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SiegeEvent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SiegeEvent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SiegeEvent">
+  SiegeEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiegeEvent SiegeEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.html">SiegeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Speed_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Speed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Speed" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Speed">
+  Speed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SpeedExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SpeedExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SpeedExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SpeedExplained">
+  SpeedExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber SpeedExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_StationaryStartTime_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.StationaryStartTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_StationaryStartTime" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.StationaryStartTime">
+  StationaryStartTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(1960)]
+public CampaignTime StationaryStartTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetParty">
+  TargetParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty TargetParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetPosition" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetPosition">
+  TargetPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 TargetPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TargetSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TargetSettlement">
+  TargetSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement TargetSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ThinkParamsCache_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ThinkParamsCache*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ThinkParamsCache" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ThinkParamsCache">
+  ThinkParamsCache
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public PartyThinkParams ThinkParamsCache { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.PartyThinkParams.html">PartyThinkParams</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalFoodAtInventory_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalFoodAtInventory*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalFoodAtInventory" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalFoodAtInventory">
+  TotalFoodAtInventory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalFoodAtInventory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWage_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWage*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWage" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWage">
+  TotalWage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalWage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWageExplained_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWageExplained*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWageExplained" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWageExplained">
+  TotalWageExplained
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplainedNumber TotalWageExplained { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ExplainedNumber.html">ExplainedNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWeightCarried_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWeightCarried*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_TotalWeightCarried" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.TotalWeightCarried">
+  TotalWeightCarried
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TotalWeightCarried { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_VersionNo_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.VersionNo*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_VersionNo" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.VersionNo">
+  VersionNo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int VersionNo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_VisualPosition2DWithoutError_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.VisualPosition2DWithoutError*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_VisualPosition2DWithoutError" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.VisualPosition2DWithoutError">
+  VisualPosition2DWithoutError
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 VisualPosition2DWithoutError { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_WarPartyComponent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.WarPartyComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_WarPartyComponent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.WarPartyComponent">
+  WarPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WarPartyComponent WarPartyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.WarPartyComponent.html">WarPartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AddElementToMemberRoster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddElementToMemberRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AddElementToMemberRoster_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddElementToMemberRoster(TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Boolean)">
+  AddElementToMemberRoster(CharacterObject, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddElementToMemberRoster(CharacterObject element, int numberToAdd, bool insertAtFront = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>numberToAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>insertAtFront</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AddPrisoner_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddPrisoner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AddPrisoner_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddPrisoner(TaleWorlds.CampaignSystem.CharacterObject,System.Int32)">
+  AddPrisoner(CharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddPrisoner(CharacterObject element, int numberToAdd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>numberToAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_AddTaxGold_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddTaxGold*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_AddTaxGold_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.AddTaxGold(System.Int32)">
+  AddTaxGold(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTaxGold(int amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CanPayMoreWage_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CanPayMoreWage*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CanPayMoreWage" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CanPayMoreWage">
+  CanPayMoreWage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPayMoreWage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ChangePartyLeader_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ChangePartyLeader*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ChangePartyLeader_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ChangePartyLeader(TaleWorlds.CampaignSystem.Hero)">
+  ChangePartyLeader(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangePartyLeader(Hero newLeader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newLeader</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CheckTracked_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CheckTracked*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CheckTracked_TaleWorlds_Core_BasicCharacterObject_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CheckTracked(TaleWorlds.Core.BasicCharacterObject)">
+  CheckTracked(BasicCharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckTracked(BasicCharacterObject basicCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>basicCharacter</code> <a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ComputeIsWaiting_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ComputeIsWaiting*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ComputeIsWaiting" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ComputeIsWaiting">
+  ComputeIsWaiting()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ComputeIsWaiting()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_CreateParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CreateParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_CreateParty_System_String_TaleWorlds_CampaignSystem_Party_PartyComponents_PartyComponent_TaleWorlds_CampaignSystem_Party_PartyComponents_PartyComponent_OnPartyComponentCreatedDelegate_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.CreateParty(System.String,TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent,TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent.OnPartyComponentCreatedDelegate)">
+  CreateParty(string, PartyComponent, OnPartyComponentCreatedDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MobileParty CreateParty(string stringId, PartyComponent component, PartyComponent.OnPartyComponentCreatedDelegate delegateFunction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>component</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent.html">PartyComponent</a></dt>
+    <dd></dd>
+    <dt><code>delegateFunction</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent.html">PartyComponent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.PartyComponent.OnPartyComponentCreatedDelegate.html">OnPartyComponentCreatedDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_FindNextLocatable_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FindNextLocatable*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_FindNextLocatable_TaleWorlds_CampaignSystem_Map_LocatableSearchData_TaleWorlds_CampaignSystem_Party_MobileParty___" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.FindNextLocatable(TaleWorlds.CampaignSystem.Map.LocatableSearchData{TaleWorlds.CampaignSystem.Party.MobileParty}@)">
+  FindNextLocatable(ref LocatableSearchData&lt;MobileParty&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MobileParty FindNextLocatable(ref LocatableSearchData&lt;MobileParty&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="TaleWorlds.CampaignSystem.Map.LocatableSearchData-1.html">LocatableSearchData</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetEffectiveRoleHolder_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetEffectiveRoleHolder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetEffectiveRoleHolder_TaleWorlds_CampaignSystem_SkillEffect_PerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetEffectiveRoleHolder(TaleWorlds.CampaignSystem.SkillEffect.PerkRole)">
+  GetEffectiveRoleHolder(PerkRole)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero GetEffectiveRoleHolder(SkillEffect.PerkRole perkRole)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perkRole</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.PerkRole.html">PerkRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetHeroPerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetHeroPerkRole*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetHeroPerkRole_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetHeroPerkRole(TaleWorlds.CampaignSystem.Hero)">
+  GetHeroPerkRole(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkillEffect.PerkRole GetHeroPerkRole(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.PerkRole.html">PerkRole</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetLogicalPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetLogicalPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetLogicalPosition" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetLogicalPosition">
+  GetLogicalPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetLogicalPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetMountAndHarnessVisualIdsForPartyIcon_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetMountAndHarnessVisualIdsForPartyIcon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetMountAndHarnessVisualIdsForPartyIcon_System_String__System_String__" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetMountAndHarnessVisualIdsForPartyIcon(System.String@,System.String@)">
+  GetMountAndHarnessVisualIdsForPartyIcon(out string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMountAndHarnessVisualIdsForPartyIcon(out string mountStringId, out string harnessStringId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mountStringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>harnessStringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetNumDaysForFoodToLast_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetNumDaysForFoodToLast*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetNumDaysForFoodToLast" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetNumDaysForFoodToLast">
+  GetNumDaysForFoodToLast()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumDaysForFoodToLast()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetPosition" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetPosition">
+  GetPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetRoleHolder_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetRoleHolder*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetRoleHolder_TaleWorlds_CampaignSystem_SkillEffect_PerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetRoleHolder(TaleWorlds.CampaignSystem.SkillEffect.PerkRole)">
+  GetRoleHolder(PerkRole)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero GetRoleHolder(SkillEffect.PerkRole perkRole)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perkRole</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.PerkRole.html">PerkRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetTotalStrengthWithFollowers_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetTotalStrengthWithFollowers*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetTotalStrengthWithFollowers_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetTotalStrengthWithFollowers(System.Boolean)">
+  GetTotalStrengthWithFollowers(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTotalStrengthWithFollowers(bool includeNonAttachedArmyMembers = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>includeNonAttachedArmyMembers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_GetTrackDistanceToMainAgent_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetTrackDistanceToMainAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_GetTrackDistanceToMainAgent" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.GetTrackDistanceToMainAgent">
+  GetTrackDistanceToMainAgent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTrackDistanceToMainAgent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HasLimitedWage_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HasLimitedWage*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HasLimitedWage" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HasLimitedWage">
+  HasLimitedWage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLimitedWage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_HasPerk_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HasPerk*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_HasPerk_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.HasPerk(TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject,System.Boolean)">
+  HasPerk(PerkObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPerk(PerkObject perk, bool checkSecondaryRole = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>perk</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.PerkObject.html">PerkObject</a></dt>
+    <dd></dd>
+    <dt><code>checkSecondaryRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IgnoreByOtherPartiesTill_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IgnoreByOtherPartiesTill*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IgnoreByOtherPartiesTill_TaleWorlds_CampaignSystem_CampaignTime_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IgnoreByOtherPartiesTill(TaleWorlds.CampaignSystem.CampaignTime)">
+  IgnoreByOtherPartiesTill(CampaignTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreByOtherPartiesTill(CampaignTime time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IgnoreForHours_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IgnoreForHours*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IgnoreForHours_System_Single_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IgnoreForHours(System.Single)">
+  IgnoreForHours(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreForHours(float hours)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hours</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_Initialize_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Initialize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_Initialize" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAroundPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAroundPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAroundPosition_TaleWorlds_CampaignSystem_Party_PartyTemplateObject_TaleWorlds_Library_Vec2_System_Single_System_Single_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAroundPosition(TaleWorlds.CampaignSystem.Party.PartyTemplateObject,TaleWorlds.Library.Vec2,System.Single,System.Single,System.Int32)">
+  InitializeMobilePartyAroundPosition(PartyTemplateObject, Vec2, float, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeMobilePartyAroundPosition(PartyTemplateObject pt, Vec2 position, float spawnRadius, float minSpawnRadius = 0, int troopNumberLimit = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyTemplateObject.html">PartyTemplateObject</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>spawnRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>minSpawnRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>troopNumberLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAroundPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAroundPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAroundPosition_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_Library_Vec2_System_Single_System_Single_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAroundPosition(TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.Library.Vec2,System.Single,System.Single)">
+  InitializeMobilePartyAroundPosition(TroopRoster, TroopRoster, Vec2, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeMobilePartyAroundPosition(TroopRoster memberRoster, TroopRoster prisonerRoster, Vec2 position, float spawnRadius, float minSpawnRadius = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>memberRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>prisonerRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>spawnRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>minSpawnRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAtPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAtPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAtPosition_TaleWorlds_CampaignSystem_Party_PartyTemplateObject_TaleWorlds_Library_Vec2_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAtPosition(TaleWorlds.CampaignSystem.Party.PartyTemplateObject,TaleWorlds.Library.Vec2,System.Int32)">
+  InitializeMobilePartyAtPosition(PartyTemplateObject, Vec2, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeMobilePartyAtPosition(PartyTemplateObject pt, Vec2 position, int troopNumberLimit = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyTemplateObject.html">PartyTemplateObject</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>troopNumberLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAtPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAtPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializeMobilePartyAtPosition_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_CampaignSystem_Roster_TroopRoster_TaleWorlds_Library_Vec2_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializeMobilePartyAtPosition(TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.CampaignSystem.Roster.TroopRoster,TaleWorlds.Library.Vec2)">
+  InitializeMobilePartyAtPosition(TroopRoster, TroopRoster, Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeMobilePartyAtPosition(TroopRoster memberRoster, TroopRoster prisonerRoster, Vec2 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>memberRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>prisonerRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializePartyTrade_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializePartyTrade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_InitializePartyTrade_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.InitializePartyTrade(System.Int32)">
+  InitializePartyTrade(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializePartyTrade(int initialGold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialGold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsSpotted_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsSpotted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsSpotted" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsSpotted">
+  IsSpotted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSpotted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_IsWageLimitExceeded_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsWageLimitExceeded*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_IsWageLimitExceeded" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.IsWageLimitExceeded">
+  IsWageLimitExceeded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWageLimitExceeded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_OnGameInitialized_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.OnGameInitialized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_OnGameInitialized" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.OnGameInitialized">
+  OnGameInitialized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGameInitialized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_RemoveHeroPerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemoveHeroPerkRole*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_RemoveHeroPerkRole_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemoveHeroPerkRole(TaleWorlds.CampaignSystem.Hero)">
+  RemoveHeroPerkRole(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveHeroPerkRole(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_RemoveParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemoveParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_RemoveParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemoveParty">
+  RemoveParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_RemovePartyLeader_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemovePartyLeader*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_RemovePartyLeader" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.RemovePartyLeader">
+  RemovePartyLeader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePartyLeader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ResetBesiegedSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ResetBesiegedSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ResetBesiegedSettlement" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ResetBesiegedSettlement">
+  ResetBesiegedSettlement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetBesiegedSettlement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ResetTargetParty_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ResetTargetParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ResetTargetParty" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ResetTargetParty">
+  ResetTargetParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTargetParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetCustomHomeSettlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetCustomHomeSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetCustomHomeSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetCustomHomeSettlement(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  SetCustomHomeSettlement(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomHomeSettlement(Settlement customHomeSettlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>customHomeSettlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetCustomName_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetCustomName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetCustomName_TaleWorlds_Localization_TextObject_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetCustomName(TaleWorlds.Localization.TextObject)">
+  SetCustomName(TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomName(TextObject name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetDisorganized_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetDisorganized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetDisorganized_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetDisorganized(System.Boolean)">
+  SetDisorganized(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisorganized(bool isDisorganized)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isDisorganized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetHeroPerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetHeroPerkRole*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetHeroPerkRole_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_SkillEffect_PerkRole_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetHeroPerkRole(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.SkillEffect.PerkRole)">
+  SetHeroPerkRole(Hero, PerkRole)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeroPerkRole(Hero hero, SkillEffect.PerkRole perkRole)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>perkRole</code> <a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.html">SkillEffect</a>.<a class="xref" href="TaleWorlds.CampaignSystem.SkillEffect.PerkRole.html">PerkRole</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyEngineer_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyEngineer*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyEngineer_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyEngineer(TaleWorlds.CampaignSystem.Hero)">
+  SetPartyEngineer(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartyEngineer(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyObjective_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyObjective*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyObjective_TaleWorlds_CampaignSystem_Party_MobileParty_PartyObjective_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyObjective(TaleWorlds.CampaignSystem.Party.MobileParty.PartyObjective)">
+  SetPartyObjective(PartyObjective)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartyObjective(MobileParty.PartyObjective objective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objective</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.PartyObjective.html">PartyObjective</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyQuartermaster_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyQuartermaster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyQuartermaster_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyQuartermaster(TaleWorlds.CampaignSystem.Hero)">
+  SetPartyQuartermaster(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartyQuartermaster(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyScout_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyScout*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyScout_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyScout(TaleWorlds.CampaignSystem.Hero)">
+  SetPartyScout(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartyScout(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartySurgeon_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartySurgeon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartySurgeon_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartySurgeon(TaleWorlds.CampaignSystem.Hero)">
+  SetPartySurgeon(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartySurgeon(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyUsedByQuest_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyUsedByQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetPartyUsedByQuest_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetPartyUsedByQuest(System.Boolean)">
+  SetPartyUsedByQuest(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPartyUsedByQuest(bool isActivelyUsed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActivelyUsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_SetWagePaymentLimit_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetWagePaymentLimit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_SetWagePaymentLimit_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.SetWagePaymentLimit(System.Int32)">
+  SetWagePaymentLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWagePaymentLimit(int newLimit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_StartFindingLocatablesAroundPosition_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.StartFindingLocatablesAroundPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_StartFindingLocatablesAroundPosition_TaleWorlds_Library_Vec2_System_Single_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.StartFindingLocatablesAroundPosition(TaleWorlds.Library.Vec2,System.Single)">
+  StartFindingLocatablesAroundPosition(Vec2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocatableSearchData&lt;MobileParty&gt; StartFindingLocatablesAroundPosition(Vec2 position, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Map.LocatableSearchData-1.html">LocatableSearchData</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ToString_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ToString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ToString" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_UpdatePartyComponentFlags_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.UpdatePartyComponentFlags*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_UpdatePartyComponentFlags" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.UpdatePartyComponentFlags">
+  UpdatePartyComponentFlags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePartyComponentFlags()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_UpdateVersionNo_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.UpdateVersionNo*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_UpdateVersionNo" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.UpdateVersionNo">
+  UpdateVersionNo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersionNo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_MobileParty_ValidateSpeed_" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ValidateSpeed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_MobileParty_ValidateSpeed" data-uid="TaleWorlds.CampaignSystem.Party.MobileParty.ValidateSpeed">
+  ValidateSpeed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateSpeed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

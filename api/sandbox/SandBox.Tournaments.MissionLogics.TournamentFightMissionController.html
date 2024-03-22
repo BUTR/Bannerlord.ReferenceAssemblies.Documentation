@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TournamentFightMissionController | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TournamentFightMissionController | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController">
+
+
+
+  <h1 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController" class="text-break">
+Class TournamentFightMissionController  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.Tournaments.html">Tournaments</a>.<a class="xref" href="SandBox.Tournaments.MissionLogics.html">MissionLogics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TournamentFightMissionController : MissionLogic, ITournamentGameBehavior</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TournamentFightMissionController</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="SandBox.Tournaments.ITournamentGameBehavior.html">ITournamentGameBehavior</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController__ctor_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.#ctor*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController__ctor_TaleWorlds_CampaignSystem_CultureObject_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.#ctor(TaleWorlds.CampaignSystem.CultureObject)">
+  TournamentFightMissionController(CultureObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TournamentFightMissionController(CultureObject culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>culture</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.CultureObject.html">CultureObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_AfterStart_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.AfterStart*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_AfterStart" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.AfterStart">
+  AfterStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AfterStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_CanAgentRout_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.CanAgentRout*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_CanAgentRout_TaleWorlds_MountAndBlade_Agent_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.CanAgentRout(TaleWorlds.MountAndBlade.Agent)">
+  CanAgentRout(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAgentRout(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_CheckIfIsThereAnyEnemies_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.CheckIfIsThereAnyEnemies*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_CheckIfIsThereAnyEnemies" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.CheckIfIsThereAnyEnemies">
+  CheckIfIsThereAnyEnemies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckIfIsThereAnyEnemies()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_IsMatchEnded_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.IsMatchEnded*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_IsMatchEnded" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.IsMatchEnded">
+  IsMatchEnded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMatchEnded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnAgentRemoved_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnAgentRemoved*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnAgentRemoved_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_AgentState_TaleWorlds_MountAndBlade_KillingBlow_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnAgentRemoved(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.AgentState,TaleWorlds.MountAndBlade.KillingBlow)">
+  OnAgentRemoved(Agent, Agent, AgentState, KillingBlow)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow killingBlow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>agentState</code> <a class="xref" href="../core/TaleWorlds.Core.AgentState.html">AgentState</a></dt>
+    <dd></dd>
+    <dt><code>killingBlow</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.KillingBlow.html">KillingBlow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnBehaviorInitialize_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnBehaviorInitialize*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnBehaviorInitialize" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnBehaviorInitialize">
+  OnBehaviorInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnBehaviorInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnEndMission_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnEndMission*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnEndMission" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnEndMission">
+  OnEndMission()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEndMission()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnEndMissionRequest_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnEndMissionRequest*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnEndMissionRequest_System_Boolean__" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnEndMissionRequest(System.Boolean@)">
+  OnEndMissionRequest(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override InquiryData OnEndMissionRequest(out bool canPlayerLeave)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canPlayerLeave</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.InquiryData.html">InquiryData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnMatchEnded_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnMatchEnded*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnMatchEnded" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnMatchEnded">
+  OnMatchEnded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMatchEnded()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnMatchResultsReady_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnMatchResultsReady*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnMatchResultsReady" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnMatchResultsReady">
+  OnMatchResultsReady()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMatchResultsReady()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnScoreHit_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnScoreHit*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_OnScoreHit_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_Agent_TaleWorlds_Core_WeaponComponentData_System_Boolean_System_Boolean_TaleWorlds_MountAndBlade_Blow__TaleWorlds_MountAndBlade_AttackCollisionData__System_Single_System_Single_System_Single_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.OnScoreHit(TaleWorlds.MountAndBlade.Agent,TaleWorlds.MountAndBlade.Agent,TaleWorlds.Core.WeaponComponentData,System.Boolean,System.Boolean,TaleWorlds.MountAndBlade.Blow@,TaleWorlds.MountAndBlade.AttackCollisionData@,System.Single,System.Single,System.Single)">
+  OnScoreHit(Agent, Agent, WeaponComponentData, bool, bool, in Blow, in AttackCollisionData, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnScoreHit(Agent affectedAgent, Agent affectorAgent, WeaponComponentData attackerWeapon, bool isBlocked, bool isSiegeEngineHit, in Blow blow, in AttackCollisionData collisionData, float damagedHp, float hitDistance, float shotDifficulty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectedAgent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>affectorAgent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>attackerWeapon</code> <a class="xref" href="../core/TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+    <dt><code>isBlocked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isSiegeEngineHit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>blow</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Blow.html">Blow</a></dt>
+    <dd></dd>
+    <dt><code>collisionData</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.AttackCollisionData.html">AttackCollisionData</a></dt>
+    <dd></dd>
+    <dt><code>damagedHp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>hitDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>shotDifficulty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_PrepareForMatch_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.PrepareForMatch*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_PrepareForMatch" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.PrepareForMatch">
+  PrepareForMatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareForMatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_SkipMatch_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.SkipMatch*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_SkipMatch_TaleWorlds_CampaignSystem_TournamentGames_TournamentMatch_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.SkipMatch(TaleWorlds.CampaignSystem.TournamentGames.TournamentMatch)">
+  SkipMatch(TournamentMatch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SkipMatch(TournamentMatch match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.TournamentGames.TournamentMatch.html">TournamentMatch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_StartMatch_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.StartMatch*"></a>
+
+  <h3 id="SandBox_Tournaments_MissionLogics_TournamentFightMissionController_StartMatch_TaleWorlds_CampaignSystem_TournamentGames_TournamentMatch_System_Boolean_" data-uid="SandBox.Tournaments.MissionLogics.TournamentFightMissionController.StartMatch(TaleWorlds.CampaignSystem.TournamentGames.TournamentMatch,System.Boolean)">
+  StartMatch(TournamentMatch, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMatch(TournamentMatch match, bool isLastRound)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.TournamentGames.TournamentMatch.html">TournamentMatch</a></dt>
+    <dd></dd>
+    <dt><code>isLastRound</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

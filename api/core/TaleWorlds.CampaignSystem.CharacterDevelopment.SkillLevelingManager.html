@@ -1,0 +1,1633 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkillLevelingManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkillLevelingManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager" class="text-break">
+Class SkillLevelingManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.CharacterDevelopment.html">CharacterDevelopment</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SkillLevelingManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SkillLevelingManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnAIPartiesTravel_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnAIPartiesTravel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnAIPartiesTravel_TaleWorlds_CampaignSystem_Hero_System_Boolean_TaleWorlds_Core_TerrainType_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnAIPartiesTravel(TaleWorlds.CampaignSystem.Hero,System.Boolean,TaleWorlds.Core.TerrainType)">
+  OnAIPartiesTravel(Hero, bool, TerrainType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnAIPartiesTravel(Hero hero, bool isCaravanParty, TerrainType currentTerrainType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>isCaravanParty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>currentTerrainType</code> <a class="xref" href="TaleWorlds.Core.TerrainType.html">TerrainType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnAlleyCleared_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnAlleyCleared*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnAlleyCleared_TaleWorlds_CampaignSystem_Settlements_Alley_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnAlleyCleared(TaleWorlds.CampaignSystem.Settlements.Alley)">
+  OnAlleyCleared(Alley)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnAlleyCleared(Alley alley)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alley</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Alley.html">Alley</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBanditsRecruited_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBanditsRecruited*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBanditsRecruited_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBanditsRecruited(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.CharacterObject,System.Int32)">
+  OnBanditsRecruited(MobileParty, CharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnBanditsRecruited(MobileParty mobileParty, CharacterObject bandit, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>bandit</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBattleEnd_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBattleEnd*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBattleEnd_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBattleEnd(TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.Roster.FlattenedTroopRoster)">
+  OnBattleEnd(PartyBase, FlattenedTroopRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnBattleEnd(PartyBase party, FlattenedTroopRoster flattenedTroopRoster)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>flattenedTroopRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.FlattenedTroopRoster.html">FlattenedTroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBoardGameWonAgainstLord_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBoardGameWonAgainstLord*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBoardGameWonAgainstLord_TaleWorlds_CampaignSystem_Hero_Helpers_BoardGameHelper_AIDifficulty_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBoardGameWonAgainstLord(TaleWorlds.CampaignSystem.Hero,Helpers.BoardGameHelper.AIDifficulty,System.Boolean)">
+  OnBoardGameWonAgainstLord(Hero, AIDifficulty, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnBoardGameWonAgainstLord(Hero lord, BoardGameHelper.AIDifficulty difficulty, bool extraXpGain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lord</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>difficulty</code> <a class="xref" href="Helpers.BoardGameHelper.html">BoardGameHelper</a>.<a class="xref" href="Helpers.BoardGameHelper.AIDifficulty.html">AIDifficulty</a></dt>
+    <dd></dd>
+    <dt><code>extraXpGain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBribeGiven_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBribeGiven*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnBribeGiven_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnBribeGiven(System.Int32)">
+  OnBribeGiven(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnBribeGiven(int amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnCombatHit_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnCombatHit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnCombatHit_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_Hero_System_Single_System_Single_TaleWorlds_Core_WeaponComponentData_System_Single_TaleWorlds_CampaignSystem_ComponentInterfaces_CombatXpModel_MissionTypeEnum_System_Boolean_System_Boolean_System_Boolean_System_Single_System_Boolean_System_Boolean_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnCombatHit(TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.Hero,System.Single,System.Single,TaleWorlds.Core.WeaponComponentData,System.Single,TaleWorlds.CampaignSystem.ComponentInterfaces.CombatXpModel.MissionTypeEnum,System.Boolean,System.Boolean,System.Boolean,System.Single,System.Boolean,System.Boolean,System.Boolean)">
+  OnCombatHit(CharacterObject, CharacterObject, CharacterObject, Hero, float, float, WeaponComponentData, float, MissionTypeEnum, bool, bool, bool, float, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnCombatHit(CharacterObject affectorCharacter, CharacterObject affectedCharacter, CharacterObject captain, Hero commander, float speedBonusFromMovement, float shotDifficulty, WeaponComponentData affectorWeapon, float hitPointRatio, CombatXpModel.MissionTypeEnum missionType, bool isAffectorMounted, bool isTeamKill, bool isAffectorUnderCommand, float damageAmount, bool isFatal, bool isSiegeEngineHit, bool isHorseCharge)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectorCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>affectedCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>captain</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>commander</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>speedBonusFromMovement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>shotDifficulty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>affectorWeapon</code> <a class="xref" href="TaleWorlds.Core.WeaponComponentData.html">WeaponComponentData</a></dt>
+    <dd></dd>
+    <dt><code>hitPointRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>missionType</code> <a class="xref" href="TaleWorlds.CampaignSystem.ComponentInterfaces.CombatXpModel.html">CombatXpModel</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ComponentInterfaces.CombatXpModel.MissionTypeEnum.html">MissionTypeEnum</a></dt>
+    <dd></dd>
+    <dt><code>isAffectorMounted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isTeamKill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isAffectorUnderCommand</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>damageAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>isFatal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isSiegeEngineHit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isHorseCharge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnDailyAlleyTick_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnDailyAlleyTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnDailyAlleyTick_TaleWorlds_CampaignSystem_Settlements_Alley_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnDailyAlleyTick(TaleWorlds.CampaignSystem.Settlements.Alley,TaleWorlds.CampaignSystem.Hero)">
+  OnDailyAlleyTick(Alley, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnDailyAlleyTick(Alley alley, Hero alleyLeader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alley</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Alley.html">Alley</a></dt>
+    <dd></dd>
+    <dt><code>alleyLeader</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnFoodConsumed_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnFoodConsumed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnFoodConsumed_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnFoodConsumed(TaleWorlds.CampaignSystem.Party.MobileParty,System.Boolean)">
+  OnFoodConsumed(MobileParty, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnFoodConsumed(MobileParty mobileParty, bool wasStarving)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>wasStarving</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnForceSupplies_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnForceSupplies*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnForceSupplies_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_ItemRoster_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnForceSupplies(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Roster.ItemRoster,System.Boolean)">
+  OnForceSupplies(MobileParty, ItemRoster, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnForceSupplies(MobileParty attackerParty, ItemRoster lootedItems, bool attacked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>lootedItems</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>attacked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnForceVolunteers_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnForceVolunteers*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnForceVolunteers_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnForceVolunteers(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  OnForceVolunteers(MobileParty, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnForceVolunteers(MobileParty attackerParty, PartyBase forcedParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>forcedParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnGainRelation_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnGainRelation*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnGainRelation_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Single_TaleWorlds_CampaignSystem_Actions_ChangeRelationAction_ChangeRelationDetail_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnGainRelation(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,System.Single,TaleWorlds.CampaignSystem.Actions.ChangeRelationAction.ChangeRelationDetail)">
+  OnGainRelation(Hero, Hero, float, ChangeRelationDetail)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnGainRelation(Hero hero, Hero gainedRelationWith, float relationChange, ChangeRelationAction.ChangeRelationDetail detail = ChangeRelationDetail.Default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>gainedRelationWith</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>relationChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>detail</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.ChangeRelationAction.html">ChangeRelationAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.ChangeRelationAction.ChangeRelationDetail.html">ChangeRelationDetail</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnHeroHealedWhileWaiting_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnHeroHealedWhileWaiting*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnHeroHealedWhileWaiting_TaleWorlds_CampaignSystem_Hero_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnHeroHealedWhileWaiting(TaleWorlds.CampaignSystem.Hero,System.Int32)">
+  OnHeroHealedWhileWaiting(Hero, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnHeroHealedWhileWaiting(Hero hero, int healingAmount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>healingAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnHideoutSpotted_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnHideoutSpotted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnHideoutSpotted_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnHideoutSpotted(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  OnHideoutSpotted(MobileParty, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnHideoutSpotted(MobileParty party, PartyBase spottedParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>spottedParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnInfluenceSpent_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnInfluenceSpent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnInfluenceSpent_TaleWorlds_CampaignSystem_Hero_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnInfluenceSpent(TaleWorlds.CampaignSystem.Hero,System.Single)">
+  OnInfluenceSpent(Hero, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnInfluenceSpent(Hero hero, float amountSpent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>amountSpent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnLeadingArmy_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnLeadingArmy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnLeadingArmy_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnLeadingArmy(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  OnLeadingArmy(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLeadingArmy(MobileParty mobileParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnLoot_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnLoot*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnLoot_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_ItemRoster_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnLoot(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Roster.ItemRoster,System.Boolean)">
+  OnLoot(MobileParty, MobileParty, ItemRoster, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLoot(MobileParty attackerParty, MobileParty forcedParty, ItemRoster lootedItems, bool attacked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>forcedParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>lootedItems</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>attacked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroDisguised_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroDisguised*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroDisguised_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroDisguised(System.Boolean)">
+  OnMainHeroDisguised(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnMainHeroDisguised(bool isNotCaught)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isNotCaught</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroReleasedFromCaptivity_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroReleasedFromCaptivity*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroReleasedFromCaptivity_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroReleasedFromCaptivity(System.Single)">
+  OnMainHeroReleasedFromCaptivity(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnMainHeroReleasedFromCaptivity(float captivityTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>captivityTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroTortured_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroTortured*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnMainHeroTortured" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnMainHeroTortured">
+  OnMainHeroTortured()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnMainHeroTortured()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPersuasionSucceeded_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPersuasionSucceeded*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPersuasionSucceeded_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Core_SkillObject_TaleWorlds_CampaignSystem_Conversation_Persuasion_PersuasionDifficulty_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPersuasionSucceeded(TaleWorlds.CampaignSystem.Hero,TaleWorlds.Core.SkillObject,TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionDifficulty,System.Int32)">
+  OnPersuasionSucceeded(Hero, SkillObject, PersuasionDifficulty, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnPersuasionSucceeded(Hero targetHero, SkillObject skill, PersuasionDifficulty difficulty, int argumentDifficultyBonusCoefficient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>skill</code> <a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a></dt>
+    <dd></dd>
+    <dt><code>difficulty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Conversation.Persuasion.PersuasionDifficulty.html">PersuasionDifficulty</a></dt>
+    <dd></dd>
+    <dt><code>argumentDifficultyBonusCoefficient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPrisonBreakEnd_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPrisonBreakEnd*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPrisonBreakEnd_TaleWorlds_CampaignSystem_Hero_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPrisonBreakEnd(TaleWorlds.CampaignSystem.Hero,System.Boolean)">
+  OnPrisonBreakEnd(Hero, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnPrisonBreakEnd(Hero prisonerHero, bool isSucceeded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prisonerHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>isSucceeded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPrisonerSell_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPrisonerSell*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnPrisonerSell_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_TroopRoster__" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnPrisonerSell(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Roster.TroopRoster@)">
+  OnPrisonerSell(MobileParty, in TroopRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnPrisonerSell(MobileParty mobileParty, in TroopRoster prisonerRoster)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>prisonerRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnProductionProducedToWarehouse_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnProductionProducedToWarehouse*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnProductionProducedToWarehouse_TaleWorlds_Core_EquipmentElement_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnProductionProducedToWarehouse(TaleWorlds.Core.EquipmentElement)">
+  OnProductionProducedToWarehouse(EquipmentElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnProductionProducedToWarehouse(EquipmentElement production)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>production</code> <a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnRaid_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnRaid*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnRaid_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnRaid(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Roster.ItemRoster)">
+  OnRaid(MobileParty, ItemRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnRaid(MobileParty attackerParty, ItemRoster lootedItems)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>lootedItems</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnRegularTroopHealedWhileWaiting_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnRegularTroopHealedWhileWaiting*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnRegularTroopHealedWhileWaiting_TaleWorlds_CampaignSystem_Party_MobileParty_System_Int32_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnRegularTroopHealedWhileWaiting(TaleWorlds.CampaignSystem.Party.MobileParty,System.Int32,System.Single)">
+  OnRegularTroopHealedWhileWaiting(MobileParty, int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnRegularTroopHealedWhileWaiting(MobileParty mobileParty, int healedTroopCount, float averageTier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>healedTroopCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>averageTier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSettlementGoverned_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSettlementGoverned*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSettlementGoverned_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSettlementGoverned(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  OnSettlementGoverned(Hero, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSettlementGoverned(Hero governor, Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>governor</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSettlementProjectFinished_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSettlementProjectFinished*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSettlementProjectFinished_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSettlementProjectFinished(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  OnSettlementProjectFinished(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSettlementProjectFinished(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSiegeEngineBuilt_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSiegeEngineBuilt*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSiegeEngineBuilt_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Core_SiegeEngineType_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSiegeEngineBuilt(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Core.SiegeEngineType)">
+  OnSiegeEngineBuilt(MobileParty, SiegeEngineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSiegeEngineBuilt(MobileParty mobileParty, SiegeEngineType siegeEngine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>siegeEngine</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSiegeEngineDestroyed_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSiegeEngineDestroyed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSiegeEngineDestroyed_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Core_SiegeEngineType_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSiegeEngineDestroyed(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Core.SiegeEngineType)">
+  OnSiegeEngineDestroyed(MobileParty, SiegeEngineType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSiegeEngineDestroyed(MobileParty party, SiegeEngineType destroyedSiegeEngine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>destroyedSiegeEngine</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSieging_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSieging*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSieging_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSieging(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  OnSieging(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSieging(MobileParty mobileParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSimulationCombatKill_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSimulationCombatKill*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSimulationCombatKill_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSimulationCombatKill(TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  OnSimulationCombatKill(CharacterObject, CharacterObject, PartyBase, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSimulationCombatKill(CharacterObject affectorCharacter, CharacterObject affectedCharacter, PartyBase affectorParty, PartyBase commanderParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>affectorCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>affectedCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>affectorParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>commanderParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSurgeryApplied_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSurgeryApplied*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnSurgeryApplied_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnSurgeryApplied(TaleWorlds.CampaignSystem.Party.MobileParty,System.Boolean,System.Int32)">
+  OnSurgeryApplied(MobileParty, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSurgeryApplied(MobileParty party, bool surgerySuccess, int troopTier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>surgerySuccess</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>troopTier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTacticsUsed_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTacticsUsed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTacticsUsed_TaleWorlds_CampaignSystem_Party_MobileParty_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTacticsUsed(TaleWorlds.CampaignSystem.Party.MobileParty,System.Single)">
+  OnTacticsUsed(MobileParty, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTacticsUsed(MobileParty party, float xp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>xp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTrackDetected_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTrackDetected*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTrackDetected_TaleWorlds_CampaignSystem_Track_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTrackDetected(TaleWorlds.CampaignSystem.Track)">
+  OnTrackDetected(Track)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTrackDetected(Track track)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>track</code> <a class="xref" href="TaleWorlds.CampaignSystem.Track.html">Track</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTradeProfitMade_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTradeProfitMade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTradeProfitMade_TaleWorlds_CampaignSystem_Hero_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTradeProfitMade(TaleWorlds.CampaignSystem.Hero,System.Int32)">
+  OnTradeProfitMade(Hero, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTradeProfitMade(Hero hero, int tradeProfit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>tradeProfit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTradeProfitMade_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTradeProfitMade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTradeProfitMade_TaleWorlds_CampaignSystem_Party_PartyBase_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTradeProfitMade(TaleWorlds.CampaignSystem.Party.PartyBase,System.Int32)">
+  OnTradeProfitMade(PartyBase, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTradeProfitMade(PartyBase party, int tradeProfit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>tradeProfit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTravelOnFoot_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTravelOnFoot*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTravelOnFoot_TaleWorlds_CampaignSystem_Hero_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTravelOnFoot(TaleWorlds.CampaignSystem.Hero,System.Single)">
+  OnTravelOnFoot(Hero, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTravelOnFoot(Hero hero, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTravelOnHorse_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTravelOnHorse*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTravelOnHorse_TaleWorlds_CampaignSystem_Hero_System_Single_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTravelOnHorse(TaleWorlds.CampaignSystem.Hero,System.Single)">
+  OnTravelOnHorse(Hero, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTravelOnHorse(Hero hero, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTraverseTerrain_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTraverseTerrain*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTraverseTerrain_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Core_TerrainType_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTraverseTerrain(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Core.TerrainType)">
+  OnTraverseTerrain(MobileParty, TerrainType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTraverseTerrain(MobileParty mobileParty, TerrainType currentTerrainType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>currentTerrainType</code> <a class="xref" href="TaleWorlds.Core.TerrainType.html">TerrainType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTroopRecruited_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTroopRecruited*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnTroopRecruited_TaleWorlds_CampaignSystem_Hero_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnTroopRecruited(TaleWorlds.CampaignSystem.Hero,System.Int32,System.Int32)">
+  OnTroopRecruited(Hero, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTroopRecruited(Hero hero, int amount, int tier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnUpgradeTroops_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnUpgradeTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnUpgradeTroops_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnUpgradeTroops(TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.CharacterObject,TaleWorlds.CampaignSystem.CharacterObject,System.Int32)">
+  OnUpgradeTroops(PartyBase, CharacterObject, CharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnUpgradeTroops(PartyBase party, CharacterObject troop, CharacterObject upgrade, int numberOfTroops)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>upgrade</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>numberOfTroops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnWallBreached_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnWallBreached*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_CharacterDevelopment_SkillLevelingManager_OnWallBreached_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.CharacterDevelopment.SkillLevelingManager.OnWallBreached(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  OnWallBreached(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnWallBreached(MobileParty party)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

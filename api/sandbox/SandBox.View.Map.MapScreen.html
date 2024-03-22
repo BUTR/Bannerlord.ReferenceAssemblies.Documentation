@@ -1,0 +1,2651 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MapScreen | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MapScreen | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.View.Map.MapScreen">
+
+
+
+  <h1 id="SandBox_View_Map_MapScreen" data-uid="SandBox.View.Map.MapScreen" class="text-break">
+Class MapScreen  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.View.html">View</a>.<a class="xref" href="SandBox.View.Map.html">Map</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.View.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MapScreen : ScreenBase, IMapStateHandler, IGameStateListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MapScreen</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="../core/TaleWorlds.CampaignSystem.GameState.IMapStateHandler.html">IMapStateHandler</a></div>
+      <div><a class="xref" href="../core/TaleWorlds.Core.IGameStateListener.html">IGameStateListener</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_View_Map_MapScreen__ctor_" data-uid="SandBox.View.Map.MapScreen.#ctor*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen__ctor_TaleWorlds_CampaignSystem_GameState_MapState_" data-uid="SandBox.View.Map.MapScreen.#ctor(TaleWorlds.CampaignSystem.GameState.MapState)">
+  MapScreen(MapState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapScreen(MapState mapState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapState</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.GameState.MapState.html">MapState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SandBox_View_Map_MapScreen_MapTracksCampaignBehavior" data-uid="SandBox.View.Map.MapScreen.MapTracksCampaignBehavior">
+  MapTracksCampaignBehavior
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMapTracksCampaignBehavior MapTracksCampaignBehavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.CampaignSystem.CampaignBehaviors.IMapTracksCampaignBehavior.html">IMapTracksCampaignBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_Map_MapScreen_TooltipHandlingDisabled" data-uid="SandBox.View.Map.MapScreen.TooltipHandlingDisabled">
+  TooltipHandlingDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TooltipHandlingDisabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_Map_MapScreen__characterBannerMaterialCache" data-uid="SandBox.View.Map.MapScreen._characterBannerMaterialCache">
+  _characterBannerMaterialCache
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Tuple&lt;Material, BannerCode&gt;, Material&gt; _characterBannerMaterialCache</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="../core/TaleWorlds.Engine.Material.html">Material</a>, <a class="xref" href="../core/TaleWorlds.Core.BannerCode.html">BannerCode</a>&gt;, <a class="xref" href="../core/TaleWorlds.Engine.Material.html">Material</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_View_Map_MapScreen__mapCameraView" data-uid="SandBox.View.Map.MapScreen._mapCameraView">
+  _mapCameraView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapCameraView _mapCameraView</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapCameraView.html">MapCameraView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_View_Map_MapScreen_ActiveLightMeshes_" data-uid="SandBox.View.Map.MapScreen.ActiveLightMeshes*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_ActiveLightMeshes" data-uid="SandBox.View.Map.MapScreen.ActiveLightMeshes">
+  ActiveLightMeshes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Mesh&gt; ActiveLightMeshes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="../core/TaleWorlds.Engine.Mesh.html">Mesh</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_BannerTexturedMaterialCache_" data-uid="SandBox.View.Map.MapScreen.BannerTexturedMaterialCache*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_BannerTexturedMaterialCache" data-uid="SandBox.View.Map.MapScreen.BannerTexturedMaterialCache">
+  BannerTexturedMaterialCache
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Tuple&lt;Material, BannerCode&gt;, Material&gt; BannerTexturedMaterialCache { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="../core/TaleWorlds.Engine.Material.html">Material</a>, <a class="xref" href="../core/TaleWorlds.Core.BannerCode.html">BannerCode</a>&gt;, <a class="xref" href="../core/TaleWorlds.Engine.Material.html">Material</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_ContourMaskEntity_" data-uid="SandBox.View.Map.MapScreen.ContourMaskEntity*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_ContourMaskEntity" data-uid="SandBox.View.Map.MapScreen.ContourMaskEntity">
+  ContourMaskEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameEntity ContourMaskEntity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_CurrentVisualOfTooltip_" data-uid="SandBox.View.Map.MapScreen.CurrentVisualOfTooltip*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_CurrentVisualOfTooltip" data-uid="SandBox.View.Map.MapScreen.CurrentVisualOfTooltip">
+  CurrentVisualOfTooltip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyVisual CurrentVisualOfTooltip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.PartyVisual.html">PartyVisual</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_EncyclopediaScreenManager_" data-uid="SandBox.View.Map.MapScreen.EncyclopediaScreenManager*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_EncyclopediaScreenManager" data-uid="SandBox.View.Map.MapScreen.EncyclopediaScreenManager">
+  EncyclopediaScreenManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapEncyclopediaView EncyclopediaScreenManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapEncyclopediaView.html">MapEncyclopediaView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_InactiveLightMeshes_" data-uid="SandBox.View.Map.MapScreen.InactiveLightMeshes*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_InactiveLightMeshes" data-uid="SandBox.View.Map.MapScreen.InactiveLightMeshes">
+  InactiveLightMeshes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Mesh&gt; InactiveLightMeshes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="../core/TaleWorlds.Engine.Mesh.html">Mesh</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_Input_" data-uid="SandBox.View.Map.MapScreen.Input*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_Input" data-uid="SandBox.View.Map.MapScreen.Input">
+  Input
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInputContext Input { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.InputSystem.IInputContext.html">IInputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_Instance_" data-uid="SandBox.View.Map.MapScreen.Instance*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_Instance" data-uid="SandBox.View.Map.MapScreen.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MapScreen Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapScreen.html">MapScreen</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsBarExtended_" data-uid="SandBox.View.Map.MapScreen.IsBarExtended*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsBarExtended" data-uid="SandBox.View.Map.MapScreen.IsBarExtended">
+  IsBarExtended
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBarExtended { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsEscapeMenuOpened_" data-uid="SandBox.View.Map.MapScreen.IsEscapeMenuOpened*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsEscapeMenuOpened" data-uid="SandBox.View.Map.MapScreen.IsEscapeMenuOpened">
+  IsEscapeMenuOpened
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEscapeMenuOpened { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInArmyManagement_" data-uid="SandBox.View.Map.MapScreen.IsInArmyManagement*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInArmyManagement" data-uid="SandBox.View.Map.MapScreen.IsInArmyManagement">
+  IsInArmyManagement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInArmyManagement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInBattleSimulation_" data-uid="SandBox.View.Map.MapScreen.IsInBattleSimulation*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInBattleSimulation" data-uid="SandBox.View.Map.MapScreen.IsInBattleSimulation">
+  IsInBattleSimulation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInBattleSimulation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInCampaignOptions_" data-uid="SandBox.View.Map.MapScreen.IsInCampaignOptions*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInCampaignOptions" data-uid="SandBox.View.Map.MapScreen.IsInCampaignOptions">
+  IsInCampaignOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInCampaignOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInHideoutTroopManage_" data-uid="SandBox.View.Map.MapScreen.IsInHideoutTroopManage*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInHideoutTroopManage" data-uid="SandBox.View.Map.MapScreen.IsInHideoutTroopManage">
+  IsInHideoutTroopManage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInHideoutTroopManage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInMenu_" data-uid="SandBox.View.Map.MapScreen.IsInMenu*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInMenu" data-uid="SandBox.View.Map.MapScreen.IsInMenu">
+  IsInMenu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInMenu { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInRecruitment_" data-uid="SandBox.View.Map.MapScreen.IsInRecruitment*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInRecruitment" data-uid="SandBox.View.Map.MapScreen.IsInRecruitment">
+  IsInRecruitment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInRecruitment { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsInTownManagement_" data-uid="SandBox.View.Map.MapScreen.IsInTownManagement*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsInTownManagement" data-uid="SandBox.View.Map.MapScreen.IsInTownManagement">
+  IsInTownManagement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInTownManagement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsMapCheatsActive_" data-uid="SandBox.View.Map.MapScreen.IsMapCheatsActive*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsMapCheatsActive" data-uid="SandBox.View.Map.MapScreen.IsMapCheatsActive">
+  IsMapCheatsActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMapCheatsActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsMarriageOfferPopupActive_" data-uid="SandBox.View.Map.MapScreen.IsMarriageOfferPopupActive*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsMarriageOfferPopupActive" data-uid="SandBox.View.Map.MapScreen.IsMarriageOfferPopupActive">
+  IsMarriageOfferPopupActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMarriageOfferPopupActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsReady_" data-uid="SandBox.View.Map.MapScreen.IsReady*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsReady" data-uid="SandBox.View.Map.MapScreen.IsReady">
+  IsReady
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_MapNotificationView_" data-uid="SandBox.View.Map.MapScreen.MapNotificationView*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_MapNotificationView" data-uid="SandBox.View.Map.MapScreen.MapNotificationView">
+  MapNotificationView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapNotificationView MapNotificationView { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapNotificationView.html">MapNotificationView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_MapSceneCursorActive_" data-uid="SandBox.View.Map.MapScreen.MapSceneCursorActive*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_MapSceneCursorActive" data-uid="SandBox.View.Map.MapScreen.MapSceneCursorActive">
+  MapSceneCursorActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapSceneCursorActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_PrefabEntityCache_" data-uid="SandBox.View.Map.MapScreen.PrefabEntityCache*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_PrefabEntityCache" data-uid="SandBox.View.Map.MapScreen.PrefabEntityCache">
+  PrefabEntityCache
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CampaignMapSiegePrefabEntityCache PrefabEntityCache { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.CampaignMapSiegePrefabEntityCache.html">CampaignMapSiegePrefabEntityCache</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SceneLayer_" data-uid="SandBox.View.Map.MapScreen.SceneLayer*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SceneLayer" data-uid="SandBox.View.Map.MapScreen.SceneLayer">
+  SceneLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLayer SceneLayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.Screens.SceneLayer.html">SceneLayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_VisualsOfEntities_" data-uid="SandBox.View.Map.MapScreen.VisualsOfEntities*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_VisualsOfEntities" data-uid="SandBox.View.Map.MapScreen.VisualsOfEntities">
+  VisualsOfEntities
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;UIntPtr, PartyVisual&gt; VisualsOfEntities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a>, <a class="xref" href="SandBox.View.Map.PartyVisual.html">PartyVisual</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_View_Map_MapScreen_AddArmyOverlay_" data-uid="SandBox.View.Map.MapScreen.AddArmyOverlay*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_AddArmyOverlay_TaleWorlds_CampaignSystem_Overlay_GameOverlays_MapOverlayType_" data-uid="SandBox.View.Map.MapScreen.AddArmyOverlay(TaleWorlds.CampaignSystem.Overlay.GameOverlays.MapOverlayType)">
+  AddArmyOverlay(MapOverlayType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddArmyOverlay(GameOverlays.MapOverlayType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.Overlay.GameOverlays.MapOverlayType.html">MapOverlayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_AddEncounterOverlay_" data-uid="SandBox.View.Map.MapScreen.AddEncounterOverlay*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_AddEncounterOverlay_TaleWorlds_CampaignSystem_Overlay_GameOverlays_MenuOverlayType_" data-uid="SandBox.View.Map.MapScreen.AddEncounterOverlay(TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType)">
+  AddEncounterOverlay(MenuOverlayType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEncounterOverlay(GameOverlays.MenuOverlayType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType.html">MenuOverlayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_AddMapView_" data-uid="SandBox.View.Map.MapScreen.AddMapView*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_AddMapView__1_System_Object___" data-uid="SandBox.View.Map.MapScreen.AddMapView``1(System.Object[])">
+  AddMapView&lt;T&gt;(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapView AddMapView&lt;T&gt;(params object[] parameters) where T : MapView, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.View.Map.MapView.html">MapView</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_ApplySoundSceneProps_" data-uid="SandBox.View.Map.MapScreen.ApplySoundSceneProps*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_ApplySoundSceneProps_System_Single_" data-uid="SandBox.View.Map.MapScreen.ApplySoundSceneProps(System.Single)">
+  ApplySoundSceneProps(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplySoundSceneProps(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_ClearGPUMemory_" data-uid="SandBox.View.Map.MapScreen.ClearGPUMemory*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_ClearGPUMemory" data-uid="SandBox.View.Map.MapScreen.ClearGPUMemory">
+  ClearGPUMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearGPUMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_CloseCampaignOptions_" data-uid="SandBox.View.Map.MapScreen.CloseCampaignOptions*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_CloseCampaignOptions" data-uid="SandBox.View.Map.MapScreen.CloseCampaignOptions">
+  CloseCampaignOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseCampaignOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_CloseEscapeMenu_" data-uid="SandBox.View.Map.MapScreen.CloseEscapeMenu*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_CloseEscapeMenu" data-uid="SandBox.View.Map.MapScreen.CloseEscapeMenu">
+  CloseEscapeMenu()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseEscapeMenu()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_CloseGameplayCheats_" data-uid="SandBox.View.Map.MapScreen.CloseGameplayCheats*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_CloseGameplayCheats" data-uid="SandBox.View.Map.MapScreen.CloseGameplayCheats">
+  CloseGameplayCheats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseGameplayCheats()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_CreatePeriodicUIEvent_" data-uid="SandBox.View.Map.MapScreen.CreatePeriodicUIEvent*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_CreatePeriodicUIEvent_TaleWorlds_CampaignSystem_CampaignTime_TaleWorlds_CampaignSystem_CampaignTime_" data-uid="SandBox.View.Map.MapScreen.CreatePeriodicUIEvent(TaleWorlds.CampaignSystem.CampaignTime,TaleWorlds.CampaignSystem.CampaignTime)">
+  CreatePeriodicUIEvent(CampaignTime, CampaignTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBCampaignEvent CreatePeriodicUIEvent(CampaignTime triggerPeriod, CampaignTime initialWait)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>triggerPeriod</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+    <dt><code>initialWait</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.CampaignSystem.MBCampaignEvent.html">MBCampaignEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_DeletePeriodicUIEvent_" data-uid="SandBox.View.Map.MapScreen.DeletePeriodicUIEvent*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_DeletePeriodicUIEvent_TaleWorlds_CampaignSystem_MBCampaignEvent_" data-uid="SandBox.View.Map.MapScreen.DeletePeriodicUIEvent(TaleWorlds.CampaignSystem.MBCampaignEvent)">
+  DeletePeriodicUIEvent(MBCampaignEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeletePeriodicUIEvent(MBCampaignEvent campaignEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignEvent</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.MBCampaignEvent.html">MBCampaignEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_FastMoveCameraToMainParty_" data-uid="SandBox.View.Map.MapScreen.FastMoveCameraToMainParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_FastMoveCameraToMainParty" data-uid="SandBox.View.Map.MapScreen.FastMoveCameraToMainParty">
+  FastMoveCameraToMainParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FastMoveCameraToMainParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_FastMoveCameraToPosition_" data-uid="SandBox.View.Map.MapScreen.FastMoveCameraToPosition*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_FastMoveCameraToPosition_TaleWorlds_Library_Vec2_" data-uid="SandBox.View.Map.MapScreen.FastMoveCameraToPosition(TaleWorlds.Library.Vec2)">
+  FastMoveCameraToPosition(Vec2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FastMoveCameraToPosition(Vec2 target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_GetCursorIntersectionPoint_" data-uid="SandBox.View.Map.MapScreen.GetCursorIntersectionPoint*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_GetCursorIntersectionPoint_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__System_Single__TaleWorlds_Library_Vec3__TaleWorlds_Library_PathFaceRecord__TaleWorlds_Engine_BodyFlags_" data-uid="SandBox.View.Map.MapScreen.GetCursorIntersectionPoint(TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@,System.Single@,TaleWorlds.Library.Vec3@,TaleWorlds.Library.PathFaceRecord@,TaleWorlds.Engine.BodyFlags)">
+  GetCursorIntersectionPoint(ref Vec3, ref Vec3, out float, out Vec3, ref PathFaceRecord, BodyFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCursorIntersectionPoint(ref Vec3 clippedMouseNear, ref Vec3 clippedMouseFar, out float closestDistanceSquared, out Vec3 intersectionPoint, ref PathFaceRecord currentFace, BodyFlags excludedBodyFlags = 79617)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clippedMouseNear</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>clippedMouseFar</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>closestDistanceSquared</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>intersectionPoint</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>currentFace</code> <a class="xref" href="../core/TaleWorlds.Library.PathFaceRecord.html">PathFaceRecord</a></dt>
+    <dd></dd>
+    <dt><code>excludedBodyFlags</code> <a class="xref" href="../core/TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_GetMapView_" data-uid="SandBox.View.Map.MapScreen.GetMapView*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_GetMapView__1" data-uid="SandBox.View.Map.MapScreen.GetMapView``1">
+  GetMapView&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetMapView&lt;T&gt;() where T : MapView</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_GetMouseVisible_" data-uid="SandBox.View.Map.MapScreen.GetMouseVisible*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_GetMouseVisible" data-uid="SandBox.View.Map.MapScreen.GetMouseVisible">
+  GetMouseVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMouseVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_IsCameraLockedToPlayerParty_" data-uid="SandBox.View.Map.MapScreen.IsCameraLockedToPlayerParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_IsCameraLockedToPlayerParty" data-uid="SandBox.View.Map.MapScreen.IsCameraLockedToPlayerParty">
+  IsCameraLockedToPlayerParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCameraLockedToPlayerParty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnActivate_" data-uid="SandBox.View.Map.MapScreen.OnActivate*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnActivate" data-uid="SandBox.View.Map.MapScreen.OnActivate">
+  OnActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnDeactivate_" data-uid="SandBox.View.Map.MapScreen.OnDeactivate*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnDeactivate" data-uid="SandBox.View.Map.MapScreen.OnDeactivate">
+  OnDeactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDeactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnExit_" data-uid="SandBox.View.Map.MapScreen.OnExit*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnExit" data-uid="SandBox.View.Map.MapScreen.OnExit">
+  OnExit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnExit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnFinalize_" data-uid="SandBox.View.Map.MapScreen.OnFinalize*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnFinalize" data-uid="SandBox.View.Map.MapScreen.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnFocusChangeOnGameWindow_" data-uid="SandBox.View.Map.MapScreen.OnFocusChangeOnGameWindow*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnFocusChangeOnGameWindow_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.OnFocusChangeOnGameWindow(System.Boolean)">
+  OnFocusChangeOnGameWindow(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFocusChangeOnGameWindow(bool focusGained)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>focusGained</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnFrameTick_" data-uid="SandBox.View.Map.MapScreen.OnFrameTick*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnFrameTick_System_Single_" data-uid="SandBox.View.Map.MapScreen.OnFrameTick(System.Single)">
+  OnFrameTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnFrameTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnHourlyTick_" data-uid="SandBox.View.Map.MapScreen.OnHourlyTick*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnHourlyTick" data-uid="SandBox.View.Map.MapScreen.OnHourlyTick">
+  OnHourlyTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHourlyTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnHoverMapEntity_" data-uid="SandBox.View.Map.MapScreen.OnHoverMapEntity*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnHoverMapEntity_TaleWorlds_CampaignSystem_Map_IMapEntity_" data-uid="SandBox.View.Map.MapScreen.OnHoverMapEntity(TaleWorlds.CampaignSystem.Map.IMapEntity)">
+  OnHoverMapEntity(IMapEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHoverMapEntity(IMapEntity mapEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapEntity</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.Map.IMapEntity.html">IMapEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnInitialize_" data-uid="SandBox.View.Map.MapScreen.OnInitialize*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnInitialize" data-uid="SandBox.View.Map.MapScreen.OnInitialize">
+  OnInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnPause_" data-uid="SandBox.View.Map.MapScreen.OnPause*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnPause" data-uid="SandBox.View.Map.MapScreen.OnPause">
+  OnPause()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnPauseTick_" data-uid="SandBox.View.Map.MapScreen.OnPauseTick*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnPauseTick_System_Single_" data-uid="SandBox.View.Map.MapScreen.OnPauseTick(System.Single)">
+  OnPauseTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPauseTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OnResume_" data-uid="SandBox.View.Map.MapScreen.OnResume*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OnResume" data-uid="SandBox.View.Map.MapScreen.OnResume">
+  OnResume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnResume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenEncyclopedia_" data-uid="SandBox.View.Map.MapScreen.OpenEncyclopedia*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenEncyclopedia" data-uid="SandBox.View.Map.MapScreen.OpenEncyclopedia">
+  OpenEncyclopedia()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenEncyclopedia()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenEscapeMenu_" data-uid="SandBox.View.Map.MapScreen.OpenEscapeMenu*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenEscapeMenu" data-uid="SandBox.View.Map.MapScreen.OpenEscapeMenu">
+  OpenEscapeMenu()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenEscapeMenu()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenFacegenScreenAux_" data-uid="SandBox.View.Map.MapScreen.OpenFacegenScreenAux*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenFacegenScreenAux" data-uid="SandBox.View.Map.MapScreen.OpenFacegenScreenAux">
+  OpenFacegenScreenAux()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenFacegenScreenAux()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenInventory_" data-uid="SandBox.View.Map.MapScreen.OpenInventory*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenInventory" data-uid="SandBox.View.Map.MapScreen.OpenInventory">
+  OpenInventory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenInventory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenOptions_" data-uid="SandBox.View.Map.MapScreen.OpenOptions*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenOptions" data-uid="SandBox.View.Map.MapScreen.OpenOptions">
+  OpenOptions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_OpenSaveLoad_" data-uid="SandBox.View.Map.MapScreen.OpenSaveLoad*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_OpenSaveLoad_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.OpenSaveLoad(System.Boolean)">
+  OpenSaveLoad(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenSaveLoad(bool isSaving)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isSaving</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_PauseAmbientSounds_" data-uid="SandBox.View.Map.MapScreen.PauseAmbientSounds*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_PauseAmbientSounds" data-uid="SandBox.View.Map.MapScreen.PauseAmbientSounds">
+  PauseAmbientSounds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseAmbientSounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_RemoveArmyOverlay_" data-uid="SandBox.View.Map.MapScreen.RemoveArmyOverlay*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_RemoveArmyOverlay" data-uid="SandBox.View.Map.MapScreen.RemoveArmyOverlay">
+  RemoveArmyOverlay()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveArmyOverlay()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_RemoveEncounterOverlay_" data-uid="SandBox.View.Map.MapScreen.RemoveEncounterOverlay*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_RemoveEncounterOverlay" data-uid="SandBox.View.Map.MapScreen.RemoveEncounterOverlay">
+  RemoveEncounterOverlay()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEncounterOverlay()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_RemoveMapTooltip_" data-uid="SandBox.View.Map.MapScreen.RemoveMapTooltip*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_RemoveMapTooltip" data-uid="SandBox.View.Map.MapScreen.RemoveMapTooltip">
+  RemoveMapTooltip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMapTooltip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_RemoveMapView_" data-uid="SandBox.View.Map.MapScreen.RemoveMapView*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_RemoveMapView_SandBox_View_Map_MapView_" data-uid="SandBox.View.Map.MapScreen.RemoveMapView(SandBox.View.Map.MapView)">
+  RemoveMapView(MapView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMapView(MapView mapView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapView</code> <a class="xref" href="SandBox.View.Map.MapView.html">MapView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_ResetCamera_" data-uid="SandBox.View.Map.MapScreen.ResetCamera*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_ResetCamera_System_Boolean_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.ResetCamera(System.Boolean,System.Boolean)">
+  ResetCamera(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetCamera(bool resetDistance, bool teleportToMainParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resetDistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>teleportToMainParty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_RestartAmbientSounds_" data-uid="SandBox.View.Map.MapScreen.RestartAmbientSounds*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_RestartAmbientSounds" data-uid="SandBox.View.Map.MapScreen.RestartAmbientSounds">
+  RestartAmbientSounds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestartAmbientSounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsBarExtended_" data-uid="SandBox.View.Map.MapScreen.SetIsBarExtended*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsBarExtended_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsBarExtended(System.Boolean)">
+  SetIsBarExtended(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsBarExtended(bool isBarExtended)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isBarExtended</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsInArmyManagement_" data-uid="SandBox.View.Map.MapScreen.SetIsInArmyManagement*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsInArmyManagement_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsInArmyManagement(System.Boolean)">
+  SetIsInArmyManagement(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsInArmyManagement(bool isInArmyManagement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInArmyManagement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsInCampaignOptions_" data-uid="SandBox.View.Map.MapScreen.SetIsInCampaignOptions*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsInCampaignOptions_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsInCampaignOptions(System.Boolean)">
+  SetIsInCampaignOptions(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsInCampaignOptions(bool isInCampaignOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInCampaignOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsInHideoutTroopManage_" data-uid="SandBox.View.Map.MapScreen.SetIsInHideoutTroopManage*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsInHideoutTroopManage_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsInHideoutTroopManage(System.Boolean)">
+  SetIsInHideoutTroopManage(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsInHideoutTroopManage(bool isInHideoutTroopManage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInHideoutTroopManage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsInRecruitment_" data-uid="SandBox.View.Map.MapScreen.SetIsInRecruitment*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsInRecruitment_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsInRecruitment(System.Boolean)">
+  SetIsInRecruitment(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsInRecruitment(bool isInRecruitment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInRecruitment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsInTownManagement_" data-uid="SandBox.View.Map.MapScreen.SetIsInTownManagement*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsInTownManagement_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsInTownManagement(System.Boolean)">
+  SetIsInTownManagement(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsInTownManagement(bool isInTownManagement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isInTownManagement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsMapCheatsActive_" data-uid="SandBox.View.Map.MapScreen.SetIsMapCheatsActive*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsMapCheatsActive_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsMapCheatsActive(System.Boolean)">
+  SetIsMapCheatsActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsMapCheatsActive(bool isMapCheatsActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isMapCheatsActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetIsMarriageOfferPopupActive_" data-uid="SandBox.View.Map.MapScreen.SetIsMarriageOfferPopupActive*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetIsMarriageOfferPopupActive_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetIsMarriageOfferPopupActive(System.Boolean)">
+  SetIsMarriageOfferPopupActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsMarriageOfferPopupActive(bool isMarriageOfferPopupActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isMarriageOfferPopupActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetMouseVisible_" data-uid="SandBox.View.Map.MapScreen.SetMouseVisible*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetMouseVisible_System_Boolean_" data-uid="SandBox.View.Map.MapScreen.SetMouseVisible(System.Boolean)">
+  SetMouseVisible(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMouseVisible(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_SetupMapTooltipForTrack_" data-uid="SandBox.View.Map.MapScreen.SetupMapTooltipForTrack*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_SetupMapTooltipForTrack_TaleWorlds_CampaignSystem_Track_" data-uid="SandBox.View.Map.MapScreen.SetupMapTooltipForTrack(TaleWorlds.CampaignSystem.Track)">
+  SetupMapTooltipForTrack(Track)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupMapTooltipForTrack(Track track)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>track</code> <a class="xref" href="../core/TaleWorlds.CampaignSystem.Track.html">Track</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_StopSoundSceneProps_" data-uid="SandBox.View.Map.MapScreen.StopSoundSceneProps*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_StopSoundSceneProps" data-uid="SandBox.View.Map.MapScreen.StopSoundSceneProps">
+  StopSoundSceneProps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSoundSceneProps()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_View_Map_MapScreen_TeleportCameraToMainParty_" data-uid="SandBox.View.Map.MapScreen.TeleportCameraToMainParty*"></a>
+
+  <h3 id="SandBox_View_Map_MapScreen_TeleportCameraToMainParty" data-uid="SandBox.View.Map.MapScreen.TeleportCameraToMainParty">
+  TeleportCameraToMainParty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TeleportCameraToMainParty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

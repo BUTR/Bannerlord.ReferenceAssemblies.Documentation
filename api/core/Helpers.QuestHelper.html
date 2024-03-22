@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class QuestHelper | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class QuestHelper | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Helpers.QuestHelper">
+
+
+
+  <h1 id="Helpers_QuestHelper" data-uid="Helpers.QuestHelper" class="text-break">
+Class QuestHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class QuestHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">QuestHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Helpers_QuestHelper_AddMapArrowFromPointToTarget_" data-uid="Helpers.QuestHelper.AddMapArrowFromPointToTarget*"></a>
+
+  <h3 id="Helpers_QuestHelper_AddMapArrowFromPointToTarget_TaleWorlds_Localization_TextObject_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec2_System_Single_System_Single_" data-uid="Helpers.QuestHelper.AddMapArrowFromPointToTarget(TaleWorlds.Localization.TextObject,TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec2,System.Single,System.Single)">
+  AddMapArrowFromPointToTarget(TextObject, Vec2, Vec2, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMapArrowFromPointToTarget(TextObject name, Vec2 sourcePosition, Vec2 targetPosition, float life, float error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>sourcePosition</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>targetPosition</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>life</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_ApplyGenericMinorMajorCoercionConsequences_" data-uid="Helpers.QuestHelper.ApplyGenericMinorMajorCoercionConsequences*"></a>
+
+  <h3 id="Helpers_QuestHelper_ApplyGenericMinorMajorCoercionConsequences_TaleWorlds_CampaignSystem_QuestBase_TaleWorlds_CampaignSystem_MapEvents_MapEvent_" data-uid="Helpers.QuestHelper.ApplyGenericMinorMajorCoercionConsequences(TaleWorlds.CampaignSystem.QuestBase,TaleWorlds.CampaignSystem.MapEvents.MapEvent)">
+  ApplyGenericMinorMajorCoercionConsequences(QuestBase, MapEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyGenericMinorMajorCoercionConsequences(QuestBase quest, MapEvent mapEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>quest</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+    <dt><code>mapEvent</code> <a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_CheckGoldForAlternativeSolution_" data-uid="Helpers.QuestHelper.CheckGoldForAlternativeSolution*"></a>
+
+  <h3 id="Helpers_QuestHelper_CheckGoldForAlternativeSolution_System_Int32_TaleWorlds_Localization_TextObject__" data-uid="Helpers.QuestHelper.CheckGoldForAlternativeSolution(System.Int32,TaleWorlds.Localization.TextObject@)">
+  CheckGoldForAlternativeSolution(int, ref TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckGoldForAlternativeSolution(int requiredGold, ref TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requiredGold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_CheckMinorMajorCoercion_" data-uid="Helpers.QuestHelper.CheckMinorMajorCoercion*"></a>
+
+  <h3 id="Helpers_QuestHelper_CheckMinorMajorCoercion_TaleWorlds_CampaignSystem_QuestBase_TaleWorlds_CampaignSystem_MapEvents_MapEvent_TaleWorlds_CampaignSystem_Party_PartyBase_" data-uid="Helpers.QuestHelper.CheckMinorMajorCoercion(TaleWorlds.CampaignSystem.QuestBase,TaleWorlds.CampaignSystem.MapEvents.MapEvent,TaleWorlds.CampaignSystem.Party.PartyBase)">
+  CheckMinorMajorCoercion(QuestBase, MapEvent, PartyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckMinorMajorCoercion(QuestBase questToCheck, MapEvent mapEvent, PartyBase attackerParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questToCheck</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+    <dt><code>mapEvent</code> <a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a></dt>
+    <dd></dd>
+    <dt><code>attackerParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_CheckRosterForAlternativeSolution_" data-uid="Helpers.QuestHelper.CheckRosterForAlternativeSolution*"></a>
+
+  <h3 id="Helpers_QuestHelper_CheckRosterForAlternativeSolution_TaleWorlds_CampaignSystem_Roster_TroopRoster_System_Int32_TaleWorlds_Localization_TextObject__System_Int32_System_Boolean_" data-uid="Helpers.QuestHelper.CheckRosterForAlternativeSolution(TaleWorlds.CampaignSystem.Roster.TroopRoster,System.Int32,TaleWorlds.Localization.TextObject@,System.Int32,System.Boolean)">
+  CheckRosterForAlternativeSolution(TroopRoster, int, ref TextObject, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckRosterForAlternativeSolution(TroopRoster troopRoster, int requiredTroopCount, ref TextObject explanation, int minimumTier = 0, bool mountedRequired = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troopRoster</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.TroopRoster.html">TroopRoster</a></dt>
+    <dd></dd>
+    <dt><code>requiredTroopCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>minimumTier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>mountedRequired</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_CheckWarDeclarationAndFailOrCancelTheQuest_" data-uid="Helpers.QuestHelper.CheckWarDeclarationAndFailOrCancelTheQuest*"></a>
+
+  <h3 id="Helpers_QuestHelper_CheckWarDeclarationAndFailOrCancelTheQuest_TaleWorlds_CampaignSystem_QuestBase_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_Actions_DeclareWarAction_DeclareWarDetail_TaleWorlds_Localization_TextObject_TaleWorlds_Localization_TextObject_System_Boolean_" data-uid="Helpers.QuestHelper.CheckWarDeclarationAndFailOrCancelTheQuest(TaleWorlds.CampaignSystem.QuestBase,TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.Actions.DeclareWarAction.DeclareWarDetail,TaleWorlds.Localization.TextObject,TaleWorlds.Localization.TextObject,System.Boolean)">
+  CheckWarDeclarationAndFailOrCancelTheQuest(QuestBase, IFaction, IFaction, DeclareWarDetail, TextObject, TextObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckWarDeclarationAndFailOrCancelTheQuest(QuestBase questToCheck, IFaction faction1, IFaction faction2, DeclareWarAction.DeclareWarDetail detail, TextObject failLog, TextObject cancelLog, bool forceCancel = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>questToCheck</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+    <dt><code>faction1</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>faction2</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>detail</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.DeclareWarAction.html">DeclareWarAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.DeclareWarAction.DeclareWarDetail.html">DeclareWarDetail</a></dt>
+    <dd></dd>
+    <dt><code>failLog</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>cancelLog</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>forceCancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_GetAlternativeSolutionMeleeSkills_" data-uid="Helpers.QuestHelper.GetAlternativeSolutionMeleeSkills*"></a>
+
+  <h3 id="Helpers_QuestHelper_GetAlternativeSolutionMeleeSkills" data-uid="Helpers.QuestHelper.GetAlternativeSolutionMeleeSkills">
+  GetAlternativeSolutionMeleeSkills()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;SkillObject&gt; GetAlternativeSolutionMeleeSkills()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_GetAlternativeSolutionRangedSkills_" data-uid="Helpers.QuestHelper.GetAlternativeSolutionRangedSkills*"></a>
+
+  <h3 id="Helpers_QuestHelper_GetAlternativeSolutionRangedSkills" data-uid="Helpers.QuestHelper.GetAlternativeSolutionRangedSkills">
+  GetAlternativeSolutionRangedSkills()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;SkillObject&gt; GetAlternativeSolutionRangedSkills()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.Core.SkillObject.html">SkillObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_QuestHelper_GetAveragePriceOfItemInTheWorld_" data-uid="Helpers.QuestHelper.GetAveragePriceOfItemInTheWorld*"></a>
+
+  <h3 id="Helpers_QuestHelper_GetAveragePriceOfItemInTheWorld_TaleWorlds_Core_ItemObject_" data-uid="Helpers.QuestHelper.GetAveragePriceOfItemInTheWorld(TaleWorlds.Core.ItemObject)">
+  GetAveragePriceOfItemInTheWorld(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetAveragePriceOfItemInTheWorld(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

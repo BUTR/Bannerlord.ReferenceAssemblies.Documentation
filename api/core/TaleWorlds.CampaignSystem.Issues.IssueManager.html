@@ -1,0 +1,2238 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class IssueManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class IssueManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Issues_IssueManager" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager" class="text-break">
+Class IssueManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Issues.html">Issues</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IssueManager : CampaignEventReceiver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html">CampaignEventReceiver</a></div>
+      <div><span class="xref">IssueManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_RemoveListeners_System_Object_">CampaignEventReceiver.RemoveListeners(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCharacterCreationIsOver">CampaignEventReceiver.OnCharacterCreationIsOver()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroLevelledUp_TaleWorlds_CampaignSystem_Hero_System_Boolean_">CampaignEventReceiver.OnHeroLevelledUp(Hero, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroGainedSkill_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Core_SkillObject_System_Int32_System_Boolean_">CampaignEventReceiver.OnHeroGainedSkill(Hero, SkillObject, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroCreated_TaleWorlds_CampaignSystem_Hero_System_Boolean_">CampaignEventReceiver.OnHeroCreated(Hero, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroWounded_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroWounded(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroRelationChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Int32_System_Boolean_TaleWorlds_CampaignSystem_Actions_ChangeRelationAction_ChangeRelationDetail_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroRelationChanged(Hero, Hero, int, bool, ChangeRelationAction.ChangeRelationDetail, Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnQuestLogAdded_TaleWorlds_CampaignSystem_QuestBase_System_Boolean_">CampaignEventReceiver.OnQuestLogAdded(QuestBase, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnIssueLogAdded_TaleWorlds_CampaignSystem_Issues_IssueBase_System_Boolean_">CampaignEventReceiver.OnIssueLogAdded(IssueBase, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnClanTierChanged_TaleWorlds_CampaignSystem_Clan_System_Boolean_">CampaignEventReceiver.OnClanTierChanged(Clan, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnClanChangedKingdom_TaleWorlds_CampaignSystem_Clan_TaleWorlds_CampaignSystem_Kingdom_TaleWorlds_CampaignSystem_Kingdom_TaleWorlds_CampaignSystem_Actions_ChangeKingdomAction_ChangeKingdomActionDetail_System_Boolean_">CampaignEventReceiver.OnClanChangedKingdom(Clan, Kingdom, Kingdom, ChangeKingdomAction.ChangeKingdomActionDetail, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCompanionClanCreated_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnCompanionClanCreated(Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroJoinedParty_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnHeroJoinedParty(Hero, MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnKingdomDecisionAdded_TaleWorlds_CampaignSystem_Election_KingdomDecision_System_Boolean_">CampaignEventReceiver.OnKingdomDecisionAdded(KingdomDecision, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnKingdomDecisionCancelled_TaleWorlds_CampaignSystem_Election_KingdomDecision_System_Boolean_">CampaignEventReceiver.OnKingdomDecisionCancelled(KingdomDecision, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnKingdomDecisionConcluded_TaleWorlds_CampaignSystem_Election_KingdomDecision_TaleWorlds_CampaignSystem_Election_DecisionOutcome_System_Boolean_">CampaignEventReceiver.OnKingdomDecisionConcluded(KingdomDecision, DecisionOutcome, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroOrPartyTradedGold_System_ValueTuple_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase__System_ValueTuple_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase__System_ValueTuple_System_Int32_System_String__System_Boolean_">CampaignEventReceiver.OnHeroOrPartyTradedGold((Hero, PartyBase), (Hero, PartyBase), (int, string), bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroOrPartyGaveItem_System_ValueTuple_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase__System_ValueTuple_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase__TaleWorlds_Core_ItemRosterElement_System_Boolean_">CampaignEventReceiver.OnHeroOrPartyGaveItem((Hero, PartyBase), (Hero, PartyBase), ItemRosterElement, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBanditPartyRecruited_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnBanditPartyRecruited(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnArmyCreated_TaleWorlds_CampaignSystem_Army_">CampaignEventReceiver.OnArmyCreated(Army)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyAttachedAnotherParty_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyAttachedAnotherParty(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNearbyPartyAddedToPlayerMapEvent_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnNearbyPartyAddedToPlayerMapEvent(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnArmyDispersed_TaleWorlds_CampaignSystem_Army_TaleWorlds_CampaignSystem_Army_ArmyDispersionReason_System_Boolean_">CampaignEventReceiver.OnArmyDispersed(Army, Army.ArmyDispersionReason, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnArmyGathered_TaleWorlds_CampaignSystem_Army_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnArmyGathered(Army, Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPerkOpened_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CharacterDevelopment_PerkObject_">CampaignEventReceiver.OnPerkOpened(Hero, PerkObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerTraitChanged_TaleWorlds_CampaignSystem_CharacterDevelopment_TraitObject_System_Int32_">CampaignEventReceiver.OnPlayerTraitChanged(TraitObject, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVillageStateChanged_TaleWorlds_CampaignSystem_Settlements_Village_TaleWorlds_CampaignSystem_Settlements_Village_VillageStates_TaleWorlds_CampaignSystem_Settlements_Village_VillageStates_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnVillageStateChanged(Village, Village.VillageStates, Village.VillageStates, MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAfterSettlementEntered_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnAfterSettlementEntered(MobileParty, Settlement, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMercenaryTroopChangedInTown_TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_">CampaignEventReceiver.OnMercenaryTroopChangedInTown(Town, CharacterObject, CharacterObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMercenaryNumberChangedInTown_TaleWorlds_CampaignSystem_Settlements_Town_System_Int32_System_Int32_">CampaignEventReceiver.OnMercenaryNumberChangedInTown(Town, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAlleyOwnerChanged_TaleWorlds_CampaignSystem_Settlements_Alley_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnAlleyOwnerChanged(Alley, Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAlleyClearedByPlayer_TaleWorlds_CampaignSystem_Settlements_Alley_">CampaignEventReceiver.OnAlleyClearedByPlayer(Alley)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAlleyOccupiedByPlayer_TaleWorlds_CampaignSystem_Settlements_Alley_TaleWorlds_CampaignSystem_Roster_TroopRoster_">CampaignEventReceiver.OnAlleyOccupiedByPlayer(Alley, TroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRomanticStateChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Romance_RomanceLevelEnum_">CampaignEventReceiver.OnRomanticStateChanged(Hero, Hero, Romance.RomanceLevelEnum)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroesMarried_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Boolean_">CampaignEventReceiver.OnHeroesMarried(Hero, Hero, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerEliminatedFromTournament_System_Int32_TaleWorlds_CampaignSystem_Settlements_Town_">CampaignEventReceiver.OnPlayerEliminatedFromTournament(int, Town)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerStartedTournamentMatch_TaleWorlds_CampaignSystem_Settlements_Town_">CampaignEventReceiver.OnPlayerStartedTournamentMatch(Town)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTournamentStarted_TaleWorlds_CampaignSystem_Settlements_Town_">CampaignEventReceiver.OnTournamentStarted(Town)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTournamentFinished_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_Library_MBReadOnlyList_TaleWorlds_CampaignSystem_CharacterObject__TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_Core_ItemObject_">CampaignEventReceiver.OnTournamentFinished(CharacterObject, MBReadOnlyList&lt;CharacterObject&gt;, Town, ItemObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTournamentCancelled_TaleWorlds_CampaignSystem_Settlements_Town_">CampaignEventReceiver.OnTournamentCancelled(Town)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnWarDeclared_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_Actions_DeclareWarAction_DeclareWarDetail_">CampaignEventReceiver.OnWarDeclared(IFaction, IFaction, DeclareWarAction.DeclareWarDetail)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMakePeace_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_Actions_MakePeaceAction_MakePeaceDetail_">CampaignEventReceiver.OnMakePeace(IFaction, IFaction, MakePeaceAction.MakePeaceDetail)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnKingdomCreated_TaleWorlds_CampaignSystem_Kingdom_">CampaignEventReceiver.OnKingdomCreated(Kingdom)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroOccupationChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Occupation_">CampaignEventReceiver.OnHeroOccupationChanged(Hero, Occupation)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnKingdomDestroyed_TaleWorlds_CampaignSystem_Kingdom_">CampaignEventReceiver.OnKingdomDestroyed(Kingdom)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_CanKingdomBeDiscontinued_TaleWorlds_CampaignSystem_Kingdom_System_Boolean__">CampaignEventReceiver.CanKingdomBeDiscontinued(Kingdom, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBarterAccepted_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Collections_Generic_List_TaleWorlds_CampaignSystem_BarterSystem_Barterables_Barterable__">CampaignEventReceiver.OnBarterAccepted(Hero, Hero, List&lt;Barterable&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBarterCanceled_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Collections_Generic_List_TaleWorlds_CampaignSystem_BarterSystem_Barterables_Barterable__">CampaignEventReceiver.OnBarterCanceled(Hero, Hero, List&lt;Barterable&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnStartBattle_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_System_Object_System_Boolean_">CampaignEventReceiver.OnStartBattle(PartyBase, PartyBase, object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRebellionFinished_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnRebellionFinished(Settlement, Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_TownRebelliousStateChanged_TaleWorlds_CampaignSystem_Settlements_Town_System_Boolean_">CampaignEventReceiver.TownRebelliousStateChanged(Town, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRebelliousClanDisbandedAtSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnRebelliousClanDisbandedAtSettlement(Settlement, Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemsLooted_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_ItemRoster_">CampaignEventReceiver.OnItemsLooted(MobileParty, ItemRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMobilePartyDestroyed_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnMobilePartyDestroyed(MobileParty, PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMobilePartyCreated_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnMobilePartyCreated(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMobilePartyQuestStatusChanged_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_">CampaignEventReceiver.OnMobilePartyQuestStatusChanged(MobileParty, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBeforeHeroKilled_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_KillCharacterAction_KillCharacterActionDetail_System_Boolean_">CampaignEventReceiver.OnBeforeHeroKilled(Hero, Hero, KillCharacterAction.KillCharacterActionDetail, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnChildEducationCompleted_TaleWorlds_CampaignSystem_Hero_System_Int32_">CampaignEventReceiver.OnChildEducationCompleted(Hero, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroComesOfAge_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroComesOfAge(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroReachesTeenAge_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroReachesTeenAge(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroGrowsOutOfInfancy_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroGrowsOutOfInfancy(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCharacterDefeated_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnCharacterDefeated(Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroPrisonerTaken_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroPrisonerTaken(PartyBase, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroPrisonerReleased_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_Actions_EndCaptivityDetail_">CampaignEventReceiver.OnHeroPrisonerReleased(Hero, PartyBase, IFaction, EndCaptivityDetail)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCharacterBecameFugitive_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnCharacterBecameFugitive(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerMetHero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnPlayerMetHero(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerLearnsAboutHero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnPlayerLearnsAboutHero(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRenownGained_TaleWorlds_CampaignSystem_Hero_System_Int32_System_Boolean_">CampaignEventReceiver.OnRenownGained(Hero, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCrimeRatingChanged_TaleWorlds_CampaignSystem_IFaction_System_Single_">CampaignEventReceiver.OnCrimeRatingChanged(IFaction, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNewCompanionAdded_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnNewCompanionAdded(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAfterMissionStarted_TaleWorlds_Core_IMission_">CampaignEventReceiver.OnAfterMissionStarted(IMission)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameMenuOpened_TaleWorlds_CampaignSystem_GameMenus_MenuCallbackArgs_">CampaignEventReceiver.OnGameMenuOpened(MenuCallbackArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVillageBecomeNormal_TaleWorlds_CampaignSystem_Settlements_Village_">CampaignEventReceiver.OnVillageBecomeNormal(Village)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVillageBeingRaided_TaleWorlds_CampaignSystem_Settlements_Village_">CampaignEventReceiver.OnVillageBeingRaided(Village)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVillageLooted_TaleWorlds_CampaignSystem_Settlements_Village_">CampaignEventReceiver.OnVillageLooted(Village)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAgentJoinedConversation_TaleWorlds_Core_IAgent_">CampaignEventReceiver.OnAgentJoinedConversation(IAgent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnConversationEnded_System_Collections_Generic_IEnumerable_TaleWorlds_CampaignSystem_CharacterObject__">CampaignEventReceiver.OnConversationEnded(IEnumerable&lt;CharacterObject&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMapEventEnded_TaleWorlds_CampaignSystem_MapEvents_MapEvent_">CampaignEventReceiver.OnMapEventEnded(MapEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMapEventStarted_TaleWorlds_CampaignSystem_MapEvents_MapEvent_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnMapEventStarted(MapEvent, PartyBase, PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRansomOfferedToPlayer_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnRansomOfferedToPlayer(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPrisonersChangeInSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_TaleWorlds_CampaignSystem_Hero_System_Boolean_">CampaignEventReceiver.OnPrisonersChangeInSettlement(Settlement, FlattenedTroopRoster, Hero, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMissionStarted_TaleWorlds_Core_IMission_">CampaignEventReceiver.OnMissionStarted(IMission)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRansomOfferCancelled_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnRansomOfferCancelled(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPeaceOfferedToPlayer_TaleWorlds_CampaignSystem_IFaction_System_Int32_">CampaignEventReceiver.OnPeaceOfferedToPlayer(IFaction, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPeaceOfferCancelled_TaleWorlds_CampaignSystem_IFaction_">CampaignEventReceiver.OnPeaceOfferCancelled(IFaction)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMarriageOfferedToPlayer_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnMarriageOfferedToPlayer(Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMarriageOfferCanceled_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnMarriageOfferCanceled(Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVassalOrMercenaryServiceOfferedToPlayer_TaleWorlds_CampaignSystem_Kingdom_">CampaignEventReceiver.OnVassalOrMercenaryServiceOfferedToPlayer(Kingdom)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnVassalOrMercenaryServiceOfferCanceled_TaleWorlds_CampaignSystem_Kingdom_">CampaignEventReceiver.OnVassalOrMercenaryServiceOfferCanceled(Kingdom)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerBoardGameOver_TaleWorlds_CampaignSystem_Hero_Helpers_BoardGameHelper_BoardGameState_">CampaignEventReceiver.OnPlayerBoardGameOver(Hero, BoardGameHelper.BoardGameState)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCommonAreaStateChanged_TaleWorlds_CampaignSystem_Settlements_Alley_TaleWorlds_CampaignSystem_Settlements_Alley_AreaState_TaleWorlds_CampaignSystem_Settlements_Alley_AreaState_">CampaignEventReceiver.OnCommonAreaStateChanged(Alley, Alley.AreaState, Alley.AreaState)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_BeforeMissionOpened">CampaignEventReceiver.BeforeMissionOpened()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyRemoved_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnPartyRemoved(PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartySizeChanged_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnPartySizeChanged(PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGovernorChanged_TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnGovernorChanged(Town, Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_Tick_System_Single_">CampaignEventReceiver.Tick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSessionStart_TaleWorlds_CampaignSystem_CampaignGameStarter_">CampaignEventReceiver.OnSessionStart(CampaignGameStarter)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnAfterSessionStart_TaleWorlds_CampaignSystem_CampaignGameStarter_">CampaignEventReceiver.OnAfterSessionStart(CampaignGameStarter)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNewGameCreated_TaleWorlds_CampaignSystem_CampaignGameStarter_">CampaignEventReceiver.OnNewGameCreated(CampaignGameStarter)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameLoaded_TaleWorlds_CampaignSystem_CampaignGameStarter_">CampaignEventReceiver.OnGameLoaded(CampaignGameStarter)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameEarlyLoaded_TaleWorlds_CampaignSystem_CampaignGameStarter_">CampaignEventReceiver.OnGameEarlyLoaded(CampaignGameStarter)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerTradeProfit_System_Int32_">CampaignEventReceiver.OnPlayerTradeProfit(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnRulingClanChanged_TaleWorlds_CampaignSystem_Kingdom_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnRulingClanChanged(Kingdom, Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPrisonerReleased_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_">CampaignEventReceiver.OnPrisonerReleased(FlattenedTroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameLoadFinished">CampaignEventReceiver.OnGameLoadFinished()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyJoinedArmy_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyJoinedArmy(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyRemovedFromArmy_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyRemovedFromArmy(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnArmyLeaderThink_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Army_ArmyLeaderThinkReason_">CampaignEventReceiver.OnArmyLeaderThink(Hero, Army.ArmyLeaderThinkReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnArmyOverlaySetDirty">CampaignEventReceiver.OnArmyOverlaySetDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerDesertedBattle_System_Int32_">CampaignEventReceiver.OnPlayerDesertedBattle(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_MissionTick_System_Single_">CampaignEventReceiver.MissionTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnChildConceived_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnChildConceived(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGivenBirth_TaleWorlds_CampaignSystem_Hero_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Hero__System_Int32_">CampaignEventReceiver.OnGivenBirth(Hero, List&lt;Hero&gt;, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnUnitRecruited_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_">CampaignEventReceiver.OnUnitRecruited(CharacterObject, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerBattleEnd_TaleWorlds_CampaignSystem_MapEvents_MapEvent_">CampaignEventReceiver.OnPlayerBattleEnd(MapEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMissionEnded_TaleWorlds_Core_IMission_">CampaignEventReceiver.OnMissionEnded(IMission)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_TickPartialHourlyAi_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.TickPartialHourlyAi(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_QuarterDailyPartyTick_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.QuarterDailyPartyTick(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_AiHourlyTick_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_PartyThinkParams_">CampaignEventReceiver.AiHourlyTick(MobileParty, PartyThinkParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_HourlyTickParty_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.HourlyTickParty(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_HourlyTickSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.HourlyTickSettlement(Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_HourlyTickClan_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.HourlyTickClan(Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_DailyTickParty_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.DailyTickParty(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_DailyTickTown_TaleWorlds_CampaignSystem_Settlements_Town_">CampaignEventReceiver.DailyTickTown(Town)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_DailyTickSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.DailyTickSettlement(Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_DailyTickClan_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.DailyTickClan(Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerBodyPropertiesChanged">CampaignEventReceiver.OnPlayerBodyPropertiesChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_WeeklyTick">CampaignEventReceiver.WeeklyTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_CollectAvailableTutorials_System_Collections_Generic_List_TaleWorlds_CampaignSystem_CampaignTutorial___">CampaignEventReceiver.CollectAvailableTutorials(ref List&lt;CampaignTutorial&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_DailyTickHero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.DailyTickHero(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTutorialCompleted_System_String_">CampaignEventReceiver.OnTutorialCompleted(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBuildingLevelChanged_TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_CampaignSystem_Settlements_Buildings_Building_System_Int32_">CampaignEventReceiver.OnBuildingLevelChanged(Town, Building, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_BeforeGameMenuOpened_TaleWorlds_CampaignSystem_GameMenus_MenuCallbackArgs_">CampaignEventReceiver.BeforeGameMenuOpened(MenuCallbackArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_AfterGameMenuOpened_TaleWorlds_CampaignSystem_GameMenus_MenuCallbackArgs_">CampaignEventReceiver.AfterGameMenuOpened(MenuCallbackArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBarterablesRequested_TaleWorlds_CampaignSystem_BarterSystem_BarterData_">CampaignEventReceiver.OnBarterablesRequested(BarterData)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyVisibilityChanged_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnPartyVisibilityChanged(PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCompanionRemoved_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_RemoveCompanionAction_RemoveCompanionDetail_">CampaignEventReceiver.OnCompanionRemoved(Hero, RemoveCompanionAction.RemoveCompanionDetail)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_TrackDetected_TaleWorlds_CampaignSystem_Track_">CampaignEventReceiver.TrackDetected(Track)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_TrackLost_TaleWorlds_CampaignSystem_Track_">CampaignEventReceiver.TrackLost(Track)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_LocationCharactersAreReadyToSpawn_System_Collections_Generic_Dictionary_System_String_System_Int32__">CampaignEventReceiver.LocationCharactersAreReadyToSpawn(Dictionary&lt;string, int&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_LocationCharactersSimulated">CampaignEventReceiver.LocationCharactersSimulated()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerUpgradedTroops_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_">CampaignEventReceiver.OnPlayerUpgradedTroops(CharacterObject, CharacterObject, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroCombatHit_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_CharacterObject_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_Core_WeaponComponentData_System_Boolean_System_Int32_">CampaignEventReceiver.OnHeroCombatHit(CharacterObject, CharacterObject, PartyBase, WeaponComponentData, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCharacterPortraitPopUpClosed">CampaignEventReceiver.OnCharacterPortraitPopUpClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerStartTalkFromMenu_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnPlayerStartTalkFromMenu(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameMenuOptionSelected_TaleWorlds_CampaignSystem_GameMenus_GameMenuOption_">CampaignEventReceiver.OnGameMenuOptionSelected(GameMenuOption)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerStartRecruitment_TaleWorlds_CampaignSystem_CharacterObject_">CampaignEventReceiver.OnPlayerStartRecruitment(CharacterObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBeforePlayerCharacterChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnBeforePlayerCharacterChanged(Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerCharacterChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_">CampaignEventReceiver.OnPlayerCharacterChanged(Hero, Hero, MobileParty, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnClanLeaderChanged_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnClanLeaderChanged(Hero, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeEventStarted_TaleWorlds_CampaignSystem_Siege_SiegeEvent_">CampaignEventReceiver.OnSiegeEventStarted(SiegeEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerSiegeStarted">CampaignEventReceiver.OnPlayerSiegeStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeEventEnded_TaleWorlds_CampaignSystem_Siege_SiegeEvent_">CampaignEventReceiver.OnSiegeEventEnded(SiegeEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeAftermathApplied_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Actions_SiegeAftermathAction_SiegeAftermath_TaleWorlds_CampaignSystem_Clan_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Party_MobileParty_System_Single__">CampaignEventReceiver.OnSiegeAftermathApplied(MobileParty, Settlement, SiegeAftermathAction.SiegeAftermath, Clan, Dictionary&lt;MobileParty, float&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeBombardmentHit_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Core_BattleSideEnum_TaleWorlds_Core_SiegeEngineType_TaleWorlds_CampaignSystem_Siege_SiegeBombardTargets_">CampaignEventReceiver.OnSiegeBombardmentHit(MobileParty, Settlement, BattleSideEnum, SiegeEngineType, SiegeBombardTargets)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeBombardmentWallHit_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Core_BattleSideEnum_TaleWorlds_Core_SiegeEngineType_System_Boolean_">CampaignEventReceiver.OnSiegeBombardmentWallHit(MobileParty, Settlement, BattleSideEnum, SiegeEngineType, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSiegeEngineDestroyed_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Core_BattleSideEnum_TaleWorlds_Core_SiegeEngineType_">CampaignEventReceiver.OnSiegeEngineDestroyed(MobileParty, Settlement, BattleSideEnum, SiegeEngineType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTradeRumorIsTaken_System_Collections_Generic_List_TaleWorlds_CampaignSystem_TradeRumor__TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnTradeRumorIsTaken(List&lt;TradeRumor&gt;, Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCheckForIssue_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnCheckForIssue(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnIssueUpdated_TaleWorlds_CampaignSystem_Issues_IssueBase_TaleWorlds_CampaignSystem_Issues_IssueBase_IssueUpdateDetails_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnIssueUpdated(IssueBase, IssueBase.IssueUpdateDetails, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTroopsDeserted_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_TroopRoster_">CampaignEventReceiver.OnTroopsDeserted(MobileParty, TroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTroopRecruited_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_">CampaignEventReceiver.OnTroopRecruited(Hero, Settlement, Hero, CharacterObject, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnTroopGivenToSettlement_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Roster_TroopRoster_">CampaignEventReceiver.OnTroopGivenToSettlement(Hero, Settlement, TroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemSold_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_Core_ItemRosterElement_System_Int32_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnItemSold(PartyBase, PartyBase, ItemRosterElement, int, Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCaravanTransactionCompleted_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Town_System_Collections_Generic_List_System_ValueTuple_TaleWorlds_Core_EquipmentElement_System_Int32___">CampaignEventReceiver.OnCaravanTransactionCompleted(MobileParty, Town, List&lt;(EquipmentElement, int)&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPrisonerSold_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Roster_TroopRoster_">CampaignEventReceiver.OnPrisonerSold(PartyBase, PartyBase, TroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyDisbanded_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnPartyDisbanded(MobileParty, Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyDisbandStarted_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyDisbandStarted(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyDisbandCanceled_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyDisbandCanceled(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHideoutSpotted_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Party_PartyBase_">CampaignEventReceiver.OnHideoutSpotted(PartyBase, PartyBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHideoutDeactivated_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnHideoutDeactivated(Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerInventoryExchange_System_Collections_Generic_List_System_ValueTuple_TaleWorlds_Core_ItemRosterElement_System_Int32___System_Collections_Generic_List_System_ValueTuple_TaleWorlds_Core_ItemRosterElement_System_Int32___System_Boolean_">CampaignEventReceiver.OnPlayerInventoryExchange(List&lt;(ItemRosterElement, int)&gt;, List&lt;(ItemRosterElement, int)&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemsDiscardedByPlayer_TaleWorlds_CampaignSystem_Roster_ItemRoster_">CampaignEventReceiver.OnItemsDiscardedByPlayer(ItemRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPersuasionProgressCommitted_System_Tuple_TaleWorlds_CampaignSystem_Conversation_Persuasion_PersuasionOptionArgs_TaleWorlds_CampaignSystem_Conversation_Persuasion_PersuasionOptionResult__">CampaignEventReceiver.OnPersuasionProgressCommitted(Tuple&lt;PersuasionOptionArgs, PersuasionOptionResult&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroSharedFoodWithAnother_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_System_Single_">CampaignEventReceiver.OnHeroSharedFoodWithAnother(Hero, Hero, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnQuestStarted_TaleWorlds_CampaignSystem_QuestBase_">CampaignEventReceiver.OnQuestStarted(QuestBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemProduced_TaleWorlds_Core_ItemObject_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Int32_">CampaignEventReceiver.OnItemProduced(ItemObject, Settlement, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemConsumed_TaleWorlds_Core_ItemObject_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Int32_">CampaignEventReceiver.OnItemConsumed(ItemObject, Settlement, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyConsumedFood_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyConsumedFood(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_SiegeCompleted_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Party_MobileParty_System_Boolean_TaleWorlds_CampaignSystem_MapEvents_MapEvent_BattleTypes_">CampaignEventReceiver.SiegeCompleted(Settlement, MobileParty, bool, MapEvent.BattleTypes)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_SiegeEngineBuilt_TaleWorlds_CampaignSystem_Siege_SiegeEvent_TaleWorlds_Core_BattleSideEnum_TaleWorlds_Core_SiegeEngineType_">CampaignEventReceiver.SiegeEngineBuilt(SiegeEvent, BattleSideEnum, SiegeEngineType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_RaidCompleted_TaleWorlds_Core_BattleSideEnum_TaleWorlds_CampaignSystem_MapEvents_RaidEventComponent_">CampaignEventReceiver.RaidCompleted(BattleSideEnum, RaidEventComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_ForceSuppliesCompleted_TaleWorlds_Core_BattleSideEnum_TaleWorlds_CampaignSystem_MapEvents_ForceSuppliesEventComponent_">CampaignEventReceiver.ForceSuppliesCompleted(BattleSideEnum, ForceSuppliesEventComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_ForceVolunteersCompleted_TaleWorlds_Core_BattleSideEnum_TaleWorlds_CampaignSystem_MapEvents_ForceVolunteersEventComponent_">CampaignEventReceiver.ForceVolunteersCompleted(BattleSideEnum, ForceVolunteersEventComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBeforeMainCharacterDied_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_KillCharacterAction_KillCharacterActionDetail_System_Boolean_">CampaignEventReceiver.OnBeforeMainCharacterDied(Hero, Hero, KillCharacterAction.KillCharacterActionDetail, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnGameOver">CampaignEventReceiver.OnGameOver()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnClanDestroyed_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnClanDestroyed(Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHideoutBattleCompleted_TaleWorlds_Core_BattleSideEnum_TaleWorlds_CampaignSystem_MapEvents_HideoutEventComponent_">CampaignEventReceiver.OnHideoutBattleCompleted(BattleSideEnum, HideoutEventComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNewIssueCreated_TaleWorlds_CampaignSystem_Issues_IssueBase_">CampaignEventReceiver.OnNewIssueCreated(IssueBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnIssueOwnerChanged_TaleWorlds_CampaignSystem_Issues_IssueBase_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnIssueOwnerChanged(IssueBase, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNewItemCrafted_TaleWorlds_Core_ItemObject_">CampaignEventReceiver.OnNewItemCrafted(ItemObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnWorkshopInitialized_TaleWorlds_CampaignSystem_Settlements_Workshops_Workshop_">CampaignEventReceiver.OnWorkshopInitialized(Workshop)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnWorkshopOwnerChanged_TaleWorlds_CampaignSystem_Settlements_Workshops_Workshop_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnWorkshopOwnerChanged(Workshop, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnWorkshopTypeChanged_TaleWorlds_CampaignSystem_Settlements_Workshops_Workshop_">CampaignEventReceiver.OnWorkshopTypeChanged(Workshop)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnEquipmentSmeltedByHero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Core_EquipmentElement_">CampaignEventReceiver.OnEquipmentSmeltedByHero(Hero, EquipmentElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_CraftingPartUnlocked_TaleWorlds_Core_CraftingPiece_">CampaignEventReceiver.CraftingPartUnlocked(CraftingPiece)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPrisonerTaken_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_">CampaignEventReceiver.OnPrisonerTaken(FlattenedTroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnNewItemCrafted_TaleWorlds_Core_ItemObject_TaleWorlds_Core_ItemModifier_System_Boolean_">CampaignEventReceiver.OnNewItemCrafted(ItemObject, ItemModifier, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnBeforeSave">CampaignEventReceiver.OnBeforeSave()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMainPartyPrisonerRecruited_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_">CampaignEventReceiver.OnMainPartyPrisonerRecruited(FlattenedTroopRoster)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPrisonerDonatedToSettlement_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Roster_FlattenedTroopRoster_TaleWorlds_CampaignSystem_Settlements_Settlement_">CampaignEventReceiver.OnPrisonerDonatedToSettlement(MobileParty, FlattenedTroopRoster, Settlement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroChangedClan_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Clan_">CampaignEventReceiver.OnHeroChangedClan(Hero, Clan)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSaveOver_System_Boolean_System_String_">CampaignEventReceiver.OnSaveOver(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnSaveStarted">CampaignEventReceiver.OnSaveStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroTeleportationRequested_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Actions_TeleportHeroAction_TeleportationDetail_">CampaignEventReceiver.OnHeroTeleportationRequested(Hero, Settlement, MobileParty, TeleportHeroAction.TeleportationDetail)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPartyLeaderChangeOfferCanceled_TaleWorlds_CampaignSystem_Party_MobileParty_">CampaignEventReceiver.OnPartyLeaderChangeOfferCanceled(MobileParty)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnClanInfluenceChanged_TaleWorlds_CampaignSystem_Clan_System_Single_">CampaignEventReceiver.OnClanInfluenceChanged(Clan, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerPartyKnockedOrKilledTroop_TaleWorlds_CampaignSystem_CharacterObject_">CampaignEventReceiver.OnPlayerPartyKnockedOrKilledTroop(CharacterObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerEarnedGoldFromAsset_TaleWorlds_CampaignSystem_GameComponents_DefaultClanFinanceModel_AssetIncomeType_System_Int32_">CampaignEventReceiver.OnPlayerEarnedGoldFromAsset(DefaultClanFinanceModel.AssetIncomeType, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_CollectLoots_TaleWorlds_CampaignSystem_MapEvents_MapEvent_TaleWorlds_CampaignSystem_Party_PartyBase_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Roster_ItemRoster__TaleWorlds_CampaignSystem_Roster_ItemRoster_TaleWorlds_Library_MBList_TaleWorlds_CampaignSystem_Roster_TroopRosterElement__System_Single_">CampaignEventReceiver.CollectLoots(MapEvent, PartyBase, Dictionary&lt;PartyBase, ItemRoster&gt;, ItemRoster, MBList&lt;TroopRosterElement&gt;, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnLootDistributedToParty_TaleWorlds_CampaignSystem_MapEvents_MapEvent_TaleWorlds_CampaignSystem_Party_PartyBase_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_Roster_ItemRoster__">CampaignEventReceiver.OnLootDistributedToParty(MapEvent, PartyBase, Dictionary&lt;PartyBase, ItemRoster&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnPlayerJoinedTournament_TaleWorlds_CampaignSystem_Settlements_Town_System_Boolean_">CampaignEventReceiver.OnPlayerJoinedTournament(Town, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroUnregistered_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnHeroUnregistered(Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnConfigChanged">CampaignEventReceiver.OnConfigChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnCraftingOrderCompleted_TaleWorlds_CampaignSystem_Settlements_Town_TaleWorlds_CampaignSystem_CraftingSystem_CraftingOrder_TaleWorlds_Core_ItemObject_TaleWorlds_CampaignSystem_Hero_">CampaignEventReceiver.OnCraftingOrderCompleted(Town, CraftingOrder, ItemObject, Hero)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnItemsRefined_TaleWorlds_CampaignSystem_Hero_TaleWorlds_Core_Crafting_RefiningFormula_">CampaignEventReceiver.OnItemsRefined(Hero, Crafting.RefiningFormula)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMapEventContinuityNeedsUpdate_TaleWorlds_CampaignSystem_IFaction_">CampaignEventReceiver.OnMapEventContinuityNeedsUpdate(IFaction)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnMainPartyStarving">CampaignEventReceiver.OnMainPartyStarving()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.CampaignEventReceiver.html#TaleWorlds_CampaignSystem_CampaignEventReceiver_OnHeroGetsBusy_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_HeroGetsBusyReasons_">CampaignEventReceiver.OnHeroGetsBusy(Hero, HeroGetsBusyReasons)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager__ctor_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager__ctor" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.#ctor">
+  IssueManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IssueManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_HeroMainOptionsToken" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.HeroMainOptionsToken">
+  HeroMainOptionsToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HeroMainOptionsToken = &quot;hero_main_options&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_IssueClassicQuestStartToken" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IssueClassicQuestStartToken">
+  IssueClassicQuestStartToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IssueClassicQuestStartToken = &quot;issue_classic_quest_start&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_IssueDiscussAlternativeSolution" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IssueDiscussAlternativeSolution">
+  IssueDiscussAlternativeSolution
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IssueDiscussAlternativeSolution = &quot;issue_discuss_alternative_solution&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_IssueOfferToken" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IssueOfferToken">
+  IssueOfferToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IssueOfferToken = &quot;issue_offer&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_Issues" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.Issues">
+  Issues
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyDictionary&lt;Hero, IssueBase&gt; Issues</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyDictionary-2.html">MBReadOnlyDictionary</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a>, <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_IssueSolvingCompanionList_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IssueSolvingCompanionList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_IssueSolvingCompanionList" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IssueSolvingCompanionList">
+  IssueSolvingCompanionList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Hero&gt; IssueSolvingCompanionList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_AddIssueCoolDownData_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AddIssueCoolDownData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_AddIssueCoolDownData_System_Type_TaleWorlds_CampaignSystem_Issues_IssueCoolDownData_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AddIssueCoolDownData(System.Type,TaleWorlds.CampaignSystem.Issues.IssueCoolDownData)">
+  AddIssueCoolDownData(Type, IssueCoolDownData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddIssueCoolDownData(Type type, IssueCoolDownData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueCoolDownData.html">IssueCoolDownData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_AddPotentialIssueData_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AddPotentialIssueData*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_AddPotentialIssueData_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Issues_PotentialIssueData_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AddPotentialIssueData(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Issues.PotentialIssueData)">
+  AddPotentialIssueData(Hero, PotentialIssueData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPotentialIssueData(Hero hero, PotentialIssueData issueData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>issueData</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.PotentialIssueData.html">PotentialIssueData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanBeGovernorOrHavePartyRole_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanBeGovernorOrHavePartyRole*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanBeGovernorOrHavePartyRole_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanBeGovernorOrHavePartyRole(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanBeGovernorOrHavePartyRole(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanBeGovernorOrHavePartyRole(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHaveQuestsOrIssues_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHaveQuestsOrIssues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHaveQuestsOrIssues_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHaveQuestsOrIssues(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanHaveQuestsOrIssues(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHaveQuestsOrIssues(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroBecomePrisoner_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroBecomePrisoner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroBecomePrisoner_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroBecomePrisoner(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanHeroBecomePrisoner(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHeroBecomePrisoner(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroDie_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroDie*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroDie_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_KillCharacterAction_KillCharacterActionDetail_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroDie(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail,System.Boolean@)">
+  CanHeroDie(Hero, KillCharacterActionDetail, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHeroDie(Hero hero, KillCharacterAction.KillCharacterActionDetail causeOfDeath, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>causeOfDeath</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.html">KillCharacterAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail.html">KillCharacterActionDetail</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroEquipmentBeChanged_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroEquipmentBeChanged*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroEquipmentBeChanged_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroEquipmentBeChanged(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanHeroEquipmentBeChanged(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHeroEquipmentBeChanged(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroLeadParty_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroLeadParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroLeadParty_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroLeadParty(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanHeroLeadParty(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHeroLeadParty(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroMarry_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroMarry*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanHeroMarry_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanHeroMarry(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanHeroMarry(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanHeroMarry(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanMoveToSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanMoveToSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CanMoveToSettlement_TaleWorlds_CampaignSystem_Hero_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CanMoveToSettlement(TaleWorlds.CampaignSystem.Hero,System.Boolean@)">
+  CanMoveToSettlement(Hero, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CanMoveToSettlement(Hero hero, ref bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_ChangeIssueOwner_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.ChangeIssueOwner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_ChangeIssueOwner_TaleWorlds_CampaignSystem_Issues_IssueBase_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.ChangeIssueOwner(TaleWorlds.CampaignSystem.Issues.IssueBase,TaleWorlds.CampaignSystem.Hero)">
+  ChangeIssueOwner(IssueBase, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeIssueOwner(IssueBase issue, Hero newOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issue</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a></dt>
+    <dd></dd>
+    <dt><code>newOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CheckForIssues_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CheckForIssues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CheckForIssues_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CheckForIssues(TaleWorlds.CampaignSystem.Hero)">
+  CheckForIssues(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PotentialIssueData&gt; CheckForIssues(Hero issueOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Issues.PotentialIssueData.html">PotentialIssueData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CheckIssueForMenuLocations_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CheckIssueForMenuLocations*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CheckIssueForMenuLocations_System_Collections_Generic_List_TaleWorlds_CampaignSystem_Settlements_Locations_Location__System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CheckIssueForMenuLocations(System.Collections.Generic.List{TaleWorlds.CampaignSystem.Settlements.Locations.Location},System.Boolean)">
+  CheckIssueForMenuLocations(List&lt;Location&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameMenuOption.IssueQuestFlags CheckIssueForMenuLocations(List&lt;Location&gt; currentLocations, bool getIssuesWithoutAQuest = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentLocations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.Location.html">Location</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>getIssuesWithoutAQuest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenuOption.html">GameMenuOption</a>.<a class="xref" href="TaleWorlds.CampaignSystem.GameMenus.GameMenuOption.IssueQuestFlags.html">IssueQuestFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_CreateNewIssue_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CreateNewIssue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_CreateNewIssue_TaleWorlds_CampaignSystem_Issues_PotentialIssueData__TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.CreateNewIssue(TaleWorlds.CampaignSystem.Issues.PotentialIssueData@,TaleWorlds.CampaignSystem.Hero)">
+  CreateNewIssue(in PotentialIssueData, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CreateNewIssue(in PotentialIssueData pid, Hero issueOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pid</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.PotentialIssueData.html">PotentialIssueData</a></dt>
+    <dd></dd>
+    <dt><code>issueOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_DailyTick_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.DailyTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_DailyTick" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.DailyTick">
+  DailyTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DailyTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_DeactivateIssue_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.DeactivateIssue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_DeactivateIssue_TaleWorlds_CampaignSystem_Issues_IssueBase_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.DeactivateIssue(TaleWorlds.CampaignSystem.Issues.IssueBase)">
+  DeactivateIssue(IssueBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeactivateIssue(IssueBase issue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issue</code> <a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_FillIssueCountsPerClan_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.FillIssueCountsPerClan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_FillIssueCountsPerClan_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Clan_System_Int32__System_Collections_Generic_IEnumerable_TaleWorlds_CampaignSystem_Clan__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.FillIssueCountsPerClan(System.Collections.Generic.Dictionary{TaleWorlds.CampaignSystem.Clan,System.Int32},System.Collections.Generic.IEnumerable{TaleWorlds.CampaignSystem.Clan})">
+  FillIssueCountsPerClan(Dictionary&lt;Clan, int&gt;, IEnumerable&lt;Clan&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillIssueCountsPerClan(Dictionary&lt;Clan, int&gt; issueCountPerClan, IEnumerable&lt;Clan&gt; clans)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueCountPerClan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>clans</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_FillIssueCountsPerSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.FillIssueCountsPerSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_FillIssueCountsPerSettlement_System_Collections_Generic_Dictionary_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Int32__" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.FillIssueCountsPerSettlement(System.Collections.Generic.Dictionary{TaleWorlds.CampaignSystem.Settlements.Settlement,System.Int32})">
+  FillIssueCountsPerSettlement(Dictionary&lt;Settlement, int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillIssueCountsPerSettlement(Dictionary&lt;Settlement, int&gt; issueCountPerSettlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueCountPerSettlement</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetIssueOfQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetIssueOfQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetIssueOfQuest_TaleWorlds_CampaignSystem_QuestBase_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetIssueOfQuest(TaleWorlds.CampaignSystem.QuestBase)">
+  GetIssueOfQuest(QuestBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IssueBase GetIssueOfQuest(QuestBase quest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>quest</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetIssuesInSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetIssuesInSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetIssuesInSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetIssuesInSettlement(TaleWorlds.CampaignSystem.Settlements.Settlement,System.Boolean)">
+  GetIssuesInSettlement(Settlement, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IssueBase&gt; GetIssuesInSettlement(Settlement settlement, bool onlyNotables = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>onlyNotables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Issues.IssueBase.html">IssueBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetNumOfActiveIssuesInSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetNumOfActiveIssuesInSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetNumOfActiveIssuesInSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetNumOfActiveIssuesInSettlement(TaleWorlds.CampaignSystem.Settlements.Settlement,System.Boolean)">
+  GetNumOfActiveIssuesInSettlement(Settlement, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumOfActiveIssuesInSettlement(Settlement settlement, bool includeQuests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>includeQuests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetNumOfAvailableIssuesInSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetNumOfAvailableIssuesInSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_GetNumOfAvailableIssuesInSettlement_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.GetNumOfAvailableIssuesInSettlement(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  GetNumOfAvailableIssuesInSettlement(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumOfAvailableIssuesInSettlement(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_HasIssueCoolDown_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.HasIssueCoolDown*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_HasIssueCoolDown_System_Type_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.HasIssueCoolDown(System.Type,TaleWorlds.CampaignSystem.Hero)">
+  HasIssueCoolDown(Type, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasIssueCoolDown(Type type, Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_HourlyTick_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.HourlyTick*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_HourlyTick" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.HourlyTick">
+  HourlyTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void HourlyTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_InitializeForSavedGame_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.InitializeForSavedGame*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_InitializeForSavedGame" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.InitializeForSavedGame">
+  InitializeForSavedGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeForSavedGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_IsThereActiveIssueWithTypeInSettlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IsThereActiveIssueWithTypeInSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_IsThereActiveIssueWithTypeInSettlement_System_Type_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.IsThereActiveIssueWithTypeInSettlement(System.Type,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  IsThereActiveIssueWithTypeInSettlement(Type, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThereActiveIssueWithTypeInSettlement(Type type, Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnCharacterPortraitPopUpOpened_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnCharacterPortraitPopUpOpened*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnCharacterPortraitPopUpOpened_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnCharacterPortraitPopUpOpened(TaleWorlds.CampaignSystem.CharacterObject)">
+  OnCharacterPortraitPopUpOpened(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCharacterPortraitPopUpOpened(CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnHeroKilled_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnHeroKilled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnHeroKilled_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_KillCharacterAction_KillCharacterActionDetail_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnHeroKilled(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail,System.Boolean)">
+  OnHeroKilled(Hero, Hero, KillCharacterActionDetail, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnHeroKilled(Hero victim, Hero killer, KillCharacterAction.KillCharacterActionDetail detail, bool showNotification)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>victim</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>killer</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>detail</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.html">KillCharacterAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.KillCharacterAction.KillCharacterActionDetail.html">KillCharacterActionDetail</a></dt>
+    <dd></dd>
+    <dt><code>showNotification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnQuestCompleted_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnQuestCompleted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnQuestCompleted_TaleWorlds_CampaignSystem_QuestBase_TaleWorlds_CampaignSystem_QuestBase_QuestCompleteDetails_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnQuestCompleted(TaleWorlds.CampaignSystem.QuestBase,TaleWorlds.CampaignSystem.QuestBase.QuestCompleteDetails)">
+  OnQuestCompleted(QuestBase, QuestCompleteDetails)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnQuestCompleted(QuestBase quest, QuestBase.QuestCompleteDetails detail)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>quest</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a></dt>
+    <dd></dd>
+    <dt><code>detail</code> <a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.html">QuestBase</a>.<a class="xref" href="TaleWorlds.CampaignSystem.QuestBase.QuestCompleteDetails.html">QuestCompleteDetails</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementEntered_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementEntered*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementEntered_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementEntered(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.CampaignSystem.Hero)">
+  OnSettlementEntered(MobileParty, Settlement, Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSettlementEntered(MobileParty party, Settlement settlement, Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementLeft_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementLeft*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementLeft_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementLeft(TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  OnSettlementLeft(MobileParty, Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSettlementLeft(MobileParty party, Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementOwnerChanged_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementOwnerChanged*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_OnSettlementOwnerChanged_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Boolean_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Actions_ChangeOwnerOfSettlementAction_ChangeOwnerOfSettlementDetail_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.OnSettlementOwnerChanged(TaleWorlds.CampaignSystem.Settlements.Settlement,System.Boolean,TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Actions.ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail)">
+  OnSettlementOwnerChanged(Settlement, bool, Hero, Hero, Hero, ChangeOwnerOfSettlementDetail)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSettlementOwnerChanged(Settlement settlement, bool openToClaim, Hero newOwner, Hero oldOwner, Hero capturerHero, ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail detail)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>openToClaim</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>newOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>oldOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>capturerHero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>detail</code> <a class="xref" href="TaleWorlds.CampaignSystem.Actions.ChangeOwnerOfSettlementAction.html">ChangeOwnerOfSettlementAction</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Actions.ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail.html">ChangeOwnerOfSettlementDetail</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_StartIssueQuest_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.StartIssueQuest*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_StartIssueQuest_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.StartIssueQuest(TaleWorlds.CampaignSystem.Hero)">
+  StartIssueQuest(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartIssueQuest(Hero issueOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issueOwner</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Issues_IssueManager_ToggleAllIssueTracks_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.ToggleAllIssueTracks*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Issues_IssueManager_ToggleAllIssueTracks_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Issues.IssueManager.ToggleAllIssueTracks(System.Boolean)">
+  ToggleAllIssueTracks(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleAllIssueTracks(bool enableTrack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enableTrack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

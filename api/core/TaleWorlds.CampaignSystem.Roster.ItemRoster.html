@@ -1,0 +1,1420 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ItemRoster | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ItemRoster | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Roster_ItemRoster" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster" class="text-break">
+Class ItemRoster  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Roster.html">Roster</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ItemRoster : IReadOnlyList&lt;ItemRosterElement&gt;, IReadOnlyCollection&lt;ItemRosterElement&gt;, IEnumerable&lt;ItemRosterElement&gt;, IEnumerable, ISerializableObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ItemRoster</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ISerializableObject.html">ISerializableObject</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster__ctor_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster__ctor" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.#ctor">
+  ItemRoster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRoster()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster__ctor_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster__ctor_TaleWorlds_CampaignSystem_Roster_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.#ctor(TaleWorlds.CampaignSystem.Roster.ItemRoster)">
+  ItemRoster(ItemRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRoster(ItemRoster other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Count_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Count*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Count" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FoodVariety_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FoodVariety*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FoodVariety" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FoodVariety">
+  FoodVariety
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int FoodVariety { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Item_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Item*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Item_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRosterElement this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfLivestockAnimals_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfLivestockAnimals*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfLivestockAnimals" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfLivestockAnimals">
+  NumberOfLivestockAnimals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int NumberOfLivestockAnimals { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfMounts_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfMounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfMounts" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfMounts">
+  NumberOfMounts
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int NumberOfMounts { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfPackAnimals_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfPackAnimals*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_NumberOfPackAnimals" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.NumberOfPackAnimals">
+  NumberOfPackAnimals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int NumberOfPackAnimals { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalFood_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalFood*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalFood" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalFood">
+  TotalFood
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int TotalFood { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalValue_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalValue" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalValue">
+  TotalValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int TotalValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalWeight_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalWeight*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TotalWeight" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TotalWeight">
+  TotalWeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public float TotalWeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TradeGoodsTotalValue_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TradeGoodsTotalValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_TradeGoodsTotalValue" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.TradeGoodsTotalValue">
+  TradeGoodsTotalValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int TradeGoodsTotalValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_VersionNo_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.VersionNo*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_VersionNo" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.VersionNo">
+  VersionNo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public int VersionNo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Add_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Add*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Add_System_Collections_Generic_IEnumerable_TaleWorlds_Core_ItemRosterElement__" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Add(System.Collections.Generic.IEnumerable{TaleWorlds.Core.ItemRosterElement})">
+  Add(IEnumerable&lt;ItemRosterElement&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IEnumerable&lt;ItemRosterElement&gt; rosterElementList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rosterElementList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Add_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Add*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Add_TaleWorlds_Core_ItemRosterElement_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Add(TaleWorlds.Core.ItemRosterElement)">
+  Add(ItemRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(ItemRosterElement itemRosterElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemRosterElement</code> <a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AddToCounts_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AddToCounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AddToCounts_TaleWorlds_Core_EquipmentElement_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AddToCounts(TaleWorlds.Core.EquipmentElement,System.Int32)">
+  AddToCounts(EquipmentElement, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddToCounts(EquipmentElement rosterElement, int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rosterElement</code> <a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AddToCounts_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AddToCounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AddToCounts_TaleWorlds_Core_ItemObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AddToCounts(TaleWorlds.Core.ItemObject,System.Int32)">
+  AddToCounts(ItemObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddToCounts(ItemObject item, int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AutoGeneratedInstanceCollectObjects_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AutoGeneratedInstanceCollectObjects*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_AutoGeneratedInstanceCollectObjects_System_Collections_Generic_List_System_Object__" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.AutoGeneratedInstanceCollectObjects(System.Collections.Generic.List{System.Object})">
+  AutoGeneratedInstanceCollectObjects(List&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AutoGeneratedInstanceCollectObjects(List&lt;object&gt; collectedObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collectedObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_CalculateCachedStatsOnLoad_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.CalculateCachedStatsOnLoad*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_CalculateCachedStatsOnLoad" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.CalculateCachedStatsOnLoad">
+  CalculateCachedStatsOnLoad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CalculateCachedStatsOnLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Clear_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Clear*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Clear" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndex_System_Predicate_TaleWorlds_Core_ItemObject__" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndex(System.Predicate{TaleWorlds.Core.ItemObject})">
+  FindIndex(Predicate&lt;ItemObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(Predicate&lt;ItemObject&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexFirstAfterXthElement_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexFirstAfterXthElement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexFirstAfterXthElement_System_Predicate_TaleWorlds_Core_ItemObject__System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexFirstAfterXthElement(System.Predicate{TaleWorlds.Core.ItemObject},System.Int32)">
+  FindIndexFirstAfterXthElement(Predicate&lt;ItemObject&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndexFirstAfterXthElement(Predicate&lt;ItemObject&gt; predicate, int x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexOfElement_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexOfElement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexOfElement_TaleWorlds_Core_EquipmentElement_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexOfElement(TaleWorlds.Core.EquipmentElement)">
+  FindIndexOfElement(EquipmentElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndexOfElement(EquipmentElement rosterElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rosterElement</code> <a class="xref" href="TaleWorlds.Core.EquipmentElement.html">EquipmentElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexOfItem_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexOfItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_FindIndexOfItem_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.FindIndexOfItem(TaleWorlds.Core.ItemObject)">
+  FindIndexOfItem(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndexOfItem(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementCopyAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementCopyAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementCopyAtIndex_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementCopyAtIndex(System.Int32)">
+  GetElementCopyAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRosterElement GetElementCopyAtIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementNumber_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementNumber(System.Int32)">
+  GetElementNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementNumber(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementUnitCost_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementUnitCost*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetElementUnitCost_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetElementUnitCost(System.Int32)">
+  GetElementUnitCost(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetElementUnitCost(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetEnumerator_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetEnumerator*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetEnumerator" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;ItemRosterElement&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetItemAtIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetItemAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetItemAtIndex_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetItemAtIndex(System.Int32)">
+  GetItemAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemObject GetItemAtIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetItemNumber_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetItemNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_GetItemNumber_TaleWorlds_Core_ItemObject_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.GetItemNumber(TaleWorlds.Core.ItemObject)">
+  GetItemNumber(ItemObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetItemNumber(ItemObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_OnLoadStarted_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.OnLoadStarted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_OnLoadStarted_TaleWorlds_SaveSystem_MetaData_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.OnLoadStarted(TaleWorlds.SaveSystem.MetaData)">
+  OnLoadStarted(MetaData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[LoadInitializationCallback]
+public void OnLoadStarted(MetaData metaData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>metaData</code> <a class="xref" href="TaleWorlds.SaveSystem.MetaData.html">MetaData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Remove_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Remove*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_Remove_TaleWorlds_Core_ItemRosterElement_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.Remove(TaleWorlds.Core.ItemRosterElement)">
+  Remove(ItemRosterElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(ItemRosterElement itemRosterElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemRosterElement</code> <a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_RemoveIf_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.RemoveIf*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_RemoveIf_System_Func_TaleWorlds_Core_ItemRosterElement_System_Int32__" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.RemoveIf(System.Func{TaleWorlds.Core.ItemRosterElement,System.Int32})">
+  RemoveIf(Func&lt;ItemRosterElement, int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ItemRosterElement&gt; RemoveIf(Func&lt;ItemRosterElement, int&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_RostersAreIdentical_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.RostersAreIdentical*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_RostersAreIdentical_TaleWorlds_CampaignSystem_Roster_ItemRoster_TaleWorlds_CampaignSystem_Roster_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.RostersAreIdentical(TaleWorlds.CampaignSystem.Roster.ItemRoster,TaleWorlds.CampaignSystem.Roster.ItemRoster)">
+  RostersAreIdentical(ItemRoster, ItemRoster)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RostersAreIdentical(ItemRoster a, ItemRoster b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_SelectRandomIndex_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.SelectRandomIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_SelectRandomIndex_System_Func_TaleWorlds_Core_ItemRosterElement_System_Single__" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.SelectRandomIndex(System.Func{TaleWorlds.Core.ItemRosterElement,System.Single})">
+  SelectRandomIndex(Func&lt;ItemRosterElement, float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectRandomIndex(Func&lt;ItemRosterElement, float&gt; weightFunction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weightFunction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="TaleWorlds.Core.ItemRosterElement.html">ItemRosterElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Roster_ItemRoster_UpdateVersion_" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.UpdateVersion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_UpdateVersion" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.UpdateVersion">
+  UpdateVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Roster_ItemRoster_RosterUpdatedEvent" data-uid="TaleWorlds.CampaignSystem.Roster.ItemRoster.RosterUpdatedEvent">
+  RosterUpdatedEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ItemRoster.RosterUpdatedEventDelegate RosterUpdatedEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.RosterUpdatedEventDelegate.html">RosterUpdatedEventDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

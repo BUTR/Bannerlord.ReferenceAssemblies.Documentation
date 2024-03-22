@@ -1,0 +1,1523 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FactionHelper | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FactionHelper | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Helpers.FactionHelper">
+
+
+
+  <h1 id="Helpers_FactionHelper" data-uid="Helpers.FactionHelper" class="text-break">
+Class FactionHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FactionHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FactionHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Helpers_FactionHelper_AdjustFactionStancesForClanJoiningKingdom_" data-uid="Helpers.FactionHelper.AdjustFactionStancesForClanJoiningKingdom*"></a>
+
+  <h3 id="Helpers_FactionHelper_AdjustFactionStancesForClanJoiningKingdom_TaleWorlds_CampaignSystem_Clan_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.AdjustFactionStancesForClanJoiningKingdom(TaleWorlds.CampaignSystem.Clan,TaleWorlds.CampaignSystem.Kingdom)">
+  AdjustFactionStancesForClanJoiningKingdom(Clan, Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AdjustFactionStancesForClanJoiningKingdom(Clan joiningClan, Kingdom kingdomToJoin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joiningClan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+    <dt><code>kingdomToJoin</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_CanClanBeGrantedFief_" data-uid="Helpers.FactionHelper.CanClanBeGrantedFief*"></a>
+
+  <h3 id="Helpers_FactionHelper_CanClanBeGrantedFief_TaleWorlds_CampaignSystem_Clan_" data-uid="Helpers.FactionHelper.CanClanBeGrantedFief(TaleWorlds.CampaignSystem.Clan)">
+  CanClanBeGrantedFief(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanClanBeGrantedFief(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_CanPlayerEnterFaction_" data-uid="Helpers.FactionHelper.CanPlayerEnterFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_CanPlayerEnterFaction_System_Boolean_" data-uid="Helpers.FactionHelper.CanPlayerEnterFaction(System.Boolean)">
+  CanPlayerEnterFaction(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPlayerEnterFaction(bool asVassal = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asVassal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_CanPlayerOfferMercenaryService_" data-uid="Helpers.FactionHelper.CanPlayerOfferMercenaryService*"></a>
+
+  <h3 id="Helpers_FactionHelper_CanPlayerOfferMercenaryService_TaleWorlds_CampaignSystem_Kingdom_System_Collections_Generic_List_TaleWorlds_CampaignSystem_IFaction___System_Collections_Generic_List_TaleWorlds_CampaignSystem_IFaction___" data-uid="Helpers.FactionHelper.CanPlayerOfferMercenaryService(TaleWorlds.CampaignSystem.Kingdom,System.Collections.Generic.List{TaleWorlds.CampaignSystem.IFaction}@,System.Collections.Generic.List{TaleWorlds.CampaignSystem.IFaction}@)">
+  CanPlayerOfferMercenaryService(Kingdom, out List&lt;IFaction&gt;, out List&lt;IFaction&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPlayerOfferMercenaryService(Kingdom offerKingdom, out List&lt;IFaction&gt; playerWars, out List&lt;IFaction&gt; warsOfFactionToJoin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offerKingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+    <dt><code>playerWars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>warsOfFactionToJoin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_CanPlayerOfferVassalage_" data-uid="Helpers.FactionHelper.CanPlayerOfferVassalage*"></a>
+
+  <h3 id="Helpers_FactionHelper_CanPlayerOfferVassalage_TaleWorlds_CampaignSystem_Kingdom_System_Collections_Generic_List_TaleWorlds_CampaignSystem_IFaction___System_Collections_Generic_List_TaleWorlds_CampaignSystem_IFaction___" data-uid="Helpers.FactionHelper.CanPlayerOfferVassalage(TaleWorlds.CampaignSystem.Kingdom,System.Collections.Generic.List{TaleWorlds.CampaignSystem.IFaction}@,System.Collections.Generic.List{TaleWorlds.CampaignSystem.IFaction}@)">
+  CanPlayerOfferVassalage(Kingdom, out List&lt;IFaction&gt;, out List&lt;IFaction&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPlayerOfferVassalage(Kingdom offerKingdom, out List&lt;IFaction&gt; playerWars, out List&lt;IFaction&gt; warsOfFactionToJoin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offerKingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+    <dt><code>playerWars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>warsOfFactionToJoin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_ChooseHeirClanForFiefs_" data-uid="Helpers.FactionHelper.ChooseHeirClanForFiefs*"></a>
+
+  <h3 id="Helpers_FactionHelper_ChooseHeirClanForFiefs_TaleWorlds_CampaignSystem_Clan_" data-uid="Helpers.FactionHelper.ChooseHeirClanForFiefs(TaleWorlds.CampaignSystem.Clan)">
+  ChooseHeirClanForFiefs(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Clan ChooseHeirClanForFiefs(Clan oldClan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldClan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FactionMidSettlement_" data-uid="Helpers.FactionHelper.FactionMidSettlement*"></a>
+
+  <h3 id="Helpers_FactionHelper_FactionMidSettlement_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.FactionMidSettlement(TaleWorlds.CampaignSystem.IFaction)">
+  FactionMidSettlement(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement FactionMidSettlement(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FindIdealGarrisonStrengthPerWalledCenter_" data-uid="Helpers.FactionHelper.FindIdealGarrisonStrengthPerWalledCenter*"></a>
+
+  <h3 id="Helpers_FactionHelper_FindIdealGarrisonStrengthPerWalledCenter_TaleWorlds_CampaignSystem_Kingdom_TaleWorlds_CampaignSystem_Clan_" data-uid="Helpers.FactionHelper.FindIdealGarrisonStrengthPerWalledCenter(TaleWorlds.CampaignSystem.Kingdom,TaleWorlds.CampaignSystem.Clan)">
+  FindIdealGarrisonStrengthPerWalledCenter(Kingdom, Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FindIdealGarrisonStrengthPerWalledCenter(Kingdom kingdom, Clan clan = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FindPotentialStrength_" data-uid="Helpers.FactionHelper.FindPotentialStrength*"></a>
+
+  <h3 id="Helpers_FactionHelper_FindPotentialStrength_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.FindPotentialStrength(TaleWorlds.CampaignSystem.IFaction)">
+  FindPotentialStrength(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FindPotentialStrength(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FinishAllRelatedHostileActions_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActions*"></a>
+
+  <h3 id="Helpers_FactionHelper_FinishAllRelatedHostileActions_TaleWorlds_CampaignSystem_Clan_TaleWorlds_CampaignSystem_Clan_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActions(TaleWorlds.CampaignSystem.Clan,TaleWorlds.CampaignSystem.Clan)">
+  FinishAllRelatedHostileActions(Clan, Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishAllRelatedHostileActions(Clan clan1, Clan clan2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan1</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+    <dt><code>clan2</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FinishAllRelatedHostileActions_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActions*"></a>
+
+  <h3 id="Helpers_FactionHelper_FinishAllRelatedHostileActions_TaleWorlds_CampaignSystem_Kingdom_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActions(TaleWorlds.CampaignSystem.Kingdom,TaleWorlds.CampaignSystem.Kingdom)">
+  FinishAllRelatedHostileActions(Kingdom, Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishAllRelatedHostileActions(Kingdom kingdom1, Kingdom kingdom2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom1</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+    <dt><code>kingdom2</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FinishAllRelatedHostileActionsOfFactionToFaction_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActionsOfFactionToFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_FinishAllRelatedHostileActionsOfFactionToFaction_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActionsOfFactionToFaction(TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction)">
+  FinishAllRelatedHostileActionsOfFactionToFaction(IFaction, IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishAllRelatedHostileActionsOfFactionToFaction(IFaction faction1, IFaction faction2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction1</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>faction2</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_FinishAllRelatedHostileActionsOfNobleToFaction_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActionsOfNobleToFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_FinishAllRelatedHostileActionsOfNobleToFaction_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.FinishAllRelatedHostileActionsOfNobleToFaction(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.IFaction)">
+  FinishAllRelatedHostileActionsOfNobleToFaction(Hero, IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinishAllRelatedHostileActionsOfNobleToFaction(Hero noble, IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>noble</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GenerateClanNameforPlayer_" data-uid="Helpers.FactionHelper.GenerateClanNameforPlayer*"></a>
+
+  <h3 id="Helpers_FactionHelper_GenerateClanNameforPlayer" data-uid="Helpers.FactionHelper.GenerateClanNameforPlayer">
+  GenerateClanNameforPlayer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GenerateClanNameforPlayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetAdjectiveForFaction_" data-uid="Helpers.FactionHelper.GetAdjectiveForFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetAdjectiveForFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.GetAdjectiveForFaction(TaleWorlds.CampaignSystem.IFaction)">
+  GetAdjectiveForFaction(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetAdjectiveForFaction(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetAdjectiveForFactionCulture_" data-uid="Helpers.FactionHelper.GetAdjectiveForFactionCulture*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetAdjectiveForFactionCulture_TaleWorlds_CampaignSystem_CultureObject_" data-uid="Helpers.FactionHelper.GetAdjectiveForFactionCulture(TaleWorlds.CampaignSystem.CultureObject)">
+  GetAdjectiveForFactionCulture(CultureObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetAdjectiveForFactionCulture(CultureObject factionCulture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factionCulture</code> <a class="xref" href="TaleWorlds.CampaignSystem.CultureObject.html">CultureObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetAllyMinorFactions_" data-uid="Helpers.FactionHelper.GetAllyMinorFactions*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetAllyMinorFactions_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="Helpers.FactionHelper.GetAllyMinorFactions(TaleWorlds.CampaignSystem.CharacterObject)">
+  GetAllyMinorFactions(CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Clan&gt; GetAllyMinorFactions(CharacterObject otherCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCharacter</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetDistanceToClosestNonAllyFortificationOfFaction_" data-uid="Helpers.FactionHelper.GetDistanceToClosestNonAllyFortificationOfFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetDistanceToClosestNonAllyFortificationOfFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.GetDistanceToClosestNonAllyFortificationOfFaction(TaleWorlds.CampaignSystem.IFaction)">
+  GetDistanceToClosestNonAllyFortificationOfFaction(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDistanceToClosestNonAllyFortificationOfFaction(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetFormalNameForFactionCulture_" data-uid="Helpers.FactionHelper.GetFormalNameForFactionCulture*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetFormalNameForFactionCulture_TaleWorlds_CampaignSystem_CultureObject_" data-uid="Helpers.FactionHelper.GetFormalNameForFactionCulture(TaleWorlds.CampaignSystem.CultureObject)">
+  GetFormalNameForFactionCulture(CultureObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetFormalNameForFactionCulture(CultureObject factionCulture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factionCulture</code> <a class="xref" href="TaleWorlds.CampaignSystem.CultureObject.html">CultureObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetInformalNameForFactionCulture_" data-uid="Helpers.FactionHelper.GetInformalNameForFactionCulture*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetInformalNameForFactionCulture_TaleWorlds_CampaignSystem_CultureObject_" data-uid="Helpers.FactionHelper.GetInformalNameForFactionCulture(TaleWorlds.CampaignSystem.CultureObject)">
+  GetInformalNameForFactionCulture(CultureObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetInformalNameForFactionCulture(CultureObject factionCulture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factionCulture</code> <a class="xref" href="TaleWorlds.CampaignSystem.CultureObject.html">CultureObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetKingdomArmies_" data-uid="Helpers.FactionHelper.GetKingdomArmies*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetKingdomArmies_TaleWorlds_CampaignSystem_IFaction_" data-uid="Helpers.FactionHelper.GetKingdomArmies(TaleWorlds.CampaignSystem.IFaction)">
+  GetKingdomArmies(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Army&gt; GetKingdomArmies(IFaction mapFaction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapFaction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Army.html">Army</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetPossibleKingdomsToDeclarePeace_" data-uid="Helpers.FactionHelper.GetPossibleKingdomsToDeclarePeace*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetPossibleKingdomsToDeclarePeace_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetPossibleKingdomsToDeclarePeace(TaleWorlds.CampaignSystem.Kingdom)">
+  GetPossibleKingdomsToDeclarePeace(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IFaction&gt; GetPossibleKingdomsToDeclarePeace(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetPossibleKingdomsToDeclareWar_" data-uid="Helpers.FactionHelper.GetPossibleKingdomsToDeclareWar*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetPossibleKingdomsToDeclareWar_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetPossibleKingdomsToDeclareWar(TaleWorlds.CampaignSystem.Kingdom)">
+  GetPossibleKingdomsToDeclareWar(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IFaction&gt; GetPossibleKingdomsToDeclareWar(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetPowerRatioToEnemies_" data-uid="Helpers.FactionHelper.GetPowerRatioToEnemies*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetPowerRatioToEnemies_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetPowerRatioToEnemies(TaleWorlds.CampaignSystem.Kingdom)">
+  GetPowerRatioToEnemies(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetPowerRatioToEnemies(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetPowerRatioToTributePayedKingdoms_" data-uid="Helpers.FactionHelper.GetPowerRatioToTributePayedKingdoms*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetPowerRatioToTributePayedKingdoms_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetPowerRatioToTributePayedKingdoms(TaleWorlds.CampaignSystem.Kingdom)">
+  GetPowerRatioToTributePayedKingdoms(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetPowerRatioToTributePayedKingdoms(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetTermUsedByOtherFaction_" data-uid="Helpers.FactionHelper.GetTermUsedByOtherFaction*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetTermUsedByOtherFaction_TaleWorlds_CampaignSystem_IFaction_TaleWorlds_CampaignSystem_IFaction_System_Boolean_" data-uid="Helpers.FactionHelper.GetTermUsedByOtherFaction(TaleWorlds.CampaignSystem.IFaction,TaleWorlds.CampaignSystem.IFaction,System.Boolean)">
+  GetTermUsedByOtherFaction(IFaction, IFaction, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextObject GetTermUsedByOtherFaction(IFaction faction, IFaction otherFaction, bool pejorative)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>otherFaction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+    <dt><code>pejorative</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetTotalEnemyKingdomPower_" data-uid="Helpers.FactionHelper.GetTotalEnemyKingdomPower*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetTotalEnemyKingdomPower_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetTotalEnemyKingdomPower(TaleWorlds.CampaignSystem.Kingdom)">
+  GetTotalEnemyKingdomPower(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTotalEnemyKingdomPower(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_GetTotalTributePayedKingdomsPower_" data-uid="Helpers.FactionHelper.GetTotalTributePayedKingdomsPower*"></a>
+
+  <h3 id="Helpers_FactionHelper_GetTotalTributePayedKingdomsPower_TaleWorlds_CampaignSystem_Kingdom_" data-uid="Helpers.FactionHelper.GetTotalTributePayedKingdomsPower(TaleWorlds.CampaignSystem.Kingdom)">
+  GetTotalTributePayedKingdomsPower(Kingdom)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTotalTributePayedKingdomsPower(Kingdom kingdom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kingdom</code> <a class="xref" href="TaleWorlds.CampaignSystem.Kingdom.html">Kingdom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsClanNameApplicable_" data-uid="Helpers.FactionHelper.IsClanNameApplicable*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsClanNameApplicable_System_String_" data-uid="Helpers.FactionHelper.IsClanNameApplicable(System.String)">
+  IsClanNameApplicable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tuple&lt;bool, string&gt; IsClanNameApplicable(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsKingdomNameApplicable_" data-uid="Helpers.FactionHelper.IsKingdomNameApplicable*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsKingdomNameApplicable_System_String_" data-uid="Helpers.FactionHelper.IsKingdomNameApplicable(System.String)">
+  IsKingdomNameApplicable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Tuple&lt;bool, string&gt; IsKingdomNameApplicable(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsMainClanMemberAvailableForPartyLeaderChange_" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForPartyLeaderChange*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsMainClanMemberAvailableForPartyLeaderChange_TaleWorlds_CampaignSystem_Hero_System_Boolean_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Localization_TextObject__" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForPartyLeaderChange(TaleWorlds.CampaignSystem.Hero,System.Boolean,TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Localization.TextObject@)">
+  IsMainClanMemberAvailableForPartyLeaderChange(Hero, bool, MobileParty, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMainClanMemberAvailableForPartyLeaderChange(Hero hero, bool isSend, MobileParty targetParty, out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>isSend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>targetParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsMainClanMemberAvailableForRecall_" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForRecall*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsMainClanMemberAvailableForRecall_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Party_MobileParty_TaleWorlds_Localization_TextObject__" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForRecall(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Party.MobileParty,TaleWorlds.Localization.TextObject@)">
+  IsMainClanMemberAvailableForRecall(Hero, MobileParty, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMainClanMemberAvailableForRecall(Hero hero, MobileParty targetParty, out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>targetParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsMainClanMemberAvailableForSendingSettlement_" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForSendingSettlement*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsMainClanMemberAvailableForSendingSettlement_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject__" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForSendingSettlement(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.Localization.TextObject@)">
+  IsMainClanMemberAvailableForSendingSettlement(Hero, Settlement, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMainClanMemberAvailableForSendingSettlement(Hero hero, Settlement targetSettlement, out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>targetSettlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_IsMainClanMemberAvailableForSendingSettlementAsGovernor_" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForSendingSettlementAsGovernor*"></a>
+
+  <h3 id="Helpers_FactionHelper_IsMainClanMemberAvailableForSendingSettlementAsGovernor_TaleWorlds_CampaignSystem_Hero_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject__" data-uid="Helpers.FactionHelper.IsMainClanMemberAvailableForSendingSettlementAsGovernor(TaleWorlds.CampaignSystem.Hero,TaleWorlds.CampaignSystem.Settlements.Settlement,TaleWorlds.Localization.TextObject@)">
+  IsMainClanMemberAvailableForSendingSettlementAsGovernor(Hero, Settlement, out TextObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMainClanMemberAvailableForSendingSettlementAsGovernor(Hero hero, Settlement settlementOfGovernor, out TextObject explanation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>settlementOfGovernor</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+    <dt><code>explanation</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_OwnerClanEconomyEffectOnGarrisonSizeConstant_" data-uid="Helpers.FactionHelper.OwnerClanEconomyEffectOnGarrisonSizeConstant*"></a>
+
+  <h3 id="Helpers_FactionHelper_OwnerClanEconomyEffectOnGarrisonSizeConstant_TaleWorlds_CampaignSystem_Clan_" data-uid="Helpers.FactionHelper.OwnerClanEconomyEffectOnGarrisonSizeConstant(TaleWorlds.CampaignSystem.Clan)">
+  OwnerClanEconomyEffectOnGarrisonSizeConstant(Clan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float OwnerClanEconomyEffectOnGarrisonSizeConstant(Clan clan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clan</code> <a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_SettlementFoodPotentialEffectOnGarrisonSizeConstant_" data-uid="Helpers.FactionHelper.SettlementFoodPotentialEffectOnGarrisonSizeConstant*"></a>
+
+  <h3 id="Helpers_FactionHelper_SettlementFoodPotentialEffectOnGarrisonSizeConstant_TaleWorlds_CampaignSystem_Settlements_Settlement_" data-uid="Helpers.FactionHelper.SettlementFoodPotentialEffectOnGarrisonSizeConstant(TaleWorlds.CampaignSystem.Settlements.Settlement)">
+  SettlementFoodPotentialEffectOnGarrisonSizeConstant(Settlement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SettlementFoodPotentialEffectOnGarrisonSizeConstant(Settlement settlement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlement</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Helpers_FactionHelper_SettlementProsperityEffectOnGarrisonSizeConstant_" data-uid="Helpers.FactionHelper.SettlementProsperityEffectOnGarrisonSizeConstant*"></a>
+
+  <h3 id="Helpers_FactionHelper_SettlementProsperityEffectOnGarrisonSizeConstant_TaleWorlds_CampaignSystem_Settlements_Town_" data-uid="Helpers.FactionHelper.SettlementProsperityEffectOnGarrisonSizeConstant(TaleWorlds.CampaignSystem.Settlements.Town)">
+  SettlementProsperityEffectOnGarrisonSizeConstant(Town)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SettlementProsperityEffectOnGarrisonSizeConstant(Town town)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>town</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

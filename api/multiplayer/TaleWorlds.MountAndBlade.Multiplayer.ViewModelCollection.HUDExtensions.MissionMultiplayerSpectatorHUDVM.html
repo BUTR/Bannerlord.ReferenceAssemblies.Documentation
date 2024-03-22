@@ -1,0 +1,808 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MissionMultiplayerSpectatorHUDVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MissionMultiplayerSpectatorHUDVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM" class="text-break">
+Class MissionMultiplayerSpectatorHUDVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.html">Multiplayer</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.html">HUDExtensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MissionMultiplayerSpectatorHUDVM : ViewModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MissionMultiplayerSpectatorHUDVM</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM__ctor_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM__ctor_TaleWorlds_MountAndBlade_Mission_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.#ctor(TaleWorlds.MountAndBlade.Mission)">
+  MissionMultiplayerSpectatorHUDVM(Mission)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionMultiplayerSpectatorHUDVM(Mission mission)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mission</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Mission.html">Mission</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasCompassElement_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasCompassElement*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasCompassElement" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasCompassElement">
+  AgentHasCompassElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentHasCompassElement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasMount_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasMount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasMount" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasMount">
+  AgentHasMount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentHasMount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasRangedWeapon_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasRangedWeapon*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasRangedWeapon" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasRangedWeapon">
+  AgentHasRangedWeapon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentHasRangedWeapon { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasShield_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasShield*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_AgentHasShield" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.AgentHasShield">
+  AgentHasShield
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentHasShield { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_CanTakeControlOfSpectatedAgent_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.CanTakeControlOfSpectatedAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_CanTakeControlOfSpectatedAgent" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.CanTakeControlOfSpectatedAgent">
+  CanTakeControlOfSpectatedAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanTakeControlOfSpectatedAgent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_CompassElement_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.CompassElement*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_CompassElement" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.CompassElement">
+  CompassElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPTeammateCompassTargetVM CompassElement { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.ClassLoadout.MPTeammateCompassTargetVM.html">MPTeammateCompassTargetVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_IsSpectatingAgent_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.IsSpectatingAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_IsSpectatingAgent" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.IsSpectatingAgent">
+  IsSpectatingAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSpectatingAgent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_ShowAgentHealth_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.ShowAgentHealth*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_ShowAgentHealth" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.ShowAgentHealth">
+  ShowAgentHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowAgentHealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerAmmoAmount_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerAmmoAmount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerAmmoAmount" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerAmmoAmount">
+  SpectatedPlayerAmmoAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpectatedPlayerAmmoAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerCurrentHealth_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerCurrentHealth*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerCurrentHealth" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerCurrentHealth">
+  SpectatedPlayerCurrentHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerCurrentHealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerHealthLimit_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerHealthLimit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerHealthLimit" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerHealthLimit">
+  SpectatedPlayerHealthLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerHealthLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerMountCurrentHealth_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerMountCurrentHealth*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerMountCurrentHealth" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerMountCurrentHealth">
+  SpectatedPlayerMountCurrentHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerMountCurrentHealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerMountHealthLimit_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerMountHealthLimit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerMountHealthLimit" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerMountHealthLimit">
+  SpectatedPlayerMountHealthLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerMountHealthLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerName_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerName*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerName" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerName">
+  SpectatedPlayerName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpectatedPlayerName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerNeutrality_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerNeutrality*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerNeutrality" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerNeutrality">
+  SpectatedPlayerNeutrality
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpectatedPlayerNeutrality { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerShieldCurrentHealth_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerShieldCurrentHealth*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerShieldCurrentHealth" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerShieldCurrentHealth">
+  SpectatedPlayerShieldCurrentHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerShieldCurrentHealth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerShieldHealthLimit_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerShieldHealthLimit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_SpectatedPlayerShieldHealthLimit" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.SpectatedPlayerShieldHealthLimit">
+  SpectatedPlayerShieldHealthLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpectatedPlayerShieldHealthLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_TakeControlText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.TakeControlText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_TakeControlText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.TakeControlText">
+  TakeControlText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TakeControlText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_RefreshValues_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_RefreshValues" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_Tick_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.Tick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_HUDExtensions_MissionMultiplayerSpectatorHUDVM_Tick_System_Single_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.HUDExtensions.MissionMultiplayerSpectatorHUDVM.Tick(System.Single)">
+  Tick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Tick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

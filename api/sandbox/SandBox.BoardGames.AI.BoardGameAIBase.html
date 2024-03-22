@@ -1,0 +1,771 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BoardGameAIBase | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BoardGameAIBase | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SandBox.BoardGames.AI.BoardGameAIBase">
+
+
+
+  <h1 id="SandBox_BoardGames_AI_BoardGameAIBase" data-uid="SandBox.BoardGames.AI.BoardGameAIBase" class="text-break">
+Class BoardGameAIBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SandBox.html">SandBox</a>.<a class="xref" href="SandBox.BoardGames.html">BoardGames</a>.<a class="xref" href="SandBox.BoardGames.AI.html">AI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SandBox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BoardGameAIBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BoardGameAIBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAIBaghChal.html">BoardGameAIBaghChal</a></div>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAIKonane.html">BoardGameAIKonane</a></div>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAIMuTorere.html">BoardGameAIMuTorere</a></div>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAIPuluc.html">BoardGameAIPuluc</a></div>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAISeega.html">BoardGameAISeega</a></div>
+      <div><a class="xref" href="SandBox.BoardGames.AI.BoardGameAITablut.html">BoardGameAITablut</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase__ctor_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.#ctor*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase__ctor_Helpers_BoardGameHelper_AIDifficulty_SandBox_BoardGames_MissionLogics_MissionBoardGameLogic_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.#ctor(Helpers.BoardGameHelper.AIDifficulty,SandBox.BoardGames.MissionLogics.MissionBoardGameLogic)">
+  BoardGameAIBase(AIDifficulty, MissionBoardGameLogic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BoardGameAIBase(BoardGameHelper.AIDifficulty difficulty, MissionBoardGameLogic boardGameHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>difficulty</code> <a class="xref" href="../core/Helpers.BoardGameHelper.AIDifficulty.html">AIDifficulty</a></dt>
+    <dd></dd>
+    <dt><code>boardGameHandler</code> <a class="xref" href="SandBox.BoardGames.MissionLogics.MissionBoardGameLogic.html">MissionBoardGameLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_MaxDepth" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.MaxDepth">
+  MaxDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int MaxDepth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_MayForfeit" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.MayForfeit">
+  MayForfeit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool MayForfeit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_AbortRequested_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.AbortRequested*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_AbortRequested" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.AbortRequested">
+  AbortRequested
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AbortRequested { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_BoardGameHandler_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.BoardGameHandler*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_BoardGameHandler" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.BoardGameHandler">
+  BoardGameHandler
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MissionBoardGameLogic BoardGameHandler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.BoardGames.MissionLogics.MissionBoardGameLogic.html">MissionBoardGameLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_Difficulty_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.Difficulty*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_Difficulty" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.Difficulty">
+  Difficulty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BoardGameHelper.AIDifficulty Difficulty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/Helpers.BoardGameHelper.AIDifficulty.html">AIDifficulty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_RecentMoveCalculated_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.RecentMoveCalculated*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_RecentMoveCalculated" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.RecentMoveCalculated">
+  RecentMoveCalculated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Move RecentMoveCalculated { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.BoardGames.Move.html">Move</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_State_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.State*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_State" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.State">
+  State
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoardGameAIBase.AIState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.BoardGames.AI.BoardGameAIBase.html">BoardGameAIBase</a>.<a class="xref" href="SandBox.BoardGames.AI.BoardGameAIBase.AIState.html">AIState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_CalculateMovementStageMove_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CalculateMovementStageMove*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_CalculateMovementStageMove" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CalculateMovementStageMove">
+  CalculateMovementStageMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Move CalculateMovementStageMove()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.BoardGames.Move.html">Move</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_CalculatePreMovementStageMove_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CalculatePreMovementStageMove*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_CalculatePreMovementStageMove" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CalculatePreMovementStageMove">
+  CalculatePreMovementStageMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Move CalculatePreMovementStageMove()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SandBox.BoardGames.Move.html">Move</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_CanMakeMove_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CanMakeMove*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_CanMakeMove" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.CanMakeMove">
+  CanMakeMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanMakeMove()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_HowLongDidAIThinkAboutMove_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.HowLongDidAIThinkAboutMove*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_HowLongDidAIThinkAboutMove" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.HowLongDidAIThinkAboutMove">
+  HowLongDidAIThinkAboutMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HowLongDidAIThinkAboutMove()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_Initialize_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.Initialize*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_Initialize" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_InitializeDifficulty_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.InitializeDifficulty*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_InitializeDifficulty" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.InitializeDifficulty">
+  InitializeDifficulty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void InitializeDifficulty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_OnSetGameOver_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.OnSetGameOver*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_OnSetGameOver" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.OnSetGameOver">
+  OnSetGameOver()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSetGameOver()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_ResetThinking_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.ResetThinking*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_ResetThinking" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.ResetThinking">
+  ResetThinking()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetThinking()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_SetDifficulty_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.SetDifficulty*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_SetDifficulty_Helpers_BoardGameHelper_AIDifficulty_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.SetDifficulty(Helpers.BoardGameHelper.AIDifficulty)">
+  SetDifficulty(AIDifficulty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDifficulty(BoardGameHelper.AIDifficulty difficulty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>difficulty</code> <a class="xref" href="../core/Helpers.BoardGameHelper.AIDifficulty.html">AIDifficulty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_UpdateThinkingAboutMove_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.UpdateThinkingAboutMove*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_UpdateThinkingAboutMove_System_Single_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.UpdateThinkingAboutMove(System.Single)">
+  UpdateThinkingAboutMove(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateThinkingAboutMove(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SandBox_BoardGames_AI_BoardGameAIBase_WantsToForfeit_" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.WantsToForfeit*"></a>
+
+  <h3 id="SandBox_BoardGames_AI_BoardGameAIBase_WantsToForfeit" data-uid="SandBox.BoardGames.AI.BoardGameAIBase.WantsToForfeit">
+  WantsToForfeit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WantsToForfeit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

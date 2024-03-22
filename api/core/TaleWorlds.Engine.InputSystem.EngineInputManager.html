@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EngineInputManager | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EngineInputManager | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager">
+
+
+
+  <h1 id="TaleWorlds_Engine_InputSystem_EngineInputManager" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager" class="text-break">
+Class EngineInputManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.Engine.html">Engine</a>.<a class="xref" href="TaleWorlds.Engine.InputSystem.html">InputSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.Engine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EngineInputManager : IInputManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EngineInputManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.InputSystem.IInputManager.html">IInputManager</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager__ctor_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.#ctor*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager__ctor" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.#ctor">
+  EngineInputManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EngineInputManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetLightbarColor_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetLightbarColor*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetLightbarColor_System_Single_System_Single_System_Single_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetLightbarColor(System.Single,System.Single,System.Single)">
+  SetLightbarColor(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightbarColor(float red, float green, float blue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetRumbleEffect_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetRumbleEffect*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetRumbleEffect_System_Single___System_Single___System_Int32_System_Single___System_Single___System_Int32_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetRumbleEffect(System.Single[],System.Single[],System.Int32,System.Single[],System.Single[],System.Int32)">
+  SetRumbleEffect(float[], float[], int, float[], float[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRumbleEffect(float[] lowFrequencyLevels, float[] lowFrequencyDurations, int numLowFrequencyElements, float[] highFrequencyLevels, float[] highFrequencyDurations, int numHighFrequencyElements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lowFrequencyLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>lowFrequencyDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numLowFrequencyElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>highFrequencyLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>highFrequencyDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numHighFrequencyElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerFeedback_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerFeedback*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerFeedback_System_Byte_System_Byte_System_Byte_System_Byte_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerFeedback(System.Byte,System.Byte,System.Byte,System.Byte)">
+  SetTriggerFeedback(byte, byte, byte, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTriggerFeedback(byte leftTriggerPosition, byte leftTriggerStrength, byte rightTriggerPosition, byte rightTriggerStrength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftTriggerPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftTriggerStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerVibration_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerVibration*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerVibration_System_Single___System_Single___System_Single___System_Int32_System_Single___System_Single___System_Single___System_Int32_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerVibration(System.Single[],System.Single[],System.Single[],System.Int32,System.Single[],System.Single[],System.Single[],System.Int32)">
+  SetTriggerVibration(float[], float[], float[], int, float[], float[], float[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTriggerVibration(float[] leftTriggerAmplitudes, float[] leftTriggerFrequencies, float[] leftTriggerDurations, int numLeftTriggerElements, float[] rightTriggerAmplitudes, float[] rightTriggerFrequencies, float[] rightTriggerDurations, int numRightTriggerElements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftTriggerAmplitudes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>leftTriggerFrequencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>leftTriggerDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numLeftTriggerElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rightTriggerAmplitudes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>rightTriggerFrequencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>rightTriggerDurations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>numRightTriggerElements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerWeaponEffect_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerWeaponEffect*"></a>
+
+  <h3 id="TaleWorlds_Engine_InputSystem_EngineInputManager_SetTriggerWeaponEffect_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_" data-uid="TaleWorlds.Engine.InputSystem.EngineInputManager.SetTriggerWeaponEffect(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+  SetTriggerWeaponEffect(byte, byte, byte, byte, byte, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTriggerWeaponEffect(byte leftStartPosition, byte leftEnd_position, byte leftStrength, byte rightStartPosition, byte rightEndPosition, byte rightStrength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leftStartPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftEnd_position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>leftStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightStartPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightEndPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>rightStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

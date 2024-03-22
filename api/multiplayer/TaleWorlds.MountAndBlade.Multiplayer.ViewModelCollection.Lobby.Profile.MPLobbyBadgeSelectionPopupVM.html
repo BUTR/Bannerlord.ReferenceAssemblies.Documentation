@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MPLobbyBadgeSelectionPopupVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MPLobbyBadgeSelectionPopupVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM" class="text-break">
+Class MPLobbyBadgeSelectionPopupVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.html">Multiplayer</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.html">Lobby</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.html">Profile</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MPLobbyBadgeSelectionPopupVM : ViewModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MPLobbyBadgeSelectionPopupVM</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM__ctor_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM__ctor_System_Action_System_Action_System_Action_TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyAchievementBadgeGroupVM__" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.#ctor(System.Action,System.Action,System.Action{TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyAchievementBadgeGroupVM})">
+  MPLobbyBadgeSelectionPopupVM(Action, Action, Action&lt;MPLobbyAchievementBadgeGroupVM&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyBadgeSelectionPopupVM(Action onBadgeNotificationRead, Action onBadgeSelectionUpdated, Action&lt;MPLobbyAchievementBadgeGroupVM&gt; onBadgeProgressInfoRequested)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onBadgeNotificationRead</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onBadgeSelectionUpdated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>onBadgeProgressInfoRequested</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyAchievementBadgeGroupVM.html">MPLobbyAchievementBadgeGroupVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_AchievementBadgesText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.AchievementBadgesText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_AchievementBadgesText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.AchievementBadgesText">
+  AchievementBadgesText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AchievementBadgesText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_AchivementBadgeGroups_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.AchivementBadgeGroups*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_AchivementBadgeGroups" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.AchivementBadgeGroups">
+  AchivementBadgeGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBBindingList&lt;MPLobbyAchievementBadgeGroupVM&gt; AchivementBadgeGroups { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyAchievementBadgeGroupVM.html">MPLobbyAchievementBadgeGroupVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_ActiveNotifications_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.ActiveNotifications*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_ActiveNotifications" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.ActiveNotifications">
+  ActiveNotifications
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;LobbyNotification&gt; ActiveNotifications { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="../core/TaleWorlds.MountAndBlade.Diamond.LobbyNotification.html">LobbyNotification</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_Badges_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.Badges*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_Badges" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.Badges">
+  Badges
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBBindingList&lt;MPLobbyBadgeItemVM&gt; Badges { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.MPLobbyBadgeItemVM.html">MPLobbyBadgeItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_BadgesText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.BadgesText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_BadgesText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.BadgesText">
+  BadgesText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BadgesText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_CancelInputKey_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.CancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_CancelInputKey" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_CloseText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.CloseText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_CloseText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.CloseText">
+  CloseText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CloseText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_HasNotifications_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.HasNotifications*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_HasNotifications" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.HasNotifications">
+  HasNotifications
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasNotifications { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_InspectedBadge_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.InspectedBadge*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_InspectedBadge" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.InspectedBadge">
+  InspectedBadge
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPLobbyBadgeItemVM InspectedBadge { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.MPLobbyBadgeItemVM.html">MPLobbyBadgeItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_IsEnabled_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.IsEnabled*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_IsEnabled" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.IsEnabled">
+  IsEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_SpecialBadgesText_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.SpecialBadgesText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_SpecialBadgesText" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.SpecialBadgesText">
+  SpecialBadgesText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpecialBadgesText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_ExecuteClosePopup_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.ExecuteClosePopup*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_ExecuteClosePopup" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.ExecuteClosePopup">
+  ExecuteClosePopup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteClosePopup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnBadgeInspected_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnBadgeInspected*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnBadgeInspected_TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_MPLobbyBadgeItemVM_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnBadgeInspected(TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.MPLobbyBadgeItemVM)">
+  OnBadgeInspected(MPLobbyBadgeItemVM)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBadgeInspected(MPLobbyBadgeItemVM badge)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>badge</code> <a class="xref" href="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.MPLobbyBadgeItemVM.html">MPLobbyBadgeItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnFinalize_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnFinalize" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnNotificationReceived_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnNotificationReceived*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_OnNotificationReceived_TaleWorlds_MountAndBlade_Diamond_LobbyNotification_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.OnNotificationReceived(TaleWorlds.MountAndBlade.Diamond.LobbyNotification)">
+  OnNotificationReceived(LobbyNotification)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnNotificationReceived(LobbyNotification notification)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notification</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Diamond.LobbyNotification.html">LobbyNotification</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_Open_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.Open*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_Open" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.Open">
+  Open()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshKeyBindings_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshKeyBindings*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshKeyBindings_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshKeyBindings(TaleWorlds.InputSystem.HotKey)">
+  RefreshKeyBindings(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshKeyBindings(HotKey inspectProgressKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inspectProgressKey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshPlayerData_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshPlayerData*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshPlayerData_TaleWorlds_MountAndBlade_Diamond_PlayerData_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshPlayerData(TaleWorlds.MountAndBlade.Diamond.PlayerData)">
+  RefreshPlayerData(PlayerData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshPlayerData(PlayerData playerData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerData</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Diamond.PlayerData.html">PlayerData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshValues_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_RefreshValues" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_SetCancelInputKey_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.SetCancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="../core/TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_UpdateBadgeSelection_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.UpdateBadgeSelection*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_UpdateBadgeSelection" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.UpdateBadgeSelection">
+  UpdateBadgeSelection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBadgeSelection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_UpdateBadges_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.UpdateBadges*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_Multiplayer_ViewModelCollection_Lobby_Profile_MPLobbyBadgeSelectionPopupVM_UpdateBadges_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.Multiplayer.ViewModelCollection.Lobby.Profile.MPLobbyBadgeSelectionPopupVM.UpdateBadges(System.Boolean)">
+  UpdateBadges(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBadges(bool shouldClear = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shouldClear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

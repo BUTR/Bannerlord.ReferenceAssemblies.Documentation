@@ -1,0 +1,3789 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Settlement | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Settlement | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Settlements_Settlement" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement" class="text-break">
+Class Settlement  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.html">Settlements</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Settlement : MBObjectBase, IMapPoint, ITrackableCampaignObject, ITrackableBase, ISiegeEventSide, IMapEntity, IRandomOwner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html">MBObjectBase</a></div>
+      <div><span class="xref">Settlement</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Map.IMapPoint.html">IMapPoint</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.ITrackableCampaignObject.html">ITrackableCampaignObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Core.ITrackableBase.html">ITrackableBase</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Siege.ISiegeEventSide.html">ISiegeEventSide</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.Map.IMapEntity.html">IMapEntity</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.IRandomOwner.html">IRandomOwner</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterInitialized">MBObjectBase.AfterInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterRegister">MBObjectBase.AfterRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Initialize">MBObjectBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_GetHashCode">MBObjectBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_PreAfterLoadInternal">MBObjectBase.PreAfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_AfterLoadInternal">MBObjectBase.AfterLoadInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnRegistered">MBObjectBase.OnRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_OnUnregistered">MBObjectBase.OnUnregistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_StringId">MBObjectBase.StringId</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_Id">MBObjectBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsInitialized">MBObjectBase.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectBase.html#TaleWorlds_ObjectSystem_MBObjectBase_IsReady">MBObjectBase.IsReady</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_">RandomOwnerExtensions.RandomFloat(IRandomOwner)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_System_Single_">RandomOwnerExtensions.RandomFloat(IRandomOwner, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloat_TaleWorlds_CampaignSystem_IRandomOwner_System_Single_System_Single_">RandomOwnerExtensions.RandomFloat(IRandomOwner, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Single_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomFloatWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Single_System_Single_">RandomOwnerExtensions.RandomFloatWithSeed(IRandomOwner, uint, float, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_">RandomOwnerExtensions.RandomInt(IRandomOwner)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_System_Int32_">RandomOwnerExtensions.RandomInt(IRandomOwner, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomInt_TaleWorlds_CampaignSystem_IRandomOwner_System_Int32_System_Int32_">RandomOwnerExtensions.RandomInt(IRandomOwner, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Int32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.RandomOwnerExtensions.html#TaleWorlds_CampaignSystem_RandomOwnerExtensions_RandomIntWithSeed_TaleWorlds_CampaignSystem_IRandomOwner_System_UInt32_System_Int32_System_Int32_">RandomOwnerExtensions.RandomIntWithSeed(IRandomOwner, uint, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Helpers.HeroHelper.html#Helpers_HeroHelper_SetPropertiesToTextObject_TaleWorlds_CampaignSystem_Settlements_Settlement_TaleWorlds_Localization_TextObject_System_String_">HeroHelper.SetPropertiesToTextObject(Settlement, TextObject, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement__ctor_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement__ctor" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.#ctor">
+  Settlement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement__ctor_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement__ctor_TaleWorlds_Localization_TextObject_TaleWorlds_CampaignSystem_Settlements_Locations_LocationComplex_TaleWorlds_CampaignSystem_Party_PartyTemplateObject_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.#ctor(TaleWorlds.Localization.TextObject,TaleWorlds.CampaignSystem.Settlements.Locations.LocationComplex,TaleWorlds.CampaignSystem.Party.PartyTemplateObject)">
+  Settlement(TextObject, LocationComplex, PartyTemplateObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settlement(TextObject name, LocationComplex locationComplex, PartyTemplateObject pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+    <dt><code>locationComplex</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.LocationComplex.html">LocationComplex</a></dt>
+    <dd></dd>
+    <dt><code>pt</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyTemplateObject.html">PartyTemplateObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_CanBeClaimed" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CanBeClaimed">
+  CanBeClaimed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(104)]
+public int CanBeClaimed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_ClaimValue" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ClaimValue">
+  ClaimValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(105)]
+public float ClaimValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_ClaimedBy" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ClaimedBy">
+  ClaimedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(106)]
+public Hero ClaimedBy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Culture" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Culture">
+  Culture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CultureObject Culture</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CultureObject.html">CultureObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_HasVisited" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.HasVisited">
+  HasVisited
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(107)]
+public bool HasVisited</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Hideout" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Hideout">
+  Hideout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hideout Hideout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Hideout.html">Hideout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_LastVisitTimeOfOwner" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LastVisitTimeOfOwner">
+  LastVisitTimeOfOwner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(110)]
+public float LastVisitTimeOfOwner</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_MilitiaPartyComponent" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MilitiaPartyComponent">
+  MilitiaPartyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public MilitiaPartyComponent MilitiaPartyComponent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyComponents.MilitiaPartyComponent.html">MilitiaPartyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfLordPartiesTargeting" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfLordPartiesTargeting">
+  NumberOfLordPartiesTargeting
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(102)]
+public int NumberOfLordPartiesTargeting</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Stash" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Stash">
+  Stash
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableField(145)]
+public readonly ItemRoster Stash</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Town" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Town">
+  Town
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Town Town</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Town.html">Town</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Village" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Village">
+  Village
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Village Village</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Village.html">Village</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_All_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.All*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_All" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.All">
+  All
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MBReadOnlyList&lt;Settlement&gt; All { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Alleys_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Alleys*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Alleys" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Alleys">
+  Alleys
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(133)]
+public List&lt;Alley&gt; Alleys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Alley.html">Alley</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_BattleSide_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BattleSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_BattleSide" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BattleSide">
+  BattleSide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleSideEnum BattleSide { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.BattleSideEnum.html">BattleSideEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_BoundVillages_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BoundVillages*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_BoundVillages" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BoundVillages">
+  BoundVillages
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;Village&gt; BoundVillages { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Village.html">Village</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_BribePaid_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BribePaid*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_BribePaid" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.BribePaid">
+  BribePaid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(116)]
+public int BribePaid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentNavigationFace_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentNavigationFace*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentNavigationFace" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentNavigationFace">
+  CurrentNavigationFace
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathFaceRecord CurrentNavigationFace { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.PathFaceRecord.html">PathFaceRecord</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentSettlement_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentSettlement*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentSettlement" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentSettlement">
+  CurrentSettlement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement CurrentSettlement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentSiegeState_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentSiegeState*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_CurrentSiegeState" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CurrentSiegeState">
+  CurrentSiegeState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(142)]
+public Settlement.SiegeState CurrentSiegeState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeState.html">SiegeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaLink_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaLink*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaLink" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaLink">
+  EncyclopediaLink
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncyclopediaLink { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaLinkWithName_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaLinkWithName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaLinkWithName" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaLinkWithName">
+  EncyclopediaLinkWithName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject EncyclopediaLinkWithName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaText_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_EncyclopediaText" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.EncyclopediaText">
+  EncyclopediaText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject EncyclopediaText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GarrisonWagePaymentLimit_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GarrisonWagePaymentLimit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GarrisonWagePaymentLimit" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GarrisonWagePaymentLimit">
+  GarrisonWagePaymentLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(122)]
+public int GarrisonWagePaymentLimit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GatePosition_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GatePosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GatePosition" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GatePosition">
+  GatePosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 GatePosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetFirst_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetFirst*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetFirst" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetFirst">
+  GetFirst
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement GetFirst { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetPosition2D_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetPosition2D*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetPosition2D" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetPosition2D">
+  GetPosition2D
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 GetPosition2D { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_HeroesWithoutParty_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.HeroesWithoutParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_HeroesWithoutParty" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.HeroesWithoutParty">
+  HeroesWithoutParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;Hero&gt; HeroesWithoutParty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_InRebelliousState_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.InRebelliousState*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_InRebelliousState" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.InRebelliousState">
+  InRebelliousState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InRebelliousState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsActive_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsActive*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsActive" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsActive">
+  IsActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(112)]
+public bool IsActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsAlerted_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsAlerted*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsAlerted" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsAlerted">
+  IsAlerted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAlerted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsCastle_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsCastle*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsCastle" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsCastle">
+  IsCastle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCastle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsFortification_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsFortification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsFortification" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsFortification">
+  IsFortification
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFortification { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsHideout_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsHideout*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsHideout" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsHideout">
+  IsHideout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHideout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsInspected_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsInspected*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsInspected" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsInspected">
+  IsInspected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CachedData]
+public bool IsInspected { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsRaided_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsRaided*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsRaided" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsRaided">
+  IsRaided
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRaided { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsStarving_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsStarving*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsStarving" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsStarving">
+  IsStarving
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStarving { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsTown_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsTown*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsTown" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsTown">
+  IsTown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTown { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderRaid_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderRaid*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderRaid" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderRaid">
+  IsUnderRaid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnderRaid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderSiege_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderSiege*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderSiege" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderSiege">
+  IsUnderSiege
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnderSiege { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsVillage_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsVillage*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsVillage" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsVillage">
+  IsVillage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVillage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsVisible_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsVisible*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsVisible" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsVisible">
+  IsVisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_ItemRoster_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ItemRoster*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_ItemRoster" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ItemRoster">
+  ItemRoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemRoster ItemRoster { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Roster.ItemRoster.html">ItemRoster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_LastAttackerParty_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LastAttackerParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_LastAttackerParty" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LastAttackerParty">
+  LastAttackerParty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileParty LastAttackerParty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_LastThreatTime_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LastThreatTime*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_LastThreatTime" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LastThreatTime">
+  LastThreatTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(137)]
+public CampaignTime LastThreatTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CampaignTime.html">CampaignTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_LocationComplex_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LocationComplex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_LocationComplex" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.LocationComplex">
+  LocationComplex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(138)]
+public LocationComplex LocationComplex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Locations.LocationComplex.html">LocationComplex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_MapFaction_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MapFaction*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_MapFaction" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MapFaction">
+  MapFaction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFaction MapFaction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_MaxHitPointsOfOneWallSection_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MaxHitPointsOfOneWallSection*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_MaxHitPointsOfOneWallSection" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MaxHitPointsOfOneWallSection">
+  MaxHitPointsOfOneWallSection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxHitPointsOfOneWallSection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_MaxWallHitPoints_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MaxWallHitPoints*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_MaxWallHitPoints" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.MaxWallHitPoints">
+  MaxWallHitPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxWallHitPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Militia_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Militia*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Militia" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Militia">
+  Militia
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Militia { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Name_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Name*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Name" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Notables_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Notables*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Notables" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Notables">
+  Notables
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;Hero&gt; Notables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfAlliesSpottedAround_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfAlliesSpottedAround*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfAlliesSpottedAround" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfAlliesSpottedAround">
+  NumberOfAlliesSpottedAround
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(128)]
+public float NumberOfAlliesSpottedAround { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfEnemiesSpottedAround_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfEnemiesSpottedAround*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfEnemiesSpottedAround" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfEnemiesSpottedAround">
+  NumberOfEnemiesSpottedAround
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(115)]
+public float NumberOfEnemiesSpottedAround { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfLordPartiesAt_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfLordPartiesAt*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfLordPartiesAt" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfLordPartiesAt">
+  NumberOfLordPartiesAt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfLordPartiesAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfTroopsKilledOnSide_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfTroopsKilledOnSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_NumberOfTroopsKilledOnSide" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.NumberOfTroopsKilledOnSide">
+  NumberOfTroopsKilledOnSide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(150)]
+public int NumberOfTroopsKilledOnSide { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Owner_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Owner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Owner" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Owner">
+  Owner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Hero Owner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OwnerClan_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OwnerClan*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OwnerClan" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OwnerClan">
+  OwnerClan
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Clan OwnerClan { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Clan.html">Clan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Parties_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Parties*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Parties" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Parties">
+  Parties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;MobileParty&gt; Parties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Party_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Party*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Party" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Party">
+  Party
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(101)]
+public PartyBase Party { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Position2D_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Position2D*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Position2D" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Position2D">
+  Position2D
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec2 Position2D { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_RandomValue_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.RandomValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_RandomValue" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.RandomValue">
+  RandomValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RandomValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementComponent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementComponent" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementComponent">
+  SettlementComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(152)]
+public SettlementComponent SettlementComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.SettlementComponent.html">SettlementComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementHitPoints_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementHitPoints*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementHitPoints" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementHitPoints">
+  SettlementHitPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(121)]
+public float SettlementHitPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementTotalWallHitPoints_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementTotalWallHitPoints*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementTotalWallHitPoints" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementTotalWallHitPoints">
+  SettlementTotalWallHitPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SettlementTotalWallHitPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementWallSectionHitPointsRatioList_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementWallSectionHitPointsRatioList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SettlementWallSectionHitPointsRatioList" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SettlementWallSectionHitPointsRatioList">
+  SettlementWallSectionHitPointsRatioList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;float&gt; SettlementWallSectionHitPointsRatioList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEngineMissiles_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEngineMissiles*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEngineMissiles" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEngineMissiles">
+  SiegeEngineMissiles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MBReadOnlyList&lt;SiegeEvent.SiegeEngineMissile&gt; SiegeEngineMissiles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBReadOnlyList-1.html">MBReadOnlyList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.html">SiegeEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.SiegeEngineMissile.html">SiegeEngineMissile</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEngines_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEngines*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEngines" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEngines">
+  SiegeEngines
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(149)]
+public SiegeEvent.SiegeEnginesContainer SiegeEngines { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.html">SiegeEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.SiegeEnginesContainer.html">SiegeEnginesContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEvent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEvent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeEvent" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeEvent">
+  SiegeEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(111)]
+public SiegeEvent SiegeEvent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.html">SiegeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeStrategy_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeStrategy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SiegeStrategy" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SiegeStrategy">
+  SiegeStrategy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SaveableProperty(151)]
+public SiegeStrategy SiegeStrategy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeStrategy.html">SiegeStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_WallSectionCount_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.WallSectionCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_WallSectionCount" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.WallSectionCount">
+  WallSectionCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WallSectionCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_AddGarrisonParty_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.AddGarrisonParty*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_AddGarrisonParty_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.AddGarrisonParty(System.Boolean)">
+  AddGarrisonParty(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGarrisonParty(bool addInitialGarrison = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addInitialGarrison</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_AddSiegeEngineMissile_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.AddSiegeEngineMissile*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_AddSiegeEngineMissile_TaleWorlds_CampaignSystem_Siege_SiegeEvent_SiegeEngineMissile_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.AddSiegeEngineMissile(TaleWorlds.CampaignSystem.Siege.SiegeEvent.SiegeEngineMissile)">
+  AddSiegeEngineMissile(SiegeEngineMissile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSiegeEngineMissile(SiegeEvent.SiegeEngineMissile missile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missile</code> <a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.html">SiegeEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeEvent.SiegeEngineMissile.html">SiegeEngineMissile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_CheckTracked_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CheckTracked*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_CheckTracked_TaleWorlds_Core_BasicCharacterObject_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.CheckTracked(TaleWorlds.Core.BasicCharacterObject)">
+  CheckTracked(BasicCharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckTracked(BasicCharacterObject basicCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>basicCharacter</code> <a class="xref" href="TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Deserialize_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Deserialize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Deserialize_TaleWorlds_ObjectSystem_MBObjectManager_System_Xml_XmlNode_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Deserialize(TaleWorlds.ObjectSystem.MBObjectManager,System.Xml.XmlNode)">
+  Deserialize(MBObjectManager, XmlNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Deserialize(MBObjectManager objectManager, XmlNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectManager</code> <a class="xref" href="TaleWorlds.ObjectSystem.MBObjectManager.html">MBObjectManager</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.xml.xmlnode">XmlNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_FinalizeSiegeEvent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FinalizeSiegeEvent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_FinalizeSiegeEvent" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FinalizeSiegeEvent">
+  FinalizeSiegeEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinalizeSiegeEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_Find_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Find*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_Find_System_String_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.Find(System.String)">
+  Find(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement Find(string idString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindAll_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindAll*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindAll_System_Func_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindAll(System.Func{TaleWorlds.CampaignSystem.Settlements.Settlement,System.Boolean})">
+  FindAll(Func&lt;Settlement, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Settlement&gt; FindAll(Func&lt;Settlement, bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindFirst_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindFirst*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindFirst_System_Func_TaleWorlds_CampaignSystem_Settlements_Settlement_System_Boolean__" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindFirst(System.Func{TaleWorlds.CampaignSystem.Settlements.Settlement,System.Boolean})">
+  FindFirst(Func&lt;Settlement, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement FindFirst(Func&lt;Settlement, bool&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindNextLocatable_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindNextLocatable*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_FindNextLocatable_TaleWorlds_CampaignSystem_Map_LocatableSearchData_TaleWorlds_CampaignSystem_Settlements_Settlement___" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.FindNextLocatable(TaleWorlds.CampaignSystem.Map.LocatableSearchData{TaleWorlds.CampaignSystem.Settlements.Settlement}@)">
+  FindNextLocatable(ref LocatableSearchData&lt;Settlement&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settlement FindNextLocatable(ref LocatableSearchData&lt;Settlement&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="TaleWorlds.CampaignSystem.Map.LocatableSearchData-1.html">LocatableSearchData</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetAttackTarget_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetAttackTarget*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetAttackTarget_TaleWorlds_CampaignSystem_Siege_ISiegeEventSide_TaleWorlds_Core_SiegeEngineType_System_Int32_TaleWorlds_CampaignSystem_Siege_SiegeBombardTargets__System_Int32__" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetAttackTarget(TaleWorlds.CampaignSystem.Siege.ISiegeEventSide,TaleWorlds.Core.SiegeEngineType,System.Int32,TaleWorlds.CampaignSystem.Siege.SiegeBombardTargets@,System.Int32@)">
+  GetAttackTarget(ISiegeEventSide, SiegeEngineType, int, out SiegeBombardTargets, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAttackTarget(ISiegeEventSide siegeEventSide, SiegeEngineType siegeEngine, int siegeEngineSlot, out SiegeBombardTargets targetType, out int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>siegeEventSide</code> <a class="xref" href="TaleWorlds.CampaignSystem.Siege.ISiegeEventSide.html">ISiegeEventSide</a></dt>
+    <dd></dd>
+    <dt><code>siegeEngine</code> <a class="xref" href="TaleWorlds.Core.SiegeEngineType.html">SiegeEngineType</a></dt>
+    <dd></dd>
+    <dt><code>siegeEngineSlot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeBombardTargets.html">SiegeBombardTargets</a></dt>
+    <dd></dd>
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetInvolvedPartiesForEventType_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetInvolvedPartiesForEventType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetInvolvedPartiesForEventType_TaleWorlds_CampaignSystem_MapEvents_MapEvent_BattleTypes_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetInvolvedPartiesForEventType(TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes)">
+  GetInvolvedPartiesForEventType(BattleTypes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PartyBase&gt; GetInvolvedPartiesForEventType(MapEvent.BattleTypes mapEventType = BattleTypes.Siege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapEventType</code> <a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes.html">BattleTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetLogicalPosition_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetLogicalPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetLogicalPosition" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetLogicalPosition">
+  GetLogicalPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetLogicalPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetMountAndHarnessVisualIdsForPartyIcon_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetMountAndHarnessVisualIdsForPartyIcon*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetMountAndHarnessVisualIdsForPartyIcon_System_String__System_String__" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetMountAndHarnessVisualIdsForPartyIcon(System.String@,System.String@)">
+  GetMountAndHarnessVisualIdsForPartyIcon(out string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMountAndHarnessVisualIdsForPartyIcon(out string mountStringId, out string harnessStringId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mountStringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>harnessStringId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetName_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetName*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetName" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TextObject GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetNextInvolvedPartyForEventType_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetNextInvolvedPartyForEventType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetNextInvolvedPartyForEventType_System_Int32__TaleWorlds_CampaignSystem_MapEvents_MapEvent_BattleTypes_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetNextInvolvedPartyForEventType(System.Int32@,TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes)">
+  GetNextInvolvedPartyForEventType(ref int, BattleTypes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyBase GetNextInvolvedPartyForEventType(ref int partyIndex, MapEvent.BattleTypes mapEventType = BattleTypes.Siege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>partyIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>mapEventType</code> <a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes.html">BattleTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetPosition_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetPosition" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetPosition">
+  GetPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetSettlementValueForEnemyHero_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetSettlementValueForEnemyHero*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetSettlementValueForEnemyHero_TaleWorlds_CampaignSystem_Hero_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetSettlementValueForEnemyHero(TaleWorlds.CampaignSystem.Hero)">
+  GetSettlementValueForEnemyHero(Hero)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSettlementValueForEnemyHero(Hero hero)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetSettlementValueForFaction_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetSettlementValueForFaction*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetSettlementValueForFaction_TaleWorlds_CampaignSystem_IFaction_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetSettlementValueForFaction(TaleWorlds.CampaignSystem.IFaction)">
+  GetSettlementValueForFaction(IFaction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSettlementValueForFaction(IFaction faction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faction</code> <a class="xref" href="TaleWorlds.CampaignSystem.IFaction.html">IFaction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetTrackDistanceToMainAgent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetTrackDistanceToMainAgent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetTrackDistanceToMainAgent" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetTrackDistanceToMainAgent">
+  GetTrackDistanceToMainAgent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTrackDistanceToMainAgent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetValue_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetValue*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_GetValue_TaleWorlds_CampaignSystem_Hero_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.GetValue(TaleWorlds.CampaignSystem.Hero,System.Boolean)">
+  GetValue(Hero, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValue(Hero hero = null, bool countAlsoBoundedSettlements = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hero</code> <a class="xref" href="TaleWorlds.CampaignSystem.Hero.html">Hero</a></dt>
+    <dd></dd>
+    <dt><code>countAlsoBoundedSettlements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_HasInvolvedPartyForEventType_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.HasInvolvedPartyForEventType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_HasInvolvedPartyForEventType_TaleWorlds_CampaignSystem_Party_PartyBase_TaleWorlds_CampaignSystem_MapEvents_MapEvent_BattleTypes_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.HasInvolvedPartyForEventType(TaleWorlds.CampaignSystem.Party.PartyBase,TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes)">
+  HasInvolvedPartyForEventType(PartyBase, BattleTypes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasInvolvedPartyForEventType(PartyBase party, MapEvent.BattleTypes mapEventType = BattleTypes.Siege)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyBase.html">PartyBase</a></dt>
+    <dd></dd>
+    <dt><code>mapEventType</code> <a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.html">MapEvent</a>.<a class="xref" href="TaleWorlds.CampaignSystem.MapEvents.MapEvent.BattleTypes.html">BattleTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_InitializeSiegeEventSide_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.InitializeSiegeEventSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_InitializeSiegeEventSide" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.InitializeSiegeEventSide">
+  InitializeSiegeEventSide()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeSiegeEventSide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderRebellionAttack_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderRebellionAttack*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_IsUnderRebellionAttack" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.IsUnderRebellionAttack">
+  IsUnderRebellionAttack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnderRebellionAttack()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnFinishLoadState_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnFinishLoadState*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnFinishLoadState" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnFinishLoadState">
+  OnFinishLoadState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishLoadState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnGameCreated_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnGameCreated*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnGameCreated" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnGameCreated">
+  OnGameCreated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGameCreated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnGameInitialized_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnGameInitialized*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnGameInitialized" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnGameInitialized">
+  OnGameInitialized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGameInitialized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnPartyInteraction_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnPartyInteraction*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnPartyInteraction_TaleWorlds_CampaignSystem_Party_MobileParty_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnPartyInteraction(TaleWorlds.CampaignSystem.Party.MobileParty)">
+  OnPartyInteraction(MobileParty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPartyInteraction(MobileParty mobileParty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mobileParty</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.MobileParty.html">MobileParty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnPlayerEncounterFinish_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnPlayerEncounterFinish*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnPlayerEncounterFinish" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnPlayerEncounterFinish">
+  OnPlayerEncounterFinish()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerEncounterFinish()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnSessionStart_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnSessionStart*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnSessionStart" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnSessionStart">
+  OnSessionStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSessionStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnTroopsKilledOnSide_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnTroopsKilledOnSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_OnTroopsKilledOnSide_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.OnTroopsKilledOnSide(System.Int32)">
+  OnTroopsKilledOnSide(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTroopsKilledOnSide(int killCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>killCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_RemoveDeprecatedMissiles_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.RemoveDeprecatedMissiles*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_RemoveDeprecatedMissiles" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.RemoveDeprecatedMissiles">
+  RemoveDeprecatedMissiles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDeprecatedMissiles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_ResetSiegeState_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ResetSiegeState*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_ResetSiegeState" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ResetSiegeState">
+  ResetSiegeState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetSiegeState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetGarrisonWagePaymentLimit_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetGarrisonWagePaymentLimit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetGarrisonWagePaymentLimit_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetGarrisonWagePaymentLimit(System.Int32)">
+  SetGarrisonWagePaymentLimit(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGarrisonWagePaymentLimit(int limit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>limit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetNextSiegeState_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetNextSiegeState*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetNextSiegeState" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetNextSiegeState">
+  SetNextSiegeState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextSiegeState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetSettlementComponent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetSettlementComponent*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetSettlementComponent_TaleWorlds_CampaignSystem_Settlements_SettlementComponent_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetSettlementComponent(TaleWorlds.CampaignSystem.Settlements.SettlementComponent)">
+  SetSettlementComponent(SettlementComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSettlementComponent(SettlementComponent settlementComponent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settlementComponent</code> <a class="xref" href="TaleWorlds.CampaignSystem.Settlements.SettlementComponent.html">SettlementComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetSiegeStrategy_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetSiegeStrategy*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetSiegeStrategy_TaleWorlds_CampaignSystem_Siege_SiegeStrategy_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetSiegeStrategy(TaleWorlds.CampaignSystem.Siege.SiegeStrategy)">
+  SetSiegeStrategy(SiegeStrategy)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiegeStrategy(SiegeStrategy strategy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strategy</code> <a class="xref" href="TaleWorlds.CampaignSystem.Siege.SiegeStrategy.html">SiegeStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetWallSectionHitPointsRatioAtIndex_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetWallSectionHitPointsRatioAtIndex*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_SetWallSectionHitPointsRatioAtIndex_System_Int32_System_Single_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.SetWallSectionHitPointsRatioAtIndex(System.Int32,System.Single)">
+  SetWallSectionHitPointsRatioAtIndex(int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWallSectionHitPointsRatioAtIndex(int index, float hitPointsRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hitPointsRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_StartFindingLocatablesAroundPosition_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.StartFindingLocatablesAroundPosition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_StartFindingLocatablesAroundPosition_TaleWorlds_Library_Vec2_System_Single_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.StartFindingLocatablesAroundPosition(TaleWorlds.Library.Vec2,System.Single)">
+  StartFindingLocatablesAroundPosition(Vec2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocatableSearchData&lt;Settlement&gt; StartFindingLocatablesAroundPosition(Vec2 position, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Map.LocatableSearchData-1.html">LocatableSearchData</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.Settlements.Settlement.html">Settlement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Settlements_Settlement_ToString_" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ToString*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Settlements_Settlement_ToString" data-uid="TaleWorlds.CampaignSystem.Settlements.Settlement.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

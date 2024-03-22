@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PartyScreenLogic.PartyCommand | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PartyScreenLogic.PartyCommand | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand" class="text-break">
+Class PartyScreenLogic.PartyCommand  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.html">Party</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PartyScreenLogic.PartyCommand : ISerializableObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PartyScreenLogic.PartyCommand</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.ISerializableObject.html">ISerializableObject</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand__ctor_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand__ctor" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.#ctor">
+  PartyCommand()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Character_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Character*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Character" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Character">
+  Character
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterObject Character { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Code_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Code*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Code" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Code">
+  Code
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyScreenLogic.PartyCommandCode Code { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommandCode.html">PartyCommandCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Index_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Index*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Index" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Index">
+  Index
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_IsSortAscending_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.IsSortAscending*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_IsSortAscending" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.IsSortAscending">
+  IsSortAscending
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSortAscending { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_RosterSide_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.RosterSide*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_RosterSide" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.RosterSide">
+  RosterSide
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyScreenLogic.PartyRosterSide RosterSide { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_SortType_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.SortType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_SortType" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.SortType">
+  SortType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyScreenLogic.TroopSortType SortType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopSortType.html">TroopSortType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_TotalNumber_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.TotalNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_TotalNumber" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.TotalNumber">
+  TotalNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Type_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Type*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_Type" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyScreenLogic.TroopType Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_UpgradeTarget_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.UpgradeTarget*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_UpgradeTarget" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.UpgradeTarget">
+  UpgradeTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpgradeTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_WoundedNumber_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.WoundedNumber*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_WoundedNumber" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.WoundedNumber">
+  WoundedNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WoundedNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForExecuteTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForExecuteTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForExecuteTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForExecuteTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject)">
+  FillForExecuteTroop(PartyRosterSide, TroopType, CharacterObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForExecuteTroop(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForRecruitTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForRecruitTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForRecruitTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForRecruitTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Int32)">
+  FillForRecruitTroop(PartyRosterSide, TroopType, CharacterObject, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForRecruitTroop(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character, int number, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForShiftTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForShiftTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForShiftTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForShiftTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32)">
+  FillForShiftTroop(PartyRosterSide, TroopType, CharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForShiftTroop(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character, int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForSortTroops_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForSortTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForSortTroops_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopSortType_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForSortTroops(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopSortType,System.Boolean)">
+  FillForSortTroops(PartyRosterSide, TroopSortType, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForSortTroops(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopSortType sortType, bool isAscending)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>sortType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopSortType.html">TroopSortType</a></dt>
+    <dd></dd>
+    <dt><code>isAscending</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferAllTroops_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferAllTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferAllTroops_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferAllTroops(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType)">
+  FillForTransferAllTroops(PartyRosterSide, TroopType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForTransferAllTroops(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferPartyLeaderTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferPartyLeaderTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferPartyLeaderTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferPartyLeaderTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32)">
+  FillForTransferPartyLeaderTroop(PartyRosterSide, TroopType, CharacterObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForTransferPartyLeaderTroop(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character, int totalNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>totalNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Int32,System.Int32)">
+  FillForTransferTroop(PartyRosterSide, TroopType, CharacterObject, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForTransferTroop(PartyScreenLogic.PartyRosterSide fromSide, PartyScreenLogic.TroopType type, CharacterObject character, int totalNumber, int woundedNumber, int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromSide</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>totalNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>woundedNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferTroopToLeaderSlot_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferTroopToLeaderSlot*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForTransferTroopToLeaderSlot_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForTransferTroopToLeaderSlot(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Int32,System.Int32)">
+  FillForTransferTroopToLeaderSlot(PartyRosterSide, TroopType, CharacterObject, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForTransferTroopToLeaderSlot(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character, int totalNumber, int woundedNumber, int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>totalNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>woundedNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForUpgradeTroop_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForUpgradeTroop*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyCommand_FillForUpgradeTroop_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_PartyRosterSide_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_TroopType_TaleWorlds_CampaignSystem_CharacterObject_System_Int32_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyCommand.FillForUpgradeTroop(TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide,TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType,TaleWorlds.CampaignSystem.CharacterObject,System.Int32,System.Int32,System.Int32)">
+  FillForUpgradeTroop(PartyRosterSide, TroopType, CharacterObject, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillForUpgradeTroop(PartyScreenLogic.PartyRosterSide side, PartyScreenLogic.TroopType type, CharacterObject character, int number, int upgradeTargetType, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.PartyRosterSide.html">PartyRosterSide</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.TroopType.html">TroopType</a></dt>
+    <dd></dd>
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.CharacterObject.html">CharacterObject</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>upgradeTargetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

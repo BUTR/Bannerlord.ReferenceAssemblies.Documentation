@@ -1,0 +1,4404 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PartyVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PartyVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM" class="text-break">
+Class PartyVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.html">Party</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PartyVM : ViewModel, IViewModel, INotifyPropertyChanged, IPartyScreenLogicHandler, PartyScreenPrisonHandler, IPartyScreenTroopHandler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><span class="xref">PartyVM</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.GameState.IPartyScreenLogicHandler.html">IPartyScreenLogicHandler</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.GameState.PartyScreenPrisonHandler.html">PartyScreenPrisonHandler</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.GameState.IPartyScreenTroopHandler.html">IPartyScreenTroopHandler</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM__ctor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM__ctor_TaleWorlds_CampaignSystem_Party_PartyScreenLogic_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.#ctor(TaleWorlds.CampaignSystem.Party.PartyScreenLogic)">
+  PartyVM(PartyScreenLogic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyVM(PartyScreenLogic partyScreenLogic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>partyScreenLogic</code> <a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsEntireStackModifierActive" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsEntireStackModifierActive">
+  IsEntireStackModifierActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEntireStackModifierActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsFiveStackModifierActive" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsFiveStackModifierActive">
+  IsFiveStackModifierActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFiveStackModifierActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsInConversation" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsInConversation">
+  IsInConversation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInConversation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_AreMembersRelevantOnCurrentMode_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.AreMembersRelevantOnCurrentMode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_AreMembersRelevantOnCurrentMode" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.AreMembersRelevantOnCurrentMode">
+  AreMembersRelevantOnCurrentMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool AreMembersRelevantOnCurrentMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ArePrisonersRelevantOnCurrentMode_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ArePrisonersRelevantOnCurrentMode*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ArePrisonersRelevantOnCurrentMode" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ArePrisonersRelevantOnCurrentMode">
+  ArePrisonersRelevantOnCurrentMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool ArePrisonersRelevantOnCurrentMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanChooseRoles_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanChooseRoles*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanChooseRoles" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanChooseRoles">
+  CanChooseRoles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanChooseRoles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanRightPartyTakeMorePrisoners_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanRightPartyTakeMorePrisoners*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanRightPartyTakeMorePrisoners" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanRightPartyTakeMorePrisoners">
+  CanRightPartyTakeMorePrisoners
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRightPartyTakeMorePrisoners { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanRightPartyTakeMoreTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanRightPartyTakeMoreTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CanRightPartyTakeMoreTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CanRightPartyTakeMoreTroops">
+  CanRightPartyTakeMoreTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRightPartyTakeMoreTroops { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CancelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CancelInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CancelInputKey">
+  CancelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM CancelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CancelLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CancelLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CancelLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CancelLbl">
+  CancelLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CancelLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacter_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacter" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacter">
+  CurrentCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyCharacterVM CurrentCharacter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterLevelLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterLevelLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterLevelLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterLevelLbl">
+  CurrentCharacterLevelLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CurrentCharacterLevelLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterTier_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterTier*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterTier" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterTier">
+  CurrentCharacterTier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public StringItemWithHintVM CurrentCharacterTier { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Generic.StringItemWithHintVM.html">StringItemWithHintVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterWageLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterWageLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentCharacterWageLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentCharacterWageLbl">
+  CurrentCharacterWageLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CurrentCharacterWageLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentFocusedCharacter_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentFocusedCharacter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentFocusedCharacter" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentFocusedCharacter">
+  CurrentFocusedCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyCharacterVM CurrentFocusedCharacter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentFocusedUpgrade_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentFocusedUpgrade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_CurrentFocusedUpgrade" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.CurrentFocusedUpgrade">
+  CurrentFocusedUpgrade
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public UpgradeTargetVM CurrentFocusedUpgrade { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.UpgradeTargetVM.html">UpgradeTargetVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DenarHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DenarHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DenarHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DenarHint">
+  DenarHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel DenarHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DismissAllPrisonersInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DismissAllPrisonersInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DismissAllPrisonersInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DismissAllPrisonersInputKey">
+  DismissAllPrisonersInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM DismissAllPrisonersInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DismissAllTroopsInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DismissAllTroopsInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DismissAllTroopsInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DismissAllTroopsInputKey">
+  DismissAllTroopsInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM DismissAllTroopsInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneHint">
+  DoneHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel DoneHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneInputKey">
+  DoneInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM DoneInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_DoneLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.DoneLbl">
+  DoneLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string DoneLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_FormationHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.FormationHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_FormationHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.FormationHint">
+  FormationHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel FormationHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_GoldChangeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.GoldChangeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_GoldChangeText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.GoldChangeText">
+  GoldChangeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string GoldChangeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_HeaderLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.HeaderLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_HeaderLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.HeaderLbl">
+  HeaderLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string HeaderLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_HorseChangeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.HorseChangeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_HorseChangeText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.HorseChangeText">
+  HorseChangeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string HorseChangeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_InfluenceChangeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.InfluenceChangeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_InfluenceChangeText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.InfluenceChangeText">
+  InfluenceChangeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string InfluenceChangeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_InfoLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.InfoLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_InfoLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.InfoLbl">
+  InfoLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string InfoLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsAnyPopUpOpen_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsAnyPopUpOpen*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsAnyPopUpOpen" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsAnyPopUpOpen">
+  IsAnyPopUpOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAnyPopUpOpen { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCancelDisabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCancelDisabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCancelDisabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCancelDisabled">
+  IsCancelDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCancelDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCurrentCharacterFormationEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCurrentCharacterFormationEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCurrentCharacterFormationEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCurrentCharacterFormationEnabled">
+  IsCurrentCharacterFormationEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCurrentCharacterFormationEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCurrentCharacterWageEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCurrentCharacterWageEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsCurrentCharacterWageEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsCurrentCharacterWageEnabled">
+  IsCurrentCharacterWageEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCurrentCharacterWageEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsDoneDisabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsDoneDisabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsDoneDisabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsDoneDisabled">
+  IsDoneDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsDoneDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainPrisonersHaveTransferableTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainPrisonersHaveTransferableTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainPrisonersHaveTransferableTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainPrisonersHaveTransferableTroops">
+  IsMainPrisonersHaveTransferableTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsMainPrisonersHaveTransferableTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainPrisonersLimitWarningEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainPrisonersLimitWarningEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainPrisonersLimitWarningEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainPrisonersLimitWarningEnabled">
+  IsMainPrisonersLimitWarningEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsMainPrisonersLimitWarningEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainTroopsHaveTransferableTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainTroopsHaveTransferableTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainTroopsHaveTransferableTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainTroopsHaveTransferableTroops">
+  IsMainTroopsHaveTransferableTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsMainTroopsHaveTransferableTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainTroopsLimitWarningEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainTroopsLimitWarningEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsMainTroopsLimitWarningEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsMainTroopsLimitWarningEnabled">
+  IsMainTroopsLimitWarningEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsMainTroopsLimitWarningEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherPrisonersHaveTransferableTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherPrisonersHaveTransferableTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherPrisonersHaveTransferableTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherPrisonersHaveTransferableTroops">
+  IsOtherPrisonersHaveTransferableTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsOtherPrisonersHaveTransferableTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherPrisonersLimitWarningEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherPrisonersLimitWarningEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherPrisonersLimitWarningEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherPrisonersLimitWarningEnabled">
+  IsOtherPrisonersLimitWarningEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsOtherPrisonersLimitWarningEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherTroopsHaveTransferableTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherTroopsHaveTransferableTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherTroopsHaveTransferableTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherTroopsHaveTransferableTroops">
+  IsOtherTroopsHaveTransferableTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsOtherTroopsHaveTransferableTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherTroopsLimitWarningEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherTroopsLimitWarningEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsOtherTroopsLimitWarningEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsOtherTroopsLimitWarningEnabled">
+  IsOtherTroopsLimitWarningEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsOtherTroopsLimitWarningEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsRecruitPopUpDisabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsRecruitPopUpDisabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsRecruitPopUpDisabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsRecruitPopUpDisabled">
+  IsRecruitPopUpDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsRecruitPopUpDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsUpgradePopUpDisabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsUpgradePopUpDisabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsUpgradePopUpDisabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsUpgradePopUpDisabled">
+  IsUpgradePopUpDisabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsUpgradePopUpDisabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsUpgradePopupButtonHighlightEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsUpgradePopupButtonHighlightEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_IsUpgradePopupButtonHighlightEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.IsUpgradePopupButtonHighlightEnabled">
+  IsUpgradePopupButtonHighlightEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsUpgradePopupButtonHighlightEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_LevelHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.LevelHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_LevelHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.LevelHint">
+  LevelHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel LevelHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyComposition_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyComposition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyComposition" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyComposition">
+  MainPartyComposition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyCompositionVM MainPartyComposition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCompositionVM.html">PartyCompositionVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyNameLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyNameLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyNameLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyNameLbl">
+  MainPartyNameLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyNameLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisonerSizeLimitHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisonerSizeLimitHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisonerSizeLimitHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisonerSizeLimitHint">
+  MainPartyPrisonerSizeLimitHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel MainPartyPrisonerSizeLimitHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisoners_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisoners*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisoners" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisoners">
+  MainPartyPrisoners
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;PartyCharacterVM&gt; MainPartyPrisoners { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisonersLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisonersLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyPrisonersLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyPrisonersLbl">
+  MainPartyPrisonersLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyPrisonersLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartySortController_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartySortController*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartySortController" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartySortController">
+  MainPartySortController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartySortControllerVM MainPartySortController { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartySortControllerVM.html">PartySortControllerVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalGoldLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalGoldLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalGoldLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalGoldLbl">
+  MainPartyTotalGoldLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyTotalGoldLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalMoraleLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalMoraleLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalMoraleLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalMoraleLbl">
+  MainPartyTotalMoraleLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyTotalMoraleLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalSpeedLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalSpeedLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalSpeedLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalSpeedLbl">
+  MainPartyTotalSpeedLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyTotalSpeedLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalWeeklyCostLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalWeeklyCostLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTotalWeeklyCostLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTotalWeeklyCostLbl">
+  MainPartyTotalWeeklyCostLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyTotalWeeklyCostLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroopSizeLimitHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroopSizeLimitHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroopSizeLimitHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroopSizeLimitHint">
+  MainPartyTroopSizeLimitHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel MainPartyTroopSizeLimitHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroops">
+  MainPartyTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;PartyCharacterVM&gt; MainPartyTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroopsLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroopsLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MainPartyTroopsLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MainPartyTroopsLbl">
+  MainPartyTroopsLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MainPartyTroopsLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MoraleChangeText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MoraleChangeText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MoraleChangeText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MoraleChangeText">
+  MoraleChangeText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MoraleChangeText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MoraleHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MoraleHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_MoraleHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.MoraleHint">
+  MoraleHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel MoraleHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OpenRecruitPanelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OpenRecruitPanelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OpenRecruitPanelInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OpenRecruitPanelInputKey">
+  OpenRecruitPanelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM OpenRecruitPanelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OpenUpgradePanelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OpenUpgradePanelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OpenUpgradePanelInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OpenUpgradePanelInputKey">
+  OpenUpgradePanelInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM OpenUpgradePanelInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyAccompanyingLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyAccompanyingLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyAccompanyingLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyAccompanyingLbl">
+  OtherPartyAccompanyingLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OtherPartyAccompanyingLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyComposition_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyComposition*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyComposition" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyComposition">
+  OtherPartyComposition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyCompositionVM OtherPartyComposition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCompositionVM.html">PartyCompositionVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyNameLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyNameLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyNameLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyNameLbl">
+  OtherPartyNameLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OtherPartyNameLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisonerSizeLimitHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisonerSizeLimitHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisonerSizeLimitHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisonerSizeLimitHint">
+  OtherPartyPrisonerSizeLimitHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel OtherPartyPrisonerSizeLimitHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisoners_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisoners*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisoners" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisoners">
+  OtherPartyPrisoners
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;PartyCharacterVM&gt; OtherPartyPrisoners { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisonersLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisonersLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyPrisonersLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyPrisonersLbl">
+  OtherPartyPrisonersLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OtherPartyPrisonersLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartySortController_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartySortController*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartySortController" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartySortController">
+  OtherPartySortController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartySortControllerVM OtherPartySortController { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartySortControllerVM.html">PartySortControllerVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroopSizeLimitHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroopSizeLimitHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroopSizeLimitHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroopSizeLimitHint">
+  OtherPartyTroopSizeLimitHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel OtherPartyTroopSizeLimitHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroops">
+  OtherPartyTroops
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;PartyCharacterVM&gt; OtherPartyTroops { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroopsLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroopsLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OtherPartyTroopsLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OtherPartyTroopsLbl">
+  OtherPartyTroopsLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string OtherPartyTroopsLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_PartyScreenLogic_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.PartyScreenLogic*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_PartyScreenLogic" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.PartyScreenLogic">
+  PartyScreenLogic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PartyScreenLogic PartyScreenLogic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.Party.PartyScreenLogic.html">PartyScreenLogic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_PrisonersLabel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.PrisonersLabel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_PrisonersLabel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.PrisonersLabel">
+  PrisonersLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string PrisonersLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_QuestProgressCurrentCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.QuestProgressCurrentCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_QuestProgressCurrentCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.QuestProgressCurrentCount">
+  QuestProgressCurrentCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int QuestProgressCurrentCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_QuestProgressRequiredCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.QuestProgressRequiredCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_QuestProgressRequiredCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.QuestProgressRequiredCount">
+  QuestProgressRequiredCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int QuestProgressRequiredCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RecruitPopUp_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RecruitPopUp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RecruitPopUp" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RecruitPopUp">
+  RecruitPopUp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyRecruitTroopVM RecruitPopUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyTroopManagerPopUp.PartyRecruitTroopVM.html">PartyRecruitTroopVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RecruitableTroopCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RecruitableTroopCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RecruitableTroopCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RecruitableTroopCount">
+  RecruitableTroopCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int RecruitableTroopCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ResetHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ResetHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ResetHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ResetHint">
+  ResetHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel ResetHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ResetInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ResetInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ResetInputKey">
+  ResetInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM ResetInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SelectedCharacter_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SelectedCharacter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SelectedCharacter" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SelectedCharacter">
+  SelectedCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HeroViewModel SelectedCharacter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.HeroViewModel.html">HeroViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ShowQuestProgress_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ShowQuestProgress*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ShowQuestProgress" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ShowQuestProgress">
+  ShowQuestProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool ShowQuestProgress { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SpeedHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SpeedHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SpeedHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SpeedHint">
+  SpeedHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel SpeedHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TakeAllPrisonersInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TakeAllPrisonersInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TakeAllPrisonersInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TakeAllPrisonersInputKey">
+  TakeAllPrisonersInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM TakeAllPrisonersInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TakeAllTroopsInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TakeAllTroopsInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TakeAllTroopsInputKey" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TakeAllTroopsInputKey">
+  TakeAllTroopsInputKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public InputKeyItemVM TakeAllTroopsInputKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Input.InputKeyItemVM.html">InputKeyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TalkLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TalkLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TalkLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TalkLbl">
+  TalkLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TalkLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TitleLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TitleLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TitleLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TitleLbl">
+  TitleLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TitleLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TotalWageHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TotalWageHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TotalWageHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TotalWageHint">
+  TotalWageHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel TotalWageHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllMainPrisonersHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllMainPrisonersHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllMainPrisonersHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllMainPrisonersHint">
+  TransferAllMainPrisonersHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel TransferAllMainPrisonersHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllMainTroopsHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllMainTroopsHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllMainTroopsHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllMainTroopsHint">
+  TransferAllMainTroopsHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel TransferAllMainTroopsHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllOtherPrisonersHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllOtherPrisonersHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllOtherPrisonersHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllOtherPrisonersHint">
+  TransferAllOtherPrisonersHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel TransferAllOtherPrisonersHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllOtherTroopsHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllOtherTroopsHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TransferAllOtherTroopsHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TransferAllOtherTroopsHint">
+  TransferAllOtherTroopsHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel TransferAllOtherTroopsHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TroopsLabel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TroopsLabel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_TroopsLabel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.TroopsLabel">
+  TroopsLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string TroopsLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UpgradableTroopCount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UpgradableTroopCount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UpgradableTroopCount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UpgradableTroopCount">
+  UpgradableTroopCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int UpgradableTroopCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UpgradePopUp_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UpgradePopUp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UpgradePopUp" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UpgradePopUp">
+  UpgradePopUp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public PartyUpgradeTroopVM UpgradePopUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyTroopManagerPopUp.PartyUpgradeTroopVM.html">PartyUpgradeTroopVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UsedHorsesHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UsedHorsesHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_UsedHorsesHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.UsedHorsesHint">
+  UsedHorsesHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel UsedHorsesHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_WageHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.WageHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_WageHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.WageHint">
+  WageHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel WageHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteCancel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteCancel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteCancel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteCancel">
+  ExecuteCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteDone_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteDone*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteDone" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteDone">
+  ExecuteDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteExecution_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteExecution*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteExecution" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteExecution">
+  ExecuteExecution()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteExecution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteOpenRecruitPopUp_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteOpenRecruitPopUp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteOpenRecruitPopUp" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteOpenRecruitPopUp">
+  ExecuteOpenRecruitPopUp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteOpenRecruitPopUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteOpenUpgradePopUp_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteOpenUpgradePopUp*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteOpenUpgradePopUp" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteOpenUpgradePopUp">
+  ExecuteOpenUpgradePopUp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteOpenUpgradePopUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteRecruit_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteRecruit*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteRecruit_TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyCharacterVM_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteRecruit(TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM,System.Boolean)">
+  ExecuteRecruit(PartyCharacterVM, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteRecruit(PartyCharacterVM character, bool recruitAll = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>character</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+    <dt><code>recruitAll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteRemoveZeroCounts_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteRemoveZeroCounts*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteRemoveZeroCounts" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteRemoveZeroCounts">
+  ExecuteRemoveZeroCounts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteRemoveZeroCounts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteReset_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteReset*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteReset" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteReset">
+  ExecuteReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteResetAndCancel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteResetAndCancel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteResetAndCancel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteResetAndCancel">
+  ExecuteResetAndCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteResetAndCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTalk_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTalk*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTalk" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTalk">
+  ExecuteTalk()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTalk()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllMainPrisoners_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllMainPrisoners*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllMainPrisoners" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllMainPrisoners">
+  ExecuteTransferAllMainPrisoners()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTransferAllMainPrisoners()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllMainTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllMainTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllMainTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllMainTroops">
+  ExecuteTransferAllMainTroops()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTransferAllMainTroops()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllOtherPrisoners_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllOtherPrisoners*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllOtherPrisoners" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllOtherPrisoners">
+  ExecuteTransferAllOtherPrisoners()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTransferAllOtherPrisoners()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllOtherTroops_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllOtherTroops*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferAllOtherTroops" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferAllOtherTroops">
+  ExecuteTransferAllOtherTroops()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTransferAllOtherTroops()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferWithParameters_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferWithParameters*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteTransferWithParameters_TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyCharacterVM_System_Int32_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteTransferWithParameters(TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM,System.Int32,System.String)">
+  ExecuteTransferWithParameters(PartyCharacterVM, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteTransferWithParameters(PartyCharacterVM party, int index, string targetTag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>party</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteUpgrade_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteUpgrade*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_ExecuteUpgrade_TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyCharacterVM_System_Int32_System_Int32_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.ExecuteUpgrade(TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM,System.Int32,System.Int32)">
+  ExecuteUpgrade(PartyCharacterVM, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteUpgrade(PartyCharacterVM troop, int upgradeTargetType, int maxUpgradeCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+    <dt><code>upgradeTargetType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxUpgradeCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnFinalize_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnFinalize" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnRecruitPopUpClosed_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnRecruitPopUpClosed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnRecruitPopUpClosed_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnRecruitPopUpClosed(System.Boolean)">
+  OnRecruitPopUpClosed(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRecruitPopUpClosed(bool isCancelled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCancelled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnUpgradePopUpClosed_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnUpgradePopUpClosed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_OnUpgradePopUpClosed_System_Boolean_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.OnUpgradePopUpClosed(System.Boolean)">
+  OnUpgradePopUpClosed(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUpgradePopUpClosed(bool isCancelled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isCancelled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RefreshValues_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RefreshValues" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RequestUserInput_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RequestUserInput*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_RequestUserInput_System_String_System_Action_System_Action_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.RequestUserInput(System.String,System.Action,System.Action)">
+  RequestUserInput(string, Action, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestUserInput(string text, Action accept, Action cancel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accept</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>cancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetCancelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetCancelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetCancelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetCancelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetCancelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCancelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDismissAllPrisonersInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDismissAllPrisonersInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDismissAllPrisonersInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDismissAllPrisonersInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDismissAllPrisonersInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDismissAllPrisonersInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDismissAllTroopsInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDismissAllTroopsInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDismissAllTroopsInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDismissAllTroopsInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDismissAllTroopsInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDismissAllTroopsInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDoneInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDoneInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetDoneInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetDoneInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetDoneInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDoneInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetEntireStackShortcutKeyText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetEntireStackShortcutKeyText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetEntireStackShortcutKeyText_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetEntireStackShortcutKeyText(System.String)">
+  SetEntireStackShortcutKeyText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEntireStackShortcutKeyText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetFiveStackShortcutKeyText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetFiveStackShortcutKeyText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetFiveStackShortcutKeyText_System_String_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetFiveStackShortcutKeyText(System.String)">
+  SetFiveStackShortcutKeyText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFiveStackShortcutKeyText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetGetKeyTextFromKeyIDFunc_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetGetKeyTextFromKeyIDFunc*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetGetKeyTextFromKeyIDFunc_System_Func_System_String_TaleWorlds_Localization_TextObject__" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetGetKeyTextFromKeyIDFunc(System.Func{System.String,TaleWorlds.Localization.TextObject})">
+  SetGetKeyTextFromKeyIDFunc(Func&lt;string, TextObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGetKeyTextFromKeyIDFunc(Func&lt;string, TextObject&gt; getKeyTextFromKeyId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getKeyTextFromKeyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetOpenRecruitPanelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetOpenRecruitPanelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetOpenRecruitPanelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetOpenRecruitPanelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetOpenRecruitPanelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOpenRecruitPanelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetOpenUpgradePanelInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetOpenUpgradePanelInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetOpenUpgradePanelInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetOpenUpgradePanelInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetOpenUpgradePanelInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOpenUpgradePanelInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetResetInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetResetInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetResetInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetResetInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetResetInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResetInputKey(HotKey hotkey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotkey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetSelectedCharacter_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetSelectedCharacter*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetSelectedCharacter_TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyCharacterVM_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetSelectedCharacter(TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM)">
+  SetSelectedCharacter(PartyCharacterVM)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectedCharacter(PartyCharacterVM troop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyCharacterVM.html">PartyCharacterVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetTakeAllPrisonersInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetTakeAllPrisonersInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetTakeAllPrisonersInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetTakeAllPrisonersInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetTakeAllPrisonersInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTakeAllPrisonersInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetTakeAllTroopsInputKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetTakeAllTroopsInputKey*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_Party_PartyVM_SetTakeAllTroopsInputKey_TaleWorlds_InputSystem_HotKey_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.Party.PartyVM.SetTakeAllTroopsInputKey(TaleWorlds.InputSystem.HotKey)">
+  SetTakeAllTroopsInputKey(HotKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTakeAllTroopsInputKey(HotKey hotKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hotKey</code> <a class="xref" href="TaleWorlds.InputSystem.HotKey.html">HotKey</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

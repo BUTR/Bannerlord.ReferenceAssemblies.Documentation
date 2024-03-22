@@ -1,0 +1,1518 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SpawnedItemEntity | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SpawnedItemEntity | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_SpawnedItemEntity" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity" class="text-break">
+Class SpawnedItemEntity  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SpawnedItemEntity : UsableMissionObject, IFocusable, IUsable, IVisible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.DotNet.DotNetObject.html">DotNetObject</a></div>
+      <div><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html">MissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html">SynchedMissionObject</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html">UsableMissionObject</a></div>
+      <div><span class="xref">SpawnedItemEntity</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IFocusable.html">IFocusable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IUsable.html">IUsable</a></div>
+      <div><a class="xref" href="TaleWorlds.MountAndBlade.IVisible.html">IVisible</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_DescriptionMessage">UsableMissionObject.DescriptionMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_ActionMessage">UsableMissionObject.ActionMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnUserConversationStart">UsableMissionObject.OnUserConversationStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnUserConversationEnd">UsableMissionObject.OnUserConversationEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_SetIsDeactivatedSynched_System_Boolean_">UsableMissionObject.SetIsDeactivatedSynched(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_SetIsDisabledForPlayersSynched_System_Boolean_">UsableMissionObject.SetIsDisabledForPlayersSynched(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_AddComponent_TaleWorlds_MountAndBlade_UsableMissionObjectComponent_">UsableMissionObject.AddComponent(UsableMissionObjectComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_RemoveComponent_TaleWorlds_MountAndBlade_UsableMissionObjectComponent_">UsableMissionObject.RemoveComponent(UsableMissionObjectComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GetComponent__1">UsableMissionObject.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_RefreshGameEntityWithWorldPosition">UsableMissionObject.RefreshGameEntityWithWorldPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_CollectChildEntity_TaleWorlds_Engine_GameEntity_">UsableMissionObject.CollectChildEntity(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_VerifyChildEntities_System_String__">UsableMissionObject.VerifyChildEntities(ref string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnEditorInit">UsableMissionObject.OnEditorInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnMissionReset">UsableMissionObject.OnMissionReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnFocusGain_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.OnFocusGain(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnFocusLose_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.OnFocusLose(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_SetUserForClient_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.SetUserForClient(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnAIMoveToUse_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IDetachment_">UsableMissionObject.OnAIMoveToUse(Agent, IDetachment)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnMoveToStopped_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.OnMoveToStopped(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GetMovingAgentCount">UsableMissionObject.GetMovingAgentCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GetMovingAgentWithIndex_System_Int32_">UsableMissionObject.GetMovingAgentWithIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_RemoveMovingAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.RemoveMovingAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_AddMovingAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.AddMovingAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnAIDefendBegin_TaleWorlds_MountAndBlade_Agent_TaleWorlds_MountAndBlade_IDetachment_">UsableMissionObject.OnAIDefendBegin(Agent, IDetachment)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnAIDefendEnd_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.OnAIDefendEnd(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_InitializeDefendingAgents">UsableMissionObject.InitializeDefendingAgents()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GetDefendingAgentCount">UsableMissionObject.GetDefendingAgentCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_AddDefendingAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.AddDefendingAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_RemoveDefendingAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.RemoveDefendingAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsAgentDefending_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.IsAgentDefending(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_SimulateTick_System_Single_">UsableMissionObject.SimulateTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnEditorTick_System_Single_">UsableMissionObject.OnEditorTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnEditorValidate">UsableMissionObject.OnEditorValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GetUserFrameForAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.GetUserFrameForAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_ToString">UsableMissionObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsAIMovingTo_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.IsAIMovingTo(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_HasUserPositionsChanged_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.HasUserPositionsChanged(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_WriteToNetwork">UsableMissionObject.WriteToNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsUsableByAgent_TaleWorlds_MountAndBlade_Agent_">UsableMissionObject.IsUsableByAgent(Agent)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnEndMission">UsableMissionObject.OnEndMission()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_OnAfterReadFromNetwork_System_ValueTuple_TaleWorlds_MountAndBlade_BaseSynchedMissionObjectReadableRecord_TaleWorlds_MountAndBlade_ISynchedMissionObjectReadableRecord__">UsableMissionObject.OnAfterReadFromNetwork((BaseSynchedMissionObjectReadableRecord, ISynchedMissionObjectReadableRecord))</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_FocusableObjectType">UsableMissionObject.FocusableObjectType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_UserAgent">UsableMissionObject.UserAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_PreviousUserAgent">UsableMissionObject.PreviousUserAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_GameEntityWithWorldPosition">UsableMissionObject.GameEntityWithWorldPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_MovingAgent">UsableMissionObject.MovingAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_DefendingAgents">UsableMissionObject.DefendingAgents</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_HasDefendingAgent">UsableMissionObject.HasDefendingAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsInstantUse">UsableMissionObject.IsInstantUse</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsDeactivated">UsableMissionObject.IsDeactivated</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsDisabledForPlayers">UsableMissionObject.IsDisabledForPlayers</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_InteractionEntity">UsableMissionObject.InteractionEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_HasAIUser">UsableMissionObject.HasAIUser</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_HasUser">UsableMissionObject.HasUser</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_HasAIMovingTo">UsableMissionObject.HasAIMovingTo</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_DisableCombatActionsOnUse">UsableMissionObject.DisableCombatActionsOnUse</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_LockUserPositions">UsableMissionObject.LockUserPositions</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.UsableMissionObject.html#TaleWorlds_MountAndBlade_UsableMissionObject_IsVisible">UsableMissionObject.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetLocalPositionSmoothStep_TaleWorlds_Library_Vec3__">SynchedMissionObject.SetLocalPositionSmoothStep(ref Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetVisibleSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetVisibleSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetPhysicsStateSynched_System_Boolean_System_Boolean_">SynchedMissionObject.SetPhysicsStateSynched(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetDisabledSynched">SynchedMissionObject.SetDisabledSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynched_TaleWorlds_Library_MatrixFrame__System_Boolean_">SynchedMissionObject.SetGlobalFrameSynched(ref MatrixFrame, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetGlobalFrameSynchedOverTime_TaleWorlds_Library_MatrixFrame__System_Single_System_Boolean_">SynchedMissionObject.SetGlobalFrameSynchedOverTime(ref MatrixFrame, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_String_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(string, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationAtChannelSynched_System_Int32_System_Int32_System_Single_">SynchedMissionObject.SetAnimationAtChannelSynched(int, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetAnimationChannelParameterSynched_System_Int32_System_Single_">SynchedMissionObject.SetAnimationChannelParameterSynched(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_PauseSkeletonAnimationSynched">SynchedMissionObject.PauseSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ResumeSkeletonAnimationSynched">SynchedMissionObject.ResumeSkeletonAnimationSynched()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_BurstParticlesSynched_System_Boolean_">SynchedMissionObject.BurstParticlesSynched(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_ApplyImpulseSynched_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_">SynchedMissionObject.ApplyImpulseSynched(Vec3, Vec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_AddBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.AddBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_RemoveBodyFlagsSynched_TaleWorlds_Engine_BodyFlags_System_Boolean_">SynchedMissionObject.RemoveBodyFlagsSynched(BodyFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColors_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColors(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SetTeamColorsSynched_System_UInt32_System_UInt32_">SynchedMissionObject.SetTeamColorsSynched(uint, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color">SynchedMissionObject.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_Color2">SynchedMissionObject.Color2</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.SynchedMissionObject.html#TaleWorlds_MountAndBlade_SynchedMissionObject_SynchronizeCompleted">SynchedMissionObject.SynchronizeCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MaxNavMeshPerDynamicObject">MissionObject.MaxNavMeshPerDynamicObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_NavMeshPrefabName">MissionObject.NavMeshPrefabName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_DynamicNavmeshIdStart">MissionObject.DynamicNavmeshIdStart</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetAbilityOfFaces_System_Boolean_">MissionObject.SetAbilityOfFaces(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AttachDynamicNavmeshToEntity">MissionObject.AttachDynamicNavmeshToEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetEntityToAttachNavMeshFaces">MissionObject.GetEntityToAttachNavMeshFaces()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnCheckForProblems">MissionObject.OnCheckForProblems()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_GetHashCode">MissionObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AfterMissionStart">MissionObject.AfterMissionStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnMissionEnded">MissionObject.OnMissionEnded()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_OnHit_TaleWorlds_MountAndBlade_Agent_System_Int32_TaleWorlds_Library_Vec3_TaleWorlds_Library_Vec3_TaleWorlds_MountAndBlade_MissionWeapon__TaleWorlds_Engine_ScriptComponentBehavior_System_Boolean__">MissionObject.OnHit(Agent, int, Vec3, Vec3, in MissionWeapon, ScriptComponentBehavior, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabled_System_Boolean_">MissionObject.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_SetDisabledAndMakeInvisible_System_Boolean_">MissionObject.SetDisabledAndMakeInvisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_MovesEntity">MissionObject.MovesEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_AddStuckMissile_TaleWorlds_Engine_GameEntity_">MissionObject.AddStuckMissile(GameEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_Id">MissionObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_IsDisabled">MissionObject.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.MountAndBlade.MissionObject.html#TaleWorlds_MountAndBlade_MissionObject_CreatedAtRuntime">MissionObject.CreatedAtRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_InvalidateWeakPointersIfValid">ScriptComponentBehavior.InvalidateWeakPointersIfValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTick_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTick(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScriptComponentToTickMT_TaleWorlds_Engine_ScriptComponentBehavior_TickRequirement_">ScriptComponentBehavior.SetScriptComponentToTickMT(ScriptComponentBehavior.TickRequirement)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_SetScene_TaleWorlds_Engine_Scene_">ScriptComponentBehavior.SetScene(Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_HandleOnRemoved_System_Int32_">ScriptComponentBehavior.HandleOnRemoved(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnTickParallel_System_Single_">ScriptComponentBehavior.OnTickParallel(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_IsOnlyVisual">ScriptComponentBehavior.IsOnlyVisual()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_DisablesOroCreation">ScriptComponentBehavior.DisablesOroCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditorVariableChanged_System_String_">ScriptComponentBehavior.OnEditorVariableChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnSceneSave_System_String_">ScriptComponentBehavior.OnSceneSave(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_OnEditModeVisibilityChanged_System_Boolean_">ScriptComponentBehavior.OnEditModeVisibilityChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_GameEntity">ScriptComponentBehavior.GameEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ScriptComponent">ScriptComponentBehavior.ScriptComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_ManagedScriptHolder">ScriptComponentBehavior.ManagedScriptHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html#TaleWorlds_Engine_ScriptComponentBehavior_Scene">ScriptComponentBehavior.Scene</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity__ctor_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity__ctor" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.#ctor">
+  SpawnedItemEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpawnedItemEntity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_WeaponName" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.WeaponName">
+  WeaponName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WeaponName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_HasLifeTime_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.HasLifeTime*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_HasLifeTime" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.HasLifeTime">
+  HasLifeTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLifeTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsRemoved_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsRemoved" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsRemoved">
+  IsRemoved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRemoved { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_LockUserFrames_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.LockUserFrames*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_LockUserFrames" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.LockUserFrames">
+  LockUserFrames
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool LockUserFrames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_SpawnFlags_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.SpawnFlags*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_SpawnFlags" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.SpawnFlags">
+  SpawnFlags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mission.WeaponSpawnFlags SpawnFlags { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.Mission.html">Mission</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Mission.WeaponSpawnFlags.html">WeaponSpawnFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_WeaponCopy_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.WeaponCopy*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_WeaponCopy" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.WeaponCopy">
+  WeaponCopy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionWeapon WeaponCopy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_AttachWeaponToWeapon_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.AttachWeaponToWeapon*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_AttachWeaponToWeapon_TaleWorlds_MountAndBlade_MissionWeapon_TaleWorlds_Library_MatrixFrame__" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.AttachWeaponToWeapon(TaleWorlds.MountAndBlade.MissionWeapon,TaleWorlds.Library.MatrixFrame@)">
+  AttachWeaponToWeapon(MissionWeapon, ref MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachWeaponToWeapon(MissionWeapon attachedWeapon, ref MatrixFrame attachLocalFrame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attachedWeapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+    <dt><code>attachLocalFrame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_ConsumeWeaponAmount_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.ConsumeWeaponAmount*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_ConsumeWeaponAmount_System_Int16_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.ConsumeWeaponAmount(System.Int16)">
+  ConsumeWeaponAmount(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsumeWeaponAmount(short consumedAmount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>consumedAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetActionMessage_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetActionMessage*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetActionMessage_TaleWorlds_Core_ItemObject_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetActionMessage(TaleWorlds.Core.ItemObject,System.Boolean)">
+  GetActionMessage(ItemObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetActionMessage(ItemObject weaponToReplaceWith, bool fillUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weaponToReplaceWith</code> <a class="xref" href="TaleWorlds.Core.ItemObject.html">ItemObject</a></dt>
+    <dd></dd>
+    <dt><code>fillUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetDescriptionMessage_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetDescriptionMessage*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetDescriptionMessage_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetDescriptionMessage(System.Boolean)">
+  GetDescriptionMessage(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextObject GetDescriptionMessage(bool fillUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fillUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetDescriptionText_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetDescriptionText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetDescriptionText_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetDescriptionText(TaleWorlds.Engine.GameEntity)">
+  GetDescriptionText(GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetDescriptionText(GameEntity gameEntity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameEntity</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetInfoTextForBeingNotInteractable_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetInfoTextForBeingNotInteractable*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetInfoTextForBeingNotInteractable_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetInfoTextForBeingNotInteractable(TaleWorlds.MountAndBlade.Agent)">
+  GetInfoTextForBeingNotInteractable(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TextObject GetInfoTextForBeingNotInteractable(Agent userAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Localization.TextObject.html">TextObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetTickRequirement_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetTickRequirement*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_GetTickRequirement" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.GetTickRequirement">
+  GetTickRequirement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ScriptComponentBehavior.TickRequirement GetTickRequirement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.html">ScriptComponentBehavior</a>.<a class="xref" href="TaleWorlds.Engine.ScriptComponentBehavior.TickRequirement.html">TickRequirement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_Initialize_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.Initialize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_Initialize_TaleWorlds_MountAndBlade_MissionWeapon_System_Boolean_TaleWorlds_MountAndBlade_Mission_WeaponSpawnFlags_TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.Initialize(TaleWorlds.MountAndBlade.MissionWeapon,System.Boolean,TaleWorlds.MountAndBlade.Mission.WeaponSpawnFlags,TaleWorlds.Library.Vec3@)">
+  Initialize(MissionWeapon, bool, WeaponSpawnFlags, in Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(MissionWeapon weapon, bool hasLifeTime, Mission.WeaponSpawnFlags spawnFlags, in Vec3 fakeSimulationVelocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="TaleWorlds.MountAndBlade.MissionWeapon.html">MissionWeapon</a></dt>
+    <dd></dd>
+    <dt><code>hasLifeTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>spawnFlags</code> <a class="xref" href="TaleWorlds.MountAndBlade.Mission.html">Mission</a>.<a class="xref" href="TaleWorlds.MountAndBlade.Mission.WeaponSpawnFlags.html">WeaponSpawnFlags</a></dt>
+    <dd></dd>
+    <dt><code>fakeSimulationVelocity</code> <a class="xref" href="TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsBanner_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsBanner*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsBanner" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsBanner">
+  IsBanner()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBanner()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsDisabledForAgent_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsDisabledForAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsDisabledForAgent_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsDisabledForAgent(TaleWorlds.MountAndBlade.Agent)">
+  IsDisabledForAgent(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDisabledForAgent(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsQuiverAndNotEmpty_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsQuiverAndNotEmpty*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsQuiverAndNotEmpty" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsQuiverAndNotEmpty">
+  IsQuiverAndNotEmpty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuiverAndNotEmpty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsReadyToBeDeleted_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsReadyToBeDeleted*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsReadyToBeDeleted" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsReadyToBeDeleted">
+  IsReadyToBeDeleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadyToBeDeleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsStuckMissile_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsStuckMissile*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_IsStuckMissile" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.IsStuckMissile">
+  IsStuckMissile()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStuckMissile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnInit_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnInit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnInit" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnInit">
+  OnInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnPhysicsCollision_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnPhysicsCollision*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnPhysicsCollision_TaleWorlds_Engine_PhysicsContact__" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnPhysicsCollision(TaleWorlds.Engine.PhysicsContact@)">
+  OnPhysicsCollision(ref PhysicsContact)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPhysicsCollision(ref PhysicsContact contact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contact</code> <a class="xref" href="TaleWorlds.Engine.PhysicsContact.html">PhysicsContact</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnPreInit_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnPreInit*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnPreInit" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnPreInit">
+  OnPreInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPreInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnRemoved_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnRemoved*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnRemoved_System_Int32_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnRemoved(System.Int32)">
+  OnRemoved(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRemoved(int removeReason)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removeReason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTick_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTick(System.Single)">
+  OnTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTickOccasionally_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTickOccasionally*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTickOccasionally_System_Single_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTickOccasionally(System.Single)">
+  OnTickOccasionally(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTickOccasionally(float currentFrameDeltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentFrameDeltaTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTickParallel2_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTickParallel2*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnTickParallel2_System_Single_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnTickParallel2(System.Single)">
+  OnTickParallel2(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTickParallel2(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnUse_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnUse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnUse_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnUse(TaleWorlds.MountAndBlade.Agent)">
+  OnUse(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnUse(Agent userAgent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnUseStopped_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnUseStopped*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_OnUseStopped_TaleWorlds_MountAndBlade_Agent_System_Boolean_System_Int32_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.OnUseStopped(TaleWorlds.MountAndBlade.Agent,System.Boolean,System.Int32)">
+  OnUseStopped(Agent, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnUseStopped(Agent userAgent, bool isSuccessful, int preferenceIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+    <dt><code>isSuccessful</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>preferenceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_RequestDeletionOnNextTick_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.RequestDeletionOnNextTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_RequestDeletionOnNextTick" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.RequestDeletionOnNextTick">
+  RequestDeletionOnNextTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDeletionOnNextTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_SpawnedItemEntity_StopPhysicsAndSetFrameForClient_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.StopPhysicsAndSetFrameForClient*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_SpawnedItemEntity_StopPhysicsAndSetFrameForClient_TaleWorlds_Library_MatrixFrame_TaleWorlds_Engine_GameEntity_" data-uid="TaleWorlds.MountAndBlade.SpawnedItemEntity.StopPhysicsAndSetFrameForClient(TaleWorlds.Library.MatrixFrame,TaleWorlds.Engine.GameEntity)">
+  StopPhysicsAndSetFrameForClient(MatrixFrame, GameEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopPhysicsAndSetFrameForClient(MatrixFrame frame, GameEntity parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <a class="xref" href="TaleWorlds.Engine.GameEntity.html">GameEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

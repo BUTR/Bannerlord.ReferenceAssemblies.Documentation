@@ -1,0 +1,1791 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SettlementMenuOverlayVM | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SettlementMenuOverlayVM | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM">
+
+
+
+  <h1 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM" class="text-break">
+Class SettlementMenuOverlayVM  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.CampaignSystem.html">CampaignSystem</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.html">ViewModelCollection</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.html">GameMenu</a>.<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.html">Overlay</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.CampaignSystem.ViewModelCollection.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MenuOverlay(&quot;SettlementMenuOverlay&quot;)]
+public class SettlementMenuOverlayVM : GameMenuOverlay, IViewModel, INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="TaleWorlds.Library.ViewModel.html">ViewModel</a></div>
+      <div><a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html">GameMenuOverlay</a></div>
+      <div><span class="xref">SettlementMenuOverlayVM</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaleWorlds.Library.IViewModel.html">IViewModel</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_GameMenuOverlayName">GameMenuOverlay.GameMenuOverlayName</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay__contextMenuItem">GameMenuOverlay._contextMenuItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_ExecuteOnOverlayOpened">GameMenuOverlay.ExecuteOnOverlayOpened()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_ExecuteTroopAction_System_Object_">GameMenuOverlay.ExecuteTroopAction(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_ClearOverlay">GameMenuOverlay.ClearOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_GetOverlay_TaleWorlds_CampaignSystem_Overlay_GameOverlays_MenuOverlayType_">GameMenuOverlay.GetOverlay(GameOverlays.MenuOverlayType)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_OnFrameTick_System_Single_">GameMenuOverlay.OnFrameTick(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_HourlyTick">GameMenuOverlay.HourlyTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_IsContextMenuEnabled">GameMenuOverlay.IsContextMenuEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_IsInitializationOver">GameMenuOverlay.IsInitializationOver</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_IsInfoBarExtended">GameMenuOverlay.IsInfoBarExtended</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_ContextList">GameMenuOverlay.ContextList</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuOverlay.html#TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuOverlay_CurrentOverlayType">GameMenuOverlay.CurrentOverlayType</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_UIDebugMode">ViewModel.UIDebugMode</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetField__1___0____0_System_String_">ViewModel.SetField&lt;T&gt;(ref T, T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue__1___0_System_String_">ViewModel.OnPropertyChangedWithValue&lt;T&gt;(T, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Boolean_System_String_">ViewModel.OnPropertyChangedWithValue(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Int32_System_String_">ViewModel.OnPropertyChangedWithValue(int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Single_System_String_">ViewModel.OnPropertyChangedWithValue(float, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_UInt32_System_String_">ViewModel.OnPropertyChangedWithValue(uint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Color_System_String_">ViewModel.OnPropertyChangedWithValue(Color, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_System_Double_System_String_">ViewModel.OnPropertyChangedWithValue(double, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_OnPropertyChangedWithValue_TaleWorlds_Library_Vec2_System_String_">ViewModel.OnPropertyChangedWithValue(Vec2, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_System_Boolean_">ViewModel.GetViewModelAtPath(BindingPath, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetViewModelAtPath_TaleWorlds_Library_BindingPath_">ViewModel.GetViewModelAtPath(BindingPath)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_TaleWorlds_Library_PropertyTypeFeeder_">ViewModel.GetPropertyValue(string, PropertyTypeFeeder)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyValue_System_String_">ViewModel.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_GetPropertyType_System_String_">ViewModel.GetPropertyType(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_SetPropertyValue_System_String_System_Object_">ViewModel.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_ExecuteCommand_System_String_System_Object___">ViewModel.ExecuteCommand(string, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_CollectPropertiesAndMethods">ViewModel.CollectPropertiesAndMethods()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithValue">ViewModel.PropertyChangedWithValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithBoolValue">ViewModel.PropertyChangedWithBoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithIntValue">ViewModel.PropertyChangedWithIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithFloatValue">ViewModel.PropertyChangedWithFloatValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithUIntValue">ViewModel.PropertyChangedWithUIntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithColorValue">ViewModel.PropertyChangedWithColorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithDoubleValue">ViewModel.PropertyChangedWithDoubleValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleWorlds.Library.ViewModel.html#TaleWorlds_Library_ViewModel_PropertyChangedWithVec2Value">ViewModel.PropertyChangedWithVec2Value</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM__ctor_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.#ctor*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM__ctor_TaleWorlds_CampaignSystem_Overlay_GameOverlays_MenuOverlayType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.#ctor(TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType)">
+  SettlementMenuOverlayVM(MenuOverlayType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SettlementMenuOverlayVM(GameOverlays.MenuOverlayType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.html">GameOverlays</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType.html">MenuOverlayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CanLeaveMembers_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CanLeaveMembers*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CanLeaveMembers" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CanLeaveMembers">
+  CanLeaveMembers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool CanLeaveMembers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CharacterFilterHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CharacterFilterHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CharacterFilterHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CharacterFilterHint">
+  CharacterFilterHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel CharacterFilterHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CharacterList_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CharacterList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CharacterList" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CharacterList">
+  CharacterList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;GameMenuPartyItemVM&gt; CharacterList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuPartyItemVM.html">GameMenuPartyItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeChangeAmount">
+  CrimeChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int CrimeChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeHint">
+  CrimeHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel CrimeHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_CrimeLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.CrimeLbl">
+  CrimeLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string CrimeLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_FoodChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.FoodChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_FoodChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.FoodChangeAmount">
+  FoodChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int FoodChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonAmount">
+  GarrisonAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int GarrisonAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonChangeAmount">
+  GarrisonChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int GarrisonChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonHint">
+  GarrisonHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel GarrisonHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_GarrisonLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.GarrisonLbl">
+  GarrisonLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string GarrisonLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsCrimeEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsCrimeEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsCrimeEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsCrimeEnabled">
+  IsCrimeEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCrimeEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsCrimeLabelHighlightEnabled_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsCrimeLabelHighlightEnabled*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsCrimeLabelHighlightEnabled" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsCrimeLabelHighlightEnabled">
+  IsCrimeLabelHighlightEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsCrimeLabelHighlightEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsFortification_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsFortification*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsFortification" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsFortification">
+  IsFortification
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsFortification { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsLoyaltyRebellionWarning_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsLoyaltyRebellionWarning*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsLoyaltyRebellionWarning" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsLoyaltyRebellionWarning">
+  IsLoyaltyRebellionWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsLoyaltyRebellionWarning { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsNoGarrisonWarning_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsNoGarrisonWarning*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IsNoGarrisonWarning" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IsNoGarrisonWarning">
+  IsNoGarrisonWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public bool IsNoGarrisonWarning { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IssueList_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IssueList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_IssueList" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.IssueList">
+  IssueList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;StringItemWithHintVM&gt; IssueList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.Core.ViewModelCollection.Generic.StringItemWithHintVM.html">StringItemWithHintVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LeaveMembersHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LeaveMembersHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LeaveMembersHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LeaveMembersHint">
+  LeaveMembersHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel LeaveMembersHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyChangeAmount">
+  LoyaltyChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int LoyaltyChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyHint">
+  LoyaltyHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel LoyaltyHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_LoyaltyLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.LoyaltyLbl">
+  LoyaltyLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string LoyaltyLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitasHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitasHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitasHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitasHint">
+  MilitasHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel MilitasHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitasLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitasLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitasLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitasLbl">
+  MilitasLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string MilitasLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitiaChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitiaChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_MilitiaChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.MilitiaChangeAmount">
+  MilitiaChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int MilitiaChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_PartyFilterHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.PartyFilterHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_PartyFilterHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.PartyFilterHint">
+  PartyFilterHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public HintViewModel PartyFilterHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.HintViewModel.html">HintViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_PartyList_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.PartyList*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_PartyList" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.PartyList">
+  PartyList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public MBBindingList&lt;GameMenuPartyItemVM&gt; PartyList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Library.MBBindingList-1.html">MBBindingList</a>&lt;<a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuPartyItemVM.html">GameMenuPartyItemVM</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityChangeAmount">
+  ProsperityChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int ProsperityChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityHint">
+  ProsperityHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel ProsperityHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ProsperityLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ProsperityLbl">
+  ProsperityLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string ProsperityLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RemainingFoodHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RemainingFoodHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RemainingFoodHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RemainingFoodHint">
+  RemainingFoodHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel RemainingFoodHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RemainingFoodText_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RemainingFoodText*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RemainingFoodText" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RemainingFoodText">
+  RemainingFoodText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string RemainingFoodText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityChangeAmount_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityChangeAmount*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityChangeAmount" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityChangeAmount">
+  SecurityChangeAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int SecurityChangeAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityHint">
+  SecurityHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel SecurityHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SecurityLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SecurityLbl">
+  SecurityLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string SecurityLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SettlementNameLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SettlementNameLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SettlementNameLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SettlementNameLbl">
+  SettlementNameLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string SettlementNameLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SettlementOwnerBanner_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SettlementOwnerBanner*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_SettlementOwnerBanner" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.SettlementOwnerBanner">
+  SettlementOwnerBanner
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public ImageIdentifierVM SettlementOwnerBanner { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ImageIdentifierVM.html">ImageIdentifierVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsHint_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsHint*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsHint" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsHint">
+  WallsHint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public BasicTooltipViewModel WallsHint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.Core.ViewModelCollection.Information.BasicTooltipViewModel.html">BasicTooltipViewModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsLbl_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsLbl*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsLbl" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsLbl">
+  WallsLbl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public string WallsLbl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsLevel_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsLevel*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_WallsLevel" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.WallsLevel">
+  WallsLevel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataSourceProperty]
+public int WallsLevel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteAddCompanion_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteAddCompanion*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteAddCompanion" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteAddCompanion">
+  ExecuteAddCompanion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteAddCompanion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteOnOverlayClosed_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteOnOverlayClosed*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteOnOverlayClosed" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteOnOverlayClosed">
+  ExecuteOnOverlayClosed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExecuteOnOverlayClosed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteOnSetAsActiveContextMenuItem_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteOnSetAsActiveContextMenuItem*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_ExecuteOnSetAsActiveContextMenuItem_TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_GameMenuPartyItemVM_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.ExecuteOnSetAsActiveContextMenuItem(TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuPartyItemVM)">
+  ExecuteOnSetAsActiveContextMenuItem(GameMenuPartyItemVM)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ExecuteOnSetAsActiveContextMenuItem(GameMenuPartyItemVM troop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>troop</code> <a class="xref" href="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.GameMenuPartyItemVM.html">GameMenuPartyItemVM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_OnFinalize_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_OnFinalize" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_Refresh_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.Refresh*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_Refresh" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.Refresh">
+  Refresh()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Refresh()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RefreshValues_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RefreshValues*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_RefreshValues" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.RefreshValues">
+  RefreshValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_UpdateOverlayType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.UpdateOverlayType*"></a>
+
+  <h3 id="TaleWorlds_CampaignSystem_ViewModelCollection_GameMenu_Overlay_SettlementMenuOverlayVM_UpdateOverlayType_TaleWorlds_CampaignSystem_Overlay_GameOverlays_MenuOverlayType_" data-uid="TaleWorlds.CampaignSystem.ViewModelCollection.GameMenu.Overlay.SettlementMenuOverlayVM.UpdateOverlayType(TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType)">
+  UpdateOverlayType(MenuOverlayType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateOverlayType(GameOverlays.MenuOverlayType newType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newType</code> <a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.html">GameOverlays</a>.<a class="xref" href="TaleWorlds.CampaignSystem.Overlay.GameOverlays.MenuOverlayType.html">MenuOverlayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

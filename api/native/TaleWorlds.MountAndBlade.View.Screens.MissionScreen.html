@@ -1,0 +1,2532 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MissionScreen | Unofficial Bannerlord API Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MissionScreen | Unofficial Bannerlord API Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Bannerlord API">
+            Bannerlord API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen">
+
+
+
+  <h1 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen" class="text-break">
+Class MissionScreen  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleWorlds.html">TaleWorlds</a>.<a class="xref" href="TaleWorlds.MountAndBlade.html">MountAndBlade</a>.<a class="xref" href="TaleWorlds.MountAndBlade.View.html">View</a>.<a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.html">Screens</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaleWorlds.MountAndBlade.View.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GameStateScreen(typeof(MissionState))]
+public class MissionScreen : ScreenBase, IMissionSystemHandler, IGameStateListener, IMissionScreen, IMissionListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MissionScreen</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="../core/TaleWorlds.MountAndBlade.IMissionSystemHandler.html">IMissionSystemHandler</a></div>
+      <div><a class="xref" href="../core/TaleWorlds.Core.IGameStateListener.html">IGameStateListener</a></div>
+      <div><a class="xref" href="../core/TaleWorlds.MountAndBlade.ViewModelCollection.IMissionScreen.html">IMissionScreen</a></div>
+      <div><a class="xref" href="../core/TaleWorlds.MountAndBlade.IMissionListener.html">IMissionListener</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen__ctor_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.#ctor*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen__ctor_TaleWorlds_MountAndBlade_MissionState_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.#ctor(TaleWorlds.MountAndBlade.MissionState)">
+  MissionScreen(MissionState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissionScreen(MissionState missionState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missionState</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.MissionState.html">MissionState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_DefaultViewAngle" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.DefaultViewAngle">
+  DefaultViewAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float DefaultViewAngle = 65</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_FarClippingDistance" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.FarClippingDistance">
+  FarClippingDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FarClippingDistance = 12500</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_FirstPersonNearClippingDistance" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.FirstPersonNearClippingDistance">
+  FirstPersonNearClippingDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FirstPersonNearClippingDistance = 0.065</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetSpectatedCharacter" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetSpectatedCharacter">
+  GetSpectatedCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;BasicCharacterObject&gt; GetSpectatedCharacter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="../core/TaleWorlds.Core.BasicCharacterObject.html">BasicCharacterObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LoadingScreenFramesLeftInitial" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LoadingScreenFramesLeftInitial">
+  LoadingScreenFramesLeftInitial
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LoadingScreenFramesLeftInitial = 15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MaxCameraAddedDistance" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MaxCameraAddedDistance">
+  MaxCameraAddedDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaxCameraAddedDistance = 2.4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MinCameraAddedDistance" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MinCameraAddedDistance">
+  MinCameraAddedDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinCameraAddedDistance = 0.7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MinCameraDistanceHardLimit" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MinCameraDistanceHardLimit">
+  MinCameraDistanceHardLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinCameraDistanceHardLimit = 0.48</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_ThirdPersonNearClippingDistance" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.ThirdPersonNearClippingDistance">
+  ThirdPersonNearClippingDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float ThirdPersonNearClippingDistance = 0.1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraBearing_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraBearing*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraBearing" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraBearing">
+  CameraBearing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraBearing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraElevation_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraElevation*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraElevation" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraElevation">
+  CameraElevation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraElevation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraResultDistanceToTarget_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraResultDistanceToTarget*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraResultDistanceToTarget" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraResultDistanceToTarget">
+  CameraResultDistanceToTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraResultDistanceToTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraViewAngle_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraViewAngle*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CameraViewAngle" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CameraViewAngle">
+  CameraViewAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraViewAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CombatCamera_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CombatCamera*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CombatCamera" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CombatCamera">
+  CombatCamera
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera CombatCamera { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CustomCamera_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CustomCamera*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CustomCamera" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CustomCamera">
+  CustomCamera
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera CustomCamera { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.Camera.html">Camera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_InputManager_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.InputManager*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_InputManager" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.InputManager">
+  InputManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInputContext InputManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.InputSystem.IInputContext.html">IInputContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsCheatGhostMode_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsCheatGhostMode*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsCheatGhostMode" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsCheatGhostMode">
+  IsCheatGhostMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCheatGhostMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsConversationActive_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsConversationActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsConversationActive" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsConversationActive">
+  IsConversationActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConversationActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsDeploymentActive_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsDeploymentActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsDeploymentActive" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsDeploymentActive">
+  IsDeploymentActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDeploymentActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsFocusLost_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsFocusLost*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsFocusLost" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsFocusLost">
+  IsFocusLost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFocusLost { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsMissionTickable_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsMissionTickable*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsMissionTickable" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsMissionTickable">
+  IsMissionTickable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMissionTickable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsPhotoModeEnabled_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsPhotoModeEnabled*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsPhotoModeEnabled" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsPhotoModeEnabled">
+  IsPhotoModeEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPhotoModeEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsRadialMenuActive_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsRadialMenuActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsRadialMenuActive" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsRadialMenuActive">
+  IsRadialMenuActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRadialMenuActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LastFollowedAgent_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LastFollowedAgent*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LastFollowedAgent" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LastFollowedAgent">
+  LastFollowedAgent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent LastFollowedAgent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LastFollowedAgentVisuals_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LastFollowedAgentVisuals*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LastFollowedAgentVisuals" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LastFollowedAgentVisuals">
+  LastFollowedAgentVisuals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgentVisual LastFollowedAgentVisuals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.IAgentVisual.html">IAgentVisual</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LockCameraMovement_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LockCameraMovement*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_LockCameraMovement" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.LockCameraMovement">
+  LockCameraMovement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LockCameraMovement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MaxCameraZoom_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MaxCameraZoom*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MaxCameraZoom" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MaxCameraZoom">
+  MaxCameraZoom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxCameraZoom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_Mission_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.Mission*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_Mission" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.Mission">
+  Mission
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mission Mission { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.Mission.html">Mission</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MouseVisible_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MouseVisible*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MouseVisible" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MouseVisible">
+  MouseVisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool MouseVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OrderFlag_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OrderFlag*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OrderFlag" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OrderFlag">
+  OrderFlag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderFlag OrderFlag { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.View.MissionViews.Order.OrderFlag.html">OrderFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_PhotoModeRequiresMouse_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.PhotoModeRequiresMouse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_PhotoModeRequiresMouse" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.PhotoModeRequiresMouse">
+  PhotoModeRequiresMouse
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PhotoModeRequiresMouse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SceneLayer_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SceneLayer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SceneLayer" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SceneLayer">
+  SceneLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLayer SceneLayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.Screens.SceneLayer.html">SceneLayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SceneView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SceneView*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SceneView" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SceneView">
+  SceneView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneView SceneView { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Engine.SceneView.html">SceneView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_AddMissionView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.AddMissionView*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_AddMissionView_TaleWorlds_MountAndBlade_View_MissionViews_MissionView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.AddMissionView(TaleWorlds.MountAndBlade.View.MissionViews.MissionView)">
+  AddMissionView(MissionView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMissionView(MissionView missionView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missionView</code> <a class="xref" href="TaleWorlds.MountAndBlade.View.MissionViews.MissionView.html">MissionView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CancelQuickPositionOrder_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CancelQuickPositionOrder*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_CancelQuickPositionOrder" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.CancelQuickPositionOrder">
+  CancelQuickPositionOrder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelQuickPositionOrder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetCameraToggleProgress_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetCameraToggleProgress*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetCameraToggleProgress" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetCameraToggleProgress">
+  GetCameraToggleProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetCameraToggleProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetFollowPartyText_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetFollowPartyText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetFollowPartyText" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetFollowPartyText">
+  GetFollowPartyText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFollowPartyText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetFollowText_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetFollowText*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetFollowText" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetFollowText">
+  GetFollowText()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFollowText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetOrderFlagFrame_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetOrderFlagFrame*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetOrderFlagFrame" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetOrderFlagFrame">
+  GetOrderFlagFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixFrame GetOrderFlagFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetOrderFlagPosition_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetOrderFlagPosition*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetOrderFlagPosition" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetOrderFlagPosition">
+  GetOrderFlagPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vec3 GetOrderFlagPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetPlayerAgentVisuals_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetPlayerAgentVisuals*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetPlayerAgentVisuals_TaleWorlds_MountAndBlade_MissionPeer_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetPlayerAgentVisuals(TaleWorlds.MountAndBlade.MissionPeer)">
+  GetPlayerAgentVisuals(MissionPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgentVisual GetPlayerAgentVisuals(MissionPeer lobbyPeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lobbyPeer</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.MissionPeer.html">MissionPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.IAgentVisual.html">IAgentVisual</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetProjectedMousePositionOnGround_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetProjectedMousePositionOnGround*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetProjectedMousePositionOnGround_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__TaleWorlds_Engine_BodyFlags_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetProjectedMousePositionOnGround(TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@,TaleWorlds.Engine.BodyFlags,System.Boolean)">
+  GetProjectedMousePositionOnGround(out Vec3, out Vec3, BodyFlags, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetProjectedMousePositionOnGround(out Vec3 groundPosition, out Vec3 groundNormal, BodyFlags excludeBodyOwnerFlags, bool checkOccludedSurface)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>groundPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>groundNormal</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>excludeBodyOwnerFlags</code> <a class="xref" href="../core/TaleWorlds.Engine.BodyFlags.html">BodyFlags</a></dt>
+    <dd></dd>
+    <dt><code>checkOccludedSurface</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetSpectatingData_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetSpectatingData*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GetSpectatingData_TaleWorlds_Library_Vec3_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GetSpectatingData(TaleWorlds.Library.Vec3)">
+  GetSpectatingData(Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mission.SpectatorData GetSpectatingData(Vec3 currentCameraPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentCameraPosition</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../core/TaleWorlds.MountAndBlade.Mission.SpectatorData.html">SpectatorData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsOpeningEscapeMenuOnFocusChangeAllowed_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsOpeningEscapeMenuOnFocusChangeAllowed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsOpeningEscapeMenuOnFocusChangeAllowed" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsOpeningEscapeMenuOnFocusChangeAllowed">
+  IsOpeningEscapeMenuOnFocusChangeAllowed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpeningEscapeMenuOnFocusChangeAllowed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsViewingCharacter_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsViewingCharacter*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_IsViewingCharacter" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.IsViewingCharacter">
+  IsViewingCharacter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsViewingCharacter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MissionStartedRendering_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MissionStartedRendering*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_MissionStartedRendering" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.MissionStartedRendering">
+  MissionStartedRendering()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MissionStartedRendering()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnActivate_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnActivate*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnActivate" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnActivate">
+  OnActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnDeactivate_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnDeactivate*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnDeactivate" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnDeactivate">
+  OnDeactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDeactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnEscape_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnEscape*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnEscape" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnEscape">
+  OnEscape()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEscape()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFinalize_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFinalize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFinalize" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFinalize">
+  OnFinalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnFinalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFocusChangeOnGameWindow_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFocusChangeOnGameWindow*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFocusChangeOnGameWindow_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFocusChangeOnGameWindow(System.Boolean)">
+  OnFocusChangeOnGameWindow(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFocusChangeOnGameWindow(bool focusGained)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>focusGained</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFrameTick_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFrameTick*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnFrameTick_System_Single_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnFrameTick(System.Single)">
+  OnFrameTick(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnFrameTick(float dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnInitialize_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnInitialize*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnInitialize" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnInitialize">
+  OnInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnMainAgentWeaponChanged_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnMainAgentWeaponChanged*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnMainAgentWeaponChanged" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnMainAgentWeaponChanged">
+  OnMainAgentWeaponChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMainAgentWeaponChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnResume_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnResume*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnResume" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnResume">
+  OnResume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnResume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_RegisterView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.RegisterView*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_RegisterView_TaleWorlds_MountAndBlade_View_MissionViews_MissionView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.RegisterView(TaleWorlds.MountAndBlade.View.MissionViews.MissionView)">
+  RegisterView(MissionView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterView(MissionView missionView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missionView</code> <a class="xref" href="TaleWorlds.MountAndBlade.View.MissionViews.MissionView.html">MissionView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_ScreenPointToWorldRay_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.ScreenPointToWorldRay*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_ScreenPointToWorldRay_TaleWorlds_Library_Vec2_TaleWorlds_Library_Vec3__TaleWorlds_Library_Vec3__" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.ScreenPointToWorldRay(TaleWorlds.Library.Vec2,TaleWorlds.Library.Vec3@,TaleWorlds.Library.Vec3@)">
+  ScreenPointToWorldRay(Vec2, out Vec3, out Vec3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScreenPointToWorldRay(Vec2 screenPoint, out Vec3 rayBegin, out Vec3 rayEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPoint</code> <a class="xref" href="../core/TaleWorlds.Library.Vec2.html">Vec2</a></dt>
+    <dd></dd>
+    <dt><code>rayBegin</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+    <dt><code>rayEnd</code> <a class="xref" href="../core/TaleWorlds.Library.Vec3.html">Vec3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetAgentToFollow_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetAgentToFollow*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetAgentToFollow_TaleWorlds_MountAndBlade_Agent_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetAgentToFollow(TaleWorlds.MountAndBlade.Agent)">
+  SetAgentToFollow(Agent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAgentToFollow(Agent agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="../core/TaleWorlds.MountAndBlade.Agent.html">Agent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCameraLockState_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCameraLockState*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCameraLockState_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCameraLockState(System.Boolean)">
+  SetCameraLockState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCameraLockState(bool isLocked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isLocked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCameraPosition_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCameraPosition*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCameraPosition_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCameraPosition(System.Collections.Generic.List{System.String})">
+  SetCameraPosition(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SetCameraPosition(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetConversationActive_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetConversationActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetConversationActive_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetConversationActive(System.Boolean)">
+  SetConversationActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConversationActive(bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCustomAgentListToSpectateGatherer_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCustomAgentListToSpectateGatherer*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetCustomAgentListToSpectateGatherer_TaleWorlds_MountAndBlade_View_Screens_MissionScreen_GatherCustomAgentListToSpectateDelegate_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetCustomAgentListToSpectateGatherer(TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GatherCustomAgentListToSpectateDelegate)">
+  SetCustomAgentListToSpectateGatherer(GatherCustomAgentListToSpectateDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomAgentListToSpectateGatherer(MissionScreen.GatherCustomAgentListToSpectateDelegate gatherer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gatherer</code> <a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.html">MissionScreen</a>.<a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.GatherCustomAgentListToSpectateDelegate.html">GatherCustomAgentListToSpectateDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetDisplayDialog_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetDisplayDialog*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetDisplayDialog_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetDisplayDialog(System.Boolean)">
+  SetDisplayDialog(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetDisplayDialog(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetExtraCameraParameters_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetExtraCameraParameters*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetExtraCameraParameters_System_Boolean_System_Single_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetExtraCameraParameters(System.Boolean,System.Single)">
+  SetExtraCameraParameters(bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExtraCameraParameters(bool newForceCanZoom, float newCameraRayCastStartingPointOffset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newForceCanZoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>newCameraRayCastStartingPointOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetFixedMissionCameraActive_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetFixedMissionCameraActive*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetFixedMissionCameraActive_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetFixedMissionCameraActive(System.Boolean)">
+  SetFixedMissionCameraActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFixedMissionCameraActive(bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetOrderFlagVisibility_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetOrderFlagVisibility*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetOrderFlagVisibility_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetOrderFlagVisibility(System.Boolean)">
+  SetOrderFlagVisibility(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrderFlagVisibility(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetPhotoModeEnabled_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetPhotoModeEnabled*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetPhotoModeEnabled_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetPhotoModeEnabled(System.Boolean)">
+  SetPhotoModeEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPhotoModeEnabled(bool isEnabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetPhotoModeRequiresMouse_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetPhotoModeRequiresMouse*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetPhotoModeRequiresMouse_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetPhotoModeRequiresMouse(System.Boolean)">
+  SetPhotoModeRequiresMouse(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPhotoModeRequiresMouse(bool isRequired)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isRequired</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetRadialMenuActiveState_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetRadialMenuActiveState*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetRadialMenuActiveState_System_Boolean_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetRadialMenuActiveState(System.Boolean)">
+  SetRadialMenuActiveState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRadialMenuActiveState(bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetShiftCameraSpeed_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetShiftCameraSpeed*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_SetShiftCameraSpeed_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.SetShiftCameraSpeed(System.Collections.Generic.List{System.String})">
+  SetShiftCameraSpeed(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SetShiftCameraSpeed(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_ToggleFixedMissionCamera_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.ToggleFixedMissionCamera*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_ToggleFixedMissionCamera_System_Collections_Generic_List_System_String__" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.ToggleFixedMissionCamera(System.Collections.Generic.List{System.String})">
+  ToggleFixedMissionCamera(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToggleFixedMissionCamera(List&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_UnregisterView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.UnregisterView*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_UnregisterView_TaleWorlds_MountAndBlade_View_MissionViews_MissionView_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.UnregisterView(TaleWorlds.MountAndBlade.View.MissionViews.MissionView)">
+  UnregisterView(MissionView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterView(MissionView missionView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>missionView</code> <a class="xref" href="TaleWorlds.MountAndBlade.View.MissionViews.MissionView.html">MissionView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_UpdateFreeCamera_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.UpdateFreeCamera*"></a>
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_UpdateFreeCamera_TaleWorlds_Library_MatrixFrame_" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.UpdateFreeCamera(TaleWorlds.Library.MatrixFrame)">
+  UpdateFreeCamera(MatrixFrame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFreeCamera(MatrixFrame frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="../core/TaleWorlds.Library.MatrixFrame.html">MatrixFrame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnSpectateAgentFocusIn" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnSpectateAgentFocusIn">
+  OnSpectateAgentFocusIn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event MissionScreen.OnSpectateAgentDelegate OnSpectateAgentFocusIn</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.html">MissionScreen</a>.<a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnSpectateAgentDelegate.html">OnSpectateAgentDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TaleWorlds_MountAndBlade_View_Screens_MissionScreen_OnSpectateAgentFocusOut" data-uid="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnSpectateAgentFocusOut">
+  OnSpectateAgentFocusOut
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event MissionScreen.OnSpectateAgentDelegate OnSpectateAgentFocusOut</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.html">MissionScreen</a>.<a class="xref" href="TaleWorlds.MountAndBlade.View.Screens.MissionScreen.OnSpectateAgentDelegate.html">OnSpectateAgentDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+<hr><div class="last-modified"><p>This page was last modified at 03/22/2024 16:10:28 +00:00 (UTC).</p></div></article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2020-2024 Bannerlord's Unofficial Tools & Resources
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
