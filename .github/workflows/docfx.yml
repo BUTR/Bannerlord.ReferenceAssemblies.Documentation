@@ -31,7 +31,7 @@ jobs:
       run: >-
           $game_version=$env:GAME_VERSION;
           $game_version=$game_version.substring(1);
-          dotnet run -p build/PackageDownloader -- -v $game_version -t $PWD -f https://api.nuget.org/v3/index.json;
+          dotnet run --project build/PackageDownloader -- -v $game_version -t $PWD -f https://api.nuget.org/v3/index.json;
       shell: pwsh
       env:
         GAME_VERSION: ${{vars.GAME_VERSION_STABLE}}
