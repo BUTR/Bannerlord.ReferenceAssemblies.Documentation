@@ -278,9 +278,11 @@ jobs:
       if: steps.fp.outputs.changed == 'true'
       # Paths are relative because the deploy key is confined by rrsync, which
       # anchors every path to its own root. There is no absolute path to set.
+      # rrsync also allows one session at a time per user; the wrapper script
+      # waits and retries when another job's upload holds it.
       run: |
         V="${{ steps.ver.outputs.version }}"
-        rsync -a --delete \
+        bash build/rsync-retry.sh -a --delete \
           -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" \
           docs/_site/ "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}:v/$V/"
       shell: bash
@@ -359,7 +361,7 @@ jobs:
           | jq -sc --arg latest "$latest" --arg stable "$stable" --arg beta "$beta" \
               '{latest: $latest, stable: $stable, beta: $beta, versions: .}' > versions.json
         cat versions.json
-        rsync -a -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" versions.json "$TARGET:versions.json"
+        bash build/rsync-retry.sh -a -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" versions.json "$TARGET:versions.json"
 
         # A silent failure here would leave the picker permanently hidden, so
         # confirm the file is actually reachable before calling the run good.
