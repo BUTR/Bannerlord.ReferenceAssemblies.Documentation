@@ -112,7 +112,10 @@ jobs:
     if: ${{ needs.plan.outputs.versions != '[]' && inputs.dry-run != true }}
     strategy:
       fail-fast: false
-      max-parallel: ${{ inputs.max-parallel }}
+      # A `number` input reaches the strategy block as the string "4", which
+      # max-parallel rejects ("Unexpected value '4'"). fromJSON turns it back
+      # into a number.
+      max-parallel: ${{ fromJSON(inputs.max-parallel) }}
       matrix:
         version: ${{ fromJson(needs.plan.outputs.versions) }}
     uses: ./.github/workflows/docfx.yml
