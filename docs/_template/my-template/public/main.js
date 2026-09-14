@@ -33,7 +33,8 @@ function go(version) {
 
 function build(manifest) {
   const versions = manifest.versions || []
-  if (versions.length < 2) return null
+  // One entry is still worth rendering: it names the version being read.
+  if (versions.length < 1) return null
 
   const wrap = document.createElement('div')
   wrap.className = 'version-picker'

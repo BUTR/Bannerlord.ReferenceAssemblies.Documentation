@@ -262,7 +262,10 @@ jobs:
         if [ "${{ steps.publish.outcome }}" = "success" ]; then
           latest="${{ steps.ver.outputs.version }}"
         else
-          latest="${keep:-}"
+          # The host knows what /latest points at, but the wrapper exposes no verb
+          # for it. Keep whatever the live manifest recorded; failing that, assume
+          # the newest published version. A real publish overwrites the guess.
+          latest="${keep:-$(for v in $published; do echo "$v"; done | head -1)}"
         fi
 
         for v in $published; do echo "$v"; done | jq -R . | jq -sc "{latest: \"$latest\", versions: .}" > versions.json
