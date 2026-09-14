@@ -222,6 +222,7 @@ jobs:
       shell: bash
 
     - name: Publish as latest
+      id: publish
       # set-latest is only defined for workflow_dispatch. On push and
       # repository_dispatch it is an empty string, which GitHub coerces to 0 --
       # the same as false -- so `!= false` would silently skip publishing on
@@ -234,6 +235,40 @@ jobs:
         ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
           "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" publish "$V"
         echo "published v$V as latest"
+      shell: bash
+
+    - name: Update version manifest
+      if: steps.fp.outputs.changed == 'true'
+      # The picker reads this at run time, which is what lets a version built
+      # today appear in the dropdown of one built two years ago. Rebuilt from
+      # server state on every deploy, so it is self-healing: a backfill job that
+      # dies before this step is corrected by the next one.
+      run: |
+        SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 -o BatchMode=yes"
+        SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=60"
+        TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
+
+        published=
+        for v in $(curl -sS --max-time 60 \
+              https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.core/index.json \
+            | jq -r '.versions[]' | sed 's/-.*//' \
+            | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac); do
+          if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
+            published="$published $v"
+          fi
+        done
+        $SSH -O exit "$TARGET" 2>/dev/null || true
+
+        keep=$(curl -sS --max-time 20 "${{ env.SITE_ORIGIN }}/versions.json" 2>/dev/null | jq -r ".latest // empty" || true)
+        if [ "${{ steps.publish.outcome }}" = "success" ]; then
+          latest="${{ steps.ver.outputs.version }}"
+        else
+          latest="${keep:-}"
+        fi
+
+        for v in $published; do echo "$v"; done | jq -R . | jq -sc "{latest: \"$latest\", versions: .}" > versions.json
+        cat versions.json
+        rsync -a -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" versions.json "$TARGET:versions.json"
       shell: bash
 
     - name: Verify

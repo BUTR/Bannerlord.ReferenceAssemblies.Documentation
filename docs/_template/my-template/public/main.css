@@ -1,0 +1,22 @@
+/* Version picker in the navbar. Sits next to the search box and shrinks out of
+   the way on narrow screens, where the navbar collapses into a panel. */
+.version-picker {
+  display: inline-flex;
+  align-items: center;
+  margin-right: .75rem;
+}
+
+.version-picker select {
+  width: auto;
+  min-width: 9rem;
+}
+
+@media (max-width: 767.98px) {
+  .version-picker {
+    margin: .5rem 0;
+    width: 100%;
+  }
+  .version-picker select {
+    width: 100%;
+  }
+}
