@@ -19,8 +19,17 @@ appear, and some are removed again.
 
 {{SECTIONS}}
 
-An assembly that ships in more than one package is documented once. The Server
-and ModdingKit sections therefore cover only what no other section already does.
+Every assembly is documented once, in the section of the first package that
+ships it. The Server and ModdingKit sections therefore list only assemblies no
+client package contains.
+
+The dedicated server and the Modding Kit are separate builds of the game, and a
+few of their assemblies expose members the client build does not. Those members
+are folded into the shared pages, so a type page shows the union of what the
+client, the server and the editor build offer. The assemblies this applied to
+in {{GAME_VERSION}}:
+
+{{MERGED}}
 
 Platform integration assemblies (Steam, Epic, GOG, BattleEye), generated
 GauntletUI code, and test assemblies are left out.

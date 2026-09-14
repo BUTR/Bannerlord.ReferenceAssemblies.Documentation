@@ -5,8 +5,8 @@ on:
     branches: [ dev ]
     paths:
       - '.github/workflows/docfx.yml'
+      - 'build/**'
       - 'docs/**'
-      - 'deploy/**'
   repository_dispatch:
     types: [game_version_update, game_version_update_patch]
   workflow_call:
@@ -21,11 +21,11 @@ on:
       set-latest:
         required: false
         type: boolean
-        default: true
+        default: false
   workflow_dispatch:
     inputs:
       game-version:
-        description: 'Game version to build, e.g. 1.5.2. Defaults to the GAME_VERSION_STABLE variable.'
+        description: 'Game version to build, e.g. 1.5.2. Defaults to the stable and beta channels.'
         required: false
         type: string
       force:
@@ -34,10 +34,10 @@ on:
         type: boolean
         default: false
       set-latest:
-        description: 'Publish this version as /latest after deploying'
+        description: 'Publish as /latest even when this is not the stable version (needs an explicit game-version)'
         required: false
         type: boolean
-        default: true
+        default: false
 
 env:
   DOTNET_NOLOGO: true
@@ -46,50 +46,99 @@ env:
   SITE_ORIGIN: https://bannerlordapi.butr.link
   DOCS_PORT: ${{ vars.DOCS_PORT || 22 }}
 
-concurrency:
-  # Per version. A constant group would serialise the backfill matrix and,
-  # worse, cancel it: GitHub keeps only one run pending per group, so each
-  # newly queued version would evict the one waiting. Different versions
-  # write to different /v/<version>/ trees, so they do not conflict.
-  group: docfx-deploy-${{ inputs.game-version || vars.GAME_VERSION_STABLE }}
-  cancel-in-progress: false
-
 jobs:
-  docfx:
-    name: DocFX documentation
+  plan:
+    name: Choose versions
     runs-on: ubuntu-latest
+    outputs:
+      versions: ${{ steps.pick.outputs.versions }}
+    steps:
+    - name: Pick the versions to build
+      id: pick
+      # An explicit game-version (workflow_dispatch, or the backfill calling in)
+      # builds exactly that. Otherwise both channels are built: the dispatch from
+      # the .github repo fires for stable and beta bumps alike, and the beta
+      # channel used to be labelled in the manifest but never built.
+      #
+      # Versions are normalised here (leading v stripped, charset checked) so the
+      # per-version concurrency group below sees one spelling. The deploy wrapper
+      # accepts [A-Za-z0-9][A-Za-z0-9._-]* only; failing here beats failing at the
+      # end of a 15 minute build.
+      run: |
+        norm() {
+          v="${1#v}"
+          case "$v" in
+            "") return 1 ;;
+            [!A-Za-z0-9]*) echo "::error::Version '$v' must start with an alphanumeric character" >&2; exit 1 ;;
+            *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -" >&2; exit 1 ;;
+          esac
+          echo "$v"
+        }
+        list=
+        if [ -n "${{ inputs.game-version }}" ]; then
+          list="$(norm "${{ inputs.game-version }}")"
+        else
+          stable="$(norm "${{ vars.GAME_VERSION_STABLE }}" || true)"
+          beta="$(norm "${{ vars.GAME_VERSION_BETA }}" || true)"
+          [ -n "$stable" ] || { echo "::error::No game version given and GAME_VERSION_STABLE is empty"; exit 1; }
+          list="$stable"
+          [ -n "$beta" ] && [ "$beta" != "$stable" ] && list="$list $beta"
+        fi
+        json=$(printf '%s\n' $list | jq -R . | jq -sc .)
+        echo "versions=$json" >> "$GITHUB_OUTPUT"
+        echo "building: $list"
+      shell: bash
+
+  docfx:
+    name: DocFX ${{ matrix.version }}
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        version: ${{ fromJson(needs.plan.outputs.versions) }}
+    concurrency:
+      # Per version. A constant group would serialise the backfill matrix and,
+      # worse, cancel it: GitHub keeps only one run pending per group, so each
+      # newly queued version would evict the one waiting. Different versions
+      # write to different /v/<version>/ trees, so they do not conflict.
+      group: docfx-deploy-${{ matrix.version }}
+      cancel-in-progress: false
     steps:
     - name: DocFX Setup
       uses: butr/actions-docfx-setup@v4
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
 
+    - name: .NET SDK for the PackageDownloader
+      # The setup action installs 8.x; the downloader targets net10.0 and used to
+      # build only because the runner image happens to preinstall it.
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+
     - name: Resolve game version
       id: ver
       run: |
-        v="${{ inputs.game-version }}"
-        [ -z "$v" ] && v="${{ vars.GAME_VERSION_STABLE }}"
-        v="${v#v}"
-        [ -n "$v" ] || { echo "::error::No game version given and GAME_VERSION_STABLE is empty"; exit 1; }
-        # The deploy wrapper accepts [A-Za-z0-9][A-Za-z0-9._-]* only. Fail here
-        # with a clear message rather than at the end of a 15 minute build.
-        case "$v" in
-          [A-Za-z0-9]*) : ;;
-          *) echo "::error::Version '$v' must start with an alphanumeric character"; exit 1 ;;
-        esac
-        case "$v" in
-          *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -"; exit 1 ;;
-        esac
+        v="${{ matrix.version }}"
         echo "version=$v" >> "$GITHUB_OUTPUT"
+        # /latest is defined as the stable channel, so the publish step keys off
+        # this rather than off a default-on input. A manually dispatched old version
+        # then cannot repoint the whole site by accident.
+        st="${{ vars.GAME_VERSION_STABLE }}"; st="${st#v}"
+        [ "$v" = "$st" ] && echo "is-stable=true" >> "$GITHUB_OUTPUT" || echo "is-stable=false" >> "$GITHUB_OUTPUT"
+        echo "stable channel: ${st:-unset}"
         echo "Target game version: $v"
       shell: bash
 
     - name: Check deploy configuration
+      env:
+        DOCS_SSH_KEY: ${{ secrets.DOCS_SSH_KEY }}
       run: |
         miss=
         [ -n "${{ vars.DOCS_HOST }}" ] || miss="$miss DOCS_HOST"
         [ -n "${{ vars.DOCS_USER }}" ] || miss="$miss DOCS_USER"
-        [ -n "${{ secrets.DOCS_SSH_KEY }}" ] || miss="$miss DOCS_SSH_KEY"
+        [ -n "$DOCS_SSH_KEY" ] || miss="$miss DOCS_SSH_KEY"
         [ -n "${{ vars.DOCS_KNOWN_HOSTS }}" ] || miss="$miss DOCS_KNOWN_HOSTS"
         if [ -n "$miss" ]; then
           echo "::error::Missing deploy configuration:$miss"
@@ -101,54 +150,64 @@ jobs:
     - name: Configure SSH
       # The host key is pinned from a variable. ssh-keyscan at run time would be
       # trust-on-first-use on every run, which authenticates nothing.
+      env:
+        DOCS_SSH_KEY: ${{ secrets.DOCS_SSH_KEY }}
+        DOCS_KNOWN_HOSTS: ${{ vars.DOCS_KNOWN_HOSTS }}
       run: |
         install -d -m 700 ~/.ssh
-        printf '%s\n' "${{ secrets.DOCS_SSH_KEY }}" > ~/.ssh/id_ed25519
+        printf '%s\n' "$DOCS_SSH_KEY" > ~/.ssh/id_ed25519
         chmod 600 ~/.ssh/id_ed25519
-        printf '%s\n' "${{ vars.DOCS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+        printf '%s\n' "$DOCS_KNOWN_HOSTS" > ~/.ssh/known_hosts
         chmod 644 ~/.ssh/known_hosts
       shell: bash
 
     - name: Download ref packages
+      # Fails if Core has no build for this version; other packages are optional
+      # because the module set differs between game versions. Also writes
+      # game/api-surface.json, which the generator uses to fold server- and
+      # editor-only members into the shared pages.
       run: >-
-        dotnet run --project build/PackageDownloader --
+        dotnet run --project build/PackageDownloader -c Release --
         -v ${{ steps.ver.outputs.version }}
         -t "$PWD"
-        -f https://api.nuget.org/v3/index.json
       shell: bash
 
     - name: Generate DocFX config for this version
       # The module set changes between game versions: Multiplayer only exists
       # from 1.2, DedicatedCustomServerHelper disappears after 1.1, FastMode
-      # exists only for 1.3 and 1.4. Both docfx-meta.json and api/toc.yml are
-      # therefore derived from the packages that were actually downloaded,
+      # exists only for 1.3 and 1.4. docfx-meta.json, api/toc.yml and index.md
+      # are therefore derived from the packages that were actually downloaded,
       # rather than checked in for one version and wrong for the other 49.
-      # The landing page is filled in from index.template.md the same way, so
-      # it can name the game version and package build it came from.
-      run: python3 build/generate-docfx-config.py game docs ${{ env.SITE_ORIGIN }}
+      run: >-
+        python3 build/generate-docfx-config.py game docs
+        --version ${{ steps.ver.outputs.version }}
+        --site ${{ env.SITE_ORIGIN }}
       shell: bash
 
     - name: Decide whether a rebuild is needed
       id: fp
       # A published version is immutable unless one of three things changes: the
-      # game shipped a new build under the same x.y.z (a hotfix), the articles or
-      # DocFX config changed, or the toolchain changed. Otherwise the output
-      # reproduces byte for byte. The dispatch from the .github repo fires several
-      # times a day, so this is the difference between a few builds a year and a
-      # few a day.
+      # game shipped a new build under the same x.y.z (a hotfix), the docs or the
+      # build tooling changed, or DocFX changed. Otherwise the output reproduces
+      # byte for byte. The dispatch from the .github repo fires several times a
+      # day, so this is the difference between a few builds a year and a few a day.
       run: |
         V="${{ steps.ver.outputs.version }}"
         SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 ${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
         pkgs=$(find game -mindepth 2 -maxdepth 2 -type d | sed 's|^game/||' | sort | sha256sum | cut -c1-16)
         docs=$(git rev-parse "HEAD:docs")
-        gen=$(git hash-object build/generate-docfx-config.py)
+        build=$(git rev-parse "HEAD:build")
         tool=$(docfx --version 2>/dev/null | head -1 | tr -d ' ')
-        fp="pkgs=$pkgs docs=$docs gen=${gen:0:12} docfx=$tool"
+        fp="pkgs=$pkgs docs=${docs:0:12} build=${build:0:12} docfx=$tool"
         printf '%s' "$fp" > fingerprint.txt
         echo "fp=$fp" >> "$GITHUB_OUTPUT"
         echo "local  : $fp"
-        remote=$($SSH get-state "$V" || true)
-        echo "remote : ${remote:-<none>}"
+        if remote=$($SSH get-state "$V"); then
+          echo "remote : ${remote:-<none>}"
+        else
+          echo "::warning::Could not read the remote state for v$V; treating it as unpublished"
+          remote=
+        fi
         if [ "${{ inputs.force }}" = "true" ]; then
           echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> forced rebuild"
         elif [ "$remote" = "$fp" ]; then
@@ -162,8 +221,13 @@ jobs:
 
     - name: Run DocFX
       if: steps.fp.outputs.changed == 'true'
+      # Where a Server or ModdingKit copy of an assembly is merged into a section,
+      # DocFX logs one "Ignore duplicated member" warning per member the two
+      # copies share. That is the expected outcome of the merge, not a problem,
+      # and there are tens of thousands of them; keep them out of the log.
       run: |
-        docfx docs/docfx-meta.json
+        docfx docs/docfx-meta.json 2>&1 | { grep -v 'Ignore duplicated member' || true; }
+        test "${PIPESTATUS[0]}" -eq 0
         docfx docs/docfx-build.json
       shell: bash
 
@@ -178,6 +242,15 @@ jobs:
         -e '1a baseUrl: ${{ env.SITE_ORIGIN }}/v/${{ steps.ver.outputs.version }}/'
         -e '/^  (commentId|fullName|nameWithType): /d'
         docs/_site/xrefmap.yml
+      shell: bash
+
+    - name: Stamp version marker
+      if: steps.fp.outputs.changed == 'true'
+      # Lets anything read back which version /latest resolves to, by fetching
+      # /version.txt from the site root. The wrapper exposes no verb for the
+      # symlink, and guessing it is how a manifest ends up contradicting what
+      # the site actually serves.
+      run: echo "${{ steps.ver.outputs.version }}" > docs/_site/version.txt
       shell: bash
 
     - name: Compress for gzip_static
@@ -223,13 +296,15 @@ jobs:
 
     - name: Publish as latest
       id: publish
-      # set-latest is only defined for workflow_dispatch. On push and
-      # repository_dispatch it is an empty string, which GitHub coerces to 0 --
-      # the same as false -- so `!= false` would silently skip publishing on
-      # exactly the trigger that matters most.
+      # set-latest is only defined for workflow_dispatch and workflow_call. On
+      # push and repository_dispatch it is an empty string, which GitHub coerces
+      # to 0 -- the same as false -- so `!= false` would silently skip publishing
+      # on exactly the trigger that matters most. It is also only honoured with
+      # an explicit game-version: with both channels in the matrix it would
+      # otherwise publish whichever finished last.
       if: >-
         steps.fp.outputs.changed == 'true' &&
-        (github.event_name != 'workflow_dispatch' || inputs.set-latest)
+        (steps.ver.outputs.is-stable == 'true' || (inputs.set-latest && inputs.game-version != ''))
       run: |
         V="${{ steps.ver.outputs.version }}"
         ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
@@ -241,7 +316,8 @@ jobs:
       # The picker reads this at run time, which is what lets a version built
       # today appear in the dropdown of one built two years ago. Rebuilt from
       # server state on every deploy, so it is self-healing: a backfill job that
-      # dies before this step is corrected by the next one.
+      # dies before this step, or two parallel jobs racing on the upload, are
+      # corrected by the next deploy.
       run: |
         SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 -o BatchMode=yes"
         SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=60"
@@ -262,13 +338,26 @@ jobs:
         if [ "${{ steps.publish.outcome }}" = "success" ]; then
           latest="${{ steps.ver.outputs.version }}"
         else
-          # The host knows what /latest points at, but the wrapper exposes no verb
-          # for it. Keep whatever the live manifest recorded; failing that, assume
-          # the newest published version. A real publish overwrites the guess.
-          latest="${keep:-$(for v in $published; do echo "$v"; done | head -1)}"
+          # Ask the site which version /latest actually resolves to. Authoritative,
+          # and needs no wrapper verb. Older builds predate the marker, so fall back
+          # to whatever the live manifest already recorded rather than guessing.
+          served=$(curl -sS --max-time 20 "${{ env.SITE_ORIGIN }}/version.txt?cb=$RANDOM" 2>/dev/null | tr -d "[:space:]" || true)
+          case "$served" in [A-Za-z0-9]*) : ;; *) served= ;; esac
+          latest="${served:-$keep}"
         fi
 
-        for v in $published; do echo "$v"; done | jq -R . | jq -sc "{latest: \"$latest\", versions: .}" > versions.json
+        # Which version each channel is on. These org variables are the source of
+        # truth the dispatch mechanism already maintains, so the labels cannot drift
+        # from what the rest of the build system believes.
+        stable="${{ vars.GAME_VERSION_STABLE }}"; stable="${stable#v}"
+        beta="${{ vars.GAME_VERSION_BETA }}"; beta="${beta#v}"
+        echo "channels: stable=${stable:-none} beta=${beta:-none}"
+
+        # Values go in through --arg: $keep comes back from the live site, and a
+        # string spliced into the filter would be parsed as jq syntax.
+        for v in $published; do echo "$v"; done | jq -R . \
+          | jq -sc --arg latest "$latest" --arg stable "$stable" --arg beta "$beta" \
+              '{latest: $latest, stable: $stable, beta: $beta, versions: .}' > versions.json
         cat versions.json
         rsync -a -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" versions.json "$TARGET:versions.json"
 

@@ -32,7 +32,12 @@ function go(version) {
 }
 
 function build(manifest) {
-  const versions = manifest.versions || []
+  const versions = [...(manifest.versions || [])]
+  // A version can be deployed before the manifest lists it (a backfill job that
+  // has not reached the manifest step yet). Without this the select would show
+  // nothing at all for the page being read.
+  const current = currentVersion()
+  if (current && !versions.includes(current)) versions.unshift(current)
   // One entry is still worth rendering: it names the version being read.
   if (versions.length < 1) return null
 
@@ -50,13 +55,19 @@ function build(manifest) {
   select.className = 'form-select form-select-sm'
   select.title = 'Game version'
 
+  // Channel labels come from the same variables that drive the builds, so they
+  // cannot drift. Stable is checked first: when a channel has not moved on yet,
+  // both point at the same version and Stable is the more useful of the two.
+  const channel = v =>
+    v === manifest.stable ? ' (Stable)' : v === manifest.beta ? ' (Beta)' : ''
+
   for (const v of versions) {
     const opt = document.createElement('option')
     opt.value = v
-    opt.textContent = v === manifest.latest ? `v${v} (latest)` : `v${v}`
+    opt.textContent = `v${v}${channel(v)}`
     select.appendChild(opt)
   }
-  select.value = currentVersion() || manifest.latest || versions[0]
+  select.value = current || manifest.latest || manifest.stable || versions[0]
 
   select.addEventListener('change', () => go(select.value))
   wrap.appendChild(select)

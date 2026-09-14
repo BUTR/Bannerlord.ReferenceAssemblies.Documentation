@@ -1,181 +1,294 @@
 #!/usr/bin/env python3
-"""Generate docfx-meta.json and api/toc.yml from the packages actually downloaded.
+"""Generate docfx-meta.json, api/toc.yml and index.md from the packages actually downloaded.
 
 The module set is not stable across game versions. Multiplayer only appears at
 1.2, DedicatedCustomServerHelper disappears after 1.1, FastMode exists only for
 1.3 and 1.4, and NavalDLC / Server / ModdingKit are published for far fewer
 builds than Core. A config checked in for one version is wrong for the rest, so
-both files are generated per build from what is on disk.
+all three files are generated per build from what is on disk.
 
-Two package groups need more than a "**.dll" glob:
+Which file is fed to DocFX for each assembly:
 
-  Core          ships platform and generated assemblies that are deliberately
-                excluded from the documentation.
-  Server /      repackage the same TaleWorlds assemblies as the client packages.
-  ModdingKit    Documenting them wholesale would put the same type UIDs in three
-                places in the xrefmap, so only assemblies not already covered
-                elsewhere are emitted. That difference is computed here rather
-                than hard-coded, because it changes between versions too.
+  One copy per assembly.   Every package ships the same assembly under
+                           ref/netstandard2.0 and ref/net472 (the packager offers
+                           every netstandard assembly under net472 as well), and
+                           the Server package adds ref/net6.0. The public surface
+                           is identical between those copies, so netstandard2.0 is
+                           used and the other folders only supply what it lacks.
 
-It also fills in index.md from index.template.md, so the landing page can name
-the game version it was built from.
+  One section per assembly. Where two client packages ship the same assembly
+                           (CustomBattle and Multiplayer both carry
+                           TaleWorlds.MountAndBlade.Multiplayer) the first section
+                           in PRIMARY order owns it. Documenting it twice would put
+                           the same type UIDs in two places.
 
-Usage:  generate-docfx-config.py <game-dir> <docs-dir> [site-origin]
+  Server / ModdingKit      repackage the client assemblies, rebuilt for the
+                           dedicated server and the editor. Most are identical,
+                           but a few carry members the client build does not
+                           (server-only network state, editor-only scene tooling).
+                           DocFX unions the members of a class that appears in
+                           several assemblies of the same metadata item, so a
+                           differing copy is added to the owning section's
+                           assembly list rather than documented on its own. The
+                           result is one page per type with the full surface.
+                           Identical copies are skipped; that decision comes from
+                           game/api-surface.json, written by the PackageDownloader.
+                           Assemblies no client package ships at all get their own
+                           Server / ModdingKit section.
+
+  Executables count too.   Core ships a few managed .exe files (the launcher, the
+                           code generators), net472 only. DocFX reads them like
+                           any assembly. Ones with no public API at all (the code
+                           generators) are dropped, which the surface hash tells.
+
+  Excluded everywhere:     platform integration (Steam, Epic, GOG, BattleEye),
+                           generated GauntletUI code and test assemblies.
+
+Usage:  generate-docfx-config.py <game-dir> <docs-dir> --version <x.y.z> [--site <origin>]
 """
 
-import io
+import argparse
 import json
 import os
+import shutil
 import sys
 
 PREFIX = "bannerlord.referenceassemblies"
 
-# Package suffix -> (api/<dest>, TOC title). Order is the order in the TOC.
+# Package suffix -> (api/<dest>, TOC title). Order is both the TOC order and the
+# claim order: the first section listing an assembly documents it. Multiplayer
+# precedes CustomBattle so that TaleWorlds.MountAndBlade.Multiplayer lands in the
+# Multiplayer section whenever that package exists (1.2+), and falls back to
+# CustomBattle for the older versions that only shipped it there.
 PRIMARY = [
     ("core",                        "core",                        "Core API"),
     ("native",                      "native",                      "Native API"),
     ("sandbox",                     "sandbox",                     "SandBox API"),
     ("storymode",                   "storymode",                   "StoryMode API"),
+    ("multiplayer",                 "multiplayer",                 "Multiplayer API"),
     ("custombattle",                "custombattle",                "CustomBattle API"),
     ("birthanddeath",               "birthanddeath",               "BirthAndDeath API"),
     ("navaldlc",                    "navaldlc",                    "NavalDLC API"),
     ("fastmode",                    "fastmode",                    "FastMode API"),
-    ("multiplayer",                 "multiplayer",                 "Multiplayer API"),
     ("dedicatedcustomserverhelper", "dedicatedcustomserverhelper", "DedicatedCustomServerHelper API"),
 ]
 
-# Packages whose content overlaps the primaries; emitted as an explicit file list
-# of whatever they add that nothing above already documents.
+# Packages that repackage the client assemblies for another application.
 DERIVED = [
     ("server.core",     "server",     "Server API"),
     ("moddingkit.core", "moddingkit", "ModdingKit API"),
 ]
 
-CORE_EXCLUDES = [
-    "**/*.AutoGenerated*", "**/*.BattleEye*", "**/*.Steam*",
-    "**/*.Epic*", "**/*.GOG*", "**/*.Test*",
-]
+# Target framework folders in order of preference. Anything not listed is still
+# used, after these, for assemblies that exist nowhere else (Server ships six
+# net6.0-only assemblies).
+TFM_PREFERENCE = ["netstandard2.0", "net472"]
 
-# Applied to the derived packages so they cannot reintroduce what CORE_EXCLUDES
-# deliberately leaves out.
 EXCLUDED_MARKERS = (".AutoGenerated", ".BattleEye", ".Steam", ".Epic", ".GOG", ".Test")
 
+SURFACE_FILE = "api-surface.json"
 
-def assemblies(pkg_dir):
-    """Every .dll basename under a package directory, without the extension."""
-    found = set()
-    for root, _, files in os.walk(pkg_dir):
-        for f in files:
-            if f.endswith(".dll"):
-                found.add(f[:-4])
-    return found
+ASSEMBLY_EXTENSIONS = (".dll", ".exe")
+
+# sha256 of the empty string: the hash ApiSurface gives an assembly with no public types.
+EMPTY_SURFACE = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 
 def excluded(name):
     return any(m in name for m in EXCLUDED_MARKERS)
 
 
-def package_version(game):
-    """The reference assembly build the docs came from, e.g. 1.4.8.121216-beta."""
-    core = os.path.join(game, PREFIX + ".core")
-    if not os.path.isdir(core):
+def package_dir(game, suffix):
+    """game/<package>/<build>/ for the single build the downloader left, or None."""
+    pkg = os.path.join(game, PREFIX + "." + suffix)
+    if not os.path.isdir(pkg):
         return None
-    builds = sorted(d for d in os.listdir(core) if os.path.isdir(os.path.join(core, d)))
-    return builds[-1] if builds else None
+    builds = [d for d in os.listdir(pkg) if os.path.isdir(os.path.join(pkg, d))]
+    if not builds:
+        return None
+    if len(builds) > 1:
+        sys.exit("error: %s holds %d builds (%s); expected exactly one"
+                 % (pkg, len(builds), ", ".join(sorted(builds))))
+    return os.path.join(pkg, builds[0])
 
 
-def write_index(docs, toc, counts, pkg_version, site):
-    """Fill in index.template.md. Without a template, leave index.md alone."""
+def tfm_order(tfm):
+    if tfm in TFM_PREFERENCE:
+        return (0, TFM_PREFERENCE.index(tfm), tfm)
+    return (1, 0, tfm)
+
+
+def assemblies(build_dir):
+    """Assembly name -> path of the preferred copy, one per name.
+
+    Prefers ref/netstandard2.0, then ref/net472, then any other ref/<tfm> folder
+    in name order. Excluded assemblies are dropped here so that every caller sees
+    the same set.
+    """
+    ref = os.path.join(build_dir, "ref")
+    if not os.path.isdir(ref):
+        return {}
+    found = {}
+    for tfm in sorted(os.listdir(ref), key=tfm_order):
+        folder = os.path.join(ref, tfm)
+        if not os.path.isdir(folder):
+            continue
+        for f in sorted(os.listdir(folder)):
+            if f.endswith(ASSEMBLY_EXTENSIONS):
+                found.setdefault(f[:-4], os.path.join(folder, f))
+    return {n: p for n, p in found.items() if not excluded(n)}
+
+
+def load_surfaces(game):
+    """Relative dll path -> public surface hash, or None when the downloader did not write it."""
+    path = os.path.join(game, SURFACE_FILE)
+    if not os.path.isfile(path):
+        return None
+    with open(path, encoding="utf-8") as fh:
+        data = json.load(fh)
+    return {os.path.normpath(k): v for k, v in data.items()}
+
+
+def surface_of(surfaces, game, path):
+    return surfaces.get(os.path.normpath(os.path.relpath(path, game)))
+
+
+def docfx_path(docs, path):
+    """A path as docfx-meta.json (which lives in docs/) needs to see it."""
+    return os.path.relpath(path, docs).replace(os.sep, "/")
+
+
+def write_index(docs, sections, merged, pkg_version, game_version, site):
     template = os.path.join(docs, "index.template.md")
-    if not os.path.isfile(template) or not pkg_version:
-        return None
-    game_version = ".".join(pkg_version.split("-")[0].split(".")[:3])
+    if not os.path.isfile(template):
+        sys.exit("error: %s is missing; the landing page cannot be generated" % template)
 
     rows = ["| Section | Assemblies |", "|---|---|"]
-    for title, dest in toc:
-        rows.append("| %s | %d |" % (title, counts[dest]))
+    for s in sections:
+        rows.append("| %s | %d |" % (s["title"], s["own"]))
 
-    body = io.open(template, encoding="utf-8").read()
+    if merged:
+        merged_rows = ["| Assembly | Additional surface from |", "|---|---|"]
+        for name, sources in sorted(merged.items()):
+            merged_rows.append("| %s | %s |" % (name, ", ".join(sources)))
+        merged_text = "\n".join(merged_rows)
+    else:
+        merged_text = ("None for this version: every Server and ModdingKit copy has the same "
+                       "public surface as the client build.")
+
+    with open(template, encoding="utf-8") as fh:
+        body = fh.read()
     for token, value in (("{{GAME_VERSION}}", game_version),
                          ("{{PACKAGE_VERSION}}", pkg_version),
                          ("{{SECTIONS}}", "\n".join(rows)),
+                         ("{{MERGED}}", merged_text),
                          ("{{SITE}}", site.rstrip("/"))):
         body = body.replace(token, value)
 
-    with io.open(os.path.join(docs, "index.md"), "w", encoding="utf-8", newline="\n") as fh:
+    with open(os.path.join(docs, "index.md"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write(body)
-    return game_version
 
 
 def main():
-    if len(sys.argv) not in (3, 4):
-        sys.exit(__doc__)
-    game, docs = sys.argv[1], sys.argv[2]
-    site = sys.argv[3] if len(sys.argv) == 4 else "https://bannerlordapi.butr.link"
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("game", help="directory the PackageDownloader extracted the packages into")
+    ap.add_argument("docs", help="the DocFX project directory (holds docfx-build.json)")
+    ap.add_argument("--version", required=True, metavar="X.Y.Z",
+                    help="game version being built; it names the /v/<version>/ tree the site publishes")
+    ap.add_argument("--site", default="https://bannerlordapi.butr.link",
+                    help="site origin used in the xref instructions on the landing page")
+    args = ap.parse_args()
+    game, docs = args.game, args.docs
 
-    def pkg_path(suffix):
-        return os.path.join(game, PREFIX + "." + suffix)
+    core = package_dir(game, "core")
+    if core is None:
+        sys.exit("error: %s.core was not downloaded under %s; nothing can be built without it"
+                 % (PREFIX, game))
+    pkg_version = os.path.basename(core)
+    if ".".join(pkg_version.split("-")[0].split(".")[:3]) != args.version:
+        sys.exit("error: --version %s does not match the downloaded core package %s"
+                 % (args.version, pkg_version))
 
-    meta, toc, covered, counts = [], [], set(), {}
+    surfaces = load_surfaces(game)
+    if surfaces is None:
+        print("warning: %s not found; Server and ModdingKit copies of shared assemblies will not be merged"
+              % os.path.join(game, SURFACE_FILE), file=sys.stderr)
+        surfaces = {}
+
+    sections = []       # {"dest", "title", "files": [paths], "own": count of assemblies it documents}
+    owner = {}          # assembly name -> (dest, path)
 
     for suffix, dest, title in PRIMARY:
-        path = pkg_path(suffix)
-        if not os.path.isdir(path):
+        build_dir = package_dir(game, suffix)
+        if build_dir is None:
             continue
-        names = {a for a in assemblies(path) if not excluded(a)}
-        if not names:
-            continue          # metapackage, or everything in it is excluded
-        src = {"src": "../game/" + PREFIX + "." + suffix, "files": ["**.dll"]}
-        if suffix == "core":
-            src["exclude"] = list(CORE_EXCLUDES)
-        meta.append({"src": [src], "dest": "api/" + dest})
-        toc.append((title, dest))
-        counts[dest] = len(names)
-        covered |= names
+        files = []
+        for name, path in sorted(assemblies(build_dir).items()):
+            if name in owner:
+                continue      # another client package already documents it
+            if surface_of(surfaces, game, path) == EMPTY_SURFACE:
+                continue      # nothing public in it (the code generator executables)
+            owner[name] = (dest, path)
+            files.append(path)
+        if files:             # metapackage, or everything in it is excluded
+            sections.append({"dest": dest, "title": title, "files": files, "own": len(files)})
+
+    by_dest = {s["dest"]: s for s in sections}
+    merged = {}           # assembly name -> [titles of the derived packages whose copy was folded in]
 
     for suffix, dest, title in DERIVED:
-        path = pkg_path(suffix)
-        if not os.path.isdir(path):
+        build_dir = package_dir(game, suffix)
+        if build_dir is None:
             continue
-        extra = sorted(a for a in assemblies(path) if a not in covered and not excluded(a))
-        if not extra:
-            continue
-        meta.append({
-            "src": [{"src": "../game/" + PREFIX + "." + suffix,
-                     "files": ["**/" + a + ".dll" for a in extra]}],
-            "dest": "api/" + dest,
-        })
-        toc.append((title, dest))
-        counts[dest] = len(extra)
-        covered |= set(extra)
+        own = []
+        for name, path in sorted(assemblies(build_dir).items()):
+            if surface_of(surfaces, game, path) == EMPTY_SURFACE:
+                continue
+            if name not in owner:
+                own.append(path)
+                continue
+            owner_dest, owner_path = owner[name]
+            a, b = surface_of(surfaces, game, owner_path), surface_of(surfaces, game, path)
+            if a is None or b is None or a == b:
+                # Same public surface as the client build, or no data to tell: nothing
+                # to add, and doubling the extraction work blindly is not worth it.
+                continue
+            by_dest[owner_dest]["files"].append(path)
+            merged.setdefault(name, []).append(title)
+        if own:
+            sections.append({"dest": dest, "title": title, "files": own, "own": len(own)})
+            by_dest[dest] = sections[-1]
 
-    if not meta:
-        sys.exit("error: no reference assembly packages found under " + game)
+    if not sections:
+        sys.exit("error: no documentable assemblies found under " + game)
 
+    meta = [{"src": [{"files": [docfx_path(docs, p) for p in s["files"]]}], "dest": "api/" + s["dest"]}
+            for s in sections]
     with open(os.path.join(docs, "docfx-meta.json"), "w", encoding="utf-8", newline="\n") as fh:
         json.dump({"metadata": meta}, fh, indent=2)
         fh.write("\n")
 
     api = os.path.join(docs, "api")
     os.makedirs(api, exist_ok=True)
+    # Output of a previous run for another version would otherwise be picked up by
+    # the build glob. Only ever happens locally; CI starts clean.
+    keep = {s["dest"] for s in sections}
+    for d in os.listdir(api):
+        if os.path.isdir(os.path.join(api, d)) and d not in keep:
+            shutil.rmtree(os.path.join(api, d))
+            print("removed stale api/%s" % d)
     with open(os.path.join(api, "toc.yml"), "w", encoding="utf-8", newline="\n") as fh:
-        for i, (title, dest) in enumerate(toc):
-            if i:
-                fh.write("\n")
-            fh.write("- name: %s\n  href: %s/\n" % (title, dest))
+        fh.write("\n".join("- name: %s\n  href: %s/\n" % (s["title"], s["dest"]) for s in sections))
 
-    pkg = package_version(game)
-    gv = write_index(docs, toc, counts, pkg, site)
-    if gv:
-        print("index.md: game version %s (package %s)" % (gv, pkg))
-    print("%d sections:" % len(toc))
-    for title, dest in toc:
-        note = ""
-        for suffix, d, _ in DERIVED:
-            if d == dest:
-                n = len(next(m for m in meta if m["dest"] == "api/" + dest)["src"][0]["files"])
-                note = "  (%d assemblies not covered elsewhere)" % n
-        print("  %-34s api/%s%s" % (title, dest, note))
+    write_index(docs, sections, merged, pkg_version, args.version, args.site)
+
+    print("game version %s (package %s), %d sections:" % (args.version, pkg_version, len(sections)))
+    for s in sections:
+        extra = len(s["files"]) - s["own"]
+        note = "  (+%d merged from Server/ModdingKit)" % extra if extra else ""
+        print("  %-34s api/%-12s %3d assemblies%s" % (s["title"], s["dest"], s["own"], note))
+    for name, sources in sorted(merged.items()):
+        print("  merged %s <- %s" % (name, ", ".join(sources)))
 
 
 if __name__ == "__main__":
