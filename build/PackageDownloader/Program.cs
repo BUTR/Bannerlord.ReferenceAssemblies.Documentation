@@ -51,7 +51,7 @@ namespace PackageDownloader
                 var foundPackages = await packageLister.SearchAsync("Bannerlord.ReferenceAssemblies", new SearchFilter(true), 0, 50, _logger, _ct);
                 var packages = await foundPackages
                     .ToAsyncEnumerable()
-                    .SelectAwait(async package =>
+                    .Select(async (IPackageSearchMetadata package, CancellationToken _) =>
                     {
                         var versions = MaxVersions(finderPackageByIdResource.GetAllVersionsAsync(package.Identity.Id, sourceCacheContext, _logger, _ct));
                         var metadatas = GetMetadataAsync(versions, version => metadataResource.GetMetadataAsync(new PackageIdentity(package.Identity.Id, version), sourceCacheContext, _logger, _ct), _ct);

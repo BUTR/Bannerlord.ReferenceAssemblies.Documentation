@@ -5,17 +5,54 @@ on:
     branches: [ dev ]
     paths:
       - '.github/workflows/docfx.yml'
+      - 'docs/**'
+      - 'deploy/**'
   repository_dispatch:
     types: [game_version_update, game_version_update_patch]
+  workflow_call:
+    inputs:
+      game-version:
+        required: true
+        type: string
+      force:
+        required: false
+        type: boolean
+        default: false
+      set-latest:
+        required: false
+        type: boolean
+        default: true
   workflow_dispatch:
+    inputs:
+      game-version:
+        description: 'Game version to build, e.g. 1.5.2. Defaults to the GAME_VERSION_STABLE variable.'
+        required: false
+        type: string
+      force:
+        description: 'Rebuild even if nothing has changed since the last deploy'
+        required: false
+        type: boolean
+        default: false
+      set-latest:
+        description: 'Publish this version as /latest after deploying'
+        required: false
+        type: boolean
+        default: true
 
 env:
-  # Disable the .NET logo in the console output.
   DOTNET_NOLOGO: true
-  # Disable the .NET first time experience to skip caching NuGet packages and speed up the build.
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-  # Disable sending .NET CLI telemetry to Microsoft.
   DOTNET_CLI_TELEMETRY_OPTOUT: true
+  SITE_ORIGIN: https://bannerlordapi.butr.link
+  DOCS_PORT: ${{ vars.DOCS_PORT || 22 }}
+
+concurrency:
+  # Per version. A constant group would serialise the backfill matrix and,
+  # worse, cancel it: GitHub keeps only one run pending per group, so each
+  # newly queued version would evict the one waiting. Different versions
+  # write to different /v/<version>/ trees, so they do not conflict.
+  group: docfx-deploy-${{ inputs.game-version || vars.GAME_VERSION_STABLE }}
+  cancel-in-progress: false
 
 jobs:
   docfx:
@@ -27,25 +64,183 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Download latest ref packages
+    - name: Resolve game version
+      id: ver
+      run: |
+        v="${{ inputs.game-version }}"
+        [ -z "$v" ] && v="${{ vars.GAME_VERSION_STABLE }}"
+        v="${v#v}"
+        [ -n "$v" ] || { echo "::error::No game version given and GAME_VERSION_STABLE is empty"; exit 1; }
+        # The deploy wrapper accepts [A-Za-z0-9][A-Za-z0-9._-]* only. Fail here
+        # with a clear message rather than at the end of a 15 minute build.
+        case "$v" in
+          [A-Za-z0-9]*) : ;;
+          *) echo "::error::Version '$v' must start with an alphanumeric character"; exit 1 ;;
+        esac
+        case "$v" in
+          *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -"; exit 1 ;;
+        esac
+        echo "version=$v" >> "$GITHUB_OUTPUT"
+        echo "Target game version: $v"
+      shell: bash
+
+    - name: Check deploy configuration
+      run: |
+        miss=
+        [ -n "${{ vars.DOCS_HOST }}" ] || miss="$miss DOCS_HOST"
+        [ -n "${{ vars.DOCS_USER }}" ] || miss="$miss DOCS_USER"
+        [ -n "${{ secrets.DOCS_SSH_KEY }}" ] || miss="$miss DOCS_SSH_KEY"
+        [ -n "${{ vars.DOCS_KNOWN_HOSTS }}" ] || miss="$miss DOCS_KNOWN_HOSTS"
+        if [ -n "$miss" ]; then
+          echo "::error::Missing deploy configuration:$miss"
+          exit 1
+        fi
+        echo "deploy target: ${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }} (port $DOCS_PORT)"
+      shell: bash
+
+    - name: Configure SSH
+      # The host key is pinned from a variable. ssh-keyscan at run time would be
+      # trust-on-first-use on every run, which authenticates nothing.
+      run: |
+        install -d -m 700 ~/.ssh
+        printf '%s\n' "${{ secrets.DOCS_SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        printf '%s\n' "${{ vars.DOCS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+        chmod 644 ~/.ssh/known_hosts
+      shell: bash
+
+    - name: Download ref packages
       run: >-
-          $game_version=$env:GAME_VERSION;
-          $game_version=$game_version.substring(1);
-          dotnet run --project build/PackageDownloader -- -v $game_version -t $PWD -f https://api.nuget.org/v3/index.json;
-      shell: pwsh
-      env:
-        GAME_VERSION: ${{vars.GAME_VERSION_STABLE}}
+        dotnet run --project build/PackageDownloader --
+        -v ${{ steps.ver.outputs.version }}
+        -t "$PWD"
+        -f https://api.nuget.org/v3/index.json
+      shell: bash
+
+    - name: Generate DocFX config for this version
+      # The module set changes between game versions: Multiplayer only exists
+      # from 1.2, DedicatedCustomServerHelper disappears after 1.1, FastMode
+      # exists only for 1.3 and 1.4. Both docfx-meta.json and api/toc.yml are
+      # therefore derived from the packages that were actually downloaded,
+      # rather than checked in for one version and wrong for the other 49.
+      run: python3 build/generate-docfx-config.py game docs
+      shell: bash
+
+    - name: Decide whether a rebuild is needed
+      id: fp
+      # A published version is immutable unless one of three things changes: the
+      # game shipped a new build under the same x.y.z (a hotfix), the articles or
+      # DocFX config changed, or the toolchain changed. Otherwise the output
+      # reproduces byte for byte. The dispatch from the .github repo fires several
+      # times a day, so this is the difference between a few builds a year and a
+      # few a day.
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 ${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
+        pkgs=$(find game -mindepth 2 -maxdepth 2 -type d | sed 's|^game/||' | sort | sha256sum | cut -c1-16)
+        docs=$(git rev-parse "HEAD:docs")
+        gen=$(git hash-object build/generate-docfx-config.py)
+        tool=$(docfx --version 2>/dev/null | head -1 | tr -d ' ')
+        fp="pkgs=$pkgs docs=$docs gen=${gen:0:12} docfx=$tool"
+        printf '%s' "$fp" > fingerprint.txt
+        echo "fp=$fp" >> "$GITHUB_OUTPUT"
+        echo "local  : $fp"
+        remote=$($SSH get-state "$V" || true)
+        echo "remote : ${remote:-<none>}"
+        if [ "${{ inputs.force }}" = "true" ]; then
+          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> forced rebuild"
+        elif [ "$remote" = "$fp" ]; then
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "-> v$V is already published from these exact inputs; skipping"
+          echo "Skipped: v$V already published from these inputs." >> "$GITHUB_STEP_SUMMARY"
+        else
+          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> rebuilding"
+        fi
+      shell: bash
 
     - name: Run DocFX
-      run: >-
-        docfx docs/docfx-meta.json;
-        docfx docs/docfx-build.json;
-      shell: pwsh
+      if: steps.fp.outputs.changed == 'true'
+      run: |
+        docfx docs/docfx-meta.json
+        docfx docs/docfx-build.json
+      shell: bash
 
-    - name: Deploy DocFX
-      uses: crazy-max/ghaction-github-pages@v3
-      with:
-        target_branch: gh-pages
-        build_dir: docs/_site
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Post-process xrefmap
+      if: steps.fp.outputs.changed == 'true'
+      # baseUrl pins consumers to this exact game version, so a link from
+      # ButterLib/MCM keeps resolving after newer versions are published.
+      # The dropped fields are never used: Find() binary-searches on uid alone,
+      # and fullName/nameWithType are only read for ?displayProperty=.
+      run: >-
+        sed -i -E
+        -e '1a baseUrl: ${{ env.SITE_ORIGIN }}/v/${{ steps.ver.outputs.version }}/'
+        -e '/^  (commentId|fullName|nameWithType): /d'
+        docs/_site/xrefmap.yml
+      shell: bash
+
+    - name: Compress for gzip_static
+      if: steps.fp.outputs.changed == 'true'
+      # Text assets ship only as .gz; nginx serves them via `gzip_static always`.
+      # index.html is the exception -- nginx's index module stats the real file,
+      # so a plain copy has to stay for directory requests to resolve.
+      # -n omits the filename and mtime from the gzip header, so identical
+      # content produces identical bytes between builds.
+      run: |
+        cd docs/_site
+        before=$(du -sb . | cut -f1)
+        find . -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' \
+             -o -name '*.json' -o -name '*.yml' -o -name '*.svg' -o -name '*.map' \) \
+          -print0 | xargs -0 -r -P "$(nproc)" -n 64 gzip -9nk
+        find . -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' \
+             -o -name '*.json' -o -name '*.yml' -o -name '*.svg' -o -name '*.map' \) \
+          ! -name 'index.html' -print0 | xargs -0 -r rm -f
+        after=$(du -sb . | cut -f1)
+        echo "payload $(numfmt --to=iec $before) -> $(numfmt --to=iec $after)"
+        test -f index.html || { echo "::error::index.html was removed; directory requests would 404"; exit 1; }
+      shell: bash
+
+    - name: Deploy version
+      if: steps.fp.outputs.changed == 'true'
+      # Paths are relative because the deploy key is confined by rrsync, which
+      # anchors every path to its own root. There is no absolute path to set.
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        rsync -a --delete \
+          -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" \
+          docs/_site/ "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}:v/$V/"
+      shell: bash
+
+    - name: Record build fingerprint
+      if: steps.fp.outputs.changed == 'true'
+      # Written after the deploy, so a failed build never marks a version current.
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
+          "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" set-state "$V" < fingerprint.txt
+      shell: bash
+
+    - name: Publish as latest
+      # set-latest is only defined for workflow_dispatch. On push and
+      # repository_dispatch it is an empty string, which GitHub coerces to 0 --
+      # the same as false -- so `!= false` would silently skip publishing on
+      # exactly the trigger that matters most.
+      if: >-
+        steps.fp.outputs.changed == 'true' &&
+        (github.event_name != 'workflow_dispatch' || inputs.set-latest)
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
+          "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" publish "$V"
+        echo "published v$V as latest"
+      shell: bash
+
+    - name: Verify
+      if: steps.fp.outputs.changed == 'true'
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        for u in "${{ env.SITE_ORIGIN }}/healthz" "${{ env.SITE_ORIGIN }}/v/$V/index.html"; do
+          code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$u")
+          echo "  $code  $u"
+          [ "$code" = "200" ] || echo "::warning::$u returned $code"
+        done
+      shell: bash

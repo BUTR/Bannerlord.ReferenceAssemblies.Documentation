@@ -1,0 +1,122 @@
+name: Backfill documentation
+
+# Publishes documentation for game versions that have not been built yet.
+#
+# Run it repeatedly. Each run takes the next `count` versions that have no
+# recorded state on the docs host and builds those, so progress is resumable
+# and the run can be interrupted without losing anything. A version that is
+# already published is never picked up again.
+#
+# /latest is never touched here; the regular DocFX workflow owns that.
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many not-yet-published versions to build this run'
+        required: false
+        type: number
+        default: 5
+      max-parallel:
+        description: 'Versions to build at the same time'
+        required: false
+        type: number
+        default: 4
+      newest-first:
+        description: 'Work backwards from the newest version (off = oldest first)'
+        required: false
+        type: boolean
+        default: true
+      dry-run:
+        description: 'Only report what would be built'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  DOCS_PORT: ${{ vars.DOCS_PORT || 22 }}
+
+jobs:
+  plan:
+    name: Choose versions
+    runs-on: ubuntu-latest
+    outputs:
+      versions: ${{ steps.pick.outputs.versions }}
+      count: ${{ steps.pick.outputs.count }}
+    steps:
+      - name: Configure SSH
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "${{ secrets.DOCS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "${{ vars.DOCS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+        shell: bash
+
+      - name: Pick the next versions
+        id: pick
+        # Distinct x.y.z game versions come from the Core package index. The
+        # downloader already collapses builds to the highest one per x.y.z, so
+        # that is the right granularity here too.
+        #
+        # "Already published" means the host has a fingerprint for it. That is
+        # the same signal the build uses, so a version whose rsync landed but
+        # whose set-state did not is correctly treated as unfinished.
+        run: |
+          set -o pipefail
+          SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 -o BatchMode=yes -o ConnectTimeout=15"
+          SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=120"
+          TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
+
+          all=$(curl -sS --max-time 60 \
+                 https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.core/index.json \
+                | jq -r '.versions[]' \
+                | sed 's/-.*//' \
+                | awk -F. 'NF>=3 {print $1"."$2"."$3}' \
+                | sort -u -V)
+          [ -n "$all" ] || { echo "::error::Could not list versions from NuGet"; exit 1; }
+          if [ "${{ inputs.newest-first }}" != "false" ]; then
+            all=$(printf '%s\n' "$all" | tac)
+          fi
+          echo "$(printf '%s\n' "$all" | wc -l) distinct game versions on NuGet"
+
+          want=${{ inputs.count }}
+          missing=; have=0; n=0
+          for v in $all; do
+            if [ "$n" -ge "$want" ]; then break; fi
+            if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
+              have=$((have+1))
+              continue
+            fi
+            missing="$missing $v"
+            n=$((n+1))
+          done
+          $SSH -O exit "$TARGET" 2>/dev/null || true
+
+          echo "already published (scanned): $have"
+          echo "selected this run          : ${missing:-none}"
+          json=$(printf '%s\n' $missing | jq -R . | jq -sc .)
+          [ "$json" = '[""]' ] && json='[]'
+          echo "versions=$json" >> "$GITHUB_OUTPUT"
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          {
+            echo "Selected $n version(s): ${missing:-none}"
+            echo ""
+            echo "Already published among those scanned: $have"
+          } >> "$GITHUB_STEP_SUMMARY"
+        shell: bash
+
+  build:
+    name: Build ${{ matrix.version }}
+    needs: plan
+    if: ${{ needs.plan.outputs.versions != '[]' && inputs.dry-run != true }}
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ inputs.max-parallel }}
+      matrix:
+        version: ${{ fromJson(needs.plan.outputs.versions) }}
+    uses: ./.github/workflows/docfx.yml
+    with:
+      game-version: ${{ matrix.version }}
+      set-latest: false
+    secrets: inherit
