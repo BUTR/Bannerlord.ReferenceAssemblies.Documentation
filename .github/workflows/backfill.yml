@@ -27,6 +27,11 @@ on:
         required: false
         type: boolean
         default: true
+      include-published:
+        description: 'Also pick versions that are already published. The DocFX workflow rebuilds the ones whose inputs changed and skips the rest.'
+        required: false
+        type: boolean
+        default: false
       dry-run:
         description: 'Only report what would be built'
         required: false
@@ -62,6 +67,11 @@ jobs:
         # "Already published" means the host has a fingerprint for it. That is
         # the same signal the build uses, so a version whose rsync landed but
         # whose set-state did not is correctly treated as unfinished.
+        #
+        # With include-published, published versions are selected too. The DocFX
+        # workflow compares each one's fingerprint and only rebuilds those whose
+        # packages, docs or tooling changed, so this is how a fix in the pipeline
+        # is rolled out to every version already on the host.
         run: |
           set -o pipefail
           SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 -o BatchMode=yes -o ConnectTimeout=15"
@@ -86,7 +96,7 @@ jobs:
             if [ "$n" -ge "$want" ]; then break; fi
             if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
               have=$((have+1))
-              continue
+              [ "${{ inputs.include-published }}" = "true" ] || continue
             fi
             missing="$missing $v"
             n=$((n+1))

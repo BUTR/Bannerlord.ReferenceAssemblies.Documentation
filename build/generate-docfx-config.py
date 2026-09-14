@@ -153,9 +153,18 @@ def surface_of(surfaces, game, path):
     return surfaces.get(os.path.normpath(os.path.relpath(path, game)))
 
 
-def docfx_path(docs, path):
-    """A path as docfx-meta.json (which lives in docs/) needs to see it."""
-    return os.path.relpath(path, docs).replace(os.sep, "/")
+def docfx_src(docs, game):
+    """The `src` a metadata item needs so that its `files` can be game-relative.
+
+    DocFX's glob matcher does not resolve `..` segments inside `files`, so the
+    step out of docs/ has to happen in `src` (as the old hand-written config did)
+    and every file pattern is then relative to the game directory.
+    """
+    return os.path.relpath(game, docs).replace(os.sep, "/")
+
+
+def game_path(game, path):
+    return os.path.relpath(path, game).replace(os.sep, "/")
 
 
 def write_index(docs, sections, merged, pkg_version, game_version, site):
@@ -262,7 +271,8 @@ def main():
     if not sections:
         sys.exit("error: no documentable assemblies found under " + game)
 
-    meta = [{"src": [{"files": [docfx_path(docs, p) for p in s["files"]]}], "dest": "api/" + s["dest"]}
+    meta = [{"src": [{"src": docfx_src(docs, game), "files": [game_path(game, p) for p in s["files"]]}],
+             "dest": "api/" + s["dest"]}
             for s in sections]
     with open(os.path.join(docs, "docfx-meta.json"), "w", encoding="utf-8", newline="\n") as fh:
         json.dump({"metadata": meta}, fh, indent=2)

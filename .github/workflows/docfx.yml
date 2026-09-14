@@ -228,6 +228,12 @@ jobs:
       run: |
         docfx docs/docfx-meta.json 2>&1 | { grep -v 'Ignore duplicated member' || true; }
         test "${PIPESTATUS[0]}" -eq 0
+        # DocFX treats a file list that matches nothing as a warning and exits 0,
+        # and the site then ships with an empty API section. Every section in
+        # the generated config must have produced a TOC before the build runs.
+        for d in $(jq -r '.metadata[].dest' docs/docfx-meta.json); do
+          test -s "docs/$d/toc.yml" || { echo "::error::DocFX metadata produced nothing for $d"; exit 1; }
+        done
         docfx docs/docfx-build.json
       shell: bash
 
