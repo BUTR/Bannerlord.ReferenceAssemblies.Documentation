@@ -238,7 +238,6 @@ jobs:
       shell: bash
 
     - name: Update version manifest
-      if: steps.fp.outputs.changed == 'true'
       # The picker reads this at run time, which is what lets a version built
       # today appear in the dropdown of one built two years ago. Rebuilt from
       # server state on every deploy, so it is self-healing: a backfill job that
@@ -269,6 +268,12 @@ jobs:
         for v in $published; do echo "$v"; done | jq -R . | jq -sc "{latest: \"$latest\", versions: .}" > versions.json
         cat versions.json
         rsync -a -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" versions.json "$TARGET:versions.json"
+
+        # A silent failure here would leave the picker permanently hidden, so
+        # confirm the file is actually reachable before calling the run good.
+        code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "${{ env.SITE_ORIGIN }}/versions.json?cb=$RANDOM")
+        echo "GET /versions.json -> $code"
+        [ "$code" = "200" ] || { echo "::error::versions.json was uploaded but is not served ($code)"; exit 1; }
       shell: bash
 
     - name: Verify
