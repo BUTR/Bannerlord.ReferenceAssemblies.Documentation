@@ -26,6 +26,9 @@ namespace PackageDownloader
     /// A package that has no build for the requested version is reported and skipped; the module set
     /// differs between game versions, so that is normal. Core is the exception: without it there is
     /// nothing to document, so its absence is an error.
+    ///
+    /// The version follows the reference assemblies' own convention: "1.5.2" is the release build and
+    /// "e1.5.2" the early access build of the same number, which lives in the *.EarlyAccess packages.
     /// </summary>
     public static class Program
     {
@@ -56,11 +59,12 @@ namespace PackageDownloader
             if (parsed is not Parsed<DownloadOptions> { Value: var o })
                 return 1; // CommandLineParser already printed the usage text
 
-            if (!TryParseGameVersion(o.Version, out var wanted))
+            if (!TryParseGameVersion(o.Version, out var wanted, out var earlyAccess))
             {
-                Console.Error.WriteLine($"error: --version must be x.y.z, got '{o.Version}'");
+                Console.Error.WriteLine($"error: --version must be x.y.z or ex.y.z, got '{o.Version}'");
                 return 1;
             }
+            var packageSuffix = earlyAccess ? ".EarlyAccess" : "";
 
             var source = new PackageSource(o.FeedUrl, "Feed", true, false, false) { MaxHttpRequestsPerSource = 8 };
             if (!string.IsNullOrEmpty(o.FeedUser))
@@ -76,7 +80,7 @@ namespace PackageDownloader
             var missing = new List<string>();
             foreach (var suffix in Packages)
             {
-                var id = $"{Prefix}.{suffix}";
+                var id = $"{Prefix}.{suffix}{packageSuffix}";
                 var versions = await byId.GetAllVersionsAsync(id, cache, Logger, CancellationToken.None);
                 // Package versions are game version + changeset (1.4.8.119303[-beta]); the highest
                 // changeset for the requested x.y.z is the build the docs describe.
@@ -104,7 +108,7 @@ namespace PackageDownloader
 
             if (missing.Contains("Core"))
             {
-                Console.Error.WriteLine($"error: {Prefix}.Core has no build for {o.Version}; nothing can be documented");
+                Console.Error.WriteLine($"error: {Prefix}.Core{packageSuffix} has no build for {o.Version}; nothing can be documented");
                 return 2;
             }
 
@@ -115,10 +119,11 @@ namespace PackageDownloader
             return 0;
         }
 
-        private static bool TryParseGameVersion(string text, out Version version)
+        private static bool TryParseGameVersion(string text, out Version version, out bool earlyAccess)
         {
             version = default!;
-            var parts = text.TrimStart('v').Split('.');
+            earlyAccess = text.StartsWith('e');
+            var parts = (earlyAccess ? text[1..] : text.TrimStart('v')).Split('.');
             if (parts.Length != 3 || !parts.All(p => int.TryParse(p, out _)))
                 return false;
             version = new Version(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]));

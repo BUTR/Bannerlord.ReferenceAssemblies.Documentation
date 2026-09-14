@@ -8,12 +8,14 @@ NuGet packages. This is a community project by
 ## Which game version this is
 
 This copy documents game version **{{GAME_VERSION}}**, built from reference
-assembly package `{{PACKAGE_VERSION}}`.
+assembly package `{{PACKAGE_VERSION}}`. {{EDITION}}
 
-Each game version is published separately under `/v/<version>/` and keeps its
-URLs after newer versions ship. What the game contains changes between versions,
-so the list below describes {{GAME_VERSION}} rather than a fixed set: modules
-appear, and some are removed again.
+Each game version is published separately and keeps its URLs after newer
+versions ship. The paths follow the game's own naming: release builds live under
+`/v/<version>/` (`/v/1.5.2/`), early access builds under `/e/<version>/`
+(`/e/1.5.2/`). What the game contains changes between versions, so the list
+below describes {{GAME_VERSION}} rather than a fixed set: modules appear, and
+some are removed again.
 
 ## What is documented
 
@@ -31,14 +33,14 @@ in {{GAME_VERSION}}:
 
 {{MERGED}}
 
-Platform integration assemblies (Steam, Epic, GOG, BattleEye), generated
+Platform integration assemblies (Steam, Epic, GOG, BattlEye), generated
 GauntletUI code, and test assemblies are left out.
 
 ## Linking to this from your own documentation
 
 Add this version's xrefmap to your `docfx.json`:
 
-    "xref": [ "{{SITE}}/v/{{GAME_VERSION}}/xrefmap.yml" ]
+    "xref": [ "{{SITE}}/{{VERSION_PATH}}/xrefmap.yml" ]
 
 Game types can then be referenced by UID:
 

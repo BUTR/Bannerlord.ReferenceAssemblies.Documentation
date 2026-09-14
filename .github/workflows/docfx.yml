@@ -61,9 +61,10 @@ jobs:
       # channel used to be labelled in the manifest but never built.
       #
       # Versions are normalised here (leading v stripped, charset checked) so the
-      # per-version concurrency group below sees one spelling. The deploy wrapper
-      # accepts [A-Za-z0-9][A-Za-z0-9._-]* only; failing here beats failing at the
-      # end of a 15 minute build.
+      # per-version concurrency group below sees one spelling. A leading e is
+      # kept: e1.5.2 is the early access build, a different game from 1.5.2. The
+      # deploy wrapper accepts [A-Za-z0-9][A-Za-z0-9._-]* only; failing here beats
+      # failing at the end of a 15 minute build.
       run: |
         norm() {
           v="${1#v}"
@@ -122,6 +123,11 @@ jobs:
       run: |
         v="${{ matrix.version }}"
         echo "version=$v" >> "$GITHUB_OUTPUT"
+        # Paths follow the game's own naming: a release build 1.5.2 is served
+        # from v/1.5.2/, the early access build e1.5.2 from e/1.5.2/.
+        case "$v" in e*) p="e/${v#e}" ;; *) p="v/$v" ;; esac
+        echo "path=$p" >> "$GITHUB_OUTPUT"
+        echo "site path: /$p/"
         # /latest is defined as the stable channel, so the publish step keys off
         # this rather than off a default-on input. A manually dispatched old version
         # then cannot repoint the whole site by accident.
@@ -245,7 +251,7 @@ jobs:
       # and fullName/nameWithType are only read for ?displayProperty=.
       run: >-
         sed -i -E
-        -e '1a baseUrl: ${{ env.SITE_ORIGIN }}/v/${{ steps.ver.outputs.version }}/'
+        -e '1a baseUrl: ${{ env.SITE_ORIGIN }}/${{ steps.ver.outputs.path }}/'
         -e '/^  (commentId|fullName|nameWithType): /d'
         docs/_site/xrefmap.yml
       shell: bash
@@ -287,10 +293,9 @@ jobs:
       # rrsync also allows one session at a time per user; the wrapper script
       # waits and retries when another job's upload holds it.
       run: |
-        V="${{ steps.ver.outputs.version }}"
         bash build/rsync-retry.sh -a --delete \
           -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" \
-          docs/_site/ "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}:v/$V/"
+          docs/_site/ "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}:${{ steps.ver.outputs.path }}/"
       shell: bash
 
     - name: Record build fingerprint
@@ -309,9 +314,11 @@ jobs:
       # to 0 -- the same as false -- so `!= false` would silently skip publishing
       # on exactly the trigger that matters most. It is also only honoured with
       # an explicit game-version: with both channels in the matrix it would
-      # otherwise publish whichever finished last.
+      # otherwise publish whichever finished last. Early access builds are never
+      # /latest: the site root is the release line.
       if: >-
         steps.fp.outputs.changed == 'true' &&
+        !startsWith(steps.ver.outputs.version, 'e') &&
         (steps.ver.outputs.is-stable == 'true' || (inputs.set-latest && inputs.game-version != ''))
       run: |
         V="${{ steps.ver.outputs.version }}"
@@ -331,11 +338,19 @@ jobs:
         SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=60"
         TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
 
+        # Every version id that exists as a package, newest first: release x.y.z
+        # from the Core index, then early access ex.y.z from Core.EarlyAccess.
+        list_versions() {
+          for pkg in core core.earlyaccess; do
+            prefix=; [ "$pkg" = core.earlyaccess ] && prefix=e
+            curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$pkg/index.json" \
+              | jq -r '.versions[]' | sed 's/-.*//' \
+              | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac | sed "s/^/$prefix/"
+          done
+        }
+
         published=
-        for v in $(curl -sS --max-time 60 \
-              https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.core/index.json \
-            | jq -r '.versions[]' | sed 's/-.*//' \
-            | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac); do
+        for v in $(list_versions); do
           if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
             published="$published $v"
           fi
@@ -379,8 +394,7 @@ jobs:
     - name: Verify
       if: steps.fp.outputs.changed == 'true'
       run: |
-        V="${{ steps.ver.outputs.version }}"
-        for u in "${{ env.SITE_ORIGIN }}/healthz" "${{ env.SITE_ORIGIN }}/v/$V/index.html"; do
+        for u in "${{ env.SITE_ORIGIN }}/healthz" "${{ env.SITE_ORIGIN }}/${{ steps.ver.outputs.path }}/index.html"; do
           code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$u")
           echo "  $code  $u"
           [ "$code" = "200" ] || echo "::warning::$u returned $code"

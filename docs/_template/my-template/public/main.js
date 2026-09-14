@@ -5,25 +5,40 @@
 // therefore fetched at run time from /versions.json, which lives at the real site
 // root rather than inside any one version. That file is rewritten on every
 // deploy, so an old version's picker still offers the newest ones.
+//
+// Version ids follow the game's own naming: "1.5.2" is a release build and is
+// served from /v/1.5.2/, "e1.5.2" is the early access build of the same number
+// and is served from /e/1.5.2/.
 
 const MANIFEST = '/versions.json'
+const VERSION_PATH = /^\/(v|e)\/([^/]+)\//
+
+function isEarlyAccess(id) {
+  return id.startsWith('e')
+}
+
+// The site path a version id is served from, with a trailing slash.
+function rootOf(id) {
+  return isEarlyAccess(id) ? `/e/${id.slice(1)}/` : `/v/${id}/`
+}
 
 // Which version is being viewed. null means the page came from the site root,
 // which serves whatever /latest points at.
 function currentVersion() {
-  const m = location.pathname.match(/^\/v\/([^/]+)\//)
-  return m ? m[1] : null
+  const m = location.pathname.match(VERSION_PATH)
+  if (!m) return null
+  return m[1] === 'e' ? 'e' + m[2] : m[2]
 }
 
 // The path below the version prefix, e.g. "api/core/TaleWorlds.Core.html".
 function pathWithinVersion() {
-  const m = location.pathname.match(/^\/v\/[^/]+\/(.*)$/)
+  const m = location.pathname.match(/^\/(?:v|e)\/[^/]+\/(.*)$/)
   return m ? m[1] : location.pathname.replace(/^\//, '')
 }
 
 function go(version) {
-  const target = `/v/${version}/${pathWithinVersion()}`
-  const root = `/v/${version}/`
+  const root = rootOf(version)
+  const target = root + pathWithinVersion()
   // The module set differs between versions, so the page being viewed may not
   // exist in the one selected. Land on that version's home page, not a 404.
   fetch(target, { method: 'HEAD' })
@@ -61,11 +76,26 @@ function build(manifest) {
   const channel = v =>
     v === manifest.stable ? ' (Stable)' : v === manifest.beta ? ' (Beta)' : ''
 
-  for (const v of versions) {
+  const option = v => {
     const opt = document.createElement('option')
     opt.value = v
-    opt.textContent = `v${v}${channel(v)}`
-    select.appendChild(opt)
+    opt.textContent = isEarlyAccess(v) ? v : `v${v}${channel(v)}`
+    return opt
+  }
+
+  // Release and early access are separate lines of the game with overlapping
+  // numbers, so they get their own groups when both are present.
+  const release = versions.filter(v => !isEarlyAccess(v))
+  const early = versions.filter(isEarlyAccess)
+  if (release.length && early.length) {
+    for (const [name, list] of [['Release', release], ['Early access', early]]) {
+      const group = document.createElement('optgroup')
+      group.label = name
+      for (const v of list) group.appendChild(option(v))
+      select.appendChild(group)
+    }
+  } else {
+    for (const v of versions) select.appendChild(option(v))
   }
   select.value = current || manifest.latest || manifest.stable || versions[0]
 

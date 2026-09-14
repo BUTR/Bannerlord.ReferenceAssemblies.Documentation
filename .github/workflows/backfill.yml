@@ -27,6 +27,12 @@ on:
         required: false
         type: boolean
         default: true
+      editions:
+        description: 'Which line of the game to build: release (1.5.2), early access (e1.5.2), or both'
+        required: false
+        type: choice
+        options: [both, release, early-access]
+        default: both
       include-published:
         description: 'Also pick versions that are already published. The DocFX workflow rebuilds the ones whose inputs changed and skips the rest.'
         required: false
@@ -78,17 +84,21 @@ jobs:
           SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=120"
           TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
 
-          all=$(curl -sS --max-time 60 \
-                 https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.core/index.json \
-                | jq -r '.versions[]' \
-                | sed 's/-.*//' \
-                | awk -F. 'NF>=3 {print $1"."$2"."$3}' \
-                | sort -u -V)
+          # Version ids per edition: release x.y.z from the Core index, early
+          # access ex.y.z from Core.EarlyAccess. Each list is oldest first here;
+          # the order is applied per edition, release before early access.
+          versions_of() {
+            curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$1/index.json" \
+              | jq -r '.versions[]' | sed 's/-.*//' \
+              | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | sed "s/^/$2/"
+          }
+          order() { if [ "${{ inputs.newest-first }}" != "false" ]; then tac; else cat; fi; }
+          release=; early=
+          [ "${{ inputs.editions }}" = "early-access" ] || release=$(versions_of core "" | order)
+          [ "${{ inputs.editions }}" = "release" ] || early=$(versions_of core.earlyaccess e | order)
+          all=$(printf '%s\n%s\n' "$release" "$early" | sed '/^$/d')
           [ -n "$all" ] || { echo "::error::Could not list versions from NuGet"; exit 1; }
-          if [ "${{ inputs.newest-first }}" != "false" ]; then
-            all=$(printf '%s\n' "$all" | tac)
-          fi
-          echo "$(printf '%s\n' "$all" | wc -l) distinct game versions on NuGet"
+          echo "$(printf '%s\n' "$all" | wc -l) distinct game versions on NuGet (${{ inputs.editions }})"
 
           want=${{ inputs.count }}
           missing=; have=0; n=0
