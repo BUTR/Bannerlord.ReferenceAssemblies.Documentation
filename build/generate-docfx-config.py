@@ -17,9 +17,13 @@ Two package groups need more than a "**.dll" glob:
                 elsewhere are emitted. That difference is computed here rather
                 than hard-coded, because it changes between versions too.
 
-Usage:  generate-docfx-config.py <game-dir> <docs-dir>
+It also fills in index.md from index.template.md, so the landing page can name
+the game version it was built from.
+
+Usage:  generate-docfx-config.py <game-dir> <docs-dir> [site-origin]
 """
 
+import io
 import json
 import os
 import sys
@@ -71,15 +75,48 @@ def excluded(name):
     return any(m in name for m in EXCLUDED_MARKERS)
 
 
+def package_version(game):
+    """The reference assembly build the docs came from, e.g. 1.4.8.121216-beta."""
+    core = os.path.join(game, PREFIX + ".core")
+    if not os.path.isdir(core):
+        return None
+    builds = sorted(d for d in os.listdir(core) if os.path.isdir(os.path.join(core, d)))
+    return builds[-1] if builds else None
+
+
+def write_index(docs, toc, counts, pkg_version, site):
+    """Fill in index.template.md. Without a template, leave index.md alone."""
+    template = os.path.join(docs, "index.template.md")
+    if not os.path.isfile(template) or not pkg_version:
+        return None
+    game_version = ".".join(pkg_version.split("-")[0].split(".")[:3])
+
+    rows = ["| Section | Assemblies |", "|---|---|"]
+    for title, dest in toc:
+        rows.append("| %s | %d |" % (title, counts[dest]))
+
+    body = io.open(template, encoding="utf-8").read()
+    for token, value in (("{{GAME_VERSION}}", game_version),
+                         ("{{PACKAGE_VERSION}}", pkg_version),
+                         ("{{SECTIONS}}", "\n".join(rows)),
+                         ("{{SITE}}", site.rstrip("/"))):
+        body = body.replace(token, value)
+
+    with io.open(os.path.join(docs, "index.md"), "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(body)
+    return game_version
+
+
 def main():
-    if len(sys.argv) != 3:
+    if len(sys.argv) not in (3, 4):
         sys.exit(__doc__)
     game, docs = sys.argv[1], sys.argv[2]
+    site = sys.argv[3] if len(sys.argv) == 4 else "https://bannerlordapi.butr.link"
 
     def pkg_path(suffix):
         return os.path.join(game, PREFIX + "." + suffix)
 
-    meta, toc, covered = [], [], set()
+    meta, toc, covered, counts = [], [], set(), {}
 
     for suffix, dest, title in PRIMARY:
         path = pkg_path(suffix)
@@ -93,6 +130,7 @@ def main():
             src["exclude"] = list(CORE_EXCLUDES)
         meta.append({"src": [src], "dest": "api/" + dest})
         toc.append((title, dest))
+        counts[dest] = len(names)
         covered |= names
 
     for suffix, dest, title in DERIVED:
@@ -108,6 +146,7 @@ def main():
             "dest": "api/" + dest,
         })
         toc.append((title, dest))
+        counts[dest] = len(extra)
         covered |= set(extra)
 
     if not meta:
@@ -125,6 +164,10 @@ def main():
                 fh.write("\n")
             fh.write("- name: %s\n  href: %s/\n" % (title, dest))
 
+    pkg = package_version(game)
+    gv = write_index(docs, toc, counts, pkg, site)
+    if gv:
+        print("index.md: game version %s (package %s)" % (gv, pkg))
     print("%d sections:" % len(toc))
     for title, dest in toc:
         note = ""
