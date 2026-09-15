@@ -1,40 +1,11 @@
-// Version picker.
+// Version picker, and the hook for the comparison page.
 //
-// Every game version is built once and never rebuilt, so a list baked into the
-// HTML would only know about versions that existed on its build day. The list is
-// therefore fetched at run time from /versions.json, which lives at the real site
-// root rather than inside any one version. That file is rewritten on every
-// deploy, so an old version's picker still offers the newest ones.
-//
-// Version ids follow the game's own naming: "1.5.2" is a release build and is
-// served from /v/1.5.2/, "e1.5.2" is the early access build of the same number
-// and is served from /e/1.5.2/.
+// The picker lists every published version, fetched at run time from the site
+// root (see versions.js for why), and switches to the same page in another
+// version. compare.js diffs two versions' API on compare.html.
 
-const MANIFEST = '/versions.json'
-const VERSION_PATH = /^\/(v|e)\/([^/]+)\//
-
-function isEarlyAccess(id) {
-  return id.startsWith('e')
-}
-
-// The site path a version id is served from, with a trailing slash.
-function rootOf(id) {
-  return isEarlyAccess(id) ? `/e/${id.slice(1)}/` : `/v/${id}/`
-}
-
-// Which version is being viewed. null means the page came from the site root,
-// which serves whatever /latest points at.
-function currentVersion() {
-  const m = location.pathname.match(VERSION_PATH)
-  if (!m) return null
-  return m[1] === 'e' ? 'e' + m[2] : m[2]
-}
-
-// The path below the version prefix, e.g. "api/core/TaleWorlds.Core.html".
-function pathWithinVersion() {
-  const m = location.pathname.match(/^\/(?:v|e)\/[^/]+\/(.*)$/)
-  return m ? m[1] : location.pathname.replace(/^\//, '')
-}
+import { currentVersion, isEarlyAccess, labelOf, loadManifest, pathWithinVersion, rootOf } from './versions.js'
+import { installCompare } from './compare.js'
 
 function go(version) {
   const root = rootOf(version)
@@ -70,16 +41,10 @@ function build(manifest) {
   select.className = 'form-select form-select-sm'
   select.title = 'Game version'
 
-  // Channel labels come from the same variables that drive the builds, so they
-  // cannot drift. Stable is checked first: when a channel has not moved on yet,
-  // both point at the same version and Stable is the more useful of the two.
-  const channel = v =>
-    v === manifest.stable ? ' (Stable)' : v === manifest.beta ? ' (Beta)' : ''
-
   const option = v => {
     const opt = document.createElement('option')
     opt.value = v
-    opt.textContent = isEarlyAccess(v) ? v : `v${v}${channel(v)}`
+    opt.textContent = labelOf(v, manifest)
     return opt
   }
 
@@ -110,14 +75,18 @@ function install() {
 
   // A missing manifest, a single version, or a failed fetch leaves the navbar as
   // it was. The picker is an aid; it should never break the page.
-  fetch(MANIFEST, { cache: 'no-cache' })
-    .then(r => (r.ok ? r.json() : null))
+  loadManifest()
     .then(manifest => {
       if (!manifest) return
       const picker = build(manifest)
       if (picker) navbar.insertBefore(picker, navbar.firstChild)
     })
     .catch(() => {})
+}
+
+function start() {
+  install()
+  installCompare().catch(() => {})
 }
 
 export default {
@@ -136,9 +105,9 @@ export default {
   ],
   start: () => {
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', install, { once: true })
+      document.addEventListener('DOMContentLoaded', start, { once: true })
     } else {
-      install()
+      start()
     }
   }
 }

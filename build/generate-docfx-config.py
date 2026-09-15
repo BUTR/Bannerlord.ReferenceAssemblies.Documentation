@@ -354,13 +354,14 @@ def main():
 
     api = os.path.join(docs, "api")
     os.makedirs(api, exist_ok=True)
-    # Output of a previous run for another version would otherwise be picked up by
-    # the build glob. Only ever happens locally; CI starts clean.
-    keep = {s["dest"] for s in sections}
+    # Output of a previous run would otherwise leak into this one: `docfx metadata`
+    # writes into an existing section folder without removing the files a
+    # previous version left there, and the build glob then picks them up. Only
+    # ever happens locally; CI starts clean.
     for d in os.listdir(api):
-        if os.path.isdir(os.path.join(api, d)) and d not in keep:
+        if os.path.isdir(os.path.join(api, d)):
             shutil.rmtree(os.path.join(api, d))
-            print("removed stale api/%s" % d)
+            print("removed previous api/%s" % d)
     with open(os.path.join(api, "toc.yml"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join("- name: %s\n  href: %s/\n" % (s["title"], s["dest"]) for s in sections))
 

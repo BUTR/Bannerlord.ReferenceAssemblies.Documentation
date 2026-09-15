@@ -243,6 +243,14 @@ jobs:
         docfx docs/docfx-build.json
       shell: bash
 
+    - name: Write the API index for version comparison
+      if: steps.fp.outputs.changed == 'true'
+      # compare.html diffs two versions in the browser from the api-index.json
+      # each version publishes next to its pages, so an old version and a new one
+      # compare without either being rebuilt.
+      run: python3 build/write-api-index.py docs ${{ steps.ver.outputs.version }}
+      shell: bash
+
     - name: Post-process xrefmap
       if: steps.fp.outputs.changed == 'true'
       # baseUrl pins consumers to this exact game version, so a link from

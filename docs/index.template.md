@@ -19,7 +19,8 @@ versions ship. The paths follow the game's own naming: release builds live under
 `/v/<version>/` (`/v/1.5.2/`), early access builds under `/e/<version>/`
 (`/e/1.5.2/`). What the game contains changes between versions, so the list
 below describes {{GAME_VERSION}} rather than a fixed set: modules appear, and
-others are dropped.
+others are dropped. [Compare versions](compare.md) lists what changed in the
+public API between any two of them.
 
 ## What is documented
 
