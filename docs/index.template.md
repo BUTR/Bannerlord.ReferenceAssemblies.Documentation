@@ -25,17 +25,17 @@ others are dropped.
 
 {{SECTIONS}}
 
-Every assembly is documented once, in the section of the first package that
-ships it. The Server and ModdingKit sections therefore list only assemblies no
-client package contains.
+The client sections document the game as a player runs it. Every assembly is
+documented once, in the section of the first client package that ships it.
 
-The dedicated server and the Modding Kit are separate builds of the game, and a
-few of their assemblies expose members the client build does not. Those members
-are folded into the shared pages, so a type page shows the union of what the
-client, the server and the editor build offer. The assemblies this applied to
-in {{GAME_VERSION}}:
+The dedicated server and the Modding Kit are separate builds of the game. Their
+sections hold only what those builds add: assemblies no client package ships,
+and the extra types and members in assemblies the client also has. Such a type
+appears as a partial page listing the added members and linking to the full
+type in its client section. Members the client has but a derived build lacks
+are not marked. What the derived builds add in {{GAME_VERSION}}:
 
-{{MERGED}}
+{{DELTA}}
 
 Platform integration assemblies (Steam, Epic, GOG, BattlEye), generated
 GauntletUI code, and test assemblies are left out.

@@ -170,8 +170,8 @@ jobs:
     - name: Download ref packages
       # Fails if Core has no build for this version; other packages are optional
       # because the module set differs between game versions. Also writes
-      # game/api-surface.json, which the generator uses to fold server- and
-      # editor-only members into the shared pages.
+      # game/api-surface.json, which tells the generator which Server and
+      # ModdingKit copies of a client assembly differ from the client build.
       run: >-
         dotnet run --project build/PackageDownloader -c Release --
         -v ${{ steps.ver.outputs.version }}
@@ -227,19 +227,19 @@ jobs:
 
     - name: Run DocFX
       if: steps.fp.outputs.changed == 'true'
-      # Where a Server or ModdingKit copy of an assembly is merged into a section,
-      # DocFX logs one "Ignore duplicated member" warning per member the two
-      # copies share. That is the expected outcome of the merge, not a problem,
-      # and there are tens of thousands of them; keep them out of the log.
+      # Metadata, then the delta pass, then the build. The Server and ModdingKit
+      # sections come out of metadata holding whole copies of client assemblies;
+      # apply-api-delta.py cuts them down to the types and members the client
+      # sections do not have, so they document only what those builds add.
       run: |
-        docfx docs/docfx-meta.json 2>&1 | { grep -v 'Ignore duplicated member' || true; }
-        test "${PIPESTATUS[0]}" -eq 0
+        docfx docs/docfx-meta.json
         # DocFX treats a file list that matches nothing as a warning and exits 0,
         # and the site then ships with an empty API section. Every section in
         # the generated config must have produced a TOC before the build runs.
         for d in $(jq -r '.metadata[].dest' docs/docfx-meta.json); do
           test -s "docs/$d/toc.yml" || { echo "::error::DocFX metadata produced nothing for $d"; exit 1; }
         done
+        python3 build/apply-api-delta.py docs
         docfx docs/docfx-build.json
       shell: bash
 

@@ -23,18 +23,19 @@ Which file is fed to DocFX for each assembly:
                            the same type UIDs in two places.
 
   Server / ModdingKit      repackage the client assemblies, rebuilt for the
-                           dedicated server and the editor. Most are identical,
-                           but a few carry members the client build does not
-                           (server-only network state, editor-only scene tooling).
-                           DocFX unions the members of a class that appears in
-                           several assemblies of the same metadata item, so a
-                           differing copy is added to the owning section's
-                           assembly list rather than documented on its own. The
-                           result is one page per type with the full surface.
-                           Identical copies are skipped; that decision comes from
+                           dedicated server and the editor. Most copies are
+                           identical and are skipped; that decision comes from
                            game/api-surface.json, written by the PackageDownloader.
-                           Assemblies no client package ships at all get their own
-                           Server / ModdingKit section.
+                           A copy whose public surface differs (console cheats,
+                           editor scene tooling, server-side lobby state) goes into
+                           the Server / ModdingKit section together with the
+                           assemblies no client package ships. After metadata,
+                           build/apply-api-delta.py removes from those sections
+                           every type and member the client sections already
+                           document, so they end up holding only what the server
+                           or editor build adds. The client pages never show a
+                           member the client build does not have. api-delta.json
+                           tells that script which sections are which.
 
   Executables count too.   Core ships a few managed .exe files (the launcher, the
                            code generators), net472 only. DocFX reads them like
@@ -223,23 +224,21 @@ def write_globals(docs, game_version):
     return span
 
 
-def write_index(docs, sections, merged, pkg_version, game_version, early_access, site):
+def write_index(docs, sections, pkg_version, game_version, early_access, site):
+    """Fill the landing page, except {{DELTA}}: what the Server and ModdingKit
+    builds add is only known after metadata, so build/apply-api-delta.py fills
+    that token."""
     template = os.path.join(docs, "index.template.md")
     if not os.path.isfile(template):
         sys.exit("error: %s is missing; the landing page cannot be generated" % template)
+    with open(template, encoding="utf-8") as fh:
+        body = fh.read()
+    if "{{DELTA}}" not in body:
+        sys.exit("error: %s has no {{DELTA}} token for apply-api-delta.py to fill" % template)
 
     rows = ["| Section | Assemblies |", "|---|---|"]
     for s in sections:
         rows.append("| %s | %d |" % (s["title"], s["own"]))
-
-    if merged:
-        merged_rows = ["| Assembly | Additional surface from |", "|---|---|"]
-        for name, sources in sorted(merged.items()):
-            merged_rows.append("| %s | %s |" % (name, ", ".join(sources)))
-        merged_text = "\n".join(merged_rows)
-    else:
-        merged_text = ("None for this version: every Server and ModdingKit copy has the same "
-                       "public surface as the client build.")
 
     with open(template, encoding="utf-8") as fh:
         body = fh.read()
@@ -254,7 +253,6 @@ def write_index(docs, sections, merged, pkg_version, game_version, early_access,
                          ("{{EDITION}}", edition),
                          ("{{VERSION_PATH}}", version_path(game_version)),
                          ("{{SECTIONS}}", "\n".join(rows)),
-                         ("{{MERGED}}", merged_text),
                          ("{{SITE}}", site.rstrip("/"))):
         body = body.replace(token, value)
 
@@ -308,31 +306,33 @@ def main():
         if files:             # metapackage, or everything in it is excluded
             sections.append({"dest": dest, "title": title, "files": files, "own": len(files)})
 
-    by_dest = {s["dest"]: s for s in sections}
-    merged = {}           # assembly name -> [titles of the derived packages whose copy was folded in]
+    primary_sections = list(sections)
+    derived_sections = []
+    shared = {}           # derived dest -> [assembly names whose differing copy is documented there]
 
     for suffix, dest, title in DERIVED:
         build_dir = package_dir(game, suffix, early_access)
         if build_dir is None:
             continue
-        own = []
+        own, differing = [], []
         for name, path in sorted(assemblies(build_dir).items()):
             if surface_of(surfaces, game, path) == EMPTY_SURFACE:
                 continue
             if name not in owner:
                 own.append(path)
                 continue
-            owner_dest, owner_path = owner[name]
+            _, owner_path = owner[name]
             a, b = surface_of(surfaces, game, owner_path), surface_of(surfaces, game, path)
             if a is None or b is None or a == b:
                 # Same public surface as the client build, or no data to tell: nothing
-                # to add, and doubling the extraction work blindly is not worth it.
+                # to add, and extracting a large assembly twice blindly is not worth it.
                 continue
-            by_dest[owner_dest]["files"].append(path)
-            merged.setdefault(name, []).append(title)
-        if own:
-            sections.append({"dest": dest, "title": title, "files": own, "own": len(own)})
-            by_dest[dest] = sections[-1]
+            differing.append(path)
+            shared.setdefault(dest, []).append(name)
+        if own or differing:
+            section = {"dest": dest, "title": title, "files": own + differing, "own": len(own)}
+            sections.append(section)
+            derived_sections.append(section)
 
     if not sections:
         sys.exit("error: no documentable assemblies found under " + game)
@@ -342,6 +342,14 @@ def main():
             for s in sections]
     with open(os.path.join(docs, "docfx-meta.json"), "w", encoding="utf-8", newline="\n") as fh:
         json.dump({"metadata": meta}, fh, indent=2)
+        fh.write("\n")
+
+    # Read by build/apply-api-delta.py after metadata: which sections document the
+    # client build and which the derived builds whose repeats it has to remove.
+    with open(os.path.join(docs, "api-delta.json"), "w", encoding="utf-8", newline="\n") as fh:
+        json.dump({"primary": [{"dest": s["dest"], "title": s["title"]} for s in primary_sections],
+                   "derived": [{"dest": s["dest"], "title": s["title"], "shared": shared.get(s["dest"], [])}
+                               for s in derived_sections]}, fh, indent=2)
         fh.write("\n")
 
     api = os.path.join(docs, "api")
@@ -356,17 +364,17 @@ def main():
     with open(os.path.join(api, "toc.yml"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join("- name: %s\n  href: %s/\n" % (s["title"], s["dest"]) for s in sections))
 
-    write_index(docs, sections, merged, pkg_version, args.version, early_access, args.site)
+    write_index(docs, sections, pkg_version, args.version, early_access, args.site)
     span = write_globals(docs, args.version)
 
     print("game version %s (%s, package %s), copyright %s, %d sections:"
           % (args.version, "early access" if early_access else "release", pkg_version, span, len(sections)))
     for s in sections:
         extra = len(s["files"]) - s["own"]
-        note = "  (+%d merged from Server/ModdingKit)" % extra if extra else ""
+        note = "  (+%d client assemblies whose copy differs; reduced to the additions after metadata)" % extra if extra else ""
         print("  %-34s api/%-12s %3d assemblies%s" % (s["title"], s["dest"], s["own"], note))
-    for name, sources in sorted(merged.items()):
-        print("  merged %s <- %s" % (name, ", ".join(sources)))
+    for dest, names in sorted(shared.items()):
+        print("  %s differs from the client build in: %s" % (dest, ", ".join(names)))
 
 
 if __name__ == "__main__":
