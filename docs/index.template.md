@@ -1,3 +1,7 @@
+---
+title: API reference for game version {{GAME_VERSION}}
+---
+
 # Unofficial Bannerlord API Documentation
 
 API reference for Mount &amp; Blade II: Bannerlord, generated from the
@@ -15,7 +19,7 @@ versions ship. The paths follow the game's own naming: release builds live under
 `/v/<version>/` (`/v/1.5.2/`), early access builds under `/e/<version>/`
 (`/e/1.5.2/`). What the game contains changes between versions, so the list
 below describes {{GAME_VERSION}} rather than a fixed set: modules appear, and
-some are removed again.
+others are dropped.
 
 ## What is documented
 

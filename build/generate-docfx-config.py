@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate docfx-meta.json, api/toc.yml and index.md from the packages actually downloaded.
+"""Generate docfx-meta.json, docfx-globals.json, api/toc.yml and index.md from the packages downloaded.
 
 The module set is not stable across game versions. Multiplayer only appears at
 1.2, DedicatedCustomServerHelper disappears after 1.1, FastMode exists only for
@@ -50,16 +50,25 @@ Version ids follow the game's own convention: "1.5.2" is the release build,
 site a release build lives under /v/1.5.2/ and an early access build under
 /e/1.5.2/.
 
+docfx-globals.json carries the site metadata that cannot be checked in as a
+constant: the copyright range ends at the year the build runs. A published
+version keeps the year it was generated, because the rebuild fingerprint does
+not include the date; only a forced rebuild moves it forward.
+
 Usage:  generate-docfx-config.py <game-dir> <docs-dir> --version <x.y.z|ex.y.z> [--site <origin>]
 """
 
 import argparse
+import datetime
 import json
 import os
 import shutil
 import sys
 
 PREFIX = "bannerlord.referenceassemblies"
+
+# The repository's first commit, and so the first year of the documentation.
+FIRST_YEAR = 2020
 
 # Package suffix -> (api/<dest>, TOC title). Order is both the TOC order and the
 # claim order: the first section listing an assembly documents it. Multiplayer
@@ -184,6 +193,34 @@ def docfx_src(docs, game):
 
 def game_path(game, path):
     return os.path.relpath(path, game).replace(os.sep, "/")
+
+
+def write_globals(docs, game_version):
+    """Site metadata that cannot be a checked-in constant.
+
+    The copyright range ends at the current year rather than at a hard-coded one,
+    which had gone stale, and rather than at the word "present", which names no
+    period at all. BUTR's copyright covers this site: its template, its prose and
+    the arrangement of the generated pages. The documented API belongs to
+    TaleWorlds, hence the disclaimer.
+
+    _appTitle carries the version because it is the suffix of every page title.
+    Without it every version produces identical titles, and a reader comparing two
+    versions in two tabs cannot tell them apart. It keeps "Unofficial" as well,
+    because a search result for a game type should not read as TaleWorlds' own
+    documentation.
+    """
+    year = datetime.datetime.now(datetime.timezone.utc).year
+    span = str(FIRST_YEAR) if year <= FIRST_YEAR else "%d-%d" % (FIRST_YEAR, year)
+    footer = ('&copy; %s <a href="https://github.com/BUTR">BUTR</a> '
+              "(Bannerlord's Unofficial Tools &amp; Resources). "
+              "Not affiliated with TaleWorlds Entertainment." % span)
+    path = os.path.join(docs, "docfx-globals.json")
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump({"_appTitle": "Unofficial Bannerlord API " + game_version,
+                   "_appFooter": footer}, fh, indent=2)
+        fh.write("\n")
+    return span
 
 
 def write_index(docs, sections, merged, pkg_version, game_version, early_access, site):
@@ -320,9 +357,10 @@ def main():
         fh.write("\n".join("- name: %s\n  href: %s/\n" % (s["title"], s["dest"]) for s in sections))
 
     write_index(docs, sections, merged, pkg_version, args.version, early_access, args.site)
+    span = write_globals(docs, args.version)
 
-    print("game version %s (%s, package %s), %d sections:"
-          % (args.version, "early access" if early_access else "release", pkg_version, len(sections)))
+    print("game version %s (%s, package %s), copyright %s, %d sections:"
+          % (args.version, "early access" if early_access else "release", pkg_version, span, len(sections)))
     for s in sections:
         extra = len(s["files"]) - s["own"]
         note = "  (+%d merged from Server/ModdingKit)" % extra if extra else ""
