@@ -4,18 +4,25 @@ name: Render
 # of the pipeline that depends on the design: the template, the logo, the
 # landing page, docfx-build.json and the scripts under build/ that run after
 # metadata. The half that depends on the game is metadata.yml. This workflow
-# never downloads a package and never runs `docfx metadata`; it takes whatever
-# the meta/<version> releases hold.
+# does not download packages or run `docfx metadata`; it takes whatever the
+# meta/<id> releases hold.
 #
 # Every version whose release exists is a candidate. Whether one is actually
 # rebuilt is decided by the fingerprint recorded on the host against the one
 # build/fingerprint.sh computes from this checkout and the release manifest:
 # meta= (which archive), docs= and build= (which design and tooling), docfx=
-# (which renderer). A push that changes the template therefore re-renders all
-# versions, and a push that changes nothing they depend on rebuilds none.
+# (which renderer). A push that changes the template therefore re-renders every
+# version, while a push that leaves those inputs alone skips them all.
 #
 # Versions published before this split recorded a pkgs= fingerprint; they
 # compare unequal once and are rebuilt once.
+#
+# Version ids: the matrix and the release tags use the canonical id, v1.5.1 for
+# the release build and e1.5.1 for early access, because the two are different
+# games with overlapping numbers. The docs host, versions.json and the page
+# titles predate the prefix and know the release build as plain 1.5.1; that
+# spelling (the site id) is derived once, in the "Resolve game version" step,
+# and is the only one that crosses to the host.
 
 on:
   push:
@@ -68,16 +75,21 @@ jobs:
     steps:
     - name: Pick the versions
       id: pick
-      # An explicit list, or every meta/<version> release. Release builds first,
+      # An explicit list, or every meta/<id> release. Release builds first,
       # then early access, each newest first, so a partial run reaches the
       # versions people read most before the archive.
       run: |
+        # Canonical id, vX.Y.Z or eX.Y.Z; a bare number is the release build.
         norm() {
-          v="${1#v}"
+          v="$1"
           case "$v" in
             "") return 1 ;;
-            [!A-Za-z0-9]*) echo "::error::Version '$v' must start with an alphanumeric character" >&2; exit 1 ;;
-            *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -" >&2; exit 1 ;;
+            v[0-9]*|e[0-9]*) ;;
+            [0-9]*) v="v$v" ;;
+            *) echo "::error::Version '$v' must be vX.Y.Z (release), eX.Y.Z (early access) or X.Y.Z" >&2; exit 1 ;;
+          esac
+          case "${v#?}" in
+            *[!0-9._-]*) echo "::error::Version '$v' may only contain digits . _ - after the prefix" >&2; exit 1 ;;
           esac
           echo "$v"
         }
@@ -86,8 +98,8 @@ jobs:
           for v in ${{ inputs.versions }}; do list="$list $(norm "$v")"; done
         else
           tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p')
-          release=$(printf '%s\n' "$tags" | grep -v '^e' | sort -V | tac || true)
-          early=$(printf '%s\n' "$tags" | grep '^e' | sort -V | tac || true)
+          release=$(printf '%s\n' "$tags" | grep '^v[0-9]' | sort -V | tac || true)
+          early=$(printf '%s\n' "$tags" | grep '^e[0-9]' | sort -V | tac || true)
           list=$(printf '%s\n%s\n' "$release" "$early" | sed '/^$/d' | tr '\n' ' ')
         fi
         [ -n "$(echo $list)" ] || { echo "::error::No versions to render; has the Metadata workflow published any release?"; exit 1; }
@@ -122,18 +134,26 @@ jobs:
 
     - name: Resolve game version
       id: ver
+      # The one place the canonical id (v1.5.2 / e1.5.2) is translated into what
+      # the host uses. `version` names the release and the matrix; `site` is the
+      # id for get-state/set-state/publish, version.txt and versions.json (1.5.2 /
+      # e1.5.2); `path` is the tree the pages are uploaded to (v/1.5.2 / e/1.5.2).
       run: |
         v="${{ matrix.version }}"
+        case "$v" in
+          v[0-9]*) site="${v#v}"; p="v/${v#v}" ;;
+          e[0-9]*) site="$v";     p="e/${v#e}" ;;
+          *) echo "::error::'$v' is not a canonical version id (vX.Y.Z or eX.Y.Z)"; exit 1 ;;
+        esac
         echo "version=$v" >> "$GITHUB_OUTPUT"
-        # Paths follow the game's own naming: a release build 1.5.2 is served
-        # from v/1.5.2/, the early access build e1.5.2 from e/1.5.2/.
-        case "$v" in e*) p="e/${v#e}" ;; *) p="v/$v" ;; esac
+        echo "site=$site" >> "$GITHUB_OUTPUT"
         echo "path=$p" >> "$GITHUB_OUTPUT"
-        echo "site path: /$p/"
+        echo "release: $v   host id: $site   site path: /$p/"
         # /latest is defined as the stable channel, so the publish step keys off
         # this rather than off a default-on input. A manually dispatched old version
-        # then cannot repoint the whole site by accident.
-        st="${{ vars.GAME_VERSION_STABLE }}"; st="${st#v}"
+        # then cannot repoint the whole site by accident. The channel variable is
+        # a release build spelled with or without the v.
+        st="${{ vars.GAME_VERSION_STABLE }}"; st="v${st#v}"
         [ "$v" = "$st" ] && echo "is-stable=true" >> "$GITHUB_OUTPUT" || echo "is-stable=false" >> "$GITHUB_OUTPUT"
         echo "stable channel: ${st:-unset}"
       shell: bash
@@ -184,6 +204,11 @@ jobs:
         for f in api/toc.yml api-delta-summary.json version.json; do
           test -s "docs/$f" || { echo "::error::the archive holds no $f"; exit 1; }
         done
+        # The archive must be the build the release claims to be: an early access
+        # archive under a release tag (or the reverse) would publish the wrong
+        # game under this path.
+        got=$(jq -r '.id // empty' docs/version.json)
+        [ "$got" = "$V" ] || { echo "::error::meta/$V holds an archive for '${got:-<no id>}'"; exit 1; }
         echo "sections: $(jq -r '[.sections[].dest] | join(" ")' docs/version.json)"
       shell: bash
 
@@ -198,7 +223,7 @@ jobs:
     - name: Decide whether a rebuild is needed
       id: fp
       run: |
-        V="${{ steps.ver.outputs.version }}"
+        V="${{ steps.ver.outputs.site }}"
         SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 ${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
         fp=$(bash build/fingerprint.sh meta/manifest.json)
         printf '%s' "$fp" > fingerprint.txt
@@ -229,7 +254,7 @@ jobs:
       if: steps.fp.outputs.changed == 'true'
       # compare.html diffs two versions in the browser from the api-index.json
       # each version publishes next to its pages.
-      run: python3 build/write-api-index.py docs ${{ steps.ver.outputs.version }}
+      run: python3 build/write-api-index.py docs ${{ steps.ver.outputs.site }}
       shell: bash
 
     - name: Post-process xrefmap
@@ -252,7 +277,7 @@ jobs:
       # manifest ship next to the pages, so what a version was rendered from can
       # be read off the site.
       run: |
-        echo "${{ steps.ver.outputs.version }}" > docs/_site/version.txt
+        echo "${{ steps.ver.outputs.site }}" > docs/_site/version.txt
         cp docs/api-delta-summary.json docs/_site/api-delta-summary.json
         cp meta/manifest.json docs/_site/metadata.json
       shell: bash
@@ -294,7 +319,7 @@ jobs:
       if: steps.fp.outputs.changed == 'true'
       # Written after the deploy, so a failed build never marks a version current.
       run: |
-        V="${{ steps.ver.outputs.version }}"
+        V="${{ steps.ver.outputs.site }}"
         ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
           "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" set-state "$V" < fingerprint.txt
       shell: bash
@@ -312,7 +337,7 @@ jobs:
         !startsWith(steps.ver.outputs.version, 'e') &&
         (steps.ver.outputs.is-stable == 'true' || (inputs.set-latest && needs.plan.outputs.single == 'true'))
       run: |
-        V="${{ steps.ver.outputs.version }}"
+        V="${{ steps.ver.outputs.site }}"
         ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
           "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" publish "$V"
         echo "published $V as latest"
@@ -330,10 +355,12 @@ jobs:
         TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
 
         # Every version that has metadata, newest first: release builds, then
-        # early access. Published means the host has a fingerprint for it.
+        # early access, as site ids (1.5.3, e1.9.0), which is what the picker
+        # and the host's state verbs use. Published means the host has a
+        # fingerprint for it.
         tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p')
-        candidates=$(printf '%s\n%s\n' "$(printf '%s\n' "$tags" | grep -v '^e' | sort -V | tac || true)" \
-                                       "$(printf '%s\n' "$tags" | grep '^e' | sort -V | tac || true)" | sed '/^$/d')
+        candidates=$(printf '%s\n%s\n' "$(printf '%s\n' "$tags" | grep '^v[0-9]' | sed 's/^v//' | sort -V | tac || true)" \
+                                       "$(printf '%s\n' "$tags" | grep '^e[0-9]' | sort -V | tac || true)" | sed '/^$/d')
         published=
         for v in $candidates; do
           if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
@@ -344,7 +371,7 @@ jobs:
 
         keep=$(curl -sS --max-time 20 "${{ env.SITE_ORIGIN }}/versions.json" 2>/dev/null | jq -r ".latest // empty" || true)
         if [ "${{ steps.publish.outcome }}" = "success" ]; then
-          latest="${{ steps.ver.outputs.version }}"
+          latest="${{ steps.ver.outputs.site }}"
         else
           # Ask the site which version /latest actually resolves to. Authoritative,
           # and needs no wrapper verb. Older builds predate the marker, so fall back

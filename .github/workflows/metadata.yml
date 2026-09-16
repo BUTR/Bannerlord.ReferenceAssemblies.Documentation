@@ -6,8 +6,12 @@ name: Metadata
 # that depends on the site's design is render.yml. The two never run the same
 # step and meet only at the release.
 #
-# The release is tagged meta/<id>, where <id> is 1.5.1 for the release build
-# and e1.5.1 for the early access build, and holds exactly two assets:
+# The release is tagged meta/<id>, where <id> is v1.5.1 for the release build
+# and e1.5.1 for the early access build. Release and early access are different
+# games that share numbers, so an id always carries its prefix; a bare 1.5.1
+# given as input means the release build and is normalised to v1.5.1. (The docs
+# host predates the prefix and knows the release build as 1.5.1; render.yml
+# translates.) The release holds exactly two assets:
 #
 #   manifest.json                     what the archive was made from
 #   api-metadata-<pkgs>.tar.zst       the archive the manifest names
@@ -18,8 +22,8 @@ name: Metadata
 # landing page, which is why a design change never comes back here.
 #
 # A game version is documented from the highest package build (changeset) that
-# exists for it, and only that one. When a newer build appears under the same
-# number, the archive is replaced, never accumulated: the manifest's pkgs field
+# exists for it. When a newer build appears under the same number the archive is
+# replaced, so a release holds one build at a time: the manifest's pkgs field
 # hashes the resolved package builds, and a different hash is what triggers the
 # re-extraction. That decision needs one NuGet index request per package and no
 # download, so the dispatch from the .github repo, which fires several times a
@@ -29,7 +33,7 @@ name: Metadata
 # Update order matters: the new archive is uploaded first, then the manifest is
 # replaced, then the superseded archive is deleted. render.yml reads the manifest
 # and downloads the archive it names, so a render that starts mid-update sees
-# either the old pair or the new pair, never a manifest pointing at nothing.
+# either the old pair or the new pair.
 #
 # When any version changed, render.yml is dispatched for exactly those versions.
 
@@ -91,24 +95,30 @@ jobs:
       # the backfill, or the two channels for the dispatch from the .github repo,
       # which fires for stable and beta bumps alike.
       #
-      # Versions are normalised here (leading v stripped, charset checked) so the
-      # per-version concurrency group below sees one spelling. A leading e is
-      # kept: e1.5.2 is the early access build, a different game from 1.5.2.
+      # Versions are normalised to the canonical id, vX.Y.Z or eX.Y.Z, so the
+      # release tag and the per-version concurrency group see one spelling. A
+      # bare number is the release build. Anything else is refused here rather
+      # than at the end of a 15 minute extraction.
       run: |
         norm() {
-          v="${1#v}"
+          v="$1"
           case "$v" in
             "") return 1 ;;
-            [!A-Za-z0-9]*) echo "::error::Version '$v' must start with an alphanumeric character" >&2; exit 1 ;;
-            *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -" >&2; exit 1 ;;
+            v[0-9]*|e[0-9]*) ;;
+            [0-9]*) v="v$v" ;;
+            *) echo "::error::Version '$v' must be vX.Y.Z (release), eX.Y.Z (early access) or X.Y.Z" >&2; exit 1 ;;
+          esac
+          case "${v#?}" in
+            *[!0-9._-]*) echo "::error::Version '$v' may only contain digits . _ - after the prefix" >&2; exit 1 ;;
           esac
           echo "$v"
         }
-        # Every distinct x.y.z that has a Core package, newest first: release from
-        # the Core index, early access (prefixed e) from Core.EarlyAccess.
+        # Every distinct x.y.z that has a Core package, newest first: release
+        # (prefixed v) from the Core index, early access (prefixed e) from
+        # Core.EarlyAccess.
         on_nuget() {
           for pkg in core core.earlyaccess; do
-            prefix=; [ "$pkg" = core.earlyaccess ] && prefix=e
+            prefix=v; [ "$pkg" = core.earlyaccess ] && prefix=e
             curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$pkg/index.json" \
               | jq -r '.versions[]' | sed 's/-.*//' \
               | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac | sed "s/^/$prefix/"
@@ -257,13 +267,18 @@ jobs:
         pkgs="${{ steps.resolve.outputs.pkgs }}"
         name="api-metadata-$pkgs.tar.zst"
         tar --zstd -cf "$name" -C docs api api-delta.json api-delta-summary.json version.json docfx-meta.json
-        jq -n --arg game "$V" --arg pkgs "$pkgs" --arg docfx "${{ steps.fp.outputs.docfx }}" \
+        # id is the canonical v/e id this release is tagged with; game is the bare
+        # number, meaningful only together with edition; site_id is what the docs
+        # host and the pages call this build.
+        jq -n --arg pkgs "$pkgs" --arg docfx "${{ steps.fp.outputs.docfx }}" \
               --arg build "${{ steps.fp.outputs.build }}" --arg archive "$name" \
               --arg created "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
               --slurpfile packages packages.json --slurpfile version docs/version.json \
-              '{schema: 1, game: $game, edition: $version[0].edition, package_version: $version[0].package_version,
+              '{schema: 1, id: $version[0].id, game: $version[0].game, edition: $version[0].edition,
+                site_id: $version[0].site_id, package_version: $version[0].package_version,
                 pkgs: $pkgs, packages: $packages[0], docfx: $docfx, build: $build,
                 archive: $archive, created: $created}' > manifest.json
+        [ "$(jq -r .id manifest.json)" = "$V" ] || { echo "::error::version.json says $(jq -r .id manifest.json) but this job is $V"; exit 1; }
         echo "name=$name" >> "$GITHUB_OUTPUT"
         echo "archive: $(du -h "$name" | cut -f1)"
         cat manifest.json

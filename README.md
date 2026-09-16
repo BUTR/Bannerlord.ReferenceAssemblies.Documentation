@@ -19,12 +19,15 @@ The Metadata workflow ([metadata.yml](.github/workflows/metadata.yml)) is the ha
 that depends on the game. For each game version it resolves the highest package
 build on NuGet, runs `docfx metadata` and the delta pass that reduces the Server
 and ModdingKit sections to what those builds add, and publishes the result as the
-release `meta/<version>`. The release holds `manifest.json` and one archive; the
-manifest's `pkgs` field hashes the package builds the archive was made from. When
-a newer build ships under the same game version the archive is replaced, so a
-release only ever holds the latest build. Nothing in it depends on the site's
-design. It runs on the game version dispatch from the `.github` repository, weekly
-as a sweep over every version on NuGet, and by hand (`all=true` is the backfill).
+release `meta/<id>`. The id always names the line of the game: `v1.5.1` is the
+release build, `e1.5.1` the early access build of the same number. A bare `1.5.1`
+given to either workflow means the release build. The release holds
+`manifest.json` and one archive; the manifest's `pkgs` field hashes the package
+builds the archive was made from. When a newer build ships under the same game
+version the archive is replaced, so a release only ever holds the latest build.
+Nothing in it depends on the site's design. It runs on the game version dispatch
+from the `.github` repository, weekly as a sweep over every version on NuGet, and
+by hand (`all=true` is the backfill).
 
 The Render workflow ([render.yml](.github/workflows/render.yml)) is the half that
 depends on the site's design. It downloads the archive a release names, generates

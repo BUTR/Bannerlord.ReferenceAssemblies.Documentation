@@ -45,11 +45,20 @@ Which file is fed to DocFX for each assembly:
   Excluded everywhere:     platform integration (Steam, Epic, GOG, BattlEye),
                            generated GauntletUI code and test assemblies.
 
-Version ids follow the game's own convention: "1.5.2" is the release build,
-"e1.5.2" the early access build of the same number. Early access ships in the
-*.EarlyAccess packages, so the id decides which package family is read. On the
-site a release build lives under /v/1.5.2/ and an early access build under
-/e/1.5.2/.
+Version ids carry the line of the game as a prefix: "v1.5.2" is the release
+build, "e1.5.2" the early access build of the same number. The two are different
+games that share numbers, so nothing may ever identify a build by the bare
+number alone. A bare "1.5.2" is accepted on input and means the release build.
+Early access ships in the *.EarlyAccess packages, so the prefix decides which
+package family is read.
+
+Two spellings exist for historical reasons and are derived from the id in one
+place each (canonical_id, site_id): the canonical id keeps both prefixes
+("v1.5.2", "e1.5.2") and names the metadata release and the workflow matrix;
+the site id drops the v ("1.5.2", "e1.5.2") because the docs host, the version
+picker and the page titles predate the prefix and use it as the release build's
+name. On the site a release build lives under /v/1.5.2/ and an early access
+build under /e/1.5.2/.
 
 docfx-globals.json carries the site metadata that cannot be checked in as a
 constant: the copyright range ends at the year the build runs. A published
@@ -132,10 +141,28 @@ def excluded(name):
 
 
 def parse_version_id(vid):
-    """'1.5.2' -> ('1.5.2', False); 'e1.5.2' -> ('1.5.2', True)."""
+    """'v1.5.2' or '1.5.2' -> ('1.5.2', False); 'e1.5.2' -> ('1.5.2', True)."""
     if vid.startswith("e"):
-        return vid[1:], True
-    return vid, False
+        number, early_access = vid[1:], True
+    elif vid.startswith("v"):
+        number, early_access = vid[1:], False
+    else:
+        number, early_access = vid, False
+    if not number or not number[0].isdigit():
+        sys.exit("error: version id %r must be vX.Y.Z, eX.Y.Z or X.Y.Z" % vid)
+    return number, early_access
+
+
+def canonical_id(vid):
+    """The prefixed id: 'v1.5.2' for release, 'e1.5.2' for early access."""
+    number, early_access = parse_version_id(vid)
+    return ("e" if early_access else "v") + number
+
+
+def site_id(vid):
+    """The id the docs host and the pages use: '1.5.2' for release, 'e1.5.2' for early access."""
+    number, early_access = parse_version_id(vid)
+    return ("e" if early_access else "") + number
 
 
 def version_path(vid):
@@ -241,10 +268,15 @@ def write_globals(docs, game_version):
     return span
 
 
-def write_index(docs, sections, pkg_version, game_version, early_access, site):
+def write_index(docs, sections, pkg_version, vid, site):
     """Fill the landing page, except {{DELTA}}: what the Server and ModdingKit
     builds add is summarised by build/apply-api-delta.py, which fills that token
-    from api-delta-summary.json (`--fill-from`)."""
+    from api-delta-summary.json (`--fill-from`).
+
+    {{GAME_VERSION}} is the site id (1.5.2 or e1.5.2), the name readers know a
+    build by; {{VERSION_PATH}} is v/1.5.2 or e/1.5.2."""
+    _, early_access = parse_version_id(vid)
+    game_version = site_id(vid)
     template = os.path.join(docs, "index.template.md")
     if not os.path.isfile(template):
         sys.exit("error: %s is missing; the landing page cannot be generated" % template)
@@ -266,7 +298,7 @@ def write_index(docs, sections, pkg_version, game_version, early_access, site):
     for token, value in (("{{GAME_VERSION}}", game_version),
                          ("{{PACKAGE_VERSION}}", pkg_version),
                          ("{{EDITION}}", edition),
-                         ("{{VERSION_PATH}}", version_path(game_version)),
+                         ("{{VERSION_PATH}}", version_path(vid)),
                          ("{{SECTIONS}}", "\n".join(rows)),
                          ("{{SITE}}", site.rstrip("/"))):
         body = body.replace(token, value)
@@ -306,14 +338,16 @@ def surviving_sections(docs, sections):
 def cmd_render(args):
     docs = args.docs
     info = load_version(docs)
-    _, early_access = parse_version_id(info["game"])
+    vid = info.get("id")
+    if not vid:
+        sys.exit("error: %s has no id; the archive predates the v/e version ids and must be re-extracted" % VERSION_FILE)
     sections = surviving_sections(docs, info["sections"])
     if not sections:
         sys.exit("error: none of the sections in %s appear in api/toc.yml" % VERSION_FILE)
-    write_index(docs, sections, info["package_version"], info["game"], early_access, args.site)
-    span = write_globals(docs, info["game"])
+    write_index(docs, sections, info["package_version"], vid, args.site)
+    span = write_globals(docs, site_id(vid))
     print("game version %s (%s, package %s), copyright %s, %d sections on the landing page"
-          % (info["game"], info["edition"], info["package_version"], span, len(sections)))
+          % (vid, info["edition"], info["package_version"], span, len(sections)))
 
 
 def main():
@@ -436,10 +470,13 @@ def cmd_plan(args):
     with open(os.path.join(api, "toc.yml"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join("- name: %s\n  href: %s/\n" % (s["title"], s["dest"]) for s in sections))
 
-    # What `render` needs later, without the packages: which sections exist,
-    # how many assemblies each documents, and which package build this is.
+    # What `render` needs later, without the packages: which build this is, in
+    # every spelling the pipeline uses, which sections exist and how many
+    # assemblies each documents.
     with open(os.path.join(docs, VERSION_FILE), "w", encoding="utf-8", newline="\n") as fh:
-        json.dump({"game": args.version,
+        json.dump({"id": canonical_id(args.version),
+                   "site_id": site_id(args.version),
+                   "game": number,
                    "edition": "early-access" if early_access else "release",
                    "package_version": pkg_version,
                    "sections": [{"dest": s["dest"], "title": s["title"], "own": s["own"]} for s in sections]},
@@ -447,7 +484,7 @@ def cmd_plan(args):
         fh.write("\n")
 
     print("game version %s (%s, package %s), %d sections:"
-          % (args.version, "early access" if early_access else "release", pkg_version, len(sections)))
+          % (canonical_id(args.version), "early access" if early_access else "release", pkg_version, len(sections)))
     for s in sections:
         extra = len(s["files"]) - s["own"]
         note = "  (+%d client assemblies whose copy differs; reduced to the additions after metadata)" % extra if extra else ""
