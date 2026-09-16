@@ -354,13 +354,23 @@ jobs:
         SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=60"
         TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
 
-        # Every version that has metadata, newest first: release builds, then
-        # early access, as site ids (1.5.3, e1.9.0), which is what the picker
-        # and the host's state verbs use. Published means the host has a
-        # fingerprint for it.
-        tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p')
-        candidates=$(printf '%s\n%s\n' "$(printf '%s\n' "$tags" | grep '^v[0-9]' | sed 's/^v//' | sort -V | tac || true)" \
-                                       "$(printf '%s\n' "$tags" | grep '^e[0-9]' | sort -V | tac || true)" | sed '/^$/d')
+        # Candidates are every version that has a metadata release plus every
+        # x.y.z on NuGet, as site ids (1.5.3, e1.9.0), which is what the picker
+        # and the host's state verbs use. The NuGet index is what the previous
+        # pipeline listed from, and keeping it means a version published before
+        # the split stays in the picker even if its metadata release does not
+        # exist yet. Published means the host has a fingerprint for it. Release
+        # builds first, then early access, each newest first.
+        tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p' | sed 's/^v//')
+        nuget=$(for pkg in core core.earlyaccess; do
+          prefix=; [ "$pkg" = core.earlyaccess ] && prefix=e
+          curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$pkg/index.json" 2>/dev/null \
+            | jq -r '.versions[]' | sed 's/-.*//' \
+            | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u | sed "s/^/$prefix/" || true
+        done)
+        all=$(printf '%s\n%s\n' "$tags" "$nuget" | sed '/^$/d' | sort -u)
+        candidates=$(printf '%s\n%s\n' "$(printf '%s\n' "$all" | grep -v '^e' | sort -V | tac || true)" \
+                                       "$(printf '%s\n' "$all" | grep '^e' | sort -V | tac || true)" | sed '/^$/d')
         published=
         for v in $candidates; do
           if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
