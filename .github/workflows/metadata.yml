@@ -1,0 +1,331 @@
+name: Metadata
+
+# Keeps one GitHub release per game version holding that version's API
+# metadata, so that the HTML can be rendered from it later without the
+# packages. This is the half of the pipeline that depends on the game; the half
+# that depends on the site's design is render.yml. The two never run the same
+# step and meet only at the release.
+#
+# The release is tagged meta/<id>, where <id> is 1.5.1 for the release build
+# and e1.5.1 for the early access build, and holds exactly two assets:
+#
+#   manifest.json                     what the archive was made from
+#   api-metadata-<pkgs>.tar.zst       the archive the manifest names
+#
+# The archive is the DocFX project's data side, relative to docs/: api/** after
+# build/apply-api-delta.py, api-delta.json, api-delta-summary.json, version.json
+# and docfx-meta.json. Nothing in it depends on the template, the logo or the
+# landing page, which is why a design change never comes back here.
+#
+# A game version is documented from the highest package build (changeset) that
+# exists for it, and only that one. When a newer build appears under the same
+# number, the archive is replaced, never accumulated: the manifest's pkgs field
+# hashes the resolved package builds, and a different hash is what triggers the
+# re-extraction. That decision needs one NuGet index request per package and no
+# download, so the dispatch from the .github repo, which fires several times a
+# day, is cheap when nothing changed. The weekly sweep applies the same check to
+# every version on NuGet, which is how a new build of an old version is caught.
+#
+# Update order matters: the new archive is uploaded first, then the manifest is
+# replaced, then the superseded archive is deleted. render.yml reads the manifest
+# and downloads the archive it names, so a render that starts mid-update sees
+# either the old pair or the new pair, never a manifest pointing at nothing.
+#
+# When any version changed, render.yml is dispatched for exactly those versions.
+
+on:
+  repository_dispatch:
+    types: [game_version_update, game_version_update_patch]
+  schedule:
+    # Weekly sweep over every version on NuGet. Only versions whose resolved
+    # package builds changed are re-extracted; the rest cost one manifest read.
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      versions:
+        description: 'Game versions, space separated (1.5.1 e1.5.2). Empty: the stable and beta channels, or every version with --all.'
+        required: false
+        type: string
+      all:
+        description: 'Every game version on NuGet, release and early access (the backfill)'
+        required: false
+        type: boolean
+        default: false
+      force:
+        description: 'Re-extract even when the release already matches the resolved packages'
+        required: false
+        type: boolean
+        default: false
+      skip-render:
+        description: 'Do not dispatch the Render workflow for the versions that changed'
+        required: false
+        type: boolean
+        default: false
+      max-parallel:
+        description: 'Versions extracted at the same time'
+        required: false
+        type: number
+        default: 4
+
+permissions:
+  contents: write     # create releases, upload and delete assets
+  actions: write      # dispatch render.yml
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  GH_TOKEN: ${{ github.token }}
+  GH_REPO: ${{ github.repository }}
+
+jobs:
+  plan:
+    name: Choose versions
+    runs-on: ubuntu-latest
+    outputs:
+      versions: ${{ steps.pick.outputs.versions }}
+    steps:
+    - name: Pick the versions
+      id: pick
+      # Explicit list first. Otherwise every version on NuGet for the sweep and
+      # the backfill, or the two channels for the dispatch from the .github repo,
+      # which fires for stable and beta bumps alike.
+      #
+      # Versions are normalised here (leading v stripped, charset checked) so the
+      # per-version concurrency group below sees one spelling. A leading e is
+      # kept: e1.5.2 is the early access build, a different game from 1.5.2.
+      run: |
+        norm() {
+          v="${1#v}"
+          case "$v" in
+            "") return 1 ;;
+            [!A-Za-z0-9]*) echo "::error::Version '$v' must start with an alphanumeric character" >&2; exit 1 ;;
+            *[!A-Za-z0-9._-]*) echo "::error::Version '$v' may only contain A-Za-z0-9 . _ -" >&2; exit 1 ;;
+          esac
+          echo "$v"
+        }
+        # Every distinct x.y.z that has a Core package, newest first: release from
+        # the Core index, early access (prefixed e) from Core.EarlyAccess.
+        on_nuget() {
+          for pkg in core core.earlyaccess; do
+            prefix=; [ "$pkg" = core.earlyaccess ] && prefix=e
+            curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$pkg/index.json" \
+              | jq -r '.versions[]' | sed 's/-.*//' \
+              | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac | sed "s/^/$prefix/"
+          done
+        }
+        list=
+        if [ -n "${{ inputs.versions }}" ]; then
+          for v in ${{ inputs.versions }}; do list="$list $(norm "$v")"; done
+        elif [ "${{ inputs.all }}" = "true" ] || [ "${{ github.event_name }}" = "schedule" ]; then
+          list=$(on_nuget | tr '\n' ' ')
+        else
+          stable="$(norm "${{ vars.GAME_VERSION_STABLE }}" || true)"
+          beta="$(norm "${{ vars.GAME_VERSION_BETA }}" || true)"
+          [ -n "$stable" ] || { echo "::error::No game version given and GAME_VERSION_STABLE is empty"; exit 1; }
+          list="$stable"
+          [ -n "$beta" ] && [ "$beta" != "$stable" ] && list="$list $beta"
+        fi
+        [ -n "$(echo $list)" ] || { echo "::error::No versions to check"; exit 1; }
+        json=$(printf '%s\n' $list | jq -R . | jq -sc .)
+        echo "versions=$json" >> "$GITHUB_OUTPUT"
+        echo "checking: $list"
+      shell: bash
+
+  extract:
+    name: Metadata ${{ matrix.version }}
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      # A `number` input reaches the strategy block as a string, and is empty
+      # on every trigger but workflow_dispatch; fromJSON turns both into a number.
+      max-parallel: ${{ fromJSON(inputs.max-parallel || 4) }}
+      matrix:
+        version: ${{ fromJson(needs.plan.outputs.versions) }}
+    concurrency:
+      # Per version: two runs must not update the same release at once. Different
+      # versions are different releases and run in parallel.
+      group: metadata-${{ matrix.version }}
+      cancel-in-progress: false
+    steps:
+    - name: DocFX Setup
+      uses: butr/actions-docfx-setup@v4
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+
+    - name: .NET SDK for the PackageDownloader
+      # The setup action installs 8.x; the downloader targets net10.0.
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+
+    - name: Resolve the package builds
+      id: resolve
+      # Which build of each package documents this version, without downloading
+      # any of them. The hash over that map is the identity of the metadata: a
+      # new changeset, a package that appears or disappears, all change it.
+      run: |
+        V="${{ matrix.version }}"
+        dotnet run --project build/PackageDownloader -c Release -- -v "$V" --resolve-only > packages.json
+        pkgs=$(jq -r 'to_entries | sort_by(.key) | .[] | "\(.key) \(.value)"' packages.json | sha256sum | cut -c1-16)
+        echo "pkgs=$pkgs" >> "$GITHUB_OUTPUT"
+        echo "resolved $(jq length packages.json) packages, pkgs=$pkgs"
+        jq . packages.json
+      shell: bash
+
+    - name: Compare with the published metadata
+      id: fp
+      # The release manifest says what the archive was made from. Same package
+      # builds, same DocFX and same build/ tree means the archive would come out
+      # identical, so nothing is done.
+      run: |
+        V="${{ matrix.version }}"
+        tool=$(docfx --version 2>/dev/null | head -1 | tr -d ' ')
+        build=$(git rev-parse "HEAD:build"); build=${build:0:12}
+        echo "docfx=$tool" >> "$GITHUB_OUTPUT"
+        echo "build=$build" >> "$GITHUB_OUTPUT"
+        echo "local  : pkgs=${{ steps.resolve.outputs.pkgs }} docfx=$tool build=$build"
+        if gh release download "meta/$V" -p manifest.json -O current.json --clobber 2>/dev/null; then
+          echo "remote : pkgs=$(jq -r .pkgs current.json) docfx=$(jq -r .docfx current.json) build=$(jq -r .build current.json)"
+          echo "exists=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "remote : <no release>"
+          echo '{}' > current.json
+          echo "exists=false" >> "$GITHUB_OUTPUT"
+        fi
+        same=false
+        [ "$(jq -r .pkgs current.json)" = "${{ steps.resolve.outputs.pkgs }}" ] && \
+        [ "$(jq -r .docfx current.json)" = "$tool" ] && \
+        [ "$(jq -r .build current.json)" = "$build" ] && same=true
+        if [ "${{ inputs.force }}" = "true" ]; then
+          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> forced"
+        elif [ "$same" = "true" ]; then
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "-> metadata for $V is current; nothing to do"
+          echo "Skipped $V: release already matches the resolved packages." >> "$GITHUB_STEP_SUMMARY"
+        else
+          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> extracting"
+        fi
+      shell: bash
+
+    - name: Download ref packages
+      if: steps.fp.outputs.changed == 'true'
+      # Also writes game/api-surface.json, which tells the generator which Server
+      # and ModdingKit copies of a client assembly differ from the client build,
+      # and game/packages.json, the same map the resolve step printed.
+      run: >-
+        dotnet run --project build/PackageDownloader -c Release --
+        -v ${{ matrix.version }}
+        -t "$PWD"
+      shell: bash
+
+    - name: Plan the DocFX metadata
+      if: steps.fp.outputs.changed == 'true'
+      # The module set changes between game versions, so docfx-meta.json,
+      # api-delta.json, api/toc.yml and version.json are derived from the
+      # packages that were actually downloaded.
+      run: |
+        python3 build/generate-docfx-config.py plan game docs --version ${{ matrix.version }}
+        # The two resolution paths must agree, or the manifest would describe a
+        # different set of builds than the archive holds.
+        got=$(jq -r 'to_entries | sort_by(.key) | .[] | "\(.key) \(.value)"' game/packages.json | sha256sum | cut -c1-16)
+        [ "$got" = "${{ steps.resolve.outputs.pkgs }}" ] || { echo "::error::downloaded builds ($got) differ from the resolved ones (${{ steps.resolve.outputs.pkgs }})"; exit 1; }
+      shell: bash
+
+    - name: Extract the metadata
+      if: steps.fp.outputs.changed == 'true'
+      # Metadata, then the delta pass. The Server and ModdingKit sections come
+      # out of metadata holding whole copies of client assemblies;
+      # apply-api-delta.py cuts them down to what those builds add and writes
+      # api-delta-summary.json for the landing page.
+      run: |
+        docfx docs/docfx-meta.json
+        # DocFX treats a file list that matches nothing as a warning and exits 0.
+        # Every section in the generated config must have produced a TOC.
+        for d in $(jq -r '.metadata[].dest' docs/docfx-meta.json); do
+          test -s "docs/$d/toc.yml" || { echo "::error::DocFX metadata produced nothing for $d"; exit 1; }
+        done
+        python3 build/apply-api-delta.py docs
+      shell: bash
+
+    - name: Pack the archive and write the manifest
+      if: steps.fp.outputs.changed == 'true'
+      id: pack
+      run: |
+        V="${{ matrix.version }}"
+        pkgs="${{ steps.resolve.outputs.pkgs }}"
+        name="api-metadata-$pkgs.tar.zst"
+        tar --zstd -cf "$name" -C docs api api-delta.json api-delta-summary.json version.json docfx-meta.json
+        jq -n --arg game "$V" --arg pkgs "$pkgs" --arg docfx "${{ steps.fp.outputs.docfx }}" \
+              --arg build "${{ steps.fp.outputs.build }}" --arg archive "$name" \
+              --arg created "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+              --slurpfile packages packages.json --slurpfile version docs/version.json \
+              '{schema: 1, game: $game, edition: $version[0].edition, package_version: $version[0].package_version,
+                pkgs: $pkgs, packages: $packages[0], docfx: $docfx, build: $build,
+                archive: $archive, created: $created}' > manifest.json
+        echo "name=$name" >> "$GITHUB_OUTPUT"
+        echo "archive: $(du -h "$name" | cut -f1)"
+        cat manifest.json
+      shell: bash
+
+    - name: Publish the release
+      if: steps.fp.outputs.changed == 'true'
+      # Archive first, manifest second, then the superseded archives go. See the
+      # header for why the order matters to render.yml. --latest=false keeps the
+      # repository's "Latest release" from pointing at a metadata release.
+      run: |
+        V="${{ matrix.version }}"
+        name="${{ steps.pack.outputs.name }}"
+        if [ "${{ steps.fp.outputs.exists }}" != "true" ]; then
+          gh release create "meta/$V" --latest=false --title "API metadata $V" \
+            --notes "DocFX metadata for game version $V, consumed by the Render workflow. Replaced in place when a newer package build ships for this version."
+        fi
+        gh release upload "meta/$V" "$name" --clobber
+        gh release upload "meta/$V" manifest.json --clobber
+        # The shell runs with pipefail, and grep finding nothing to delete is the
+        # normal case on a first publish; it must not fail the step.
+        old=$(gh release view "meta/$V" --json assets -q '.assets[].name' | grep '^api-metadata-' | grep -vx "$name" || true)
+        for a in $old; do
+          echo "removing superseded $a"
+          gh release delete-asset "meta/$V" "$a" -y
+        done
+        echo "Published metadata for $V (pkgs ${{ steps.resolve.outputs.pkgs }})." >> "$GITHUB_STEP_SUMMARY"
+        echo "${{ matrix.version }}" > changed.txt
+      shell: bash
+
+    - name: Mark as changed for the render dispatch
+      if: steps.fp.outputs.changed == 'true'
+      # Matrix jobs cannot aggregate outputs, so each changed version leaves a
+      # marker the dispatch job collects.
+      uses: actions/upload-artifact@v4
+      with:
+        name: changed-${{ matrix.version }}
+        path: changed.txt
+        retention-days: 1
+
+  dispatch:
+    name: Dispatch render
+    needs: extract
+    # skip-render is only defined for workflow_dispatch; on other triggers it is
+    # an empty string, and `!= true` is the comparison that stays true there.
+    if: ${{ !cancelled() && inputs.skip-render != true }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        pattern: changed-*
+        path: changed
+        merge-multiple: false
+
+    - name: Run render.yml for the versions that changed
+      run: |
+        list=$(cat changed/*/changed.txt 2>/dev/null | sort -u | tr '\n' ' ' || true)
+        if [ -z "$(echo $list)" ]; then
+          echo "no metadata changed; nothing to render"
+          exit 0
+        fi
+        echo "rendering: $list"
+        gh workflow run render.yml --ref "${{ github.ref_name }}" -f versions="$list"
+        echo "Dispatched Render for: $list" >> "$GITHUB_STEP_SUMMARY"
+      shell: bash

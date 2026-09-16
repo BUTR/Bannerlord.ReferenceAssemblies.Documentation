@@ -1,31 +1,33 @@
-name: DocFX
+name: Render
+
+# Renders the site from the metadata releases and deploys it. This is the half
+# of the pipeline that depends on the design: the template, the logo, the
+# landing page, docfx-build.json and the scripts under build/ that run after
+# metadata. The half that depends on the game is metadata.yml. This workflow
+# never downloads a package and never runs `docfx metadata`; it takes whatever
+# the meta/<version> releases hold.
+#
+# Every version whose release exists is a candidate. Whether one is actually
+# rebuilt is decided by the fingerprint recorded on the host against the one
+# build/fingerprint.sh computes from this checkout and the release manifest:
+# meta= (which archive), docs= and build= (which design and tooling), docfx=
+# (which renderer). A push that changes the template therefore re-renders all
+# versions, and a push that changes nothing they depend on rebuilds none.
+#
+# Versions published before this split recorded a pkgs= fingerprint; they
+# compare unequal once and are rebuilt once.
 
 on:
   push:
     branches: [ dev ]
     paths:
-      - '.github/workflows/docfx.yml'
+      - '.github/workflows/render.yml'
       - 'build/**'
       - 'docs/**'
-  repository_dispatch:
-    types: [game_version_update, game_version_update_patch]
-  workflow_call:
-    inputs:
-      game-version:
-        required: true
-        type: string
-      force:
-        required: false
-        type: boolean
-        default: false
-      set-latest:
-        required: false
-        type: boolean
-        default: false
   workflow_dispatch:
     inputs:
-      game-version:
-        description: 'Game version to build, e.g. 1.5.2. Defaults to the stable and beta channels.'
+      versions:
+        description: 'Game versions to render, space separated (1.5.1 e1.5.2). Empty: every version that has a metadata release.'
         required: false
         type: string
       force:
@@ -34,10 +36,18 @@ on:
         type: boolean
         default: false
       set-latest:
-        description: 'Publish as /latest even when this is not the stable version (needs an explicit game-version)'
+        description: 'Publish as /latest even when this is not the stable version (needs exactly one version)'
         required: false
         type: boolean
         default: false
+      max-parallel:
+        description: 'Versions rendered at the same time'
+        required: false
+        type: number
+        default: 6
+
+permissions:
+  contents: read
 
 env:
   DOTNET_NOLOGO: true
@@ -45,6 +55,8 @@ env:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   SITE_ORIGIN: https://bannerlordapi.butr.link
   DOCS_PORT: ${{ vars.DOCS_PORT || 22 }}
+  GH_TOKEN: ${{ github.token }}
+  GH_REPO: ${{ github.repository }}
 
 jobs:
   plan:
@@ -52,19 +64,13 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       versions: ${{ steps.pick.outputs.versions }}
+      single: ${{ steps.pick.outputs.single }}
     steps:
-    - name: Pick the versions to build
+    - name: Pick the versions
       id: pick
-      # An explicit game-version (workflow_dispatch, or the backfill calling in)
-      # builds exactly that. Otherwise both channels are built: the dispatch from
-      # the .github repo fires for stable and beta bumps alike, and the beta
-      # channel used to be labelled in the manifest but never built.
-      #
-      # Versions are normalised here (leading v stripped, charset checked) so the
-      # per-version concurrency group below sees one spelling. A leading e is
-      # kept: e1.5.2 is the early access build, a different game from 1.5.2. The
-      # deploy wrapper accepts [A-Za-z0-9][A-Za-z0-9._-]* only; failing here beats
-      # failing at the end of a 15 minute build.
+      # An explicit list, or every meta/<version> release. Release builds first,
+      # then early access, each newest first, so a partial run reaches the
+      # versions people read most before the archive.
       run: |
         norm() {
           v="${1#v}"
@@ -76,33 +82,36 @@ jobs:
           echo "$v"
         }
         list=
-        if [ -n "${{ inputs.game-version }}" ]; then
-          list="$(norm "${{ inputs.game-version }}")"
+        if [ -n "${{ inputs.versions }}" ]; then
+          for v in ${{ inputs.versions }}; do list="$list $(norm "$v")"; done
         else
-          stable="$(norm "${{ vars.GAME_VERSION_STABLE }}" || true)"
-          beta="$(norm "${{ vars.GAME_VERSION_BETA }}" || true)"
-          [ -n "$stable" ] || { echo "::error::No game version given and GAME_VERSION_STABLE is empty"; exit 1; }
-          list="$stable"
-          [ -n "$beta" ] && [ "$beta" != "$stable" ] && list="$list $beta"
+          tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p')
+          release=$(printf '%s\n' "$tags" | grep -v '^e' | sort -V | tac || true)
+          early=$(printf '%s\n' "$tags" | grep '^e' | sort -V | tac || true)
+          list=$(printf '%s\n%s\n' "$release" "$early" | sed '/^$/d' | tr '\n' ' ')
         fi
+        [ -n "$(echo $list)" ] || { echo "::error::No versions to render; has the Metadata workflow published any release?"; exit 1; }
         json=$(printf '%s\n' $list | jq -R . | jq -sc .)
         echo "versions=$json" >> "$GITHUB_OUTPUT"
-        echo "building: $list"
+        [ "$(echo $list | wc -w)" = "1" ] && echo "single=true" >> "$GITHUB_OUTPUT" || echo "single=false" >> "$GITHUB_OUTPUT"
+        echo "rendering: $list"
       shell: bash
 
-  docfx:
-    name: DocFX ${{ matrix.version }}
+  render:
+    name: Render ${{ matrix.version }}
     needs: plan
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      # A `number` input reaches the strategy block as a string, and is empty on
+      # push; fromJSON turns both into a number.
+      max-parallel: ${{ fromJSON(inputs.max-parallel || 6) }}
       matrix:
         version: ${{ fromJson(needs.plan.outputs.versions) }}
     concurrency:
-      # Per version. A constant group would serialise the backfill matrix and,
-      # worse, cancel it: GitHub keeps only one run pending per group, so each
-      # newly queued version would evict the one waiting. Different versions
-      # write to different /v/<version>/ trees, so they do not conflict.
+      # Per version. A constant group would serialise the matrix and, worse,
+      # cancel it: GitHub keeps only one run pending per group. Different
+      # versions write to different /v/<version>/ trees, so they do not conflict.
       group: docfx-deploy-${{ matrix.version }}
       cancel-in-progress: false
     steps:
@@ -110,13 +119,6 @@ jobs:
       uses: butr/actions-docfx-setup@v4
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
-
-    - name: .NET SDK for the PackageDownloader
-      # The setup action installs 8.x; the downloader targets net10.0 and used to
-      # build only because the runner image happens to preinstall it.
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 10.0.x
 
     - name: Resolve game version
       id: ver
@@ -134,7 +136,6 @@ jobs:
         st="${{ vars.GAME_VERSION_STABLE }}"; st="${st#v}"
         [ "$v" = "$st" ] && echo "is-stable=true" >> "$GITHUB_OUTPUT" || echo "is-stable=false" >> "$GITHUB_OUTPUT"
         echo "stable channel: ${st:-unset}"
-        echo "Target game version: $v"
       shell: bash
 
     - name: Check deploy configuration
@@ -167,87 +168,67 @@ jobs:
         chmod 644 ~/.ssh/known_hosts
       shell: bash
 
-    - name: Download ref packages
-      # Fails if Core has no build for this version; other packages are optional
-      # because the module set differs between game versions. Also writes
-      # game/api-surface.json, which tells the generator which Server and
-      # ModdingKit copies of a client assembly differ from the client build.
-      run: >-
-        dotnet run --project build/PackageDownloader -c Release --
-        -v ${{ steps.ver.outputs.version }}
-        -t "$PWD"
+    - name: Fetch the metadata release
+      # The manifest names the archive; downloading by that name rather than by
+      # pattern is what makes a read during a metadata update consistent.
+      run: |
+        V="${{ steps.ver.outputs.version }}"
+        mkdir -p meta
+        gh release download "meta/$V" -p manifest.json -D meta \
+          || { echo "::error::No metadata release meta/$V; run the Metadata workflow for it first"; exit 1; }
+        archive=$(jq -r '.archive // empty' meta/manifest.json)
+        [ -n "$archive" ] || { echo "::error::meta/$V manifest names no archive"; exit 1; }
+        gh release download "meta/$V" -p "$archive" -D meta
+        echo "manifest: pkgs=$(jq -r .pkgs meta/manifest.json) docfx=$(jq -r .docfx meta/manifest.json) created=$(jq -r .created meta/manifest.json)"
+        tar --zstd -xf "meta/$archive" -C docs
+        for f in api/toc.yml api-delta-summary.json version.json; do
+          test -s "docs/$f" || { echo "::error::the archive holds no $f"; exit 1; }
+        done
+        echo "sections: $(jq -r '[.sections[].dest] | join(" ")' docs/version.json)"
       shell: bash
 
-    - name: Generate DocFX config for this version
-      # The module set changes between game versions: Multiplayer only exists
-      # from 1.2, DedicatedCustomServerHelper disappears after 1.1, FastMode
-      # exists only for 1.3 and 1.4. docfx-meta.json, api/toc.yml and index.md
-      # are therefore derived from the packages that were actually downloaded,
-      # rather than checked in for one version and wrong for the other 49.
-      run: >-
-        python3 build/generate-docfx-config.py game docs
-        --version ${{ steps.ver.outputs.version }}
-        --site ${{ env.SITE_ORIGIN }}
+    - name: Generate the design-side files
+      # index.md and docfx-globals.json from version.json and the delta summary,
+      # so the landing page follows the checkout, not the archive.
+      run: |
+        python3 build/generate-docfx-config.py render docs --site ${{ env.SITE_ORIGIN }}
+        python3 build/apply-api-delta.py docs --fill-from docs/api-delta-summary.json
       shell: bash
 
     - name: Decide whether a rebuild is needed
       id: fp
-      # A published version is immutable unless one of three things changes: the
-      # game shipped a new build under the same x.y.z (a hotfix), the docs or the
-      # build tooling changed, or DocFX changed. Otherwise the output reproduces
-      # byte for byte. The dispatch from the .github repo fires several times a
-      # day, so this is the difference between a few builds a year and a few a day.
       run: |
         V="${{ steps.ver.outputs.version }}"
         SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 ${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
-        pkgs=$(find game -mindepth 2 -maxdepth 2 -type d | sed 's|^game/||' | sort | sha256sum | cut -c1-16)
-        docs=$(git rev-parse "HEAD:docs")
-        build=$(git rev-parse "HEAD:build")
-        tool=$(docfx --version 2>/dev/null | head -1 | tr -d ' ')
-        fp="pkgs=$pkgs docs=${docs:0:12} build=${build:0:12} docfx=$tool"
+        fp=$(bash build/fingerprint.sh meta/manifest.json)
         printf '%s' "$fp" > fingerprint.txt
-        echo "fp=$fp" >> "$GITHUB_OUTPUT"
         echo "local  : $fp"
         if remote=$($SSH get-state "$V"); then
           echo "remote : ${remote:-<none>}"
         else
-          echo "::warning::Could not read the remote state for v$V; treating it as unpublished"
+          echo "::warning::Could not read the remote state for $V; treating it as unpublished"
           remote=
         fi
         if [ "${{ inputs.force }}" = "true" ]; then
           echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> forced rebuild"
         elif [ "$remote" = "$fp" ]; then
           echo "changed=false" >> "$GITHUB_OUTPUT"
-          echo "-> v$V is already published from these exact inputs; skipping"
-          echo "Skipped: v$V already published from these inputs." >> "$GITHUB_STEP_SUMMARY"
+          echo "-> $V is already published from these exact inputs; skipping"
+          echo "Skipped $V: already published from these inputs." >> "$GITHUB_STEP_SUMMARY"
         else
-          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> rebuilding"
+          echo "changed=true" >> "$GITHUB_OUTPUT"; echo "-> rendering"
         fi
       shell: bash
 
     - name: Run DocFX
       if: steps.fp.outputs.changed == 'true'
-      # Metadata, then the delta pass, then the build. The Server and ModdingKit
-      # sections come out of metadata holding whole copies of client assemblies;
-      # apply-api-delta.py cuts them down to the types and members the client
-      # sections do not have, so they document only what those builds add.
-      run: |
-        docfx docs/docfx-meta.json
-        # DocFX treats a file list that matches nothing as a warning and exits 0,
-        # and the site then ships with an empty API section. Every section in
-        # the generated config must have produced a TOC before the build runs.
-        for d in $(jq -r '.metadata[].dest' docs/docfx-meta.json); do
-          test -s "docs/$d/toc.yml" || { echo "::error::DocFX metadata produced nothing for $d"; exit 1; }
-        done
-        python3 build/apply-api-delta.py docs
-        docfx docs/docfx-build.json
+      run: docfx docs/docfx-build.json
       shell: bash
 
     - name: Write the API index for version comparison
       if: steps.fp.outputs.changed == 'true'
       # compare.html diffs two versions in the browser from the api-index.json
-      # each version publishes next to its pages, so an old version and a new one
-      # compare without either being rebuilt.
+      # each version publishes next to its pages.
       run: python3 build/write-api-index.py docs ${{ steps.ver.outputs.version }}
       shell: bash
 
@@ -267,10 +248,13 @@ jobs:
     - name: Stamp version marker
       if: steps.fp.outputs.changed == 'true'
       # Lets anything read back which version /latest resolves to, by fetching
-      # /version.txt from the site root. The wrapper exposes no verb for the
-      # symlink, and guessing it is how a manifest ends up contradicting what
-      # the site actually serves.
-      run: echo "${{ steps.ver.outputs.version }}" > docs/_site/version.txt
+      # /version.txt from the site root. The delta summary and the metadata
+      # manifest ship next to the pages, so what a version was rendered from can
+      # be read off the site.
+      run: |
+        echo "${{ steps.ver.outputs.version }}" > docs/_site/version.txt
+        cp docs/api-delta-summary.json docs/_site/api-delta-summary.json
+        cp meta/manifest.json docs/_site/metadata.json
       shell: bash
 
     - name: Compress for gzip_static
@@ -297,9 +281,9 @@ jobs:
     - name: Deploy version
       if: steps.fp.outputs.changed == 'true'
       # Paths are relative because the deploy key is confined by rrsync, which
-      # anchors every path to its own root. There is no absolute path to set.
-      # rrsync also allows one session at a time per user; the wrapper script
-      # waits and retries when another job's upload holds it.
+      # anchors every path to its own root. rrsync also allows one session at a
+      # time per user; the wrapper script waits and retries when another job's
+      # upload holds it.
       run: |
         bash build/rsync-retry.sh -a --delete \
           -e "ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519" \
@@ -317,48 +301,41 @@ jobs:
 
     - name: Publish as latest
       id: publish
-      # set-latest is only defined for workflow_dispatch and workflow_call. On
-      # push and repository_dispatch it is an empty string, which GitHub coerces
-      # to 0 -- the same as false -- so `!= false` would silently skip publishing
-      # on exactly the trigger that matters most. It is also only honoured with
-      # an explicit game-version: with both channels in the matrix it would
-      # otherwise publish whichever finished last. Early access builds are never
-      # /latest: the site root is the release line.
+      # set-latest is only defined for workflow_dispatch. On push it is an empty
+      # string, which GitHub coerces to 0 -- the same as false -- so `!= false`
+      # would silently skip publishing on exactly the trigger that matters most.
+      # It is also only honoured with exactly one version: with several in the
+      # matrix it would otherwise publish whichever finished last. Early access
+      # builds are never /latest: the site root is the release line.
       if: >-
         steps.fp.outputs.changed == 'true' &&
         !startsWith(steps.ver.outputs.version, 'e') &&
-        (steps.ver.outputs.is-stable == 'true' || (inputs.set-latest && inputs.game-version != ''))
+        (steps.ver.outputs.is-stable == 'true' || (inputs.set-latest && needs.plan.outputs.single == 'true'))
       run: |
         V="${{ steps.ver.outputs.version }}"
         ssh -p "$DOCS_PORT" -i ~/.ssh/id_ed25519 \
           "${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}" publish "$V"
-        echo "published v$V as latest"
+        echo "published $V as latest"
       shell: bash
 
     - name: Update version manifest
       # The picker reads this at run time, which is what lets a version built
       # today appear in the dropdown of one built two years ago. Rebuilt from
-      # server state on every deploy, so it is self-healing: a backfill job that
-      # dies before this step, or two parallel jobs racing on the upload, are
+      # server state on every deploy, so it is self-healing: a job that dies
+      # before this step, or two parallel jobs racing on the upload, are
       # corrected by the next deploy.
       run: |
         SSH="ssh -p $DOCS_PORT -i ~/.ssh/id_ed25519 -o BatchMode=yes"
         SSH="$SSH -o ControlMaster=auto -o ControlPath=$HOME/.ssh/cm-%r@%h:%p -o ControlPersist=60"
         TARGET="${{ vars.DOCS_USER }}@${{ vars.DOCS_HOST }}"
 
-        # Every version id that exists as a package, newest first: release x.y.z
-        # from the Core index, then early access ex.y.z from Core.EarlyAccess.
-        list_versions() {
-          for pkg in core core.earlyaccess; do
-            prefix=; [ "$pkg" = core.earlyaccess ] && prefix=e
-            curl -sS --max-time 60 "https://api.nuget.org/v3-flatcontainer/bannerlord.referenceassemblies.$pkg/index.json" \
-              | jq -r '.versions[]' | sed 's/-.*//' \
-              | awk -F. 'NF>=3 {print $1"."$2"."$3}' | sort -u -V | tac | sed "s/^/$prefix/"
-          done
-        }
-
+        # Every version that has metadata, newest first: release builds, then
+        # early access. Published means the host has a fingerprint for it.
+        tags=$(gh release list --limit 500 --json tagName -q '.[].tagName' | sed -n 's|^meta/||p')
+        candidates=$(printf '%s\n%s\n' "$(printf '%s\n' "$tags" | grep -v '^e' | sort -V | tac || true)" \
+                                       "$(printf '%s\n' "$tags" | grep '^e' | sort -V | tac || true)" | sed '/^$/d')
         published=
-        for v in $(list_versions); do
+        for v in $candidates; do
           if [ -n "$($SSH "$TARGET" get-state "$v" 2>/dev/null || true)" ]; then
             published="$published $v"
           fi
